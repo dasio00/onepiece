@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>원피스 데이터 탐색기</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">OP</span>
+          <div>
+            <h1>원피스 데이터 탐색기</h1>
+            <p>인물, 기술, 조직, 열매, 그룹 정리</p>
+          </div>
+        </div>
+
+        <nav class="tabs" aria-label="카테고리">
+          <button class="tab active" data-view="techniques" type="button">기술명</button>
+          <button class="tab" data-view="people" type="button">사람</button>
+          <button class="tab" data-view="episodes" type="button">에피소드</button>
+          <button class="tab" data-view="appearanceArcs" type="button">등장편</button>
+          <button class="tab" data-view="organizations" type="button">조직</button>
+          <button class="tab" data-view="devilFruits" type="button">악마의 열매</button>
+          <button class="tab" data-view="groups" type="button">그룹</button>
+          <button class="tab" data-view="timelines" type="button">연표</button>
+          <button class="tab" data-view="quiz" type="button">카드 퀴즈</button>
+          <button class="tab" data-view="jobs" type="button">직업</button>
+          <button class="tab" data-view="heights" type="button">키</button>
+          <button class="tab" data-view="ages" type="button">연령</button>
+          <button class="tab" data-view="birthdays" type="button">생일</button>
+          <button class="tab" data-view="bounties" type="button">현상금</button>
+          <button class="tab" data-view="bloodTypes" type="button">혈액형</button>
+          <button class="tab" data-view="origins" type="button">출신지</button>
+          <button class="tab edit-tab" data-view="editor" type="button">수정</button>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="toolbar">
+          <div>
+            <p class="eyebrow" id="viewLabel">기술명</p>
+            <h2 id="viewTitle">기술이 나온 화수 보기</h2>
+          </div>
+          <label class="search" id="searchBox">
+            <span>검색</span>
+            <input id="searchInput" type="search" placeholder="이름, 조직, 열매, 직업 검색" />
+          </label>
+        </header>
+
+        <section class="workspace" id="browseWorkspace">
+          <section class="list-pane" aria-label="목록">
+            <div class="pane-head">
+              <h3 id="listTitle">기술 목록</h3>
+              <span id="countBadge">0개</span>
+            </div>
+            <div class="range-controls hidden" id="rangeControls">
+              <button type="button" data-range="all" class="range active">전체</button>
+              <button type="button" data-range="low" class="range">낮은 순</button>
+              <button type="button" data-range="high" class="range">높은 순</button>
+            </div>
+            <div class="item-list" id="itemList"></div>
+          </section>
+
+          <section class="detail-pane" aria-label="상세 내용">
+            <div class="empty-state" id="emptyState">
+              <strong>왼쪽 목록에서 항목을 선택하세요.</strong>
+              <span>선택한 카테고리의 상세 내용이 여기에 표시됩니다.</span>
+            </div>
+            <div class="detail hidden" id="detail"></div>
+          </section>
+        </section>
+
+        <section class="editor hidden" id="editorWorkspace" aria-label="수정 화면">
+          <div class="editor-nav">
+            <button class="editor-mode active" data-editor-mode="people" type="button">인물 수정</button>
+            <button class="editor-mode" data-editor-mode="episodes" type="button">에피소드 수정</button>
+            <button class="editor-mode" data-editor-mode="techniques" type="button">기술 수정</button>
+            <button class="editor-mode" data-editor-mode="fruits" type="button">열매 수정</button>
+            <button class="editor-mode" data-editor-mode="organizations" type="button">조직 수정</button>
+            <button class="editor-mode" data-editor-mode="groups" type="button">그룹 수정</button>
+            <button class="editor-mode" data-editor-mode="data" type="button">데이터 관리</button>
+          </div>
+          <div class="editor-body" id="editorBody"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

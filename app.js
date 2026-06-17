@@ -413,30 +413,38 @@ function renderPersonDetail(person) {
       ${image}
       <div>
         <h3>${escapeHtml(person.name)}</h3>
-        <div class="meta">
-          <span class="chip">별명: ${escapeHtml(person.aliases || "미등록")}</span>
-          <span class="chip">조직: ${escapeHtml(organizationName(person.organization))}</span>
-          <span class="chip">세부 조직: ${escapeHtml(subOrganizationName(person.subOrganization))}</span>
-          <span class="chip">직업: ${escapeHtml(person.job)}</span>
-          <span class="chip">연령: ${person.age}세</span>
-          <span class="chip">생일: ${escapeHtml(person.birthday || "미등록")}</span>
-          <span class="chip">키: ${currentHeight(person)}cm</span>
-          <span class="chip">현상금: ${formatBounty(currentBounty(person))}</span>
-          <span class="chip">혈액형: ${escapeHtml(person.bloodType)}</span>
-          <span class="chip">출신지: ${escapeHtml(originRegionName(person.originRegion))} / ${escapeHtml(originCountryName(person.originCountry))}</span>
-          <span class="chip">악마의 열매: ${escapeHtml(fruit?.name || "없음/미등록")}</span>
-          ${renderHakiChips(person.haki)}
+        <div class="quick-section">
+          <div class="quick-section-head">
+            <strong>태그</strong>
+            <button class="sub-card mini" type="button" data-quick-edit="tags">수정</button>
+          </div>
+          <div class="meta">
+            <span class="chip">별명: ${escapeHtml(person.aliases || "미등록")}</span>
+            <span class="chip">조직: ${escapeHtml(organizationName(person.organization))}</span>
+            <span class="chip">세부 조직: ${escapeHtml(subOrganizationName(person.subOrganization))}</span>
+            <span class="chip">직업: ${escapeHtml(person.job)}</span>
+            <span class="chip">연령: ${person.age}세</span>
+            <span class="chip">생일: ${escapeHtml(person.birthday || "미등록")}</span>
+            <span class="chip">키: ${currentHeight(person)}cm</span>
+            <span class="chip">현상금: ${formatBounty(currentBounty(person))}</span>
+            <span class="chip">혈액형: ${escapeHtml(person.bloodType)}</span>
+            <span class="chip">출신지: ${escapeHtml(originRegionName(person.originRegion))} / ${escapeHtml(originCountryName(person.originCountry))}</span>
+            <span class="chip">악마의 열매: ${escapeHtml(fruit?.name || "없음/미등록")}</span>
+            ${renderHakiChips(person.haki)}
+          </div>
+          <div class="quick-edit-slot" id="quickEdit-tags"></div>
         </div>
-        <div class="info-block"><strong>좋아하는 것</strong><p>${escapeHtml(person.likes || "미등록")}</p></div>
-        <div class="info-block"><strong>인물 설명</strong><p>${escapeHtml(person.description || person.note || "미등록")}</p></div>
-        ${renderHistoryBlock("키 이력", person.heightHistory, (entry) => `${entry.period || "시기 미등록"} · ${entry.cm || 0}cm`)}
-        ${renderHistoryBlock("현상금 이력", person.bountyHistory, (entry) => `${entry.period || "시기 미등록"} · ${formatBounty(entry.amount)}`)}
+        ${renderQuickInfoBlock("likes", "좋아하는 것", person.likes || "미등록")}
+        ${renderQuickInfoBlock("description", "인물 설명", person.description || person.note || "미등록")}
+        ${renderHistoryBlock("키 이력", person.heightHistory, (entry) => `${entry.period || "시기 미등록"} · ${entry.cm || 0}cm`, "height")}
+        ${renderHistoryBlock("현상금 이력", person.bountyHistory, (entry) => `${entry.period || "시기 미등록"} · ${formatBounty(entry.amount)}`, "bounty")}
         ${person.bodyMeasurementsEnabled ? renderHistoryBlock("B-W-H 이력", person.bodyMeasurementsHistory, (entry) => `${entry.period || "시기 미등록"} · B${entry.bust || 0} W${entry.waist || 0} H${entry.hip || 0}`) : ""}
       </div>
     </div>
     <div class="episode-chip-grid">${renderEpisodeLinks(episodes)}</div>
   `;
   bindEpisodeLinks();
+  bindPersonQuickEdit(person);
 }
 
 function renderTimelineBlock(timeline) {
@@ -457,13 +465,162 @@ function renderTimelineBlock(timeline) {
   `;
 }
 
-function renderHistoryBlock(title, entries = [], formatter) {
+function renderQuickInfoBlock(kind, title, text) {
   return `
-    <div class="info-block">
-      <strong>${escapeHtml(title)}</strong>
-      ${(entries || []).map((entry) => `<p>${escapeHtml(formatter(entry))}</p>`).join("") || "<p>미등록</p>"}
+    <div class="info-block quick-section">
+      <div class="quick-section-head">
+        <strong>${escapeHtml(title)}</strong>
+        <button class="sub-card mini" type="button" data-quick-edit="${escapeAttribute(kind)}">수정</button>
+      </div>
+      <p>${escapeHtml(text)}</p>
+      <div class="quick-edit-slot" id="quickEdit-${escapeAttribute(kind)}"></div>
     </div>
   `;
+}
+
+function renderHistoryBlock(title, entries = [], formatter, quickKind = "") {
+  return `
+    <div class="info-block quick-section">
+      <div class="quick-section-head">
+        <strong>${escapeHtml(title)}</strong>
+        ${quickKind ? `<button class="sub-card mini" type="button" data-quick-edit="${escapeAttribute(quickKind)}">수정</button>` : ""}
+      </div>
+      ${(entries || []).map((entry) => `<p>${escapeHtml(formatter(entry))}</p>`).join("") || "<p>미등록</p>"}
+      ${quickKind ? `<div class="quick-edit-slot" id="quickEdit-${escapeAttribute(quickKind)}"></div>` : ""}
+    </div>
+  `;
+}
+
+function bindPersonQuickEdit(person) {
+  detail.querySelectorAll("[data-quick-edit]").forEach((button) => {
+    button.addEventListener("click", () => openPersonQuickEdit(person, button.dataset.quickEdit));
+  });
+}
+
+function openPersonQuickEdit(person, kind) {
+  detail.querySelectorAll(".quick-edit-slot").forEach((slot) => {
+    if (slot.id !== `quickEdit-${kind}`) slot.innerHTML = "";
+  });
+  const slot = detail.querySelector(`#quickEdit-${kind}`);
+  if (!slot) return;
+  slot.innerHTML = renderPersonQuickEditForm(person, kind);
+  const form = slot.querySelector("form");
+  if (!form) return;
+  slot.querySelectorAll("[data-add-history-row]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const type = button.dataset.addHistoryRow;
+      form.querySelector(`[data-history-rows="${type}"]`).insertAdjacentHTML("beforeend", renderMetricRow({}, type));
+    });
+  });
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    savePersonQuickEdit(person, kind, form);
+  });
+  form.querySelector("[data-cancel-quick-edit]")?.addEventListener("click", () => {
+    slot.innerHTML = "";
+  });
+}
+
+function renderPersonQuickEditForm(person, kind) {
+  if (kind === "tags") {
+    return `
+      <form class="quick-edit-form">
+        ${field("aliases", "별명", person.aliases || "")}
+        ${field("job", "직업", person.job || "")}
+        ${field("age", "연령", person.age || "", "number")}
+        ${birthdayField(person.birthday)}
+        <label>조직<select name="organization">${organizationOptions(person.organization)}</select></label>
+        <label>세부 조직<select name="subOrganization">${subOrganizationOptions(person.subOrganization)}</select></label>
+        <label>혈액형<select name="bloodType">${data.bloodTypes.map((type) => option(type, type, person.bloodType)).join("")}</select></label>
+        <label>출신 바다/지역<select name="originRegion">${originRegionOptions(person.originRegion)}</select></label>
+        <label>출신 국가<select name="originCountry">${originCountryOptions(person.originCountry)}</select></label>
+        <label>악마의 열매<select name="devilFruitId"><option value="">없음/미등록</option>${data.devilFruits.map((fruit) => option(fruit.id, fruit.name, person.devilFruitId)).join("")}</select></label>
+        <fieldset class="check-list compact">
+          <legend>패기</legend>
+          <label><input type="checkbox" name="hakiArmament" ${person.haki?.armament ? "checked" : ""} /> 무장색</label>
+          <label><input type="checkbox" name="hakiObservation" ${person.haki?.observation ? "checked" : ""} /> 견문색</label>
+          <label><input type="checkbox" name="hakiConqueror" ${person.haki?.conqueror ? "checked" : ""} /> 패왕색</label>
+        </fieldset>
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "likes") {
+    return `
+      <form class="quick-edit-form">
+        <label>좋아하는 것<textarea name="likes" rows="3">${escapeHtml(person.likes || "")}</textarea></label>
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "description") {
+    return `
+      <form class="quick-edit-form">
+        <label>인물 설명<textarea name="description" rows="5">${escapeHtml(person.description || "")}</textarea></label>
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "height" || kind === "bounty") {
+    const rows = kind === "height" ? person.heightHistory : person.bountyHistory;
+    const label = kind === "height" ? "키 이력" : "현상금 이력";
+    return `
+      <form class="quick-edit-form">
+        <fieldset class="timeline-editor">
+          <legend>${label}</legend>
+          <div data-history-rows="${kind}">${renderMetricRows(rows, kind)}</div>
+          <button class="sub-card" type="button" data-add-history-row="${kind}">줄 추가</button>
+        </fieldset>
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  return "";
+}
+
+function quickEditActions() {
+  return `
+    <div class="form-actions">
+      <button class="primary" type="submit">저장</button>
+      <button class="sub-card" type="button" data-cancel-quick-edit>취소</button>
+    </div>
+  `;
+}
+
+function savePersonQuickEdit(person, kind, form) {
+  if (kind === "tags") {
+    Object.assign(person, {
+      aliases: value(form, "aliases"),
+      job: value(form, "job"),
+      age: Number(value(form, "age") || 0),
+      birthday: readBirthday(form),
+      organization: value(form, "organization"),
+      subOrganization: value(form, "subOrganization"),
+      bloodType: value(form, "bloodType"),
+      originRegion: value(form, "originRegion"),
+      originCountry: value(form, "originCountry"),
+      origin: `${originRegionName(value(form, "originRegion"))} / ${originCountryName(value(form, "originCountry"))}`,
+      devilFruitId: value(form, "devilFruitId"),
+      haki: {
+        armament: form.elements.hakiArmament.checked,
+        observation: form.elements.hakiObservation.checked,
+        conqueror: form.elements.hakiConqueror.checked
+      }
+    });
+  }
+  if (kind === "likes") person.likes = value(form, "likes");
+  if (kind === "description") person.description = value(form, "description");
+  if (kind === "height") {
+    person.heightHistory = readMetricRows(form, "height");
+    person.heightCm = currentHeight(person);
+  }
+  if (kind === "bounty") {
+    person.bountyHistory = readMetricRows(form, "bounty");
+    person.bounty = currentBounty(person);
+  }
+  saveData();
+  activeId = person.id;
+  render();
 }
 
 function renderTimelineDetail(person) {

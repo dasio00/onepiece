@@ -13,10 +13,7 @@ const viewConfig = {
   timelines: { label: "연표", title: "인물별 연표 보기", listTitle: "연표 인물" },
   quiz: { label: "카드 퀴즈", title: "카테고리별 랜덤 카드 퀴즈", listTitle: "퀴즈 카테고리" },
   jobs: { label: "직업", title: "직업별 인물 보기", listTitle: "직업 목록" },
-  heights: { label: "키", title: "키 순서대로 인물 보기", listTitle: "키 목록" },
-  ages: { label: "연령", title: "연령 순서대로 인물 보기", listTitle: "연령 목록" },
-  birthdays: { label: "생일", title: "생일별 인물 보기", listTitle: "생일 목록" },
-  bounties: { label: "현상금", title: "현상금 순서대로 인물 보기", listTitle: "현상금 목록" },
+  stats: { label: "인물 정렬", title: "키·연령·현상금·생일 순서 보기", listTitle: "인물 목록" },
   bloodTypes: { label: "혈액형", title: "혈액형별 인물 보기", listTitle: "혈액형 목록" },
   origins: { label: "출신지", title: "출신지별 인물 보기", listTitle: "출신지 목록" },
   editor: { label: "수정", title: "웹에서 바로 데이터 수정", listTitle: "수정" }
@@ -28,6 +25,8 @@ let sortMode = "all";
 let personSortMode = "appearance";
 let personEditorQuery = "";
 let episodeCharacterQuery = "";
+let statMetric = "height";
+let statDirection = "asc";
 let editorMode = "people";
 let activeFruitId = "";
 let activeSubOrgId = "";
@@ -47,9 +46,12 @@ const emptyState = document.querySelector("#emptyState");
 const searchInput = document.querySelector("#searchInput");
 const searchBox = document.querySelector("#searchBox");
 const rangeControls = document.querySelector("#rangeControls");
-const rangeButtons = document.querySelectorAll(".range");
+const rangeButtons = document.querySelectorAll("[data-range]");
 const personSortControls = document.querySelector("#personSortControls");
 const personSortSelect = document.querySelector("#personSortSelect");
+const statSortControls = document.querySelector("#statSortControls");
+const statMetricSelect = document.querySelector("#statMetricSelect");
+const statDirectionButtons = document.querySelectorAll("[data-stat-direction]");
 const mobileViewSelect = document.querySelector("#mobileViewSelect");
 const browseWorkspace = document.querySelector("#browseWorkspace");
 const editorWorkspace = document.querySelector("#editorWorkspace");
@@ -74,6 +76,20 @@ personSortSelect.addEventListener("change", () => {
   personSortMode = personSortSelect.value;
   activeId = "";
   render();
+});
+
+statMetricSelect.addEventListener("change", () => {
+  statMetric = statMetricSelect.value;
+  activeId = "";
+  render();
+});
+
+statDirectionButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    statDirection = button.dataset.statDirection;
+    activeId = "";
+    render();
+  });
 });
 
 editorModeButtons.forEach((button) => {
@@ -102,7 +118,7 @@ function switchView(view) {
 }
 
 function isListOnlyView() {
-  return ["heights", "birthdays", "bounties"].includes(currentView);
+  return currentView === "stats";
 }
 
 function render() {
@@ -125,9 +141,14 @@ function render() {
   }
 
   listTitle.textContent = config.listTitle;
-  rangeControls.classList.toggle("hidden", !["heights", "ages", "bounties"].includes(currentView));
+  rangeControls.classList.add("hidden");
   personSortControls.classList.toggle("hidden", currentView !== "people");
   personSortSelect.value = personSortMode;
+  statSortControls.classList.toggle("hidden", currentView !== "stats");
+  statMetricSelect.value = statMetric;
+  statDirectionButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.statDirection === statDirection);
+  });
 
   const items = getItems();
   const query = searchInput.value.trim().toLowerCase();
@@ -191,10 +212,7 @@ function getItems() {
   }
   if (currentView === "quiz") return getQuizCategories();
   if (currentView === "jobs") return groupBy(data.people, "job").map((group) => groupToItem(group, "명"));
-  if (currentView === "heights") return sortedPeople("heightCm").map((person) => ({ ...personToItem(person), title: `${person.name} · ${currentHeight(person)}cm` }));
-  if (currentView === "ages") return sortedPeople("age").map((person) => ({ ...personToItem(person), title: `${person.name} · ${person.age}세` }));
-  if (currentView === "birthdays") return sortedPeople("birthday").map((person) => ({ ...personToItem(person), title: `${person.name} · ${person.birthday || "미등록"}` }));
-  if (currentView === "bounties") return sortedPeople("bounty").map((person) => ({ ...personToItem(person), title: `${person.name} · ${formatBounty(currentBounty(person))}` }));
+  if (currentView === "stats") return sortedStatPeople().map((person) => ({ ...personToItem(person), title: `${person.name} · ${statValueLabel(person)}` }));
   if (currentView === "bloodTypes") {
     return data.bloodTypes.map((type) => groupToItem({ id: type, name: type, people: data.people.filter((person) => person.bloodType === type) }, "명"));
   }
@@ -209,7 +227,7 @@ function getItems() {
 }
 
 function renderListItem(listItem) {
-  const showImage = currentView === "people" && listItem.raw?.imageUrl;
+  const showImage = ["people", "stats"].includes(currentView) && listItem.raw?.imageUrl;
   const image = showImage ? `<img class="item-thumb" src="${escapeAttribute(listItem.raw.imageUrl)}" alt="" loading="lazy" decoding="async" />` : "";
   return `
     <button class="item" type="button" data-id="${escapeAttribute(listItem.id)}">
@@ -231,7 +249,7 @@ function renderDetail(listItem) {
   }
 
   if (currentView === "techniques") return renderTechniqueDetail(listItem.raw);
-  if (["people", "heights", "ages", "birthdays", "bounties"].includes(currentView)) return renderPersonDetail(listItem.raw);
+  if (currentView === "people") return renderPersonDetail(listItem.raw);
   if (currentView === "episodes") return renderEpisodeVolumeDetail(listItem.raw);
   if (currentView === "organizations") return renderOrganizationDetail(listItem.raw);
   if (currentView === "origins") return renderOriginRegionDetail(listItem.raw);
@@ -1207,6 +1225,35 @@ function sortedPeople(key = "name") {
   if (key === "birthday") return numberSort(birthdaySortValue);
   if (key === "id") return people.sort((a, b) => String(a.id || "").localeCompare(String(b.id || ""), "ko", { numeric: true }));
   return people.sort((a, b) => a.name.localeCompare(b.name, "ko"));
+}
+
+function sortedStatPeople() {
+  return [...data.people].sort((a, b) => {
+    const aValue = statSortValue(a);
+    const bValue = statSortValue(b);
+    const aMissing = !Number.isFinite(aValue) || aValue <= 0;
+    const bMissing = !Number.isFinite(bValue) || bValue <= 0;
+    if (aMissing && bMissing) return a.name.localeCompare(b.name, "ko");
+    if (aMissing) return 1;
+    if (bMissing) return -1;
+    return statDirection === "desc" ? bValue - aValue : aValue - bValue;
+  });
+}
+
+function statSortValue(person) {
+  if (statMetric === "height") return currentHeight(person);
+  if (statMetric === "age") return Number(person.age || 0);
+  if (statMetric === "bounty") return currentBounty(person);
+  if (statMetric === "birthday") return birthdaySortValue(person);
+  return 0;
+}
+
+function statValueLabel(person) {
+  if (statMetric === "height") return `${currentHeight(person)}cm`;
+  if (statMetric === "age") return `${person.age || 0}세`;
+  if (statMetric === "bounty") return formatBounty(currentBounty(person));
+  if (statMetric === "birthday") return person.birthday || "미등록";
+  return "미등록";
 }
 
 function buildAppearanceOrderMap() {

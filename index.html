@@ -27,10 +27,7 @@
           <button class="tab" data-view="timelines" type="button">연표</button>
           <button class="tab" data-view="quiz" type="button">카드 퀴즈</button>
           <button class="tab" data-view="jobs" type="button">직업</button>
-          <button class="tab" data-view="heights" type="button">키</button>
-          <button class="tab" data-view="ages" type="button">연령</button>
-          <button class="tab" data-view="birthdays" type="button">생일</button>
-          <button class="tab" data-view="bounties" type="button">현상금</button>
+          <button class="tab" data-view="stats" type="button">인물 정렬</button>
           <button class="tab" data-view="bloodTypes" type="button">혈액형</button>
           <button class="tab" data-view="origins" type="button">출신지</button>
           <button class="tab edit-tab" data-view="editor" type="button">수정</button>
@@ -55,10 +52,7 @@
               <option value="timelines">연표</option>
               <option value="quiz">카드 퀴즈</option>
               <option value="jobs">직업</option>
-              <option value="heights">키</option>
-              <option value="ages">연령</option>
-              <option value="birthdays">생일</option>
-              <option value="bounties">현상금</option>
+              <option value="stats">인물 정렬</option>
               <option value="bloodTypes">혈액형</option>
               <option value="origins">출신지</option>
               <option value="editor">수정</option>
@@ -96,6 +90,21 @@
                 <option value="birthday">생일순</option>
               </select>
             </label>
+            <div class="stat-sort-controls hidden" id="statSortControls">
+              <label>
+                <span>정렬 기준</span>
+                <select id="statMetricSelect">
+                  <option value="height">키</option>
+                  <option value="age">연령</option>
+                  <option value="bounty">현상금</option>
+                  <option value="birthday">생일</option>
+                </select>
+              </label>
+              <div class="stat-direction-controls">
+                <button class="range active" type="button" data-stat-direction="asc">오름차순</button>
+                <button class="range" type="button" data-stat-direction="desc">내림차순</button>
+              </div>
+            </div>
             <div class="item-list" id="itemList"></div>
           </section>
 

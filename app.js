@@ -150,9 +150,10 @@ function render() {
   const listOnly = isListOnlyView();
   browseWorkspace.classList.toggle("hidden", isEditor);
   browseWorkspace.classList.toggle("list-only-workspace", listOnly);
+  browseWorkspace.classList.toggle("quiz-workspace", currentView === "quiz");
   editorWorkspace.classList.toggle("hidden", !isEditor);
   detailPane.classList.toggle("hidden", listOnly);
-  searchBox.classList.toggle("hidden", isEditor);
+  searchBox.classList.toggle("hidden", isEditor || currentView === "quiz");
 
   if (isEditor) {
     renderEditor();
@@ -590,7 +591,12 @@ function renderGroupDetail(group) {
 function renderQuizDetail(category) {
   const cards = buildQuizCards(category.id);
   if (!cards.length) {
-    detail.innerHTML = `<h3>${escapeHtml(category.name)}</h3>${renderEmptyResult("이 카테고리로 만들 수 있는 카드가 없습니다.")}`;
+    detail.innerHTML = `
+      <h3>${escapeHtml(category.name)} 카드 퀴즈</h3>
+      ${renderQuizCategoryPicker(category.id)}
+      ${renderEmptyResult("이 카테고리로 만들 수 있는 카드가 없습니다.")}
+    `;
+    bindQuizCategoryPicker();
     return;
   }
   if (!quizSession || quizSession.category !== category.id) {
@@ -612,19 +618,12 @@ function renderQuizDetail(category) {
   detail.innerHTML = `
     <h3>${escapeHtml(category.name)} 카드 퀴즈</h3>
     <div class="quiz-panel">
-      <div class="quiz-setup">
-        <button class="sub-card" id="allQuizButton" type="button">전체 풀기</button>
-        <label>랜덤 문제 수<input id="quizLimitInput" type="number" min="1" max="${cards.length}" value="${limitValue}" /></label>
-        <button class="sub-card" id="randomQuizButton" type="button">랜덤 풀기</button>
-      </div>
-      <div class="quiz-mode-controls">
-        <button class="range ${quizMode === "test" ? "active" : ""}" data-quiz-mode="test" type="button">문제 풀이</button>
-        <button class="range ${quizMode === "study" ? "active" : ""}" data-quiz-mode="study" type="button">학습</button>
-      </div>
-      <div class="quiz-score">
-        <span>진행 ${progress}</span>
-        ${quizMode === "test" ? `<span>정답 ${quizSession.correct}</span><span>오답 ${quizSession.wrong}</span>` : `<span>학습 카드 ${quizSession.cards.length}장</span>`}
-        <span>남은 문제 ${remainingCount}</span>
+      <div class="quiz-topbar">
+        ${renderQuizCategoryPicker(category.id)}
+        <div class="quiz-mode-controls">
+          <button class="range ${quizMode === "test" ? "active" : ""}" data-quiz-mode="test" type="button">문제 풀이</button>
+          <button class="range ${quizMode === "study" ? "active" : ""}" data-quiz-mode="study" type="button">학습</button>
+        </div>
       </div>
       ${isDone ? `
         <div class="quiz-complete">
@@ -655,8 +654,19 @@ function renderQuizDetail(category) {
           </div>
         `}
       `}
+      <div class="quiz-score">
+        <span>진행 ${progress}</span>
+        ${quizMode === "test" ? `<span>정답 ${quizSession.correct}</span><span>오답 ${quizSession.wrong}</span>` : `<span>학습 카드 ${quizSession.cards.length}장</span>`}
+        <span>남은 문제 ${remainingCount}</span>
+      </div>
+      <div class="quiz-setup">
+        <button class="sub-card" id="allQuizButton" type="button">전체 풀기</button>
+        <label>랜덤 문제 수<input id="quizLimitInput" type="number" min="1" max="${cards.length}" value="${limitValue}" /></label>
+        <button class="sub-card" id="randomQuizButton" type="button">랜덤 풀기</button>
+      </div>
     </div>
   `;
+  bindQuizCategoryPicker();
   document.querySelectorAll("[data-quiz-mode]").forEach((button) => {
     button.addEventListener("click", () => {
       quizMode = button.dataset.quizMode;
@@ -691,6 +701,30 @@ function renderQuizDetail(category) {
     render();
   });
   document.querySelector("#nextQuizButton")?.addEventListener("click", nextQuizCard);
+}
+
+function renderQuizCategoryPicker(selectedId) {
+  ensureQuizCards();
+  return `
+    <label class="quiz-category-select">
+      <span>퀴즈 카테고리</span>
+      <select id="quizCategorySelect">
+        ${quizCategoryMeta.map((category) => option(category.id, `${category.title} · ${buildQuizCards(category.id).length}장`, selectedId)).join("")}
+      </select>
+    </label>
+  `;
+}
+
+function bindQuizCategoryPicker() {
+  const select = detail.querySelector("#quizCategorySelect");
+  if (!select) return;
+  select.addEventListener("change", () => {
+    activeId = select.value;
+    quizSession = null;
+    quizAnswerDraft = "";
+    quizStudyFlipped = false;
+    render();
+  });
 }
 
 function renderEditor() {

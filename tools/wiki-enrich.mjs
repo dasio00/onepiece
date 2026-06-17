@@ -78,6 +78,8 @@ const COMMON_ORG_IDS = new Map([
   [204, "red-hair"],
   [271, "straw-hat"]
 ]);
+const resolvedTitleCache = new Map();
+const searchResultCache = new Map();
 
 const args = new Map(process.argv.slice(2).map((arg) => {
   const [key, value = "true"] = arg.replace(/^--/, "").split("=");
@@ -148,10 +150,10 @@ if (!skipWiki) {
       continue;
     }
     const patch = buildWikiPatch(wiki.info);
-    const fruitPatch = buildFruitPatch(entry.id, wiki.info);
-    if (fruitPatch) {
-      patch.devilFruitId = fruitPatch.id;
-      fruitEntries.set(fruitPatch.id, fruitPatch);
+    const fruitPatches = buildFruitPatches(entry.id, wiki.info);
+    if (fruitPatches.length) {
+      patch.devilFruitId = fruitPatches[0].id;
+      fruitPatches.forEach((fruitPatch) => fruitEntries.set(fruitPatch.id, fruitPatch));
     }
     wikiEntries.push({
       id: entry.id,
@@ -293,6 +295,14 @@ function buildSubOrganizationEntries(organizations) {
 }
 
 async function findWikiPageForOfficialCharacter(entry, person) {
+  if (person?.wikiTitle) {
+    try {
+      const info = await getPageInfo(person.wikiTitle);
+      if (isCharacterPageMatch(entry, info)) return { title: person.wikiTitle, info };
+    } catch {
+      // Fall back to the normal candidate search if a saved title no longer resolves.
+    }
+  }
   const directCandidates = unique([
     stripParenthetical(entry.sourceNameEn),
     titleCase(stripParenthetical(entry.sourceNameEn)),
@@ -322,6 +332,7 @@ async function findWikiPageForOfficialCharacter(entry, person) {
 }
 
 async function resolvePageTitle(title) {
+  if (resolvedTitleCache.has(title)) return resolvedTitleCache.get(title);
   const url = new URL(API);
   url.searchParams.set("action", "query");
   url.searchParams.set("titles", title);
@@ -332,10 +343,13 @@ async function resolvePageTitle(title) {
   const json = await res.json();
   const pages = Object.values(json.query?.pages || {});
   const page = pages.find((item) => !item.missing);
-  return page?.title || "";
+  const resolved = page?.title || "";
+  resolvedTitleCache.set(title, resolved);
+  return resolved;
 }
 
 async function searchWiki(query) {
+  if (searchResultCache.has(query)) return searchResultCache.get(query);
   const url = new URL(API);
   url.searchParams.set("action", "query");
   url.searchParams.set("list", "search");
@@ -346,7 +360,9 @@ async function searchWiki(query) {
   const res = await fetch(url);
   if (!res.ok) return [];
   const json = await res.json();
-  return (json.query?.search || []).map((item) => item.title);
+  const results = (json.query?.search || []).map((item) => item.title);
+  searchResultCache.set(query, results);
+  return results;
 }
 
 async function getPageInfo(title) {
@@ -435,31 +451,33 @@ function buildWikiPatch(info) {
   return patch;
 }
 
-function buildFruitPatch(personId, info) {
+function buildFruitPatches(personId, info) {
   const values = info.fieldValues || {};
   const typeValues = Object.entries(values)
     .filter(([label]) => /^Type\s*:?\s*$/i.test(label))
     .flatMap(([, fieldValues]) => fieldValues);
-  const fruitTypeValue = typeValues.find((value) => /Paramecia|Zoan|Logia/i.test(value));
-  if (!fruitTypeValue) return null;
   const englishNames = Object.entries(values)
     .filter(([label]) => /^English Name\s*:?\s*$/i.test(label))
     .flatMap(([, fieldValues]) => fieldValues);
-  const rawName = englishNames[englishNames.length - 1] || "";
-  if (!rawName) return null;
-  const name = rawName.replace(/\s*\([^)]*\)\s*/g, " ").replace(/\s+/g, " ").trim();
-  const id = /Gum-Gum/i.test(rawName) ? "gum-gum" : slugify(name || rawName);
-  return {
-    id,
-    name,
-    type: mapFruitType(fruitTypeValue),
-    zoanSubtype: /Mythical/i.test(fruitTypeValue) ? "mythical" : (/Ancient/i.test(fruitTypeValue) ? "ancient" : ""),
-    model: modelFromFruitName(rawName),
-    awakened: false,
-    currentUserId: personId,
-    previousUserIds: [],
-    description: `${rawName} - ${KO.autoInfo}`
-  };
+  return englishNames
+    .map((rawName, index) => {
+      const fruitTypeValue = typeValues[index] || typeValues.find((value) => /Paramecia|Zoan|Logia/i.test(value)) || "";
+      if (!rawName || !/Paramecia|Zoan|Logia/i.test(fruitTypeValue)) return null;
+      const name = rawName.replace(/\s*\([^)]*\)\s*/g, " ").replace(/\s+/g, " ").trim();
+      const id = /Gum-Gum/i.test(rawName) ? "gum-gum" : slugify(name || rawName);
+      return {
+        id,
+        name,
+        type: mapFruitType(fruitTypeValue),
+        zoanSubtype: /Mythical/i.test(fruitTypeValue) ? "mythical" : (/Ancient/i.test(fruitTypeValue) ? "ancient" : ""),
+        model: modelFromFruitName(rawName),
+        awakened: false,
+        currentUserId: personId,
+        previousUserIds: [],
+        description: `${rawName} - ${KO.autoInfo}`
+      };
+    })
+    .filter(Boolean);
 }
 
 function applyEnrichmentBlock(text, payload) {
@@ -644,8 +662,10 @@ function mapFruitType(value) {
 }
 
 function modelFromFruitName(value) {
-  const match = String(value || "").match(/Model:\s*([^,)]+)/i);
-  return match ? match[1].trim() : "";
+  const text = String(value || "");
+  const colonModel = text.match(/Model:\s*([^;)]+)/i)?.[1];
+  const suffixModel = text.match(/,\s*([^,;()]+?)\s+Model\b/i)?.[1];
+  return String(colonModel || suffixModel || "").replace(/\s*\(.*/g, "").trim();
 }
 
 function faceIdFromPerson(person) {

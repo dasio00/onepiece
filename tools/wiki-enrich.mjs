@@ -79,8 +79,51 @@ const COMMON_ORG_IDS = new Map([
   [271, "straw-hat"]
 ]);
 const WIKI_TITLE_OVERRIDES = new Map([
+  ["wt100-100", "Nako"],
+  ["wt100-109", "Koze and Packy"],
+  ["wt100-222", "Braham"],
+  ["wt100-302", "Gode"],
+  ["wt100-373", "Mozu and Kiwi"],
+  ["wt100-374", "Mozu and Kiwi"],
+  ["wt100-460", "John"],
+  ["wt100-470", "Goo"],
   ["wt100-501", "Trafalgar D. Water Law"],
-  ["wt100-1093", "Nerona Imu"]
+  ["wt100-537", "Perfume Yuda"],
+  ["wt100-587", "Bellett"],
+  ["wt100-684", "Gab"],
+  ["wt100-700", "Lip Doughty"],
+  ["wt100-739", "Medaka Mermaid Quintuplets"],
+  ["wt100-742", "Medaka Mermaid Quintuplets"],
+  ["wt100-743", "Medaka Mermaid Quintuplets"],
+  ["wt100-778", "Smooge"],
+  ["wt100-786", "Run"],
+  ["wt100-818", "Ideo"],
+  ["wt100-966", "Charlotte Dolce and Drag\u00e9e"],
+  ["wt100-1037", "Charlotte Decuplets"],
+  ["wt100-1038", "Charlotte Decuplets"],
+  ["wt100-1039", "Charlotte Decuplets"],
+  ["wt100-1041", "Charlotte Decuplets"],
+  ["wt100-1061", "Gally"],
+  ["wt100-1071", "Matryo Princesses"],
+  ["wt100-1072", "Matryo Princesses"],
+  ["wt100-1073", "Matryo Princesses"],
+  ["wt100-1074", "Matryo Princesses"],
+  ["wt100-1093", "Nerona Imu"],
+  ["wt100-1107", "Kurozumi Tama"],
+  ["wt100-1155", "King"],
+  ["wt100-1156", "Queen"],
+  ["wt100-1403", "Gerotini"],
+  ["wt100-1466", "MMA"],
+  ["wt100-1467", "MMA"],
+  ["wt100-1468", "MMA"],
+  ["wt100-1469", "MMA"],
+  ["wt100-1470", "MMA"],
+  ["wt100-1543", "Sandai Kitetsu"],
+  ["wt100-1547", "Yoru"],
+  ["wt100-1569", "Ace (Sword)"]
+]);
+const DEVIL_FRUIT_SKIP_PERSON_IDS = new Set([
+  "wt100-460"
 ]);
 const resolvedTitleCache = new Map();
 const searchResultCache = new Map();
@@ -163,7 +206,7 @@ if (!skipWiki) {
       continue;
     }
     const patch = buildWikiPatch(wiki.info);
-    const fruitPatches = buildFruitPatches(entry.id, wiki.info);
+    const fruitPatches = DEVIL_FRUIT_SKIP_PERSON_IDS.has(entry.id) ? [] : buildFruitPatches(entry.id, wiki.info);
     if (fruitPatches.length) {
       patch.devilFruitId = fruitPatches[0].id;
       fruitPatches.forEach((fruitPatch) => {
@@ -401,6 +444,7 @@ async function findWikiPageForOfficialCharacter(entry, person) {
   for (const title of unique(searchedCandidates)) {
     try {
       const info = await getPageInfo(title);
+      if (isExactSourceTitle(entry, title)) return { title, info };
       if (isCharacterPageMatch(entry, info)) return { title, info };
     } catch {
       // Some WT100 English labels include aliases that do not map to real wiki pages.
@@ -615,6 +659,12 @@ function safeNameMatch(expected, actual) {
   if (!expected || !actual) return false;
   if (expected === actual) return true;
   return Math.min(expected.length, actual.length) >= 5 && (expected.includes(actual) || actual.includes(expected));
+}
+
+function isExactSourceTitle(entry, title) {
+  const expected = normalizeName(entry.sourceNameEn);
+  const actual = normalizeName(title);
+  return Boolean(expected && actual && expected === actual);
 }
 
 function firstFieldByPrefix(fields, prefix) {

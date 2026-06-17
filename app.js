@@ -416,21 +416,22 @@ function renderPersonDetail(person) {
         <div class="quick-section">
           <div class="quick-section-head">
             <strong>태그</strong>
-            <button class="sub-card mini" type="button" data-quick-edit="tags">수정</button>
           </div>
           <div class="meta">
-            <span class="chip">별명: ${escapeHtml(person.aliases || "미등록")}</span>
-            <span class="chip">조직: ${escapeHtml(organizationName(person.organization))}</span>
-            <span class="chip">세부 조직: ${escapeHtml(subOrganizationName(person.subOrganization))}</span>
-            <span class="chip">직업: ${escapeHtml(person.job)}</span>
-            <span class="chip">연령: ${person.age}세</span>
-            <span class="chip">생일: ${escapeHtml(person.birthday || "미등록")}</span>
-            <span class="chip">키: ${currentHeight(person)}cm</span>
-            <span class="chip">현상금: ${formatBounty(currentBounty(person))}</span>
-            <span class="chip">혈액형: ${escapeHtml(person.bloodType)}</span>
-            <span class="chip">출신지: ${escapeHtml(originRegionName(person.originRegion))} / ${escapeHtml(originCountryName(person.originCountry))}</span>
-            <span class="chip">악마의 열매: ${escapeHtml(fruit?.name || "없음/미등록")}</span>
-            ${renderHakiChips(person.haki)}
+            ${quickChip("aliases", "별명", person.aliases || "미등록")}
+            ${quickChip("organization", "조직", organizationName(person.organization))}
+            ${quickChip("subOrganization", "세부 조직", subOrganizationName(person.subOrganization))}
+            ${quickChip("job", "직업", person.job || "미등록")}
+            ${quickChip("age", "연령", person.age ? `${person.age}세` : "미등록")}
+            ${quickChip("birthday", "생일", person.birthday || "미등록")}
+            ${quickChip("height", "키", currentHeight(person) ? `${currentHeight(person)}cm` : "미등록")}
+            ${quickChip("bounty", "현상금", formatBounty(currentBounty(person)))}
+            ${quickChip("bloodType", "혈액형", person.bloodType || "미등록")}
+            ${quickChip("origin", "출신지", `${originRegionName(person.originRegion)} / ${originCountryName(person.originCountry)}`)}
+            ${quickChip("devilFruitId", "악마의 열매", fruit?.name || "없음/미등록")}
+            ${quickChip("haki", "무장색", person.haki?.armament ? "있음" : "없음")}
+            ${quickChip("haki", "견문색", person.haki?.observation ? "있음" : "없음")}
+            ${quickChip("haki", "패왕색", person.haki?.conqueror ? "있음" : "없음")}
           </div>
           <div class="quick-edit-slot" id="quickEdit-tags"></div>
         </div>
@@ -478,6 +479,14 @@ function renderQuickInfoBlock(kind, title, text) {
   `;
 }
 
+function quickChip(kind, label, value) {
+  return `
+    <button class="chip quick-chip" type="button" data-quick-edit="${escapeAttribute(kind)}">
+      ${escapeHtml(label)}: ${escapeHtml(value)}
+    </button>
+  `;
+}
+
 function renderHistoryBlock(title, entries = [], formatter, quickKind = "") {
   return `
     <div class="info-block quick-section">
@@ -501,7 +510,7 @@ function openPersonQuickEdit(person, kind) {
   detail.querySelectorAll(".quick-edit-slot").forEach((slot) => {
     if (slot.id !== `quickEdit-${kind}`) slot.innerHTML = "";
   });
-  const slot = detail.querySelector(`#quickEdit-${kind}`);
+  const slot = detail.querySelector(`#quickEdit-${kind}`) || detail.querySelector("#quickEdit-tags");
   if (!slot) return;
   slot.innerHTML = renderPersonQuickEditForm(person, kind);
   const form = slot.querySelector("form");
@@ -522,6 +531,92 @@ function openPersonQuickEdit(person, kind) {
 }
 
 function renderPersonQuickEditForm(person, kind) {
+  if (kind === "aliases") {
+    return `
+      <form class="quick-edit-form">
+        ${field("aliases", "별명", person.aliases || "")}
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "job") {
+    return `
+      <form class="quick-edit-form">
+        ${field("job", "직업", person.job || "")}
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "age") {
+    return `
+      <form class="quick-edit-form">
+        ${field("age", "연령", person.age || "", "number")}
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "birthday") {
+    return `
+      <form class="quick-edit-form">
+        ${birthdayField(person.birthday)}
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "organization") {
+    return `
+      <form class="quick-edit-form">
+        <label>조직<select name="organization">${organizationOptions(person.organization)}</select></label>
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "subOrganization") {
+    return `
+      <form class="quick-edit-form">
+        <label>세부 조직<select name="subOrganization">${subOrganizationOptions(person.subOrganization)}</select></label>
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "bloodType") {
+    return `
+      <form class="quick-edit-form">
+        <label>혈액형<select name="bloodType">${data.bloodTypes.map((type) => option(type, type, person.bloodType)).join("")}</select></label>
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "origin") {
+    return `
+      <form class="quick-edit-form">
+        <label>출신 바다/지역<select name="originRegion">${originRegionOptions(person.originRegion)}</select></label>
+        <label>출신 국가<select name="originCountry">${originCountryOptions(person.originCountry)}</select></label>
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "devilFruitId") {
+    return `
+      <form class="quick-edit-form">
+        <label>악마의 열매<select name="devilFruitId"><option value="">없음/미등록</option>${data.devilFruits.map((fruit) => option(fruit.id, fruit.name, person.devilFruitId)).join("")}</select></label>
+        ${quickEditActions()}
+      </form>
+    `;
+  }
+  if (kind === "haki") {
+    return `
+      <form class="quick-edit-form">
+        <fieldset class="check-list compact">
+          <legend>패기</legend>
+          <label><input type="checkbox" name="hakiArmament" ${person.haki?.armament ? "checked" : ""} /> 무장색</label>
+          <label><input type="checkbox" name="hakiObservation" ${person.haki?.observation ? "checked" : ""} /> 견문색</label>
+          <label><input type="checkbox" name="hakiConqueror" ${person.haki?.conqueror ? "checked" : ""} /> 패왕색</label>
+        </fieldset>
+        ${quickEditActions()}
+      </form>
+    `;
+  }
   if (kind === "tags") {
     return `
       <form class="quick-edit-form">
@@ -588,6 +683,26 @@ function quickEditActions() {
 }
 
 function savePersonQuickEdit(person, kind, form) {
+  if (kind === "aliases") person.aliases = value(form, "aliases");
+  if (kind === "job") person.job = value(form, "job");
+  if (kind === "age") person.age = Number(value(form, "age") || 0);
+  if (kind === "birthday") person.birthday = readBirthday(form);
+  if (kind === "organization") person.organization = value(form, "organization");
+  if (kind === "subOrganization") person.subOrganization = value(form, "subOrganization");
+  if (kind === "bloodType") person.bloodType = value(form, "bloodType");
+  if (kind === "origin") {
+    person.originRegion = value(form, "originRegion");
+    person.originCountry = value(form, "originCountry");
+    person.origin = `${originRegionName(person.originRegion)} / ${originCountryName(person.originCountry)}`;
+  }
+  if (kind === "devilFruitId") person.devilFruitId = value(form, "devilFruitId");
+  if (kind === "haki") {
+    person.haki = {
+      armament: form.elements.hakiArmament.checked,
+      observation: form.elements.hakiObservation.checked,
+      conqueror: form.elements.hakiConqueror.checked
+    };
+  }
   if (kind === "tags") {
     Object.assign(person, {
       aliases: value(form, "aliases"),

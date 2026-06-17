@@ -342,6 +342,18 @@ textarea {
   font-size: 13px;
 }
 
+.quick-chip {
+  cursor: pointer;
+  text-align: left;
+}
+
+.quick-chip:hover,
+.quick-chip:focus-visible {
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+  background: var(--soft);
+}
+
 .quick-section {
   display: grid;
   gap: 10px;

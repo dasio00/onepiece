@@ -295,17 +295,20 @@ function buildSubOrganizationEntries(organizations) {
 }
 
 async function findWikiPageForOfficialCharacter(entry, person) {
-  if (person?.wikiTitle) {
+  if (person?.wikiTitle && !String(person.wikiTitle).includes("/")) {
     try {
-      const info = await getPageInfo(person.wikiTitle);
-      if (isCharacterPageMatch(entry, info)) return { title: person.wikiTitle, info };
+      const title = await resolvePageTitle(person.wikiTitle) || person.wikiTitle;
+      const info = await getPageInfo(title);
+      return { title, info };
     } catch {
       // Fall back to the normal candidate search if a saved title no longer resolves.
     }
   }
   const directCandidates = unique([
     stripParenthetical(entry.sourceNameEn),
+    ...parentheticalValues(entry.sourceNameEn),
     titleCase(stripParenthetical(entry.sourceNameEn)),
+    ...parentheticalValues(entry.sourceNameEn).map(titleCase),
     entry.sourceNameEn,
     titleCase(entry.sourceNameEn),
     person?.name
@@ -336,6 +339,7 @@ async function resolvePageTitle(title) {
   const url = new URL(API);
   url.searchParams.set("action", "query");
   url.searchParams.set("titles", title);
+  url.searchParams.set("redirects", "1");
   url.searchParams.set("format", "json");
   url.searchParams.set("origin", "*");
   const res = await fetch(url);
@@ -360,7 +364,9 @@ async function searchWiki(query) {
   const res = await fetch(url);
   if (!res.ok) return [];
   const json = await res.json();
-  const results = (json.query?.search || []).map((item) => item.title);
+  const results = (json.query?.search || [])
+    .map((item) => item.title)
+    .sort((a, b) => Number(a.includes("/")) - Number(b.includes("/")));
   searchResultCache.set(query, results);
   return results;
 }
@@ -518,6 +524,7 @@ ${END_MARKER}
 }
 
 function isCharacterPageMatch(entry, info) {
+  if (!Object.keys(info.fields || {}).length) return false;
   const expectedJa = normalizeJapanese(entry.sourceNameJa);
   const expectedEn = normalizeName(entry.sourceNameEn);
   const officialEn = normalizeName(firstFieldByPrefix(info.fields, "Official English Name"));
@@ -538,7 +545,7 @@ function normalizeLabel(value) {
 }
 
 function normalizeOfficialEnglishName(value) {
-  return titleCase(value.replace(/\s+/g, " ").trim());
+  return titleCase(value.replace(/([A-Za-z])\.([A-Za-z])/g, "$1 $2").replace(/\s+/g, " ").trim());
 }
 
 function titleCase(value) {
@@ -550,6 +557,12 @@ function titleCase(value) {
 
 function stripParenthetical(value) {
   return String(value || "").replace(/\s*\([^)]*\)\s*/g, " ").replace(/\s+/g, " ").trim();
+}
+
+function parentheticalValues(value) {
+  return [...String(value || "").matchAll(/\(([^)]+)\)/g)]
+    .map((match) => match[1].trim())
+    .filter(Boolean);
 }
 
 function cleanHtml(html) {

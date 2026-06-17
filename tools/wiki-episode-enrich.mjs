@@ -88,11 +88,20 @@ async function fetchWikiParse(page, prop) {
   url.searchParams.set("prop", prop);
   url.searchParams.set("format", "json");
   url.searchParams.set("origin", "*");
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Wiki request failed ${res.status}: ${page}`);
-  const json = await res.json();
-  if (json.error) throw new Error(`Wiki parse error ${page}: ${json.error.info}`);
-  return prop === "text" ? json.parse.text["*"] : json.parse.wikitext["*"];
+  let lastError = "";
+  for (let attempt = 1; attempt <= 4; attempt += 1) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`Wiki request failed ${res.status}: ${page}`);
+      const json = await res.json();
+      if (json.error) throw new Error(`Wiki parse error ${page}: ${json.error.info}`);
+      return prop === "text" ? json.parse.text["*"] : json.parse.wikitext["*"];
+    } catch (error) {
+      lastError = error.message || String(error);
+      if (attempt < 4) await sleep(800 * attempt);
+    }
+  }
+  throw new Error(lastError);
 }
 
 function parseChapter(pageTitle, source, personMap, techniqueMap) {
@@ -306,6 +315,10 @@ function safeName(title) {
 
 function unique(list) {
   return [...new Set(list)];
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 function escapeRegExp(value) {

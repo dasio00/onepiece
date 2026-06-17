@@ -49174,6 +49174,8 @@ window.onePieceData = {
 
 
 
+
+
 /* WIKI_AUTO_ENRICH_START */
 (() => {
   const data = window.onePieceData;
@@ -49608,11 +49610,11 @@ window.onePieceData = {
       "id": "wt100-13",
       "faceId": 20,
       "sourceNameJa": "ベン・ベックマン",
-      "sourceNameEn": "Benn.Beckman",
+      "sourceNameEn": "Benn Beckman",
       "patch": {
         "sourceFaceId": 20,
         "sourceNameJa": "ベン・ベックマン",
-        "sourceNameEn": "Benn.Beckman",
+        "sourceNameEn": "Benn Beckman",
         "sourceSearch": [
           "ベン・ベックマン",
           "benn.beckman",
@@ -51102,11 +51104,11 @@ window.onePieceData = {
       "id": "wt100-78",
       "faceId": 85,
       "sourceNameJa": "ジュラキュール・ミホーク",
-      "sourceNameEn": "Dracule.Mihawk",
+      "sourceNameEn": "Dracule Mihawk",
       "patch": {
         "sourceFaceId": 85,
         "sourceNameJa": "ジュラキュール・ミホーク",
-        "sourceNameEn": "Dracule.Mihawk",
+        "sourceNameEn": "Dracule Mihawk",
         "sourceSearch": [
           "ジュラキュール・ミホーク",
           "dracule.mihawk",
@@ -52060,11 +52062,11 @@ window.onePieceData = {
       "id": "wt100-119",
       "faceId": 525,
       "sourceNameJa": "シルバーズ・レイリー",
-      "sourceNameEn": "Silvers.Rayleigh",
+      "sourceNameEn": "Silvers Rayleigh",
       "patch": {
         "sourceFaceId": 525,
         "sourceNameJa": "シルバーズ・レイリー",
-        "sourceNameEn": "Silvers.Rayleigh",
+        "sourceNameEn": "Silvers Rayleigh",
         "sourceSearch": [
           "シルバーズ・レイリー",
           "silvers.rayleigh",
@@ -52141,11 +52143,11 @@ window.onePieceData = {
       "id": "wt100-130",
       "faceId": 6,
       "sourceNameJa": "トニートニー・チョッパー",
-      "sourceNameEn": "Tony Tony.Chopper",
+      "sourceNameEn": "Tony Tony Chopper",
       "patch": {
         "sourceFaceId": 6,
         "sourceNameJa": "トニートニー・チョッパー",
-        "sourceNameEn": "Tony Tony.Chopper",
+        "sourceNameEn": "Tony Tony Chopper",
         "sourceSearch": [
           "トニートニー・チョッパー",
           "tonytony.chopper",
@@ -52591,11 +52593,11 @@ window.onePieceData = {
       "id": "wt100-147",
       "faceId": 139,
       "sourceNameJa": "ミキータ（ミス・バレンタイン）",
-      "sourceNameEn": "Mikita (Miss.Valentine)",
+      "sourceNameEn": "Mikita (Miss Valentine)",
       "patch": {
         "sourceFaceId": 139,
         "sourceNameJa": "ミキータ（ミス・バレンタイン）",
-        "sourceNameEn": "Mikita (Miss.Valentine)",
+        "sourceNameEn": "Mikita (Miss Valentine)",
         "sourceSearch": [
           "ミキータ(ミス・バレンタイン)",
           "mikita(miss.valentine)",
@@ -52753,11 +52755,11 @@ window.onePieceData = {
       "id": "wt100-154",
       "faceId": 146,
       "sourceNameJa": "マリアンヌ（ミス・ゴールデンウィーク）",
-      "sourceNameEn": "Marianne (Miss.Golden Week)",
+      "sourceNameEn": "Marianne (Miss Golden Week)",
       "patch": {
         "sourceFaceId": 146,
         "sourceNameJa": "マリアンヌ（ミス・ゴールデンウィーク）",
-        "sourceNameEn": "Marianne (Miss.Golden Week)",
+        "sourceNameEn": "Marianne (Miss Golden Week)",
         "sourceSearch": [
           "マリアンヌ(ミス・ゴールデンウィーク)",
           "marianne(miss.goldenweek)",
@@ -53442,11 +53444,11 @@ window.onePieceData = {
       "id": "wt100-184",
       "faceId": 177,
       "sourceNameJa": "ドロフィー（ミス・メリークリスマス）",
-      "sourceNameEn": "Drophy (Miss.Merry Christmas)",
+      "sourceNameEn": "Drophy (Miss Merry Christmas)",
       "patch": {
         "sourceFaceId": 177,
         "sourceNameJa": "ドロフィー（ミス・メリークリスマス）",
-        "sourceNameEn": "Drophy (Miss.Merry Christmas)",
+        "sourceNameEn": "Drophy (Miss Merry Christmas)",
         "sourceSearch": [
           "ドロフィー(ミス・メリークリスマス)",
           "drophy(miss.merrychristmas)",
@@ -53491,11 +53493,11 @@ window.onePieceData = {
       "id": "wt100-186",
       "faceId": 179,
       "sourceNameJa": "ザラ（ミス・ダブルフィンガー）",
-      "sourceNameEn": "Zala (Miss.Doublefinger)",
+      "sourceNameEn": "Zala (Miss Doublefinger)",
       "patch": {
         "sourceFaceId": 179,
         "sourceNameJa": "ザラ（ミス・ダブルフィンガー）",
-        "sourceNameEn": "Zala (Miss.Doublefinger)",
+        "sourceNameEn": "Zala (Miss Doublefinger)",
         "sourceSearch": [
           "ザラ(ミス・ダブルフィンガー)",
           "zala(miss.doublefinger)",
@@ -55389,11 +55391,11 @@ window.onePieceData = {
       "id": "wt100-267",
       "faceId": 263,
       "sourceNameJa": "バーソロミュー・くま",
-      "sourceNameEn": "Bartholomew.Kuma",
+      "sourceNameEn": "Bartholomew Kuma",
       "patch": {
         "sourceFaceId": 263,
         "sourceNameJa": "バーソロミュー・くま",
-        "sourceNameEn": "Bartholomew.Kuma",
+        "sourceNameEn": "Bartholomew Kuma",
         "sourceSearch": [
           "バーソロミュー・クマ",
           "bartholomew.kuma",
@@ -55526,11 +55528,11 @@ window.onePieceData = {
       "id": "wt100-272",
       "faceId": 268,
       "sourceNameJa": "ジーザス・バージェス",
-      "sourceNameEn": "Jesus.Burgess",
+      "sourceNameEn": "Jesus Burgess",
       "patch": {
         "sourceFaceId": 268,
         "sourceNameJa": "ジーザス・バージェス",
-        "sourceNameEn": "Jesus.Burgess",
+        "sourceNameEn": "Jesus Burgess",
         "sourceSearch": [
           "ジーザス・バージェス",
           "jesus.burgess",
@@ -55552,11 +55554,11 @@ window.onePieceData = {
       "id": "wt100-273",
       "faceId": 269,
       "sourceNameJa": "ヴァン・オーガー",
-      "sourceNameEn": "Van.Auger",
+      "sourceNameEn": "Van Auger",
       "patch": {
         "sourceFaceId": 269,
         "sourceNameJa": "ヴァン・オーガー",
-        "sourceNameEn": "Van.Auger",
+        "sourceNameEn": "Van Auger",
         "sourceSearch": [
           "ヴァン・オーガー",
           "van.auger",
@@ -55683,11 +55685,11 @@ window.onePieceData = {
       "id": "wt100-278",
       "faceId": 274,
       "sourceNameJa": "ガン・フォール",
-      "sourceNameEn": "Gan.Fall",
+      "sourceNameEn": "Gan Fall",
       "patch": {
         "sourceFaceId": 274,
         "sourceNameJa": "ガン・フォール",
-        "sourceNameEn": "Gan.Fall",
+        "sourceNameEn": "Gan Fall",
         "sourceSearch": [
           "ガン・フォール",
           "gan.fall",
@@ -60491,11 +60493,11 @@ window.onePieceData = {
       "id": "wt100-493",
       "faceId": 504,
       "sourceNameJa": "カポネ・ベッジ",
-      "sourceNameEn": "Capone.Bege",
+      "sourceNameEn": "Capone Bege",
       "patch": {
         "sourceFaceId": 504,
         "sourceNameJa": "カポネ・ベッジ",
-        "sourceNameEn": "Capone.Bege",
+        "sourceNameEn": "Capone Bege",
         "sourceSearch": [
           "カポネ・ベッジ",
           "capone.bege",
@@ -60520,11 +60522,11 @@ window.onePieceData = {
       "id": "wt100-494",
       "faceId": 505,
       "sourceNameJa": "ジュエリー・ボニー",
-      "sourceNameEn": "Jewelry.Bonney",
+      "sourceNameEn": "Jewelry Bonney",
       "patch": {
         "sourceFaceId": 505,
         "sourceNameJa": "ジュエリー・ボニー",
-        "sourceNameEn": "Jewelry.Bonney",
+        "sourceNameEn": "Jewelry Bonney",
         "sourceSearch": [
           "ジュエリー・ボニー",
           "jewelry.bonney",
@@ -60548,11 +60550,11 @@ window.onePieceData = {
       "id": "wt100-495",
       "faceId": 506,
       "sourceNameJa": "バジル・ホーキンス",
-      "sourceNameEn": "Basil.Hawkins",
+      "sourceNameEn": "Basil Hawkins",
       "patch": {
         "sourceFaceId": 506,
         "sourceNameJa": "バジル・ホーキンス",
-        "sourceNameEn": "Basil.Hawkins",
+        "sourceNameEn": "Basil Hawkins",
         "sourceSearch": [
           "バジル・ホーキンス",
           "basil.hawkins",
@@ -60576,11 +60578,11 @@ window.onePieceData = {
       "id": "wt100-496",
       "faceId": 507,
       "sourceNameJa": "ユースタス・キッド",
-      "sourceNameEn": "Eustass.Kid",
+      "sourceNameEn": "Eustass Kid",
       "patch": {
         "sourceFaceId": 507,
         "sourceNameJa": "ユースタス・キッド",
-        "sourceNameEn": "Eustass.Kid",
+        "sourceNameEn": "Eustass Kid",
         "sourceSearch": [
           "ユースタス・キッド",
           "eustass.kid",
@@ -60606,11 +60608,11 @@ window.onePieceData = {
       "id": "wt100-497",
       "faceId": 508,
       "sourceNameJa": "スクラッチメン・アプー",
-      "sourceNameEn": "Scratchmen.Apoo",
+      "sourceNameEn": "Scratchmen Apoo",
       "patch": {
         "sourceFaceId": 508,
         "sourceNameJa": "スクラッチメン・アプー",
-        "sourceNameEn": "Scratchmen.Apoo",
+        "sourceNameEn": "Scratchmen Apoo",
         "sourceSearch": [
           "スクラッチメン・アプー",
           "scratchmen.apoo",
@@ -60634,11 +60636,11 @@ window.onePieceData = {
       "id": "wt100-498",
       "faceId": 509,
       "sourceNameJa": "X・ドレーク",
-      "sourceNameEn": "X.Drake",
+      "sourceNameEn": "X Drake",
       "patch": {
         "sourceFaceId": 509,
         "sourceNameJa": "X・ドレーク",
-        "sourceNameEn": "X.Drake",
+        "sourceNameEn": "X Drake",
         "sourceSearch": [
           "x・ドレーク",
           "x.drake",
@@ -61693,11 +61695,11 @@ window.onePieceData = {
       "id": "wt100-543",
       "faceId": 551,
       "sourceNameJa": "ボア・ハンコック",
-      "sourceNameEn": "Boa.Hancock",
+      "sourceNameEn": "Boa Hancock",
       "patch": {
         "sourceFaceId": 551,
         "sourceNameJa": "ボア・ハンコック",
-        "sourceNameEn": "Boa.Hancock",
+        "sourceNameEn": "Boa Hancock",
         "sourceSearch": [
           "ボア・ハンコック",
           "boa.hancock",
@@ -61724,11 +61726,11 @@ window.onePieceData = {
       "id": "wt100-544",
       "faceId": 552,
       "sourceNameJa": "ボア・サンダーソニア",
-      "sourceNameEn": "Boa.Sandersonia",
+      "sourceNameEn": "Boa Sandersonia",
       "patch": {
         "sourceFaceId": 552,
         "sourceNameJa": "ボア・サンダーソニア",
-        "sourceNameEn": "Boa.Sandersonia",
+        "sourceNameEn": "Boa Sandersonia",
         "sourceSearch": [
           "ボア・サンダーソニア",
           "boa.sandersonia",
@@ -61750,11 +61752,11 @@ window.onePieceData = {
       "id": "wt100-545",
       "faceId": 553,
       "sourceNameJa": "ボア・マリーゴールド",
-      "sourceNameEn": "Boa.Marigold",
+      "sourceNameEn": "Boa Marigold",
       "patch": {
         "sourceFaceId": 553,
         "sourceNameJa": "ボア・マリーゴールド",
-        "sourceNameEn": "Boa.Marigold",
+        "sourceNameEn": "Boa Marigold",
         "sourceSearch": [
           "ボア・マリーゴールド",
           "boa.marigold",
@@ -62425,11 +62427,11 @@ window.onePieceData = {
       "id": "wt100-575",
       "faceId": 583,
       "sourceNameJa": "エンポリオ・イワンコフ",
-      "sourceNameEn": "Emporio.Ivankov",
+      "sourceNameEn": "Emporio Ivankov",
       "patch": {
         "sourceFaceId": 583,
         "sourceNameJa": "エンポリオ・イワンコフ",
-        "sourceNameEn": "Emporio.Ivankov",
+        "sourceNameEn": "Emporio Ivankov",
         "sourceSearch": [
           "エンポリオ・イワンコフ",
           "emporio.ivankov",
@@ -63376,11 +63378,11 @@ window.onePieceData = {
       "id": "wt100-619",
       "faceId": 628,
       "sourceNameJa": "A・O",
-      "sourceNameEn": "A.O.",
+      "sourceNameEn": "A O.",
       "patch": {
         "sourceFaceId": 628,
         "sourceNameJa": "A・O",
-        "sourceNameEn": "A.O.",
+        "sourceNameEn": "A O.",
         "sourceSearch": [
           "a・o",
           "a.o.",
@@ -63695,11 +63697,11 @@ window.onePieceData = {
       "id": "wt100-634",
       "faceId": 643,
       "sourceNameJa": "サンファン・ウルフ",
-      "sourceNameEn": "Sanjuan.Wolf",
+      "sourceNameEn": "Sanjuan Wolf",
       "patch": {
         "sourceFaceId": 643,
         "sourceNameJa": "サンファン・ウルフ",
-        "sourceNameEn": "Sanjuan.Wolf",
+        "sourceNameEn": "Sanjuan Wolf",
         "sourceSearch": [
           "サンファン・ウルフ",
           "sanjuan.wolf",
@@ -63718,11 +63720,11 @@ window.onePieceData = {
       "id": "wt100-635",
       "faceId": 644,
       "sourceNameJa": "バスコ・ショット",
-      "sourceNameEn": "Vasco.Shot",
+      "sourceNameEn": "Vasco Shot",
       "patch": {
         "sourceFaceId": 644,
         "sourceNameJa": "バスコ・ショット",
-        "sourceNameEn": "Vasco.Shot",
+        "sourceNameEn": "Vasco Shot",
         "sourceSearch": [
           "バスコ・ショット",
           "vasco.shot",
@@ -63741,11 +63743,11 @@ window.onePieceData = {
       "id": "wt100-636",
       "faceId": 645,
       "sourceNameJa": "カタリーナ・デボン",
-      "sourceNameEn": "Catarina.Devon",
+      "sourceNameEn": "Catarina Devon",
       "patch": {
         "sourceFaceId": 645,
         "sourceNameJa": "カタリーナ・デボン",
-        "sourceNameEn": "Catarina.Devon",
+        "sourceNameEn": "Catarina Devon",
         "sourceSearch": [
           "カタリーナ・デボン",
           "catarina.devon",
@@ -63765,11 +63767,11 @@ window.onePieceData = {
       "id": "wt100-637",
       "faceId": 646,
       "sourceNameJa": "アバロ・ピサロ",
-      "sourceNameEn": "Avalo.Pizarro",
+      "sourceNameEn": "Avalo Pizarro",
       "patch": {
         "sourceFaceId": 646,
         "sourceNameJa": "アバロ・ピサロ",
-        "sourceNameEn": "Avalo.Pizarro",
+        "sourceNameEn": "Avalo Pizarro",
         "sourceSearch": [
           "アバロ・ピサロ",
           "avalo.pizarro",
@@ -63878,11 +63880,11 @@ window.onePieceData = {
       "id": "wt100-642",
       "faceId": 651,
       "sourceNameJa": "カーリー・ダダン",
-      "sourceNameEn": "Curly.Dadan",
+      "sourceNameEn": "Curly Dadan",
       "patch": {
         "sourceFaceId": 651,
         "sourceNameJa": "カーリー・ダダン",
-        "sourceNameEn": "Curly.Dadan",
+        "sourceNameEn": "Curly Dadan",
         "sourceSearch": [
           "カーリー・ダダン",
           "curly.dadan",
@@ -66802,11 +66804,11 @@ window.onePieceData = {
       "id": "wt100-775",
       "faceId": 788,
       "sourceNameJa": "シーザー・クラウン",
-      "sourceNameEn": "Caesar.Clown",
+      "sourceNameEn": "Caesar Clown",
       "patch": {
         "sourceFaceId": 788,
         "sourceNameJa": "シーザー・クラウン",
-        "sourceNameEn": "Caesar.Clown",
+        "sourceNameEn": "Caesar Clown",
         "sourceSearch": [
           "シーザー・クラウン",
           "caesar.clown",
@@ -68670,11 +68672,11 @@ window.onePieceData = {
       "id": "wt100-859",
       "faceId": 874,
       "sourceNameJa": "セニョール・ピンク",
-      "sourceNameEn": "Senor.Pink",
+      "sourceNameEn": "Senor Pink",
       "patch": {
         "sourceFaceId": 874,
         "sourceNameJa": "セニョール・ピンク",
-        "sourceNameEn": "Senor.Pink",
+        "sourceNameEn": "Senor Pink",
         "sourceSearch": [
           "セニョール・ピンク",
           "senor.pink",
@@ -84699,7 +84701,7 @@ window.onePieceData = {
     {
       "id": "wt100-13",
       "sourceNameJa": "ベン・ベックマン",
-      "sourceNameEn": "Benn.Beckman",
+      "sourceNameEn": "Benn Beckman",
       "wikiTitle": "Benn Beckman",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Benn_Beckman",
       "patch": {
@@ -84809,11 +84811,17 @@ window.onePieceData = {
       "id": "wt100-17",
       "sourceNameJa": "ギョルさん",
       "sourceNameEn": "Gyoll",
-      "wikiTitle": "Gyoll",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Gyoll",
+      "wikiTitle": "Gyoru",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Gyoru",
       "patch": {
-        "wikiTitle": "Gyoll",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Gyoll"
+        "wikiTitle": "Gyoru",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Gyoru",
+        "job": "Fishmonger",
+        "birthday": "3월 7일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "description": "Gyoru - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -84854,11 +84862,17 @@ window.onePieceData = {
       "id": "wt100-20",
       "sourceNameJa": "近海の主（ゴア王国）",
       "sourceNameEn": "Local Sea Monster (Goa Kingdom)",
-      "wikiTitle": "Local Sea Monster (Goa Kingdom)",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Local_Sea_Monster_(Goa_Kingdom)",
+      "wikiTitle": "Lord of the Coast",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Lord_of_the_Coast",
       "patch": {
-        "wikiTitle": "Local Sea Monster (Goa Kingdom)",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Local_Sea_Monster_(Goa_Kingdom)"
+        "wikiTitle": "Lord of the Coast",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Lord_of_the_Coast",
+        "job": "Foosha Village 's local Sea King",
+        "birthday": "9월 14일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "description": "Lord of the Coast - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -85117,33 +85131,77 @@ window.onePieceData = {
       "id": "wt100-32",
       "sourceNameJa": "ウッカリー",
       "sourceNameEn": "Carelesso (Ukkari)",
-      "wikiTitle": "Carelesso",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Carelesso",
+      "wikiTitle": "Ukkari",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Ukkari",
       "patch": {
-        "wikiTitle": "Carelesso",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Carelesso"
+        "wikiTitle": "Ukkari",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Ukkari",
+        "job": "Marine Seaman Recruit",
+        "birthday": "2월 17일",
+        "bounty": 100000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000
+          }
+        ],
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "organization": "navy",
+        "description": "Ukkari - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-33",
       "sourceNameJa": "くいな",
       "sourceNameEn": "Kuina",
-      "wikiTitle": "Kuina",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Kuina",
+      "wikiTitle": "Shimotsuki Kuina",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Shimotsuki_Kuina",
       "patch": {
-        "wikiTitle": "Kuina",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Kuina"
+        "wikiTitle": "Shimotsuki Kuina",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Shimotsuki_Kuina",
+        "job": "Trainee Swordsman",
+        "age": 11,
+        "birthday": "9월 17일",
+        "heightCm": 150,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 150
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "east-blue",
+        "originCountry": "shimotsuki-village",
+        "origin": "이스트 블루 / 시모츠키 마을",
+        "description": "Shimotsuki Kuina - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-34",
       "sourceNameJa": "コウシロウ",
       "sourceNameEn": "Koushirou",
-      "wikiTitle": "Koushirou",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Koushirou",
+      "wikiTitle": "Shimotsuki Koushirou",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Shimotsuki_Koushirou",
       "patch": {
-        "wikiTitle": "Koushirou",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Koushirou"
+        "wikiTitle": "Shimotsuki Koushirou",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Shimotsuki_Koushirou",
+        "job": "Dojo Master",
+        "age": 51,
+        "birthday": "5월 4일",
+        "heightCm": 184,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 184
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "description": "Shimotsuki Koushirou - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -85209,11 +85267,11 @@ window.onePieceData = {
       "id": "wt100-38",
       "sourceNameJa": "怪力ドミンゴス",
       "sourceNameEn": "Almighty Domingos",
-      "wikiTitle": "Almighty Domingos",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Almighty_Domingos",
+      "wikiTitle": "Buggy Pirates",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Buggy_Pirates",
       "patch": {
-        "wikiTitle": "Almighty Domingos",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Almighty_Domingos"
+        "wikiTitle": "Buggy Pirates",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Buggy_Pirates"
       }
     },
     {
@@ -85268,11 +85326,11 @@ window.onePieceData = {
       "id": "wt100-41",
       "sourceNameJa": "軽業フワーズ",
       "sourceNameEn": "Nimble Fuwars",
-      "wikiTitle": "Nimble Fuwars",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Nimble_Fuwars",
+      "wikiTitle": "Buggy Pirates",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Buggy_Pirates",
       "patch": {
-        "wikiTitle": "Nimble Fuwars",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Nimble_Fuwars"
+        "wikiTitle": "Buggy Pirates",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Buggy_Pirates"
       }
     },
     {
@@ -85322,11 +85380,25 @@ window.onePieceData = {
       "id": "wt100-44",
       "sourceNameJa": "シュシュ",
       "sourceNameEn": "Shushu",
-      "wikiTitle": "Shushu",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Shushu",
+      "wikiTitle": "Chouchou",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Chouchou",
       "patch": {
-        "wikiTitle": "Shushu",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Shushu"
+        "wikiTitle": "Chouchou",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Chouchou",
+        "job": "Pet",
+        "age": 14,
+        "birthday": "11월 22일",
+        "heightCm": 40,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 40
+          }
+        ],
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "description": "Chouchou - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -85421,11 +85493,16 @@ window.onePieceData = {
       "id": "wt100-49",
       "sourceNameJa": "ココックス",
       "sourceNameEn": "Buckox",
-      "wikiTitle": "Buckox",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Buckox",
+      "wikiTitle": "Cocox",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Cocox",
       "patch": {
-        "wikiTitle": "Buckox",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Buckox"
+        "wikiTitle": "Cocox",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Cocox",
+        "birthday": "2월 19일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "description": "Cocox - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -85501,22 +85578,54 @@ window.onePieceData = {
       "id": "wt100-53",
       "sourceNameJa": "ピーマン",
       "sourceNameEn": "Pepper",
-      "wikiTitle": "Pepper",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Pepper",
+      "wikiTitle": "Piiman",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Piiman",
       "patch": {
-        "wikiTitle": "Pepper",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Pepper"
+        "wikiTitle": "Piiman",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Piiman",
+        "job": "Pretend Pirate (former)",
+        "age": 11,
+        "birthday": "4월 9일",
+        "heightCm": 120,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 120
+          }
+        ],
+        "bloodType": "XF",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "organization": "pirates",
+        "description": "Piiman - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-54",
       "sourceNameJa": "たまねぎ",
       "sourceNameEn": "Onion",
-      "wikiTitle": "Onion",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Onion",
+      "wikiTitle": "Tamanegi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tamanegi",
       "patch": {
-        "wikiTitle": "Onion",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Onion"
+        "wikiTitle": "Tamanegi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tamanegi",
+        "job": "Pretend Pirate (formerly)",
+        "age": 11,
+        "birthday": "4월 10일",
+        "heightCm": 124,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 124
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "organization": "pirates",
+        "description": "Tamanegi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -85584,11 +85693,17 @@ window.onePieceData = {
       "id": "wt100-57",
       "sourceNameJa": "門番",
       "sourceNameEn": "Mansion Guards",
-      "wikiTitle": "Mansion Guards",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Mansion_Guards",
+      "wikiTitle": "Mansion's Guards",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mansion's_Guards",
       "patch": {
-        "wikiTitle": "Mansion Guards",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Mansion_Guards"
+        "wikiTitle": "Mansion's Guards",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mansion's_Guards",
+        "job": "Kaya's security guards",
+        "birthday": "7월 1일",
+        "originRegion": "east-blue",
+        "originCountry": "syrup-village",
+        "origin": "이스트 블루 / 시럽 마을",
+        "description": "Mansion's Guards - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -85717,11 +85832,18 @@ window.onePieceData = {
       "id": "wt100-62",
       "sourceNameJa": "ヌギレ・ヤイヌ",
       "sourceNameEn": "Snott Mee",
-      "wikiTitle": "Snott Mee",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Snott_Mee",
+      "wikiTitle": "Nugire Yainu",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Nugire_Yainu",
       "patch": {
-        "wikiTitle": "Snott Mee",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Snott_Mee"
+        "wikiTitle": "Nugire Yainu",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Nugire_Yainu",
+        "job": "Shipwright",
+        "birthday": "7월 18일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "organization": "pirates",
+        "description": "Nugire Yainu - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -85830,22 +85952,30 @@ window.onePieceData = {
       "id": "wt100-67",
       "sourceNameJa": "モッツェルおじさん",
       "sourceNameEn": "Mr. Motzel",
-      "wikiTitle": "Mr. Motzel",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Motzel",
+      "wikiTitle": "Motzel",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Motzel",
       "patch": {
-        "wikiTitle": "Mr. Motzel",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Motzel"
+        "wikiTitle": "Motzel",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Motzel",
+        "birthday": "9월 7일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루"
       }
     },
     {
       "id": "wt100-68",
       "sourceNameJa": "ムーディ",
       "sourceNameEn": "Moody",
-      "wikiTitle": "Moody",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Moody",
+      "wikiTitle": "Moodie",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Moodie",
       "patch": {
-        "wikiTitle": "Moody",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Moody"
+        "wikiTitle": "Moodie",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Moodie",
+        "birthday": "11월 17일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루"
       }
     },
     {
@@ -85880,11 +86010,15 @@ window.onePieceData = {
       "id": "wt100-70",
       "sourceNameJa": "バッチー",
       "sourceNameEn": "Bacchy",
-      "wikiTitle": "Bacchy",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Bacchy",
+      "wikiTitle": "Batchee",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Batchee",
       "patch": {
-        "wikiTitle": "Bacchy",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Bacchy"
+        "wikiTitle": "Batchee",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Batchee",
+        "birthday": "7월 1일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루"
       }
     },
     {
@@ -86079,7 +86213,7 @@ window.onePieceData = {
     {
       "id": "wt100-78",
       "sourceNameJa": "ジュラキュール・ミホーク",
-      "sourceNameEn": "Dracule.Mihawk",
+      "sourceNameEn": "Dracule Mihawk",
       "wikiTitle": "Dracule Mihawk",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Dracule_Mihawk",
       "patch": {
@@ -86175,11 +86309,18 @@ window.onePieceData = {
       "id": "wt100-82",
       "sourceNameJa": "カギッコ",
       "sourceNameEn": "Keygan",
-      "wikiTitle": "Keygan",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Keygan",
+      "wikiTitle": "Kagikko",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kagikko",
       "patch": {
-        "wikiTitle": "Keygan",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Keygan"
+        "wikiTitle": "Kagikko",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kagikko",
+        "job": "Pirate",
+        "birthday": "10월 27일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "organization": "pirates",
+        "description": "Kagikko - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -86517,11 +86658,18 @@ window.onePieceData = {
       "id": "wt100-96",
       "sourceNameJa": "シオヤキ",
       "sourceNameEn": "Saltgrill",
-      "wikiTitle": "Saltgrill",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Saltgrill",
+      "wikiTitle": "Shioyaki",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Shioyaki",
       "patch": {
-        "wikiTitle": "Saltgrill",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Saltgrill"
+        "wikiTitle": "Shioyaki",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Shioyaki",
+        "job": "Pirate",
+        "birthday": "3월 27일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Shioyaki - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -86546,55 +86694,95 @@ window.onePieceData = {
       "id": "wt100-98",
       "sourceNameJa": "プリンプリン",
       "sourceNameEn": "Purinpurin",
-      "wikiTitle": "Purinpurin",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Purinpurin",
+      "wikiTitle": "Pudding Pudding",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Pudding_Pudding",
       "patch": {
-        "wikiTitle": "Purinpurin",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Purinpurin"
+        "wikiTitle": "Pudding Pudding",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Pudding_Pudding",
+        "job": "Marine Commodore",
+        "birthday": "5월 16일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "organization": "navy",
+        "description": "Pudding Pudding - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-99",
       "sourceNameJa": "ベルメール",
       "sourceNameEn": "Bellemere",
-      "wikiTitle": "Bellemere",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Bellemere",
+      "wikiTitle": "Bell-mère",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Bell-m%C3%A8re",
       "patch": {
-        "wikiTitle": "Bellemere",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Bellemere"
+        "wikiTitle": "Bell-mère",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Bell-m%C3%A8re",
+        "job": "Mikan Farmer",
+        "age": 30,
+        "birthday": "12월 3일",
+        "heightCm": 186,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 186
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "east-blue",
+        "originCountry": "conomi-islands",
+        "origin": "이스트 블루 / 코노미 제도",
+        "organization": "navy",
+        "description": "Bell-mère - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-100",
       "sourceNameJa": "Dr.ナコー",
       "sourceNameEn": "Dr. Nako",
-      "wikiTitle": "Dr. Nako",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Nako",
+      "wikiTitle": "Nako",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Nako",
       "patch": {
-        "wikiTitle": "Dr. Nako",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Nako"
+        "wikiTitle": "Nako",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Nako",
+        "job": "Doctor",
+        "birthday": "7월 1일",
+        "originRegion": "east-blue",
+        "originCountry": "conomi-islands",
+        "origin": "이스트 블루 / 코노미 제도",
+        "description": "Nako - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-101",
       "sourceNameJa": "ダディーディー",
       "sourceNameEn": "Dadeedee",
-      "wikiTitle": "Dadeedee",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Dadeedee",
+      "wikiTitle": "Daddy Dee",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Daddy_Dee",
       "patch": {
-        "wikiTitle": "Dadeedee",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Dadeedee"
+        "wikiTitle": "Daddy Dee",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Daddy_Dee",
+        "job": "Housefather",
+        "originRegion": "east-blue",
+        "originCountry": "conomi-islands",
+        "origin": "이스트 블루 / 코노미 제도",
+        "description": "Daddy Dee - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-102",
       "sourceNameJa": "マミーミー",
       "sourceNameEn": "Mameemee",
-      "wikiTitle": "Mameemee",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Mameemee",
+      "wikiTitle": "Mummy Mee",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mummy_Mee",
       "patch": {
-        "wikiTitle": "Mameemee",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Mameemee"
+        "wikiTitle": "Mummy Mee",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mummy_Mee",
+        "job": "Housemother",
+        "birthday": "11월 21일",
+        "originRegion": "east-blue",
+        "originCountry": "conomi-islands",
+        "origin": "이스트 블루 / 코노미 제도",
+        "description": "Mummy Mee - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -86617,22 +86805,22 @@ window.onePieceData = {
       "id": "wt100-104",
       "sourceNameJa": "電伝虫",
       "sourceNameEn": "Transponder Snail",
-      "wikiTitle": "Transponder Snail",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Transponder_Snail",
+      "wikiTitle": "Den Den Mushi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Den_Den_Mushi",
       "patch": {
-        "wikiTitle": "Transponder Snail",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Transponder_Snail"
+        "wikiTitle": "Den Den Mushi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Den_Den_Mushi"
       }
     },
     {
       "id": "wt100-105",
       "sourceNameJa": "ニュース・クー",
       "sourceNameEn": "News Coo",
-      "wikiTitle": "News Coo",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/News_Coo",
+      "wikiTitle": "Animal Species",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species",
       "patch": {
-        "wikiTitle": "News Coo",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/News_Coo"
+        "wikiTitle": "Animal Species",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species"
       }
     },
     {
@@ -86698,11 +86886,18 @@ window.onePieceData = {
       "id": "wt100-108",
       "sourceNameJa": "パッキー",
       "sourceNameEn": "Packy",
-      "wikiTitle": "Packy",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Packy",
+      "wikiTitle": "Koze and Packy",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Koze_and_Packy",
       "patch": {
-        "wikiTitle": "Packy",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Packy"
+        "wikiTitle": "Koze and Packy",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Koze_and_Packy",
+        "job": "Pirates",
+        "birthday": "5월 27일",
+        "originRegion": "east-blue",
+        "originCountry": "loguetown",
+        "origin": "이스트 블루 / 로그타운",
+        "organization": "pirates",
+        "description": "Koze and Packy - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -86787,11 +86982,17 @@ window.onePieceData = {
       "id": "wt100-113",
       "sourceNameJa": "サピー",
       "sourceNameEn": "Sapee",
-      "wikiTitle": "Sapee",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Sapee",
+      "wikiTitle": "Sapi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sapi",
       "patch": {
-        "wikiTitle": "Sapee",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Sapee"
+        "wikiTitle": "Sapi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sapi",
+        "job": "Fishmonger",
+        "birthday": "3월 22일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "description": "Sapi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -86935,7 +87136,7 @@ window.onePieceData = {
     {
       "id": "wt100-119",
       "sourceNameJa": "シルバーズ・レイリー",
-      "sourceNameEn": "Silvers.Rayleigh",
+      "sourceNameEn": "Silvers Rayleigh",
       "wikiTitle": "Silvers Rayleigh",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Silvers_Rayleigh",
       "patch": {
@@ -86990,12 +87191,12 @@ window.onePieceData = {
     {
       "id": "wt100-130",
       "sourceNameJa": "トニートニー・チョッパー",
-      "sourceNameEn": "Tony Tony.Chopper",
-      "wikiTitle": "Tony Tony Chopper/Abilities and Powers",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Tony_Tony_Chopper%2FAbilities_and_Powers",
+      "sourceNameEn": "Tony Tony Chopper",
+      "wikiTitle": "Tony Tony Chopper",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tony_Tony_Chopper",
       "patch": {
-        "wikiTitle": "Tony Tony Chopper/Abilities and Powers",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Tony_Tony_Chopper%2FAbilities_and_Powers",
+        "wikiTitle": "Tony Tony Chopper",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tony_Tony_Chopper",
         "aliases": "\"Cotton Candy Lover\" ( わたあめ大好き , Wataame Daisuki )",
         "job": "Doctor",
         "age": 17,
@@ -87020,7 +87221,7 @@ window.onePieceData = {
         "origin": "그랜드라인",
         "organization": "pirates",
         "subOrganization": "straw-hat",
-        "description": "Tony Tony Chopper/Abilities and Powers - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "description": "Tony Tony Chopper - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
         "devilFruitId": "human-human-fruit"
       }
     },
@@ -87065,11 +87266,29 @@ window.onePieceData = {
       "id": "wt100-132",
       "sourceNameJa": "ネフェルタリ・ビビ",
       "sourceNameEn": "Nefeltari Vivi (Miss Wednesday)",
-      "wikiTitle": "Nefeltari Vivi",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Nefeltari_Vivi",
+      "wikiTitle": "Nefertari Vivi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Nefertari_Vivi",
       "patch": {
-        "wikiTitle": "Nefeltari Vivi",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Nefeltari_Vivi"
+        "wikiTitle": "Nefertari Vivi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Nefertari_Vivi",
+        "aliases": "\"Miss Wednesday\" ( ミス・ウェンズデー , Misu Wenzudē ) , \"Ms. Wednesday\" (4Kids dub)",
+        "job": "Princess of Arabasta",
+        "age": 18,
+        "birthday": "2월 2일",
+        "heightCm": 169,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 169
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "subOrganization": "straw-hat",
+        "description": "Nefertari Vivi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -87174,33 +87393,39 @@ window.onePieceData = {
       "id": "wt100-138",
       "sourceNameJa": "雪だるさん",
       "sourceNameEn": "Mr. Snowman",
-      "wikiTitle": "Mr. Snowman",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Snowman",
+      "wikiTitle": "Snow Sculptures",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Sculptures",
       "patch": {
-        "wikiTitle": "Mr. Snowman",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Snowman"
+        "wikiTitle": "Snow Sculptures",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Sculptures"
       }
     },
     {
       "id": "wt100-139",
       "sourceNameJa": "スノウクイーン",
       "sourceNameEn": "Snow Queen",
-      "wikiTitle": "Snow Queen",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Queen",
+      "wikiTitle": "Snow Sculptures",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Sculptures",
       "patch": {
-        "wikiTitle": "Snow Queen",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Queen"
+        "wikiTitle": "Snow Sculptures",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Sculptures"
       }
     },
     {
       "id": "wt100-140",
       "sourceNameJa": "ミス・キャサリーナ",
       "sourceNameEn": "Miss Katherina",
-      "wikiTitle": "Miss Katherina",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Miss_Katherina",
+      "wikiTitle": "Miss Catherina",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Miss_Catherina",
       "patch": {
-        "wikiTitle": "Miss Katherina",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Miss_Katherina"
+        "wikiTitle": "Miss Catherina",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Miss_Catherina",
+        "job": "Bounty Hunter",
+        "birthday": "3월 23일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "description": "Miss Catherina - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -87348,7 +87573,7 @@ window.onePieceData = {
     {
       "id": "wt100-147",
       "sourceNameJa": "ミキータ（ミス・バレンタイン）",
-      "sourceNameEn": "Mikita (Miss.Valentine)",
+      "sourceNameEn": "Mikita (Miss Valentine)",
       "wikiTitle": "Mikita",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Mikita",
       "patch": {
@@ -87384,11 +87609,27 @@ window.onePieceData = {
       "id": "wt100-148",
       "sourceNameJa": "へのへのうんち",
       "sourceNameEn": "Henohenounchi",
-      "wikiTitle": "Henohenounchi",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Henohenounchi",
+      "wikiTitle": "Igaram",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Igaram",
       "patch": {
-        "wikiTitle": "Henohenounchi",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Henohenounchi"
+        "wikiTitle": "Igaram",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Igaram",
+        "aliases": "\"Mr. 8\" （ ） ( Misutā Eito ) (former)",
+        "job": "Captain of the Royal Guard",
+        "age": 50,
+        "birthday": "12월 6일",
+        "heightCm": 218,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 218
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Igaram - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -87530,7 +87771,7 @@ window.onePieceData = {
     {
       "id": "wt100-154",
       "sourceNameJa": "マリアンヌ（ミス・ゴールデンウィーク）",
-      "sourceNameEn": "Marianne (Miss.Golden Week)",
+      "sourceNameEn": "Marianne (Miss Golden Week)",
       "wikiTitle": "Marianne",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Marianne",
       "patch": {
@@ -87658,22 +87899,29 @@ window.onePieceData = {
       "id": "wt100-161",
       "sourceNameJa": "ハイキングベア",
       "sourceNameEn": "Hiking Bear",
-      "wikiTitle": "Hiking Bear",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Hiking_Bear",
+      "wikiTitle": "Animal Species/Arabasta Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FArabasta_Saga",
       "patch": {
-        "wikiTitle": "Hiking Bear",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Hiking_Bear"
+        "wikiTitle": "Animal Species/Arabasta Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FArabasta_Saga"
       }
     },
     {
       "id": "wt100-162",
       "sourceNameJa": "ネギ熊まりあ",
       "sourceNameEn": "Maria Onion Bear",
-      "wikiTitle": "Maria Onion Bear",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Maria_Onion_Bear",
+      "wikiTitle": "Negikuma Maria",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Negikuma_Maria",
       "patch": {
-        "wikiTitle": "Maria Onion Bear",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Maria_Onion_Bear"
+        "wikiTitle": "Negikuma Maria",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Negikuma_Maria",
+        "job": "Housewife",
+        "age": 45,
+        "birthday": "11월 14일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Negikuma Maria - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -87707,22 +87955,22 @@ window.onePieceData = {
       "id": "wt100-164",
       "sourceNameJa": "ハイパー雪だるさん",
       "sourceNameEn": "Super Snowman",
-      "wikiTitle": "Super Snowman",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Super_Snowman",
+      "wikiTitle": "Snow Sculptures",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Sculptures",
       "patch": {
-        "wikiTitle": "Super Snowman",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Super_Snowman"
+        "wikiTitle": "Snow Sculptures",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Sculptures"
       }
     },
     {
       "id": "wt100-165",
       "sourceNameJa": "シロラー",
       "sourceNameEn": "Shirora",
-      "wikiTitle": "Shirora",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Shirora",
+      "wikiTitle": "Snow Sculptures",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Sculptures",
       "patch": {
-        "wikiTitle": "Shirora",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Shirora"
+        "wikiTitle": "Snow Sculptures",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Sculptures"
       }
     },
     {
@@ -87745,11 +87993,27 @@ window.onePieceData = {
       "id": "wt100-168",
       "sourceNameJa": "くれは",
       "sourceNameEn": "Dr. Kureha",
-      "wikiTitle": "Dr. Kureha",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Kureha",
+      "wikiTitle": "Kureha",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kureha",
       "patch": {
-        "wikiTitle": "Dr. Kureha",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Kureha"
+        "wikiTitle": "Kureha",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kureha",
+        "aliases": "\"Witch\" ( 魔女 , Majo )",
+        "job": "Head- Doctor of the Sakura Kingdom",
+        "age": 141,
+        "birthday": "9월 8일",
+        "heightCm": 188,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 188
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Kureha - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -87835,11 +88099,26 @@ window.onePieceData = {
       "id": "wt100-174",
       "sourceNameJa": "ヒルルク",
       "sourceNameEn": "Dr. Hiriluk",
-      "wikiTitle": "Dr. Hiriluk",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Hiriluk",
+      "wikiTitle": "Hiriluk",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Hiriluk",
       "patch": {
-        "wikiTitle": "Dr. Hiriluk",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Hiriluk"
+        "wikiTitle": "Hiriluk",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Hiriluk",
+        "job": "Doctor",
+        "age": 68,
+        "birthday": "1월 12일",
+        "heightCm": 213,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 213
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Hiriluk - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -87860,11 +88139,26 @@ window.onePieceData = {
       "id": "wt100-176",
       "sourceNameJa": "ネフェルタリ・コブラ",
       "sourceNameEn": "Nefeltari Cobra",
-      "wikiTitle": "Nefeltari Cobra",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Nefeltari_Cobra",
+      "wikiTitle": "Nefertari Cobra",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Nefertari_Cobra",
       "patch": {
-        "wikiTitle": "Nefeltari Cobra",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Nefeltari_Cobra"
+        "wikiTitle": "Nefertari Cobra",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Nefertari_Cobra",
+        "job": "King of Arabasta",
+        "age": 50,
+        "birthday": "2월 13일",
+        "heightCm": 182,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 182
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Nefertari Cobra - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -87954,11 +88248,11 @@ window.onePieceData = {
       "id": "wt100-180",
       "sourceNameJa": "海ネコ",
       "sourceNameEn": "Sea Cat",
-      "wikiTitle": "Sea Cat",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Cat",
+      "wikiTitle": "Sea Beast",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Beast",
       "patch": {
-        "wikiTitle": "Sea Cat",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Cat"
+        "wikiTitle": "Sea Beast",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Beast"
       }
     },
     {
@@ -88014,17 +88308,19 @@ window.onePieceData = {
       "id": "wt100-183",
       "sourceNameJa": "Mr.メロウ",
       "sourceNameEn": "Mr. Melow",
-      "wikiTitle": "Mr. Melow",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Melow",
+      "wikiTitle": "Mr. Mellow",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Mellow",
       "patch": {
-        "wikiTitle": "Mr. Melow",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Melow"
+        "wikiTitle": "Mr. Mellow",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Mellow",
+        "job": "Bounty Hunter",
+        "description": "Mr. Mellow - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-184",
       "sourceNameJa": "ドロフィー（ミス・メリークリスマス）",
-      "sourceNameEn": "Drophy (Miss.Merry Christmas)",
+      "sourceNameEn": "Drophy (Miss Merry Christmas)",
       "wikiTitle": "Drophy",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Drophy",
       "patch": {
@@ -88093,7 +88389,7 @@ window.onePieceData = {
     {
       "id": "wt100-186",
       "sourceNameJa": "ザラ（ミス・ダブルフィンガー）",
-      "sourceNameEn": "Zala (Miss.Doublefinger)",
+      "sourceNameEn": "Zala (Miss Doublefinger)",
       "wikiTitle": "Zala",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Zala",
       "patch": {
@@ -88164,44 +88460,49 @@ window.onePieceData = {
       "id": "wt100-188",
       "sourceNameJa": "バンチ",
       "sourceNameEn": "Bunch",
-      "wikiTitle": "Bunch",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Bunch",
+      "wikiTitle": "Banchi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Banchi",
       "patch": {
-        "wikiTitle": "Bunch",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Bunch"
+        "wikiTitle": "Banchi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Banchi",
+        "job": "Transportation",
+        "originRegion": "west-blue",
+        "originCountry": "",
+        "origin": "웨스트 블루",
+        "description": "Banchi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-189",
       "sourceNameJa": "エリマキランナーズ",
       "sourceNameEn": "Lizard Runners",
-      "wikiTitle": "Lizard Runners",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Lizard_Runners",
+      "wikiTitle": "Animal Species/Arabasta Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FArabasta_Saga",
       "patch": {
-        "wikiTitle": "Lizard Runners",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Lizard_Runners"
+        "wikiTitle": "Animal Species/Arabasta Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FArabasta_Saga"
       }
     },
     {
       "id": "wt100-190",
       "sourceNameJa": "クンフージュゴン",
       "sourceNameEn": "Kung-Fu Dugong",
-      "wikiTitle": "Kung-Fu Dugong",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Kung-Fu_Dugong",
+      "wikiTitle": "Animal Species/Arabasta Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FArabasta_Saga",
       "patch": {
-        "wikiTitle": "Kung-Fu Dugong",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Kung-Fu_Dugong"
+        "wikiTitle": "Animal Species/Arabasta Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FArabasta_Saga"
       }
     },
     {
       "id": "wt100-192",
       "sourceNameJa": "サンドラ大トカゲ",
       "sourceNameEn": "Sandora Lizard",
-      "wikiTitle": "Sandora Lizard",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Sandora_Lizard",
+      "wikiTitle": "Animal Species/Arabasta Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FArabasta_Saga",
       "patch": {
-        "wikiTitle": "Sandora Lizard",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Sandora_Lizard"
+        "wikiTitle": "Animal Species/Arabasta Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FArabasta_Saga"
       }
     },
     {
@@ -88447,33 +88748,37 @@ window.onePieceData = {
       "id": "wt100-207",
       "sourceNameJa": "コアラ組",
       "sourceNameEn": "Koala Gang",
-      "wikiTitle": "Koala Gang",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Koala_Gang",
+      "wikiTitle": "Koala Mercenaries",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Koala_Mercenaries",
       "patch": {
-        "wikiTitle": "Koala Gang",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Koala_Gang"
+        "wikiTitle": "Koala Mercenaries",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Koala_Mercenaries",
+        "job": "Bodyguards",
+        "description": "Koala Mercenaries - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-208",
       "sourceNameJa": "ハサミ",
       "sourceNameEn": "Pincers",
-      "wikiTitle": "Pincers",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Pincers",
+      "wikiTitle": "Hasami",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Hasami",
       "patch": {
-        "wikiTitle": "Pincers",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Pincers"
+        "wikiTitle": "Hasami",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Hasami",
+        "job": "Ukkari Hot-Springs Resort Transportation",
+        "description": "Hasami - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-210",
       "sourceNameJa": "サンドラマレナマズ",
       "sourceNameEn": "Sandora Catfish",
-      "wikiTitle": "Sandora Catfish",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Sandora_Catfish",
+      "wikiTitle": "Animal Species/Arabasta Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FArabasta_Saga",
       "patch": {
-        "wikiTitle": "Sandora Catfish",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Sandora_Catfish"
+        "wikiTitle": "Animal Species/Arabasta Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FArabasta_Saga"
       }
     },
     {
@@ -88580,11 +88885,11 @@ window.onePieceData = {
       "id": "wt100-215",
       "sourceNameJa": "ケンタロウス",
       "sourceNameEn": "Centaur",
-      "wikiTitle": "Centaur",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Centaur",
+      "wikiTitle": "Centaurs",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Centaurs",
       "patch": {
-        "wikiTitle": "Centaur",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Centaur"
+        "wikiTitle": "Centaurs",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Centaurs"
       }
     },
     {
@@ -88645,44 +88950,52 @@ window.onePieceData = {
       "id": "wt100-219",
       "sourceNameJa": "アロー",
       "sourceNameEn": "Arrow",
-      "wikiTitle": "Arrow",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Arrow",
+      "wikiTitle": "Tsumegeri Guards",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tsumegeri_Guards",
       "patch": {
-        "wikiTitle": "Arrow",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Arrow"
+        "wikiTitle": "Tsumegeri Guards",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tsumegeri_Guards",
+        "job": "Soldiers",
+        "description": "Tsumegeri Guards - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-220",
       "sourceNameJa": "ヒョウタ",
       "sourceNameEn": "Hyota",
-      "wikiTitle": "Hyota",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Hyota",
+      "wikiTitle": "Tsumegeri Guards",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tsumegeri_Guards",
       "patch": {
-        "wikiTitle": "Hyota",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Hyota"
+        "wikiTitle": "Tsumegeri Guards",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tsumegeri_Guards",
+        "job": "Soldiers",
+        "description": "Tsumegeri Guards - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-221",
       "sourceNameJa": "バレル",
       "sourceNameEn": "Barrel",
-      "wikiTitle": "Barrel",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Barrel",
+      "wikiTitle": "Tsumegeri Guards",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tsumegeri_Guards",
       "patch": {
-        "wikiTitle": "Barrel",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Barrel"
+        "wikiTitle": "Tsumegeri Guards",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tsumegeri_Guards",
+        "job": "Soldiers",
+        "description": "Tsumegeri Guards - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-222",
       "sourceNameJa": "ブラーム",
       "sourceNameEn": "Brahm",
-      "wikiTitle": "Brahm",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Brahm",
+      "wikiTitle": "Tsumegeri Guards",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tsumegeri_Guards",
       "patch": {
-        "wikiTitle": "Brahm",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Brahm"
+        "wikiTitle": "Tsumegeri Guards",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tsumegeri_Guards",
+        "job": "Soldiers",
+        "description": "Tsumegeri Guards - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -88780,11 +89093,13 @@ window.onePieceData = {
       "id": "wt100-228",
       "sourceNameJa": "Dr.ホウ",
       "sourceNameEn": "Dr. Ooh",
-      "wikiTitle": "Dr. Ooh",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Ooh",
+      "wikiTitle": "Ho",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Ho",
       "patch": {
-        "wikiTitle": "Dr. Ooh",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Ooh"
+        "wikiTitle": "Ho",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Ho",
+        "job": "Doctor",
+        "description": "Ho - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -88839,11 +89154,13 @@ window.onePieceData = {
       "id": "wt100-232",
       "sourceNameJa": "ネフェルタリ・ティティ",
       "sourceNameEn": "Nefeltari Titi",
-      "wikiTitle": "Nefeltari Titi",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Nefeltari_Titi",
+      "wikiTitle": "Nefertari Titi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Nefertari_Titi",
       "patch": {
-        "wikiTitle": "Nefeltari Titi",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Nefeltari_Titi"
+        "wikiTitle": "Nefertari Titi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Nefertari_Titi",
+        "job": "Queen of the Arabasta Kingdom",
+        "description": "Nefertari Titi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -88871,11 +89188,13 @@ window.onePieceData = {
       "id": "wt100-234",
       "sourceNameJa": "Dr.ポツーン",
       "sourceNameEn": "Dr. Potsun",
-      "wikiTitle": "Dr. Potsun",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Potsun",
+      "wikiTitle": "Potsun",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Potsun",
       "patch": {
-        "wikiTitle": "Dr. Potsun",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Potsun"
+        "wikiTitle": "Potsun",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Potsun",
+        "job": "Doctor",
+        "description": "Potsun - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -89141,11 +89460,17 @@ window.onePieceData = {
       "id": "wt100-247",
       "sourceNameJa": "ミュレ",
       "sourceNameEn": "Mjure",
-      "wikiTitle": "Mjure",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Mjure",
+      "wikiTitle": "Muret",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Muret",
       "patch": {
-        "wikiTitle": "Mjure",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Mjure"
+        "wikiTitle": "Muret",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Muret",
+        "job": "Doctor",
+        "originRegion": "north-blue",
+        "originCountry": "",
+        "origin": "노스 블루",
+        "organization": "pirates",
+        "description": "Muret - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -89297,55 +89622,66 @@ window.onePieceData = {
       "id": "wt100-256",
       "sourceNameJa": "ジェイガルシア・サターン聖",
       "sourceNameEn": "Saint Jaygarcia Saturn",
-      "wikiTitle": "Saint Jaygarcia Saturn",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Jaygarcia_Saturn",
+      "wikiTitle": "Jaygarcia Saturn",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Jaygarcia_Saturn",
       "patch": {
-        "wikiTitle": "Saint Jaygarcia Saturn",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Jaygarcia_Saturn"
+        "wikiTitle": "Jaygarcia Saturn",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Jaygarcia_Saturn",
+        "job": "Co-Head of the World Government (Public)",
+        "age": 200,
+        "description": "Jaygarcia Saturn - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-257",
       "sourceNameJa": "マーカス・マーズ聖",
       "sourceNameEn": "Saint Marcus Mars",
-      "wikiTitle": "Saint Marcus Mars",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Marcus_Mars",
+      "wikiTitle": "Marcus Mars",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Marcus_Mars",
       "patch": {
-        "wikiTitle": "Saint Marcus Mars",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Marcus_Mars"
+        "wikiTitle": "Marcus Mars",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Marcus_Mars",
+        "job": "Co-Head of the World Government (Public)",
+        "description": "Marcus Mars - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-258",
       "sourceNameJa": "トップマン・ウォーキュリー聖",
       "sourceNameEn": "Saint Topman Warcury",
-      "wikiTitle": "Saint Topman Warcury",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Topman_Warcury",
+      "wikiTitle": "Topman Warcury",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Topman_Warcury",
       "patch": {
-        "wikiTitle": "Saint Topman Warcury",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Topman_Warcury"
+        "wikiTitle": "Topman Warcury",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Topman_Warcury",
+        "job": "Co-Head of the World Government (Public)",
+        "description": "Topman Warcury - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-259",
       "sourceNameJa": "イーザンバロン・V・ナス寿郎聖",
       "sourceNameEn": "Saint Ethanbaron V. Nusjuro",
-      "wikiTitle": "Saint Ethanbaron V. Nusjuro",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Ethanbaron_V._Nusjuro",
+      "wikiTitle": "Ethanbaron V. Nusjuro",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Ethanbaron_V._Nusjuro",
       "patch": {
-        "wikiTitle": "Saint Ethanbaron V. Nusjuro",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Ethanbaron_V._Nusjuro"
+        "wikiTitle": "Ethanbaron V. Nusjuro",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Ethanbaron_V._Nusjuro",
+        "job": "Co-Head of the World Government (Public)",
+        "description": "Ethanbaron V. Nusjuro - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-260",
       "sourceNameJa": "シェパード・十・ピーター聖",
       "sourceNameEn": "Saint Shepherd Ju Peter",
-      "wikiTitle": "Saint Shepherd Ju Peter",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Shepherd_Ju_Peter",
+      "wikiTitle": "Shepherd Ju Peter",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Shepherd_Ju_Peter",
       "patch": {
-        "wikiTitle": "Saint Shepherd Ju Peter",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Shepherd_Ju_Peter"
+        "wikiTitle": "Shepherd Ju Peter",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Shepherd_Ju_Peter",
+        "job": "Co-Head of the World Government (Public)",
+        "description": "Shepherd Ju Peter - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -89512,7 +89848,7 @@ window.onePieceData = {
     {
       "id": "wt100-267",
       "sourceNameJa": "バーソロミュー・くま",
-      "sourceNameEn": "Bartholomew.Kuma",
+      "sourceNameEn": "Bartholomew Kuma",
       "wikiTitle": "Bartholomew Kuma",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Bartholomew_Kuma",
       "patch": {
@@ -89549,11 +89885,35 @@ window.onePieceData = {
       "id": "wt100-268",
       "sourceNameJa": "ラフィット",
       "sourceNameEn": "Lafitte",
-      "wikiTitle": "Lafitte",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Lafitte",
+      "wikiTitle": "Laffitte",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Laffitte",
       "patch": {
-        "wikiTitle": "Lafitte",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Lafitte"
+        "wikiTitle": "Laffitte",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Laffitte",
+        "aliases": "\"Demon Sheriff\" ( 鬼保安官 , Oni Hoankan )",
+        "job": "Titanic Captain (Captain of the Fifth Ship)",
+        "age": 41,
+        "birthday": "3월 13일",
+        "heightCm": 340,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 340
+          }
+        ],
+        "bounty": 42200000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 42200000
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "west-blue",
+        "originCountry": "",
+        "origin": "웨스트 블루",
+        "organization": "pirates",
+        "description": "Laffitte - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -89632,7 +89992,7 @@ window.onePieceData = {
     {
       "id": "wt100-272",
       "sourceNameJa": "ジーザス・バージェス",
-      "sourceNameEn": "Jesus.Burgess",
+      "sourceNameEn": "Jesus Burgess",
       "wikiTitle": "Jesus Burgess",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Jesus_Burgess",
       "patch": {
@@ -89668,7 +90028,7 @@ window.onePieceData = {
     {
       "id": "wt100-273",
       "sourceNameJa": "ヴァン・オーガー",
-      "sourceNameEn": "Van.Auger",
+      "sourceNameEn": "Van Auger",
       "wikiTitle": "Van Augur",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Van_Augur",
       "patch": {
@@ -89793,17 +90153,17 @@ window.onePieceData = {
       "id": "wt100-277",
       "sourceNameJa": "空魚",
       "sourceNameEn": "Sky Fish",
-      "wikiTitle": "Sky Fish",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Sky_Fish",
+      "wikiTitle": "Animal Species/Sky Island Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FSky_Island_Saga",
       "patch": {
-        "wikiTitle": "Sky Fish",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Sky_Fish"
+        "wikiTitle": "Animal Species/Sky Island Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FSky_Island_Saga"
       }
     },
     {
       "id": "wt100-278",
       "sourceNameJa": "ガン・フォール",
-      "sourceNameEn": "Gan.Fall",
+      "sourceNameEn": "Gan Fall",
       "wikiTitle": "Gan Fall",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Gan_Fall",
       "patch": {
@@ -89952,8 +90312,8 @@ window.onePieceData = {
       "id": "wt100-286",
       "sourceNameJa": "マッキンリー",
       "sourceNameEn": "Mckinley",
-      "wikiTitle": "Mckinley",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Mckinley",
+      "wikiTitle": "McKinley",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/McKinley",
       "patch": {
         "wikiTitle": "Mckinley",
         "wikiUrl": "https://onepiece.fandom.com/wiki/Mckinley"
@@ -90300,22 +90660,46 @@ window.onePieceData = {
       "id": "wt100-303",
       "sourceNameJa": "ホトリ",
       "sourceNameEn": "Hotori",
-      "wikiTitle": "Hotori",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Hotori",
+      "wikiTitle": "Hotori and Kotori",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Hotori_and_Kotori",
       "patch": {
-        "wikiTitle": "Hotori",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Hotori"
+        "wikiTitle": "Hotori and Kotori",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Hotori_and_Kotori",
+        "job": "Lieutenants of the Divine Soldiers",
+        "age": 27,
+        "birthday": "3월 10일",
+        "heightCm": 179,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 179
+          }
+        ],
+        "bloodType": "S",
+        "description": "Hotori and Kotori - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-304",
       "sourceNameJa": "コトリ",
       "sourceNameEn": "Kotori",
-      "wikiTitle": "Kotori",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Kotori",
+      "wikiTitle": "Hotori and Kotori",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Hotori_and_Kotori",
       "patch": {
-        "wikiTitle": "Kotori",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Kotori"
+        "wikiTitle": "Hotori and Kotori",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Hotori_and_Kotori",
+        "job": "Lieutenants of the Divine Soldiers",
+        "age": 27,
+        "birthday": "3월 10일",
+        "heightCm": 179,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 179
+          }
+        ],
+        "bloodType": "S",
+        "description": "Hotori and Kotori - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -90335,11 +90719,13 @@ window.onePieceData = {
       "id": "wt100-306",
       "sourceNameJa": "マユシカ",
       "sourceNameEn": "Mayushka",
-      "wikiTitle": "Mayushka",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Mayushka",
+      "wikiTitle": "Mayushika",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mayushika",
       "patch": {
-        "wikiTitle": "Mayushka",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Mayushka"
+        "wikiTitle": "Mayushika",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mayushika",
+        "job": "Shandia Warrior",
+        "description": "Mayushika - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -90487,11 +90873,14 @@ window.onePieceData = {
       "id": "wt100-315",
       "sourceNameJa": "ムース",
       "sourceNameEn": "Musse",
-      "wikiTitle": "Musse",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Musse",
+      "wikiTitle": "Mousse",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mousse",
       "patch": {
-        "wikiTitle": "Musse",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Musse"
+        "wikiTitle": "Mousse",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mousse",
+        "job": "Shandia Villager",
+        "birthday": "6월 3일",
+        "description": "Mousse - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -90606,33 +90995,36 @@ window.onePieceData = {
       "id": "wt100-325",
       "sourceNameJa": "シーモンキー",
       "sourceNameEn": "Sea Monkey",
-      "wikiTitle": "Sea Monkey",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Monkey",
+      "wikiTitle": "Animal Species/Water 7 Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FWater_7_Saga",
       "patch": {
-        "wikiTitle": "Sea Monkey",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Monkey"
+        "wikiTitle": "Animal Species/Water 7 Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FWater_7_Saga"
       }
     },
     {
       "id": "wt100-326",
       "sourceNameJa": "ダッ～～～～クスフント",
       "sourceNameEn": "Daaachshund",
-      "wikiTitle": "Daaachshund",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Daaachshund",
+      "wikiTitle": "Animal Species/Water 7 Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FWater_7_Saga",
       "patch": {
-        "wikiTitle": "Daaachshund",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Daaachshund"
+        "wikiTitle": "Animal Species/Water 7 Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FWater_7_Saga"
       }
     },
     {
       "id": "wt100-327",
       "sourceNameJa": "シェリー",
       "sourceNameEn": "Sherry",
-      "wikiTitle": "Sherry",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Sherry",
+      "wikiTitle": "Shelly",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Shelly",
       "patch": {
-        "wikiTitle": "Sherry",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Sherry"
+        "wikiTitle": "Shelly",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Shelly",
+        "job": "Pet",
+        "birthday": "10월 31일",
+        "description": "Shelly - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -90665,11 +91057,11 @@ window.onePieceData = {
       "id": "wt100-329",
       "sourceNameJa": "カ～～～～モノハシ",
       "sourceNameEn": "Plaaatypus",
-      "wikiTitle": "Plaaatypus",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Plaaatypus",
+      "wikiTitle": "Animal Species/Water 7 Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FWater_7_Saga",
       "patch": {
-        "wikiTitle": "Plaaatypus",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Plaaatypus"
+        "wikiTitle": "Animal Species/Water 7 Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FWater_7_Saga"
       }
     },
     {
@@ -90832,11 +91224,16 @@ window.onePieceData = {
       "id": "wt100-340",
       "sourceNameJa": "ビッグパン",
       "sourceNameEn": "Big Bun",
-      "wikiTitle": "Big Bun",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Big_Bun",
+      "wikiTitle": "Big Pan",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Big_Pan",
       "patch": {
-        "wikiTitle": "Big Bun",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Big_Bun"
+        "wikiTitle": "Big Pan",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Big_Pan",
+        "aliases": "Big Pan \"the Wotan\" ( ウォータンのビッグパン , Wōtan no Biggu Pan )",
+        "job": "Pirate",
+        "birthday": "5월 25일",
+        "organization": "pirates",
+        "description": "Big Pan - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -90871,11 +91268,14 @@ window.onePieceData = {
       "id": "wt100-343",
       "sourceNameJa": "ソニエ",
       "sourceNameEn": "Sonie",
-      "wikiTitle": "Sonie",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Sonie",
+      "wikiTitle": "Sonieh",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sonieh",
       "patch": {
-        "wikiTitle": "Sonie",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Sonie"
+        "wikiTitle": "Sonieh",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sonieh",
+        "job": "Pirate",
+        "organization": "pirates",
+        "description": "Sonieh - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -90939,11 +91339,13 @@ window.onePieceData = {
       "id": "wt100-347",
       "sourceNameJa": "近海の主（ロングリングロングランド）　",
       "sourceNameEn": "Local Sea Monster (Long Ring Long Land)",
-      "wikiTitle": "Local Sea Monster (Long Ring Long Land)",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Local_Sea_Monster_(Long_Ring_Long_Land)",
+      "wikiTitle": "Lord of the Coast (Long Ring Long Land)",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Lord_of_the_Coast_(Long_Ring_Long_Land)",
       "patch": {
-        "wikiTitle": "Local Sea Monster (Long Ring Long Land)",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Local_Sea_Monster_(Long_Ring_Long_Land)"
+        "wikiTitle": "Lord of the Coast (Long Ring Long Land)",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Lord_of_the_Coast_(Long_Ring_Long_Land)",
+        "job": "Sea King",
+        "description": "Lord of the Coast (Long Ring Long Land) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -91085,22 +91487,24 @@ window.onePieceData = {
       "id": "wt100-354",
       "sourceNameJa": "ミショイン・キャシブル",
       "sourceNameEn": "Mishinin Cashable",
-      "wikiTitle": "Mishinin Cashable",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Mishinin_Cashable",
+      "wikiTitle": "Mishoin Cashible",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mishoin_Cashible",
       "patch": {
-        "wikiTitle": "Mishinin Cashable",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Mishinin_Cashable"
+        "wikiTitle": "Mishoin Cashible",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mishoin_Cashible",
+        "job": "Bull Rental Salesman",
+        "description": "Mishoin Cashible - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-355",
       "sourceNameJa": "ヤガラ",
       "sourceNameEn": "Yagara",
-      "wikiTitle": "Yagara",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Yagara",
+      "wikiTitle": "Animal Species/Water 7 Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FWater_7_Saga",
       "patch": {
-        "wikiTitle": "Yagara",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Yagara"
+        "wikiTitle": "Animal Species/Water 7 Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FWater_7_Saga"
       }
     },
     {
@@ -91185,11 +91589,13 @@ window.onePieceData = {
       "id": "wt100-361",
       "sourceNameJa": "イーシゴ・シテマンナ",
       "sourceNameEn": "Verree Finework",
-      "wikiTitle": "Verree Finework",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Verree_Finework",
+      "wikiTitle": "Ishigo Shitemanna",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Ishigo_Shitemanna",
       "patch": {
-        "wikiTitle": "Verree Finework",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Verree_Finework"
+        "wikiTitle": "Ishigo Shitemanna",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Ishigo_Shitemanna",
+        "job": "Appraiser",
+        "description": "Ishigo Shitemanna - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -91393,22 +91799,25 @@ window.onePieceData = {
       "id": "wt100-370",
       "sourceNameJa": "コーギー",
       "sourceNameEn": "Corgy",
-      "wikiTitle": "Corgy",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Corgy",
+      "wikiTitle": "Corgi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Corgi",
       "patch": {
-        "wikiTitle": "Corgy",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Corgy"
+        "wikiTitle": "Corgi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Corgi",
+        "job": "Government official",
+        "birthday": "8월 25일",
+        "description": "Corgi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-371",
       "sourceNameJa": "カクカクさん",
       "sourceNameEn": "Blockhead",
-      "wikiTitle": "Blockhead",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Blockhead",
+      "wikiTitle": "Kakukaku",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kakukaku",
       "patch": {
-        "wikiTitle": "Blockhead",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Blockhead"
+        "wikiTitle": "Kakukaku",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kakukaku"
       }
     },
     {
@@ -91638,11 +92047,13 @@ window.onePieceData = {
       "id": "wt100-383",
       "sourceNameJa": "ステイビー",
       "sourceNameEn": "Staybe",
-      "wikiTitle": "Staybe",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Staybe",
+      "wikiTitle": "Stevie",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Stevie",
       "patch": {
-        "wikiTitle": "Staybe",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Staybe"
+        "wikiTitle": "Stevie",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Stevie",
+        "job": "Station Manager",
+        "description": "Stevie - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -91814,44 +92225,58 @@ window.onePieceData = {
       "id": "wt100-392",
       "sourceNameJa": "ソドム",
       "sourceNameEn": "Sodomu",
-      "wikiTitle": "Sodomu",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Sodomu",
+      "wikiTitle": "Sodom",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sodom",
       "patch": {
-        "wikiTitle": "Sodomu",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Sodomu"
+        "wikiTitle": "Sodom",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sodom",
+        "job": "Transportation",
+        "birthday": "8월 6일",
+        "description": "Sodom - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-393",
       "sourceNameJa": "ゴモラ",
       "sourceNameEn": "Gomora",
-      "wikiTitle": "Gomora",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Gomora",
+      "wikiTitle": "Gomorrah",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Gomorrah",
       "patch": {
-        "wikiTitle": "Gomora",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Gomora"
+        "wikiTitle": "Gomorrah",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Gomorrah",
+        "job": "Transportation",
+        "birthday": "8월 6일",
+        "description": "Gomorrah - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-394",
       "sourceNameJa": "マイケル",
       "sourceNameEn": "Michael",
-      "wikiTitle": "Michael",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Michael",
+      "wikiTitle": "Michael and Hoichael",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Michael_and_Hoichael",
       "patch": {
-        "wikiTitle": "Michael",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Michael"
+        "wikiTitle": "Michael and Hoichael",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Michael_and_Hoichael",
+        "job": "Elementary school students (pre-timeskip)",
+        "age": 14,
+        "birthday": "7월 18일",
+        "description": "Michael and Hoichael - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-395",
       "sourceNameJa": "ホイケル",
       "sourceNameEn": "Hoichael",
-      "wikiTitle": "Hoichael",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Hoichael",
+      "wikiTitle": "Michael and Hoichael",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Michael_and_Hoichael",
       "patch": {
-        "wikiTitle": "Hoichael",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Hoichael"
+        "wikiTitle": "Michael and Hoichael",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Michael_and_Hoichael",
+        "job": "Elementary school students (pre-timeskip)",
+        "age": 14,
+        "birthday": "7월 18일",
+        "description": "Michael and Hoichael - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -92032,11 +92457,11 @@ window.onePieceData = {
       "id": "wt100-403",
       "sourceNameJa": "法の番犬部隊",
       "sourceNameEn": "Courthouse Guard Dog Unit",
-      "wikiTitle": "Courthouse Guard Dog Unit",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Courthouse_Guard_Dog_Unit",
+      "wikiTitle": "Watchdog Unit of the Law",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Watchdog_Unit_of_the_Law",
       "patch": {
-        "wikiTitle": "Courthouse Guard Dog Unit",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Courthouse_Guard_Dog_Unit"
+        "wikiTitle": "Watchdog Unit of the Law",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Watchdog_Unit_of_the_Law"
       }
     },
     {
@@ -92106,11 +92531,13 @@ window.onePieceData = {
       "id": "wt100-409",
       "sourceNameJa": "ロシュ",
       "sourceNameEn": "Roshu",
-      "wikiTitle": "Roshu",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Roshu",
+      "wikiTitle": "Roche",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Roche",
       "patch": {
-        "wikiTitle": "Roshu",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Roshu"
+        "wikiTitle": "Roche",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Roche",
+        "job": "Archaeologist",
+        "description": "Roche - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -92156,11 +92583,13 @@ window.onePieceData = {
       "id": "wt100-413",
       "sourceNameJa": "ゼイディー",
       "sourceNameEn": "Zayde",
-      "wikiTitle": "Zayde",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Zayde",
+      "wikiTitle": "Zadie",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Zadie",
       "patch": {
-        "wikiTitle": "Zayde",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Zayde"
+        "wikiTitle": "Zadie",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Zadie",
+        "job": "Archaeologist",
+        "description": "Zadie - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -92259,11 +92688,13 @@ window.onePieceData = {
       "id": "wt100-418",
       "sourceNameJa": "ラスキー",
       "sourceNameEn": "Lasky",
-      "wikiTitle": "Lasky",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Lasky",
+      "wikiTitle": "Laskey",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Laskey",
       "patch": {
-        "wikiTitle": "Lasky",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Lasky"
+        "wikiTitle": "Laskey",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Laskey",
+        "job": "Cipher Pol Agent",
+        "description": "Laskey - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -92316,33 +92747,40 @@ window.onePieceData = {
       "id": "wt100-421",
       "sourceNameJa": "カネゼニー",
       "sourceNameEn": "Moneypenny",
-      "wikiTitle": "Moneypenny",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Moneypenny",
+      "wikiTitle": "Kanezenny",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kanezenny",
       "patch": {
-        "wikiTitle": "Moneypenny",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Moneypenny"
+        "wikiTitle": "Kanezenny",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kanezenny",
+        "job": "Farmer",
+        "description": "Kanezenny - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-422",
       "sourceNameJa": "ニゲラッタ",
       "sourceNameEn": "Abscondo",
-      "wikiTitle": "Abscondo",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Abscondo",
+      "wikiTitle": "Nigeratta",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Nigeratta",
       "patch": {
-        "wikiTitle": "Abscondo",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Abscondo"
+        "wikiTitle": "Nigeratta",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Nigeratta",
+        "job": "Citizen",
+        "description": "Nigeratta - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-423",
       "sourceNameJa": "チェスキッパ",
       "sourceNameEn": "Chesskipper",
-      "wikiTitle": "Chesskipper",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Chesskipper",
+      "wikiTitle": "Chesskippa",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Chesskippa",
       "patch": {
-        "wikiTitle": "Chesskipper",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Chesskipper"
+        "wikiTitle": "Chesskippa",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Chesskippa",
+        "aliases": "\"Chesskippa the Hanger-on\" ( スネかじりのチェスキッパ , Sunekajiri no Chesukippa )",
+        "job": "Pirate",
+        "description": "Chesskippa - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -92497,11 +92935,23 @@ window.onePieceData = {
       "id": "wt100-431",
       "sourceNameJa": "ベリーグッド",
       "sourceNameEn": "Berry Good",
-      "wikiTitle": "Berry Good",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Berry_Good",
+      "wikiTitle": "Very Good",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Very_Good",
       "patch": {
-        "wikiTitle": "Berry Good",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Berry_Good"
+        "wikiTitle": "Very Good",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Very_Good",
+        "job": "Marine Captain",
+        "birthday": "9월 10일",
+        "bounty": 100000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000000
+          }
+        ],
+        "organization": "navy",
+        "description": "Very Good - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "berry-berry-fruit"
       }
     },
     {
@@ -92530,11 +92980,22 @@ window.onePieceData = {
       "id": "wt100-433",
       "sourceNameJa": "シャリングル",
       "sourceNameEn": "Sharingle",
-      "wikiTitle": "Sharingle",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Sharingle",
+      "wikiTitle": "Sharinguru",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sharinguru",
       "patch": {
-        "wikiTitle": "Sharingle",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Sharingle"
+        "wikiTitle": "Sharinguru",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sharinguru",
+        "job": "Marine Captain",
+        "bounty": 100000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000000
+          }
+        ],
+        "organization": "navy",
+        "description": "Sharinguru - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "wheel-wheel-fruit"
       }
     },
     {
@@ -92656,11 +93117,11 @@ window.onePieceData = {
       "id": "wt100-438",
       "sourceNameJa": "マルミエータ",
       "sourceNameEn": "Marmieta",
-      "wikiTitle": "Marmieta",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Marmieta",
+      "wikiTitle": "Marumieta",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Marumieta",
       "patch": {
-        "wikiTitle": "Marmieta",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Marmieta"
+        "wikiTitle": "Marumieta",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Marumieta"
       }
     },
     {
@@ -92897,22 +93358,25 @@ window.onePieceData = {
       "id": "wt100-450",
       "sourceNameJa": "ブヒチャック",
       "sourceNameEn": "Oinkchuck",
-      "wikiTitle": "Oinkchuck",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Oinkchuck",
+      "wikiTitle": "Buhichuck",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Buhichuck",
       "patch": {
-        "wikiTitle": "Oinkchuck",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Oinkchuck"
+        "wikiTitle": "Buhichuck",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Buhichuck",
+        "job": "Surprise Zombie Boss",
+        "organization": "pirates",
+        "description": "Buhichuck - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-451",
       "sourceNameJa": "敷きグマ",
       "sourceNameEn": "Rug Bear",
-      "wikiTitle": "Rug Bear",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Rug_Bear",
+      "wikiTitle": "Zombies",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Zombies",
       "patch": {
-        "wikiTitle": "Rug Bear",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Rug_Bear"
+        "wikiTitle": "Zombies",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Zombies"
       }
     },
     {
@@ -92933,11 +93397,15 @@ window.onePieceData = {
       "id": "wt100-453",
       "sourceNameJa": "クマシー",
       "sourceNameEn": "Kumacy",
-      "wikiTitle": "Kumacy",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Kumacy",
+      "wikiTitle": "Kumashi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kumashi",
       "patch": {
-        "wikiTitle": "Kumacy",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Kumacy"
+        "wikiTitle": "Kumashi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kumashi",
+        "job": "Perona's servant",
+        "birthday": "9월 4일",
+        "organization": "pirates",
+        "description": "Kumashi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -92958,11 +93426,14 @@ window.onePieceData = {
       "id": "wt100-455",
       "sourceNameJa": "ギョロ",
       "sourceNameEn": "Gyoro",
-      "wikiTitle": "Gyoro",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Gyoro",
+      "wikiTitle": "Gyoro, Nin, and Bao",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Gyoro%2C_Nin%2C_and_Bao",
       "patch": {
-        "wikiTitle": "Gyoro",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Gyoro"
+        "wikiTitle": "Gyoro, Nin, and Bao",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Gyoro%2C_Nin%2C_and_Bao",
+        "job": "Soldier Zombies",
+        "organization": "pirates",
+        "description": "Gyoro, Nin, and Bao - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -93066,11 +93537,16 @@ window.onePieceData = {
       "id": "wt100-460",
       "sourceNameJa": "キャプテン・ジョン",
       "sourceNameEn": "Captain John",
-      "wikiTitle": "Captain John",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Captain_John",
+      "wikiTitle": "John",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/John",
       "patch": {
-        "wikiTitle": "Captain John",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Captain_John"
+        "wikiTitle": "John",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/John",
+        "aliases": "Captain John ( キャプテン・ジョン , Kyaputen Jon )",
+        "job": "General Zombie",
+        "organization": "pirates",
+        "description": "John - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "magnet-magnet-fruit"
       }
     },
     {
@@ -93126,11 +93602,14 @@ window.onePieceData = {
       "id": "wt100-463",
       "sourceNameJa": "犬ッペ",
       "sourceNameEn": "Dog Penguin",
-      "wikiTitle": "Dog Penguin",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Dog_Penguin",
+      "wikiTitle": "Inuppe",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Inuppe",
       "patch": {
-        "wikiTitle": "Dog Penguin",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Dog_Penguin"
+        "wikiTitle": "Inuppe",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Inuppe",
+        "job": "Wild Zombie",
+        "birthday": "12월 16일",
+        "description": "Inuppe - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -93165,11 +93644,14 @@ window.onePieceData = {
       "id": "wt100-465",
       "sourceNameJa": "タララン",
       "sourceNameEn": "Taralan",
-      "wikiTitle": "Taralan",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Taralan",
+      "wikiTitle": "Tararan",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tararan",
       "patch": {
-        "wikiTitle": "Taralan",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Taralan"
+        "wikiTitle": "Tararan",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tararan",
+        "job": "General Zombie",
+        "organization": "pirates",
+        "description": "Tararan - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -93260,22 +93742,32 @@ window.onePieceData = {
       "id": "wt100-471",
       "sourceNameJa": "アサヒジャー",
       "sourceNameEn": "Heercomes Dasun",
-      "wikiTitle": "Heercomes Dasun",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Heercomes_Dasun",
+      "wikiTitle": "Asahija",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Asahija",
       "patch": {
-        "wikiTitle": "Heercomes Dasun",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Heercomes_Dasun"
+        "wikiTitle": "Asahija",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Asahija",
+        "job": "Chief Petty Officer",
+        "bounty": 100000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000
+          }
+        ],
+        "organization": "navy",
+        "description": "Asahija - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-472",
       "sourceNameJa": "エーガナ",
       "sourceNameEn": "Ehgana",
-      "wikiTitle": "Ehgana",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Ehgana",
+      "wikiTitle": "Egana",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Egana",
       "patch": {
-        "wikiTitle": "Ehgana",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Ehgana"
+        "wikiTitle": "Egana",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Egana"
       }
     },
     {
@@ -93295,33 +93787,39 @@ window.onePieceData = {
       "id": "wt100-474",
       "sourceNameJa": "ミズータ・マダイスキー",
       "sourceNameEn": "Mizuuta Madaisky",
-      "wikiTitle": "Mizuuta Madaisky",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Mizuuta_Madaisky",
+      "wikiTitle": "Mizuta Madaisuki",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mizuta_Madaisuki",
       "patch": {
-        "wikiTitle": "Mizuuta Madaisky",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Mizuuta_Madaisky"
+        "wikiTitle": "Mizuta Madaisuki",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mizuta_Madaisuki",
+        "job": "Pirate",
+        "organization": "pirates",
+        "description": "Mizuta Madaisuki - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-475",
       "sourceNameJa": "ミズータ・マワリトスキー",
       "sourceNameEn": "Mizuuta Mawaritosky",
-      "wikiTitle": "Mizuuta Mawaritosky",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Mizuuta_Mawaritosky",
+      "wikiTitle": "Mizuta Mawaritosuki",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mizuta_Mawaritosuki",
       "patch": {
-        "wikiTitle": "Mizuuta Mawaritosky",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Mizuuta_Mawaritosky"
+        "wikiTitle": "Mizuta Mawaritosuki",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mizuta_Mawaritosuki",
+        "job": "Pirate",
+        "organization": "pirates",
+        "description": "Mizuta Mawaritosuki - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
       "id": "wt100-476",
       "sourceNameJa": "海兎",
       "sourceNameEn": "Sea Rabbit",
-      "wikiTitle": "Sea Rabbit",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Rabbit",
+      "wikiTitle": "Sea Beast",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Beast",
       "patch": {
-        "wikiTitle": "Sea Rabbit",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Rabbit"
+        "wikiTitle": "Sea Beast",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Beast"
       }
     },
     {
@@ -93512,11 +94010,14 @@ window.onePieceData = {
       "id": "wt100-486",
       "sourceNameJa": "サルウ",
       "sourceNameEn": "Salou",
-      "wikiTitle": "Salou",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Salou",
+      "wikiTitle": "Saru",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Saru",
       "patch": {
-        "wikiTitle": "Salou",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Salou"
+        "wikiTitle": "Saru",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Saru",
+        "job": "Pet",
+        "birthday": "3월 28일",
+        "description": "Saru - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -93636,7 +94137,7 @@ window.onePieceData = {
     {
       "id": "wt100-493",
       "sourceNameJa": "カポネ・ベッジ",
-      "sourceNameEn": "Capone.Bege",
+      "sourceNameEn": "Capone Bege",
       "wikiTitle": "Capone Bege",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Capone_Bege",
       "patch": {
@@ -93672,7 +94173,7 @@ window.onePieceData = {
     {
       "id": "wt100-494",
       "sourceNameJa": "ジュエリー・ボニー",
-      "sourceNameEn": "Jewelry.Bonney",
+      "sourceNameEn": "Jewelry Bonney",
       "wikiTitle": "Jewelry Bonney",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Jewelry_Bonney",
       "patch": {
@@ -93705,7 +94206,7 @@ window.onePieceData = {
     {
       "id": "wt100-495",
       "sourceNameJa": "バジル・ホーキンス",
-      "sourceNameEn": "Basil.Hawkins",
+      "sourceNameEn": "Basil Hawkins",
       "wikiTitle": "Basil Hawkins",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Basil_Hawkins",
       "patch": {
@@ -93741,7 +94242,7 @@ window.onePieceData = {
     {
       "id": "wt100-496",
       "sourceNameJa": "ユースタス・キッド",
-      "sourceNameEn": "Eustass.Kid",
+      "sourceNameEn": "Eustass Kid",
       "wikiTitle": "Eustass Kid",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Eustass_Kid",
       "patch": {
@@ -93777,7 +94278,7 @@ window.onePieceData = {
     {
       "id": "wt100-497",
       "sourceNameJa": "スクラッチメン・アプー",
-      "sourceNameEn": "Scratchmen.Apoo",
+      "sourceNameEn": "Scratchmen Apoo",
       "wikiTitle": "Scratchmen Apoo",
       "wikiUrl": "https://onepiece.fandom.com/wiki/Scratchmen_Apoo",
       "patch": {
@@ -93813,7 +94314,7 @@ window.onePieceData = {
     {
       "id": "wt100-498",
       "sourceNameJa": "X・ドレーク",
-      "sourceNameEn": "X.Drake",
+      "sourceNameEn": "X Drake",
       "wikiTitle": "X Drake",
       "wikiUrl": "https://onepiece.fandom.com/wiki/X_Drake",
       "patch": {
@@ -93917,11 +94418,36 @@ window.onePieceData = {
       "id": "wt100-501",
       "sourceNameJa": "トラファルガー・ロー（トラファルガー・Ｄ・ワーテル・ロー）",
       "sourceNameEn": "Trafalgar Law (Trafalgar D. Water Law)",
-      "wikiTitle": "Trafalgar Law",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Trafalgar_Law",
+      "wikiTitle": "Trafalgar D. Water Law",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Trafalgar_D._Water_Law",
       "patch": {
-        "wikiTitle": "Trafalgar Law",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Trafalgar_Law"
+        "wikiTitle": "Trafalgar D. Water Law",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Trafalgar_D._Water_Law",
+        "aliases": "\"Surgeon of Death\" ( 死の外科医 , Shi no Gekai )",
+        "job": "Pirate Captain",
+        "age": 26,
+        "birthday": "10월 6일",
+        "heightCm": 191,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 191
+          }
+        ],
+        "bounty": 3000000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 3000000000
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "north-blue",
+        "originCountry": "",
+        "origin": "노스 블루",
+        "organization": "pirates",
+        "description": "Trafalgar D. Water Law - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "op-op-fruit"
       }
     },
     {
@@ -94016,11 +94542,23 @@ window.onePieceData = {
       "id": "wt100-506",
       "sourceNameJa": "ロズワード・チャルロス聖",
       "sourceNameEn": "Saint Charlos",
-      "wikiTitle": "Saint Charlos",
-      "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Charlos",
+      "wikiTitle": "Rosward Charlos",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Rosward_Charlos",
       "patch": {
-        "wikiTitle": "Saint Charlos",
-        "wikiUrl": "https://onepiece.fandom.com/wiki/Saint_Charlos"
+        "wikiTitle": "Rosward Charlos",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Rosward_Charlos",
+        "job": "World Noble",
+        "age": 24,
+        "birthday": "6월 1일",
+        "heightCm": 230,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 230
+          }
+        ],
+        "bloodType": "XF",
+        "description": "Rosward Charlos - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     },
     {
@@ -94053,6 +94591,1870 @@ window.onePieceData = {
         "originRegion": "grand-line",
         "originCountry": "",
         "origin": "그랜드라인"
+      }
+    },
+    {
+      "id": "wt100-509",
+      "sourceNameJa": "マリン",
+      "sourceNameEn": "Marin",
+      "wikiTitle": "Marin",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Marin",
+      "patch": {
+        "wikiTitle": "Marin",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Marin",
+        "job": "Slave",
+        "birthday": "10월 17일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Marin - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-510",
+      "sourceNameJa": "ヒート",
+      "sourceNameEn": "Heat",
+      "wikiTitle": "Heat",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Heat",
+      "patch": {
+        "wikiTitle": "Heat",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Heat",
+        "job": "Pirate",
+        "birthday": "12월 1일",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "pirates",
+        "description": "Heat - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-511",
+      "sourceNameJa": "ワイヤー",
+      "sourceNameEn": "Wire",
+      "wikiTitle": "Wire",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Wire",
+      "patch": {
+        "wikiTitle": "Wire",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Wire",
+        "job": "Pirate",
+        "birthday": "7월 18일",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "pirates",
+        "description": "Wire - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-512",
+      "sourceNameJa": "ディスコ",
+      "sourceNameEn": "Disco",
+      "wikiTitle": "Disco",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Disco",
+      "patch": {
+        "wikiTitle": "Disco",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Disco",
+        "aliases": "\"Walking Super Bazaar\" ( 歩くスーパーバザール , Aruku Sūpābazāru )",
+        "job": "Owner of Human Auctioning House (former)",
+        "birthday": "6월 12일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Disco - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-513",
+      "sourceNameJa": "スタンセン",
+      "sourceNameEn": "Stansen",
+      "wikiTitle": "Stansen",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Stansen",
+      "patch": {
+        "wikiTitle": "Stansen",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Stansen",
+        "job": "Pirate",
+        "age": 81,
+        "birthday": "5월 27일",
+        "heightCm": 1950,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 1950
+          }
+        ],
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Stansen - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-514",
+      "sourceNameJa": "パシア",
+      "sourceNameEn": "Pasia",
+      "wikiTitle": "Pascia",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Pascia",
+      "patch": {
+        "wikiTitle": "Pascia",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Pascia",
+        "job": "Dancer, Slave (former)",
+        "age": 20,
+        "birthday": "2월 21일",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "description": "Pascia - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-515",
+      "sourceNameJa": "バイロン",
+      "sourceNameEn": "Byron",
+      "wikiTitle": "Byron",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Byron",
+      "patch": {
+        "wikiTitle": "Byron",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Byron",
+        "job": "Musician",
+        "age": 25,
+        "birthday": "12월 18일",
+        "heightCm": 192,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 192
+          }
+        ],
+        "originRegion": "west-blue",
+        "originCountry": "",
+        "origin": "웨스트 블루",
+        "description": "Byron - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-516",
+      "sourceNameJa": "コーヒーモンキーズ",
+      "sourceNameEn": "Coffee Monkeys",
+      "wikiTitle": "Coffee Monkeys",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Coffee_Monkeys",
+      "patch": {
+        "wikiTitle": "Coffee Monkeys",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Coffee_Monkeys"
+      }
+    },
+    {
+      "id": "wt100-517",
+      "sourceNameJa": "ラキューバ",
+      "sourceNameEn": "Lacuba",
+      "wikiTitle": "Lacuba",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Lacuba",
+      "patch": {
+        "wikiTitle": "Lacuba",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Lacuba",
+        "job": "Pirate",
+        "birthday": "5월 31일",
+        "bounty": 17000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 17000000
+          }
+        ],
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Lacuba - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-518",
+      "sourceNameJa": "シシリー",
+      "sourceNameEn": "Sicily",
+      "wikiTitle": "Sicily",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sicily",
+      "patch": {
+        "wikiTitle": "Sicily",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sicily",
+        "job": "Rear Admiral",
+        "birthday": "6월 5일",
+        "bounty": 200000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 200000000
+          }
+        ],
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "navy",
+        "description": "Sicily - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-519",
+      "sourceNameJa": "パシフィスタ",
+      "sourceNameEn": "Pacifista",
+      "wikiTitle": "Pacifista",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Pacifista",
+      "patch": {
+        "wikiTitle": "Pacifista",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Pacifista",
+        "job": "Cyborgs",
+        "organization": "navy",
+        "description": "Pacifista - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-520",
+      "sourceNameJa": "ボルサリーノ（黄猿）",
+      "sourceNameEn": "Borsalino (Kizaru)",
+      "wikiTitle": "Borsalino",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Borsalino",
+      "patch": {
+        "wikiTitle": "Borsalino",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Borsalino",
+        "aliases": "Kizaru ( 黄猿 , Kizaru , literally meaning \"Yellow Monkey\")",
+        "job": "Admiral",
+        "age": 58,
+        "birthday": "11월 23일",
+        "heightCm": 302,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 302
+          }
+        ],
+        "bounty": 3000000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 3000000000
+          }
+        ],
+        "bloodType": "XF",
+        "originRegion": "north-blue",
+        "originCountry": "",
+        "origin": "노스 블루",
+        "organization": "navy",
+        "description": "Borsalino - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "glint-glint-fruit"
+      }
+    },
+    {
+      "id": "wt100-521",
+      "sourceNameJa": "ファウスト",
+      "sourceNameEn": "Faust",
+      "wikiTitle": "Faust",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Faust",
+      "patch": {
+        "wikiTitle": "Faust",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Faust",
+        "job": "Pirate",
+        "birthday": "12월 13일",
+        "originRegion": "north-blue",
+        "originCountry": "",
+        "origin": "노스 블루",
+        "organization": "pirates",
+        "description": "Faust - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-522",
+      "sourceNameJa": "戦桃丸",
+      "sourceNameEn": "Sentomaru",
+      "wikiTitle": "Sentomaru",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sentomaru",
+      "patch": {
+        "wikiTitle": "Sentomaru",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sentomaru",
+        "job": "Marine Officer (former)",
+        "age": 34,
+        "birthday": "3월 10일",
+        "heightCm": 279,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 279
+          }
+        ],
+        "bounty": 500000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 500000000
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "navy",
+        "description": "Sentomaru - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-523",
+      "sourceNameJa": "パート",
+      "sourceNameEn": "Pert",
+      "wikiTitle": "Part",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Part",
+      "patch": {
+        "wikiTitle": "Part",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Part",
+        "job": "Fishmonger (former)",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "pirates",
+        "description": "Part - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-524",
+      "sourceNameJa": "ポテト",
+      "sourceNameEn": "Potato",
+      "wikiTitle": "Potato",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Potato",
+      "patch": {
+        "wikiTitle": "Potato",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Potato",
+        "job": "Fishmonger (former)",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "pirates",
+        "description": "Potato - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-525",
+      "sourceNameJa": "ギョギョ",
+      "sourceNameEn": "Gyogyo",
+      "wikiTitle": "Gyogyo",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Gyogyo",
+      "patch": {
+        "wikiTitle": "Gyogyo",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Gyogyo",
+        "job": "Fishmonger (former)",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "pirates",
+        "description": "Gyogyo - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-526",
+      "sourceNameJa": "トッツ",
+      "sourceNameEn": "Totts",
+      "wikiTitle": "Totts",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Totts",
+      "patch": {
+        "wikiTitle": "Totts",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Totts",
+        "job": "Fishmonger (former)",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "pirates",
+        "description": "Totts - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-527",
+      "sourceNameJa": "コーミル",
+      "sourceNameEn": "Comille",
+      "wikiTitle": "Comil",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Comil",
+      "patch": {
+        "wikiTitle": "Comil",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Comil",
+        "job": "Vice Admiral",
+        "birthday": "10월 1일",
+        "bounty": 500000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 500000000
+          }
+        ],
+        "organization": "navy",
+        "description": "Comil - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-528",
+      "sourceNameJa": "スイトピー",
+      "sourceNameEn": "Sweet Pea",
+      "wikiTitle": "Sweet Pea",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sweet_Pea",
+      "patch": {
+        "wikiTitle": "Sweet Pea",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sweet_Pea",
+        "job": "Pirate",
+        "birthday": "1월 14일",
+        "organization": "pirates",
+        "description": "Sweet Pea - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-529",
+      "sourceNameJa": "マーガレット",
+      "sourceNameEn": "Marguerite",
+      "wikiTitle": "Marguerite",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Marguerite",
+      "patch": {
+        "wikiTitle": "Marguerite",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Marguerite",
+        "job": "Pirate",
+        "age": 18,
+        "birthday": "4월 9일",
+        "heightCm": 178,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 178
+          }
+        ],
+        "bloodType": "F",
+        "organization": "pirates",
+        "description": "Marguerite - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-530",
+      "sourceNameJa": "アフェランドラ",
+      "sourceNameEn": "Aphelandra",
+      "wikiTitle": "Aphelandra",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Aphelandra",
+      "patch": {
+        "wikiTitle": "Aphelandra",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Aphelandra",
+        "job": "Warrior (Former), Pirate",
+        "birthday": "8월 1일",
+        "organization": "pirates",
+        "description": "Aphelandra - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-531",
+      "sourceNameJa": "ベラドンナ",
+      "sourceNameEn": "Belladonna",
+      "wikiTitle": "Belladonna",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Belladonna",
+      "patch": {
+        "wikiTitle": "Belladonna",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Belladonna",
+        "job": "Doctor",
+        "birthday": "10월 26일",
+        "description": "Belladonna - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-532",
+      "sourceNameJa": "キキョウ",
+      "sourceNameEn": "Kikyo",
+      "wikiTitle": "Kikyo",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kikyo",
+      "patch": {
+        "wikiTitle": "Kikyo",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kikyo",
+        "job": "Warrior",
+        "birthday": "7월 27일",
+        "description": "Kikyo - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-533",
+      "sourceNameJa": "ネリネ",
+      "sourceNameEn": "Nerine",
+      "wikiTitle": "Nerine",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Nerine",
+      "patch": {
+        "wikiTitle": "Nerine",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Nerine",
+        "job": "Kuja warrior",
+        "birthday": "12월 15일",
+        "description": "Nerine - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-534",
+      "sourceNameJa": "グロリオーサ（ニョン婆）",
+      "sourceNameEn": "Gloriosa (Elder Nyon)",
+      "wikiTitle": "Gloriosa",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Gloriosa",
+      "patch": {
+        "wikiTitle": "Gloriosa",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Gloriosa",
+        "aliases": "Elder Nyon ( ニョン婆 , Nyon Bā ) Funimation: Granny Nyon",
+        "job": "Empress of Amazon Lily (former)",
+        "birthday": "2월 4일",
+        "organization": "pirates",
+        "description": "Gloriosa - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-535",
+      "sourceNameJa": "ポピー",
+      "sourceNameEn": "Poppy",
+      "wikiTitle": "Poppy",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Poppy",
+      "patch": {
+        "wikiTitle": "Poppy",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Poppy",
+        "job": "Warrior",
+        "birthday": "5월 17일",
+        "description": "Poppy - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-536",
+      "sourceNameJa": "パンジー",
+      "sourceNameEn": "Pansy",
+      "wikiTitle": "Pansy",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Pansy",
+      "patch": {
+        "wikiTitle": "Pansy",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Pansy",
+        "job": "Warrior",
+        "birthday": "7월 20일",
+        "description": "Pansy - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-538",
+      "sourceNameJa": "ラン",
+      "sourceNameEn": "Ran",
+      "wikiTitle": "Ran",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Ran",
+      "patch": {
+        "wikiTitle": "Ran",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Ran",
+        "job": "Pirate",
+        "birthday": "11월 24일",
+        "organization": "pirates",
+        "description": "Ran - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-539",
+      "sourceNameJa": "コスモス",
+      "sourceNameEn": "Cosmos",
+      "wikiTitle": "Cosmos",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Cosmos",
+      "patch": {
+        "wikiTitle": "Cosmos",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Cosmos",
+        "job": "Pirate",
+        "birthday": "9월 26일",
+        "organization": "pirates",
+        "description": "Cosmos - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-540",
+      "sourceNameJa": "リンドウ",
+      "sourceNameEn": "Rindo",
+      "wikiTitle": "Rindo",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Rindo",
+      "patch": {
+        "wikiTitle": "Rindo",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Rindo",
+        "job": "Pirate",
+        "birthday": "9월 16일",
+        "organization": "pirates",
+        "description": "Rindo - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-541",
+      "sourceNameJa": "ブルーファン",
+      "sourceNameEn": "Bluefan",
+      "wikiTitle": "Blue Fan",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Blue_Fan",
+      "patch": {
+        "wikiTitle": "Blue Fan",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Blue_Fan",
+        "job": "Pirate",
+        "birthday": "7월 11일",
+        "organization": "pirates",
+        "description": "Blue Fan - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-542",
+      "sourceNameJa": "デージー",
+      "sourceNameEn": "Daisy",
+      "wikiTitle": "Daisy",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Daisy",
+      "patch": {
+        "wikiTitle": "Daisy",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Daisy",
+        "job": "Pirate",
+        "birthday": "2월 15일",
+        "organization": "pirates",
+        "description": "Daisy - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-543",
+      "sourceNameJa": "ボア・ハンコック",
+      "sourceNameEn": "Boa Hancock",
+      "wikiTitle": "Boa Hancock",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Boa_Hancock",
+      "patch": {
+        "wikiTitle": "Boa Hancock",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Boa_Hancock",
+        "aliases": "\"Snake Princess\" ( 蛇姫 , Hebihime )",
+        "job": "Captain of the Kuja Pirates",
+        "age": 31,
+        "birthday": "9월 2일",
+        "heightCm": 191,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 191
+          }
+        ],
+        "bounty": 1659000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 1659000000
+          }
+        ],
+        "bloodType": "S",
+        "organization": "pirates",
+        "description": "Boa Hancock - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "love-love-fruit"
+      }
+    },
+    {
+      "id": "wt100-544",
+      "sourceNameJa": "ボア・サンダーソニア",
+      "sourceNameEn": "Boa Sandersonia",
+      "wikiTitle": "Boa Sandersonia",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Boa_Sandersonia",
+      "patch": {
+        "wikiTitle": "Boa Sandersonia",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Boa_Sandersonia",
+        "job": "Ruler of Amazon Lily",
+        "age": 30,
+        "birthday": "9월 3일",
+        "heightCm": 453,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 453
+          }
+        ],
+        "bounty": 40000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 40000000
+          }
+        ],
+        "bloodType": "S",
+        "organization": "pirates",
+        "description": "Boa Sandersonia - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "snake-snake-fruit-anaconda-model-snake-snake-fruit-model-anaconda"
+      }
+    },
+    {
+      "id": "wt100-545",
+      "sourceNameJa": "ボア・マリーゴールド",
+      "sourceNameEn": "Boa Marigold",
+      "wikiTitle": "Boa Marigold",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Boa_Marigold",
+      "patch": {
+        "wikiTitle": "Boa Marigold",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Boa_Marigold",
+        "job": "Ruler of Amazon Lily",
+        "age": 28,
+        "birthday": "9월 5일",
+        "heightCm": 432,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 432
+          }
+        ],
+        "bounty": 40000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 40000000
+          }
+        ],
+        "bloodType": "S",
+        "organization": "pirates",
+        "description": "Boa Marigold - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "snake-snake-fruit-king-cobra-model-snake-snake-fruit-model-king-cobra"
+      }
+    },
+    {
+      "id": "wt100-546",
+      "sourceNameJa": "サロメ",
+      "sourceNameEn": "Salome",
+      "wikiTitle": "Salome",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Salome",
+      "patch": {
+        "wikiTitle": "Salome",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Salome",
+        "job": "Snake Weapon",
+        "birthday": "3월 6일",
+        "organization": "pirates",
+        "description": "Salome - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-547",
+      "sourceNameJa": "エニシダ",
+      "sourceNameEn": "Genista",
+      "wikiTitle": "Enishida",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Enishida",
+      "patch": {
+        "wikiTitle": "Enishida",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Enishida",
+        "job": "Lady's maid",
+        "birthday": "2월 24일",
+        "description": "Enishida - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-548",
+      "sourceNameJa": "パンダウーマン美",
+      "sourceNameEn": "Pandawomanmi",
+      "wikiTitle": "Pandawomanmi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Pandawomanmi",
+      "patch": {
+        "wikiTitle": "Pandawomanmi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Pandawomanmi",
+        "birthday": "2월 29일",
+        "description": "Pandawomanmi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-549",
+      "sourceNameJa": "バキュラ",
+      "sourceNameEn": "Bacura",
+      "wikiTitle": "Bacura",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Bacura",
+      "patch": {
+        "wikiTitle": "Bacura",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Bacura",
+        "job": "Pet",
+        "birthday": "11월 29일",
+        "organization": "pirates",
+        "description": "Bacura - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-550",
+      "sourceNameJa": "ハレダス",
+      "sourceNameEn": "Haredas",
+      "wikiTitle": "Haredas",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Haredas",
+      "patch": {
+        "wikiTitle": "Haredas",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Haredas",
+        "job": "Scientist",
+        "age": 97,
+        "birthday": "10월 14일",
+        "heightCm": 253,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 253
+          }
+        ],
+        "bloodType": "X",
+        "description": "Haredas - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-551",
+      "sourceNameJa": "ティバニー",
+      "sourceNameEn": "Tibbany",
+      "wikiTitle": "Tibany",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tibany",
+      "patch": {
+        "wikiTitle": "Tibany",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tibany",
+        "job": "Okama",
+        "birthday": "6월 19일",
+        "description": "Tibany - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-552",
+      "sourceNameJa": "ヘラクレス",
+      "sourceNameEn": "Heracles",
+      "wikiTitle": "Heracles",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Heracles",
+      "patch": {
+        "wikiTitle": "Heracles",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Heracles",
+        "job": "Explorer",
+        "age": 51,
+        "birthday": "5월 10일",
+        "heightCm": 214,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 214
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "description": "Heracles - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-553",
+      "sourceNameJa": "ジンベエ",
+      "sourceNameEn": "Jinbe",
+      "wikiTitle": "Jinbe",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Jinbe",
+      "patch": {
+        "wikiTitle": "Jinbe",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Jinbe",
+        "aliases": "\"Knight of the Sea\" Jinbe ( 海侠のジンベエ , Kaikyō no Jinbē , English versions: \"First Son of the Sea\") \"Boss Jinbe\" ( ジンベエ親分 , Jinbē Oyabun )",
+        "job": "Pirate",
+        "age": 46,
+        "birthday": "4월 2일",
+        "heightCm": 301,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 301
+          }
+        ],
+        "bounty": 1100000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 1100000000
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "subOrganization": "straw-hat",
+        "description": "Jinbe - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-554",
+      "sourceNameJa": "タロイモ",
+      "sourceNameEn": "Taroimo",
+      "wikiTitle": "Taroimo",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Taroimo",
+      "patch": {
+        "wikiTitle": "Taroimo",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Taroimo",
+        "job": "Cyborg animal",
+        "birthday": "10월 16일",
+        "description": "Taroimo - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-555",
+      "sourceNameJa": "シャンバ",
+      "sourceNameEn": "Shamba",
+      "wikiTitle": "Shanba",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Shanba",
+      "patch": {
+        "wikiTitle": "Shanba",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Shanba",
+        "birthday": "11월 8일",
+        "description": "Shanba - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-556",
+      "sourceNameJa": "ストーカー",
+      "sourceNameEn": "Stalker",
+      "wikiTitle": "Stalker",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Stalker",
+      "patch": {
+        "wikiTitle": "Stalker",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Stalker",
+        "job": "Marine Lieutenant Junior Grade",
+        "birthday": "9월 28일",
+        "bounty": 1000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 1000000
+          }
+        ],
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "navy",
+        "description": "Stalker - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-557",
+      "sourceNameJa": "ハンニャバル",
+      "sourceNameEn": "Hannyabal",
+      "wikiTitle": "Hannyabal",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Hannyabal",
+      "patch": {
+        "wikiTitle": "Hannyabal",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Hannyabal",
+        "job": "Chief Warden",
+        "age": 35,
+        "birthday": "8월 28일",
+        "heightCm": 309,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 309
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "description": "Hannyabal - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-558",
+      "sourceNameJa": "パンクータ・ダケヤン",
+      "sourceNameEn": "Justy Tinbread",
+      "wikiTitle": "Pankuta Dakeyan",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Pankuta_Dakeyan",
+      "patch": {
+        "wikiTitle": "Pankuta Dakeyan",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Pankuta_Dakeyan",
+        "birthday": "6월 29일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인"
+      }
+    },
+    {
+      "id": "wt100-559",
+      "sourceNameJa": "ドミノ",
+      "sourceNameEn": "Domino",
+      "wikiTitle": "Domino",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Domino",
+      "patch": {
+        "wikiTitle": "Domino",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Domino",
+        "job": "Head Jailer",
+        "birthday": "10월 30일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Domino - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-560",
+      "sourceNameJa": "ブルーゴリラ（ブルゴリ）",
+      "sourceNameEn": "Blue Gorillas (Blugori)",
+      "wikiTitle": "Animal Species/Summit War Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FSummit_War_Saga",
+      "patch": {
+        "wikiTitle": "Animal Species/Summit War Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FSummit_War_Saga"
+      }
+    },
+    {
+      "id": "wt100-561",
+      "sourceNameJa": "マゼラン",
+      "sourceNameEn": "Magellan",
+      "wikiTitle": "Magellan",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Magellan",
+      "patch": {
+        "wikiTitle": "Magellan",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Magellan",
+        "job": "Vice Warden",
+        "age": 47,
+        "birthday": "10월 9일",
+        "heightCm": 491,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 491
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Magellan - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "venom-venom-fruit"
+      }
+    },
+    {
+      "id": "wt100-562",
+      "sourceNameJa": "ジャン・ゴエン",
+      "sourceNameEn": "Dez Tinny",
+      "wikiTitle": "Jean Goen",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Jean_Goen",
+      "patch": {
+        "wikiTitle": "Jean Goen",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Jean_Goen",
+        "job": "Prisoner",
+        "birthday": "9월 24일",
+        "bounty": 15000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 15000000
+          }
+        ],
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Jean Goen - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-563",
+      "sourceNameJa": "バシリスク",
+      "sourceNameEn": "Basilisk",
+      "wikiTitle": "Basilisk",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Basilisk",
+      "patch": {
+        "wikiTitle": "Basilisk",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Basilisk",
+        "job": "Level 2 Guardian",
+        "originRegion": "west-blue",
+        "originCountry": "",
+        "origin": "웨스트 블루",
+        "description": "Basilisk - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-564",
+      "sourceNameJa": "アン・ゼンガイーナ",
+      "sourceNameEn": "Ratherby Seifer",
+      "wikiTitle": "An Zengaiina",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/An_Zengaiina",
+      "patch": {
+        "wikiTitle": "An Zengaiina",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/An_Zengaiina",
+        "birthday": "1월 31일",
+        "bounty": 15000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 15000000
+          }
+        ],
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인"
+      }
+    },
+    {
+      "id": "wt100-565",
+      "sourceNameJa": "パズルサソリ",
+      "sourceNameEn": "Puzzle Scorpions",
+      "wikiTitle": "Animal Species/Summit War Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FSummit_War_Saga",
+      "patch": {
+        "wikiTitle": "Animal Species/Summit War Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FSummit_War_Saga"
+      }
+    },
+    {
+      "id": "wt100-566",
+      "sourceNameJa": "サルデス",
+      "sourceNameEn": "Saldeath",
+      "wikiTitle": "Saldeath",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Saldeath",
+      "patch": {
+        "wikiTitle": "Saldeath",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Saldeath",
+        "job": "Chief Guard ( 牢番長 , Rōban Chō )",
+        "age": 18,
+        "birthday": "6월 8일",
+        "heightCm": 218,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 218
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Saldeath - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-567",
+      "sourceNameJa": "マンティコラ",
+      "sourceNameEn": "Manticore",
+      "wikiTitle": "Animal Species/Summit War Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FSummit_War_Saga",
+      "patch": {
+        "wikiTitle": "Animal Species/Summit War Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FSummit_War_Saga"
+      }
+    },
+    {
+      "id": "wt100-568",
+      "sourceNameJa": "サディちゃん",
+      "sourceNameEn": "Little Sadi",
+      "wikiTitle": "Sadi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sadi",
+      "patch": {
+        "wikiTitle": "Sadi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sadi",
+        "job": "Chief Guard ( 獄卒長 , Gokusotsu Chō )",
+        "age": 23,
+        "birthday": "3월 5일",
+        "heightCm": 183,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 183
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Sadi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-569",
+      "sourceNameJa": "スフィンクス",
+      "sourceNameEn": "Sphynx",
+      "wikiTitle": "Sphinx",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sphinx",
+      "patch": {
+        "wikiTitle": "Sphinx",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sphinx",
+        "job": "Level 2 Guardian",
+        "description": "Sphinx - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-570",
+      "sourceNameJa": "ダイギン",
+      "sourceNameEn": "Daigin",
+      "wikiTitle": "Daigin",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Daigin",
+      "patch": {
+        "wikiTitle": "Daigin",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Daigin",
+        "job": "Commodore",
+        "birthday": "8월 24일",
+        "bounty": 100000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000000
+          }
+        ],
+        "originRegion": "west-blue",
+        "originCountry": "",
+        "origin": "웨스트 블루",
+        "organization": "navy",
+        "description": "Daigin - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-571",
+      "sourceNameJa": "ドビー・イバドンボ",
+      "sourceNameEn": "Dobby Ibadonbo",
+      "wikiTitle": "Dobby Ibadonbo",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Dobby_Ibadonbo",
+      "patch": {
+        "wikiTitle": "Dobby Ibadonbo",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Dobby_Ibadonbo",
+        "job": "Prisoner of Impel Down",
+        "description": "Dobby Ibadonbo - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-572",
+      "sourceNameJa": "ミノタウロス",
+      "sourceNameEn": "Minotaurus",
+      "wikiTitle": "Minotaurus",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Minotaurus",
+      "patch": {
+        "wikiTitle": "Minotaurus",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Minotaurus",
+        "job": "Jailer Beast",
+        "birthday": "3월 4일",
+        "description": "Minotaurus - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-573",
+      "sourceNameJa": "ゾット",
+      "sourceNameEn": "Burr",
+      "wikiTitle": "Zotto",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Zotto",
+      "patch": {
+        "wikiTitle": "Zotto",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Zotto",
+        "job": "Marine Lieutenant",
+        "bounty": 1000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 1000000
+          }
+        ],
+        "organization": "navy",
+        "description": "Zotto - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-574",
+      "sourceNameJa": "イナズマ",
+      "sourceNameEn": "Inazuma",
+      "wikiTitle": "Inazuma",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Inazuma",
+      "patch": {
+        "wikiTitle": "Inazuma",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Inazuma",
+        "job": "Revolutionary",
+        "age": 29,
+        "birthday": "8월 3일",
+        "heightCm": 228,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 228
+          }
+        ],
+        "bounty": 100000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000000
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "revolutionary",
+        "description": "Inazuma - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "snip-snip-fruit-shear-shear-fruit"
+      }
+    },
+    {
+      "id": "wt100-575",
+      "sourceNameJa": "エンポリオ・イワンコフ",
+      "sourceNameEn": "Emporio Ivankov",
+      "wikiTitle": "Emporio Ivankov",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Emporio_Ivankov",
+      "patch": {
+        "wikiTitle": "Emporio Ivankov",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Emporio_Ivankov",
+        "aliases": "\"Okama King\" ( オカマ王 , Okama Ō )",
+        "job": "G Army Commander of the Revolutionary Army",
+        "age": 53,
+        "birthday": "1월 8일",
+        "heightCm": 449,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 449
+          }
+        ],
+        "bounty": 100000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000000
+          }
+        ],
+        "bloodType": "XF",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "revolutionary",
+        "description": "Emporio Ivankov - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "horm-horm-fruit-hor-hor-fruit"
+      }
+    },
+    {
+      "id": "wt100-576",
+      "sourceNameJa": "ミノリノケロス",
+      "sourceNameEn": "Minorhinoceros",
+      "wikiTitle": "Minorhinoceros",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Minorhinoceros",
+      "patch": {
+        "wikiTitle": "Minorhinoceros",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Minorhinoceros",
+        "job": "Jailer Beast",
+        "birthday": "3월 1일",
+        "description": "Minorhinoceros - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-577",
+      "sourceNameJa": "シリュウ",
+      "sourceNameEn": "Shiliew",
+      "wikiTitle": "Shiryu",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Shiryu",
+      "patch": {
+        "wikiTitle": "Shiryu",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Shiryu",
+        "aliases": "\"Shiryu of the Rain\" ( 雨のシリュウ , Ame no Shiryū )",
+        "job": "Titanic Captain (Captain of the Second Ship)",
+        "age": 44,
+        "birthday": "6월 11일",
+        "heightCm": 340,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 340
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Shiryu - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "clear-clear-fruit"
+      }
+    },
+    {
+      "id": "wt100-578",
+      "sourceNameJa": "ミノコアラ",
+      "sourceNameEn": "Minokoala",
+      "wikiTitle": "Minokoala",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Minokoala",
+      "patch": {
+        "wikiTitle": "Minokoala",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Minokoala",
+        "job": "Jailer Beast",
+        "birthday": "3월 5일",
+        "description": "Minokoala - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-579",
+      "sourceNameJa": "ミノゼブラ",
+      "sourceNameEn": "Minozebra",
+      "wikiTitle": "Minozebra",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Minozebra",
+      "patch": {
+        "wikiTitle": "Minozebra",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Minozebra",
+        "job": "Jailer Beast",
+        "birthday": "3월 7일",
+        "description": "Minozebra - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-580",
+      "sourceNameJa": "カイロ・クレヨ",
+      "sourceNameEn": "Spara Heetpack",
+      "wikiTitle": "Kairo Kureyo",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kairo_Kureyo",
+      "patch": {
+        "wikiTitle": "Kairo Kureyo",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kairo_Kureyo",
+        "bounty": 100000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000000
+          }
+        ]
+      }
+    },
+    {
+      "id": "wt100-581",
+      "sourceNameJa": "ムチャナー",
+      "sourceNameEn": "Notta Magician",
+      "wikiTitle": "Muchana",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Muchana",
+      "patch": {
+        "wikiTitle": "Muchana",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Muchana",
+        "job": "Doctor",
+        "description": "Muchana - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-582",
+      "sourceNameJa": "軍隊ウルフ",
+      "sourceNameEn": "Army Wolves",
+      "wikiTitle": "Animal Species/Summit War Saga",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FSummit_War_Saga",
+      "patch": {
+        "wikiTitle": "Animal Species/Summit War Saga",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Animal_Species%2FSummit_War_Saga"
+      }
+    },
+    {
+      "id": "wt100-583",
+      "sourceNameJa": "キノコ",
+      "sourceNameEn": "Mushroom",
+      "wikiTitle": "Kinoko",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kinoko",
+      "patch": {
+        "wikiTitle": "Kinoko",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kinoko",
+        "job": "Pirate",
+        "bounty": 100000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000000
+          }
+        ],
+        "organization": "pirates",
+        "description": "Kinoko - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-584",
+      "sourceNameJa": "フランソワ",
+      "sourceNameEn": "Francois",
+      "wikiTitle": "Francois",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Francois",
+      "patch": {
+        "wikiTitle": "Francois",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Francois",
+        "description": "Francois - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-585",
+      "sourceNameJa": "ツノッコフ",
+      "sourceNameEn": "Antlerkov",
+      "wikiTitle": "Tsunokkov",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tsunokkov",
+      "patch": {
+        "wikiTitle": "Tsunokkov",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tsunokkov",
+        "job": "Dancer",
+        "description": "Tsunokkov - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-586",
+      "sourceNameJa": "ウサッコフ",
+      "sourceNameEn": "Bunkov",
+      "wikiTitle": "Usakkov",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Usakkov",
+      "patch": {
+        "wikiTitle": "Usakkov",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Usakkov",
+        "job": "Dancer, Prisoner of the Great Prison (former)",
+        "description": "Usakkov - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-588",
+      "sourceNameJa": "アケヘンデ",
+      "sourceNameEn": "Uweshall Notpass",
+      "wikiTitle": "Akehende",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Akehende",
+      "patch": {
+        "wikiTitle": "Akehende",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Akehende",
+        "job": "Marine Rear Admiral",
+        "bounty": 200000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 200000000
+          }
+        ],
+        "description": "Akehende - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-589",
+      "sourceNameJa": "ドーハ・イッタンカⅡ世",
+      "sourceNameEn": "Howja Geddinthere Ii",
+      "wikiTitle": "Doha Ittanka II",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Doha_Ittanka_II",
+      "patch": {
+        "wikiTitle": "Doha Ittanka II",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Doha_Ittanka_II",
+        "job": "Prisoner of Impel Down",
+        "description": "Doha Ittanka II - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-590",
+      "sourceNameJa": "スコシバ・カニシトール",
+      "sourceNameEn": "Lohkee Clownin",
+      "wikiTitle": "Sukoshiba Kanishitoru",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sukoshiba_Kanishitoru",
+      "patch": {
+        "wikiTitle": "Sukoshiba Kanishitoru",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sukoshiba_Kanishitoru",
+        "job": "Impel Down Guard",
+        "description": "Sukoshiba Kanishitoru - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-591",
+      "sourceNameJa": "スクアード",
+      "sourceNameEn": "Squard",
+      "wikiTitle": "Squard",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Squard",
+      "patch": {
+        "wikiTitle": "Squard",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Squard",
+        "aliases": "\"Maelstrom Spider\" ( 大渦蜘蛛 , Ō Uzu Gumo , English versions: Whirl Spider)",
+        "job": "Pirate Captain",
+        "age": 52,
+        "birthday": "9월 6일",
+        "heightCm": 228,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 228
+          }
+        ],
+        "bounty": 210000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 210000000
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Squard - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-592",
+      "sourceNameJa": "セイバー",
+      "sourceNameEn": "Saber",
+      "wikiTitle": "Saber",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Saber",
+      "patch": {
+        "wikiTitle": "Saber",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Saber",
+        "job": "Pirate",
+        "organization": "pirates",
+        "description": "Saber - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-593",
+      "sourceNameJa": "フィナモレ",
+      "sourceNameEn": "Finamore",
+      "wikiTitle": "Finamore",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Finamore",
+      "patch": {
+        "wikiTitle": "Finamore",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Finamore",
+        "job": "Pirate",
+        "organization": "pirates",
+        "description": "Finamore - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-594",
+      "sourceNameJa": "バリー",
+      "sourceNameEn": "Barry",
+      "wikiTitle": "Barry",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Barry",
+      "patch": {
+        "wikiTitle": "Barry",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Barry",
+        "job": "Pirate",
+        "organization": "pirates",
+        "description": "Barry - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-595",
+      "sourceNameJa": "キメル",
+      "sourceNameEn": "Kimel",
+      "wikiTitle": "Kimel",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kimel",
+      "patch": {
+        "wikiTitle": "Kimel",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kimel",
+        "job": "Pirate",
+        "organization": "pirates",
+        "description": "Kimel - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-596",
+      "sourceNameJa": "ドギャ",
+      "sourceNameEn": "Dogya",
+      "wikiTitle": "Dogya",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Dogya",
+      "patch": {
+        "wikiTitle": "Dogya",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Dogya",
+        "job": "Pirate",
+        "organization": "pirates",
+        "description": "Dogya - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-597",
+      "sourceNameJa": "クーカイ",
+      "sourceNameEn": "Kukai",
+      "wikiTitle": "Kukai",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kukai",
+      "patch": {
+        "wikiTitle": "Kukai",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kukai",
+        "job": "Samurai",
+        "organization": "pirates",
+        "description": "Kukai - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-598",
+      "sourceNameJa": "ナミュール",
+      "sourceNameEn": "Namule",
+      "wikiTitle": "Namur",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Namur",
+      "patch": {
+        "wikiTitle": "Namur",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Namur",
+        "job": "8th Division Commander",
+        "birthday": "7월 6일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Namur - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-599",
+      "sourceNameJa": "ビスタ",
+      "sourceNameEn": "Vista",
+      "wikiTitle": "Vista",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Vista",
+      "patch": {
+        "wikiTitle": "Vista",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Vista",
+        "aliases": "\"Vista of the Flower Swords\" ( 花剣のビスタ , Kaken no Bisuta , Crunchyroll: \"Vista the Flower Blade\")",
+        "job": "5th Division Commander (former)",
+        "age": 47,
+        "birthday": "2월 5일",
+        "heightCm": 328,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 328
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "north-blue",
+        "originCountry": "",
+        "origin": "노스 블루",
+        "organization": "pirates",
+        "description": "Vista - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-600",
+      "sourceNameJa": "クリエル",
+      "sourceNameEn": "Curiel",
+      "wikiTitle": "Curiel",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Curiel",
+      "patch": {
+        "wikiTitle": "Curiel",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Curiel",
+        "job": "10th Division Commander",
+        "birthday": "9월 12일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Curiel - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-601",
+      "sourceNameJa": "スピード・ジル",
+      "sourceNameEn": "Speed Jil",
+      "wikiTitle": "Speed Jiru",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Speed_Jiru",
+      "patch": {
+        "wikiTitle": "Speed Jiru",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Speed_Jiru",
+        "job": "14th Division Commander",
+        "birthday": "4월 6일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "organization": "pirates",
+        "description": "Speed Jiru - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-602",
+      "sourceNameJa": "ラクヨウ",
+      "sourceNameEn": "Rakuyo",
+      "wikiTitle": "Rakuyo",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Rakuyo",
+      "patch": {
+        "wikiTitle": "Rakuyo",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Rakuyo",
+        "job": "7th Division Commander",
+        "birthday": "9월 8일",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "pirates",
+        "description": "Rakuyo - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-603",
+      "sourceNameJa": "ブレンハイム",
+      "sourceNameEn": "Blenheim",
+      "wikiTitle": "Blenheim",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Blenheim",
+      "patch": {
+        "wikiTitle": "Blenheim",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Blenheim",
+        "job": "9th Division Commander",
+        "birthday": "8월 6일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Blenheim - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-604",
+      "sourceNameJa": "フォッサ",
+      "sourceNameEn": "Fossa",
+      "wikiTitle": "Fossa",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Fossa",
+      "patch": {
+        "wikiTitle": "Fossa",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Fossa",
+        "job": "15th Division Commander",
+        "birthday": "4월 15일",
+        "originRegion": "north-blue",
+        "originCountry": "",
+        "origin": "노스 블루",
+        "organization": "pirates",
+        "description": "Fossa - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-605",
+      "sourceNameJa": "ハルタ",
+      "sourceNameEn": "Haruta",
+      "wikiTitle": "Haruta",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Haruta",
+      "patch": {
+        "wikiTitle": "Haruta",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Haruta",
+        "job": "12th Division Commander",
+        "birthday": "2월 4일",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "pirates",
+        "description": "Haruta - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-606",
+      "sourceNameJa": "ブラメンコ",
+      "sourceNameEn": "Blamenco",
+      "wikiTitle": "Blamenco",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Blamenco",
+      "patch": {
+        "wikiTitle": "Blamenco",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Blamenco",
+        "job": "6th Division Commander",
+        "birthday": "2월 5일",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "pirates",
+        "description": "Blamenco - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "pocket-pocket-fruit"
+      }
+    },
+    {
+      "id": "wt100-607",
+      "sourceNameJa": "イゾウ",
+      "sourceNameEn": "Izo",
+      "wikiTitle": "Izou",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Izou",
+      "patch": {
+        "wikiTitle": "Izou",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Izou",
+        "job": "16th Division Commander (former)",
+        "age": 45,
+        "birthday": "10월 13일",
+        "heightCm": 192,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 192
+          }
+        ],
+        "bounty": 510000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 510000000
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Izou - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-608",
+      "sourceNameJa": "アトモス",
+      "sourceNameEn": "Atmos",
+      "wikiTitle": "Atmos",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Atmos",
+      "patch": {
+        "wikiTitle": "Atmos",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Atmos",
+        "aliases": "\"Water Buffalo\" ( 水牛 , Suigyū )",
+        "job": "13th Division Commander",
+        "birthday": "3월 19일",
+        "originRegion": "west-blue",
+        "originCountry": "",
+        "origin": "웨스트 블루",
+        "organization": "pirates",
+        "description": "Atmos - One Piece Wiki infobox 기준 자동 보강 정보입니다."
       }
     }
   ],
@@ -96877,6 +99279,17 @@ window.onePieceData = {
       "description": "Elephant-Elephant Fruit (Funimation dub, VIZ) Eleph-Eleph Fruit (VIZ) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
     },
     {
+      "id": "berry-berry-fruit",
+      "name": "Berry-Berry Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-431",
+      "previousUserIds": [],
+      "description": "Berry-Berry Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
       "id": "rust-rust-fruit",
       "name": "Rust-Rust Fruit",
       "type": "paramecia",
@@ -96886,6 +99299,17 @@ window.onePieceData = {
       "currentUserId": "wt100-432",
       "previousUserIds": [],
       "description": "Rust-Rust Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "wheel-wheel-fruit",
+      "name": "Wheel-Wheel Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-433",
+      "previousUserIds": [],
+      "description": "Wheel-Wheel Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
     },
     {
       "id": "tweet-tweet-fruit-phoenix-model-bird-bird-fruit-model-phoenix",
@@ -96949,7 +99373,7 @@ window.onePieceData = {
       "zoanSubtype": "",
       "model": "",
       "awakened": false,
-      "currentUserId": "wt100-457",
+      "currentUserId": "wt100-577",
       "previousUserIds": [],
       "description": "Clear-Clear Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
     },
@@ -96963,6 +99387,17 @@ window.onePieceData = {
       "currentUserId": "wt100-458",
       "previousUserIds": [],
       "description": "Hollow-Hollow Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "magnet-magnet-fruit",
+      "name": "Magnet-Magnet Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-496",
+      "previousUserIds": [],
+      "description": "Magnet-Magnet Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
     },
     {
       "id": "shadow-shadow-fruit",
@@ -97009,17 +99444,6 @@ window.onePieceData = {
       "description": "Straw-Straw Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
     },
     {
-      "id": "magnet-magnet-fruit",
-      "name": "Magnet-Magnet Fruit",
-      "type": "paramecia",
-      "zoanSubtype": "",
-      "model": "",
-      "awakened": false,
-      "currentUserId": "wt100-496",
-      "previousUserIds": [],
-      "description": "Magnet-Magnet Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
-    },
-    {
       "id": "tone-tone-fruit",
       "name": "Tone-Tone Fruit",
       "type": "paramecia",
@@ -97040,6 +99464,105 @@ window.onePieceData = {
       "currentUserId": "wt100-498",
       "previousUserIds": [],
       "description": "Dragon-Dragon Fruit, Model: Allosaurus - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "op-op-fruit",
+      "name": "Op-Op Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-501",
+      "previousUserIds": [],
+      "description": "Op-Op Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "glint-glint-fruit",
+      "name": "Glint-Glint Fruit",
+      "type": "logia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-520",
+      "previousUserIds": [],
+      "description": "Glint-Glint Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "love-love-fruit",
+      "name": "Love-Love Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-543",
+      "previousUserIds": [],
+      "description": "Love-Love Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "snake-snake-fruit-anaconda-model-snake-snake-fruit-model-anaconda",
+      "name": "Snake-Snake Fruit Anaconda Model Snake-Snake Fruit: Model Anaconda",
+      "type": "zoan",
+      "zoanSubtype": "",
+      "model": "Anaconda",
+      "awakened": false,
+      "currentUserId": "wt100-544",
+      "previousUserIds": [],
+      "description": "Snake-Snake Fruit Anaconda Model (VIZ) Snake-Snake Fruit: Model Anaconda (Funimation) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "snake-snake-fruit-king-cobra-model-snake-snake-fruit-model-king-cobra",
+      "name": "Snake-Snake Fruit King Cobra Model ; Snake-Snake Fruit: Model King Cobra",
+      "type": "zoan",
+      "zoanSubtype": "",
+      "model": "King Cobra",
+      "awakened": false,
+      "currentUserId": "wt100-545",
+      "previousUserIds": [],
+      "description": "Snake-Snake Fruit King Cobra Model (VIZ); Snake-Snake Fruit: Model King Cobra (Funimation) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "venom-venom-fruit",
+      "name": "Venom-Venom Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-561",
+      "previousUserIds": [],
+      "description": "Venom-Venom Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "snip-snip-fruit-shear-shear-fruit",
+      "name": "Snip-Snip Fruit ; Shear-Shear Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-574",
+      "previousUserIds": [],
+      "description": "Snip-Snip Fruit (VIZ and Funimation); Shear-Shear Fruit (One Piece Official YouTube Channel) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "horm-horm-fruit-hor-hor-fruit",
+      "name": "Horm-Horm Fruit ; Hor-Hor Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-575",
+      "previousUserIds": [],
+      "description": "Horm-Horm Fruit (VIZ and Funimation); Hor-Hor Fruit (One Piece Official YouTube Channel) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "pocket-pocket-fruit",
+      "name": "Pocket-Pocket Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-606",
+      "previousUserIds": [],
+      "description": "Pocket-Pocket Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
     }
   ]
 };
@@ -98506,6 +101029,7 @@ window.onePieceData = {
   });
 })();
 /* WIKI_TECHNIQUE_AUTO_END */
+
 
 
 
@@ -115709,6 +118233,4925 @@ window.onePieceData = {
       "Kokoro",
       "Chimney",
       "Gonbe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-401",
+    "volume": 42,
+    "number": 401,
+    "title": "Pirates vs. CP9",
+    "summary": "A few Straw Hat Pirates begin to fight with one CP9 agent each. While Luffy chases after Rob Lucci, Sogeking is assaulted by Jabra, and Zoro and Kaku begin fighting while the CP9 begin to show off their Devil Fruit abilities.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-367",
+      "wt100-368",
+      "wt100-362",
+      "wt100-396",
+      "wt100-425"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 401",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_401",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Rob Lucci",
+      "Hattori",
+      "Kaku",
+      "Jabra",
+      "Suzume"
+    ]
+  },
+  {
+    "id": "wiki-chapter-402",
+    "volume": 42,
+    "number": 402,
+    "title": "Handcuffs No. 2",
+    "summary": "The Straw Hat Pirates versus CP9.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-367",
+      "wt100-362",
+      "wt100-365",
+      "wt100-396",
+      "wt100-398",
+      "wt100-397",
+      "wt100-348"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 402",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_402",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Rob Lucci",
+      "Kaku",
+      "Kalifa",
+      "Jabra",
+      "Kumadori",
+      "Fukurou",
+      "Franky"
+    ]
+  },
+  {
+    "id": "wiki-chapter-403",
+    "volume": 42,
+    "number": 403,
+    "title": "Mr. Chivalry",
+    "summary": "The battles between the Straw Hat Pirates and CP9 intensify, as Sanji takes on Kalifa and Chopper and Nami encounter Kumadori. However, Sanji's morals prevent him from fighting at full power, handing him a defeat, and Nami and Chopper are pinned down by Kumadori's strange powers. Meanwhile, Luffy activates an unknown power for the first time that has great destroying abilities.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-5",
+      "wt100-130",
+      "wt100-381",
+      "wt100-365",
+      "wt100-398",
+      "wt100-179",
+      "wt100-187",
+      "wt100-350",
+      "wt100-351"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 403",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_403",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Spandam",
+      "Kalifa",
+      "Kumadori",
+      "Crocodile",
+      "Daz Bonez",
+      "Chimney",
+      "Gonbe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-404",
+    "volume": 42,
+    "number": 404,
+    "title": "Franky vs. Fukurô",
+    "summary": "Franky fights Fukurou.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-130",
+      "wt100-131",
+      "wt100-381",
+      "wt100-367",
+      "wt100-368",
+      "wt100-397",
+      "wt100-398",
+      "wt100-348",
+      "wt100-154",
+      "wt100-186",
+      "wt100-185",
+      "wt100-184",
+      "wt100-217",
+      "wt100-350",
+      "wt100-351"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 404",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_404",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Spandam",
+      "Rob Lucci",
+      "Hattori",
+      "Fukurou",
+      "Kumadori",
+      "Franky",
+      "Marianne",
+      "Zala",
+      "Babe",
+      "Drophy",
+      "Lassoo",
+      "Chimney",
+      "Gonbe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-405",
+    "volume": 42,
+    "number": 405,
+    "title": "Power",
+    "summary": "Franky continues to fight Fukurou while Kumadori comes out of the refrigerator in front of Tony Tony Chopper.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-397",
+      "wt100-398",
+      "wt100-348"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 405",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_405",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Fukurou",
+      "Kumadori",
+      "Franky"
+    ]
+  },
+  {
+    "id": "wiki-chapter-406",
+    "volume": 42,
+    "number": 406,
+    "title": "Life Return",
+    "summary": "As the fights between the CP9 and the Straw Hat Pirates at Enies Lobby intensify, Fukurou is defeated by Franky, and Chopper engages Kumadori. Meanwhile, Zoro and Sogeking turn to fight Kaku and Jabra.",
+    "characterIds": [
+      "wt100-2",
+      "wt100-4",
+      "wt100-130",
+      "wt100-362",
+      "wt100-396",
+      "wt100-397",
+      "wt100-398",
+      "wt100-348",
+      "wt100-154",
+      "wt100-186",
+      "wt100-184"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 406",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_406",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Usopp",
+      "Tony Tony Chopper",
+      "Kaku",
+      "Jabra",
+      "Fukurou",
+      "Kumadori",
+      "Franky",
+      "Marianne",
+      "Zala",
+      "Drophy"
+    ]
+  },
+  {
+    "id": "wiki-chapter-407",
+    "volume": 42,
+    "number": 407,
+    "title": "Monster",
+    "summary": "The CP9 agents fight the Straw Hat Pirates: Tony Tony Chopper eats three Rumble Balls and activates Monster Point.",
+    "characterIds": [
+      "wt100-3",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-365",
+      "wt100-397",
+      "wt100-398",
+      "wt100-348",
+      "wt100-185",
+      "wt100-146",
+      "wt100-147",
+      "wt100-217"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 407",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_407",
+    "sourceCharacterTitles": [
+      "Nami",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Kalifa",
+      "Fukurou",
+      "Kumadori",
+      "Franky",
+      "Babe",
+      "Gem",
+      "Mikita",
+      "Lassoo",
+      "Kureha"
+    ]
+  },
+  {
+    "id": "wiki-chapter-408",
+    "volume": 42,
+    "number": 408,
+    "title": "Monster vs. Kumadori",
+    "summary": "CP9's fight with the Straw Hat Pirates continues. Luffy encounters Rob Lucci.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-130",
+      "wt100-131",
+      "wt100-381",
+      "wt100-367",
+      "wt100-368",
+      "wt100-365",
+      "wt100-398",
+      "wt100-348",
+      "wt100-179",
+      "wt100-187"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 408",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_408",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Spandam",
+      "Rob Lucci",
+      "Hattori",
+      "Kalifa",
+      "Kumadori",
+      "Franky",
+      "Crocodile",
+      "Daz Bonez"
+    ]
+  },
+  {
+    "id": "wiki-chapter-409",
+    "volume": 42,
+    "number": 409,
+    "title": "The Terrifying Broadcast",
+    "summary": "CP9 vs. Straw Hat Pirates. Spandam accidentally activates the Buster Call.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-400",
+      "wt100-399",
+      "wt100-107",
+      "wt100-381",
+      "wt100-367",
+      "wt100-368",
+      "wt100-362",
+      "wt100-365",
+      "wt100-396",
+      "wt100-398",
+      "wt100-397",
+      "wt100-348",
+      "wt100-373",
+      "wt100-356",
+      "wt100-359",
+      "wt100-154",
+      "wt100-186",
+      "wt100-185",
+      "wt100-184",
+      "wt100-146",
+      "wt100-147",
+      "wt100-217",
+      "wt100-366",
+      "wt100-369",
+      "wt100-375",
+      "wt100-352"
+    ],
+    "techniqueIds": [
+      "wiki-tech-luffy-punch"
+    ],
+    "sourceTitle": "Chapter 409",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_409",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Oimo",
+      "Kashii",
+      "John Giant",
+      "Spandam",
+      "Rob Lucci",
+      "Hattori",
+      "Kaku",
+      "Kalifa",
+      "Jabra",
+      "Kumadori",
+      "Fukurou",
+      "Franky",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Tamagon",
+      "Marianne",
+      "Zala",
+      "Babe",
+      "Drophy",
+      "Gem",
+      "Mikita",
+      "Lassoo",
+      "Paulie",
+      "Peepley Lulu",
+      "Tilestone",
+      "Kokoro"
+    ]
+  },
+  {
+    "id": "wiki-chapter-410",
+    "volume": 43,
+    "number": 410,
+    "title": "Super-Size Nami",
+    "summary": "The battle between CP9 and Straw Hats continues.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-367",
+      "wt100-368",
+      "wt100-362",
+      "wt100-365",
+      "wt100-396",
+      "wt100-373",
+      "wt100-356",
+      "wt100-359",
+      "wt100-366",
+      "wt100-369",
+      "wt100-375"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 410",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_410",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Rob Lucci",
+      "Hattori",
+      "Kaku",
+      "Kalifa",
+      "Jabra",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Tamagon",
+      "Paulie",
+      "Peepley Lulu",
+      "Tilestone"
+    ]
+  },
+  {
+    "id": "wiki-chapter-411",
+    "volume": 43,
+    "number": 411,
+    "title": "Nami vs. Kalifa",
+    "summary": "Nami's fight with Kalifa rages on.",
+    "characterIds": [
+      "wt100-3",
+      "wt100-5",
+      "wt100-130",
+      "wt100-365",
+      "wt100-154",
+      "wt100-186",
+      "wt100-185",
+      "wt100-184",
+      "wt100-146",
+      "wt100-147",
+      "wt100-217"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 411",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_411",
+    "sourceCharacterTitles": [
+      "Nami",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Kalifa",
+      "Marianne",
+      "Zala",
+      "Babe",
+      "Drophy",
+      "Gem",
+      "Mikita",
+      "Lassoo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-412",
+    "volume": 43,
+    "number": 412,
+    "title": "You Missed Your Chance",
+    "summary": "Nami defeats Kalifa. Franky sends Chopper into the ocean to get him back to normal and Zoro and Usopp finally get their cuffs off.",
+    "characterIds": [
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-130",
+      "wt100-362",
+      "wt100-365",
+      "wt100-396",
+      "wt100-348",
+      "wt100-179",
+      "wt100-187",
+      "wt100-177",
+      "wt100-153"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 412",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_412",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Tony Tony Chopper",
+      "Kaku",
+      "Kalifa",
+      "Jabra",
+      "Franky",
+      "Crocodile",
+      "Daz Bonez",
+      "Bentham",
+      "Galdino"
+    ]
+  },
+  {
+    "id": "wiki-chapter-413",
+    "volume": 43,
+    "number": 413,
+    "title": "Hunter",
+    "summary": "Zoro and Kaku fight. Sogeking is defeated by Jabra. Sanji shows up to fight Jabra.",
+    "characterIds": [
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-381",
+      "wt100-424",
+      "wt100-362",
+      "wt100-396",
+      "wt100-348",
+      "wt100-179",
+      "wt100-187",
+      "wt100-177",
+      "wt100-153",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 413",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_413",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Spandam",
+      "Funkfreed",
+      "Kaku",
+      "Jabra",
+      "Franky",
+      "Crocodile",
+      "Daz Bonez",
+      "Bentham",
+      "Galdino",
+      "Kokoro",
+      "Chimney",
+      "Gonbe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-414",
+    "volume": 43,
+    "number": 414,
+    "title": "Sanji vs. Jabra",
+    "summary": "Sanji and Jabra start their fight.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-381",
+      "wt100-367",
+      "wt100-368",
+      "wt100-362",
+      "wt100-396",
+      "wt100-348",
+      "wt100-356",
+      "wt100-358",
+      "wt100-366",
+      "wt100-375",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351"
+    ],
+    "techniqueIds": [
+      "wiki-tech-flanchet",
+      "wiki-tech-troisie-me-hachis",
+      "wiki-tech-deuxie-me-hachis"
+    ],
+    "sourceTitle": "Chapter 414",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_414",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Spandam",
+      "Rob Lucci",
+      "Hattori",
+      "Kaku",
+      "Jabra",
+      "Franky",
+      "Zambai",
+      "Kop",
+      "Paulie",
+      "Tilestone",
+      "Kokoro",
+      "Chimney",
+      "Gonbe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-415",
+    "volume": 43,
+    "number": 415,
+    "title": "Heat Up",
+    "summary": "Sanji and Jabra continue their fight.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-5",
+      "wt100-396"
+    ],
+    "techniqueIds": [
+      "wiki-tech-brochette"
+    ],
+    "sourceTitle": "Chapter 415",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_415",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Sanji",
+      "Jabra"
+    ]
+  },
+  {
+    "id": "wiki-chapter-416",
+    "volume": 43,
+    "number": 416,
+    "title": "Zolo vs. Kaku",
+    "summary": "Zoro and Kaku fight.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-5",
+      "wt100-131",
+      "wt100-381",
+      "wt100-367",
+      "wt100-368",
+      "wt100-362",
+      "wt100-396",
+      "wt100-348"
+    ],
+    "techniqueIds": [
+      "wiki-tech-nigori-zake"
+    ],
+    "sourceTitle": "Chapter 416",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_416",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Sanji",
+      "Nico Robin",
+      "Spandam",
+      "Rob Lucci",
+      "Hattori",
+      "Kaku",
+      "Jabra",
+      "Franky"
+    ]
+  },
+  {
+    "id": "wiki-chapter-417",
+    "volume": 43,
+    "number": 417,
+    "title": "Asura",
+    "summary": "After a long and difficult battle, Zoro managed to defeat Kaku and his Four Sword Style by using his new sword technique, Nine Sword Style.",
+    "characterIds": [
+      "wt100-2",
+      "wt100-4",
+      "wt100-362"
+    ],
+    "techniqueIds": [
+      "wiki-tech-tatsu-maki",
+      "wiki-tech-nigori-zake",
+      "wiki-tech-hyokindama"
+    ],
+    "sourceTitle": "Chapter 417",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_417",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Usopp",
+      "Kaku"
+    ]
+  },
+  {
+    "id": "wiki-chapter-418",
+    "volume": 43,
+    "number": 418,
+    "title": "Luffy vs. Rob Lucci",
+    "summary": "The fight between Monkey D. Luffy and Rob Lucci continues. Nico Robin tries to slow down her progress to the Gates of Justice. The rest of the Straw Hat Pirates, Franky, Kokoro, Chimney, and Gonbe try to catch up with Robin, while everyone else tries to escape Enies Lobby.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-400",
+      "wt100-399",
+      "wt100-381",
+      "wt100-367",
+      "wt100-362",
+      "wt100-397",
+      "wt100-348",
+      "wt100-373",
+      "wt100-356",
+      "wt100-360",
+      "wt100-359",
+      "wt100-358",
+      "wt100-366",
+      "wt100-352",
+      "wt100-379"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 418",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_418",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Oimo",
+      "Kashii",
+      "Spandam",
+      "Rob Lucci",
+      "Kaku",
+      "Fukurou",
+      "Franky",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Kiev",
+      "Tamagon",
+      "Kop",
+      "Sodom",
+      "Gomorrah",
+      "Paulie",
+      "Kokoro",
+      "Yokozuna"
+    ]
+  },
+  {
+    "id": "wiki-chapter-419",
+    "volume": 43,
+    "number": 419,
+    "title": "Legend of a Hero",
+    "summary": "While Luffy continues his fight against Rob Lucci, Oimo, Kashii, the Franky Family and Galley-La Company continue their escape of Enies Lobby. The rest of the Straw Hat Pirates and Franky arrives just in time to save Robin.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-131",
+      "wt100-400",
+      "wt100-399",
+      "wt100-381",
+      "wt100-367",
+      "wt100-417",
+      "wt100-348",
+      "wt100-373",
+      "wt100-356",
+      "wt100-366",
+      "wt100-369",
+      "wt100-375",
+      "wt100-379",
+      "wt100-415",
+      "wt100-416"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 419",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_419",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Nico Robin",
+      "Oimo",
+      "Kashii",
+      "Spandam",
+      "Rob Lucci",
+      "Spandine",
+      "Franky",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Sodom",
+      "Gomorrah",
+      "Paulie",
+      "Peepley Lulu",
+      "Tilestone",
+      "Yokozuna",
+      "Clou D. Clover",
+      "Jaguar D. Saul"
+    ]
+  },
+  {
+    "id": "wiki-chapter-420",
+    "volume": 44,
+    "number": 420,
+    "title": "Buster Call",
+    "summary": "Robin is freed from her Seastone handcuffs thanks to Franky and the Straw Hat Pirates. However, the Marines have arrived at Enies Lobby to commence the Buster Call. Meanwhile, Luffy and Lucci continue their fight.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-400",
+      "wt100-399",
+      "wt100-430",
+      "wt100-429",
+      "wt100-428",
+      "wt100-427",
+      "wt100-426",
+      "wt100-381",
+      "wt100-367",
+      "wt100-348",
+      "wt100-373",
+      "wt100-366",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 420",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_420",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Oimo",
+      "Kashii",
+      "Strawberry",
+      "Yamakaji",
+      "Doberman",
+      "Onigumo",
+      "Momonga",
+      "Spandam",
+      "Rob Lucci",
+      "Franky",
+      "Mozu and Kiwi",
+      "Sodom",
+      "Gomorrah",
+      "Paulie",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna"
+    ]
+  },
+  {
+    "id": "wiki-chapter-421",
+    "volume": 44,
+    "number": 421,
+    "title": "Gear Three",
+    "summary": "While the rest of the Straw Hat Pirates try to escape Enies Lobby, Luffy continues his battle against Lucci in which he activates his new technique, Gear 3.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-400",
+      "wt100-399",
+      "wt100-381",
+      "wt100-367",
+      "wt100-368",
+      "wt100-362",
+      "wt100-365",
+      "wt100-396",
+      "wt100-397",
+      "wt100-348",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 421",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_421",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Oimo",
+      "Kashii",
+      "Spandam",
+      "Rob Lucci",
+      "Hattori",
+      "Kaku",
+      "Kalifa",
+      "Jabra",
+      "Fukurou",
+      "Franky",
+      "Sodom",
+      "Gomorrah",
+      "Kokoro",
+      "Chimney",
+      "Gonbe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-422",
+    "volume": 44,
+    "number": 422,
+    "title": "Rob Lucci",
+    "summary": "While the Straw Hat Pirates and the Shift Station staff try to escape the flooded corridors of Enies Lobby, Luffy continues his fight against Lucci outside.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-428",
+      "wt100-427",
+      "wt100-367",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 422",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_422",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Doberman",
+      "Onigumo",
+      "Rob Lucci",
+      "Kokoro",
+      "Chimney",
+      "Gonbe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-423",
+    "volume": 44,
+    "number": 423,
+    "title": "Mermaid Legend",
+    "summary": "While Luffy deals with the side effects of Gear 3 during his battle against Lucci, the Straw Hat Pirates, Franky, Chimney and Gonbe manage to escape the water thanks to Kokoro.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-400",
+      "wt100-399",
+      "wt100-381",
+      "wt100-424",
+      "wt100-367",
+      "wt100-348",
+      "wt100-356",
+      "wt100-363",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 423",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_423",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Oimo",
+      "Kashii",
+      "Spandam",
+      "Funkfreed",
+      "Rob Lucci",
+      "Franky",
+      "Zambai",
+      "Sodom",
+      "Gomorrah",
+      "Iceburg",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna",
+      "Nefertari Vivi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-424",
+    "volume": 44,
+    "number": 424,
+    "title": "Escape Ship",
+    "summary": "Luffy and Rob Lucci continue their fight despite the destruction of Enies Lobby.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-400",
+      "wt100-399",
+      "wt100-430",
+      "wt100-426",
+      "wt100-367",
+      "wt100-348",
+      "wt100-373",
+      "wt100-356",
+      "wt100-360",
+      "wt100-359",
+      "wt100-388",
+      "wt100-389",
+      "wt100-390",
+      "wt100-366",
+      "wt100-369",
+      "wt100-375",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379",
+      "wt100-282",
+      "wt100-290",
+      "wt100-295",
+      "wt100-300"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 424",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_424",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Oimo",
+      "Kashii",
+      "Strawberry",
+      "Momonga",
+      "Rob Lucci",
+      "Franky",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Kiev",
+      "Tamagon",
+      "Sodom",
+      "Gomorrah",
+      "Dago",
+      "Ottoland",
+      "Footbianco",
+      "Paulie",
+      "Peepley Lulu",
+      "Tilestone",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna",
+      "Conis",
+      "Aisa",
+      "Raki",
+      "Nola"
+    ]
+  },
+  {
+    "id": "wiki-chapter-425",
+    "volume": 44,
+    "number": 425,
+    "title": "Bridge of Mortal Combat",
+    "summary": "The Straw Hat Pirates, Franky and the Shift Station staff watch the battle between Luffy and Lucci.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-428",
+      "wt100-429",
+      "wt100-427",
+      "wt100-367",
+      "wt100-348",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-292",
+      "wt100-294",
+      "wt100-291",
+      "wt100-293",
+      "wt100-253"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 425",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_425",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Doberman",
+      "Yamakaji",
+      "Onigumo",
+      "Rob Lucci",
+      "Franky",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Wyper",
+      "Braham",
+      "Kamakiri",
+      "Genbo",
+      "South Bird"
+    ]
+  },
+  {
+    "id": "wiki-chapter-426",
+    "volume": 44,
+    "number": 426,
+    "title": "A Ship Waiting for Wind",
+    "summary": "The Marines attack the Straw Hats on the Bridge of Hesitation. Luffy seems to have been defeated by Lucci.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-432",
+      "wt100-367",
+      "wt100-348",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 426",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_426",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Shu",
+      "Very Good",
+      "Rob Lucci",
+      "Franky",
+      "Kokoro",
+      "Chimney",
+      "Gonbe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-427",
+    "volume": 44,
+    "number": 427,
+    "title": "This Isn't the Afterlife",
+    "summary": "Luffy defeats Rob Lucci.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-131",
+      "wt100-346",
+      "wt100-426",
+      "wt100-367",
+      "wt100-368",
+      "wt100-381",
+      "wt100-348",
+      "wt100-278",
+      "wt100-279",
+      "wt100-284",
+      "wt100-310"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-gatling"
+    ],
+    "sourceTitle": "Chapter 427",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_427",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Nico Robin",
+      "Kuzan",
+      "Momonga",
+      "Rob Lucci",
+      "Hattori",
+      "Spandam",
+      "Franky",
+      "Gan Fall",
+      "Pierre",
+      "Pagaya",
+      "Shandia Chief"
+    ]
+  },
+  {
+    "id": "wiki-chapter-428",
+    "volume": 44,
+    "number": 428,
+    "title": "Let's Go Back",
+    "summary": "The assault of the Buster Call on Enies Lobby continues. The Straw Hats are backed into a corner and have to jump into the ocean.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-6",
+      "wt100-400",
+      "wt100-399",
+      "wt100-428",
+      "wt100-430",
+      "wt100-427",
+      "wt100-426",
+      "wt100-367",
+      "wt100-368",
+      "wt100-348",
+      "wt100-373",
+      "wt100-356",
+      "wt100-360",
+      "wt100-357",
+      "wt100-359",
+      "wt100-366",
+      "wt100-369",
+      "wt100-375",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 428",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_428",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Going Merry",
+      "Oimo",
+      "Kashii",
+      "Doberman",
+      "Strawberry",
+      "Onigumo",
+      "Momonga",
+      "Sharinguru",
+      "Rob Lucci",
+      "Hattori",
+      "Franky",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Kiev",
+      "Schollzo",
+      "Tamagon",
+      "Sodom",
+      "Gomorrah",
+      "Paulie",
+      "Peepley Lulu",
+      "Tilestone",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna"
+    ]
+  },
+  {
+    "id": "wiki-chapter-429",
+    "volume": 44,
+    "number": 429,
+    "title": "Utter Defeat",
+    "summary": "The Straw Hats get away on the Going Merry.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-6",
+      "wt100-400",
+      "wt100-399",
+      "wt100-346",
+      "wt100-428",
+      "wt100-427",
+      "wt100-381",
+      "wt100-348",
+      "wt100-373",
+      "wt100-359",
+      "wt100-388",
+      "wt100-389",
+      "wt100-390",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379",
+      "wt100-299"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 429",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_429",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Going Merry",
+      "Oimo",
+      "Kashii",
+      "Kuzan",
+      "Doberman",
+      "Onigumo",
+      "Spandam",
+      "Franky",
+      "Mozu and Kiwi",
+      "Tamagon",
+      "Dago",
+      "Ottoland",
+      "Footbianco",
+      "Sodom",
+      "Gomorrah",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna",
+      "Enel"
+    ]
+  },
+  {
+    "id": "wiki-chapter-430",
+    "volume": 44,
+    "number": 430,
+    "title": "A Light Snow of Reminiscence Falls",
+    "summary": "Usopp has put the mask back on, confusing Luffy and Chopper. The Straw Hats then meet the Galley-La ship, with Iceburg on it. They find out that it was Iceburg that repaired Going Merry after he had heard the Going Merry's wish to make just one more trip. The Going Merry is breaking apart though, and the crew decides to let her rest at last, giving her a Viking burial. An emotional barrage of images ensues, where the crew parts with the ship. Going Merry apologizes, but Luffy says it is all their fault. Going Merry says she was still so happy though, and thanks the crew one last time before she dies.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-6",
+      "wt100-151",
+      "wt100-150",
+      "wt100-348",
+      "wt100-363",
+      "wt100-364",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-299",
+      "wt100-157"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 430",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_430",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Going Merry",
+      "Dorry",
+      "Brogy",
+      "Franky",
+      "Iceburg",
+      "Tyrannosaurus",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Enel",
+      "Mottled",
+      "Island Eater"
+    ]
+  },
+  {
+    "id": "wiki-chapter-431",
+    "volume": 45,
+    "number": 431,
+    "title": "Fist of Love",
+    "summary": "Franky discusses his plan for the new ship with the Straw Hat Pirates. Afterwards, Luffy meets a Marine vice admiral he knows, who happens to be his grandfather.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-400",
+      "wt100-399",
+      "wt100-434",
+      "wt100-21",
+      "wt100-27",
+      "wt100-348",
+      "wt100-373",
+      "wt100-356",
+      "wt100-360",
+      "wt100-357",
+      "wt100-359",
+      "wt100-363",
+      "wt100-364",
+      "wt100-366",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379",
+      "wt100-111"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 431",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_431",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Oimo",
+      "Kashii",
+      "Monkey D. Garp",
+      "Koby",
+      "Helmeppo",
+      "Franky",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Kiev",
+      "Schollzo",
+      "Tamagon",
+      "Sodom",
+      "Gomorrah",
+      "Iceburg",
+      "Tyrannosaurus",
+      "Paulie",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna",
+      "Ipponmatsu"
+    ]
+  },
+  {
+    "id": "wiki-chapter-432",
+    "volume": 45,
+    "number": 432,
+    "title": "Jack-in-the-Box",
+    "summary": "Garp reveals that Luffy's father is the most wanted man in the world and the leader of the Revolutionary Army, Monkey D. Dragon.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-10",
+      "wt100-270",
+      "wt100-763",
+      "wt100-265",
+      "wt100-346",
+      "wt100-434",
+      "wt100-262",
+      "wt100-416",
+      "wt100-115",
+      "wt100-226",
+      "wt100-117",
+      "wt100-21",
+      "wt100-27",
+      "wt100-59",
+      "wt100-66",
+      "wt100-348",
+      "wt100-373",
+      "wt100-118",
+      "wt100-395",
+      "wt100-379",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 432",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_432",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Shanks",
+      "Edward Newgate",
+      "Charlotte Linlin",
+      "Kaidou",
+      "Sengoku",
+      "Kuzan",
+      "Monkey D. Garp",
+      "Tsuru",
+      "Jaguar D. Saul",
+      "Smoker",
+      "Hina",
+      "Tashigi",
+      "Koby",
+      "Helmeppo",
+      "Jango",
+      "Fullbody",
+      "Bogard",
+      "Franky",
+      "Mozu and Kiwi",
+      "Monkey D. Dragon",
+      "Michael and Hoichael",
+      "Yokozuna",
+      "Kokoro",
+      "Chimney",
+      "Gonbe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-433",
+    "volume": 45,
+    "number": 433,
+    "title": "The Name of That Sea",
+    "summary": "Koby tells Luffy about the latter half of Grand Line, which is called the New World. After the departure of the Marines, the Straw Hats throw a big party. Shanks and Whitebeard are about to meet in the New World, and the World Government are alerted to this meeting.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-400",
+      "wt100-399",
+      "wt100-270",
+      "wt100-436",
+      "wt100-346",
+      "wt100-434",
+      "wt100-21",
+      "wt100-27",
+      "wt100-348",
+      "wt100-373",
+      "wt100-356",
+      "wt100-360",
+      "wt100-357",
+      "wt100-359",
+      "wt100-358",
+      "wt100-388",
+      "wt100-389",
+      "wt100-390",
+      "wt100-363",
+      "wt100-364",
+      "wt100-366",
+      "wt100-369",
+      "wt100-375",
+      "wt100-118",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379",
+      "wt100-4",
+      "wt100-299",
+      "wt100-1504"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 433",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_433",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Oimo",
+      "Kashii",
+      "Edward Newgate",
+      "Jozu",
+      "Kuzan",
+      "Monkey D. Garp",
+      "Koby",
+      "Helmeppo",
+      "Bogard",
+      "Jaygarcia Saturn",
+      "Marcus Mars",
+      "Topman Warcury",
+      "Ethanbaron V. Nusjuro",
+      "Shepherd Ju Peter",
+      "Franky",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Kiev",
+      "Schollzo",
+      "Tamagon",
+      "Kop",
+      "Dago",
+      "Ottoland",
+      "Footbianco",
+      "Sodom",
+      "Gomorrah",
+      "Iceburg",
+      "Tyrannosaurus",
+      "Paulie",
+      "Peepley Lulu",
+      "Tilestone",
+      "Monkey D. Dragon",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna",
+      "Usopp",
+      "Enel",
+      "Spacey"
+    ]
+  },
+  {
+    "id": "wiki-chapter-434",
+    "volume": 45,
+    "number": 434,
+    "title": "Whitebeard and Red-Hair",
+    "summary": "Shanks and Whitebeard meet to discuss Marshall D. Teach, and the old days when Roger was around. This causes the Marines to panic, since the Four Emperors never meet in this fashion.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-270",
+      "wt100-435",
+      "wt100-182",
+      "wt100-436",
+      "wt100-10",
+      "wt100-13",
+      "wt100-11",
+      "wt100-269",
+      "wt100-12",
+      "wt100-39",
+      "wt100-274",
+      "wt100-273",
+      "wt100-272",
+      "wt100-275",
+      "wt100-276",
+      "wt100-299",
+      "wt100-1504"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 434",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_434",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Edward Newgate",
+      "Marco",
+      "Portgas D. Ace",
+      "Jozu",
+      "Shanks",
+      "Benn Beckman",
+      "Lucky Roux",
+      "Rockstar",
+      "Yasopp",
+      "Buggy",
+      "Marshall D. Teach",
+      "Van Augur",
+      "Jesus Burgess",
+      "Doc Q",
+      "Stronger",
+      "Laffitte",
+      "Enel",
+      "Spacey"
+    ]
+  },
+  {
+    "id": "wiki-chapter-435",
+    "volume": 45,
+    "number": 435,
+    "title": "You Have My Sympathies",
+    "summary": "The Straw Hats learn about Fish-Man Island and the Florian Triangle. The whole crew gets new bounties, including Franky. The new ship is completed. Zambai asks Luffy to take Franky with him.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-346",
+      "wt100-348",
+      "wt100-373",
+      "wt100-356",
+      "wt100-360",
+      "wt100-357",
+      "wt100-359",
+      "wt100-358",
+      "wt100-388",
+      "wt100-389",
+      "wt100-390",
+      "wt100-363",
+      "wt100-366",
+      "wt100-369",
+      "wt100-375",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 435",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_435",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Kuzan",
+      "Franky",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Kiev",
+      "Schollzo",
+      "Tamagon",
+      "Kop",
+      "Dago",
+      "Ottoland",
+      "Footbianco",
+      "Sodom",
+      "Gomorrah",
+      "Iceburg",
+      "Paulie",
+      "Peepley Lulu",
+      "Tilestone",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna",
+      "Enel",
+      "Spacey",
+      "Usopp"
+    ]
+  },
+  {
+    "id": "wiki-chapter-436",
+    "volume": 45,
+    "number": 436,
+    "title": "Trunks from Franky House",
+    "summary": "The Straw Hat Pirates are introduced to their newest ship, the Thousand Sunny.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-437",
+      "wt100-348",
+      "wt100-373",
+      "wt100-356",
+      "wt100-360",
+      "wt100-357",
+      "wt100-359",
+      "wt100-388",
+      "wt100-389",
+      "wt100-390",
+      "wt100-363",
+      "wt100-364",
+      "wt100-366",
+      "wt100-369",
+      "wt100-375",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-439"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 436",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_436",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Attach",
+      "Franky",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Kiev",
+      "Schollzo",
+      "Tamagon",
+      "Dago",
+      "Ottoland",
+      "Footbianco",
+      "Sodom",
+      "Gomorrah",
+      "Iceburg",
+      "Tyrannosaurus",
+      "Paulie",
+      "Peepley Lulu",
+      "Tilestone",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna",
+      "Enel",
+      "Spacey",
+      "Marumieta",
+      "Yamenahare"
+    ]
+  },
+  {
+    "id": "wiki-chapter-437",
+    "volume": 45,
+    "number": 437,
+    "title": "Naked Mania",
+    "summary": "After some final and violent persuasion from the Straw Hat Pirates, particularly from Robin, Franky decides to join the crew, to follow his dream, and see it completed.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-373",
+      "wt100-356",
+      "wt100-360",
+      "wt100-357",
+      "wt100-359",
+      "wt100-388",
+      "wt100-389",
+      "wt100-390",
+      "wt100-378",
+      "wt100-363",
+      "wt100-364",
+      "wt100-366",
+      "wt100-369",
+      "wt100-375",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379",
+      "wt100-439",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 437",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_437",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Kiev",
+      "Schollzo",
+      "Tamagon",
+      "Dago",
+      "Ottoland",
+      "Footbianco",
+      "Sodom",
+      "Gomorrah",
+      "Tom",
+      "Iceburg",
+      "Tyrannosaurus",
+      "Paulie",
+      "Peepley Lulu",
+      "Tilestone",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna",
+      "Marumieta",
+      "Yamenahare",
+      "Enel",
+      "Spacey",
+      "Cosmo",
+      "Galaxy",
+      "Macro (Automaton)"
+    ]
+  },
+  {
+    "id": "wiki-chapter-438",
+    "volume": 45,
+    "number": 438,
+    "title": "Pride",
+    "summary": "The Straw Hat Pirates decide to take off, but after waiting a little while for Usopp. Suddenly, Garp attacks and the Straw Hats are forced to set sail just as Usopp arrives. When his great return plans fail, Usopp apologizes for being selfish and rejoins the crew.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-346",
+      "wt100-434",
+      "wt100-21",
+      "wt100-27",
+      "wt100-356",
+      "wt100-360",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 438",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_438",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Seamars",
+      "Kuzan",
+      "Monkey D. Garp",
+      "Koby",
+      "Helmeppo",
+      "Bogard",
+      "Zambai",
+      "Kiev",
+      "Enel",
+      "Spacey",
+      "Galaxy",
+      "Macro (Automaton)"
+    ]
+  },
+  {
+    "id": "wiki-chapter-439",
+    "volume": 45,
+    "number": 439,
+    "title": "Third and Seventh",
+    "summary": "The Straw Hat Pirates escape Garp's attack. They name their new ship \"Thousand Sunny\" and then sail on toward their next adventure. Smoker and Tashigi are seen on an unknown island, commenting on the Straw Hats' new bounties. In Arabasta, King Cobra, Pell, Igaram and Chaka are seen reading a newspaper about the Straw Hats. Vivi is seen, not bothered by the fact that her old enemy, Robin is now one of the Straw Hats.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-400",
+      "wt100-399",
+      "wt100-346",
+      "wt100-434",
+      "wt100-115",
+      "wt100-117",
+      "wt100-21",
+      "wt100-27",
+      "wt100-373",
+      "wt100-356",
+      "wt100-360",
+      "wt100-357",
+      "wt100-388",
+      "wt100-389",
+      "wt100-390",
+      "wt100-363",
+      "wt100-366",
+      "wt100-369",
+      "wt100-375",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379",
+      "wt100-142",
+      "wt100-205",
+      "wt100-204",
+      "wt100-145"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 439",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_439",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Oimo",
+      "Kashii",
+      "Kuzan",
+      "Monkey D. Garp",
+      "Smoker",
+      "Tashigi",
+      "Koby",
+      "Helmeppo",
+      "Mozu and Kiwi",
+      "Zambai",
+      "Kiev",
+      "Schollzo",
+      "Dago",
+      "Ottoland",
+      "Footbianco",
+      "Sodom",
+      "Gomorrah",
+      "Iceburg",
+      "Paulie",
+      "Peepley Lulu",
+      "Tilestone",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna",
+      "Nefertari Cobra",
+      "Igaram",
+      "Chaka",
+      "Pell",
+      "Nefertari Vivi",
+      "Karoo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-440",
+    "volume": 45,
+    "number": 440,
+    "title": "Fire Fist vs. Blackbeard",
+    "summary": "The close friends of the members of the first six Straw Hat Pirates react to each of their different bounties. Meanwhile, the fight between Portgas D. Ace and Blackbeard rages on.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-182",
+      "wt100-441",
+      "wt100-274",
+      "wt100-273",
+      "wt100-272",
+      "wt100-275",
+      "wt100-276",
+      "wt100-118",
+      "wt100-440",
+      "wt100-69",
+      "wt100-71",
+      "wt100-75",
+      "wt100-56",
+      "wt100-15",
+      "wt100-19",
+      "wt100-34",
+      "wt100-89",
+      "wt100-90",
+      "wt100-163",
+      "wt100-299",
+      "wt100-1504"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 440",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_440",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Portgas D. Ace",
+      "Thatch",
+      "Marshall D. Teach",
+      "Van Augur",
+      "Jesus Burgess",
+      "Doc Q",
+      "Stronger",
+      "Laffitte",
+      "Seamars",
+      "Monkey D. Dragon",
+      "Terry Gilteo",
+      "Zeff",
+      "Patty",
+      "Carne",
+      "Kaya",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi",
+      "Makino",
+      "Woop Slap",
+      "Shimotsuki Koushirou",
+      "Nojiko",
+      "Genzo",
+      "Kureha",
+      "Dalton",
+      "Animal Species/Arabasta Saga",
+      "Negikuma Maria",
+      "Enel",
+      "Spacey",
+      "Galaxy"
+    ]
+  },
+  {
+    "id": "wiki-chapter-441",
+    "volume": 46,
+    "number": 441,
+    "title": "Duel on Banaro Island",
+    "summary": "Ace and Marshall D. Teach fight on Banaro Island but the outcome of the battle is unknown.",
+    "characterIds": [
+      "wt100-182",
+      "wt100-274",
+      "wt100-273",
+      "wt100-272",
+      "wt100-275",
+      "wt100-276",
+      "wt100-299",
+      "wt100-1504"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 441",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_441",
+    "sourceCharacterTitles": [
+      "Portgas D. Ace",
+      "Marshall D. Teach",
+      "Van Augur",
+      "Jesus Burgess",
+      "Doc Q",
+      "Stronger",
+      "Laffitte",
+      "Enel",
+      "Spacey",
+      "Seamars"
+    ]
+  },
+  {
+    "id": "wiki-chapter-442",
+    "volume": 46,
+    "number": 442,
+    "title": "Adventure in the Demonic Sea",
+    "summary": "The Straw Hat Pirates enter Florian Triangle and meet a living skeleton, Brook, on a huge ghost ship.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-443",
+      "wt100-299"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 442",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_442",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Seamars",
+      "Brook",
+      "Enel"
+    ]
+  },
+  {
+    "id": "wiki-chapter-443",
+    "volume": 46,
+    "number": 443,
+    "title": "Thriller Bark",
+    "summary": "Brook comes onboard the Thousand Sunny, scares the Straw Hats and then talks with them. He has dinner with the Straw Hats and explains the crew the reason for his skeleton appearance and how a powerful person stole his shadow making him unable to leave the Florian Triangle.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-480",
+      "wt100-443"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 443",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_443",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Enel",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo",
+      "Seamars",
+      "Brook"
+    ]
+  },
+  {
+    "id": "wiki-chapter-444",
+    "volume": 46,
+    "number": 444,
+    "title": "Adventure on Ghost Island",
+    "summary": "Nami, Usopp, and Chopper set foot on Thriller Bark thanks to Franky revealing the channels within the Sunny. The rest of the crew, meanwhile, are being attacked by an invisible beast on the Thousand Sunny. Nami's team encounters a cerberus on the island and runs away. They meet its owner who offers the trio to take them to Dr. Hogback's castle. Chopper is surprised by the name.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-457",
+      "wt100-444",
+      "wt100-445",
+      "wt100-443",
+      "wt100-299"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 444",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_444",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Absalom",
+      "Cerberus",
+      "Hildon",
+      "Brook",
+      "Enel"
+    ]
+  },
+  {
+    "id": "wiki-chapter-445",
+    "volume": 46,
+    "number": 445,
+    "title": "Zombies",
+    "summary": "Nami, Usopp, and Chopper venture further into Thriller Bark.",
+    "characterIds": [
+      "wt100-3",
+      "wt100-4",
+      "wt100-130",
+      "wt100-449",
+      "wt100-445",
+      "wt100-447",
+      "wt100-446"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 445",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_445",
+    "sourceCharacterTitles": [
+      "Nami",
+      "Usopp",
+      "Tony Tony Chopper",
+      "Hogback",
+      "Hildon",
+      "Unigaro",
+      "MocDonald",
+      "Space Pirates"
+    ]
+  },
+  {
+    "id": "wiki-chapter-446",
+    "volume": 46,
+    "number": 446,
+    "title": "Doctor Hogback",
+    "summary": "Nami, Usopp, and Tony Tony Chopper meet more people, and the rest of the Straw Hats disembark on Thriller Bark.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-449",
+      "wt100-457",
+      "wt100-444",
+      "wt100-448"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 446",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_446",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Hogback",
+      "Absalom",
+      "Cerberus",
+      "Victoria Cindry",
+      "Buhichuck"
+    ]
+  },
+  {
+    "id": "wiki-chapter-447",
+    "volume": 46,
+    "number": 447,
+    "title": "Zombie-in-the-Box",
+    "summary": "Luffy successfully tames the Cerberus zombie. Afterwards, the group encounters a unicorn and an elderly tree having a picnic. Outside Hogback's mansion, Hogback, Absalom and Perona discuss the Straw Hat Pirates. Usopp, Nami and Chopper walk through the mansion and try to make sense of the mysterious phenomena they have encountered, when all of a sudden the paintings, wall decorations and floor rug come alive and attack them. They manage to escape through a secret exit in the fireplace and end up in a room filled with large photographs of a smiling Cindry without any stitches.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-449",
+      "wt100-457",
+      "wt100-458",
+      "wt100-444",
+      "wt100-445",
+      "wt100-446",
+      "wt100-447",
+      "wt100-448",
+      "wt100-299"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 447",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_447",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Hogback",
+      "Absalom",
+      "Perona",
+      "Cerberus",
+      "Hildon",
+      "Buhichuck",
+      "Surprise Zombies",
+      "MocDonald",
+      "Unigaro",
+      "Victoria Cindry",
+      "Enel",
+      "Space Pirates"
+    ]
+  },
+  {
+    "id": "wiki-chapter-448",
+    "volume": 46,
+    "number": 448,
+    "title": "Moria",
+    "summary": "Nami, Usopp, and Chopper run around the castle of Thriller Bark as the rest of the Straw Hats go deeper into Thriller Bark. They find out the person they are trying to beat is one of the Seven Warlords of the Sea.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-448",
+      "wt100-444",
+      "wt100-452",
+      "wt100-1504"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 448",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_448",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Victoria Cindry",
+      "Soldier Zombie",
+      "Surprise Zombies",
+      "Cerberus",
+      "Ryuma (Zombie)",
+      "Spoil",
+      "Spacey",
+      "Tsukimi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-449",
+    "volume": 46,
+    "number": 449,
+    "title": "The Four Monsters of Thriller Bark",
+    "summary": "The Straw Hat Pirates promise Spoil that they will help him get his shadow back. Meanwhile in Hogback's mansion, Usopp, Nami and Chopper witness the method of producing zombies. At a grave, Absalom is awakening some zombies who call him their 'leader'. Spoil reveals to the Straw Hats that Thriller Bark is the largest ship in the world. The Straw Hats then prepare to enter the mansion.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-449",
+      "wt100-457",
+      "wt100-458",
+      "wt100-448",
+      "wt100-454",
+      "wt100-452"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 449",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_449",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Hogback",
+      "Absalom",
+      "Perona",
+      "Kumashi",
+      "Victoria Cindry",
+      "Ryuma (Zombie)",
+      "Soldier Zombie",
+      "Gyoro, Nin, and Bao",
+      "Spoil"
+    ]
+  },
+  {
+    "id": "wiki-chapter-450",
+    "volume": 47,
+    "number": 450,
+    "title": "Night of the Zombie Generals",
+    "summary": "In Hogback's mansion, Hogback finds Nami, Usopp, and Chopper and sends Ryuma, a samurai zombie who acts a lot like Brook to stop them. The rest of the Straw Hat Pirates enter the mansion and find themselves defeating a group of zombies. Buhichuck refuses to tell them where the missing trio is and Zoro suggest to take him as a guide. Meanwhile Absalom resurrects the General Zombies.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-449",
+      "wt100-457",
+      "wt100-448",
+      "wt100-1423",
+      "wt100-1424",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 450",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_450",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Hogback",
+      "Absalom",
+      "Victoria Cindry",
+      "Buhichuck",
+      "Ryuma (Zombie)",
+      "John",
+      "Ganzui",
+      "Gill Bastar",
+      "Tsukimi",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-451",
+    "volume": 47,
+    "number": 451,
+    "title": "Perona's Wonder Garden",
+    "summary": "Absalom orders the General Zombies to hunt down the Straw Hat Pirates. Then Lola the zombie asks Absalom to marry her, but Absalom tells her that he decided to make Nami his future wife. Nami, Usopp and Chopper are put on a coffin by Hogback but the coffin falls off and the trio manage to get out. Later they find themselves at Perona's 'Wonder Garden' and Inuppe, a penguin zombie, saves Nami from another zombie saying that even if he dies, he will not kick a woman. Meanwhile the rest of the Straw Hat Pirates are inside the mansion with Buhichuck being their guide. Zoro mysteriously disappears just like Sanji did before.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-4",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-457",
+      "wt100-458",
+      "wt100-469",
+      "wt100-462",
+      "wt100-1504"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 451",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_451",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Usopp",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Absalom",
+      "Perona",
+      "Kumashi",
+      "Buhichuck",
+      "John",
+      "Lola (Zombie)",
+      "Hippo Gentleman",
+      "Risky Brothers (Zombies)",
+      "Inuppe",
+      "Tsukimi",
+      "Spacey",
+      "Galaxy"
+    ]
+  },
+  {
+    "id": "wiki-chapter-452",
+    "volume": 47,
+    "number": 452,
+    "title": "Jigoro of the Wind",
+    "summary": "Strangely, Zoro disappeared, just like Sanji did before. Luffy, Robin and Franky keep searching for the remaining members of the crew. With Buhichuck as their guide, they end up in a room, and suddenly a strange person inside an armor attacks Franky. Franky defeats him, but not easily. Meanwhile Buhichuck leaves them laughing and says to Luffy that no one of his friends is safe. Inside the room, Luffy, Robin and Franky fight with the General Zombies. One of the General Zombies is Jigoro, a zombie that resembles Zoro in many ways. The General Zombies catch Luffy and traps him in a moving coffin. When Robin and Franky run to save him, Tararan jumps in front of them and he is ready to fight.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-131",
+      "wt100-348",
+      "wt100-1423",
+      "wt100-464",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 452",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_452",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nico Robin",
+      "Franky",
+      "Buhichuck",
+      "John",
+      "Ganzui",
+      "Jigoro",
+      "Tararan",
+      "Tsukimi",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-453",
+    "volume": 47,
+    "number": 453,
+    "title": "Cloudy, Partly Bony",
+    "summary": "Inuppe continues to defend Nami. Absalom then enters, being chased by Lola, who then carries Nami away. Nami then shocks him with a thunderbolt, making him stop. Lola then starts chasing Nami, and Inuppe challenges Absalom, but is easily defeated. Back at the bridge, Tararan tells Franky and Robin that Luffy, Zoro and Sanji were captured. They are then surrounded by zombies but Franky breaks the bridge and grapples the end of the bridge to safety. The chapter ends with Brook falling out of the sky.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-457",
+      "wt100-464",
+      "wt100-1423",
+      "wt100-443",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 453",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_453",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Inuppe",
+      "Gallant Hippo",
+      "Absalom",
+      "Lola (Zombie)",
+      "Tararan",
+      "Jigoro",
+      "John",
+      "Ganzui",
+      "Brook",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-454",
+    "volume": 47,
+    "number": 454,
+    "title": "The Humming Swordsman",
+    "summary": "The chapter starts off with Lola chasing Nami. Nami then exclaims that she is in fact a man, which calms the zombie down. After making friends with it, Absalom appears but Lola starts chasing him so Nami can escape. Back at the Thousand Sunny, Perona is raiding the ship when Hildon appears to summon her to Moria. At the bridge, Franky and Robin battle Tararan, but are ultimately trapped in his web. Brook then makes an entrance and defeats Tararan in one slash.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-457",
+      "wt100-458",
+      "wt100-445",
+      "wt100-443"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 454",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_454",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Absalom",
+      "Perona",
+      "Lola (Zombie)",
+      "Hildon",
+      "Kumashi",
+      "Tararan",
+      "Brook"
+    ]
+  },
+  {
+    "id": "wiki-chapter-455",
+    "volume": 47,
+    "number": 455,
+    "title": "Gecko Moria of the Seven Warlords of the Sea",
+    "summary": "Brook defeats Tararan the Spider Monkey. Brook explains to Franky and Nico Robin how the shadow is separated from the body and implanted in a corpse. Brook reveals that the Warlord of the Sea Gecko Moria has the Devil Fruit power of the Kage Kage no Mi. Moria only needs a shadow and a corpse to create a zombie. The zombie retains the powers of the original owner of the shadow. Moria seeks out those with huge bounties to take their shadows in order to make powerful zombies. Moria explains to Luffy that he was originally only after Luffy, Zoro and Sanji. Moria cuts Luffy's shadow from him.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-4",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-449",
+      "wt100-457",
+      "wt100-458",
+      "wt100-444",
+      "wt100-446",
+      "wt100-464",
+      "wt100-454",
+      "wt100-448",
+      "wt100-443",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 455",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_455",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Usopp",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Hogback",
+      "Absalom",
+      "Perona",
+      "Tararan",
+      "Cerberus",
+      "MocDonald",
+      "Jigoro",
+      "Gyoro, Nin, and Bao",
+      "Victoria Cindry",
+      "Kumashi",
+      "Brook",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo",
+      "Space Pirates"
+    ]
+  },
+  {
+    "id": "wiki-chapter-456",
+    "volume": 47,
+    "number": 456,
+    "title": "Demon from the Land of Ice",
+    "summary": "Brook explains about shadows and reveals that the zombies' weak point is salt. He then goes into explaining about his past (off screen). Back at the mansion, Luffy's shadow has been taken and Moria and Hogback discuss about putting the shadow into 'Number 900'. Before they enter the chamber where 'Number 900' is held, they learn about the intruders. Nami, Chopper and Usopp remain in Kumashi. Back at the bridge, the General Zombie are looking for Franky and Robin, but they are already gone and running up a flight of stairs. In Hogback's lab, Brook meets his zombie, Ryuma. At the mansion, Moria and his subordinates head into the chamber and 'Number 900' is revealed.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-4",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-449",
+      "wt100-457",
+      "wt100-458",
+      "wt100-448",
+      "wt100-464",
+      "wt100-454",
+      "wt100-468",
+      "wt100-443",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 456",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_456",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Usopp",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Hogback",
+      "Absalom",
+      "Perona",
+      "Ryuma (Zombie)",
+      "Victoria Cindry",
+      "Kumashi",
+      "Jigoro",
+      "Tararan",
+      "John",
+      "Gyoro, Nin, and Bao",
+      "Oars",
+      "Brook",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo",
+      "Space Pirates"
+    ]
+  },
+  {
+    "id": "wiki-chapter-457",
+    "volume": 47,
+    "number": 457,
+    "title": "Meat!!!",
+    "summary": "Oars is awakened through Luffy's shadow. Nami, Usopp and Chopper's position is revealed and they try to escape, but are pursued by Absalom. Absalom easily defeats Usopp and Chopper and captures Nami in the process. Usopp and Chopper are then surrounded by zombies and are outnumbered but Robin and Franky come in to save them.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-449",
+      "wt100-457",
+      "wt100-458",
+      "wt100-468",
+      "wt100-448",
+      "wt100-454"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 457",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_457",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Hogback",
+      "Absalom",
+      "Perona",
+      "Oars",
+      "Victoria Cindry",
+      "Kumashi",
+      "Gyoro, Nin, and Bao"
+    ]
+  },
+  {
+    "id": "wiki-chapter-458",
+    "volume": 47,
+    "number": 458,
+    "title": "Anything but My Afro",
+    "summary": "Usopp, Chopper, Franky and Robin run down a huge stairway while discussing about what had happened. Back at the mansion, Oars eats lots of food and tells Moria he does not want to become his subordinate and wants to become the Pirate King, breaking through the freezer. In Hogback's lab, Brook and the zombie, Ryuma who has his shadow continue their conversation and soon after, Brook starts dueling with Ryuma for his shadow. Then, Absalom is shown lying Nami onto a table and telling his subordinate to begin the wedding ceremony. Usopp, Chopper, Franky and Robin runs back to the ship and find it looted. Usopp finds Luffy, Zoro and Sanji and wakes them up.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-449",
+      "wt100-457",
+      "wt100-458",
+      "wt100-468",
+      "wt100-448",
+      "wt100-443",
+      "wt100-1504"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-pistol"
+    ],
+    "sourceTitle": "Chapter 458",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_458",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Hogback",
+      "Absalom",
+      "Perona",
+      "Oars",
+      "Ryuma (Zombie)",
+      "Victoria Cindry",
+      "Kumashi",
+      "Brook",
+      "Spacey"
+    ]
+  },
+  {
+    "id": "wiki-chapter-459",
+    "volume": 47,
+    "number": 459,
+    "title": "I Can't Just Die Hoping to be Forgiven",
+    "summary": "Luffy, Zoro and Sanji wake up to find their shadows gone, and learn that Nami and most of the food on the ship have been taken as well. While Brook is fighting Ryuma, Franky tells the rest of the Straw Hats of his and Robin's encounter with the skeleton, in which Brook explained that his sole reason for living alone for fifty years was to fulfill a promise his crew made to their friend Laboon; that they would return after sailing around the world. Hearing that Brook and Laboon have not given up on their promise even after fifty years makes Luffy even more excited to make Brook join his crew, and this time the rest of the Straw Hats happily agree. Filled with purpose, the Straw Hats get ready to begin their counterattack.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-464",
+      "wt100-443",
+      "wt100-133",
+      "wt100-134",
+      "wt100-299"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 459",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_459",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Ryuma (Zombie)",
+      "Jigoro",
+      "Tararan",
+      "Brook",
+      "Laboon",
+      "Crocus",
+      "Enel",
+      "Space Pirates"
+    ]
+  },
+  {
+    "id": "wiki-chapter-460",
+    "volume": 48,
+    "number": 460,
+    "title": "Conquest Before Dawn!",
+    "summary": "The Straw Hat Pirates set out across Thriller Bark, looking to retrieve their shadows, rescue Nami, and retrieve their food and treasures before dawn. As they progress towards the mansion, Perona mobilizes her ghosts as Luffy's zombie, the giant Oars, begins to explore Thriller Bark.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-449",
+      "wt100-458",
+      "wt100-468",
+      "wt100-448",
+      "wt100-445",
+      "wt100-464",
+      "wt100-1423",
+      "wt100-452",
+      "wt100-299"
+    ],
+    "techniqueIds": [
+      "wiki-tech-luffy-punch",
+      "wiki-tech-reception"
+    ],
+    "sourceTitle": "Chapter 460",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_460",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Hogback",
+      "Perona",
+      "Oars",
+      "Victoria Cindry",
+      "Hildon",
+      "Kumashi",
+      "Jigoro",
+      "John",
+      "Ganzui",
+      "Spoil",
+      "Enel",
+      "Space Pirates"
+    ]
+  },
+  {
+    "id": "wiki-chapter-461",
+    "volume": 48,
+    "number": 461,
+    "title": "Ghost Buster",
+    "summary": "Usopp starts the fight with Perona.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-449",
+      "wt100-457",
+      "wt100-458",
+      "wt100-468",
+      "wt100-448",
+      "wt100-464",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 461",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_461",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Hogback",
+      "Absalom",
+      "Perona",
+      "Oars",
+      "Victoria Cindry",
+      "Kumashi",
+      "Jigoro",
+      "Inuppe",
+      "Gallant Hippo",
+      "Enel",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-462",
+    "volume": 48,
+    "number": 462,
+    "title": "Adventures of Oars",
+    "summary": "Usopp continues his fight of negativity with Perona. Meanwhile, Brook continues his duel with Ryuma, but is defeated. Franky and Zoro save Brook from Ryuma, later resulting in Zoro challenging Ryuma to a battle. In the cathedral Absalom continues his wedding with Nami. Oars's adventure results in the shaking of Thriller Bark and defeat of all the General Zombies.",
+    "characterIds": [
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-348",
+      "wt100-457",
+      "wt100-458",
+      "wt100-468",
+      "wt100-1423",
+      "wt100-443",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-480",
+      "wt100-133"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-gatling"
+    ],
+    "sourceTitle": "Chapter 462",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_462",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Franky",
+      "Absalom",
+      "Perona",
+      "Oars",
+      "Ryuma (Zombie)",
+      "Kumashi",
+      "Ganzui",
+      "Brook",
+      "Enel",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo",
+      "Laboon"
+    ]
+  },
+  {
+    "id": "wiki-chapter-463",
+    "volume": 48,
+    "number": 463,
+    "title": "Pirate Sanji vs. Mystery Man Absalom",
+    "summary": "Luffy confronts Gecko Moria in an attempt to recover the shadows he stole. Moria nonchalantly sits back as his own shadow, Doppelman easily defends against all of Luffy's attacks. Inside the chapel, Sanji recovers Nami and battles Absalom, furious at him for having licked Nami and Robin. After he literally explodes with anger, Sanji tells Absalom that he has another reason to be annoyed at him.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-5",
+      "wt100-467",
+      "wt100-457",
+      "wt100-468",
+      "wt100-299"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-pistol",
+      "wiki-tech-gomu-gomu-no-gatling",
+      "wiki-tech-gomu-gomu-no-stamp",
+      "wiki-tech-flanchet",
+      "wiki-tech-cuisseau",
+      "wiki-tech-veau-shot"
+    ],
+    "sourceTitle": "Chapter 463",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_463",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Sanji",
+      "Gecko Moria",
+      "Absalom",
+      "Oars",
+      "Inuppe",
+      "Enel"
+    ]
+  },
+  {
+    "id": "wiki-chapter-464",
+    "volume": 48,
+    "number": 464,
+    "title": "Sanji's Dream",
+    "summary": "Absalom is beaten hopelessly by Sanji for stealing his dream, which was to eat the Suke Suke no Mi so he could become be an invisible man and sneak into women showers and see them naked.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-457",
+      "wt100-458"
+    ],
+    "techniqueIds": [
+      "wiki-tech-extra-hachis"
+    ],
+    "sourceTitle": "Chapter 464",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_464",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Absalom",
+      "Perona",
+      "Kumashi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-465",
+    "volume": 48,
+    "number": 465,
+    "title": "Pirate Usopp vs. Mystery Woman Perona",
+    "summary": "Usopp battles with Perona, and his arsenal proves ineffective against her ability. On the contrary, she is quite capable of causing Usopp damage, and Kumashi re-enters the fray. Usopp calls on \"Sogeking\", who helps restore his confidence and point out a critical weakness of Perona.",
+    "characterIds": [
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-348",
+      "wt100-458",
+      "wt100-299"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 465",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_465",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Franky",
+      "Perona",
+      "Kumashi",
+      "Enel"
+    ]
+  },
+  {
+    "id": "wiki-chapter-466",
+    "volume": 48,
+    "number": 466,
+    "title": "Conclusion",
+    "summary": "Usopp has finally seen through Perona's tricks, and uses a fake hammer that weighs 10 tons to beat Perona. Zoro challenges the samurai Ryuma, and their battle begins in earnest.",
+    "characterIds": [
+      "wt100-2",
+      "wt100-4",
+      "wt100-348",
+      "wt100-458",
+      "wt100-443",
+      "wt100-299"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 466",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_466",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Usopp",
+      "Franky",
+      "Perona",
+      "Gallant Hippo",
+      "Ryuma (Zombie)",
+      "Brook",
+      "Enel"
+    ]
+  },
+  {
+    "id": "wiki-chapter-467",
+    "volume": 48,
+    "number": 467,
+    "title": "Pirate Zolo vs. Samurai Ryuma",
+    "summary": "Roronoa Zoro combats the samurai Ryuma using One-Sword Style and Two-Sword Style. The intensity of the battle causes the destruction of Dr. Hogback's laboratory, moving the fight to the roof of the tower. Franky and Brook watch on as Zoro defeats Ryuma using \"One Sword Style: Hiryu: Kaen\". Brook finally receives his shadow back, and Zoro acquires a new katana, the Shusui.",
+    "characterIds": [
+      "wt100-2",
+      "wt100-348",
+      "wt100-443",
+      "wt100-299"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 467",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_467",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Franky",
+      "Ryuma (Zombie)",
+      "Brook",
+      "Enel"
+    ]
+  },
+  {
+    "id": "wiki-chapter-468",
+    "volume": 48,
+    "number": 468,
+    "title": "Pirate Chopper vs. Mystery Man Hogback",
+    "summary": "Chopper continues to argue with Hogback about human life. Chopper and Robin engage in battle with Cindry and Hogback, while Zoro and Sanji's zombies are defeated.",
+    "characterIds": [
+      "wt100-130",
+      "wt100-131",
+      "wt100-467",
+      "wt100-449",
+      "wt100-457",
+      "wt100-458",
+      "wt100-448",
+      "wt100-464"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 468",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_468",
+    "sourceCharacterTitles": [
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Gecko Moria",
+      "Hogback",
+      "Absalom",
+      "Perona",
+      "Victoria Cindry",
+      "Jigoro",
+      "Inuppe",
+      "Automata"
+    ]
+  },
+  {
+    "id": "wiki-chapter-469",
+    "volume": 48,
+    "number": 469,
+    "title": "Come Out Here, Straw Hat Pirates!",
+    "summary": "Hogback regains the control of Cindry and makes her attack Robin and Chopper. Robin stops Cindry as Hogback tries to escape. Robin and Chopper try to finish off Hogback, but Oars interrupts them. Oars destroys some building which Usopp and Sanji were in. Sanji loses Nami, who is kidnapped by Absalom once again. Oars provokes the Straw Hats to come out and fight him.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-449",
+      "wt100-457",
+      "wt100-458",
+      "wt100-448",
+      "wt100-468",
+      "wt100-444",
+      "wt100-446",
+      "wt100-443",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-kane"
+    ],
+    "sourceTitle": "Chapter 469",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_469",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Hogback",
+      "Absalom",
+      "Perona",
+      "Victoria Cindry",
+      "Oars",
+      "Cerberus",
+      "MocDonald",
+      "Brook",
+      "Enel",
+      "Automata",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-470",
+    "volume": 48,
+    "number": 470,
+    "title": "Oars vs. Straw Hat Pirates",
+    "summary": "Luffy chases after Gecko Moria, and the rest of the Straw Hats (except Nami) face off against Oars. However, Oars' brute strength and speed prove to be too much for the Straw Hats to handle, as the giant zombie evades and shrugs off their attacks while defeating every single one of them, seemingly without exerting any effort.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-468",
+      "wt100-443",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-kama"
+    ],
+    "sourceTitle": "Chapter 470",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_470",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Oars",
+      "Brook",
+      "Enel",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-471",
+    "volume": 49,
+    "number": 471,
+    "title": "My Friend",
+    "summary": "Nami wakes up and defeats Absalom with Lola's help. Meanwhile the rest of the Straw Hats prepare to take on Oars once more.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-457",
+      "wt100-458",
+      "wt100-468",
+      "wt100-443"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 471",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_471",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Absalom",
+      "Perona",
+      "Oars",
+      "Lola (Zombie)",
+      "Brook"
+    ]
+  },
+  {
+    "id": "wiki-chapter-472",
+    "volume": 49,
+    "number": 472,
+    "title": "Down",
+    "summary": "Jumping into the courtyard, Oars confronts the Straw Hat Pirates. Wondering how they could take down the giant zombie, Oars attempts to crush them with his own creative technique. Avoiding this, Franky announces they should use Tactics Fifteen. This however fails as Robin refuses to join in. Following up with a series of combination techniques, the Straw Hat Pirates succeed in knocking down Oars by attacking each limb separately and stunning the zombie. Watching from afar; the zombies refuse to acknowledge the idea of somebody being able to take down Oars. Back inside the mansion, Nami had successfully escaped Absalom and finds the treasure room empty. Going to the Thousand Sunny, several zombies at the command of Perona are loading the ship with supplies as she plans to escape the chaos unfolding on the island; only for her to be stopped by the surprise arrival of the Warlord Bartholome",
+    "characterIds": [
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-457",
+      "wt100-458",
+      "wt100-267",
+      "wt100-468",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [
+      "wiki-tech-anti-manner-kick-course",
+      "wiki-tech-sky-walk"
+    ],
+    "sourceTitle": "Chapter 472",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_472",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Absalom",
+      "Perona",
+      "Bartholomew Kuma",
+      "Oars",
+      "Lola (Zombie)",
+      "Enel",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-473",
+    "volume": 49,
+    "number": 473,
+    "title": "Warlord Bartholomew Kuma Appears",
+    "summary": "Nami races towards the Sunny and tries to save the ship and the treasure. The Straw Hats gain an advantage over Oars. The Warlord of the Sea, Bartholomew Kuma appears, looking for both Moria and Luffy. He also makes Perona \"disappear\", to everyone's terror. Meanwhile, Luffy fights Moria's shadow.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-267",
+      "wt100-458",
+      "wt100-468",
+      "wt100-462",
+      "wt100-447",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 473",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_473",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Bartholomew Kuma",
+      "Perona",
+      "Oars",
+      "Risky Brothers (Zombies)",
+      "Unigaro",
+      "Enel",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo",
+      "Automata"
+    ]
+  },
+  {
+    "id": "wiki-chapter-474",
+    "volume": 49,
+    "number": 474,
+    "title": "We Have to Do It!",
+    "summary": "Moria's shadow leaves Luffy in the forest. Meanwhile Zoro battles Oars in the castle courtyard while the other Straw Hats watch. He is stopped by Usopp who informs him that even if he beats Oars they would only get Luffy's shadow back, but if Luffy defeats Moria they will all get their shadows at once. Zoro in turn states that getting at least Luffy's shadow back is their best bet at this time. Kuma tells Moria that the World Government has chosen a new Warlord of the Sea, Blackbeard, and that they are concerned about the Straw Hats taking out another Warlord.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-267",
+      "wt100-467",
+      "wt100-468",
+      "wt100-454",
+      "wt100-443",
+      "wt100-299",
+      "wt100-1504",
+      "wt100-480"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 474",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_474",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Bartholomew Kuma",
+      "Gecko Moria",
+      "Oars",
+      "Gyoro, Nin, and Bao",
+      "Brook",
+      "Enel",
+      "Spacey",
+      "Macro (Automaton)",
+      "Galaxy",
+      "Cosmo",
+      "Automata"
+    ]
+  },
+  {
+    "id": "wiki-chapter-475",
+    "volume": 49,
+    "number": 475,
+    "title": "Pirates of the Forest",
+    "summary": "The Straw Hat Pirates battle Moria who is controlling Oars' body. Meanwhile, the Risky Brothers offer to tell Luffy the secret of Moria's powers as well as giving him a secret power to defeat him.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-462",
+      "wt100-467",
+      "wt100-468",
+      "wt100-443"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-pistol"
+    ],
+    "sourceTitle": "Chapter 475",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_475",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Risky Brothers",
+      "Gecko Moria",
+      "Oars",
+      "Brook"
+    ]
+  },
+  {
+    "id": "wiki-chapter-476",
+    "volume": 49,
+    "number": 476,
+    "title": "Nightmare Luffy",
+    "summary": "The captain of the Rolling Pirates, Lola explains the current situation to Luffy involving Moria and his crew. Before Luffy can run off again, the pirates bring out and implant him with a shadow they had captured which imbues Luffy with the abilities of a skilled swordsman. Explaining the powers behind the shadows, the Rolling Pirates bring out all the shadows they have captured and begin putting them inside Luffy. Back in the mansion's courtyard, Oars continues to control the fight with his newly gifted stretching abilities. Questioning how the zombie is stretching all of a sudden, Moria explains that by changing the shape of a person's shadow he can control their body's shape. Further fighting results in Brook being knocked unconscious but luckily, Robin manages to stop Oars' stretching by attacking Moria directly.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-461",
+      "wt100-462",
+      "wt100-467",
+      "wt100-468",
+      "wt100-443"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-bazooka",
+      "wiki-tech-gomu-gomu-no-yari",
+      "wiki-tech-gomu-gomu-no-ono",
+      "wiki-tech-gomu-gomu-no-kane"
+    ],
+    "sourceTitle": "Chapter 476",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_476",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Gecko Moria",
+      "Oars",
+      "Brook"
+    ]
+  },
+  {
+    "id": "wiki-chapter-477",
+    "volume": 49,
+    "number": 477,
+    "title": "3/8",
+    "summary": "The Straw Hat Pirates continue their battle with Moria and Oars.",
+    "characterIds": [
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-467",
+      "wt100-468"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-bazooka",
+      "wiki-tech-gomu-gomu-no-gatling"
+    ],
+    "sourceTitle": "Chapter 477",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_477",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Gecko Moria",
+      "Oars"
+    ]
+  },
+  {
+    "id": "wiki-chapter-478",
+    "volume": 49,
+    "number": 478,
+    "title": "Luffy vs. Luffy",
+    "summary": "With the Straw Hats besides Nami and Usopp defeated, hope is lost until Luffy, powered up, returns to battle Gecko Moria and Oars.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-468",
+      "wt100-443"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-rifle",
+      "wiki-tech-gomu-gomu-no-stamp",
+      "wiki-tech-luffy-punch",
+      "wiki-tech-tora-gari",
+      "wiki-tech-yasha-garasu"
+    ],
+    "sourceTitle": "Chapter 478",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_478",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Oars",
+      "Brook"
+    ]
+  },
+  {
+    "id": "wiki-chapter-479",
+    "volume": 49,
+    "number": 479,
+    "title": "Warrior of Hope",
+    "summary": "Nightmare Luffy is beating Oars over and over and finally takes him down.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-461",
+      "wt100-462",
+      "wt100-467",
+      "wt100-468",
+      "wt100-445",
+      "wt100-443"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-pistol",
+      "wiki-tech-gomu-gomu-no-bullet",
+      "wiki-tech-gomu-gomu-no-ono",
+      "wiki-tech-gomu-gomu-no-storm"
+    ],
+    "sourceTitle": "Chapter 479",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_479",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Gecko Moria",
+      "Oars",
+      "Hildon",
+      "Buhichuck",
+      "Brook"
+    ]
+  },
+  {
+    "id": "wiki-chapter-480",
+    "volume": 49,
+    "number": 480,
+    "title": "Interception",
+    "summary": "As Oars is not defeated just yet, the Straw Hats recover to land a massive combined attack, immobilizing the giant for good.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-461",
+      "wt100-462",
+      "wt100-467",
+      "wt100-468",
+      "wt100-443"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-bazooka"
+    ],
+    "sourceTitle": "Chapter 480",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_480",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Gecko Moria",
+      "Oars",
+      "Brook"
+    ]
+  },
+  {
+    "id": "wiki-chapter-481",
+    "volume": 49,
+    "number": 481,
+    "title": "Shadows Asgard",
+    "summary": "Oars is finally defeated but Moria, to everyone's surprise, is still alive and he starts to taking all the shadows off Thriller Bark with the attack Shadows Asgard, absorbing one thousand shadows in his body. The sun is rising and the Straw Hat Pirates have to defeat Moria to take all the shadows back before the sun can fully rise or they will turn to ash.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-461",
+      "wt100-462",
+      "wt100-457",
+      "wt100-468",
+      "wt100-448",
+      "wt100-445",
+      "wt100-464",
+      "wt100-1423",
+      "wt100-454",
+      "wt100-444",
+      "wt100-447",
+      "wt100-446",
+      "wt100-443"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 481",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_481",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Absalom",
+      "Oars",
+      "Victoria Cindry",
+      "Hildon",
+      "Lola (Zombie)",
+      "Jigoro",
+      "Inuppe",
+      "Buhichuck",
+      "John",
+      "Ganzui",
+      "Gyoro, Nin, and Bao",
+      "Risky Brothers (Zombies)",
+      "Cerberus",
+      "Unigaro",
+      "MocDonald",
+      "Brook"
+    ]
+  },
+  {
+    "id": "wiki-chapter-482",
+    "volume": 50,
+    "number": 482,
+    "title": "Morning Is Coming",
+    "summary": "Morning is about to come and Moria is still alive with all the shadows. Luffy activates Gear 2 and Gear 3 simultaneously and he does some serious damage to Moria, forcing some of the shadows coming out from his body.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-461",
+      "wt100-462",
+      "wt100-467",
+      "wt100-446",
+      "wt100-443"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 482",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_482",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Gecko Moria",
+      "MocDonald",
+      "Brook"
+    ]
+  },
+  {
+    "id": "wiki-chapter-483",
+    "volume": 50,
+    "number": 483,
+    "title": "The End of the Dream",
+    "summary": "Luffy made it: he finally defeated Gecko Moria and now the shadows are returning to their original bodies. The Straw Hats are now resting but another unexpected Warlord of the Sea, Bartholomew Kuma appears with a mission from World Government to destroy the Straw Hats.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-449",
+      "wt100-457",
+      "wt100-461",
+      "wt100-462",
+      "wt100-267",
+      "wt100-470",
+      "wt100-443",
+      "wt100-473",
+      "wt100-452"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 483",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_483",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Hogback",
+      "Absalom",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Bartholomew Kuma",
+      "Goo",
+      "Asahija",
+      "Lola (Zombie)",
+      "Brook",
+      "Margarita",
+      "Egana",
+      "Spoil"
+    ]
+  },
+  {
+    "id": "wiki-chapter-484",
+    "volume": 50,
+    "number": 484,
+    "title": "Squish",
+    "summary": "Bartholomew Kuma battles with the Straw Hat Pirates.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-461",
+      "wt100-462",
+      "wt100-267",
+      "wt100-443"
+    ],
+    "techniqueIds": [
+      "wiki-tech-toro-nagashi"
+    ],
+    "sourceTitle": "Chapter 484",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_484",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Bartholomew Kuma",
+      "Brook",
+      "Nefertari Vivi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-485",
+    "volume": 50,
+    "number": 485,
+    "title": "Straw Hat Pirates—Pirate Hunter Zolo",
+    "summary": "Thriller Bark is still floating, but everything on it is destroyed. Kuma starts walking towards Luffy and grabs him, but is immediately stopped and cut on the shoulder by Zoro. The shoulder appears to have metallic parts, before Kuma shoots a laser beam at Zoro which explodes as it makes contact with the ground. Kuma reveals that he is a superior type of cyborg. Zoro begs for Kuma to spare Luffy's life and take his instead. Sanji wakes up and comes to Kuma insisting that his life should be the one taken. Zoro knocks out Sanji and Kuma agrees to not take Luffy's life. He repels all of Luffy's pain and fatigue into a giant paw-shaped sphere. Zoro enters it before everyone wakes up and Luffy feels better, much to everyone's surprise. Sanji goes out to look for Zoro and find him covered in blood.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-461",
+      "wt100-462",
+      "wt100-267",
+      "wt100-443",
+      "wt100-145",
+      "wt100-193",
+      "wt100-211",
+      "wt100-212",
+      "wt100-213",
+      "wt100-214",
+      "wt100-216"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 485",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_485",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Bartholomew Kuma",
+      "Vegapunk",
+      "Brook",
+      "Karoo",
+      "Matsuge",
+      "Stomp",
+      "Ivan X",
+      "Cowboy",
+      "Bourbon Jr.",
+      "Kentauros",
+      "Hikoichi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-486",
+    "volume": 50,
+    "number": 486,
+    "title": "Piano",
+    "summary": "While the Thriller Bark gang not including Perona escape, the Straw Hats and Rolling Pirates celebrate their victory over Moria. Sanji learns what happened to Zoro and Brook learns that Laboon is still alive.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-467",
+      "wt100-449",
+      "wt100-457",
+      "wt100-461",
+      "wt100-462",
+      "wt100-235",
+      "wt100-454",
+      "wt100-443",
+      "wt100-133",
+      "wt100-352",
+      "wt100-350",
+      "wt100-351",
+      "wt100-379"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 486",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_486",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Gecko Moria",
+      "Hogback",
+      "Absalom",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Yorki",
+      "Gyoro, Nin, and Bao",
+      "Brook",
+      "Laboon",
+      "Kokoro",
+      "Chimney",
+      "Gonbe",
+      "Yokozuna"
+    ]
+  },
+  {
+    "id": "wiki-chapter-487",
+    "volume": 50,
+    "number": 487,
+    "title": "That Song",
+    "summary": "Brook has a flashback from 50 years ago when the Rumbar Pirates first encountered Laboon. His crew tried to make Laboon return to his pod, but he didn't listen and followed them to the Grand Line. They stayed at the Twin capes for three months and then left Laboon with Crocus. The skeleton recalls bits of his adventures with his former crew. Eventually, his captain Yorki, contacts an incurable illness and tries to leave the Grand Line through the Calm Belt.",
+    "characterIds": [
+      "wt100-235",
+      "wt100-443",
+      "wt100-133",
+      "wt100-363",
+      "wt100-364",
+      "wt100-369",
+      "wt100-134",
+      "wt100-1375"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 487",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_487",
+    "sourceCharacterTitles": [
+      "Yorki",
+      "Brook",
+      "Mizuta Madaisuki",
+      "Laboon",
+      "Iceburg",
+      "Tyrannosaurus",
+      "Peepley Lulu",
+      "Crocus",
+      "Alice"
+    ]
+  },
+  {
+    "id": "wiki-chapter-488",
+    "volume": 50,
+    "number": 488,
+    "title": "Song of Life",
+    "summary": "Brook continues to have flashbacks. This time, he recounts his crew dying. However, they still sing the Binks' Sake song which they record on a tone dial for Laboon as their last great performance thus keeping their promise to Laboon. The Binks' Sake song lyrics is fully showed in this chapter.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-348",
+      "wt100-461",
+      "wt100-462",
+      "wt100-235",
+      "wt100-133",
+      "wt100-366",
+      "wt100-443"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 488",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_488",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Franky",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Yorki",
+      "Mizuta Mawaritosuki",
+      "Laboon",
+      "Paulie",
+      "Brook"
+    ]
+  },
+  {
+    "id": "wiki-chapter-489",
+    "volume": 50,
+    "number": 489,
+    "title": "Eighth Person",
+    "summary": "Brook becomes the newest crew member of the Straw Hat Pirates. The crew rejoices over having a musician join the crew. Brook reminisces about Laboon. At the same time, in Twin Cape, Laboon seems to be unusually filled with joy, as noted by Crocus. Brook bids his crew a final farewell at a grave that Franky built. Zoro also joins him as he says goodbye to his old katana. Luffy announces that the crew will be heading to Fish-Man Island next. Lola gives Nami a piece of her mother's Vivre Card. She tells Nami that it will come in handy for them in the New World. Luffy then remembers that his brother gave him a Vivre Card back in Arabasta. He takes out the card and notices that it is burning and smaller than before. Lola, alarmed, tells Luffy that his brother's life force is fading away and that he is in danger.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-443",
+      "wt100-461",
+      "wt100-462",
+      "wt100-235",
+      "wt100-182",
+      "wt100-134",
+      "wt100-133",
+      "wt100-452"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 489",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_489",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Brook",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Yorki",
+      "Portgas D. Ace",
+      "Crocus",
+      "Laboon",
+      "Spoil"
+    ]
+  },
+  {
+    "id": "wiki-chapter-490",
+    "volume": 50,
+    "number": 490,
+    "title": "Arriving Again",
+    "summary": "The Straw Hat Pirates leave Thriller Bark and arrive at the Red Line. There, they meet and rescue a mermaid, Camie.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-443",
+      "wt100-400",
+      "wt100-399",
+      "wt100-461",
+      "wt100-462",
+      "wt100-265",
+      "wt100-434",
+      "wt100-267",
+      "wt100-477",
+      "wt100-478",
+      "wt100-452",
+      "wt100-476"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-rifle"
+    ],
+    "sourceTitle": "Chapter 490",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_490",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Brook",
+      "Oimo",
+      "Kashii",
+      "Charlotte Lola",
+      "Risky Brothers",
+      "Sengoku",
+      "Monkey D. Garp",
+      "Bartholomew Kuma",
+      "Camie",
+      "Pappag",
+      "Spoil",
+      "Sea Raccoon",
+      "Sea Rabbit"
+    ]
+  },
+  {
+    "id": "wiki-chapter-491",
+    "volume": 50,
+    "number": 491,
+    "title": "Flying Fish Riders",
+    "summary": "The Straw Hats introduce themselves to Camie and Pappag. Camie receives a call through the Den Den Mushi and learns her friend Hachi has been kidnapped by pirate fish-man Macro. Camie uses her ability to be able to speak with fish and navigates the ship towards Grove 44 of the Sabaody Archipelago until they are attacked by Flying Fish Riders.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-443",
+      "wt100-480",
+      "wt100-481",
+      "wt100-482",
+      "wt100-479",
+      "wt100-477",
+      "wt100-478"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 491",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_491",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Brook",
+      "Macro",
+      "Gyaro",
+      "Tansui",
+      "Duval",
+      "Camie",
+      "Pappag"
+    ]
+  },
+  {
+    "id": "wiki-chapter-492",
+    "volume": 51,
+    "number": 492,
+    "title": "Iron Mask Duval",
+    "summary": "The Straw Hat Pirates meet more of the Flying Fish Riders while they attempt to save Hatchan.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-443",
+      "wt100-480",
+      "wt100-481",
+      "wt100-482",
+      "wt100-376",
+      "wt100-367",
+      "wt100-397",
+      "wt100-365",
+      "wt100-477",
+      "wt100-478",
+      "wt100-87",
+      "wt100-479"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 492",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_492",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Brook",
+      "Macro",
+      "Gyaro",
+      "Tansui",
+      "Blueno",
+      "Rob Lucci",
+      "Fukurou",
+      "Kalifa",
+      "Camie",
+      "Pappag",
+      "Hatchan",
+      "Duval"
+    ]
+  },
+  {
+    "id": "wiki-chapter-493",
+    "volume": 51,
+    "number": 493,
+    "title": "You Know Me",
+    "summary": "As the Straw Hat Pirates battle the Flying Fish Riders, Hatchan is freed from imprisonment and defeats the Macro Pirates. When Luffy attempts to hijack a flying fish, he ends up crashing into Duval's room and seeing the masked man's face.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-443",
+      "wt100-480",
+      "wt100-481",
+      "wt100-482",
+      "wt100-367",
+      "wt100-362",
+      "wt100-396",
+      "wt100-376",
+      "wt100-398",
+      "wt100-397",
+      "wt100-365",
+      "wt100-368",
+      "wt100-477",
+      "wt100-478",
+      "wt100-87",
+      "wt100-479"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-fusen"
+    ],
+    "sourceTitle": "Chapter 493",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_493",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Brook",
+      "Macro",
+      "Gyaro",
+      "Tansui",
+      "Rob Lucci",
+      "Kaku",
+      "Jabra",
+      "Blueno",
+      "Kumadori",
+      "Fukurou",
+      "Kalifa",
+      "Hattori",
+      "Camie",
+      "Pappag",
+      "Hatchan",
+      "Duval"
+    ]
+  },
+  {
+    "id": "wiki-chapter-494",
+    "volume": 51,
+    "number": 494,
+    "title": "Duval's Tragedy",
+    "summary": "The Straw Hats continue to fight against the Flying Fish Riders. Duval says he has a personal issue with Sanji while the Straw Hats are confused by this statement as they never met the man before. Luffy then suddenly knock off Duval's mask, revealing his face, which surprisingly resembles the poorly drawn picture on Sanji's wanted poster. Everyone looks at Duval's face, commenting at how much the face look a lot similar to the poorly drawn picture on Sanji's wanted poster.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-443",
+      "wt100-396",
+      "wt100-376",
+      "wt100-381",
+      "wt100-477",
+      "wt100-478",
+      "wt100-87",
+      "wt100-479",
+      "wt100-483"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 494",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_494",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Brook",
+      "Jabra",
+      "Blueno",
+      "Spandam",
+      "Camie",
+      "Pappag",
+      "Hatchan",
+      "Duval",
+      "Motobaro"
+    ]
+  },
+  {
+    "id": "wiki-chapter-495",
+    "volume": 51,
+    "number": 495,
+    "title": "Gaon Cannon",
+    "summary": "Sanji and Duval argue about the face on Sanji's bounty poster, then Duval tells Sanji about his history. Afterwards, Duval shoots at Sanji with his harpoon gun in rage, but fails to hit him. He then orders two riders to drag Sanji into the water and drown him with a steel net. Camie leaps into the water and attempts to rescue Sanji. Meanwhile, the other riders attempts to use a giant anchor to sink the Thousand Sunny and drown the rest of the Straw Hat Pirates, especially those with Devil Fruit abilities. Franky, however, controls the ship and manages to escape the anchor with Chicken Voyage and then fights back with the Gaon Cannon, blasting away most of the riders. Duval's pet bison, Motobaro, attempts to attack the crew but is stopped by Luffy when he unintentionally uses Supreme King Haki. Duval then fights on his own and attempts to kill Sanji again with the harpoon gun, but Sanji e",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-443",
+      "wt100-367",
+      "wt100-362",
+      "wt100-396",
+      "wt100-376",
+      "wt100-398",
+      "wt100-397",
+      "wt100-365",
+      "wt100-368",
+      "wt100-477",
+      "wt100-478",
+      "wt100-87",
+      "wt100-479",
+      "wt100-483"
+    ],
+    "techniqueIds": [
+      "wiki-tech-parage-shot"
+    ],
+    "sourceTitle": "Chapter 495",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_495",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Brook",
+      "Rob Lucci",
+      "Kaku",
+      "Jabra",
+      "Blueno",
+      "Kumadori",
+      "Fukurou",
+      "Kalifa",
+      "Hattori",
+      "Camie",
+      "Pappag",
+      "Hatchan",
+      "Duval",
+      "Motobaro"
+    ]
+  },
+  {
+    "id": "wiki-chapter-496",
+    "volume": 51,
+    "number": 496,
+    "title": "Yarukiman Mangrove",
+    "summary": "The Takoyaki 8 crew prepares food for the Straw Hats. Duval comes to thank Sanji for re-constructing his face. Pappag explains to the Straw Hats how to get to New World. After the group arrives at Sabaody Archipelago, Hatchan warns the Straw Hats not to get involved with the World Nobles.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-443",
+      "wt100-367",
+      "wt100-362",
+      "wt100-396",
+      "wt100-376",
+      "wt100-398",
+      "wt100-397",
+      "wt100-365",
+      "wt100-477",
+      "wt100-478",
+      "wt100-87",
+      "wt100-479",
+      "wt100-483"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 496",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_496",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Brook",
+      "Rob Lucci",
+      "Kaku",
+      "Jabra",
+      "Blueno",
+      "Kumadori",
+      "Fukurou",
+      "Kalifa",
+      "Camie",
+      "Pappag",
+      "Hatchan",
+      "Duval",
+      "Motobaro"
+    ]
+  },
+  {
+    "id": "wiki-chapter-497",
+    "volume": 51,
+    "number": 497,
+    "title": "Adventure on the Archipelago of Dancing Soap Bubbles",
+    "summary": "The Straw Hat Pirates happily explore Sabaody Archipelago until they encounter the Celestial Dragons.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-443",
+      "wt100-398",
+      "wt100-488",
+      "wt100-487",
+      "wt100-477",
+      "wt100-478",
+      "wt100-87",
+      "wt100-484",
+      "wt100-485",
+      "wt100-522",
+      "wt100-489"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 497",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_497",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Brook",
+      "Kumadori",
+      "Rosward Rosward",
+      "Rosward Shalria",
+      "Saru",
+      "Camie",
+      "Pappag",
+      "Hatchan",
+      "Antonio",
+      "Devil Dias",
+      "Sentomaru",
+      "Jean Bart"
+    ]
+  },
+  {
+    "id": "wiki-chapter-498",
+    "volume": 51,
+    "number": 498,
+    "title": "The Eleven Supernovas",
+    "summary": "The Straw Hat Pirates arrive at Shakky's Rip-off Bar, after managing to get to Grove 13. There, they inquire about Rayleigh. Shakky informs the Straw Hat Pirates about the Eleven Supernovas, a group of rookie pirates with bounties of over 100,000,000 that arrived at Sabaody Archipelago at the same time.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-130",
+      "wt100-443",
+      "wt100-493",
+      "wt100-497",
+      "wt100-496",
+      "wt100-500",
+      "wt100-499",
+      "wt100-495",
+      "wt100-503",
+      "wt100-504",
+      "wt100-502",
+      "wt100-494",
+      "wt100-525",
+      "wt100-524",
+      "wt100-526",
+      "wt100-523",
+      "wt100-498",
+      "wt100-396",
+      "wt100-376",
+      "wt100-491",
+      "wt100-490",
+      "wt100-492",
+      "wt100-87",
+      "wt100-477",
+      "wt100-478"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 498",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_498",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Tony Tony Chopper",
+      "Brook",
+      "Capone Bege",
+      "Scratchmen Apoo",
+      "Eustass Kid",
+      "Killer",
+      "Urouge",
+      "Basil Hawkins",
+      "Trafalgar D. Water Law",
+      "Bepo",
+      "Shachi",
+      "Penguin",
+      "Jewelry Bonney",
+      "Gyogyo",
+      "Potato",
+      "Totts",
+      "Part",
+      "X Drake",
+      "Jabra",
+      "Blueno",
+      "Minoruba",
+      "Kairiken",
+      "Shakuyaku",
+      "Hatchan",
+      "Camie",
+      "Pappag"
+    ]
+  },
+  {
+    "id": "wiki-chapter-499",
+    "volume": 51,
+    "number": 499,
+    "title": "Sabaody Park",
+    "summary": "The Straw Hat Pirates arrive at Sabaody Park where Camie gets kidnapped by a team of kidnappers.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-348",
+      "wt100-443",
+      "wt100-499",
+      "wt100-493",
+      "wt100-497",
+      "wt100-494",
+      "wt100-525",
+      "wt100-495",
+      "wt100-362",
+      "wt100-397",
+      "wt100-87",
+      "wt100-477",
+      "wt100-478",
+      "wt100-491",
+      "wt100-490",
+      "wt100-507",
+      "wt100-508",
+      "wt100-492",
+      "wt100-505"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 499",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_499",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Franky",
+      "Brook",
+      "Urouge",
+      "Capone Bege",
+      "Scratchmen Apoo",
+      "Jewelry Bonney",
+      "Gyogyo",
+      "Basil Hawkins",
+      "Kaku",
+      "Fukurou",
+      "Rosward Charlos",
+      "Hatchan",
+      "Camie",
+      "Pappag",
+      "Minoruba",
+      "Kairiken",
+      "Marie",
+      "Judy",
+      "Shakuyaku",
+      "Peterman"
+    ]
+  },
+  {
+    "id": "wiki-chapter-500",
+    "volume": 51,
+    "number": 500,
+    "title": "The Embers of History",
+    "summary": "Luffy, Hatchan and Pappag search for Camie, who was kidnapped. Meanwhile Sanji, Usopp, and Franky get help from the Rosy Life Riders in searching for the kidnapped Camie and also reuniting the Straw Hats. The chapter ends with an old enslaved man being introduced as the First Mate of the Roger Pirates, Silvers Rayleigh.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-130",
+      "wt100-131",
+      "wt100-348",
+      "wt100-443",
+      "wt100-496",
+      "wt100-500",
+      "wt100-510",
+      "wt100-511",
+      "wt100-503",
+      "wt100-502",
+      "wt100-513",
+      "wt100-365",
+      "wt100-488",
+      "wt100-487",
+      "wt100-505",
+      "wt100-87",
+      "wt100-477",
+      "wt100-478",
+      "wt100-512",
+      "wt100-479",
+      "wt100-483",
+      "wt100-119",
+      "wt100-489",
+      "wt100-509"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 500",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_500",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Tony Tony Chopper",
+      "Nico Robin",
+      "Franky",
+      "Brook",
+      "Eustass Kid",
+      "Killer",
+      "Heat",
+      "Wire",
+      "Trafalgar D. Water Law",
+      "Bepo",
+      "Penguin",
+      "Stansen",
+      "Kalifa",
+      "Rosward Rosward",
+      "Rosward Shalria",
+      "Peterman",
+      "Hatchan",
+      "Camie",
+      "Pappag",
+      "Disco",
+      "Duval",
+      "Motobaro",
+      "Silvers Rayleigh",
+      "Jean Bart",
+      "Marin"
     ]
   }
 ];

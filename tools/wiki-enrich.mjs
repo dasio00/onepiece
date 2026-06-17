@@ -197,6 +197,18 @@ const WIKI_REFERENCE_TITLE_OVERRIDES = new Map([
   ["wt100-1520", "Sea Beast"],
   ["wt100-1521", "Sea Beast"]
 ]);
+const WIKI_UNMATCHED_REASON_OVERRIDES = new Map([
+  ["wt100-84", "Fish-Woman Nami is a gag/alternate form; no safe distinct One Piece Wiki page was found."],
+  ["wt100-148", "Henohenounchi appears in secondary/list material; no safe distinct One Piece Wiki page was found."],
+  ["wt100-776", "Rock is too ambiguous; search results point to Rocks D. Xebec/Yeti Cool Brothers but no safe exact page was found."],
+  ["wt100-865", "Third-Rate Chump is too generic; no safe distinct One Piece Wiki page was found."],
+  ["wt100-871", "Fourth-Rate Chump is too generic; no safe distinct One Piece Wiki page was found."],
+  ["wt100-1548", "Extra Girl (Sword) is an anthropomorphized SBS/item entry; no safe distinct One Piece Wiki page was found."],
+  ["wt100-1552", "Yamato's Sideboob is an anthropomorphized SBS gag entry; no safe distinct One Piece Wiki page was found."],
+  ["wt100-1559", "Gummer is an anthropomorphized item entry; no safe distinct One Piece Wiki page was found."],
+  ["wt100-1561", "Haramakiko is an anthropomorphized SBS/item entry; no safe distinct One Piece Wiki page was found."],
+  ["wt100-1562", "The Piercing Sisters is an anthropomorphized SBS/item entry; no safe distinct One Piece Wiki page was found."]
+]);
 const resolvedTitleCache = new Map();
 const searchResultCache = new Map();
 
@@ -228,6 +240,7 @@ if (applyOutput) {
   const nextText = applyEnrichmentBlock(dataText, {
     officialEntries: previous.officialEntries || [],
     wikiEntries: previous.wikiEntries || [],
+    unmatchedEntries: previous.unmatchedEntries || [],
     subOrganizations: buildSubOrganizationEntries(wt100Options.organizations),
     fruitEntries: previous.fruitEntries || []
   });
@@ -236,6 +249,7 @@ if (applyOutput) {
     appliedOutput: true,
     officialEntries: previous.officialEntries?.length || 0,
     wikiEntries: previous.wikiEntries?.length || 0,
+    unmatchedEntries: previous.unmatchedEntries?.length || 0,
     fruits: previous.fruitEntries?.length || 0
   }, null, 2));
   process.exit(0);
@@ -249,6 +263,7 @@ const officialEntries = [];
 const wikiEntries = [];
 const fruitEntries = new Map();
 const unmatched = [];
+const unmatchedEntries = [];
 
 for (const person of people) {
   const faceId = faceIdFromPerson(person);
@@ -287,7 +302,14 @@ if (!skipWiki) {
         });
         continue;
       }
-      unmatched.push({ id: entry.id, sourceNameJa: entry.sourceNameJa, sourceNameEn: entry.sourceNameEn });
+      const reason = WIKI_UNMATCHED_REASON_OVERRIDES.get(entry.id) || "No safe One Piece Wiki page was found.";
+      unmatched.push({ id: entry.id, sourceNameJa: entry.sourceNameJa, sourceNameEn: entry.sourceNameEn, reason });
+      unmatchedEntries.push({
+        id: entry.id,
+        sourceNameJa: entry.sourceNameJa,
+        sourceNameEn: entry.sourceNameEn,
+        patch: buildUnmatchedPatch(reason)
+      });
       continue;
     }
     const patch = buildWikiPatch(wiki.info);
@@ -321,6 +343,7 @@ let output = {
   fruits: fruitEntries.size,
   officialEntries,
   wikiEntries,
+  unmatchedEntries,
   fruitEntries: [...fruitEntries.values()]
 };
 
@@ -334,6 +357,7 @@ if (apply) {
   const nextText = applyEnrichmentBlock(dataText, {
     officialEntries: output.officialEntries,
     wikiEntries: output.wikiEntries,
+    unmatchedEntries: output.unmatchedEntries || [],
     subOrganizations: buildSubOrganizationEntries(wt100Options.organizations),
     fruitEntries: output.fruitEntries
   });
@@ -390,6 +414,7 @@ async function mergeWithPreviousOutput(current, rangeStart, rangeEnd) {
   const officialEntries = current.officialEntries.length ? current.officialEntries : (previous.officialEntries || []);
   const wikiEntries = mergeById(previous.wikiEntries || [], current.wikiEntries || [], true);
   const unmatched = mergeById(previous.unmatched || [], current.unmatched || [], true);
+  const unmatchedEntries = mergeById(previous.unmatchedEntries || [], current.unmatchedEntries || [], true);
   const fruitMap = new Map();
   [...(previous.fruitEntries || []), ...(current.fruitEntries || [])].forEach((item) => fruitMap.set(item.id, item));
   const triedIds = new Set([...wikiEntries, ...unmatched].map((item) => item.id));
@@ -400,6 +425,7 @@ async function mergeWithPreviousOutput(current, rangeStart, rangeEnd) {
     wikiTried: triedIds.size,
     wikiMatched: wikiEntries.length,
     unmatched,
+    unmatchedEntries,
     subOrganizations: current.subOrganizations,
     fruits: fruitMap.size,
     officialEntries,
@@ -700,6 +726,13 @@ function buildReferencePatch(title) {
   };
 }
 
+function buildUnmatchedPatch(reason) {
+  return {
+    wikiLookupStatus: "unresolved",
+    wikiLookupNote: reason
+  };
+}
+
 function applyEnrichmentBlock(text, payload) {
   const serializable = JSON.stringify(payload, null, 2);
   const body = `
@@ -729,6 +762,7 @@ ${START_MARKER}
   payload.fruitEntries.forEach((item) => upsert(data.devilFruits, item.id, item));
   payload.officialEntries.forEach((entry) => fillPerson(entry.id, entry.patch));
   payload.wikiEntries.forEach((entry) => fillPerson(entry.id, entry.patch));
+  (payload.unmatchedEntries || []).forEach((entry) => fillPerson(entry.id, entry.patch));
 })();
 ${END_MARKER}
 `;

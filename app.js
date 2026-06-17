@@ -481,7 +481,15 @@ function renderQuickInfoBlock(kind, title, text) {
 }
 
 function renderWikiReferenceBlock(person) {
-  if (!person.wikiUrl && !person.wikiTitle) return "";
+  if (!person.wikiUrl && !person.wikiTitle && !person.wikiLookupStatus) return "";
+  if (person.wikiLookupStatus === "unresolved") {
+    return `
+      <div class="info-block wiki-reference unresolved">
+        <strong>위키 확인 필요</strong>
+        <p>${escapeHtml(person.wikiLookupNote || "안전하게 연결할 위키 페이지를 찾지 못했습니다.")}</p>
+      </div>
+    `;
+  }
   const fallbackUrl = person.wikiTitle ? `https://onepiece.fandom.com/wiki/${encodeURIComponent(String(person.wikiTitle).replaceAll(" ", "_"))}` : "";
   const href = person.wikiUrl || fallbackUrl;
   const label = person.wikiReferenceOnly ? "위키 참고" : "위키";

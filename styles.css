@@ -459,6 +459,10 @@ textarea {
   text-underline-offset: 3px;
 }
 
+.wiki-reference.unresolved strong {
+  color: var(--accent);
+}
+
 .sub-selector {
   display: flex;
   flex-wrap: wrap;

@@ -19,6 +19,21 @@ const viewConfig = {
   editor: { label: "수정", title: "웹에서 바로 데이터 수정", listTitle: "수정" }
 };
 
+const quizCategoryMeta = [
+  { id: "name", title: "이름", search: "이름 얼굴 인물" },
+  { id: "age", title: "나이", search: "나이 연령" },
+  { id: "height", title: "키", search: "키 신장" },
+  { id: "bounty", title: "현상금", search: "현상금" },
+  { id: "bloodType", title: "혈액형", search: "혈액형" },
+  { id: "birthday", title: "생일", search: "생일" },
+  { id: "origin", title: "출신지", search: "출신지" },
+  { id: "alias", title: "별명", search: "별명" },
+  { id: "likes", title: "좋아하는 것", search: "좋아하는 것" },
+  { id: "fruit", title: "악마의 열매", search: "악마의 열매" },
+  { id: "organization", title: "조직", search: "조직 세부 조직" },
+  { id: "timeline", title: "연표", search: "연표 사건" }
+];
+
 let currentView = "techniques";
 let activeId = "";
 let sortMode = "all";
@@ -35,6 +50,7 @@ let activeQuizCard = null;
 let quizFlipped = false;
 let quizSession = null;
 let quizAnswerDraft = "";
+const quizCardCache = new Map();
 
 const tabs = document.querySelectorAll(".tab");
 const viewLabel = document.querySelector("#viewLabel");
@@ -124,7 +140,6 @@ function isListOnlyView() {
 }
 
 function render() {
-  normalizeInPlace(data);
   const config = viewConfig[currentView];
   viewLabel.textContent = config.label;
   viewTitle.textContent = config.title;
@@ -1264,61 +1279,175 @@ function setActiveTab() {
 }
 
 function getQuizCategories() {
-  return [
-    item("name", "이름", `${buildQuizCards("name").length}장`, { id: "name", name: "이름" }, "이름 얼굴 인물"),
-    item("age", "나이", `${buildQuizCards("age").length}장`, { id: "age", name: "나이" }, "나이 연령"),
-    item("height", "키", `${buildQuizCards("height").length}장`, { id: "height", name: "키" }, "키 신장"),
-    item("bounty", "현상금", `${buildQuizCards("bounty").length}장`, { id: "bounty", name: "현상금" }, "현상금"),
-    item("bloodType", "혈액형", `${buildQuizCards("bloodType").length}장`, { id: "bloodType", name: "혈액형" }, "혈액형"),
-    item("birthday", "생일", `${buildQuizCards("birthday").length}장`, { id: "birthday", name: "생일" }, "생일"),
-    item("origin", "출신지", `${buildQuizCards("origin").length}장`, { id: "origin", name: "출신지" }, "출신지"),
-    item("alias", "별명", `${buildQuizCards("alias").length}장`, { id: "alias", name: "별명" }, "별명"),
-    item("likes", "좋아하는 것", `${buildQuizCards("likes").length}장`, { id: "likes", name: "좋아하는 것" }, "좋아하는 것"),
-    item("fruit", "악마의 열매", `${buildQuizCards("fruit").length}장`, { id: "fruit", name: "악마의 열매" }, "악마의 열매"),
-    item("organization", "조직", `${buildQuizCards("organization").length}장`, { id: "organization", name: "조직" }, "조직 세부 조직"),
-    item("timeline", "연표", `${buildQuizCards("timeline").length}장`, { id: "timeline", name: "연표" }, "연표 사건")
-  ];
+  ensureQuizCards();
+  return quizCategoryMeta.map((category) => (
+    item(category.id, category.title, `${buildQuizCards(category.id).length}장`, { id: category.id, name: category.title }, category.search)
+  ));
 }
 
 function buildQuizCards(category) {
-  const cards = [];
+  ensureQuizCards();
+  return quizCardCache.get(category) || [];
+}
+
+function ensureQuizCards() {
+  if (quizCardCache.get("__ready")) return;
+  quizCardCache.clear();
+  quizCategoryMeta.forEach((category) => quizCardCache.set(category.id, []));
   data.people.forEach((person) => {
     const fruit = findFruit(person.devilFruitId);
-    const map = {
-      name: ["이 인물의 이름은?", person.name],
-      age: [`${person.name}의 나이는?`, `${person.age}세`],
-      height: [`${person.name}의 현재 키는?`, `${currentHeight(person)}cm`],
-      bounty: [`${person.name}의 현재 현상금은?`, formatBounty(currentBounty(person))],
-      bloodType: [`${person.name}의 혈액형은?`, person.bloodType],
-      birthday: [`${person.name}의 생일은?`, person.birthday],
-      origin: [`${person.name}의 출신지는?`, `${originRegionName(person.originRegion)} / ${originCountryName(person.originCountry)}`],
-      alias: [`${person.name}의 별명은?`, person.aliases],
-      likes: [`${person.name}이 좋아하는 것은?`, person.likes],
-      fruit: [`${person.name}이 먹은 악마의 열매는?`, fruit?.name || ""],
-      organization: [`${person.name}의 소속은?`, `${organizationName(person.organization)} / ${subOrganizationName(person.subOrganization)}`]
-    };
-    if (map[category] && map[category][1] && (category !== "name" || person.imageUrl)) {
-      cards.push({
-        category,
-        personId: person.id,
-        front: map[category][0],
-        back: map[category][1],
-        imageUrl: category === "name" ? person.imageUrl : ""
-      });
-    }
-    if (category === "timeline") {
-      (person.timeline || []).forEach((entry) => {
-        cards.push({ category, personId: person.id, front: `${person.name}: ${timelineContent(entry)}은 언제?`, back: timelineYear(entry), imageUrl: "" });
-      });
-    }
+    quizCategoryMeta.forEach((category) => {
+      if (category.id === "timeline") return;
+      const card = buildPersonQuizCard(category.id, person, fruit);
+      if (card) quizCardCache.get(category.id).push(card);
+    });
+    (person.timeline || []).forEach((entry) => {
+      const year = timelineYear(entry);
+      const content = timelineContent(entry);
+      if (year && content && person.imageUrl) {
+        quizCardCache.get("timeline").push({
+          category: "timeline",
+          personId: person.id,
+          front: `${person.name}: ${content}은 언제?`,
+          back: year,
+          acceptedAnswers: [year],
+          imageUrl: person.imageUrl || ""
+        });
+      }
+    });
   });
   data.devilFruits.forEach((fruit) => {
-    if (category === "fruit") {
-      const currentUser = findPerson(fruit.currentUserId);
-      if (currentUser) cards.push({ category, personId: currentUser.id, front: `${fruit.name}의 현재 능력자는?`, back: currentUser.name, imageUrl: "" });
+    const currentUser = findPerson(fruit.currentUserId);
+    if (currentUser?.imageUrl) {
+      quizCardCache.get("fruit").push({
+        category: "fruit",
+        personId: currentUser.id,
+        front: `${fruit.name}의 현재 능력자는?`,
+        back: currentUser.name,
+        acceptedAnswers: [currentUser.name],
+        imageUrl: currentUser.imageUrl || ""
+      });
     }
   });
-  return cards;
+  quizCardCache.set("__ready", true);
+}
+
+function buildPersonQuizCard(category, person, fruit) {
+  const imageUrl = person.imageUrl || "";
+  if (!imageUrl) return null;
+  const age = Number(person.age || 0);
+  const height = currentHeight(person);
+  const bounty = currentBounty(person);
+  const origin = registeredOriginLabel(person);
+  const organization = registeredOrganizationLabel(person);
+  const definitions = {
+    name: imageUrl && person.name ? {
+      front: "이 인물의 이름은?",
+      back: person.name,
+      acceptedAnswers: [person.name]
+    } : null,
+    age: age > 0 ? {
+      front: `${person.name}의 나이는?`,
+      back: `${age}세`,
+      acceptedAnswers: [String(age), `${age}세`, `${age}살`],
+      numericAnswer: age
+    } : null,
+    height: height > 0 ? {
+      front: `${person.name}의 현재 키는?`,
+      back: `${height}cm`,
+      acceptedAnswers: [String(height), `${height}cm`, `${height}센티`, `${height}센티미터`],
+      numericAnswer: height
+    } : null,
+    bounty: bounty > 0 ? {
+      front: `${person.name}의 현재 현상금은?`,
+      back: formatBounty(bounty),
+      acceptedAnswers: bountyAnswerVariants(bounty),
+      numericAnswer: bounty
+    } : null,
+    bloodType: hasRegisteredText(person.bloodType) ? {
+      front: `${person.name}의 혈액형은?`,
+      back: person.bloodType,
+      acceptedAnswers: [person.bloodType]
+    } : null,
+    birthday: hasRegisteredText(person.birthday) ? {
+      front: `${person.name}의 생일은?`,
+      back: person.birthday,
+      acceptedAnswers: [person.birthday]
+    } : null,
+    origin: origin ? {
+      front: `${person.name}의 출신지는?`,
+      back: origin,
+      acceptedAnswers: origin.split("/").map((part) => part.trim()).filter(Boolean).concat(origin)
+    } : null,
+    alias: hasRegisteredText(person.aliases) ? {
+      front: `${person.name}의 별명은?`,
+      back: person.aliases,
+      acceptedAnswers: [person.aliases]
+    } : null,
+    likes: hasRegisteredText(person.likes) ? {
+      front: `${person.name}이 좋아하는 것은?`,
+      back: person.likes,
+      acceptedAnswers: [person.likes]
+    } : null,
+    fruit: fruit?.name ? {
+      front: `${person.name}이 먹은 악마의 열매는?`,
+      back: fruit.name,
+      acceptedAnswers: [fruit.name]
+    } : null,
+    organization: organization ? {
+      front: `${person.name}의 소속은?`,
+      back: organization,
+      acceptedAnswers: organization.split("/").map((part) => part.trim()).filter(Boolean).concat(organization)
+    } : null
+  };
+  const definition = definitions[category];
+  if (!definition) return null;
+  return {
+    category,
+    personId: person.id,
+    front: definition.front,
+    back: definition.back,
+    acceptedAnswers: definition.acceptedAnswers,
+    numericAnswer: definition.numericAnswer,
+    imageUrl
+  };
+}
+
+function hasRegisteredText(value) {
+  const text = String(value || "").trim();
+  return Boolean(text) && !["0", "미등록", "없음", "기타"].includes(text);
+}
+
+function registeredOriginLabel(person) {
+  const hasRegion = hasRegisteredText(person.originRegion);
+  const hasCountry = hasRegisteredText(person.originCountry);
+  if (!hasRegion && !hasCountry) return "";
+  const region = hasRegion ? originRegionName(person.originRegion) : "";
+  const country = hasCountry ? originCountryName(person.originCountry) : "";
+  return [region, country].filter(hasRegisteredText).join(" / ");
+}
+
+function registeredOrganizationLabel(person) {
+  const hasOrganization = hasRegisteredText(person.organization) && person.organization !== "etc";
+  const hasSubOrganization = hasRegisteredText(person.subOrganization);
+  if (!hasOrganization && !hasSubOrganization) return "";
+  const organization = hasOrganization ? organizationName(person.organization) : "";
+  const subOrganization = hasSubOrganization ? subOrganizationName(person.subOrganization) : "";
+  return [organization, subOrganization].filter(hasRegisteredText).join(" / ");
+}
+
+function bountyAnswerVariants(amount) {
+  const number = Number(amount || 0);
+  if (!number) return [];
+  const compact = formatBounty(number);
+  return [
+    String(number),
+    number.toLocaleString("ko-KR"),
+    compact,
+    compact.replace(/\s/g, ""),
+    `${number}베리`,
+    `${number.toLocaleString("ko-KR")}베리`
+  ];
 }
 
 function randomCard(category, cards) {
@@ -1356,7 +1485,7 @@ function checkQuizAnswer() {
   const card = quizSession.cards[quizSession.index];
   const answer = input?.value || "";
   quizAnswerDraft = answer;
-  markQuizAnswer(answerMatches(answer, card?.back || ""), answer);
+  markQuizAnswer(answerMatches(answer, card), answer);
 }
 
 function markQuizAnswer(isCorrect, answer = null) {
@@ -1383,7 +1512,18 @@ function nextQuizCard() {
   render();
 }
 
-function answerMatches(answer, expected) {
+function answerMatches(answer, card) {
+  const expected = card?.back || "";
+  if (card?.numericAnswer) {
+    const numericAnswer = parseQuizNumber(answer, card.category);
+    if (Number.isFinite(numericAnswer) && numericAnswer === Number(card.numericAnswer)) return true;
+  }
+  const answerCandidates = [answer];
+  const expectedCandidates = [expected, ...(card?.acceptedAnswers || [])];
+  return answerCandidates.some((answerCandidate) => expectedCandidates.some((expectedCandidate) => textAnswerMatches(answerCandidate, expectedCandidate)));
+}
+
+function textAnswerMatches(answer, expected) {
   const normalizedAnswer = normalizeQuizAnswer(answer);
   const normalizedExpected = normalizeQuizAnswer(expected);
   if (!normalizedAnswer || !normalizedExpected) return false;
@@ -1397,6 +1537,23 @@ function normalizeQuizAnswer(value) {
     .normalize("NFKC")
     .toLowerCase()
     .replace(/[^\p{L}\p{N}]/gu, "");
+}
+
+function parseQuizNumber(value, category) {
+  const text = String(value || "").normalize("NFKC").replaceAll(",", "").trim();
+  if (!text) return NaN;
+  if (category === "bounty") {
+    const oku = Number(text.match(/(\d+(?:\.\d+)?)\s*억/)?.[1] || 0);
+    const man = Number(text.match(/(\d+(?:\.\d+)?)\s*만/)?.[1] || 0);
+    const bare = text.match(/^\d+(?:\.\d+)?$/);
+    if (oku || man) {
+      const beriMatch = text.replace(/(\d+(?:\.\d+)?)\s*억/g, "").replace(/(\d+(?:\.\d+)?)\s*만/g, "").match(/(\d+)/);
+      return Math.round(oku * 100000000 + man * 10000 + Number(beriMatch?.[1] || 0));
+    }
+    return bare ? Number(bare[0]) : NaN;
+  }
+  const match = text.match(/\d+(?:\.\d+)?/);
+  return match ? Number(match[0]) : NaN;
 }
 
 function flipQuizCard() {
@@ -2006,7 +2163,14 @@ function loadSavedData() {
 }
 
 function saveData() {
+  invalidateDataCaches();
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}
+
+function invalidateDataCaches() {
+  quizCardCache.clear();
+  quizSession = null;
+  quizAnswerDraft = "";
 }
 
 function exportJson() {
@@ -2042,4 +2206,5 @@ function escapeAttribute(input) {
   return escapeHtml(input).replaceAll("`", "&#096;");
 }
 
+normalizeInPlace(data);
 render();

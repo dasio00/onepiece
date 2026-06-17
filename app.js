@@ -50,6 +50,8 @@ let activeQuizCard = null;
 let quizFlipped = false;
 let quizSession = null;
 let quizAnswerDraft = "";
+let quizMode = "test";
+let quizStudyFlipped = false;
 const quizCardCache = new Map();
 
 const tabs = document.querySelectorAll(".tab");
@@ -598,6 +600,8 @@ function renderQuizDetail(category) {
   const isDone = !card;
   const limitValue = Math.min(10, cards.length);
   const progress = quizSession.cards.length ? `${Math.min(quizSession.index + 1, quizSession.cards.length)} / ${quizSession.cards.length}` : "0 / 0";
+  const remainingCount = Math.max(quizSession.cards.length - quizSession.index - (quizSession.answered ? 1 : 0), 0);
+  const showStudyBack = quizMode === "study" && quizStudyFlipped;
   const feedback = quizSession.answered && card ? `
     <div class="quiz-feedback ${quizSession.lastCorrect ? "correct" : "wrong"}">
       <strong>${quizSession.lastCorrect ? "정답" : "오답"}</strong>
@@ -613,36 +617,54 @@ function renderQuizDetail(category) {
         <label>랜덤 문제 수<input id="quizLimitInput" type="number" min="1" max="${cards.length}" value="${limitValue}" /></label>
         <button class="sub-card" id="randomQuizButton" type="button">랜덤 풀기</button>
       </div>
+      <div class="quiz-mode-controls">
+        <button class="range ${quizMode === "test" ? "active" : ""}" data-quiz-mode="test" type="button">문제 풀이</button>
+        <button class="range ${quizMode === "study" ? "active" : ""}" data-quiz-mode="study" type="button">학습</button>
+      </div>
       <div class="quiz-score">
         <span>진행 ${progress}</span>
-        <span>정답 ${quizSession.correct}</span>
-        <span>오답 ${quizSession.wrong}</span>
-        <span>남은 문제 ${Math.max(quizSession.cards.length - quizSession.index - (quizSession.answered ? 1 : 0), 0)}</span>
+        ${quizMode === "test" ? `<span>정답 ${quizSession.correct}</span><span>오답 ${quizSession.wrong}</span>` : `<span>학습 카드 ${quizSession.cards.length}장</span>`}
+        <span>남은 문제 ${remainingCount}</span>
       </div>
       ${isDone ? `
         <div class="quiz-complete">
-          <strong>풀이 완료</strong>
-          <span>정답 ${quizSession.correct}개 · 오답 ${quizSession.wrong}개</span>
+          <strong>${quizMode === "study" ? "학습 완료" : "풀이 완료"}</strong>
+          <span>${quizMode === "study" ? `${quizSession.cards.length}장을 모두 확인했습니다.` : `정답 ${quizSession.correct}개 · 오답 ${quizSession.wrong}개`}</span>
         </div>
       ` : `
-        <div class="quiz-card" id="quizCard">
-          <span>앞면</span>
-          ${card.imageUrl ? `<img class="quiz-face" src="${escapeAttribute(card.imageUrl)}" alt="" loading="lazy" decoding="async" />` : ""}
-          <strong>${escapeHtml(card.front)}</strong>
+        <div class="quiz-card ${showStudyBack ? "flipped" : ""}" id="quizCard">
+          <span>${showStudyBack ? "뒷면" : "앞면"}</span>
+          ${!showStudyBack && card.imageUrl ? `<img class="quiz-face" src="${escapeAttribute(card.imageUrl)}" alt="" loading="lazy" decoding="async" />` : ""}
+          <strong>${escapeHtml(showStudyBack ? card.back : card.front)}</strong>
         </div>
-        <form class="quiz-answer" id="quizAnswerForm">
-          <label>답 입력<input id="quizAnswerInput" name="quizAnswer" autocomplete="off" value="${escapeAttribute(quizAnswerDraft)}" ${quizSession.answered ? "disabled" : ""} /></label>
+        ${quizMode === "test" ? `
+          <form class="quiz-answer" id="quizAnswerForm">
+            <label>답 입력<input id="quizAnswerInput" name="quizAnswer" autocomplete="off" value="${escapeAttribute(quizAnswerDraft)}" ${quizSession.answered ? "disabled" : ""} /></label>
+            <div class="form-actions">
+              <button class="primary" type="submit" ${quizSession.answered ? "disabled" : ""}>채점</button>
+              <button class="sub-card" id="markCorrectButton" type="button" ${quizSession.answered ? "disabled" : ""}>정답으로 기록</button>
+              <button class="sub-card" id="markWrongButton" type="button" ${quizSession.answered ? "disabled" : ""}>오답으로 기록</button>
+              <button class="sub-card" id="nextQuizButton" type="button">${quizSession.index >= quizSession.cards.length - 1 ? "결과 보기" : "다음 문제"}</button>
+            </div>
+          </form>
+          ${feedback}
+        ` : `
           <div class="form-actions">
-            <button class="primary" type="submit" ${quizSession.answered ? "disabled" : ""}>채점</button>
-            <button class="sub-card" id="markCorrectButton" type="button" ${quizSession.answered ? "disabled" : ""}>정답으로 기록</button>
-            <button class="sub-card" id="markWrongButton" type="button" ${quizSession.answered ? "disabled" : ""}>오답으로 기록</button>
-            <button class="sub-card" id="nextQuizButton" type="button">${quizSession.index >= quizSession.cards.length - 1 ? "결과 보기" : "다음 문제"}</button>
+            <button class="primary" id="flipStudyQuizButton" type="button">${showStudyBack ? "앞면 보기" : "정답 보기"}</button>
+            <button class="sub-card" id="nextQuizButton" type="button">${quizSession.index >= quizSession.cards.length - 1 ? "완료하기" : "다음 카드"}</button>
           </div>
-        </form>
-        ${feedback}
+        `}
       `}
     </div>
   `;
+  document.querySelectorAll("[data-quiz-mode]").forEach((button) => {
+    button.addEventListener("click", () => {
+      quizMode = button.dataset.quizMode;
+      quizStudyFlipped = false;
+      quizAnswerDraft = "";
+      render();
+    });
+  });
   document.querySelector("#allQuizButton").addEventListener("click", () => {
     startQuizSession(category.id, cards, "all", cards.length);
     render();
@@ -663,8 +685,12 @@ function renderQuizDetail(category) {
     });
     document.querySelector("#markCorrectButton").addEventListener("click", () => markQuizAnswer(true));
     document.querySelector("#markWrongButton").addEventListener("click", () => markQuizAnswer(false));
-    document.querySelector("#nextQuizButton").addEventListener("click", nextQuizCard);
   }
+  document.querySelector("#flipStudyQuizButton")?.addEventListener("click", () => {
+    quizStudyFlipped = !quizStudyFlipped;
+    render();
+  });
+  document.querySelector("#nextQuizButton")?.addEventListener("click", nextQuizCard);
 }
 
 function renderEditor() {
@@ -1468,6 +1494,7 @@ function startQuizSession(category, cards, mode = "all", limit = cards.length) {
     lastCorrect: false
   };
   quizAnswerDraft = "";
+  quizStudyFlipped = false;
 }
 
 function shuffleCards(cards) {
@@ -1509,6 +1536,7 @@ function nextQuizCard() {
   quizSession.lastAnswer = "";
   quizSession.lastCorrect = false;
   quizAnswerDraft = "";
+  quizStudyFlipped = false;
   render();
 }
 
@@ -2171,6 +2199,7 @@ function invalidateDataCaches() {
   quizCardCache.clear();
   quizSession = null;
   quizAnswerDraft = "";
+  quizStudyFlipped = false;
 }
 
 function exportJson() {

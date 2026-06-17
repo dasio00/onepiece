@@ -2201,6 +2201,7 @@ textarea:focus-visible {
 }
 
 .quiz-setup,
+.quiz-mode-controls,
 .quiz-score {
   display: flex;
   flex-wrap: wrap;
@@ -2298,6 +2299,7 @@ textarea:focus-visible {
   }
 
   .quiz-setup,
+  .quiz-mode-controls,
   .quiz-score,
   .quiz-answer .form-actions {
     display: grid;

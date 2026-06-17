@@ -49170,6 +49170,7 @@ window.onePieceData = {
   }
 })();
 
+
 /* WIKI_AUTO_ENRICH_START */
 (() => {
   const data = window.onePieceData;
@@ -86570,6 +86571,1896 @@ window.onePieceData = {
         "wikiTitle": "Dr. Nako",
         "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Nako"
       }
+    },
+    {
+      "id": "wt100-101",
+      "sourceNameJa": "ダディーディー",
+      "sourceNameEn": "Dadeedee",
+      "wikiTitle": "Dadeedee",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Dadeedee",
+      "patch": {
+        "wikiTitle": "Dadeedee",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Dadeedee"
+      }
+    },
+    {
+      "id": "wt100-102",
+      "sourceNameJa": "マミーミー",
+      "sourceNameEn": "Mameemee",
+      "wikiTitle": "Mameemee",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mameemee",
+      "patch": {
+        "wikiTitle": "Mameemee",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mameemee"
+      }
+    },
+    {
+      "id": "wt100-103",
+      "sourceNameJa": "サム",
+      "sourceNameEn": "Sam",
+      "wikiTitle": "Sam",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sam",
+      "patch": {
+        "wikiTitle": "Sam",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sam",
+        "birthday": "10월 21일",
+        "originRegion": "east-blue",
+        "originCountry": "conomi-islands",
+        "origin": "이스트 블루 / 코노미 제도",
+        "description": "Sam - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-104",
+      "sourceNameJa": "電伝虫",
+      "sourceNameEn": "Transponder Snail",
+      "wikiTitle": "Transponder Snail",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Transponder_Snail",
+      "patch": {
+        "wikiTitle": "Transponder Snail",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Transponder_Snail"
+      }
+    },
+    {
+      "id": "wt100-105",
+      "sourceNameJa": "ニュース・クー",
+      "sourceNameEn": "News Coo",
+      "wikiTitle": "News Coo",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/News_Coo",
+      "patch": {
+        "wikiTitle": "News Coo",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/News_Coo"
+      }
+    },
+    {
+      "id": "wt100-106",
+      "sourceNameJa": "ブランニュー",
+      "sourceNameEn": "Brannew",
+      "wikiTitle": "Brannew",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Brannew",
+      "patch": {
+        "wikiTitle": "Brannew",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Brannew",
+        "job": "Commodore",
+        "age": 56,
+        "birthday": "9월 3일",
+        "heightCm": 190,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 190
+          }
+        ],
+        "bounty": 100000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000000
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "navy",
+        "description": "Brannew - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-107",
+      "sourceNameJa": "ジョン・ジャイアント",
+      "sourceNameEn": "John Giant",
+      "wikiTitle": "John Giant",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/John_Giant",
+      "patch": {
+        "wikiTitle": "John Giant",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/John_Giant",
+        "job": "Vice Admiral",
+        "birthday": "5월 19일",
+        "bounty": 500000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 500000000
+          }
+        ],
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "navy",
+        "description": "John Giant - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-108",
+      "sourceNameJa": "パッキー",
+      "sourceNameEn": "Packy",
+      "wikiTitle": "Packy",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Packy",
+      "patch": {
+        "wikiTitle": "Packy",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Packy"
+      }
+    },
+    {
+      "id": "wt100-109",
+      "sourceNameJa": "コゼ",
+      "sourceNameEn": "Koze",
+      "wikiTitle": "Koze and Packy",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Koze_and_Packy",
+      "patch": {
+        "wikiTitle": "Koze and Packy",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Koze_and_Packy",
+        "job": "Pirates",
+        "birthday": "5월 27일",
+        "originRegion": "east-blue",
+        "originCountry": "loguetown",
+        "origin": "이스트 블루 / 로그타운",
+        "organization": "pirates",
+        "description": "Koze and Packy - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-110",
+      "sourceNameJa": "ハンガーさん",
+      "sourceNameEn": "Hanger",
+      "wikiTitle": "Hanger",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Hanger",
+      "patch": {
+        "wikiTitle": "Hanger",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Hanger",
+        "job": "Salesperson",
+        "birthday": "9월 23일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "description": "Hanger - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-111",
+      "sourceNameJa": "いっぽんマツ",
+      "sourceNameEn": "Ipponmatsu",
+      "wikiTitle": "Ipponmatsu",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Ipponmatsu",
+      "patch": {
+        "wikiTitle": "Ipponmatsu",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Ipponmatsu",
+        "job": "Arms Shop Proprietor",
+        "age": 40,
+        "birthday": "1월 31일",
+        "heightCm": 157,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 157
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "east-blue",
+        "originCountry": "loguetown",
+        "origin": "이스트 블루 / 로그타운",
+        "description": "Ipponmatsu - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-112",
+      "sourceNameJa": "いっぽんウメ",
+      "sourceNameEn": "Ipponume",
+      "wikiTitle": "Ipponume",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Ipponume",
+      "patch": {
+        "wikiTitle": "Ipponume",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Ipponume",
+        "job": "Arms Shop Proprietress",
+        "birthday": "12월 1일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "description": "Ipponume - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-113",
+      "sourceNameJa": "サピー",
+      "sourceNameEn": "Sapee",
+      "wikiTitle": "Sapee",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sapee",
+      "patch": {
+        "wikiTitle": "Sapee",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sapee"
+      }
+    },
+    {
+      "id": "wt100-114",
+      "sourceNameJa": "マシカク",
+      "sourceNameEn": "Mashikaku",
+      "wikiTitle": "Mashikaku",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mashikaku",
+      "patch": {
+        "wikiTitle": "Mashikaku",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mashikaku",
+        "job": "Marine Chief Petty Officer",
+        "birthday": "12월 26일",
+        "bounty": 100000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000
+          }
+        ],
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "organization": "navy",
+        "description": "Mashikaku - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-115",
+      "sourceNameJa": "スモーカー",
+      "sourceNameEn": "Smoker",
+      "wikiTitle": "Smoker",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Smoker",
+      "patch": {
+        "wikiTitle": "Smoker",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Smoker",
+        "aliases": "\"Smoker the White Hunter\" ( 白猟のスモーカー , Hakuryō no Sumōkā )",
+        "job": "Vice Admiral",
+        "age": 36,
+        "birthday": "3월 14일",
+        "heightCm": 209,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 209
+          }
+        ],
+        "bounty": 500000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 500000000
+          }
+        ],
+        "bloodType": "XF",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "navy",
+        "description": "Smoker - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "smoke-smoke-fruit-plume-plume-fruit-steam-steam-fruit"
+      }
+    },
+    {
+      "id": "wt100-116",
+      "sourceNameJa": "ユウ",
+      "sourceNameEn": "Yu",
+      "wikiTitle": "Yu",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Yu",
+      "patch": {
+        "wikiTitle": "Yu",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Yu",
+        "birthday": "7월 19일",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루"
+      }
+    },
+    {
+      "id": "wt100-117",
+      "sourceNameJa": "たしぎ",
+      "sourceNameEn": "Tashigi",
+      "wikiTitle": "Tashigi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tashigi",
+      "patch": {
+        "wikiTitle": "Tashigi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tashigi",
+        "job": "Captain",
+        "age": 23,
+        "birthday": "10월 6일",
+        "heightCm": 170,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 170
+          }
+        ],
+        "bounty": 100000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 100000000
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "organization": "navy",
+        "description": "Tashigi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-118",
+      "sourceNameJa": "モンキー・D・ドラゴン",
+      "sourceNameEn": "Monkey D. Dragon",
+      "wikiTitle": "Monkey D. Dragon",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Monkey_D._Dragon",
+      "patch": {
+        "wikiTitle": "Monkey D. Dragon",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Monkey_D._Dragon",
+        "aliases": "\"Rebellious Dragon\" ( 反逆竜 , Hangyaku Ryū , Funimation: \"The Insurgent Serpent\") \"World's Worst Criminal\" ( 世界最悪の犯罪者 , Sekai Saiaku no Hanzaisha , Funimation: \"World's Most Heinous Criminal\")",
+        "job": "Supreme Commander of the Revolutionary Army",
+        "age": 55,
+        "birthday": "10월 5일",
+        "heightCm": 256,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 256
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "organization": "navy",
+        "description": "Monkey D. Dragon - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-119",
+      "sourceNameJa": "シルバーズ・レイリー",
+      "sourceNameEn": "Silvers.Rayleigh",
+      "wikiTitle": "Silvers Rayleigh",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Silvers_Rayleigh",
+      "patch": {
+        "wikiTitle": "Silvers Rayleigh",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Silvers_Rayleigh",
+        "aliases": "\"Dark King\" ( 冥王 , Meiō )",
+        "job": "Coating Mechanic",
+        "age": 78,
+        "birthday": "5월 13일",
+        "heightCm": 188,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 188
+          }
+        ],
+        "bloodType": "XF",
+        "organization": "pirates",
+        "description": "Silvers Rayleigh - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-120",
+      "sourceNameJa": "ボンク・パンチ",
+      "sourceNameEn": "Bonk Punch",
+      "wikiTitle": "Bonk Punch",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Bonk_Punch",
+      "patch": {
+        "wikiTitle": "Bonk Punch",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Bonk_Punch",
+        "job": "Pirate",
+        "organization": "pirates",
+        "subOrganization": "red-hair",
+        "description": "Bonk Punch - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-121",
+      "sourceNameJa": "ホンゴウ",
+      "sourceNameEn": "Hongo",
+      "wikiTitle": "Hongo",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Hongo",
+      "patch": {
+        "wikiTitle": "Hongo",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Hongo",
+        "job": "Pirate",
+        "organization": "pirates",
+        "subOrganization": "red-hair",
+        "description": "Hongo - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-130",
+      "sourceNameJa": "トニートニー・チョッパー",
+      "sourceNameEn": "Tony Tony.Chopper",
+      "wikiTitle": "Tony Tony Chopper/Abilities and Powers",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tony_Tony_Chopper%2FAbilities_and_Powers",
+      "patch": {
+        "wikiTitle": "Tony Tony Chopper/Abilities and Powers",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tony_Tony_Chopper%2FAbilities_and_Powers",
+        "aliases": "\"Cotton Candy Lover\" ( わたあめ大好き , Wataame Daisuki )",
+        "job": "Doctor",
+        "age": 17,
+        "birthday": "12월 24일",
+        "heightCm": 90,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 90
+          }
+        ],
+        "bounty": 1000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 1000
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "subOrganization": "straw-hat",
+        "description": "Tony Tony Chopper/Abilities and Powers - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "human-human-fruit"
+      }
+    },
+    {
+      "id": "wt100-131",
+      "sourceNameJa": "ニコ・ロビン",
+      "sourceNameEn": "Nico Robin",
+      "wikiTitle": "Nico Robin",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Nico_Robin",
+      "patch": {
+        "wikiTitle": "Nico Robin",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Nico_Robin",
+        "aliases": "\"Devil Child\" ( 悪魔の子 , Akuma no Ko , English versions: \"Demon Child\")",
+        "job": "Archaeologist",
+        "age": 30,
+        "birthday": "2월 6일",
+        "heightCm": 188,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 188
+          }
+        ],
+        "bounty": 930000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 930000000
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "west-blue",
+        "originCountry": "",
+        "origin": "웨스트 블루",
+        "organization": "pirates",
+        "subOrganization": "straw-hat",
+        "description": "Nico Robin - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "hana-hana-fruit-flower-flower-fruit"
+      }
+    },
+    {
+      "id": "wt100-132",
+      "sourceNameJa": "ネフェルタリ・ビビ",
+      "sourceNameEn": "Nefeltari Vivi (Miss Wednesday)",
+      "wikiTitle": "Nefeltari Vivi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Nefeltari_Vivi",
+      "patch": {
+        "wikiTitle": "Nefeltari Vivi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Nefeltari_Vivi"
+      }
+    },
+    {
+      "id": "wt100-133",
+      "sourceNameJa": "ラブーン",
+      "sourceNameEn": "Laboon",
+      "wikiTitle": "Laboon",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Laboon",
+      "patch": {
+        "wikiTitle": "Laboon",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Laboon",
+        "age": 53,
+        "birthday": "9월 16일",
+        "bloodType": "F",
+        "originRegion": "west-blue",
+        "originCountry": "",
+        "origin": "웨스트 블루",
+        "organization": "pirates",
+        "description": "Laboon - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-134",
+      "sourceNameJa": "クロッカス",
+      "sourceNameEn": "Crocus",
+      "wikiTitle": "Crocus",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Crocus",
+      "patch": {
+        "wikiTitle": "Crocus",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Crocus",
+        "job": "Doctor",
+        "age": 73,
+        "birthday": "6월 4일",
+        "heightCm": 203,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 203
+          }
+        ],
+        "bloodType": "XF",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Crocus - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-135",
+      "sourceNameJa": "Mr.9",
+      "sourceNameEn": "Mr. 9",
+      "wikiTitle": "Mr. 9",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._9",
+      "patch": {
+        "wikiTitle": "Mr. 9",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._9",
+        "aliases": "Mr. 9",
+        "job": "Frontier Agent (former)",
+        "birthday": "9월 27일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Mr. 9 - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-136",
+      "sourceNameJa": "Mr.13",
+      "sourceNameEn": "Mr. 13",
+      "wikiTitle": "Mr. 13",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._13",
+      "patch": {
+        "wikiTitle": "Mr. 13",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._13",
+        "job": "Assassin (former)",
+        "birthday": "5월 17일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Mr. 13 - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-137",
+      "sourceNameJa": "ミス・フライデー",
+      "sourceNameEn": "Miss Friday",
+      "wikiTitle": "Miss Friday",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Miss_Friday",
+      "patch": {
+        "wikiTitle": "Miss Friday",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Miss_Friday",
+        "job": "Assassin (former)",
+        "birthday": "1월 21일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Miss Friday - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-138",
+      "sourceNameJa": "雪だるさん",
+      "sourceNameEn": "Mr. Snowman",
+      "wikiTitle": "Mr. Snowman",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Snowman",
+      "patch": {
+        "wikiTitle": "Mr. Snowman",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Snowman"
+      }
+    },
+    {
+      "id": "wt100-139",
+      "sourceNameJa": "スノウクイーン",
+      "sourceNameEn": "Snow Queen",
+      "wikiTitle": "Snow Queen",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Queen",
+      "patch": {
+        "wikiTitle": "Snow Queen",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Snow_Queen"
+      }
+    },
+    {
+      "id": "wt100-140",
+      "sourceNameJa": "ミス・キャサリーナ",
+      "sourceNameEn": "Miss Katherina",
+      "wikiTitle": "Miss Katherina",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Miss_Katherina",
+      "patch": {
+        "wikiTitle": "Miss Katherina",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Miss_Katherina"
+      }
+    },
+    {
+      "id": "wt100-141",
+      "sourceNameJa": "Mr.ビーンズ",
+      "sourceNameEn": "Mr. Beans",
+      "wikiTitle": "Mr. Beans",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Beans",
+      "patch": {
+        "wikiTitle": "Mr. Beans",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Beans",
+        "job": "Bounty Hunter",
+        "birthday": "2월 24일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Mr. Beans - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-142",
+      "sourceNameJa": "イガラム（Mr.8/イガラッポイ）",
+      "sourceNameEn": "Igaram (Mr. 8/Igarappoi)",
+      "wikiTitle": "Igaram",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Igaram",
+      "patch": {
+        "wikiTitle": "Igaram",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Igaram",
+        "aliases": "\"Mr. 8\" （ ） ( Misutā Eito ) (former)",
+        "job": "Captain of the Royal Guard",
+        "age": 50,
+        "birthday": "12월 6일",
+        "heightCm": 218,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 218
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Igaram - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-143",
+      "sourceNameJa": "Mr.シミズ",
+      "sourceNameEn": "Mr. Shimizu",
+      "wikiTitle": "Mr. Shimizu",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Shimizu",
+      "patch": {
+        "wikiTitle": "Mr. Shimizu",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Shimizu",
+        "job": "Bounty Hunter",
+        "birthday": "12월 11일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Mr. Shimizu - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-144",
+      "sourceNameJa": "ミス・マンデー",
+      "sourceNameEn": "Miss Monday",
+      "wikiTitle": "Miss Monday",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Miss_Monday",
+      "patch": {
+        "wikiTitle": "Miss Monday",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Miss_Monday",
+        "aliases": "Miss Monday, Sister",
+        "job": "Frontier Agent (former)",
+        "birthday": "1월 24일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Miss Monday - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-145",
+      "sourceNameJa": "カルー",
+      "sourceNameEn": "Karoo",
+      "wikiTitle": "Karoo",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Karoo",
+      "patch": {
+        "wikiTitle": "Karoo",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Karoo",
+        "job": "Pet",
+        "age": 16,
+        "birthday": "11월 8일",
+        "heightCm": 150,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 150
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "subOrganization": "straw-hat",
+        "description": "Karoo - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-146",
+      "sourceNameJa": "ジェム（Mr.5）",
+      "sourceNameEn": "Gem (Mr. 5)",
+      "wikiTitle": "Gem",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Gem",
+      "patch": {
+        "wikiTitle": "Gem",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Gem",
+        "aliases": "\"Gem of the Border\" ( 国境のジェム , Kokkyō no Jemu )",
+        "job": "Cafe Employee",
+        "age": 26,
+        "birthday": "7월 26일",
+        "heightCm": 197,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 197
+          }
+        ],
+        "bounty": 10000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 10000000
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "description": "Gem - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "bomb-bomb-fruit-boom-boom-fruit"
+      }
+    },
+    {
+      "id": "wt100-147",
+      "sourceNameJa": "ミキータ（ミス・バレンタイン）",
+      "sourceNameEn": "Mikita (Miss.Valentine)",
+      "wikiTitle": "Mikita",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mikita",
+      "patch": {
+        "wikiTitle": "Mikita",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mikita",
+        "aliases": "\"Courier\" ( 運び屋 , Hakobi-ya )",
+        "job": "Cafe Pâtissier",
+        "age": 24,
+        "birthday": "2월 14일",
+        "heightCm": 177,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 177
+          }
+        ],
+        "bounty": 7500000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 7500000
+          }
+        ],
+        "bloodType": "XF",
+        "originRegion": "west-blue",
+        "originCountry": "",
+        "origin": "웨스트 블루",
+        "description": "Mikita - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "kilo-kilo-fruit"
+      }
+    },
+    {
+      "id": "wt100-148",
+      "sourceNameJa": "へのへのうんち",
+      "sourceNameEn": "Henohenounchi",
+      "wikiTitle": "Henohenounchi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Henohenounchi",
+      "patch": {
+        "wikiTitle": "Henohenounchi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Henohenounchi"
+      }
+    },
+    {
+      "id": "wt100-149",
+      "sourceNameJa": "ブロントザウルス",
+      "sourceNameEn": "Brontosaurus",
+      "wikiTitle": "Brontosaurus",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Brontosaurus",
+      "patch": {
+        "wikiTitle": "Brontosaurus",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Brontosaurus",
+        "birthday": "11월 19일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인"
+      }
+    },
+    {
+      "id": "wt100-150",
+      "sourceNameJa": "ブロギー",
+      "sourceNameEn": "Brogy",
+      "wikiTitle": "Brogy",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Brogy",
+      "patch": {
+        "wikiTitle": "Brogy",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Brogy",
+        "aliases": "Brogy the Red Ogre ( 赤鬼のブロギー , Aka-Oni no Burogī )",
+        "job": "Pirate Captain",
+        "age": 160,
+        "birthday": "2월 1일",
+        "heightCm": 2130,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 2130
+          }
+        ],
+        "bounty": 1800000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 1800000000
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Brogy - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-151",
+      "sourceNameJa": "ドリー",
+      "sourceNameEn": "Dorry",
+      "wikiTitle": "Dorry",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Dorry",
+      "patch": {
+        "wikiTitle": "Dorry",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Dorry",
+        "aliases": "Dorry the Blue Ogre ( 青鬼のドリー , Ao-Oni no Dorī )",
+        "job": "Pirate Captain",
+        "age": 160,
+        "birthday": "10월 2일",
+        "heightCm": 2260,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 2260
+          }
+        ],
+        "bounty": 1800000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 1800000000
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Dorry - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-152",
+      "sourceNameJa": "サムライ・バッツ",
+      "sourceNameEn": "Samurai Batts",
+      "wikiTitle": "Samurai Batts",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Samurai_Batts",
+      "patch": {
+        "wikiTitle": "Samurai Batts",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Samurai_Batts",
+        "birthday": "3월 8일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인"
+      }
+    },
+    {
+      "id": "wt100-153",
+      "sourceNameJa": "ギャルディーノ（Mr.3）",
+      "sourceNameEn": "Galdino (Mr. 3)",
+      "wikiTitle": "Galdino",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Galdino",
+      "patch": {
+        "wikiTitle": "Galdino",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Galdino",
+        "aliases": "\"Loan Shark\" ( 闇金 , Yamikin )",
+        "job": "Pirate",
+        "age": 37,
+        "birthday": "3월 3일",
+        "heightCm": 179,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 179
+          }
+        ],
+        "bounty": 24000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 24000000
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "pirates",
+        "description": "Galdino - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "wax-wax-fruit"
+      }
+    },
+    {
+      "id": "wt100-154",
+      "sourceNameJa": "マリアンヌ（ミス・ゴールデンウィーク）",
+      "sourceNameEn": "Marianne (Miss.Golden Week)",
+      "wikiTitle": "Marianne",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Marianne",
+      "patch": {
+        "wikiTitle": "Marianne",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Marianne",
+        "aliases": "\"Flag-Bearer of Freedom\" ( 自由の旗手マリアンヌ , Jiyū no Kishu Mariannu )",
+        "job": "Cafe Employee",
+        "age": 18,
+        "birthday": "4월 29일",
+        "heightCm": 145,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 145
+          }
+        ],
+        "bounty": 29000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 29000000
+          }
+        ],
+        "bloodType": "XF",
+        "originRegion": "north-blue",
+        "originCountry": "",
+        "origin": "노스 블루",
+        "description": "Marianne - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-156",
+      "sourceNameJa": "Mr.11",
+      "sourceNameEn": "Mr. 11",
+      "wikiTitle": "Mr. 11",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._11",
+      "patch": {
+        "wikiTitle": "Mr. 11",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._11",
+        "aliases": "Mr. 11",
+        "job": "Frontier Agent",
+        "birthday": "11월 21일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Mr. 11 - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-157",
+      "sourceNameJa": "島食い",
+      "sourceNameEn": "Island Eater",
+      "wikiTitle": "Island Eater",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Island_Eater",
+      "patch": {
+        "wikiTitle": "Island Eater",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Island_Eater",
+        "birthday": "4월 21일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인"
+      }
+    },
+    {
+      "id": "wt100-158",
+      "sourceNameJa": "ユキ",
+      "sourceNameEn": "Yuki",
+      "wikiTitle": "Yuki",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Yuki",
+      "patch": {
+        "wikiTitle": "Yuki",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Yuki",
+        "birthday": "12월 17일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인"
+      }
+    },
+    {
+      "id": "wt100-159",
+      "sourceNameJa": "アクマイ",
+      "sourceNameEn": "Akumai",
+      "wikiTitle": "Akumai",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Akumai",
+      "patch": {
+        "wikiTitle": "Akumai",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Akumai",
+        "birthday": "12월 27일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Akumai - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-160",
+      "sourceNameJa": "ワポル",
+      "sourceNameEn": "Wapol",
+      "wikiTitle": "Wapol",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Wapol",
+      "patch": {
+        "wikiTitle": "Wapol",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Wapol",
+        "aliases": "\"Tin-Plate\" Wapol ( ブリキのワポル , Buriki no Waporu , VIZ: Wapol of Tin)",
+        "job": "King of the Evil Black Drum Kingdom",
+        "age": 29,
+        "birthday": "8월 9일",
+        "heightCm": 207,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 207
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Wapol - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "munch-munch-fruit"
+      }
+    },
+    {
+      "id": "wt100-161",
+      "sourceNameJa": "ハイキングベア",
+      "sourceNameEn": "Hiking Bear",
+      "wikiTitle": "Hiking Bear",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Hiking_Bear",
+      "patch": {
+        "wikiTitle": "Hiking Bear",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Hiking_Bear"
+      }
+    },
+    {
+      "id": "wt100-162",
+      "sourceNameJa": "ネギ熊まりあ",
+      "sourceNameEn": "Maria Onion Bear",
+      "wikiTitle": "Maria Onion Bear",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Maria_Onion_Bear",
+      "patch": {
+        "wikiTitle": "Maria Onion Bear",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Maria_Onion_Bear"
+      }
+    },
+    {
+      "id": "wt100-163",
+      "sourceNameJa": "ドルトン",
+      "sourceNameEn": "Dalton",
+      "wikiTitle": "Dalton",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Dalton",
+      "patch": {
+        "wikiTitle": "Dalton",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Dalton",
+        "job": "King of the Sakura Kingdom",
+        "age": 35,
+        "birthday": "6월 10일",
+        "heightCm": 218,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 218
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Dalton - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "ox-ox-fruit-bison-model-ox-ox-fruit-ox-ox-fruit-bison-form"
+      }
+    },
+    {
+      "id": "wt100-164",
+      "sourceNameJa": "ハイパー雪だるさん",
+      "sourceNameEn": "Super Snowman",
+      "wikiTitle": "Super Snowman",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Super_Snowman",
+      "patch": {
+        "wikiTitle": "Super Snowman",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Super_Snowman"
+      }
+    },
+    {
+      "id": "wt100-165",
+      "sourceNameJa": "シロラー",
+      "sourceNameEn": "Shirora",
+      "wikiTitle": "Shirora",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Shirora",
+      "patch": {
+        "wikiTitle": "Shirora",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Shirora"
+      }
+    },
+    {
+      "id": "wt100-167",
+      "sourceNameJa": "タマチビ",
+      "sourceNameEn": "Tamachibi",
+      "wikiTitle": "Tamachibi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Tamachibi",
+      "patch": {
+        "wikiTitle": "Tamachibi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Tamachibi",
+        "birthday": "6월 17일",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Tamachibi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-168",
+      "sourceNameJa": "くれは",
+      "sourceNameEn": "Dr. Kureha",
+      "wikiTitle": "Dr. Kureha",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Kureha",
+      "patch": {
+        "wikiTitle": "Dr. Kureha",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Kureha"
+      }
+    },
+    {
+      "id": "wt100-169",
+      "sourceNameJa": "ロブソン",
+      "sourceNameEn": "Robson",
+      "wikiTitle": "Robson",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Robson",
+      "patch": {
+        "wikiTitle": "Robson",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Robson",
+        "job": "Wapol 's Pet",
+        "organization": "pirates",
+        "description": "Robson - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-170",
+      "sourceNameJa": "チェス　",
+      "sourceNameEn": "Chess",
+      "wikiTitle": "Chess",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Chess",
+      "patch": {
+        "wikiTitle": "Chess",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Chess",
+        "job": "Evil Chief of Staff (Chief of Staff)",
+        "age": 32,
+        "birthday": "7월 20일",
+        "heightCm": 194,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 194
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Chess - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-171",
+      "sourceNameJa": "クロマーリモ",
+      "sourceNameEn": "Kuromarimo",
+      "wikiTitle": "Kuromarimo",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kuromarimo",
+      "patch": {
+        "wikiTitle": "Kuromarimo",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kuromarimo",
+        "job": "Evil Magistrate (Magistrate)",
+        "age": 30,
+        "birthday": "1월 26일",
+        "heightCm": 186,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 186
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "organization": "pirates",
+        "description": "Kuromarimo - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-172",
+      "sourceNameJa": "イッシー100（イッシー20）",
+      "sourceNameEn": "100 Doctors (20 Doctors)",
+      "wikiTitle": "Isshi-100",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Isshi-100",
+      "patch": {
+        "wikiTitle": "Isshi-100",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Isshi-100"
+      }
+    },
+    {
+      "id": "wt100-174",
+      "sourceNameJa": "ヒルルク",
+      "sourceNameEn": "Dr. Hiriluk",
+      "wikiTitle": "Dr. Hiriluk",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Hiriluk",
+      "patch": {
+        "wikiTitle": "Dr. Hiriluk",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Dr._Hiriluk"
+      }
+    },
+    {
+      "id": "wt100-175",
+      "sourceNameJa": "タラッサ・ルーカス",
+      "sourceNameEn": "Thalassa Lucas",
+      "wikiTitle": "Thalassa Lucas",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Thalassa_Lucas",
+      "patch": {
+        "wikiTitle": "Thalassa Lucas",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Thalassa_Lucas",
+        "job": "King (former)",
+        "birthday": "7월 27일",
+        "description": "Thalassa Lucas - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-176",
+      "sourceNameJa": "ネフェルタリ・コブラ",
+      "sourceNameEn": "Nefeltari Cobra",
+      "wikiTitle": "Nefeltari Cobra",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Nefeltari_Cobra",
+      "patch": {
+        "wikiTitle": "Nefeltari Cobra",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Nefeltari_Cobra"
+      }
+    },
+    {
+      "id": "wt100-177",
+      "sourceNameJa": "ベンサム（Mr.2・ボン・クレー）",
+      "sourceNameEn": "Bentham (Mr. 2/Bon・Kurei)",
+      "wikiTitle": "Bentham",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Bentham",
+      "patch": {
+        "wikiTitle": "Bentham",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Bentham",
+        "aliases": "\"Bentham of the Wild\" ( 荒野のベンサム , Kōya no Bensamu )",
+        "job": "Queen of Newkama Land",
+        "age": 32,
+        "birthday": "8월 15일",
+        "heightCm": 238,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 238
+          }
+        ],
+        "bounty": 32000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 32000000
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "east-blue",
+        "originCountry": "",
+        "origin": "이스트 블루",
+        "description": "Bentham - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "clone-clone-fruit"
+      }
+    },
+    {
+      "id": "wt100-178",
+      "sourceNameJa": "プップー",
+      "sourceNameEn": "Puppu",
+      "wikiTitle": "Puppu",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Puppu",
+      "patch": {
+        "wikiTitle": "Puppu",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Puppu",
+        "job": "Pirate , Captain",
+        "description": "Puppu - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-179",
+      "sourceNameJa": "クロコダイル",
+      "sourceNameEn": "Crocodile (Mr. 0)",
+      "wikiTitle": "Crocodile",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Crocodile",
+      "patch": {
+        "wikiTitle": "Crocodile",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Crocodile",
+        "aliases": "\"Sir Crocodile\" ( サー・クロコダイル , Sā Kurokodairu ) \"Desert King\" ( 砂漠の王 , Sabaku no Ō )",
+        "job": "Pirate",
+        "age": 46,
+        "birthday": "9월 5일",
+        "heightCm": 253,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 253
+          }
+        ],
+        "bounty": 1965000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 1965000000
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Crocodile - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "sand-sand-fruit"
+      }
+    },
+    {
+      "id": "wt100-180",
+      "sourceNameJa": "海ネコ",
+      "sourceNameEn": "Sea Cat",
+      "wikiTitle": "Sea Cat",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Cat",
+      "patch": {
+        "wikiTitle": "Sea Cat",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sea_Cat"
+      }
+    },
+    {
+      "id": "wt100-181",
+      "sourceNameJa": "ヨシモトさん",
+      "sourceNameEn": "Yoshimoto",
+      "wikiTitle": "Yoshimoto",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Yoshimoto",
+      "patch": {
+        "wikiTitle": "Yoshimoto",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Yoshimoto",
+        "job": "Restaurant owner",
+        "description": "Yoshimoto - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-182",
+      "sourceNameJa": "ポートガス・D・エース",
+      "sourceNameEn": "Portgas D. Ace",
+      "wikiTitle": "Portgas D. Ace",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Portgas_D._Ace",
+      "patch": {
+        "wikiTitle": "Portgas D. Ace",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Portgas_D._Ace",
+        "aliases": "\"Fire Fist\" Ace ( 火拳のエース , Hiken no Ēsu ) (\"Heat Fist Trace\" in the edited dub)",
+        "job": "2nd Division Commander",
+        "age": 20,
+        "birthday": "1월 1일",
+        "heightCm": 185,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 185
+          }
+        ],
+        "bounty": 550000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 550000000
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "south-blue",
+        "originCountry": "",
+        "origin": "사우스 블루",
+        "organization": "pirates",
+        "description": "Portgas D. Ace - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "flame-flame-fruit-flare-flare-fruit"
+      }
+    },
+    {
+      "id": "wt100-183",
+      "sourceNameJa": "Mr.メロウ",
+      "sourceNameEn": "Mr. Melow",
+      "wikiTitle": "Mr. Melow",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Melow",
+      "patch": {
+        "wikiTitle": "Mr. Melow",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Mr._Melow"
+      }
+    },
+    {
+      "id": "wt100-184",
+      "sourceNameJa": "ドロフィー（ミス・メリークリスマス）",
+      "sourceNameEn": "Drophy (Miss.Merry Christmas)",
+      "wikiTitle": "Drophy",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Drophy",
+      "patch": {
+        "wikiTitle": "Drophy",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Drophy",
+        "aliases": "\"Town-Collapser\" Drophy ( 町落としのドロフィー , Machi Otoshi no Dorofī )",
+        "job": "Cafe Waitress",
+        "age": 51,
+        "birthday": "12월 25일",
+        "heightCm": 156,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 156
+          }
+        ],
+        "bounty": 14000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 14000000
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Drophy - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "mole-mole-fruit-diggy-diggy-fruit"
+      }
+    },
+    {
+      "id": "wt100-185",
+      "sourceNameJa": "ベーブ（Mr.4）",
+      "sourceNameEn": "Babe (Mr. 4)",
+      "wikiTitle": "Babe",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Babe",
+      "patch": {
+        "wikiTitle": "Babe",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Babe",
+        "aliases": "\"Catcher-Killing\" Babe ( キャッチャー殺しのベーブ , Kyatchā-Goroshi no Bēbu )",
+        "job": "Cafe Delivery Boy",
+        "age": 30,
+        "birthday": "6월 19일",
+        "heightCm": 218,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 218
+          }
+        ],
+        "bounty": 3200000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 3200000
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Babe - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-186",
+      "sourceNameJa": "ザラ（ミス・ダブルフィンガー）",
+      "sourceNameEn": "Zala (Miss.Doublefinger)",
+      "wikiTitle": "Zala",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Zala",
+      "patch": {
+        "wikiTitle": "Zala",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Zala",
+        "aliases": "\"Poison Spider Zala\" ( 毒グモのザラ , Doku Gumo no Zara )",
+        "job": "Spiders Cafe Owner",
+        "age": 28,
+        "birthday": "7월 30일",
+        "heightCm": 187,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 187
+          }
+        ],
+        "bounty": 35000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 35000000
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Zala - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "spike-spike-fruit"
+      }
+    },
+    {
+      "id": "wt100-187",
+      "sourceNameJa": "ダズ・ボーネス（Mr.1）",
+      "sourceNameEn": "Daz Bonez (Mr. 1)",
+      "wikiTitle": "Daz Bonez",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Daz_Bonez",
+      "patch": {
+        "wikiTitle": "Daz Bonez",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Daz_Bonez",
+        "aliases": "\"The Killer\" ( 殺し屋 , Koroshiya )",
+        "job": "Pirate",
+        "age": 31,
+        "birthday": "1월 1일",
+        "heightCm": 212,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 212
+          }
+        ],
+        "bounty": 75000000,
+        "bountyHistory": [
+          {
+            "period": "현재",
+            "amount": 75000000
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "west-blue",
+        "originCountry": "",
+        "origin": "웨스트 블루",
+        "description": "Daz Bonez - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "dice-dice-fruit"
+      }
+    },
+    {
+      "id": "wt100-188",
+      "sourceNameJa": "バンチ",
+      "sourceNameEn": "Bunch",
+      "wikiTitle": "Bunch",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Bunch",
+      "patch": {
+        "wikiTitle": "Bunch",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Bunch"
+      }
+    },
+    {
+      "id": "wt100-189",
+      "sourceNameJa": "エリマキランナーズ",
+      "sourceNameEn": "Lizard Runners",
+      "wikiTitle": "Lizard Runners",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Lizard_Runners",
+      "patch": {
+        "wikiTitle": "Lizard Runners",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Lizard_Runners"
+      }
+    },
+    {
+      "id": "wt100-190",
+      "sourceNameJa": "クンフージュゴン",
+      "sourceNameEn": "Kung-Fu Dugong",
+      "wikiTitle": "Kung-Fu Dugong",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kung-Fu_Dugong",
+      "patch": {
+        "wikiTitle": "Kung-Fu Dugong",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kung-Fu_Dugong"
+      }
+    },
+    {
+      "id": "wt100-192",
+      "sourceNameJa": "サンドラ大トカゲ",
+      "sourceNameEn": "Sandora Lizard",
+      "wikiTitle": "Sandora Lizard",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Sandora_Lizard",
+      "patch": {
+        "wikiTitle": "Sandora Lizard",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Sandora_Lizard"
+      }
+    },
+    {
+      "id": "wt100-193",
+      "sourceNameJa": "マツゲ",
+      "sourceNameEn": "Matsuge",
+      "wikiTitle": "Matsuge",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Matsuge",
+      "patch": {
+        "wikiTitle": "Matsuge",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Matsuge",
+        "job": "Royal Transport",
+        "age": 17,
+        "birthday": "8월 17일",
+        "heightCm": 190,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 190
+          }
+        ],
+        "bloodType": "F",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Matsuge - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-194",
+      "sourceNameJa": "トト",
+      "sourceNameEn": "Toto",
+      "wikiTitle": "Toto",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Toto",
+      "patch": {
+        "wikiTitle": "Toto",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Toto",
+        "job": "Yuba villager",
+        "birthday": "6월 17일",
+        "description": "Toto - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-195",
+      "sourceNameJa": "コーザ",
+      "sourceNameEn": "Koza",
+      "wikiTitle": "Koza",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Koza",
+      "patch": {
+        "wikiTitle": "Koza",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Koza",
+        "job": "Environmental Minister",
+        "age": 22,
+        "birthday": "5월 26일",
+        "heightCm": 177,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 177
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Koza - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-196",
+      "sourceNameJa": "おかめ",
+      "sourceNameEn": "Okame",
+      "wikiTitle": "Okame",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Okame",
+      "patch": {
+        "wikiTitle": "Okame",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Okame",
+        "job": "Rebel (former)",
+        "description": "Okame - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-197",
+      "sourceNameJa": "ナットー",
+      "sourceNameEn": "Natto",
+      "wikiTitle": "Natto",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Natto",
+      "patch": {
+        "wikiTitle": "Natto",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Natto",
+        "job": "Rebel (former)",
+        "description": "Natto - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-198",
+      "sourceNameJa": "ケビ",
+      "sourceNameEn": "Kebi",
+      "wikiTitle": "Kebi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kebi",
+      "patch": {
+        "wikiTitle": "Kebi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kebi",
+        "job": "Rebel (former)",
+        "description": "Kebi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-199",
+      "sourceNameJa": "アスワ",
+      "sourceNameEn": "Mother Aswa",
+      "wikiTitle": "Aswa",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Aswa",
+      "patch": {
+        "wikiTitle": "Aswa",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Aswa"
+      }
+    },
+    {
+      "id": "wt100-200",
+      "sourceNameJa": "アゴトギ",
+      "sourceNameEn": "Agotogi",
+      "wikiTitle": "Agotogi",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Agotogi",
+      "patch": {
+        "wikiTitle": "Agotogi",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Agotogi",
+        "job": "Thug Leader",
+        "description": "Agotogi - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-201",
+      "sourceNameJa": "カッパ",
+      "sourceNameEn": "Kappa",
+      "wikiTitle": "Kappa",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Kappa",
+      "patch": {
+        "wikiTitle": "Kappa",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Kappa",
+        "job": "Shoeshiner",
+        "description": "Kappa - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-202",
+      "sourceNameJa": "ファラフラ",
+      "sourceNameEn": "Farafra",
+      "wikiTitle": "Farafra",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Farafra",
+      "patch": {
+        "wikiTitle": "Farafra",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Farafra",
+        "job": "Rebel (former)",
+        "description": "Farafra - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-203",
+      "sourceNameJa": "エリック",
+      "sourceNameEn": "Eric",
+      "wikiTitle": "Eric",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Eric",
+      "patch": {
+        "wikiTitle": "Eric",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Eric",
+        "aliases": "\"Eric the Whirlwind\" ( つむじ風のエリック , Tsumujikaze no Erikku )",
+        "job": "Mercenary",
+        "description": "Eric - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "sickle-sickle-fruit-slash-slash-fruit"
+      }
+    },
+    {
+      "id": "wt100-204",
+      "sourceNameJa": "ペル",
+      "sourceNameEn": "Pell",
+      "wikiTitle": "Pell",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Pell",
+      "patch": {
+        "wikiTitle": "Pell",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Pell",
+        "aliases": "\"Pell the Falcon\" ( ハヤブサのペル , Hayabusa no Peru )",
+        "job": "Commander of Royal Guards",
+        "age": 35,
+        "birthday": "8월 23일",
+        "heightCm": 189,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 189
+          }
+        ],
+        "bloodType": "X",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Pell - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "tweet-tweet-fruit-falcon-type-tweet-tweet-fruit-bird-bird-fruit-model-falcon"
+      }
+    },
+    {
+      "id": "wt100-205",
+      "sourceNameJa": "チャカ",
+      "sourceNameEn": "Chaka",
+      "wikiTitle": "Chaka",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Chaka",
+      "patch": {
+        "wikiTitle": "Chaka",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Chaka",
+        "aliases": "\"Chaka the Jackal\" ( ジャッカルのチャカ , Jakkaru no Chaka )",
+        "job": "Commander of Royal Guards",
+        "age": 41,
+        "birthday": "4월 26일",
+        "heightCm": 213,
+        "heightHistory": [
+          {
+            "period": "현재",
+            "cm": 213
+          }
+        ],
+        "bloodType": "S",
+        "originRegion": "grand-line",
+        "originCountry": "",
+        "origin": "그랜드라인",
+        "description": "Chaka - One Piece Wiki infobox 기준 자동 보강 정보입니다.",
+        "devilFruitId": "dog-dog-fruit-model-jackal-mutt-mutt-fruit-jackal-mode-mutt-mutt-fruit-jackal-st"
+      }
+    },
+    {
+      "id": "wt100-206",
+      "sourceNameJa": "ウルトラキング",
+      "sourceNameEn": "Ultra King",
+      "wikiTitle": "Ultraking",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Ultraking",
+      "patch": {
+        "wikiTitle": "Ultraking",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Ultraking",
+        "job": "Assistant-Manager",
+        "description": "Ultraking - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+      }
+    },
+    {
+      "id": "wt100-207",
+      "sourceNameJa": "コアラ組",
+      "sourceNameEn": "Koala Gang",
+      "wikiTitle": "Koala Gang",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Koala_Gang",
+      "patch": {
+        "wikiTitle": "Koala Gang",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Koala_Gang"
+      }
+    },
+    {
+      "id": "wt100-208",
+      "sourceNameJa": "ハサミ",
+      "sourceNameEn": "Pincers",
+      "wikiTitle": "Pincers",
+      "wikiUrl": "https://onepiece.fandom.com/wiki/Pincers",
+      "patch": {
+        "wikiTitle": "Pincers",
+        "wikiUrl": "https://onepiece.fandom.com/wiki/Pincers"
+      }
     }
   ],
   "subOrganizations": [
@@ -88951,6 +90842,193 @@ window.onePieceData = {
       "currentUserId": "wt100-39",
       "previousUserIds": [],
       "description": "Chop-Chop Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "smoke-smoke-fruit-plume-plume-fruit-steam-steam-fruit",
+      "name": "Smoke-Smoke Fruit ; Plume-Plume Fruit ; Steam-Steam Fruit",
+      "type": "logia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-115",
+      "previousUserIds": [],
+      "description": "Smoke-Smoke Fruit (4Kids); Plume-Plume Fruit (VIZ, Funimation); Steam-Steam Fruit ( Grand Adventure ) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "human-human-fruit",
+      "name": "Human-Human Fruit",
+      "type": "zoan",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-130",
+      "previousUserIds": [],
+      "description": "Human-Human Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "hana-hana-fruit-flower-flower-fruit",
+      "name": "Hana-Hana Fruit ; Flower-Flower Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-131",
+      "previousUserIds": [],
+      "description": "Hana-Hana Fruit ( 4Kids ); Flower-Flower Fruit ( VIZ / Funimation ) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "bomb-bomb-fruit-boom-boom-fruit",
+      "name": "Bomb-Bomb Fruit ; Boom-Boom Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-146",
+      "previousUserIds": [],
+      "description": "Bomb-Bomb Fruit (4Kids, Funimation, Odex); Boom-Boom Fruit (Viz) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "kilo-kilo-fruit",
+      "name": "Kilo-Kilo Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-147",
+      "previousUserIds": [],
+      "description": "Kilo-Kilo Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "wax-wax-fruit",
+      "name": "Wax-Wax Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-153",
+      "previousUserIds": [],
+      "description": "Wax-Wax Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "munch-munch-fruit",
+      "name": "Munch-Munch Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-160",
+      "previousUserIds": [],
+      "description": "Munch-Munch Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "ox-ox-fruit-bison-model-ox-ox-fruit-ox-ox-fruit-bison-form",
+      "name": "Ox-Ox Fruit, Bison Model ; Ox-Ox Fruit ; Ox-Ox Fruit, Bison Form",
+      "type": "zoan",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-163",
+      "previousUserIds": [],
+      "description": "Ox-Ox Fruit, Bison Model (VIZ); Ox-Ox Fruit (4Kids); Ox-Ox Fruit, Bison Form (Funimation) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "clone-clone-fruit",
+      "name": "Clone-Clone Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-177",
+      "previousUserIds": [],
+      "description": "Clone-Clone Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "sand-sand-fruit",
+      "name": "Sand-Sand Fruit",
+      "type": "logia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-179",
+      "previousUserIds": [],
+      "description": "Sand-Sand Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "flame-flame-fruit-flare-flare-fruit",
+      "name": "Flame-Flame Fruit ; Flare-Flare Fruit",
+      "type": "logia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-182",
+      "previousUserIds": [],
+      "description": "Flame-Flame Fruit ( VIZ , Funimation ); Flare-Flare Fruit ( 4Kids , Funimation subs) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "mole-mole-fruit-diggy-diggy-fruit",
+      "name": "Mole-Mole Fruit ; Diggy-Diggy Fruit",
+      "type": "zoan",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-184",
+      "previousUserIds": [],
+      "description": "Mole-Mole Fruit (Funimation); Diggy-Diggy Fruit (Viz, 4Kids) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "spike-spike-fruit",
+      "name": "Spike-Spike Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-186",
+      "previousUserIds": [],
+      "description": "Spike-Spike Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "dice-dice-fruit",
+      "name": "Dice-Dice Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-187",
+      "previousUserIds": [],
+      "description": "Dice-Dice Fruit - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "sickle-sickle-fruit-slash-slash-fruit",
+      "name": "Sickle-Sickle Fruit Slash-Slash Fruit",
+      "type": "paramecia",
+      "zoanSubtype": "",
+      "model": "",
+      "awakened": false,
+      "currentUserId": "wt100-203",
+      "previousUserIds": [],
+      "description": "Sickle-Sickle Fruit Slash-Slash Fruit ( Odex ) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "tweet-tweet-fruit-falcon-type-tweet-tweet-fruit-bird-bird-fruit-model-falcon",
+      "name": "Tweet-Tweet Fruit Falcon Type ; Tweet-Tweet Fruit ; Bird-Bird Fruit, Model: Falcon",
+      "type": "zoan",
+      "zoanSubtype": "",
+      "model": "Falcon ( Funimation",
+      "awakened": false,
+      "currentUserId": "wt100-204",
+      "previousUserIds": [],
+      "description": "Tweet-Tweet Fruit Falcon Type ( VIZ ); Tweet-Tweet Fruit ( 4Kids ); Bird-Bird Fruit, Model: Falcon ( Funimation ) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
+    },
+    {
+      "id": "dog-dog-fruit-model-jackal-mutt-mutt-fruit-jackal-mode-mutt-mutt-fruit-jackal-st",
+      "name": "Dog-Dog Fruit, Model: Jackal ; Mutt Mutt Fruit: Jackal Mode ; Mutt-Mutt Fruit: Jackal Strike",
+      "type": "zoan",
+      "zoanSubtype": "",
+      "model": "Jackal (Funimation",
+      "awakened": false,
+      "currentUserId": "wt100-205",
+      "previousUserIds": [],
+      "description": "Dog-Dog Fruit, Model: Jackal (Funimation); Mutt Mutt Fruit: Jackal Mode (Viz); Mutt-Mutt Fruit: Jackal Strike (4Kids) - One Piece Wiki infobox 기준 자동 보강 정보입니다."
     }
   ]
 };
@@ -90417,3 +92495,3639 @@ window.onePieceData = {
   });
 })();
 /* WIKI_TECHNIQUE_AUTO_END */
+
+/* WIKI_EPISODE_AUTO_START */
+(() => {
+  const data = window.onePieceData;
+  const episodes = [
+  {
+    "id": "wiki-chapter-1",
+    "volume": 1,
+    "number": 1,
+    "title": "Romance Dawn",
+    "summary": "During his execution, the Pirate King Gold Roger revealed that he left his treasure for the world to find it, triggering the start of the Great Pirate Era. Years later, a young boy named Monkey D. Luffy tries to join the Red Hair Pirates, but their captain Shanks rebuffs him. Shanks later discovers that Luffy unknowingly ate a Devil Fruit that his crew had stolen. The fruit, the Gomu Gomu no Mi, has turned Luffy's body into rubber but at the cost of making him unable to ever swim. After an incident between Shanks and the mountain bandit Higuma, Luffy confronts Higuma the next time he sees him and is captured. The Red Hair Pirates overpower the bandits, but Higuma escapes to sea with Luffy and attempts to drown him. Shanks arrives in time to save Luffy from an attacking Sea King, but loses his left arm in the process. Later, the Red Hair Pirates prepare to depart the village for good, and",
+    "characterIds": [
+      "wt100-10",
+      "wt100-13",
+      "wt100-11",
+      "wt100-12",
+      "wt100-683",
+      "wt100-121",
+      "wt100-120",
+      "wt100-9",
+      "wt100-7",
+      "wt100-1",
+      "wt100-3",
+      "wt100-15",
+      "wt100-19",
+      "wt100-18",
+      "wt100-8",
+      "wt100-20",
+      "wt100-16",
+      "wt100-14"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-pistol"
+    ],
+    "sourceTitle": "Chapter 1",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_1",
+    "sourceCharacterTitles": [
+      "Shanks",
+      "Benn Beckman",
+      "Lucky Roux",
+      "Yasopp",
+      "Limejuice",
+      "Hongo",
+      "Bonk Punch",
+      "Monster",
+      "Gol D. Roger",
+      "Monkey D. Luffy",
+      "Nami",
+      "Makino",
+      "Woop Slap",
+      "Gyoru",
+      "Chicken",
+      "Anjo",
+      "Lord of the Coast",
+      "Higuma",
+      "Mikio Itoo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-2",
+    "volume": 1,
+    "number": 2,
+    "title": "They Call Him \"Straw Hat Luffy\"",
+    "summary": "Luffy ends up on an island that the pirate Iron-Mace Alvida is using as a base. There, he meets Koby, a boy who has been forced to be Alvida's servant despite his desires to become a Marine. Luffy helps Koby get the courage to stand up to Alvida. After this, Luffy promptly defeats her and leaves the island with Koby.",
+    "characterIds": [
+      "wt100-22",
+      "wt100-23",
+      "wt100-24",
+      "wt100-25",
+      "wt100-1",
+      "wt100-21"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-pistol"
+    ],
+    "sourceTitle": "Chapter 2",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_2",
+    "sourceCharacterTitles": [
+      "Alvida",
+      "Heppoko",
+      "Peppoko",
+      "Poppoko",
+      "Monkey D. Luffy",
+      "Koby"
+    ]
+  },
+  {
+    "id": "wiki-chapter-3",
+    "volume": 1,
+    "number": 3,
+    "title": "Enter Zolo–Pirate Hunter",
+    "summary": "Luffy and Koby arrive at an island with a Marine base, where a man named Roronoa Zoro is being held prisoner. Despite the fact that Zoro is seen as being a demon, Luffy is insistent on having him on his crew, and goes to meet him. There, he and Koby meet Rika, a young girl that Zoro protected, causing him to be imprisoned.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-27",
+      "wt100-26",
+      "wt100-21",
+      "wt100-2",
+      "wt100-14"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 3",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_3",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Helmeppo",
+      "Rika",
+      "Koby",
+      "Roronoa Zoro",
+      "Soro",
+      "Mikio Itoo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-4",
+    "volume": 1,
+    "number": 4,
+    "title": "The Great Captain Morgan",
+    "summary": "Luffy again goes to see Zoro to invite him to his crew, and Zoro refuses. Luffy decides that if he gets Zoro's swords back from Helmeppo, then he can make Zoro join before he gives them back, so he rushes off to retrieve them. Meanwhile, Morgan, the captain of the Marine base, is having his men lift a giant statue of himself, which Luffy inadvertently destroys while trying to get the swords back. Morgan, infuriated, orders his men to capture Luffy so that he can kill him.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-30",
+      "wt100-31",
+      "wt100-27",
+      "wt100-26",
+      "wt100-29",
+      "wt100-21",
+      "wt100-2"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-rocket"
+    ],
+    "sourceTitle": "Chapter 4",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_4",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Morgan",
+      "Rokkaku",
+      "Ukkari (Character)",
+      "Helmeppo",
+      "Rika",
+      "Ririka",
+      "Koby",
+      "Roronoa Zoro"
+    ]
+  },
+  {
+    "id": "wiki-chapter-5",
+    "volume": 1,
+    "number": 5,
+    "title": "The King of the Pirates and the Master Swordsman",
+    "summary": "Morgan and his soldiers go to kill Zoro and Koby, while Luffy retrieves Zoro's swords. Zoro is thinking about how he cannot die at a place like this, remembering the promise he made to his childhood friend, Kuina. Just before Zoro and Koby are shot, however, Luffy gets in the way, protecting the pair from all the bullets. Zoro realizes that, if he wants to live, he has no choice and tells Luffy that he will join him.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-30",
+      "wt100-27",
+      "wt100-33",
+      "wt100-34",
+      "wt100-21"
+    ],
+    "techniqueIds": [
+      "wiki-tech-luffy-punch"
+    ],
+    "sourceTitle": "Chapter 5",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_5",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Morgan",
+      "Helmeppo",
+      "Shimotsuki Kuina",
+      "Shimotsuki Koushirou",
+      "Koby"
+    ]
+  },
+  {
+    "id": "wiki-chapter-6",
+    "volume": 1,
+    "number": 6,
+    "title": "Number One",
+    "summary": "Luffy finally manages to free Zoro, and the two take out all of Morgan's soldiers. Luffy fights with Morgan, but is forced to stop when Helmeppo threatens to shoot Koby. While Luffy saves Koby by taking out Helmeppo, Morgan takes the chance to attempt to kill him, but is stopped by Zoro.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-30",
+      "wt100-27",
+      "wt100-21"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 6",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_6",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Morgan",
+      "Helmeppo",
+      "Koby"
+    ]
+  },
+  {
+    "id": "wiki-chapter-7",
+    "volume": 1,
+    "number": 7,
+    "title": "Friends",
+    "summary": "Morgan's Marines are grateful to Luffy for defeating Morgan and ridding them of his tyranny, and allow Luffy and Zoro to leave peacefully. Koby, however, does not accompany them, causing the soldiers to ask if he is one of them or not. To prove that Koby is not their friend, Luffy provokes him until he punches him; he is then allowed to stay. After the pirates leave, Koby asks to join the Marines, and is allowed in. Koby and the Marines salute Luffy and Zoro as they set off.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-39",
+      "wt100-10",
+      "wt100-30",
+      "wt100-35",
+      "wt100-21",
+      "wt100-27",
+      "wt100-26",
+      "wt100-29"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 7",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_7",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Buggy",
+      "Shanks",
+      "Morgan",
+      "Ripper",
+      "Koby",
+      "Pirate Bear",
+      "Helmeppo",
+      "Rika",
+      "Ririka"
+    ]
+  },
+  {
+    "id": "wiki-chapter-8",
+    "volume": 1,
+    "number": 8,
+    "title": "Nami",
+    "summary": "In order to get food for himself and Zoro, Luffy tries to catch a bird, but it is far larger than him, and he ends up being brought to an island. Zoro chases after him, and picks up some of Buggy the Clown's pirates along the way. Meanwhile, Luffy meets a girl named Nami, who was running away from some pirates.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-36"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 8",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_8",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Buggy Pirates",
+      "Nami",
+      "Pinky"
+    ]
+  },
+  {
+    "id": "wiki-chapter-9",
+    "volume": 2,
+    "number": 9,
+    "title": "Femme Fatale",
+    "summary": "Nami attempts to team up with Luffy. The Buggy Pirates try to find the map she stole, but when they return to Buggy empty-handed, he shoots one with his cannon. Nami takes Luffy into a house and she explains to him the situation and who Buggy is. Luffy asks her if she wants to join his crew; she refuses. Luffy explains to her why his straw hat is a treasure. Nami says that the thing she hates most are pirates. They leave the house and go to search for Buggy, but Nami tricks Luffy, ties him up with a rope, and brings him to Buggy to broker a deal. Zoro arrives at the village.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-39",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-40",
+      "wt100-3"
+    ],
+    "techniqueIds": [
+      "wiki-tech-luffy-swing"
+    ],
+    "sourceTitle": "Chapter 9",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_9",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Buggy",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Buggy Pirates",
+      "Domo-kun and Nnke-kun",
+      "Nami"
+    ]
+  },
+  {
+    "id": "wiki-chapter-10",
+    "volume": 2,
+    "number": 10,
+    "title": "Incident at the Tavern",
+    "summary": "Nami's plan goes wrong when Buggy appears behind her and tells her to kill Luffy. She hesitates and the Buggy Cannon is accidentally lit. She stops the cannon before it fires, and Zoro comes in and chops Buggy up into little pieces.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-39",
+      "wt100-3"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 10",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_10",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Buggy",
+      "Buggy Pirates",
+      "Nami"
+    ]
+  },
+  {
+    "id": "wiki-chapter-11",
+    "volume": 2,
+    "number": 11,
+    "title": "Flight",
+    "summary": "Zoro, having sliced Buggy into pieces, turns his back on him and prepares to break Luffy out of his cage. However, Buggy reveals the abilities of his Devil Fruit, the Bara Bara no Mi, by stabbing Zoro in the back with a disembodied hand. Zoro flips the cannon that was initially aimed at Luffy back at the Buggy Pirates. The cannon fires, causing massive damage to the rooftop they were on. Zoro ignores Nami's complaints about needing to find a key to the cage and instead escapes while carrying the cage. When the Buggy Pirates recover, they find nothing, as the escapees are instead hiding on rooftops. Buggy, furious, declares war on them.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-39",
+      "wt100-3"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 11",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_11",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Buggy",
+      "Buggy Pirates",
+      "Nami"
+    ]
+  },
+  {
+    "id": "wiki-chapter-12",
+    "volume": 2,
+    "number": 12,
+    "title": "Dog",
+    "summary": "After escaping the Buggy Pirates, Zoro and Luffy rest in the middle of a street where the only inhabitant is a weird dog. While Nami comes back with the key for Luffy's cage as thanks for saving her life, the dog eats the key. Mohji, Buggy's vice captain, then appears to kill Zoro. With his lion Richie, he attacks the defenseless Luffy and destroys the cage in the process, freeing Luffy.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-39",
+      "wt100-42",
+      "wt100-43",
+      "wt100-3",
+      "wt100-45",
+      "wt100-46"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 12",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_12",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Buggy",
+      "Mohji",
+      "Richie",
+      "Buggy Pirates",
+      "Nami",
+      "Boodle",
+      "Chouchou",
+      "Hocker"
+    ]
+  },
+  {
+    "id": "wiki-chapter-13",
+    "volume": 2,
+    "number": 13,
+    "title": "Treasure",
+    "summary": "Mohji and Richie destroy the pet shop guarded by Chouchou. Luffy defeats Mohji and brings Chouchou one bag of pet food, which is all that remains of his store. Nami realizes that Luffy is not a destructive pirate like Buggy.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-39",
+      "wt100-42",
+      "wt100-43",
+      "wt100-3",
+      "wt100-45",
+      "wt100-46"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 13",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_13",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Buggy",
+      "Mohji",
+      "Richie",
+      "Nami",
+      "Boodle",
+      "Chouchou",
+      "Hocker"
+    ]
+  },
+  {
+    "id": "wiki-chapter-14",
+    "volume": 2,
+    "number": 14,
+    "title": "Reckless",
+    "summary": "Mohji returns to warn Buggy about Luffy, but collapses before he can give Buggy the full details. Back in the town, Nami's opinion of Luffy has begun to change, but the mayor is frustrated that while Luffy and Chouchou fought, he did nothing. Buggy then fires one of his Buggy Balls at the mayor's house where Zoro had been sleeping and destroys it. The swordsman emerges with no new injuries, and the mayor finally decides to stand up to the Buggy Pirates with Luffy, Zoro, and (reluctantly) Nami.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-39",
+      "wt100-42",
+      "wt100-43",
+      "wt100-45",
+      "wt100-47",
+      "wt100-46"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 14",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_14",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Buggy",
+      "Mohji",
+      "Richie",
+      "Buggy Pirates",
+      "Boodle",
+      "Chouchou",
+      "Poro",
+      "Hocker"
+    ]
+  },
+  {
+    "id": "wiki-chapter-15",
+    "volume": 2,
+    "number": 15,
+    "title": "Gong",
+    "summary": "Despite his courage, the mayor is no match against Buggy, but Luffy arrives in time to save him. With Nami going to search for treasure, Luffy knocks the mayor unconscious to keep him from getting in the way, as he and Zoro prepare to fight the Buggy Pirates.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-39",
+      "wt100-48",
+      "wt100-45"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 15",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_15",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Buggy",
+      "Cabaji",
+      "Buggy Pirates",
+      "Boodle"
+    ]
+  },
+  {
+    "id": "wiki-chapter-16",
+    "volume": 2,
+    "number": 16,
+    "title": "Versus Buggy's Crew",
+    "summary": "While Nami demands that Luffy explain what he is, Buggy and Cabaji emerge unharmed from the reflected cannonball attack by using their own crew as a shield. Mohji briefly regains consciousness before being knocked aside by both Buggy and Luffy. Cabaji goes to attack Luffy, but Zoro intercepts the attack. However because of his injury from Buggy earlier, Zoro is at a disadvantage, but he grows tired of Cabaji attacking his wound, and decides to show him a real fight.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-39",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-45"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 16",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_16",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Buggy",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Buggy Pirates",
+      "Boodle"
+    ]
+  },
+  {
+    "id": "wiki-chapter-17",
+    "volume": 2,
+    "number": 17,
+    "title": "High Level, Low Level",
+    "summary": "As Zoro and Cabaji's fight continues, Nami leaves to steal the Buggy Pirates' treasure while the crew is still unconscious, but asks Luffy to steal the Grand Line map from Buggy if he got the chance. Zoro then defeats Cabaji with his Oni Giri attack, only to collapse as he reveals they are pirates. Surprised by this, Buggy laughs at their desire to enter the Grand Line, before Luffy declares his intent to become the Pirate King. As they prepare to fight, Buggy mentions Shanks, causing Luffy to pause.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-39",
+      "wt100-48",
+      "wt100-502"
+    ],
+    "techniqueIds": [
+      "wiki-tech-oni-giri"
+    ],
+    "sourceTitle": "Chapter 17",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_17",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Buggy",
+      "Cabaji",
+      "Buggy Pirates",
+      "Pirate Penguin"
+    ]
+  },
+  {
+    "id": "wiki-chapter-18",
+    "volume": 3,
+    "number": 18,
+    "title": "The Pirate Buggy the Clown",
+    "summary": "With all the other pirates defeated, Buggy and Luffy prepare to fight. Luffy asks about Buggy's connection to Shanks, but Buggy mocks him. Each fighter's ability gives them an advantage over the other, and onlookers become too afraid to enter such a dangerous battle. Finally Buggy lands a hit on Luffy's hat, enraging the young pirate. Realizing whose hat it is, Buggy begins to target it specifically, and reveals he was a comrade of Shanks. Luffy refuses to believe this, and lands a powerful strike in return.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-10",
+      "wt100-39",
+      "wt100-42",
+      "wt100-48",
+      "wt100-45"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 18",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_18",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Shanks",
+      "Buggy",
+      "Mohji",
+      "Cabaji",
+      "Acrobatic Fuwas",
+      "Boodle"
+    ]
+  },
+  {
+    "id": "wiki-chapter-19",
+    "volume": 3,
+    "number": 19,
+    "title": "Devil Fruit",
+    "summary": "Luffy, angry with Buggy's treatment of his hat and that he was calling himself a comrade of Shanks, begins to fight again. Back at the encampment outside the town, the villagers grow worried for their mayor, and decide to go and help. Buggy finally loses his temper with Luffy, and has a flashback about his relationship with Shanks. He remembers how different their opinion on treasure was, and he blames Shanks for causing him to accidentally eat a Devil Fruit. Back in the present, Buggy prepares to attack, but notices Nami has stolen his treasure and instead lunges at her.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-3",
+      "wt100-39",
+      "wt100-119",
+      "wt100-1275",
+      "wt100-10",
+      "wt100-45",
+      "wt100-47"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 19",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_19",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Nami",
+      "Buggy",
+      "Buggy Pirates",
+      "Silvers Rayleigh",
+      "Scopper Gaban",
+      "Shanks",
+      "Boodle",
+      "Poro"
+    ]
+  },
+  {
+    "id": "wiki-chapter-20",
+    "volume": 3,
+    "number": 20,
+    "title": "The Way of the Thief",
+    "summary": "Just as Buggy is about to strike Nami, he suddenly collapses in pain, due to Luffy striking his lower body. Nami claims that the treasure is now hers, angering Buggy and provoking him to split into pieces and attack again. However, Luffy notices a flaw in Buggy's ability - while his body parts can fly, his feet remain on the ground. He distracts Buggy long enough for Nami to get away. As Buggy tries to reassemble his body to attack Luffy, he discovers that Nami has tied up his body parts, and he is only able to reassemble his limbs and his head. Luffy sends him flying with Gomu Gomu no Bazooka.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-39"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-bazooka"
+    ],
+    "sourceTitle": "Chapter 20",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_20",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Buggy"
+    ]
+  },
+  {
+    "id": "wiki-chapter-21",
+    "volume": 3,
+    "number": 21,
+    "title": "Townies",
+    "summary": "After defeating the Buggy Pirates, Luffy, Zoro and Nami are about to depart with Buggy's treasure, but the villagers arrive and ask about the pirates. Seeing that their mayor has been knocked out, they ask who did it, and Luffy admits it was him. While they are being chased out of the village, Chouchou helps them escape by holding back the villagers. The mayor soon wakes up, and after asking about Luffy and the others, runs after them to thank them as they sail away.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-42",
+      "wt100-48",
+      "wt100-45",
+      "wt100-47"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 21",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_21",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Mohji",
+      "Cabaji",
+      "Buggy Pirates",
+      "Boodle",
+      "Chouchou",
+      "Poro"
+    ]
+  },
+  {
+    "id": "wiki-chapter-22",
+    "volume": 3,
+    "number": 22,
+    "title": "Strange Creatures",
+    "summary": "Luffy and the others sail near an unpopulated island, and Luffy insists they will find somebody there. After discovering the island is filled with unusual hybrid animals, they are confronted by the island's guardian. Luffy and Nami discover the island is actually inhabited by a strange man trapped in a chest, Gaimon. They learn that Gaimon stayed on the island for twenty years to obtain some treasure, but is unable to reach it while trapped. Luffy offers to help, but when he reaches the treasure he finds that it was all taken before Gaimon ever landed on the island. Gaimon was upset when he heard this, but Luffy's positive attitude helps Gaimon get over his depression. Gaimon chooses to stay on the island and protect the animals rather than join Luffy's crew, and the young pirates leave for the next island.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-50"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 22",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_22",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Gaimon",
+      "Cocox",
+      "Usagihebi",
+      "Lionbuta",
+      "Kirinkodanuki"
+    ]
+  },
+  {
+    "id": "wiki-chapter-23",
+    "volume": 3,
+    "number": 23,
+    "title": "The Dread Captain Usopp",
+    "summary": "As Luffy, Zoro and Nami continue to sail through East Blue, Nami points out how unprepared they are for the Grand Line, and they decide to get a larger ship. As the perspective changes to a nearby island, Usopp is introduced, running through his village warning them of approaching pirates. When it is revealed he was lying, he is chased off by the villagers, and meets up with his Usopp Pirates further down the road. One of the members, Tamanegi, warns that actual pirates are approaching, and the crew goes to spy on them. When the pirates turn out to be Luffy and the others, Usopp winds up having a meal with them. Before the chapter ends, a young, bedridden girl is shown.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-56",
+      "wt100-55",
+      "wt100-51",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 23",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_23",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Kaya",
+      "Kuro",
+      "Mornin",
+      "Usopp",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-24",
+    "volume": 3,
+    "number": 24,
+    "title": "The Lie Rejecter",
+    "summary": "The Usopp Pirates (without Usopp) approach the restaurant Tamanegi saw Usopp enter with the pirates, and confront Luffy, Zoro, and Nami over the fate of their captain. Learning that Usopp had gone to \"that place\", the Usopp Pirates tell Luffy and the others about Usopp's trips to Kaya's mansion to tell her stories, in an attempt to help brighten her spirits. However her butler, Klahadore, disapproves of Usopp's interactions with Kaya, believing Usopp to be a bad influence for having the blood of a pirate. Luffy's group and the Usopp Pirates arrive just in time to see Klahadore insult Usopp down, before he strikes Klahadore and declares his pride at being the son of a pirate.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-56",
+      "wt100-55",
+      "wt100-58",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 24",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_24",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Kaya",
+      "Kuro",
+      "Merry",
+      "Usopp",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-25",
+    "volume": 3,
+    "number": 25,
+    "title": "Lies",
+    "summary": "Kaya convinces Usopp to leave before he attacks Klahadore anymore, and Luffy and the others leave soon after. Depressed at what has happened, Kaya refuses to eat or speak, causing Klahadore to explain his motivations for protecting Kaya in an attempt to cheer her up. Zoro and Nami lose Luffy, and Tamanegi tells them about a strange man walking backwards. The strange man shows up and reveals himself to be a hypnotist; but his attempt to prove it results in putting both the Usopp Pirates and himself to sleep. At the cliff, Luffy catches up to Usopp, and they talk about Usopp's father, Yasopp. Their reminiscing is cut short when Luffy notices Klahadore and the hypnotist down on the beach, discussing their plan to assassinate Kaya.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-10",
+      "wt100-13",
+      "wt100-11",
+      "wt100-12",
+      "wt100-120",
+      "wt100-683",
+      "wt100-59",
+      "wt100-56",
+      "wt100-55",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 25",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_25",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Shanks",
+      "Benn Beckman",
+      "Lucky Roux",
+      "Yasopp",
+      "Bonk Punch",
+      "Limejuice",
+      "Jango",
+      "Kaya",
+      "Kuro",
+      "Usopp",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-26",
+    "volume": 3,
+    "number": 26,
+    "title": "Captain Kuro's Plan",
+    "summary": "Talking about their assassination plan in more detail, Jango reveals that Klahadore is actually a fake name, and he is in fact the previous captain of the Black Cat Pirates who faked his death, Kuro. In a rash attempt to stop them, Luffy reveals their presence and tells them to leave Kaya alone. Jango responds by putting Luffy to sleep using his hypnotism, only for Luffy to tilt forward and fall off the cliff. Thinking him dead, Kuro disregards Usopp's presence as he is a well known liar, and the chances of anybody believing him are none. Rushing to the village, Usopp tries his best to warn of the incoming attack only for the villages to think it is another of his stories. The scene changes to the Black Cat Pirate's ship where Kuro readies his men, and Luffy is shown to be sleeping.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-55",
+      "wt100-59",
+      "wt100-56",
+      "wt100-58",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 26",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_26",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Kuro",
+      "Jango",
+      "Kaya",
+      "Merry",
+      "Usopp",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-27",
+    "volume": 4,
+    "number": 27,
+    "title": "True Lies",
+    "summary": "Kaya and her servant are seen discussing Klahadore's anniversary present which is a new pair of glasses that Kaya ordered in from another town. In the village, nobody believes Usopp and he is chased away. Back at the shore, the Usopp Pirates had led Zoro and Nami there where they find Luffy who tells them about the assassination plan. Having run away from the villagers, Usopp finds himself at Kaya's mansion in an attempt to save her directly. However, she too believes it to be a lie, created as revenge for the harsh things Klahadore had said to Usopp earlier. With the villagers having caught up, and Kaya's servant holding a weapon to Usopp, the young man chooses to run instead. Meeting up with his followers, Usopp makes the decision to cover up the truth as another one of his lies, and protect the village himself. Witnessing his determination, Luffy, Zoro, and Nami all agree to help.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-55",
+      "wt100-56",
+      "wt100-58",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 27",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_27",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Kuro",
+      "Kaya",
+      "Merry",
+      "Usopp",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-28",
+    "volume": 4,
+    "number": 28,
+    "title": "Crescent Moon",
+    "summary": "Preparing for the oncoming pirate attack, Luffy, Zoro, Nami, and Usopp take upon themselves to protect the village and identify the path the pirates would have to take in order to get onto the island. At the mansion during a discussion between Merry and Klahadore, the latter grows impatient and reveals his true nature and attacks Merry. As morning arrives, the Black Cat Pirates begin their charge on the island where it is revealed Usopp guessed the wrong path and they were actually attacking from the north. Panicking, Luffy, Usopp and Nami rush off in to the right location direction, while Zoro is left behind as Nami caused him to slide down the oil trap they had set. Usopp is the first to arrive, knocking back several pirates with his slingshot. Luffy on the other hand has become lost, and Zoro still trapped in the slippery oil.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-10",
+      "wt100-55",
+      "wt100-59",
+      "wt100-56",
+      "wt100-58",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 28",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_28",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Shanks",
+      "Kuro",
+      "Jango",
+      "Kaya",
+      "Merry",
+      "Usopp"
+    ]
+  },
+  {
+    "id": "wiki-chapter-29",
+    "volume": 4,
+    "number": 29,
+    "title": "Uphill Battle",
+    "summary": "Usopp arrives first to the other shore and tries to warn the Black Cat Pirates away with a bold lie. Not falling for it, they discover Nami's treasure and claim it as their own. Just as Usopp is about to be hypnotized Nami herself arrives and saves him. The pair are soon forced to fight for themselves while Luffy and Zoro still struggle to find the right shore. While distracted Usopp suffers a heavy blow to the head, however while unable to stand he continues to struggle against the invading pirates until Luffy and Zoro finally arrive.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-59",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 29",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_29",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Jango",
+      "Usopp"
+    ]
+  },
+  {
+    "id": "wiki-chapter-30",
+    "volume": 4,
+    "number": 30,
+    "title": "Backfire",
+    "summary": "Back at the mansion, Kuro begins to grow impatient as the Black Cat Pirates had failed to arrive in the village, and leaves for the shore vowing to kill them if they had forgotten. At the shore, Jango hypnotizes the recovering pirates to become stronger than before, however Luffy also falls for the hypnotism and attacks the pirates in a rage, resulting in the destruction of the pirate ship's bow. About to attack with the now separated bow, Jango quickly puts Luffy to sleep who then drops the bow onto himself and several other pirates. Thinking the Black Cat Pirates defeated, Nami, Zoro, and Usopp are proven wrong when Jango reveals they have two remaining fighters. Back in the village, Tamanegi finds it strange to see the butler walking around so early.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-55",
+      "wt100-59",
+      "wt100-60",
+      "wt100-61",
+      "wt100-58",
+      "wt100-4"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-gatling"
+    ],
+    "sourceTitle": "Chapter 30",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_30",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Kuro",
+      "Jango",
+      "Sham",
+      "Buchi",
+      "Merry",
+      "Usopp",
+      "Tamanegi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-31",
+    "volume": 4,
+    "number": 31,
+    "title": "Truth",
+    "summary": "Kaya learns the truth and leaves the mansion to try to stop Kuro. Meanwhile at the cliff, two new Black Cat Pirates make their apparition: the Nyaban Brothers.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-55",
+      "wt100-59",
+      "wt100-61",
+      "wt100-60",
+      "wt100-56",
+      "wt100-58",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 31",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_31",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Kuro",
+      "Jango",
+      "Buchi",
+      "Sham",
+      "Kaya",
+      "Merry",
+      "Usopp",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-32",
+    "volume": 4,
+    "number": 32,
+    "title": "Cruel Fortune",
+    "summary": "Sham, having stolen two of Zoro's swords, throws them onto the ground. When Zoro attempts to attack him, Sham appears to be hit but then manages to pin Zoro down, revealing that he was never cut at all. Buchi then jumps into the air and attempts to hit Zoro with Cat Pound, but Zoro escapes. Buchi and Sham attack Zoro relentlessly, forcing Zoro to defend himself. Usopp attempts to help, but Zoro takes the attack in order to keep the focus of the attack on himself. Buchi and Sham, seeing the opportunity, cut open Zoro's chest. Nami runs to retrieve Zoro's swords, but Jango stops her by throwing his disk at her. The disk cuts her shoulder, wounding her. Kuro appears at the top of the slope, shocking the Black Cat Pirates.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-55",
+      "wt100-59",
+      "wt100-61",
+      "wt100-60",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 32",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_32",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Kuro",
+      "Jango",
+      "Buchi",
+      "Sham",
+      "Usopp"
+    ]
+  },
+  {
+    "id": "wiki-chapter-33",
+    "volume": 4,
+    "number": 33,
+    "title": "The Creeping Cat",
+    "summary": "Kuro, having just arrived on the scene, wonders how the Black Cat Pirates could be having such problems from a bunch of children. Jango says that Kuro himself said that Usopp would not be a problem, and Sham and Buchi say that while Kuro was getting soft, they were out fighting. Sham and Buchi attack, but Kuro evades their attacks and states that he will kill everyone present if the Straw Hat Pirates are not dead in five minutes. Sham and Buchi attack Zoro once more, but Nami kicks Zoro his two stolen swords. With all three blades, Zoro then defeats Sham and Buchi in a single move. Buchi, however, survives and convinces Jango to hypnotize him in being stronger. While Zoro takes on Buchi, Nami runs to wake up Luffy, forcing Jango to throw a chakram at her.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-55",
+      "wt100-59",
+      "wt100-61",
+      "wt100-60",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 33",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_33",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Kuro",
+      "Jango",
+      "Buchi",
+      "Sham",
+      "Usopp"
+    ]
+  },
+  {
+    "id": "wiki-chapter-34",
+    "volume": 4,
+    "number": 34,
+    "title": "A Humble Servant",
+    "summary": "Luffy awakens, but the battle is suspended by the appearance of Kaya. Kuro does not want to negotiate as he believes he needs to kill Kaya to live a peaceful life, and as revenge for the boring years he had to endure.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-55",
+      "wt100-59",
+      "wt100-61",
+      "wt100-56",
+      "wt100-4"
+    ],
+    "techniqueIds": [
+      "wiki-tech-luffy-punch"
+    ],
+    "sourceTitle": "Chapter 34",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_34",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Kuro",
+      "Jango",
+      "Buchi",
+      "Kaya",
+      "Usopp"
+    ]
+  },
+  {
+    "id": "wiki-chapter-35",
+    "volume": 4,
+    "number": 35,
+    "title": "The Steep Slope",
+    "summary": "After Luffy's punch, Kuro decides to take care of him while he asks Jango to take care of Kaya. Zoro is unable to prevent Jango from going after her because of the hypnotized Buchi. However, Usopp asks the Usopp Pirates to help her escape.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-55",
+      "wt100-59",
+      "wt100-61",
+      "wt100-39",
+      "wt100-56",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 35",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_35",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Kuro",
+      "Jango",
+      "Buchi",
+      "Buggy",
+      "Kaya",
+      "Usopp",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-36",
+    "volume": 5,
+    "number": 36,
+    "title": "After Them!!",
+    "summary": "Usopp is unable to move anymore to protect Kaya but he has not lost his will. Zoro finally defeats Buchi and brings Usopp up on his back so they can catch up with Kaya and the children before Jango. Kuro tries to stop them but finding Luffy in his way, they start to fight each other. Meanwhile Jango has found where the escapee were hidden.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-55",
+      "wt100-59",
+      "wt100-61",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-56",
+      "wt100-4",
+      "wt100-45"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 36",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_36",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Kuro",
+      "Jango",
+      "Buchi",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Kaya",
+      "Usopp",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi",
+      "Boodle",
+      "Chouchou"
+    ]
+  },
+  {
+    "id": "wiki-chapter-37",
+    "volume": 5,
+    "number": 37,
+    "title": "Captain Kuro, of the Thousand Plans",
+    "summary": "Luffy and Kuro begin their fight, and Kuro gains the upper hand at first. As his crewmates start to cheer him on, Kuro berates them. He then remembers when he decided to give up pirating, as the Marines were constantly chasing him. When Kuro had been at the height of his fame, he had faked his own death by making someone else turn himself in as Captain Kuro. Kuro attacks Luffy again, but Luffy breaks his claws on one hand with a rock and tells Kuro about his desire to become the Pirate King.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-39",
+      "wt100-55",
+      "wt100-59",
+      "wt100-61",
+      "wt100-60",
+      "wt100-30"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 37",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_37",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Buggy",
+      "Kuro",
+      "Jango",
+      "Buchi",
+      "Sham",
+      "Nugire Yainu",
+      "Morgan",
+      "Animal Species/East Blue Saga"
+    ]
+  },
+  {
+    "id": "wiki-chapter-38",
+    "volume": 5,
+    "number": 38,
+    "title": "Pirate Crew",
+    "summary": "Kuro, laying on the ground after Luffy's punch, stands up and is cheered on by his crew. Kuro lashes out at them, saying that he is going to kill everyone, even Jango, once he is done. In the forest, Jango is trying to hypnotize Kaya when he is ambushed by the Usopp Pirates. Jango fights back, but the noise brings Zoro and Usopp running. Meanwhile, Kuro continues about how his crew must die in order for his plan to be complete. Luffy punches him again and insults him, causing Kuro to unleash a technique that makes him attack everything indiscriminately.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-55",
+      "wt100-59",
+      "wt100-56",
+      "wt100-4"
+    ],
+    "techniqueIds": [
+      "wiki-tech-luffy-punch"
+    ],
+    "sourceTitle": "Chapter 38",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_38",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Kuro",
+      "Jango",
+      "Kaya",
+      "Usopp",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi"
+    ]
+  },
+  {
+    "id": "wiki-chapter-39",
+    "volume": 5,
+    "number": 39,
+    "title": "For Whom the Bell Tolls",
+    "summary": "Kuro continues attacking his crew until Luffy tells him to fight him instead. Luffy ends up wrapping his elongated limbs around Kuro so that he cannot escape and wins their fight by using a headbutt. At the same time, Jango is about to kill Kaya after beating Usopp Pirates. But Usopp and Zoro intervene and save Kaya from Jango.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-39",
+      "wt100-55",
+      "wt100-59",
+      "wt100-56",
+      "wt100-4"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 39",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_39",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Buggy",
+      "Kuro",
+      "Jango",
+      "Kaya",
+      "Usopp",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi",
+      "Animal Species/East Blue Saga"
+    ]
+  },
+  {
+    "id": "wiki-chapter-40",
+    "volume": 5,
+    "number": 40,
+    "title": "Usopp's Pirate Crew",
+    "summary": "Luffy finishes his fight with Kuro and tosses him at the rest of the Black Cat Pirates, forcing them to leave the island, never to return. Usopp asks of Kaya and the Usopp Pirates to keep everything that had happened that morning a secret so that the villagers can continue their peaceful lives, free of fear from pirates. They all agree to keep everything a secret. The townspeople notice with surprise that Usopp hasn't come to tell his usual lies to the town as he always does. Meanwhile, Kaya tends to Merry's wounds and reveals her promise in keeping the battle a secret. Elsewhere, Usopp then reveals he has come to a decision: he will leave the village and become a pirate. In his preparation, he disbands the Usopp Pirates.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-39",
+      "wt100-55",
+      "wt100-59",
+      "wt100-4",
+      "wt100-56",
+      "wt100-58",
+      "wt100-51"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 40",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_40",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Buggy",
+      "Kuro",
+      "Jango",
+      "Usopp",
+      "Kaya",
+      "Merry",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi",
+      "Mornin",
+      "Animal Species/East Blue Saga"
+    ]
+  },
+  {
+    "id": "wiki-chapter-41",
+    "volume": 5,
+    "number": 41,
+    "title": "To the Sea",
+    "summary": "As thanks for their help, Kaya and Merry are giving a ship to the crew: the Going Merry. Usopp has made his luggage to become a pirate captain, but Luffy and the others propose to him to join them instead. After their departure, Merry tells Kaya about Usopp's childhood through a flashback.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-10",
+      "wt100-13",
+      "wt100-12",
+      "wt100-11",
+      "wt100-683",
+      "wt100-685",
+      "wt100-120",
+      "wt100-56",
+      "wt100-58",
+      "wt100-63"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 41",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_41",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Shanks",
+      "Benn Beckman",
+      "Yasopp",
+      "Lucky Roux",
+      "Limejuice",
+      "Building Snake",
+      "Bonk Punch",
+      "Kaya",
+      "Merry",
+      "Piiman",
+      "Ninjin",
+      "Tamanegi",
+      "Banchina"
+    ]
+  },
+  {
+    "id": "wiki-chapter-42",
+    "volume": 5,
+    "number": 42,
+    "title": "Yosaku and Johnny",
+    "summary": "The new member Usopp shows his talent by drawing the Jolly Roger for the Going Merry's sail, and being able to shoot accurately with the cannon. The crew then debates what to look for in their next crew member before setting off to search for a cook of the sea.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-39",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 42",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_42",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Buggy",
+      "Yosaku",
+      "Johnny",
+      "Animal Species/East Blue Saga"
+    ]
+  },
+  {
+    "id": "wiki-chapter-43",
+    "volume": 5,
+    "number": 43,
+    "title": "Sanji",
+    "summary": "The Straw Hat Pirates arrive at the Baratie restaurant, where they come into conflict with the Marine Lieutenant Fullbody which results in Luffy indirectly damaging the nearby restaurant. While inside the Baratie, Fullbody attempts to impress his date, only for the Sous Chef serving them to make a fool out of the man. Meanwhile, Luffy tries to negotiate with the Head Chef about the damage inflicted upon his restaurant by the young boy. In an attempt to have revenge upon the waiter that embarrassed him, Fullbody fails and is left in a mangled state by said waiter.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-39",
+      "wt100-86",
+      "wt100-66",
+      "wt100-69",
+      "wt100-5",
+      "wt100-50",
+      "wt100-64",
+      "wt100-65",
+      "wt100-14"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 43",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_43",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Buggy",
+      "Arlong",
+      "Fullbody",
+      "Zeff",
+      "Sanji",
+      "Moodie",
+      "Motzel",
+      "Gaimon",
+      "Yosaku",
+      "Johnny",
+      "Batchee",
+      "Cocox",
+      "Usagihebi",
+      "Lionbuta",
+      "Mikio Itoo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-44",
+    "volume": 5,
+    "number": 44,
+    "title": "Three Tough Cooks",
+    "summary": "Deciding on how Luffy can repay the damages done to his restaurant, things quickly become violent when Luffy refuses the conditions. Meanwhile, the Baratie's staff walk in on Sanji holding a bloodied Fullbody off the ground, and after Zeff and Luffy crash down Fullbody is forced to leave. However one of his men arrives in a panic, and reports that a prisoner has escaped before said prisoner arrives, demanding food from the staff. After being rejected violently, Sanji finds the starving man outside and offers him food despite the other chefs decision, to which after witnessing this Luffy declares he will be his chef.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-77",
+      "wt100-74",
+      "wt100-66",
+      "wt100-72",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 44",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_44",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Krieg",
+      "Gin",
+      "Fullbody",
+      "Lines",
+      "Zeff",
+      "Sanji",
+      "Patty"
+    ]
+  },
+  {
+    "id": "wiki-chapter-45",
+    "volume": 6,
+    "number": 45,
+    "title": "Before the Storm",
+    "summary": "Sanji refuses to leave the restaurant to become a pirate. Gin departs to rejoin his crew.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-77",
+      "wt100-74",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 45",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_45",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Krieg",
+      "Gin",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne"
+    ]
+  },
+  {
+    "id": "wiki-chapter-46",
+    "volume": 6,
+    "number": 46,
+    "title": "An Uninvited Guest",
+    "summary": "Sanji makes his show with the ladies. Two days after Gin's departure, Don Krieg arrives at the restaurant starving and begging for food.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-77",
+      "wt100-74",
+      "wt100-39",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75",
+      "wt100-76",
+      "wt100-50",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 46",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_46",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Krieg",
+      "Gin",
+      "Buggy",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne",
+      "Roxanne",
+      "Gaimon",
+      "Yosaku",
+      "Johnny",
+      "Cocox",
+      "Usagihebi",
+      "Lionbuta"
+    ]
+  },
+  {
+    "id": "wiki-chapter-47",
+    "volume": 6,
+    "number": 47,
+    "title": "The Don's Offer",
+    "summary": "As the Baratie's regular customers flee, Don Krieg claims the restaurant ship, pretending his own is messed up. He then asks for the chefs to feed his crew who are currently starving. As he did previously for Gin and Krieg, Sanji agrees to his request for food, but the other chefs see that as a betrayal. Patty knocks Sanji down, and tries to attack Krieg by launching a canon bullet. When the smoke clears, Krieg is revealed to have been wearing armor underneath his clothes. Undaunted, the chefs try to rush Krieg only be forced back by the gun barrels on Krieg's armor. Krieg threatens the chefs to obey him when Zeff arrives with a pack of food sufficient for 100 men. Then he reveals the reason for the pirates pitiful state - they are survivors from the Grand Line. Krieg on the other hand is shocked, that Red Leg Zeff is still alive.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-77",
+      "wt100-74",
+      "wt100-39",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75",
+      "wt100-50"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 47",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_47",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Krieg",
+      "Gin",
+      "Buggy",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne",
+      "Gaimon",
+      "Cocox",
+      "Usagihebi",
+      "Lionbuta",
+      "Kirinkodanuki"
+    ]
+  },
+  {
+    "id": "wiki-chapter-48",
+    "volume": 6,
+    "number": 48,
+    "title": "Steer Clear",
+    "summary": "Don Krieg is surprised to learn that Zeff is alive. Knowing that Zeff is an infamous former pirate who journeyed to the Grand Line and returned safely, Don Krieg inquires about the journal Zeff maintained while traveling. When Zeff refuses to hand over the journal, Don Krieg announces his intention to steal the journal along with the ship. The Baratie chefs shout that they are ready to protect their restaurant, while Luffy challenges Don Krieg to a fight, exclaiming that he will become the Pirate King. Angered, Don Krieg takes the food back to his subordinates and gives the Baratie chefs and the Straw Hats an ultimatum: either surrender the ship along with Zeff's journal or be killed by him when he returns. After Don Krieg leaves, Gin reveals that Hawk-Eye is responsible for decimating Krieg's fleet. Upon hearing this, Zoro shows a shocked expression.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-77",
+      "wt100-74",
+      "wt100-39",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75",
+      "wt100-50"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 48",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_48",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Krieg",
+      "Gin",
+      "Buggy",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne",
+      "Gaimon",
+      "Cocox",
+      "Usagihebi",
+      "Lionbuta",
+      "Kirinkodanuki"
+    ]
+  },
+  {
+    "id": "wiki-chapter-49",
+    "volume": 6,
+    "number": 49,
+    "title": "Storm",
+    "summary": "The \"hawk-eyed\" man that destroyed Don Krieg's fleet is revealed to be the same man that Zoro has been looking for. Learning that such strange incidences and powerful people will be common in the Grand Line, the Straw Hat Pirates receive even more inspiration to sail it. Despite having just barely made it back from the Grand Line, Don Krieg decides that they will be stealing the Baratie as a means to return to it. As they initiate their siege of the ship, their galleon is suddenly cut in half. As Luffy, Zoro, and Usopp run out to check on the Going Merry, they find it, as well as Nami, missing. Zeff peers into the distance and spots a man drifting towards them on a small boat that he appears to recognize.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-77",
+      "wt100-74",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-78",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 49",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_49",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Krieg",
+      "Gin",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Dracule Mihawk",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-50",
+    "volume": 6,
+    "number": 50,
+    "title": "A Parting of Ways",
+    "summary": "The Straw Hat Pirates discover Nami's betrayal, which is possibly connected to a bounty poster she discovered. The \"Hawk-Eyed\" man Zoro had been seeking out, is revealed to be Dracule Mihawk, the World's Greatest Swordsman. The Straw Hats initially make plans to go after Nami, but this plan is halted when Zoro decides to challenge Mihawk to a duel. Nami sails away deeply hurt about leaving good people behind, but also wonders if she'll ever be free.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-77",
+      "wt100-39",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75",
+      "wt100-78",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 50",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_50",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Krieg",
+      "Buggy",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne",
+      "Dracule Mihawk",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-51",
+    "volume": 6,
+    "number": 51,
+    "title": "Zolo Overboard",
+    "summary": "Roronoa Zoro begins battle with Dracule Mihawk, hoping to earn the title of World's Greatest Swordsman. However Mihawk turns out to be more powerful than Zoro could have ever hoped to imagine, and he is easily bested. While Mihawk does not take him seriously as an opponent by initially fighting him with a small knife, the strength of will Zoro demonstrates greatly impresses him to the point that he draws his real blade out of respect. While this does not change the inevitability of Zoro's defeat, Mihawk promises that he will remember his name. Zoro is cut down with all but one of his swords destroyed, but he humbles himself and seems to find solace in having been able to witness the greatest in the world.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-39",
+      "wt100-22",
+      "wt100-77",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-33",
+      "wt100-78",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [
+      "wiki-tech-oni-giri",
+      "wiki-tech-tora-gari"
+    ],
+    "sourceTitle": "Chapter 51",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_51",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Buggy",
+      "Alvida",
+      "Krieg",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Shimotsuki Kuina",
+      "Dracule Mihawk",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-52",
+    "volume": 6,
+    "number": 52,
+    "title": "The Oath",
+    "summary": "Roronoa Zoro has been utterly defeated and nearly killed by Dracule Mihawk. Luffy attacks Mihawk out of anger, but he reveals that Zoro is still alive. Johnny, Yosaku, and Usopp recover Zoro's body from the ocean and administer what first aid they can. After regaining consciousness, Zoro tearfully promises his captain that he will never lose again until he defeats Mihawk and becomes the World's Greatest Swordsman. After Mihawk's departure, Usopp, Zoro, Johnny, and Yosaku set off to retrieve Nami. Luffy on the other hand stays back and decides to help the chefs of the Baratie against Don Krieg.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-77",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-78",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 52",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_52",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Krieg",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Dracule Mihawk",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-53",
+    "volume": 6,
+    "number": 53,
+    "title": "Mackerel Head",
+    "summary": "Don Krieg orders his crew to attack Baratie so that he may take it for himself. Luffy makes a deal with Zeff to get out of his servitude as a waiter for a year. Luffy starts fighting against Krieg and his crew. The cooks of the Baratie prepare for combat and Sanji shows his proficiency in kicking for the first time.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-39",
+      "wt100-22",
+      "wt100-77",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75",
+      "wt100-78"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 53",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_53",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Buggy",
+      "Alvida",
+      "Krieg",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne",
+      "Dracule Mihawk"
+    ]
+  },
+  {
+    "id": "wiki-chapter-54",
+    "volume": 7,
+    "number": 54,
+    "title": "Pearl",
+    "summary": "The Baratie chefs wage war on the Don Krieg pirates. Both asserting to be more powerful. Sanji fights one of Don Krieg's men claiming to be invincible, Pearl.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-39",
+      "wt100-22",
+      "wt100-77",
+      "wt100-79",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 54",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_54",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Buggy",
+      "Alvida",
+      "Krieg",
+      "Pearl",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne"
+    ]
+  },
+  {
+    "id": "wiki-chapter-55",
+    "volume": 7,
+    "number": 55,
+    "title": "Jungle Blood",
+    "summary": "After receiving his first bloody nose, Pearl is driven crazy with anger. However, Sanji continues to fight him. Meanwhile, Gin has taken Zeff hostage.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-39",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-77",
+      "wt100-74",
+      "wt100-79",
+      "wt100-80",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 55",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_55",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Buggy",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Krieg",
+      "Gin",
+      "Pearl",
+      "Ideaman",
+      "Zeff",
+      "Sanji",
+      "Patty"
+    ]
+  },
+  {
+    "id": "wiki-chapter-56",
+    "volume": 7,
+    "number": 56,
+    "title": "I Refuse",
+    "summary": "Sanji decides to sacrifice himself in order to save Zeff. While doing that, Sanji remembers 9 years ago when he first met Zeff.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-77",
+      "wt100-74",
+      "wt100-79",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 56",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_56",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Krieg",
+      "Gin",
+      "Pearl",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne"
+    ]
+  },
+  {
+    "id": "wiki-chapter-57",
+    "volume": 7,
+    "number": 57,
+    "title": "If You Have a Dream",
+    "summary": "Sanji's flashback: Sanji's ship is attacked by Zeff and his crew. Suddenly a storm comes up and Sanji goes overboard due to a massive wave. Against all expectation, Zeff jumps into the sea to save him. A few days after the storm, they find themselves stranded at sea on a barren, inhospitable rock.",
+    "characterIds": [
+      "wt100-69",
+      "wt100-39",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-5"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 57",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_57",
+    "sourceCharacterTitles": [
+      "Zeff",
+      "Buggy",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Buggy Pirates",
+      "Sanji"
+    ]
+  },
+  {
+    "id": "wiki-chapter-58",
+    "volume": 7,
+    "number": 58,
+    "title": "The Crap-Geezer",
+    "summary": "Sanji's flashback: Sanji's 85 foodless days.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-74",
+      "wt100-79",
+      "wt100-69",
+      "wt100-5"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 58",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_58",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Gin",
+      "Pearl",
+      "Zeff",
+      "Sanji"
+    ]
+  },
+  {
+    "id": "wiki-chapter-59",
+    "volume": 7,
+    "number": 59,
+    "title": "Sanji's Debt",
+    "summary": "In order to save Sanji's life, Luffy decides to destroy the Baratie. While they are arguing, Pearl attacks them but Gin knocks him out as he wants to kill Sanji himself.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-77",
+      "wt100-74",
+      "wt100-79",
+      "wt100-10",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 59",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_59",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Krieg",
+      "Gin",
+      "Pearl",
+      "Shanks",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne"
+    ]
+  },
+  {
+    "id": "wiki-chapter-60",
+    "volume": 7,
+    "number": 60,
+    "title": "Resolution",
+    "summary": "The fierce battle between Sanji vs Gin and Luffy vs Don Krieg begins.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-77",
+      "wt100-74",
+      "wt100-81",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 60",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_60",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Krieg",
+      "Gin",
+      "Hustle",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne"
+    ]
+  },
+  {
+    "id": "wiki-chapter-61",
+    "volume": 7,
+    "number": 61,
+    "title": "The Demon",
+    "summary": "Sanji and Gin start to fight but their strength is equal. Meanwhile, Luffy attacks Don Krieg, but the armored pirate does not want a direct fight and, instead, pushes back Luffy by throwing needles at him. At the same time, Gin has made a decisive move toward Sanji, but when he is about to give the final blow, he stops himself in tears, unable to kill the only man who has ever shown him kindness.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-77",
+      "wt100-74",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 61",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_61",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Krieg",
+      "Gin",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne"
+    ]
+  },
+  {
+    "id": "wiki-chapter-62",
+    "volume": 7,
+    "number": 62,
+    "title": "MH5",
+    "summary": "Don Krieg is disappointed with Gin's decision to disobey him and refuse to kill Sanji. He decides to kill Gin, his own commander, through his poison gas MH5. Luffy and Sanji attempt to convince Gin that his captain is not worth his life. However, Gin accept his fate as a failure. He has betrayed his captain and feels he deserves to die. When Don Krieg launches the poison bomb, Luffy steals two masks and tosses them to Sanji and Gin. When he realizes that there is none for him left, one is miraculously landing next to him. Once the poison smoke clears, everyone is safe, except Gin who had sent back his mask to Luffy.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-43",
+      "wt100-77",
+      "wt100-74",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 62",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_62",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Richie",
+      "Krieg",
+      "Gin",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne",
+      "Kumate Tribe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-63",
+    "volume": 8,
+    "number": 63,
+    "title": "I Won't Die",
+    "summary": "Luffy runs after Don Krieg as he is upset for the way he has treated Gin. Meanwhile, Patty and Carne give Gin extracted antidote from a gas mask, as he is suffering from Krieg's poison bomb. Don Krieg is amused by Luffy's move and fires several spikes at him from his weapon. Luffy does not waver and accepts the pain in order to get closer to the enemy. Finally, Luffy reaches Don Krieg after sustaining several stab wounds and readies an attack. Krieg protects himself behind a cape made of spikes at the last second. Despite this protection, Luffy lands a confident punch to Krieg's jaw through the spiked cape, sending him to the ground. Luffy proclaims he will not die here.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-77",
+      "wt100-74",
+      "wt100-43",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 63",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_63",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Krieg",
+      "Gin",
+      "Richie",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne",
+      "Kumate Tribe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-64",
+    "volume": 8,
+    "number": 64,
+    "title": "The Mighty Battle Spear",
+    "summary": "Don Krieg brandishes his strongest weapon, the Great Battle Spear, which he uses to seemingly dominate Luffy. However, Luffy manages to break the tip of it.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-77",
+      "wt100-74",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 64",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_64",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Krieg",
+      "Gin",
+      "Kagikko",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne"
+    ]
+  },
+  {
+    "id": "wiki-chapter-65",
+    "volume": 8,
+    "number": 65,
+    "title": "Prepared",
+    "summary": "While Don Krieg brags to Luffy that only the strongest can win and that his armor is indestructible, Luffy believes he is strong enough to win the fight against Krieg. Each time Don Krieg throws a new attack at him, Luffy dodges and punches him. Finally after a Gomu Gomu no Bazooka attack, Don Krieg's armor is shattered into pieces.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-77",
+      "wt100-39",
+      "wt100-22",
+      "wt100-69",
+      "wt100-5"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-pistol",
+      "wiki-tech-gomu-gomu-no-bazooka",
+      "wiki-tech-gomu-gomu-no-gatling"
+    ],
+    "sourceTitle": "Chapter 65",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_65",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Krieg",
+      "Buggy",
+      "Alvida",
+      "Zeff",
+      "Sanji"
+    ]
+  },
+  {
+    "id": "wiki-chapter-66",
+    "volume": 8,
+    "number": 66,
+    "title": "The Chewed-up Spear",
+    "summary": "His armor destroyed, Don Krieg shows his last trick by catching Luffy with a net. Unable to swim, the rubber boy will drown. However, Luffy has not said his last word, uncaring about falling into the sea soon, he sends to Don Krieg an ultimate attack which knocks the pirate out. Amazed by Luffy's ability to never resign, Sanji jumps into the sea in order to save him. When they come back to the surface, Don Krieg has woken up and his going berserk, but Gin who have seen his captain defeated, decides to put an end to this fight himself and quickly knocks out a weak Krieg.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-77",
+      "wt100-74",
+      "wt100-39",
+      "wt100-42",
+      "wt100-48",
+      "wt100-22",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-tsuchi"
+    ],
+    "sourceTitle": "Chapter 66",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_66",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Krieg",
+      "Gin",
+      "Buggy",
+      "Mohji",
+      "Cabaji",
+      "Alvida",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne"
+    ]
+  },
+  {
+    "id": "wiki-chapter-67",
+    "volume": 8,
+    "number": 67,
+    "title": "The Soup",
+    "summary": "Luffy recovers from his fight after the departure of Krieg Pirates. He realizes that his debt to Zeff has been fulfilled and is now free to leave. He wants Sanji to come with but the stubborn cook does not want to leave the restaurant, despite his dream of finding the All Blue. When lunchtime arrives, they reach the kitchen where all the chefs are already eating. Sanji is bullied by the others, mocking his cooking talent by treating his soup as the worst they have ever eaten. Sanji replies angrily that his soup is as good as Zeff's. Zeff punches him for the effrontery. Sanji leaves the room, full of anger.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-77",
+      "wt100-74",
+      "wt100-79",
+      "wt100-43",
+      "wt100-69",
+      "wt100-5",
+      "wt100-71",
+      "wt100-75"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 67",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_67",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Krieg",
+      "Gin",
+      "Pearl",
+      "Richie",
+      "Zeff",
+      "Sanji",
+      "Patty",
+      "Carne",
+      "Kumate Tribe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-68",
+    "volume": 8,
+    "number": 68,
+    "title": "The Fourth Person",
+    "summary": "Sanji becomes the fourth member of the Straw Hat Pirates.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-5",
+      "wt100-3",
+      "wt100-39",
+      "wt100-43",
+      "wt100-69",
+      "wt100-71",
+      "wt100-75",
+      "wt100-64"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 68",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_68",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Sanji",
+      "Nami",
+      "Buggy",
+      "Richie",
+      "Zeff",
+      "Patty",
+      "Carne",
+      "Kumate Tribe",
+      "Yosaku"
+    ]
+  },
+  {
+    "id": "wiki-chapter-69",
+    "volume": 8,
+    "number": 69,
+    "title": "Arlong Park",
+    "summary": "Yosaku explains to Luffy and Sanji about the Seven Warlords of the Sea. Meanwhile, Nezumi, a corrupt Marine officer, pays a visit to Arlong and his pirate crew.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-78",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-95",
+      "wt100-3",
+      "wt100-85",
+      "wt100-88",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 69",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_69",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Dracule Mihawk",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Kuroobi",
+      "Nami",
+      "Nezumi",
+      "Chabo",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-70",
+    "volume": 8,
+    "number": 70,
+    "title": "The Great Adventure of Usopp the Man",
+    "summary": "Zoro arrives at Arlong Park. Nojiko is introduced and revealed to be Nami's sister.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-88",
+      "wt100-89",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 70",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_70",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Chabo",
+      "Nojiko",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-71",
+    "volume": 8,
+    "number": 71,
+    "title": "Lords of All Creation",
+    "summary": "Usopp discovers Nami's family and what her true intentions were when joining the Straw Hats. Zoro is captured by Arlong in Arlong Park and discovers that Nami has been working with Arlong from day one.",
+    "characterIds": [
+      "wt100-2",
+      "wt100-4",
+      "wt100-39",
+      "wt100-43",
+      "wt100-86",
+      "wt100-94",
+      "wt100-95",
+      "wt100-3",
+      "wt100-89",
+      "wt100-90"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 71",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_71",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Usopp",
+      "Buggy",
+      "Richie",
+      "Arlong",
+      "Chew",
+      "Kuroobi",
+      "Nami",
+      "Nojiko",
+      "Genzo",
+      "Kumate Tribe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-72",
+    "volume": 9,
+    "number": 72,
+    "title": "Proper Living",
+    "summary": "Arlong tries to kill Genzo in order to remind the people of Cocoyasi Village that it is useless to resist the will of the Arlong Pirates. Genzo is saved thanks to Usopp.",
+    "characterIds": [
+      "wt100-2",
+      "wt100-4",
+      "wt100-86",
+      "wt100-94",
+      "wt100-95",
+      "wt100-3",
+      "wt100-91",
+      "wt100-92",
+      "wt100-39",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-22",
+      "wt100-89",
+      "wt100-90"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 72",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_72",
+    "sourceCharacterTitles": [
+      "Roronoa Zoro",
+      "Usopp",
+      "Arlong",
+      "Chew",
+      "Kuroobi",
+      "Nami",
+      "Kaneshiro",
+      "Pisaro",
+      "Buggy",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Alvida",
+      "Nojiko",
+      "Genzo",
+      "Kumate Tribe"
+    ]
+  },
+  {
+    "id": "wiki-chapter-73",
+    "volume": 9,
+    "number": 73,
+    "title": "Monsters of the Grand Line",
+    "summary": "Zoro knocks out all of the fish-men and has Hatchan tow him to Cocoyasi Village. Sanji, Luffy, and Yosaku run into Momoo, the monster of Grand Line who destroyed Gosa Village and chase him off. Arlong comes back to find what Zoro has done. Usopp gets captured and Zoro runs back to Arlong Park to save him, while Sanji, Luffy, and Yosaku have Momoo tow them to Arlong Park.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-39",
+      "wt100-42",
+      "wt100-48",
+      "wt100-22",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-95",
+      "wt100-3",
+      "wt100-93",
+      "wt100-64"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 73",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_73",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Buggy",
+      "Mohji",
+      "Cabaji",
+      "Alvida",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Kuroobi",
+      "Nami",
+      "Momoo",
+      "Yosaku"
+    ]
+  },
+  {
+    "id": "wiki-chapter-74",
+    "volume": 9,
+    "number": 74,
+    "title": "Business",
+    "summary": "Arlong's fish-men had been beaten by Zoro while Arlong and his crew were in Cocoyasi Village. In order to regain the trust of the pirates who start to think that she let the swordsman escape, Nami fights with Usopp who has been captured. From Arlong's point of view, he watches her stabs him and plunge him into the sea. Satisfied by this behavior to be worthy of a true Arlong Pirate, the fish-men congratulate her. However she tells him that she only did that so that she could buy the village Arlong promised her. From a distance, Johnny watches unseen and quickly runs back towards the village. Meanwhile, Hatchan returns and realizes he has been tricked by Zoro. Luffy and Sanji, pulled by the sea monster Momoo, finally arrive in view of Arlong Park.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-39",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-22",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-95",
+      "wt100-3",
+      "wt100-92",
+      "wt100-93",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 74",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_74",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Buggy",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Alvida",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Kuroobi",
+      "Nami",
+      "Pisaro",
+      "Momoo",
+      "Kumate Tribe",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-75",
+    "volume": 9,
+    "number": 75,
+    "title": "Of Maps and Fish-Men",
+    "summary": "Luffy and Sanji arrive on Nami's home island. The two of them regroup with Zoro and Johnny. Meanwhile, the Arlong Pirates show off their incredible power by easily destroying a Marine ship led by Commodore Pudding Pudding.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-5",
+      "wt100-39",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-22",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-95",
+      "wt100-3",
+      "wt100-97",
+      "wt100-93",
+      "wt100-89",
+      "wt100-90",
+      "wt100-88",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 75",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_75",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Sanji",
+      "Buggy",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Alvida",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Kuroobi",
+      "Nami",
+      "Take",
+      "Shioyaki",
+      "Momoo",
+      "Pudding Pudding",
+      "Nojiko",
+      "Genzo",
+      "Chabo",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-76",
+    "volume": 9,
+    "number": 76,
+    "title": "Sleep",
+    "summary": "Nami tells the Straw Hat Pirates to leave the island and stay away from Arlong. She tells Luffy that they are not her crewmates and that she never saw them as such. Luffy decides to go to sleep on the spot, which infuriates her. Meanwhile, Usopp is revealed to be alive, and Nami faked his death in order to save him from being killed by Arlong. Back at Luffy's group, Nojiko appears and begins to tell the crew the story of Nami's past on the condition that they leave after she is finished. Meanwhile, the 16th Branch of the Marines, along with their captain, Nezumi, arrive at the village. Nezumi asks Genzo to guide them to Nami's house.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-3",
+      "wt100-85",
+      "wt100-89",
+      "wt100-90",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 76",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_76",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Nami",
+      "Nezumi",
+      "Nojiko",
+      "Genzo",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-77",
+    "volume": 9,
+    "number": 77,
+    "title": "The First Step Toward a Dream",
+    "summary": "Nami's childhood, love is more important than blood.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-95",
+      "wt100-3",
+      "wt100-89",
+      "wt100-90"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 77",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_77",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Kuroobi",
+      "Nami",
+      "Nojiko",
+      "Genzo",
+      "Bell-mère",
+      "Nako"
+    ]
+  },
+  {
+    "id": "wiki-chapter-78",
+    "volume": 9,
+    "number": 78,
+    "title": "\"Belle-Mère\"",
+    "summary": "10 years ago, Arlong took a tribute from every adult and child in Cocoyasi Village as he declared it his property. Bell-mère could not pay for her and her two adoptive daughters. She sacrificed herself instead of admitting that the little girls were not related to her.",
+    "characterIds": [
+      "wt100-4",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-95",
+      "wt100-91",
+      "wt100-92",
+      "wt100-89",
+      "wt100-90",
+      "wt100-3",
+      "wt100-56"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 78",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_78",
+    "sourceCharacterTitles": [
+      "Usopp",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Kuroobi",
+      "Kaneshiro",
+      "Pisaro",
+      "Nojiko",
+      "Genzo",
+      "Nami",
+      "Bell-mère",
+      "Nako",
+      "Kaya"
+    ]
+  },
+  {
+    "id": "wiki-chapter-79",
+    "volume": 9,
+    "number": 79,
+    "title": "To Live",
+    "summary": "After being kidnapped, Nami became a member of Arlong's crew.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-95",
+      "wt100-92",
+      "wt100-3",
+      "wt100-89",
+      "wt100-90"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 79",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_79",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Kuroobi",
+      "Pisaro",
+      "Nami",
+      "Nojiko",
+      "Genzo",
+      "Bell-mère",
+      "Nako",
+      "Mummy Mee",
+      "Daddy Dee"
+    ]
+  },
+  {
+    "id": "wiki-chapter-80",
+    "volume": 9,
+    "number": 80,
+    "title": "A Thief Is a Thief",
+    "summary": "Nojiko tells the Straw Hats of Nami's burden in saving Cocoyasi Village. She tells them that Nami had spent the last eight years trying to raise 100,000,000 so that she could buy the village's and her own freedom from Arlong. Meanwhile, the Marine Captain of the 16th Branch, Nezumi, arrives at Cocoyasi Village to steal all the money that Nami had earned over the years. Nami realizes that the Marines coming after her money was actually Arlong's doing, so she confronts him, saying he broke their agreement. Arlong laughs and grabs Nami by the mouth, saying he technically never broke their agreement.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-95",
+      "wt100-3",
+      "wt100-85",
+      "wt100-89",
+      "wt100-90"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 80",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_80",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Kuroobi",
+      "Nami",
+      "Nezumi",
+      "Nojiko",
+      "Genzo"
+    ]
+  },
+  {
+    "id": "wiki-chapter-81",
+    "volume": 9,
+    "number": 81,
+    "title": "Tears",
+    "summary": "After Arlong has Nezumi steal the money Nami saved up to purchase Cocoyasi Village's freedom, she agrees to save up the money again from scratch. However, the villagers have had enough, and rise up against Arlong despite Nami's pleas. Luffy then comes upon Nami, and she breaks down, asking for his help to defeat Arlong. Luffy and the Straw Hats readily oblige, and Luffy breaks into Arlong Park as he confronts Arlong.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-94",
+      "wt100-95",
+      "wt100-3",
+      "wt100-85",
+      "wt100-89",
+      "wt100-90",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [
+      "wiki-tech-luffy-punch"
+    ],
+    "sourceTitle": "Chapter 81",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_81",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Chew",
+      "Kuroobi",
+      "Nami",
+      "Nezumi",
+      "Nojiko",
+      "Genzo",
+      "Bell-mère",
+      "Nako",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-82",
+    "volume": 10,
+    "number": 82,
+    "title": "OK, Let's STAND UP!",
+    "summary": "Luffy confronts Arlong while the rest of the crew fight the other fish-men.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-95",
+      "wt100-3",
+      "wt100-91",
+      "wt100-93",
+      "wt100-89",
+      "wt100-90",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [
+      "wiki-tech-gomu-gomu-no-kazaguruma"
+    ],
+    "sourceTitle": "Chapter 82",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_82",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Kuroobi",
+      "Nami",
+      "Kaneshiro",
+      "Shioyaki",
+      "Momoo",
+      "Nojiko",
+      "Genzo",
+      "Nako",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-83",
+    "volume": 10,
+    "number": 83,
+    "title": "Luffy in Black",
+    "summary": "Luffy, Zoro, Usopp, and Sanji confront Arlong, Hatchan, Chew, and Kuroobi. Usopp accidentally attacks Chew and is chased out of Arlong Park, while Luffy ends up getting his feet stuck in the concrete. Arlong picks up the concrete Luffy is trapped in and throws him into the pool, leaving him stuck underwater.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-95",
+      "wt100-93",
+      "wt100-21",
+      "wt100-27",
+      "wt100-89",
+      "wt100-90",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 83",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_83",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Kuroobi",
+      "Momoo",
+      "Koby",
+      "Helmeppo",
+      "Nojiko",
+      "Genzo",
+      "Nako",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-84",
+    "volume": 10,
+    "number": 84,
+    "title": "Zombie",
+    "summary": "Genzo and Nojiko go to rescue Luffy from his underwater entrapment while Zoro and Sanji take on the Arlong Pirates. Although Zoro is weakened by the injuries he suffered against Mihawk, and Sanji receives a powerful Fish-Man Karate blow, the two shake it off and press on.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-95",
+      "wt100-21",
+      "wt100-27",
+      "wt100-89",
+      "wt100-90",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 84",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_84",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Kuroobi",
+      "Koby",
+      "Helmeppo",
+      "Nojiko",
+      "Genzo",
+      "Nako",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-85",
+    "volume": 10,
+    "number": 85,
+    "title": "Three Swords vs. Six",
+    "summary": "Despite his heavy injuries, Zoro continues to fight Hatchan, and defeats him despite the fish-man having six swords to his three. Sanji then confronts Kuroobi, while Genzo and Nojiko go underwater to try to save the drowning Luffy.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-95",
+      "wt100-78",
+      "wt100-21",
+      "wt100-27",
+      "wt100-89",
+      "wt100-90",
+      "wt100-26",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 85",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_85",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Kuroobi",
+      "Dracule Mihawk",
+      "Koby",
+      "Helmeppo",
+      "Nojiko",
+      "Genzo",
+      "Nako",
+      "Rika",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-86",
+    "volume": 10,
+    "number": 86,
+    "title": "Heroism vs. Fish-Man Cruelty",
+    "summary": "Sanji goes underwater to free Luffy from his concrete encasement, noticing that Genzo and Nojiko are trying to resuscitate him by pulling his neck above water. However, Kuroobi chases Sanji underwater and overpowers him with Fish-Man Karate attacks. Before Sanji can be finished off, however, he covers Kuroobi's gills and returns to the shore, where Kuroobi confronts him. On land, Sanji is able to assault Kuroobi with several attacks before ultimately finishing him off with Mouton Shot.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-95",
+      "wt100-3",
+      "wt100-89",
+      "wt100-90",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [
+      "wiki-tech-mouton-shot"
+    ],
+    "sourceTitle": "Chapter 86",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_86",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Kuroobi",
+      "Nami",
+      "Nojiko",
+      "Genzo",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-87",
+    "volume": 10,
+    "number": 87,
+    "title": "It's All Over!!",
+    "summary": "After Sanji defeats Kuroobi, he and Zoro are confronted by Arlong as the work to free and revive Luffy continues. Meanwhile, Usopp plays dead to escape from Chew, but eventually grows disgusted with his cowardice and confronts Chew again. Chew overwhelms Usopp with his attacks, but Usopp manages to play tricks on him and successfully causes a bottle of rum to rupture on him. With Chew covered in alcohol, Usopp sets him ablaze with Kaen Boshi.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-95",
+      "wt100-3",
+      "wt100-21",
+      "wt100-27",
+      "wt100-89",
+      "wt100-90",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 87",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_87",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Kuroobi",
+      "Nami",
+      "Koby",
+      "Helmeppo",
+      "Nojiko",
+      "Genzo",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-88",
+    "volume": 10,
+    "number": 88,
+    "title": "Die!!!",
+    "summary": "Usopp defeats Chew. Nami starts heading to Arlong Park. Sanji and Zoro are having a hard time against Arlong. The fish-man tries to convince her to be his cartographer by blackmailing her with the villagers life, but Nami refuses. Luffy wakes up and Sanji starts swimming to free his legs, while Zoro keeps Arlong occupied. Usopp arrives and shoots Arlong to distract him. Hatchan begins to get up.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-94",
+      "wt100-35",
+      "wt100-21",
+      "wt100-27",
+      "wt100-30",
+      "wt100-89",
+      "wt100-90",
+      "wt100-3",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [
+      "wiki-tech-poitrine",
+      "wiki-tech-poitrine-shoot"
+    ],
+    "sourceTitle": "Chapter 88",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_88",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Chew",
+      "Ripper",
+      "Koby",
+      "Helmeppo",
+      "Morgan",
+      "Nojiko",
+      "Genzo",
+      "Nami",
+      "Nako",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-89",
+    "volume": 10,
+    "number": 89,
+    "title": "Trade-off",
+    "summary": "Sanji goes underwater to free Luffy, but Arlong overwhelms Zoro and a revived Hatchan chases after Sanji. However, Hatchan's wounds reopen and Sanji successfully frees Luffy. Luffy then begins his attack on Arlong.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-87",
+      "wt100-21",
+      "wt100-27",
+      "wt100-30",
+      "wt100-89",
+      "wt100-90",
+      "wt100-3",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 89",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_89",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Hatchan",
+      "Koby",
+      "Helmeppo",
+      "Morgan",
+      "Nojiko",
+      "Genzo",
+      "Nami",
+      "Nako",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-90",
+    "volume": 10,
+    "number": 90,
+    "title": "What Can You Do?",
+    "summary": "Arlong proclaims his views of the superiority of fish-men over humans to Luffy, demonstrating the power of his teeth by biting into a stone pillar. Though Luffy admits that he lacks many innate talents, he states that he does have the strength to beat Arlong, and shatters the fish-man's teeth during their battle. Arlong's teeth grow back, and he brings out two sets of them to hold in his hands as weapons. However, Luffy uses one of Arlong's beaten henchmen to intercept Arlong's weapons, and gets an idea from this.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-21",
+      "wt100-27",
+      "wt100-89",
+      "wt100-90",
+      "wt100-3",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [
+      "wiki-tech-luffy-swing"
+    ],
+    "sourceTitle": "Chapter 90",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_90",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Koby",
+      "Helmeppo",
+      "Nojiko",
+      "Genzo",
+      "Nami",
+      "Nako",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-91",
+    "volume": 11,
+    "number": 91,
+    "title": "Darts",
+    "summary": "Luffy attempts to use Arlong's teeth against him, but does not have the strength to use them like the fish-man can. Arlong then starts overwhelming Luffy with his teeth and nose, but Luffy does not back down and swears to destroy his nose.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-21",
+      "wt100-27",
+      "wt100-89",
+      "wt100-90",
+      "wt100-3",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 91",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_91",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Koby",
+      "Helmeppo",
+      "Nojiko",
+      "Genzo",
+      "Nami",
+      "Nako",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-92",
+    "volume": 11,
+    "number": 92,
+    "title": "Happiness",
+    "summary": "Luffy manages to successfully counter Arlong's attacks and pummels the fish-man, but Arlong only enters an enraged state and attacks with his sword Kiribachi. Luffy and Arlong's fight takes them into the cartography room inside the main building, and Luffy becomes enraged when Arlong talks about using Nami for his personal gain.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-434",
+      "wt100-35",
+      "wt100-21",
+      "wt100-27",
+      "wt100-30",
+      "wt100-89",
+      "wt100-90",
+      "wt100-3",
+      "wt100-64",
+      "wt100-65",
+      "wt100-20"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 92",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_92",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Monkey D. Garp",
+      "Bogard",
+      "Ripper",
+      "Koby",
+      "Helmeppo",
+      "Morgan",
+      "Nojiko",
+      "Genzo",
+      "Nami",
+      "Yosaku",
+      "Johnny",
+      "Lord of the Coast"
+    ]
+  },
+  {
+    "id": "wiki-chapter-93",
+    "volume": 11,
+    "number": 93,
+    "title": "Going Down",
+    "summary": "Luffy works to destroy the room where Arlong forced Nami to make maps, and he manages to break the fish-man's nose. He then sends Arlong crashing all the way through Arlong Park's tower, demolishing it.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-434",
+      "wt100-21",
+      "wt100-27",
+      "wt100-30",
+      "wt100-89",
+      "wt100-90",
+      "wt100-3",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 93",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_93",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Monkey D. Garp",
+      "Bogard",
+      "Koby",
+      "Helmeppo",
+      "Morgan",
+      "Nojiko",
+      "Genzo",
+      "Nami",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-94",
+    "volume": 11,
+    "number": 94,
+    "title": "The Other Villain",
+    "summary": "Arlong Park is in ruins, but the citizens do not know who won the fight. Everybody is worried for Luffy's. When he appears at the top of the ruined building's roof everyone is filled with joy. The Arlong Pirates have been beaten, putting an end to eight long years of suffering. So when the Marine, Nezumi, makes his appearance and claims Arlong's money, the village becomes upset. Nami strikes him with her staff and tells him Arlong's money belongs to the villagers. Nezumi is forced out of the island but continues to threaten Luffy with revenge. Back at his base, he requests the Marine Headquarters to put Luffy on the Marine wanted list. Back in Cocoyasi Village, while Dr. Nako is treating Zoro's wounds, Nami makes her decision in front of Bell-mère's grave—she will become a pirate.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-86",
+      "wt100-85",
+      "wt100-89",
+      "wt100-90",
+      "wt100-103",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 94",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_94",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Arlong",
+      "Nezumi",
+      "Nojiko",
+      "Genzo",
+      "Nako",
+      "Sam",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-95",
+    "volume": 11,
+    "number": 95,
+    "title": "Spin, Pinwheel",
+    "summary": "The Straw Hats continue partying with the Cocoyasi Village residents to celebrate their freedom. Nami decides to replace her Arlong Pirates tattoo with a new one, consisting of an orange and a pinwheel. Genzo, who had started wearing the pinwheel to make her smile as a baby, makes Luffy promise to never take away Nami's smile. The next day, the Straw Hats part ways with the villagers, Johnny, and Yosaku, and Nami decides to leave all her stolen money with the villagers before she leaves. However, she does pickpocket them as she runs onto the ship, and happily bids everyone farewell as she and the crew sail away.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-21",
+      "wt100-27",
+      "wt100-30",
+      "wt100-88",
+      "wt100-89",
+      "wt100-90",
+      "wt100-64",
+      "wt100-65"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 95",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_95",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Bogard",
+      "Koby",
+      "Helmeppo",
+      "Morgan",
+      "Chabo",
+      "Nojiko",
+      "Genzo",
+      "Bell-mère",
+      "Nako",
+      "Yosaku",
+      "Johnny"
+    ]
+  },
+  {
+    "id": "wiki-chapter-96",
+    "volume": 11,
+    "number": 96,
+    "title": "The Meanest Man in the East",
+    "summary": "After taking back their navigator, the Straw Hats are making a stop in Loguetown before heading to the Grand Line. In this town, Roger was executed, starting the Great Pirate Era. Luffy decides to see for himself the execution platform while the others go shopping. On his way, Zoro bumps into an awkward Marine girl who is the spitting image of Kuina. Meanwhile, the Marines have decided to put a bounty of 30,000,000 on Luffy's head. The world starts to know about his exploits. Elsewhere, Mihawk visits Shanks and informs him of the bounty.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-10",
+      "wt100-12",
+      "wt100-13",
+      "wt100-11",
+      "wt100-78",
+      "wt100-108",
+      "wt100-39",
+      "wt100-77",
+      "wt100-86",
+      "wt100-107",
+      "wt100-261",
+      "wt100-263",
+      "wt100-106",
+      "wt100-117",
+      "wt100-27",
+      "wt100-30",
+      "wt100-15",
+      "wt100-19"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 96",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_96",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Shanks",
+      "Yasopp",
+      "Benn Beckman",
+      "Lucky Roux",
+      "Dracule Mihawk",
+      "Koze and Packy",
+      "Buggy",
+      "Krieg",
+      "Arlong",
+      "John Giant",
+      "Stainless",
+      "Cancer",
+      "Brannew",
+      "Tashigi",
+      "Helmeppo",
+      "Morgan",
+      "Makino",
+      "Woop Slap"
+    ]
+  },
+  {
+    "id": "wiki-chapter-97",
+    "volume": 11,
+    "number": 97,
+    "title": "Kitetsu III",
+    "summary": "Zoro goes to the Arms Shop to buy swords, and with the help of the woman he met earlier he finds the high-grade Sandai Kitetsu. After testing his luck against the cursed blade by playing roulette with it and emerging intact, the owner Ipponmatsu agrees to give him the sword as well as his prized heirloom Yubashiri. Unbeknownst to Zoro, the woman is actually a Marine named Tashigi, who wishes to retrieve all the high-grade swords from criminals like himself, although she does not know who he is.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-5",
+      "wt100-22",
+      "wt100-115",
+      "wt100-117",
+      "wt100-21",
+      "wt100-27",
+      "wt100-110",
+      "wt100-111",
+      "wt100-112"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 97",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_97",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Sanji",
+      "Alvida",
+      "Bogard",
+      "Smoker",
+      "Tashigi",
+      "Koby",
+      "Helmeppo",
+      "Hanger",
+      "Ipponmatsu",
+      "Ipponume"
+    ]
+  },
+  {
+    "id": "wiki-chapter-98",
+    "volume": 11,
+    "number": 98,
+    "title": "Dark Clouds",
+    "summary": "While he is standing at the top of Roger's execution platform, Luffy is addressed by a mysterious beautiful lady who claims to know him. It is in fact Alvida, who has been metamorphosed after eating a Devil Fruit. She has teamed up with the Buggy Pirates who also make their appearance in order to take their revenge. Cabaji succeeds in catching Luffy and immobilizes his head in preparation to his execution. When they hear about the ruckus that occurs in the plaza, the Marine's captain, Smoker, and his sergeant, Tashigi, take the steps necessary to arrest the pirates. Meanwhile, the other Straw Hats find each other and are shocked to see what happened to Luffy.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-39",
+      "wt100-22",
+      "wt100-48",
+      "wt100-115",
+      "wt100-117",
+      "wt100-114",
+      "wt100-21",
+      "wt100-27",
+      "wt100-116"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 98",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_98",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Buggy",
+      "Alvida",
+      "Cabaji",
+      "Bogard",
+      "Smoker",
+      "Tashigi",
+      "Mashikaku",
+      "Koby",
+      "Helmeppo",
+      "Sapi",
+      "Yu"
+    ]
+  },
+  {
+    "id": "wiki-chapter-99",
+    "volume": 11,
+    "number": 99,
+    "title": "Luffy Died",
+    "summary": "When Luffy is about to be beheaded by Buggy, he claims as his last words that he will be the next pirate king and smiles while accepting his fate. This makes a big impression on Smoker who remembers Roger's execution at the same place, 22 years ago. Zoro and Sanji fight the pirates in order to reach their captain. However, a storm arrives to Loguetown. When Buggy's sword touches Luffy's neck, they are struck by lightning. Luffy, being made of rubber is not affected by the lightning. Luffy, Zoro, and Sanji run to their ship before they can be caught by the Marines.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-39",
+      "wt100-22",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-7",
+      "wt100-115",
+      "wt100-117",
+      "wt100-21"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 99",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_99",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Buggy",
+      "Alvida",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Gol D. Roger",
+      "Bogard",
+      "Smoker",
+      "Tashigi",
+      "Koby"
+    ]
+  },
+  {
+    "id": "wiki-chapter-100",
+    "volume": 12,
+    "number": 100,
+    "title": "The Legend Begins",
+    "summary": "Smoker manages to capture Buggy, Alvida and the rest in mere seconds using a net made of Seastone for Devil Fruit users. When he finally gets a hold on Luffy and is ready to finish him off, a mysterious man named Dragon stops Smoker and a huge storm suddenly starts. The storm helps Luffy, Zoro and Sanji escape to the ship and head to the Grand Line, where they vow to accomplish their dreams.",
+    "characterIds": [
+      "wt100-1",
+      "wt100-2",
+      "wt100-3",
+      "wt100-4",
+      "wt100-5",
+      "wt100-39",
+      "wt100-22",
+      "wt100-42",
+      "wt100-43",
+      "wt100-48",
+      "wt100-115",
+      "wt100-117",
+      "wt100-114",
+      "wt100-118",
+      "wt100-33"
+    ],
+    "techniqueIds": [],
+    "sourceTitle": "Chapter 100",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Chapter_100",
+    "sourceCharacterTitles": [
+      "Monkey D. Luffy",
+      "Roronoa Zoro",
+      "Nami",
+      "Usopp",
+      "Sanji",
+      "Buggy",
+      "Alvida",
+      "Mohji",
+      "Richie",
+      "Cabaji",
+      "Smoker",
+      "Tashigi",
+      "Mashikaku",
+      "Monkey D. Dragon",
+      "Shimotsuki Kuina"
+    ]
+  }
+];
+  data.episodes = data.episodes.filter((episode) => {
+    if (String(episode.id || "").startsWith("wiki-chapter-")) return false;
+    if ((episode.id === "episode-1" || episode.id === "episode-2") && String(episode.summary || "").includes("예시")) return false;
+    return true;
+  });
+  const byId = new Map(data.episodes.map((episode) => [episode.id, episode]));
+  episodes.forEach((episode) => {
+    if (byId.has(episode.id)) Object.assign(byId.get(episode.id), episode);
+    else data.episodes.push(episode);
+  });
+})();
+/* WIKI_EPISODE_AUTO_END */

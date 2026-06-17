@@ -87,6 +87,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 const apply = args.get("apply") === "true";
 const skipWiki = args.get("skip-wiki") === "true";
 const detailLimit = args.get("all") === "true" ? Number.POSITIVE_INFINITY : Number(args.get("limit") || 50);
+const applyOutput = args.get("apply-output") === "true";
 
 await fs.mkdir(WIKI_CACHE_DIR, { recursive: true });
 await fs.mkdir(CACHE_DIR, { recursive: true });
@@ -97,6 +98,24 @@ const wt100Characters = await getWt100Master();
 const wt100Options = await getWt100Options();
 const wt100ByFaceId = new Map(wt100Characters.map((character) => [character.id, character]));
 const officialOrgById = new Map(wt100Options.organizations.map((org) => [org.id, org]));
+
+if (applyOutput) {
+  const previous = JSON.parse(await fs.readFile(OUTPUT_PATH, "utf8"));
+  const nextText = applyEnrichmentBlock(dataText, {
+    officialEntries: previous.officialEntries || [],
+    wikiEntries: previous.wikiEntries || [],
+    subOrganizations: buildSubOrganizationEntries(wt100Options.organizations),
+    fruitEntries: previous.fruitEntries || []
+  });
+  await fs.writeFile(DATA_PATH, nextText);
+  console.log(JSON.stringify({
+    appliedOutput: true,
+    officialEntries: previous.officialEntries?.length || 0,
+    wikiEntries: previous.wikiEntries?.length || 0,
+    fruits: previous.fruitEntries?.length || 0
+  }, null, 2));
+  process.exit(0);
+}
 
 const people = data.people
   .filter((person) => /^wt100-\d+$/.test(person.id))

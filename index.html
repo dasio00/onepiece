@@ -21,7 +21,6 @@
           <button class="tab active" data-view="techniques" type="button">기술명</button>
           <button class="tab" data-view="people" type="button">사람</button>
           <button class="tab" data-view="episodes" type="button">에피소드</button>
-          <button class="tab" data-view="appearanceArcs" type="button">등장편</button>
           <button class="tab" data-view="organizations" type="button">조직</button>
           <button class="tab" data-view="devilFruits" type="button">악마의 열매</button>
           <button class="tab" data-view="groups" type="button">그룹</button>
@@ -61,6 +60,21 @@
               <button type="button" data-range="low" class="range">낮은 순</button>
               <button type="button" data-range="high" class="range">높은 순</button>
             </div>
+            <label class="sort-controls hidden" id="personSortControls">
+              <span>정렬</span>
+              <select id="personSortSelect">
+                <option value="appearance">등장순</option>
+                <option value="id">고유 ID 순</option>
+                <option value="name">이름순</option>
+                <option value="heightAsc">키 낮은 순</option>
+                <option value="heightDesc">키 높은 순</option>
+                <option value="ageAsc">나이 낮은 순</option>
+                <option value="ageDesc">나이 높은 순</option>
+                <option value="bountyAsc">현상금 낮은 순</option>
+                <option value="bountyDesc">현상금 높은 순</option>
+                <option value="birthday">생일순</option>
+              </select>
+            </label>
             <div class="item-list" id="itemList"></div>
           </section>
 

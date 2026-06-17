@@ -665,7 +665,8 @@ function modelFromFruitName(value) {
   const text = String(value || "");
   const colonModel = text.match(/Model:\s*([^;)]+)/i)?.[1];
   const suffixModel = text.match(/,\s*([^,;()]+?)\s+Model\b/i)?.[1];
-  return String(colonModel || suffixModel || "").replace(/\s*\(.*/g, "").trim();
+  const fruitModel = text.match(/\bFruit[,\s]+([^,;()]+?)\s+Model\b/i)?.[1];
+  return String(colonModel || suffixModel || fruitModel || "").replace(/\s*\(.*/g, "").trim();
 }
 
 function faceIdFromPerson(person) {

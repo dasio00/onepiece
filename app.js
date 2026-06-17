@@ -27,6 +27,7 @@ let activeId = "";
 let sortMode = "all";
 let personSortMode = "appearance";
 let personEditorQuery = "";
+let episodeCharacterQuery = "";
 let editorMode = "people";
 let activeFruitId = "";
 let activeSubOrgId = "";
@@ -41,6 +42,7 @@ const listTitle = document.querySelector("#listTitle");
 const countBadge = document.querySelector("#countBadge");
 const itemList = document.querySelector("#itemList");
 const detail = document.querySelector("#detail");
+const detailPane = document.querySelector(".detail-pane");
 const emptyState = document.querySelector("#emptyState");
 const searchInput = document.querySelector("#searchInput");
 const searchBox = document.querySelector("#searchBox");
@@ -48,27 +50,17 @@ const rangeControls = document.querySelector("#rangeControls");
 const rangeButtons = document.querySelectorAll(".range");
 const personSortControls = document.querySelector("#personSortControls");
 const personSortSelect = document.querySelector("#personSortSelect");
+const mobileViewSelect = document.querySelector("#mobileViewSelect");
 const browseWorkspace = document.querySelector("#browseWorkspace");
 const editorWorkspace = document.querySelector("#editorWorkspace");
 const editorBody = document.querySelector("#editorBody");
 const editorModeButtons = document.querySelectorAll(".editor-mode");
 
 tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    currentView = tab.dataset.view;
-    activeId = "";
-    activeFruitId = "";
-    activeSubOrgId = "";
-    activeEpisodeId = "";
-    sortMode = "all";
-    if (tab.dataset.view === "people") personSortMode = "appearance";
-    searchInput.value = "";
-    tabs.forEach((item) => item.classList.toggle("active", item === tab));
-    rangeButtons.forEach((button) => button.classList.toggle("active", button.dataset.range === "all"));
-    personSortSelect.value = personSortMode;
-    render();
-  });
+  tab.addEventListener("click", () => switchView(tab.dataset.view));
 });
+
+mobileViewSelect.addEventListener("change", () => switchView(mobileViewSelect.value));
 
 rangeButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -94,6 +86,25 @@ editorModeButtons.forEach((button) => {
 
 searchInput.addEventListener("input", render);
 
+function switchView(view) {
+  currentView = view;
+  activeId = "";
+  activeFruitId = "";
+  activeSubOrgId = "";
+  activeEpisodeId = "";
+  sortMode = "all";
+  if (view === "people") personSortMode = "appearance";
+  searchInput.value = "";
+  setActiveTab();
+  rangeButtons.forEach((button) => button.classList.toggle("active", button.dataset.range === "all"));
+  personSortSelect.value = personSortMode;
+  render();
+}
+
+function isListOnlyView() {
+  return ["heights", "birthdays", "bounties"].includes(currentView);
+}
+
 function render() {
   normalizeInPlace(data);
   const config = viewConfig[currentView];
@@ -101,8 +112,11 @@ function render() {
   viewTitle.textContent = config.title;
 
   const isEditor = currentView === "editor";
+  const listOnly = isListOnlyView();
   browseWorkspace.classList.toggle("hidden", isEditor);
+  browseWorkspace.classList.toggle("list-only-workspace", listOnly);
   editorWorkspace.classList.toggle("hidden", !isEditor);
+  detailPane.classList.toggle("hidden", listOnly);
   searchBox.classList.toggle("hidden", isEditor);
 
   if (isEditor) {
@@ -131,11 +145,16 @@ function render() {
     });
   });
 
-  if (!activeId && filteredItems.length > 0) activeId = filteredItems[0].id;
+  if (listOnly) activeId = "";
+  if (!listOnly && !activeId && filteredItems.length > 0) activeId = filteredItems[0].id;
   const activeItem = filteredItems.find((item) => item.id === activeId);
   itemList.querySelectorAll(".item").forEach((button) => {
     button.classList.toggle("active", button.dataset.id === activeId);
   });
+  if (listOnly) {
+    detail.innerHTML = "";
+    return;
+  }
   renderDetail(activeItem);
 }
 
@@ -190,7 +209,7 @@ function getItems() {
 }
 
 function renderListItem(listItem) {
-  const showImage = currentView !== "people" && listItem.raw?.imageUrl;
+  const showImage = currentView === "people" && listItem.raw?.imageUrl;
   const image = showImage ? `<img class="item-thumb" src="${escapeAttribute(listItem.raw.imageUrl)}" alt="" loading="lazy" decoding="async" />` : "";
   return `
     <button class="item" type="button" data-id="${escapeAttribute(listItem.id)}">
@@ -601,12 +620,13 @@ function renderEpisodeForm(episode = null) {
       ${field("number", "화", draft.number, "number")}
       ${field("title", "화 제목", draft.title)}
       <label>간략한 내용<textarea name="summary" rows="4">${escapeHtml(draft.summary || "")}</textarea></label>
-      ${checkboxList("characterIds", "등장 인물", data.people, draft.characterIds || [])}
+      ${searchablePersonPicker(draft.characterIds || [])}
       ${checkboxListForItems("techniqueIds", "나온 기술", data.techniques, draft.techniqueIds || [])}
       <div class="form-actions"><button class="primary" type="submit">저장</button></div>
     </form>
   `;
   const form = document.querySelector("#episodeForm");
+  bindEpisodeCharacterPicker(form, draft.characterIds || []);
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     upsert(data.episodes, draft.id, {
@@ -1065,6 +1085,7 @@ function renderEmptyResult(message) {
 
 function setActiveTab() {
   tabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.view === currentView));
+  mobileViewSelect.value = currentView;
   searchInput.value = "";
 }
 
@@ -1247,6 +1268,91 @@ function birthdayField(birthday) {
 
 function option(optionValue, label, selected) {
   return `<option value="${escapeAttribute(optionValue)}" ${optionValue === selected ? "selected" : ""}>${escapeHtml(label)}</option>`;
+}
+
+function searchablePersonPicker(selectedIds = []) {
+  const uniqueIds = uniqueExistingPersonIds(selectedIds);
+  return `
+    <fieldset class="check-list searchable-picker" id="episodeCharacterPicker">
+      <legend>등장 인물</legend>
+      <div class="selected-person-list" id="episodeSelectedCharacters">
+        ${renderSelectedCharacterChips(uniqueIds)}
+      </div>
+      <div id="episodeCharacterInputs">${renderHiddenCharacterInputs(uniqueIds)}</div>
+      <label>인물 검색<input id="episodeCharacterSearchInput" type="search" placeholder="이름, 별명, 조직, 직업 검색" /></label>
+      <div class="picker-results" id="episodeCharacterResults">
+        <p class="picker-empty">검색어를 입력하면 인물을 바로 추가할 수 있습니다.</p>
+      </div>
+    </fieldset>
+  `;
+}
+
+function bindEpisodeCharacterPicker(form, selectedIds = []) {
+  const picker = form.querySelector("#episodeCharacterPicker");
+  const input = form.querySelector("#episodeCharacterSearchInput");
+  const selectedWrap = form.querySelector("#episodeSelectedCharacters");
+  const hiddenWrap = form.querySelector("#episodeCharacterInputs");
+  const resultsWrap = form.querySelector("#episodeCharacterResults");
+  const selected = uniqueExistingPersonIds(selectedIds);
+
+  const refresh = () => {
+    selectedWrap.innerHTML = renderSelectedCharacterChips(selected);
+    hiddenWrap.innerHTML = renderHiddenCharacterInputs(selected);
+    resultsWrap.innerHTML = renderCharacterSearchResults(selected, input.value);
+  };
+
+  input.addEventListener("input", refresh);
+  picker.addEventListener("click", (event) => {
+    const addButton = event.target.closest("[data-add-character]");
+    const removeButton = event.target.closest("[data-remove-character]");
+    if (addButton) {
+      const id = addButton.dataset.addCharacter;
+      if (!selected.includes(id)) selected.push(id);
+      input.value = "";
+      input.focus();
+      refresh();
+    }
+    if (removeButton) {
+      const index = selected.indexOf(removeButton.dataset.removeCharacter);
+      if (index >= 0) selected.splice(index, 1);
+      refresh();
+    }
+  });
+}
+
+function uniqueExistingPersonIds(ids = []) {
+  return Array.from(new Set(ids)).filter((id) => findPerson(id));
+}
+
+function renderSelectedCharacterChips(ids = []) {
+  return ids.map((id) => {
+    const person = findPerson(id);
+    return `
+      <button class="selected-person-chip" type="button" data-remove-character="${escapeAttribute(id)}">
+        ${escapeHtml(person?.name || id)} <span>삭제</span>
+      </button>
+    `;
+  }).join("") || `<p class="picker-empty">아직 선택된 인물이 없습니다.</p>`;
+}
+
+function renderHiddenCharacterInputs(ids = []) {
+  return ids.map((id) => `<input class="hidden-picker-input" type="checkbox" name="characterIds" value="${escapeAttribute(id)}" checked />`).join("");
+}
+
+function renderCharacterSearchResults(selectedIds = [], query = "") {
+  const normalized = query.trim().toLowerCase();
+  if (!normalized) return `<p class="picker-empty">검색어를 입력하면 인물을 바로 추가할 수 있습니다.</p>`;
+  const results = data.people
+    .filter((person) => !selectedIds.includes(person.id))
+    .filter((person) => personToItem(person).searchText.includes(normalized))
+    .slice(0, 24);
+
+  return results.map((person) => `
+    <button class="picker-result" type="button" data-add-character="${escapeAttribute(person.id)}">
+      <strong>${escapeHtml(person.name)}</strong>
+      <span>${escapeHtml(organizationName(person.organization))} · ${escapeHtml(subOrganizationName(person.subOrganization))} · ${escapeHtml(person.job || "직업 미등록")}</span>
+    </button>
+  `).join("") || `<p class="picker-empty">검색 결과가 없습니다.</p>`;
 }
 
 function checkboxList(name, label, people, selectedIds) {

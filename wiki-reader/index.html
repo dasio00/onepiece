@@ -1,60 +1,637 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>One Piece Wiki Reader</title>
 <style>
-:root{--bg:#f7f6f1;--paper:#fff;--ink:#20242a;--muted:#66707a;--line:#ddd8cc;--red:#b4232a;--teal:#1a7b82}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}button,input{font:inherit}
-header{position:sticky;top:0;z-index:2;display:grid;grid-template-columns:max-content minmax(0,1fr) max-content;gap:10px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);background:rgba(255,253,248,.96)}
+:root{--bg:#f7f6f1;--paper:#fff;--ink:#20242a;--muted:#66707a;--line:#ddd8cc;--red:#b4232a;--teal:#1a7b82;--gold:#c79a33}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}button,input{font:inherit}button{cursor:pointer}
+header{position:sticky;top:0;z-index:2;display:grid;grid-template-columns:max-content minmax(0,1fr) max-content;gap:10px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);background:rgba(255,253,248,.96);backdrop-filter:blur(14px)}
 .brand{font-weight:800;white-space:nowrap}.brand b{display:inline-grid;place-items:center;width:34px;height:34px;margin-right:8px;border:2px solid var(--ink);border-radius:8px;color:var(--red);font-size:13px}
-form{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:8px}input{height:42px;padding:0 12px;border:1px solid var(--line);border-radius:8px}button,.src{min-height:38px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);padding:0 12px;text-decoration:none}.go{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}.seg{display:inline-flex;gap:4px}.seg button.on{border-color:var(--teal);color:var(--teal);font-weight:700}
-.status{display:grid;grid-template-columns:max-content 1fr;gap:12px;align-items:center;padding:8px 16px;border-bottom:1px solid var(--line);color:var(--muted);font-size:14px}.bar{height:6px;border-radius:999px;background:#e8e2d6;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,var(--red),#c79a33,var(--teal))}
-main{display:grid;grid-template-columns:240px minmax(0,1fr);gap:18px;width:min(1280px,100%);margin:0 auto;padding:18px}.toc,.article{border:1px solid var(--line);border-radius:8px;background:var(--paper)}.toc{position:sticky;top:104px;align-self:start;max-height:calc(100vh - 122px);overflow:auto;padding:12px}.toc h2{margin:0 0 8px;color:var(--muted);font-size:12px;text-transform:uppercase}.toc a{display:block;padding:7px 8px;border-radius:6px;color:var(--ink);font-size:14px;text-decoration:none}.toc a[data-l="3"]{padding-left:18px;color:var(--muted)}
-.head{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:10px;padding:22px 24px 16px;border-bottom:1px solid var(--line)}h1{margin:0;font-size:30px;line-height:1.15;overflow-wrap:anywhere}.content{min-height:55vh;padding:24px;line-height:1.75;overflow-wrap:anywhere}.content h2,.content h3,.content h4{clear:both;margin:30px 0 12px;scroll-margin-top:118px}.content h2{padding-bottom:8px;border-bottom:2px solid #eee6d8}.content p,.content ul,.content ol,.content table{margin-top:0;margin-bottom:15px}.content a{color:#8f171d;text-underline-offset:3px}.content img{max-width:100%;height:auto;border-radius:6px}.content table{display:block;width:100%;overflow:auto;border-collapse:collapse;font-size:14px}.content td,.content th{border:1px solid var(--line);padding:7px 9px;vertical-align:top}.content th{background:#f1ecdf}.portable-infobox{float:right;width:min(310px,42%);margin:0 0 18px 22px;padding:12px;border:1px solid var(--line);border-radius:8px;background:#fbf7ee;font-size:14px;line-height:1.45}.pi-title,.pi-header{font-weight:800;color:#8f171d}
-@media(max-width:800px){header{grid-template-columns:1fr}.brand{white-space:normal}main{grid-template-columns:1fr;padding:12px}.toc{position:static;max-height:none}.head{grid-template-columns:1fr}.portable-infobox{float:none;width:100%;margin:0 0 16px}.status{grid-template-columns:1fr}}
+form{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:8px}input{height:42px;min-width:0;padding:0 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}button,.src{min-height:38px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);padding:0 12px;text-decoration:none}.go{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}.seg{display:inline-flex;gap:4px;align-items:center}.seg button.on{border-color:var(--teal);color:var(--teal);font-weight:700}
+.status{display:grid;grid-template-columns:max-content 1fr;gap:12px;align-items:center;padding:8px 16px;border-bottom:1px solid var(--line);color:var(--muted);font-size:14px}.bar{height:6px;border-radius:999px;background:#e8e2d6;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,var(--red),var(--gold),var(--teal));transition:width 160ms ease}
+main{display:grid;grid-template-columns:240px minmax(0,1fr);gap:18px;width:min(1280px,100%);margin:0 auto;padding:18px}.toc,.article{border:1px solid var(--line);border-radius:8px;background:var(--paper)}.toc{position:sticky;top:104px;align-self:start;max-height:calc(100vh - 122px);overflow:auto;padding:12px}.toc h2{margin:0 0 8px;color:var(--muted);font-size:12px;text-transform:uppercase}.toc a{display:block;padding:7px 8px;border-radius:6px;color:var(--ink);font-size:14px;line-height:1.3;text-decoration:none}.toc a[data-l="3"]{padding-left:18px;color:var(--muted)}.toc a:hover{background:#eee8da}
+.head{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:10px;padding:22px 24px 16px;border-bottom:1px solid var(--line)}h1{margin:0;font-size:30px;line-height:1.15;overflow-wrap:anywhere}.content{min-height:55vh;padding:24px;line-height:1.75;overflow-wrap:anywhere}.content h2,.content h3,.content h4{clear:both;margin:30px 0 12px;scroll-margin-top:118px}.content h2{padding-bottom:8px;border-bottom:2px solid #eee6d8}.content p,.content ul,.content ol,.content table,.content dl,.content blockquote{margin-top:0;margin-bottom:15px}.content a{color:#8f171d;text-underline-offset:3px}.content img{max-width:100%;height:auto;border-radius:6px}.content table{display:block;width:100%;overflow:auto;border-collapse:collapse;font-size:14px}.content td,.content th{border:1px solid var(--line);padding:7px 9px;vertical-align:top}.content th{background:#f1ecdf}.portable-infobox{float:right;width:min(310px,42%);margin:0 0 18px 22px;padding:12px;border:1px solid var(--line);border-radius:8px;background:#fbf7ee;font-size:14px;line-height:1.45}.pi-title,.pi-header{font-weight:800;color:#8f171d}
+.deferred-gallery{clear:both;margin:16px 0;padding:12px;border:1px dashed #d7c8a8;border-radius:8px;background:#fbf7ee}.deferred-gallery img[data-deferred="1"]{min-height:88px;background:repeating-linear-gradient(135deg,#efe7d7,#efe7d7 10px,#e2d7c4 10px,#e2d7c4 20px);opacity:.62}.gallery-load{display:block;width:100%;margin:0 0 12px;padding:10px 12px;border:1px solid var(--teal);border-radius:8px;background:#fff;color:var(--teal);font-weight:800}
+@media(max-width:800px){header{grid-template-columns:1fr}.brand{white-space:normal}form{grid-template-columns:1fr}.seg{flex-wrap:wrap}main{grid-template-columns:1fr;padding:12px}.toc{position:static;max-height:none}.head{grid-template-columns:1fr}.portable-infobox{float:none;width:100%;margin:0 0 16px}.status{grid-template-columns:1fr}}
 </style>
 <body>
 <header>
 <div class="brand"><b>OP</b>One Piece Wiki Reader</div>
-<form id="form"><input id="query" placeholder="Ope Ope no Mi or wiki URL"><button class="go">Load</button></form>
-<div class="seg"><button id="ko" class="on" type="button">Korean</button><button id="en" type="button">Original</button><a id="src" class="src" href="#" target="_blank" rel="noreferrer">Source</a></div>
+<form id="form"><input id="query" placeholder="Ope Ope no Mi 또는 위키 URL"><button class="go">불러오기</button></form>
+<div class="seg"><button id="ko" class="on" type="button">한국어</button><button id="en" type="button">원문</button><a id="src" class="src" href="#" target="_blank" rel="noreferrer">원본</a></div>
 </header>
-<div class="status"><span id="status">Ready</span><div class="bar"><div id="fill" class="fill"></div></div></div>
-<main><aside class="toc"><h2>Contents</h2><nav id="toc"></nav></aside><article class="article"><div class="head"><h1 id="title">Load an article</h1><button id="translate" type="button" disabled>Translate</button></div><section id="content" class="content"><p>Enter a One Piece Wiki article title or URL.</p></section></article></main>
+<div class="status"><span id="status">준비됨</span><div class="bar"><div id="fill" class="fill"></div></div></div>
+<main>
+  <aside class="toc"><h2>목차</h2><nav id="toc"></nav></aside>
+  <article class="article">
+    <div class="head"><h1 id="title">문서 불러오기</h1><button id="translate" type="button" disabled>번역</button></div>
+    <section id="content" class="content"><p>원피스 위키 문서 제목이나 URL을 입력하세요.</p></section>
+  </article>
+</main>
 <script>
-const API="https://onepiece.fandom.com/api.php",ORIGIN="https://onepiece.fandom.com",TR="https://translate.googleapis.com/translate_a/single";
-const $=s=>document.querySelector(s),ui={q:$("#query"),form:$("#form"),title:$("#title"),content:$("#content"),toc:$("#toc"),status:$("#status"),fill:$("#fill"),tr:$("#translate"),ko:$("#ko"),en:$("#en"),src:$("#src")};
-let nodes=[],mode="ko",run=0,cache=new Map(),tcache=new Map();
-ui.form.onsubmit=e=>{e.preventDefault();if(ui.q.value.trim())load(ui.q.value.trim())};
-ui.tr.onclick=()=>translateAll();
-ui.ko.onclick=()=>setMode("ko");ui.en.onclick=()=>setMode("en");
-ui.content.onclick=e=>{const a=e.target.closest("a[data-page]");if(!a)return;e.preventDefault();ui.q.value=a.dataset.page;load(a.dataset.page)};
-addEventListener("DOMContentLoaded",()=>{const q=new URLSearchParams(location.search).get("q");if(q){ui.q.value=q;load(q)}});
-async function load(input){const my=++run;msg("Loading article",10);ui.tr.disabled=true;ui.content.innerHTML="";ui.toc.innerHTML="";try{const page=await article(input);render(page);history.replaceState({},"",`?q=${encodeURIComponent(page.title)}${location.hash||""}`);msg("Article ready",0);scrollHash();if(my===run)await translateAll()}catch(e){ui.title.textContent="Error";ui.content.innerHTML=`<p>${esc(e.message)}</p>`;msg("Error",0)}}
-async function article(input){const guess=titleOf(input),key=guess.toLowerCase();if(cache.has(key))return cache.get(key);let p=await parse(guess);if(p.error){const found=await search(guess);if(!found)throw Error(`Could not find "${guess}".`);p=await parse(found)}if(p.error)throw Error(`Could not load "${guess}".`);const out={title:p.title,display:p.display,source:`${ORIGIN}/wiki/${encodeURIComponent(p.title.replaceAll(" ","_"))}`,sections:p.sections,html:clean(p.html)};cache.set(key,out);return out}
-function titleOf(v){try{const u=new URL(v),m="/wiki/",i=u.pathname.indexOf(m);if(i>=0)return decodeURIComponent(u.pathname.slice(i+m.length)).replaceAll("_"," ")}catch{}return v.replace(/^https?:\/\/onepiece\.fandom\.com\/wiki\//i,"").replace(/^\/?wiki\//i,"").replaceAll("_"," ").trim()}
-async function parse(page){const qs=new URLSearchParams({action:"parse",page,prop:"text|sections|displaytitle",redirects:"1",format:"json",formatversion:"2",origin:"*"}),d=await json(`${API}?${qs}`);if(d.error)return{error:d.error};return{title:d.parse.title,display:text(d.parse.displaytitle||d.parse.title),html:typeof d.parse.text==="string"?d.parse.text:d.parse.text?.["*"]||"",sections:(d.parse.sections||[]).filter(s=>s.anchor&&s.line&&!/^(references|site navigation|external links|notes)$/i.test(text(s.line))).map(s=>({anchor:s.anchor,level:+s.level||2,title:text(s.line)}))}}
-async function search(q){const qs=new URLSearchParams({action:"query",list:"search",srsearch:q,srlimit:"1",format:"json",formatversion:"2",origin:"*"}),d=await json(`${API}?${qs}`);return d.query?.search?.[0]?.title||""}
-async function json(url){const r=await fetch(url,{cache:"force-cache"});if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json()}
-function clean(raw){const doc=new DOMParser().parseFromString(raw,"text/html"),root=doc.querySelector(".mw-parser-output")||doc.body;root.querySelectorAll("script,style,noscript,.mw-editsection,.reference,.references,.reflist,.toc,.catlinks,.printfooter,.article-tabs,.onlymobile,.cs.vde,.wds-tabs__wrapper,.wds-tab__content:not(.wds-is-current),.navbox,.metadata,.noprint,.mw-empty-elt").forEach(x=>x.remove());root.querySelectorAll("table").forEach(t=>{const s=t.textContent.trim();if(!s||/Featured Article/i.test(s))t.remove()});root.querySelectorAll("h2,h3").forEach(h=>{if(/^(references|site navigation|external links|notes)$/i.test(h.textContent.trim()))dropSection(h)});root.querySelectorAll("img").forEach(img=>{let src=img.getAttribute("src")||img.getAttribute("data-src")||"";if(src.startsWith("//"))src="https:"+src;if(!/^https?:/.test(src)){img.remove();return}img.src=src;img.loading="lazy";img.removeAttribute("srcset")});root.querySelectorAll("a").forEach(a=>{const href=a.getAttribute("href")||"";if(href.startsWith("/wiki/")){a.href="#";a.dataset.page=decodeURIComponent(href.slice(6).split("#")[0]).replaceAll("_"," ")}else if(href.startsWith("//")){a.href="https:"+href;a.target="_blank";a.rel="noreferrer"}else if(href.startsWith("http")){a.target="_blank";a.rel="noreferrer"}else if(!href.startsWith("#"))a.removeAttribute("href")});root.querySelectorAll("span.mw-headline").forEach(s=>{if(s.id)s.parentElement?.setAttribute("id",s.id)});sanitize(root);return root.innerHTML}
-function dropSection(h){const l=+h.tagName.slice(1);let n=h.nextElementSibling;while(n){const nl=/^H[2-5]$/.test(n.tagName)?+n.tagName.slice(1):0;if(nl&&nl<=l)break;const x=n.nextElementSibling;n.remove();n=x}h.remove()}
-function sanitize(root){const ok=new Set("a abbr aside b blockquote br caption cite code dd del details div dl dt em figcaption figure h2 h3 h4 h5 hr i img li ol p small span strong sub summary sup table tbody td tfoot th thead tr u ul".split(" "));root.querySelectorAll("*").forEach(el=>{const tag=el.tagName.toLowerCase();if(!ok.has(tag)){el.replaceWith(...el.childNodes);return}[...el.attributes].forEach(a=>{const n=a.name.toLowerCase();if(n==="style"||n.startsWith("on"))el.removeAttribute(a.name)});if(tag==="img"&&!/^https?:/.test(el.getAttribute("src")||""))el.remove()})}
-function render(p){ui.title.textContent=p.display||p.title;ui.src.href=p.source;ui.content.innerHTML=p.html;headings();toc(p.sections);nodes=collect(ui.content);ui.tr.disabled=!nodes.length;setMode(mode)}
-function headings(){ui.content.querySelectorAll("h2,h3,h4,h5").forEach(h=>{if(!h.closest(".portable-infobox")&&!h.id)h.id=slug(h.textContent)})}
-function toc(sections){const by=new Map([...ui.content.querySelectorAll("h2,h3,h4,h5")].filter(h=>h.id&&!h.closest(".portable-infobox")).map(h=>[h.id,h]));let items=sections.filter(s=>s.level<=3&&by.has(s.anchor));if(!items.length)items=[...by.values()].slice(0,80).map(h=>({anchor:h.id,title:h.textContent.trim(),level:+h.tagName.slice(1)}));ui.toc.innerHTML=items.map(i=>`<a href="#${encodeURIComponent(i.anchor)}" data-l="${i.level}">${esc(i.title)}</a>`).join("")||"No sections"}
-function collect(root){const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(n){const p=n.parentElement,v=n.nodeValue||"";return p&&should(v)&&!p.closest("script,style,code,pre,kbd,samp,.reference")?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT}}),out=[];let n=w.nextNode();while(n){out.push({node:n,en:n.nodeValue,ko:""});n=w.nextNode()}return out}
-async function translateAll(){if(!nodes.length)return;const my=++run;ui.tr.disabled=true;let done=nodes.filter(n=>n.ko).length,fail=0;setMode("ko");progress(done,nodes.length,fail);for(const batch of chunks(nodes.filter(n=>!n.ko),30)){if(my!==run)return;await Promise.all(batch.map(async n=>{try{n.ko=await trans(n.en);if(mode==="ko")n.node.nodeValue=n.ko}catch{fail++;n.ko=n.en}finally{done++;progress(done,nodes.length,fail)}}))}msg(fail?`Done, kept ${fail} originals`:"Translation complete",100);ui.tr.disabled=false;scrollHash()}
-async function trans(v){if(!should(v))return v;const lead=v.match(/^\s*/)?.[0]||"",trail=v.match(/\s*$/)?.[0]||"",core=v.trim();if(tcache.has(core))return lead+tcache.get(core)+trail;const qs=new URLSearchParams({client:"gtx",sl:"en",tl:"ko",dt:"t",q:core}),d=await json(`${TR}?${qs}`),r=(d?.[0]||[]).map(x=>x?.[0]||"").join("");tcache.set(core,r);return lead+r+trail}
-function setMode(m){mode=m;ui.ko.classList.toggle("on",m==="ko");ui.en.classList.toggle("on",m==="en");nodes.forEach(n=>n.node.nodeValue=m==="ko"&&n.ko?n.ko:n.en)}
-function progress(d,t,f){msg(`Translating ${d}/${t}${f?`, kept ${f}`:""}`,t?Math.round(d/t*100):0)}
-function msg(s,p){ui.status.textContent=s;ui.fill.style.width=Math.max(0,Math.min(100,p))+"%"}
-function should(v){const t=v.trim();return t.length>1&&/[A-Za-z]/.test(t)&&!/^[\d\s()[\]{}.,:;'"!?+\-/\\|%]+$/.test(t)}
-function chunks(a,n){const out=[];for(let i=0;i<a.length;i+=n)out.push(a.slice(i,i+n));return out}
-function scrollHash(){if(!location.hash)return;const el=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(el)requestAnimationFrame(()=>el.scrollIntoView({block:"start"}))}
-function text(h){return new DOMParser().parseFromString(`<div>${h}</div>`,"text/html").body.textContent.trim()}
-function slug(v){return v.trim().replace(/\s+/g,"_").replace(/[^\p{L}\p{N}_-]/gu,"").slice(0,80)}
-function esc(v){return String(v).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;")}
+const API = "https://onepiece.fandom.com/api.php";
+const ORIGIN = "https://onepiece.fandom.com";
+const TR = "https://translate.googleapis.com/translate_a/single";
+const BLANK = "data:image/gif;base64,R0lGODlhAQABAAAAACw=";
+
+const TERMS = [
+  [/\bOne Piece\b/gi, "원피스"],
+  [/\bOpe Ope no Mi\b/gi, "오페 오페 열매"],
+  [/\bOperation Fruit\b/gi, "오페 오페 열매"],
+  [/\bGomu Gomu no Mi\b/gi, "고무고무 열매"],
+  [/\bHito Hito no Mi\b/gi, "사람사람 열매"],
+  [/\bMera Mera no Mi\b/gi, "이글이글 열매"],
+  [/\bYami Yami no Mi\b/gi, "어둠어둠 열매"],
+  [/\bGura Gura no Mi\b/gi, "흔들흔들 열매"],
+  [/\bDevil Fruits?\b/gi, "악마의 열매"],
+  [/\bParamecia\b/gi, "초인계"],
+  [/\bZoan\b/gi, "동물계"],
+  [/\bLogia\b/gi, "자연계"],
+  [/\bArmament Haki\b/gi, "무장색 패기"],
+  [/\bObservation Haki\b/gi, "견문색 패기"],
+  [/\bConqueror'?s Haki\b/gi, "패왕색 패기"],
+  [/\bHaki\b/gi, "패기"],
+  [/\bMonkey D\. Luffy\b/gi, "몽키 D. 루피"],
+  [/\bTrafalgar D\. Water Law\b/gi, "트라팔가 D. 워텔 로"],
+  [/\bTrafalgar Law\b/gi, "트라팔가 로"],
+  [/\bRoronoa Zoro\b/gi, "롤로노아 조로"],
+  [/\bTony Tony Chopper\b/gi, "토니토니 쵸파"],
+  [/\bNico Robin\b/gi, "니코 로빈"],
+  [/\bPortgas D\. Ace\b/gi, "포트거스 D. 에이스"],
+  [/\bBoa Hancock\b/gi, "보아 행콕"],
+  [/\bDonquixote Doflamingo\b/gi, "돈키호테 도플라밍고"],
+  [/\bDonquixote Pirates\b/gi, "돈키호테 해적단"],
+  [/\bHeart Pirates\b/gi, "하트 해적단"],
+  [/\bStraw Hat Pirates\b/gi, "밀짚모자 일당"],
+  [/\bStraw Hats\b/gi, "밀짚모자 일당"],
+  [/\bGrand Line\b/gi, "위대한 항로"],
+  [/\bNew World\b/gi, "신세계"],
+  [/\bWorld Government\b/gi, "세계정부"],
+  [/\bCelestial Dragons\b/gi, "천룡인"],
+  [/\bSeven Warlords of the Sea\b/gi, "왕의 부하 칠무해"],
+  [/\bShichibukai\b/gi, "칠무해"],
+  [/\bWorst Generation\b/gi, "최악의 세대"],
+  [/\bYonko\b/gi, "사황"],
+  [/\bRevolutionary Army\b/gi, "혁명군"],
+  [/\bWano Country\b/gi, "와노쿠니"],
+  [/\bDressrosa\b/gi, "드레스로자"],
+  [/\bWhole Cake Island\b/gi, "홀케이크 아일랜드"],
+  [/\bEgghead\b/gi, "에그헤드"],
+  [/\bEast Blue\b/gi, "이스트 블루"],
+  [/\bLaw\b/g, "로"],
+  [/\bLuffy\b/g, "루피"],
+  [/\bZoro\b/g, "조로"],
+  [/\bNami\b/g, "나미"],
+  [/\bSanji\b/g, "상디"],
+  [/\bUsopp\b/g, "우솝"],
+  [/\bFranky\b/g, "프랑키"],
+  [/\bBrook\b/g, "브룩"],
+  [/\bJinbe\b/g, "징베"],
+  [/\bShanks\b/g, "샹크스"],
+  [/\bKaido\b/g, "카이도"],
+  [/\bSabo\b/g, "사보"],
+  [/\bDoflamingo\b/g, "도플라밍고"]
+];
+
+const POST = [
+  [/수술\s*수술\s*열매/g, "오페 오페 열매"],
+  [/작전\s*과일/g, "오페 오페 열매"],
+  [/작전\s*열매/g, "오페 오페 열매"],
+  [/악마\s*과일/g, "악마의 열매"],
+  [/그랜드\s*라인/g, "위대한 항로"],
+  [/새로운\s*세계/g, "신세계"],
+  [/세계\s*정부/g, "세계정부"],
+  [/밀짚\s*모자\s*해적단/g, "밀짚모자 일당"],
+  [/심장\s*해적단/g, "하트 해적단"],
+  [/^그만큼\s*/g, ""],
+  [/그만큼\s+(오페 오페 열매|악마의 열매|원피스)/g, "$1"],
+  [/^\s+(은|는|이|가|을|를|의|에|에서|와|과|도|만)(?=[\s.,)]|$)/g, "$1"],
+  [/(\S)\s+(은|는|이|가|을|를|의|에|에서|와|과|도|만)(?=[\s.,)]|$)/g, "$1$2"]
+];
+
+const $ = (selector) => document.querySelector(selector);
+const ui = {
+  q: $("#query"),
+  form: $("#form"),
+  title: $("#title"),
+  content: $("#content"),
+  toc: $("#toc"),
+  status: $("#status"),
+  fill: $("#fill"),
+  tr: $("#translate"),
+  ko: $("#ko"),
+  en: $("#en"),
+  src: $("#src")
+};
+
+let nodes = [];
+let mode = "ko";
+let run = 0;
+let cache = new Map();
+let tcache = new Map();
+
+ui.form.onsubmit = (event) => {
+  event.preventDefault();
+  if (ui.q.value.trim()) load(ui.q.value.trim());
+};
+ui.tr.onclick = () => translateAll();
+ui.ko.onclick = () => setMode("ko");
+ui.en.onclick = () => setMode("en");
+ui.content.onclick = (event) => {
+  const galleryButton = event.target.closest("[data-gallery-load]");
+  if (galleryButton) {
+    revealGallery(galleryButton.closest("[data-gallery-deferred]"));
+    return;
+  }
+  const link = event.target.closest("a[data-page]");
+  if (!link) return;
+  event.preventDefault();
+  ui.q.value = link.dataset.page;
+  load(link.dataset.page);
+};
+
+addEventListener("DOMContentLoaded", () => {
+  const q = new URLSearchParams(location.search).get("q");
+  if (q) {
+    ui.q.value = q;
+    load(q);
+  }
+});
+
+async function load(input) {
+  const my = ++run;
+  msg("문서 불러오는 중", 10);
+  ui.tr.disabled = true;
+  ui.content.innerHTML = "";
+  ui.toc.innerHTML = "";
+  try {
+    const page = await article(input);
+    render(page);
+    history.replaceState({}, "", `?q=${encodeURIComponent(page.title)}${location.hash || ""}`);
+    msg("문서 준비 완료", 0);
+    scrollHash();
+    if (my === run) await translateAll();
+  } catch (error) {
+    ui.title.textContent = "오류";
+    ui.content.innerHTML = `<p>${esc(error.message)}</p>`;
+    msg("오류", 0);
+  }
+}
+
+async function article(input) {
+  const guess = titleOf(input);
+  const key = guess.toLowerCase();
+  if (cache.has(key)) return cache.get(key);
+
+  let parsed = await parse(guess);
+  if (parsed.error) {
+    const found = await search(guess);
+    if (!found) throw Error(`"${guess}" 문서를 찾지 못했습니다.`);
+    parsed = await parse(found);
+  }
+  if (parsed.error) throw Error(`"${guess}" 문서를 불러오지 못했습니다.`);
+
+  const out = {
+    title: parsed.title,
+    display: text(parsed.display || parsed.title),
+    source: `${ORIGIN}/wiki/${encodeURIComponent(parsed.title.replaceAll(" ", "_"))}`,
+    sections: parsed.sections,
+    html: clean(parsed.html, parsed.title)
+  };
+  cache.set(key, out);
+  return out;
+}
+
+function titleOf(value) {
+  try {
+    const url = new URL(value);
+    const marker = "/wiki/";
+    const index = url.pathname.indexOf(marker);
+    if (index >= 0) return decodeURIComponent(url.pathname.slice(index + marker.length)).replaceAll("_", " ");
+  } catch {}
+  return value.replace(/^https?:\/\/onepiece\.fandom\.com\/wiki\//i, "").replace(/^\/?wiki\//i, "").replaceAll("_", " ").trim();
+}
+
+async function parse(page) {
+  const qs = new URLSearchParams({
+    action: "parse",
+    page,
+    prop: "text|sections|displaytitle",
+    redirects: "1",
+    format: "json",
+    formatversion: "2",
+    origin: "*"
+  });
+  const data = await json(`${API}?${qs}`);
+  if (data.error) return { error: data.error };
+  return {
+    title: data.parse.title,
+    display: data.parse.displaytitle || data.parse.title,
+    html: typeof data.parse.text === "string" ? data.parse.text : data.parse.text?.["*"] || "",
+    sections: (data.parse.sections || [])
+      .filter((section) => section.anchor && section.line && !utility(text(section.line)))
+      .map((section) => ({
+        anchor: section.anchor,
+        level: +section.level || 2,
+        title: text(section.line)
+      }))
+  };
+}
+
+async function search(query) {
+  const qs = new URLSearchParams({
+    action: "query",
+    list: "search",
+    srsearch: query,
+    srlimit: "1",
+    format: "json",
+    formatversion: "2",
+    origin: "*"
+  });
+  const data = await json(`${API}?${qs}`);
+  return data.query?.search?.[0]?.title || "";
+}
+
+async function json(url) {
+  const response = await fetch(url, { cache: "force-cache" });
+  if (!response.ok) throw Error(`HTTP ${response.status}`);
+  return response.json();
+}
+
+function clean(raw, title = "") {
+  const doc = new DOMParser().parseFromString(raw, "text/html");
+  const root = doc.querySelector(".mw-parser-output") || doc.body;
+  root.querySelectorAll([
+    "script",
+    "style",
+    "noscript",
+    ".mw-editsection",
+    ".reference",
+    ".references",
+    ".reflist",
+    ".toc",
+    ".catlinks",
+    ".printfooter",
+    ".article-tabs",
+    ".onlymobile",
+    ".cs.vde",
+    ".wds-tabs__wrapper",
+    ".wds-tab__content:not(.wds-is-current)",
+    ".navbox",
+    ".metadata",
+    ".noprint",
+    ".mw-empty-elt"
+  ].join(",")).forEach((node) => node.remove());
+
+  root.querySelectorAll("table").forEach((table) => {
+    const tableText = table.textContent.trim();
+    if ((!tableText && !table.querySelector("img")) || /Featured Article/i.test(tableText)) table.remove();
+  });
+
+  root.querySelectorAll("h2,h3").forEach((heading) => {
+    if (utility(heading.textContent)) dropSection(heading);
+  });
+
+  root.querySelectorAll("img").forEach((img) => {
+    let src = img.getAttribute("data-src") || img.getAttribute("src") || "";
+    if (src.startsWith("//")) src = `https:${src}`;
+    if (!/^https?:/i.test(src)) {
+      img.remove();
+      return;
+    }
+    img.src = src;
+    img.loading = "lazy";
+    img.removeAttribute("srcset");
+  });
+
+  root.querySelectorAll("a").forEach((anchor) => {
+    const href = anchor.getAttribute("href") || "";
+    if (href.startsWith("/wiki/")) {
+      anchor.href = "#";
+      anchor.dataset.page = decodeURIComponent(href.slice(6).split("#")[0]).replaceAll("_", " ");
+    } else if (href.startsWith("//")) {
+      anchor.href = `https:${href}`;
+      anchor.target = "_blank";
+      anchor.rel = "noreferrer";
+    } else if (href.startsWith("http")) {
+      anchor.target = "_blank";
+      anchor.rel = "noreferrer";
+    } else if (!href.startsWith("#")) {
+      anchor.removeAttribute("href");
+    }
+  });
+
+  root.querySelectorAll("span.mw-headline").forEach((headline) => {
+    if (headline.id) headline.parentElement?.setAttribute("id", headline.id);
+  });
+
+  deferGalleries(root, doc, /\/Gallery$/i.test(title));
+  sanitize(root);
+  return root.innerHTML;
+}
+
+function deferGalleries(root, doc, galleryPage = false) {
+  const boxes = [...root.querySelectorAll(".gallery,.wikia-gallery,.mw-gallery-traditional,.mw-gallery-packed,.mw-gallery-nolines")];
+  root.querySelectorAll("h2,h3").forEach((heading) => {
+    if (!galleryPage && !/^gallery$/i.test(heading.textContent.trim())) return;
+    const level = +heading.tagName.slice(1);
+    const box = doc.createElement("div");
+    box.className = "deferred-gallery";
+    box.dataset.galleryDeferred = "1";
+    heading.after(box);
+    let node = box.nextElementSibling;
+    while (node) {
+      const nodeLevel = /^H[2-5]$/.test(node.tagName) ? +node.tagName.slice(1) : 0;
+      if (nodeLevel && nodeLevel <= level) break;
+      const next = node.nextElementSibling;
+      box.appendChild(node);
+      node = next;
+    }
+    boxes.push(box);
+  });
+
+  boxes.forEach((box) => {
+    if (box.dataset.galleryReady) return;
+    const imgs = [...box.querySelectorAll("img")].filter((img) => /^https?:/i.test(img.getAttribute("src") || ""));
+    if (!imgs.length) return;
+    box.dataset.galleryReady = "1";
+    box.dataset.galleryDeferred = "1";
+    box.classList.add("deferred-gallery");
+    imgs.forEach((img) => {
+      img.dataset.fullSrc = img.getAttribute("src");
+      img.src = BLANK;
+      img.dataset.deferred = "1";
+      img.loading = "lazy";
+      img.removeAttribute("srcset");
+    });
+    const button = doc.createElement("button");
+    button.type = "button";
+    button.className = "gallery-load";
+    button.dataset.galleryLoad = "1";
+    button.textContent = `갤러리 사진 보기 (${imgs.length}장)`;
+    box.prepend(button);
+  });
+}
+
+function revealGallery(box) {
+  if (!box) return;
+  box.querySelectorAll("img[data-deferred='1']").forEach((img) => {
+    const src = img.dataset.fullSrc;
+    if (src) img.src = src;
+    img.removeAttribute("data-deferred");
+  });
+  box.classList.add("gallery-loaded");
+  box.querySelectorAll("[data-gallery-load]").forEach((button) => button.remove());
+}
+
+function dropSection(heading) {
+  const level = +heading.tagName.slice(1);
+  let node = heading.nextElementSibling;
+  while (node) {
+    const nodeLevel = /^H[2-5]$/.test(node.tagName) ? +node.tagName.slice(1) : 0;
+    if (nodeLevel && nodeLevel <= level) break;
+    const next = node.nextElementSibling;
+    node.remove();
+    node = next;
+  }
+  heading.remove();
+}
+
+function sanitize(root) {
+  const ok = new Set("a abbr aside b blockquote br button caption cite code dd del details div dl dt em figcaption figure h2 h3 h4 h5 hr i img li ol p small span strong sub summary sup table tbody td tfoot th thead tr u ul".split(" "));
+  root.querySelectorAll("*").forEach((el) => {
+    const tag = el.tagName.toLowerCase();
+    if (!ok.has(tag)) {
+      el.replaceWith(...el.childNodes);
+      return;
+    }
+    [...el.attributes].forEach((attr) => {
+      const name = attr.name.toLowerCase();
+      if (name === "style" || name.startsWith("on")) el.removeAttribute(attr.name);
+    });
+    if (tag === "a") {
+      const href = el.getAttribute("href") || "";
+      if (href && href !== "#" && !href.startsWith("#") && !/^https?:/i.test(href)) el.removeAttribute("href");
+    }
+    if (tag === "img") {
+      const src = el.getAttribute("src") || "";
+      const deferred = el.dataset.deferred === "1" && src.startsWith("data:image/");
+      if (!/^https?:/i.test(src) && !deferred) el.remove();
+    }
+  });
+}
+
+function render(page) {
+  const title = page.display || page.title;
+  ui.title.dataset.en = title;
+  ui.title.dataset.ko = fixTerms(title);
+  paintTitle();
+  ui.src.href = page.source;
+  ui.content.innerHTML = page.html;
+  headings();
+  toc(page.sections);
+  nodes = collect(ui.content);
+  ui.tr.disabled = !nodes.length;
+  setMode(mode);
+}
+
+function headings() {
+  ui.content.querySelectorAll("h2,h3,h4,h5").forEach((heading) => {
+    if (!heading.closest(".portable-infobox") && !heading.id) heading.id = slug(heading.textContent);
+  });
+}
+
+function toc(sections) {
+  const by = new Map([...ui.content.querySelectorAll("h2,h3,h4,h5")]
+    .filter((heading) => heading.id && !heading.closest(".portable-infobox"))
+    .map((heading) => [heading.id, heading]));
+  let items = sections.filter((section) => section.level <= 3 && by.has(section.anchor));
+  if (!items.length) {
+    items = [...by.values()].slice(0, 80).map((heading) => ({
+      anchor: heading.id,
+      title: heading.textContent.trim(),
+      level: +heading.tagName.slice(1)
+    }));
+  }
+  ui.toc.innerHTML = items.map((item) => `<a href="#${encodeURIComponent(item.anchor)}" data-anchor="${esc(item.anchor)}" data-l="${item.level}">${esc(item.title)}</a>`).join("") || "목차 없음";
+}
+
+function collect(root) {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      const parent = node.parentElement;
+      const value = node.nodeValue || "";
+      if (!parent || !should(value)) return NodeFilter.FILTER_REJECT;
+      if (parent.closest("script,style,code,pre,kbd,samp,.reference,.gallery-load")) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  const out = [];
+  let node = walker.nextNode();
+  while (node) {
+    out.push({ node, en: node.nodeValue, ko: "" });
+    node = walker.nextNode();
+  }
+  return out;
+}
+
+async function translateAll() {
+  if (!nodes.length) return;
+  const my = ++run;
+  ui.tr.disabled = true;
+  let done = nodes.filter((node) => node.ko).length;
+  let fail = 0;
+  setMode("ko");
+  progress(done, nodes.length, fail);
+  for (const batch of chunks(nodes.filter((node) => !node.ko), 30)) {
+    if (my !== run) return;
+    await Promise.all(batch.map(async (item) => {
+      try {
+        item.ko = await trans(item.en);
+        if (mode === "ko") item.node.nodeValue = item.ko;
+      } catch {
+        fail += 1;
+        item.ko = item.en;
+      } finally {
+        done += 1;
+        progress(done, nodes.length, fail);
+      }
+    }));
+  }
+  syncTocLabels();
+  msg(fail ? `완료, 원문 유지 ${fail}개` : "번역 완료", 100);
+  ui.tr.disabled = false;
+  scrollHash();
+}
+
+async function trans(value) {
+  if (!should(value)) return value;
+  const lead = value.match(/^\s*/)?.[0] || "";
+  const trail = value.match(/\s*$/)?.[0] || "";
+  const core = value.trim();
+  if (tcache.has(core)) return `${lead}${tcache.get(core)}${trail}`;
+  const translated = (await Promise.all(splitTerms(core).map((part) => part.ko ? part.ko : rawTrans(part.text)))).join("");
+  const fixed = fixTerms(translated);
+  tcache.set(core, fixed);
+  if (!fixed.trim()) return "";
+  const glue = /^(은|는|이|가|을|를|의|에|에서|와|과|도|만)/.test(fixed) ? "" : lead;
+  return `${glue}${fixed}${trail}`;
+}
+
+async function rawTrans(value) {
+  if (!value.trim()) return value;
+  const qs = new URLSearchParams({ client: "gtx", sl: "en", tl: "ko", dt: "t", q: value });
+  const data = await json(`${TR}?${qs}`);
+  return (data?.[0] || []).map((segment) => segment?.[0] || "").join("");
+}
+
+function splitTerms(value) {
+  const hits = [];
+  TERMS.forEach(([re, ko]) => {
+    re.lastIndex = 0;
+    let match;
+    while ((match = re.exec(value))) {
+      hits.push({ start: match.index, end: match.index + match[0].length, ko });
+      if (!match[0]) re.lastIndex += 1;
+    }
+  });
+  hits.sort((a, b) => a.start - b.start || (b.end - b.start) - (a.end - a.start));
+  const picked = [];
+  let end = -1;
+  for (const hit of hits) {
+    if (hit.start < end) continue;
+    picked.push(hit);
+    end = hit.end;
+  }
+  const out = [];
+  let index = 0;
+  picked.forEach((hit) => {
+    if (hit.start > index) out.push({ text: value.slice(index, hit.start) });
+    out.push({ ko: hit.ko });
+    index = hit.end;
+  });
+  if (index < value.length) out.push({ text: value.slice(index) });
+  return out.length ? out : [{ text: value }];
+}
+
+function fixTerms(value) {
+  let out = splitTerms(value).map((part) => part.ko || part.text).join("");
+  POST.forEach(([re, to]) => {
+    out = out.replace(re, to);
+  });
+  return out;
+}
+
+function paintTitle() {
+  const en = ui.title.dataset.en || ui.title.textContent;
+  ui.title.textContent = mode === "ko" ? (ui.title.dataset.ko || en) : en;
+}
+
+function setMode(nextMode) {
+  mode = nextMode;
+  ui.ko.classList.toggle("on", mode === "ko");
+  ui.en.classList.toggle("on", mode === "en");
+  paintTitle();
+  nodes.forEach((item) => {
+    item.node.nodeValue = mode === "ko" && item.ko ? item.ko : item.en;
+  });
+  syncTocLabels();
+}
+
+function syncTocLabels() {
+  ui.toc.querySelectorAll("a[data-anchor]").forEach((link) => {
+    const heading = document.getElementById(link.dataset.anchor);
+    if (heading) link.textContent = heading.textContent.trim() || link.textContent;
+  });
+}
+
+function progress(done, total, failed) {
+  msg(`번역 중 ${done}/${total}${failed ? `, 원문 유지 ${failed}` : ""}`, total ? Math.round((done / total) * 100) : 0);
+}
+
+function msg(text, percent) {
+  ui.status.textContent = text;
+  ui.fill.style.width = `${Math.max(0, Math.min(100, percent))}%`;
+}
+
+function should(value) {
+  const trimmed = value.trim();
+  return trimmed.length > 1 && /[A-Za-z]/.test(trimmed) && !/^[\d\s()[\]{}.,:;'"!?+\-/\\|%]+$/.test(trimmed);
+}
+
+function chunks(items, size) {
+  const out = [];
+  for (let i = 0; i < items.length; i += size) out.push(items.slice(i, i + size));
+  return out;
+}
+
+function scrollHash() {
+  if (!location.hash) return;
+  const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (target) requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
+}
+
+function utility(value) {
+  return /^(references|site navigation|external links|notes)$/i.test(value.trim());
+}
+
+function text(html) {
+  return new DOMParser().parseFromString(`<div>${html}</div>`, "text/html").body.textContent.trim();
+}
+
+function slug(value) {
+  return value.trim().replace(/\s+/g, "_").replace(/[^\p{L}\p{N}_-]/gu, "").slice(0, 80);
+}
+
+function esc(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
 </script>
 </body>
 </html>

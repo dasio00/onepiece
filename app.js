@@ -33,6 +33,8 @@ let activeSubOrgId = "";
 let activeEpisodeId = "";
 let activeQuizCard = null;
 let quizFlipped = false;
+let quizSession = null;
+let quizAnswerDraft = "";
 
 const tabs = document.querySelectorAll(".tab");
 const viewLabel = document.querySelector("#viewLabel");
@@ -574,28 +576,80 @@ function renderQuizDetail(category) {
     detail.innerHTML = `<h3>${escapeHtml(category.name)}</h3>${renderEmptyResult("이 카테고리로 만들 수 있는 카드가 없습니다.")}`;
     return;
   }
-  if (!activeQuizCard || activeQuizCard.category !== category.id) {
-    activeQuizCard = randomCard(category.id, cards);
-    quizFlipped = false;
+  if (!quizSession || quizSession.category !== category.id) {
+    startQuizSession(category.id, cards, "all", cards.length);
   }
+  const card = quizSession.index < quizSession.cards.length ? quizSession.cards[quizSession.index] : null;
+  const isDone = !card;
+  const limitValue = Math.min(10, cards.length);
+  const progress = quizSession.cards.length ? `${Math.min(quizSession.index + 1, quizSession.cards.length)} / ${quizSession.cards.length}` : "0 / 0";
+  const feedback = quizSession.answered && card ? `
+    <div class="quiz-feedback ${quizSession.lastCorrect ? "correct" : "wrong"}">
+      <strong>${quizSession.lastCorrect ? "정답" : "오답"}</strong>
+      <span>내 답: ${escapeHtml(quizSession.lastAnswer || "미입력")}</span>
+      <span>정답: ${escapeHtml(card.back)}</span>
+    </div>
+  ` : "";
   detail.innerHTML = `
     <h3>${escapeHtml(category.name)} 카드 퀴즈</h3>
-    <div class="quiz-card ${quizFlipped ? "flipped" : ""}" id="quizCard" role="button" tabindex="0">
-      <span>${quizFlipped ? "뒷면" : "앞면"}</span>
-      <strong>${escapeHtml(quizFlipped ? activeQuizCard.back : activeQuizCard.front)}</strong>
-    </div>
-    <div class="form-actions">
-      <button class="primary" id="flipQuizButton" type="button">${quizFlipped ? "앞면 보기" : "정답 보기"}</button>
-      <button class="sub-card" id="nextQuizButton" type="button">다음 랜덤 카드</button>
+    <div class="quiz-panel">
+      <div class="quiz-setup">
+        <button class="sub-card" id="allQuizButton" type="button">전체 풀기</button>
+        <label>랜덤 문제 수<input id="quizLimitInput" type="number" min="1" max="${cards.length}" value="${limitValue}" /></label>
+        <button class="sub-card" id="randomQuizButton" type="button">랜덤 풀기</button>
+      </div>
+      <div class="quiz-score">
+        <span>진행 ${progress}</span>
+        <span>정답 ${quizSession.correct}</span>
+        <span>오답 ${quizSession.wrong}</span>
+        <span>남은 문제 ${Math.max(quizSession.cards.length - quizSession.index - (quizSession.answered ? 1 : 0), 0)}</span>
+      </div>
+      ${isDone ? `
+        <div class="quiz-complete">
+          <strong>풀이 완료</strong>
+          <span>정답 ${quizSession.correct}개 · 오답 ${quizSession.wrong}개</span>
+        </div>
+      ` : `
+        <div class="quiz-card" id="quizCard">
+          <span>앞면</span>
+          ${card.imageUrl ? `<img class="quiz-face" src="${escapeAttribute(card.imageUrl)}" alt="" loading="lazy" decoding="async" />` : ""}
+          <strong>${escapeHtml(card.front)}</strong>
+        </div>
+        <form class="quiz-answer" id="quizAnswerForm">
+          <label>답 입력<input id="quizAnswerInput" name="quizAnswer" autocomplete="off" value="${escapeAttribute(quizAnswerDraft)}" ${quizSession.answered ? "disabled" : ""} /></label>
+          <div class="form-actions">
+            <button class="primary" type="submit" ${quizSession.answered ? "disabled" : ""}>채점</button>
+            <button class="sub-card" id="markCorrectButton" type="button" ${quizSession.answered ? "disabled" : ""}>정답으로 기록</button>
+            <button class="sub-card" id="markWrongButton" type="button" ${quizSession.answered ? "disabled" : ""}>오답으로 기록</button>
+            <button class="sub-card" id="nextQuizButton" type="button">${quizSession.index >= quizSession.cards.length - 1 ? "결과 보기" : "다음 문제"}</button>
+          </div>
+        </form>
+        ${feedback}
+      `}
     </div>
   `;
-  document.querySelector("#quizCard").addEventListener("click", flipQuizCard);
-  document.querySelector("#flipQuizButton").addEventListener("click", flipQuizCard);
-  document.querySelector("#nextQuizButton").addEventListener("click", () => {
-    activeQuizCard = randomCard(category.id, cards);
-    quizFlipped = false;
+  document.querySelector("#allQuizButton").addEventListener("click", () => {
+    startQuizSession(category.id, cards, "all", cards.length);
     render();
   });
+  document.querySelector("#randomQuizButton").addEventListener("click", () => {
+    const limit = Number(document.querySelector("#quizLimitInput").value || limitValue);
+    startQuizSession(category.id, cards, "random", limit);
+    render();
+  });
+  const answerForm = document.querySelector("#quizAnswerForm");
+  if (answerForm) {
+    answerForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      checkQuizAnswer();
+    });
+    document.querySelector("#quizAnswerInput").addEventListener("input", (event) => {
+      quizAnswerDraft = event.target.value;
+    });
+    document.querySelector("#markCorrectButton").addEventListener("click", () => markQuizAnswer(true));
+    document.querySelector("#markWrongButton").addEventListener("click", () => markQuizAnswer(false));
+    document.querySelector("#nextQuizButton").addEventListener("click", nextQuizCard);
+  }
 }
 
 function renderEditor() {
@@ -604,6 +658,7 @@ function renderEditor() {
   if (editorMode === "techniques") renderTechniqueEditor();
   if (editorMode === "fruits") renderFruitEditor();
   if (editorMode === "organizations") renderOrganizationEditor();
+  if (editorMode === "origins") renderOriginEditor();
   if (editorMode === "groups") renderGroupEditor();
   if (editorMode === "data") renderDataManager();
 }
@@ -691,7 +746,7 @@ function renderPeopleEditor() {
           <option value="birthday" ${personSortMode === "birthday" ? "selected" : ""}>생일순</option>
         </select></label>
       </div>
-      ${people.map((person) => pickButton("person", person.id, person.name, `${organizationName(person.organization)} · ${subOrganizationName(person.subOrganization)}`)).join("")}
+      ${people.map((person) => pickButton("person", person.id, person.name, `${organizationName(person.organization)} · ${subOrganizationName(person.subOrganization)}`, person.imageUrl)).join("")}
     `,
     "personFormWrap"
   );
@@ -741,6 +796,7 @@ function renderPersonForm(person = null) {
       <label>출신 바다/지역<select name="originRegion">${originRegionOptions(draft.originRegion)}</select></label>
       <label>출신 국가<select name="originCountry">${originCountryOptions(draft.originCountry)}</select></label>
       ${field("likes", "좋아하는 것", draft.likes)}
+      ${renderPersonFormImage(draft)}
       ${field("imageUrl", "이미지 주소", draft.imageUrl)}
       <label>이미지 파일<input name="imageFile" type="file" accept="image/*" /></label>
       <label>악마의 열매<select name="devilFruitId"><option value="">없음/미등록</option>${data.devilFruits.map((fruit) => option(fruit.id, fruit.name, draft.devilFruitId)).join("")}</select></label>
@@ -779,9 +835,15 @@ function renderPersonForm(person = null) {
   document.querySelector("#addTimelineRowButton").addEventListener("click", () => {
     document.querySelector("#timelineRows").insertAdjacentHTML("beforeend", renderTimelineRow({ year: "", content: "" }));
   });
+  form.elements.imageUrl.addEventListener("input", () => {
+    updatePersonImagePreview(form.elements.imageUrl.value, value(form, "name"));
+  });
   form.elements.imageFile.addEventListener("change", async () => {
     const file = form.elements.imageFile.files[0];
-    if (file) form.elements.imageUrl.value = await fileToDataUrl(file);
+    if (file) {
+      form.elements.imageUrl.value = await fileToDataUrl(file);
+      updatePersonImagePreview(form.elements.imageUrl.value, value(form, "name"));
+    }
   });
   form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -937,6 +999,73 @@ function renderOrganizationEditor() {
   });
 }
 
+function renderOriginEditor() {
+  const countries = [...data.originCountries].sort((a, b) => {
+    const regionCompare = originRegionName(a.regionId).localeCompare(originRegionName(b.regionId), "ko");
+    return regionCompare || a.name.localeCompare(b.name, "ko");
+  });
+  editorBody.innerHTML = editorShell(
+    "newOriginCountryButton",
+    "새 출신지 추가",
+    `
+      <div class="edit-note">큰 바다/지역 아래의 국가, 마을, 섬 이름을 수정합니다.</div>
+      ${countries.map((country) => pickButton("origin-country", country.id, country.name, originRegionName(country.regionId))).join("")}
+    `,
+    "originCountryFormWrap"
+  );
+  document.querySelector("#newOriginCountryButton").addEventListener("click", () => renderOriginCountryForm());
+  editorBody.querySelectorAll("[data-origin-country-id]").forEach((button) => {
+    button.addEventListener("click", () => renderOriginCountryForm(findOriginCountry(button.dataset.originCountryId)));
+  });
+  renderOriginCountryForm(countries[0]);
+}
+
+function renderOriginCountryForm(country = null) {
+  const isNew = !country;
+  const target = document.querySelector("#originCountryFormWrap");
+  const draft = country || { id: makeId("origin"), regionId: "east-blue", name: "" };
+  target.innerHTML = `
+    <form id="originCountryForm">
+      ${formHead(isNew ? "새 출신지 추가" : "출신지 수정", "deleteOriginCountryButton", isNew)}
+      ${field("id", "고유 ID", draft.id)}
+      ${field("name", "작은 카테고리 이름", draft.name)}
+      <label>큰 카테고리<select name="regionId">${originRegionOptions(draft.regionId)}</select></label>
+      <div class="form-actions"><button class="primary" type="submit">저장</button></div>
+    </form>
+  `;
+  const form = document.querySelector("#originCountryForm");
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const nextId = value(form, "id") || makeId("origin");
+    const next = {
+      id: nextId,
+      regionId: value(form, "regionId"),
+      name: value(form, "name")
+    };
+    upsert(data.originCountries, draft.id, next);
+    data.people.forEach((person) => {
+      if (person.originCountry === draft.id) {
+        person.originCountry = nextId;
+        person.originRegion = next.regionId;
+        person.origin = `${originRegionName(next.regionId)} / ${next.name}`;
+      }
+    });
+    saveData();
+    renderOriginEditor();
+  });
+  document.querySelector("#deleteOriginCountryButton")?.addEventListener("click", () => {
+    data.originCountries = data.originCountries.filter((item) => item.id !== draft.id);
+    data.people.forEach((person) => {
+      if (person.originCountry === draft.id) {
+        person.originCountry = "";
+        person.origin = originRegionName(person.originRegion);
+      }
+    });
+    saveData();
+    renderOriginEditor();
+  });
+}
+
 function renderGroupEditor() {
   editorBody.innerHTML = editorShell(
     "newGroupButton",
@@ -1089,6 +1218,33 @@ function renderPersonResult(person) {
   `;
 }
 
+function renderPersonFormImage(person) {
+  if (!person.imageUrl) {
+    return `<div class="person-form-visual empty" id="personImagePreview">이미지 미등록</div>`;
+  }
+  return `
+    <div class="person-form-visual" id="personImagePreview">
+      <img class="person-form-thumb" src="${escapeAttribute(person.imageUrl)}" alt="" loading="lazy" decoding="async" />
+      <span>${escapeHtml(person.name || "이름 미등록")}</span>
+    </div>
+  `;
+}
+
+function updatePersonImagePreview(imageUrl, name) {
+  const preview = document.querySelector("#personImagePreview");
+  if (!preview) return;
+  if (!imageUrl) {
+    preview.className = "person-form-visual empty";
+    preview.textContent = "이미지 미등록";
+    return;
+  }
+  preview.className = "person-form-visual";
+  preview.innerHTML = `
+    <img class="person-form-thumb" src="${escapeAttribute(imageUrl)}" alt="" loading="lazy" decoding="async" />
+    <span>${escapeHtml(name || "이름 미등록")}</span>
+  `;
+}
+
 function renderHakiChips(haki = {}) {
   return `
     <span class="chip">무장색: ${haki.armament ? "있음" : "없음"}</span>
@@ -1109,6 +1265,7 @@ function setActiveTab() {
 
 function getQuizCategories() {
   return [
+    item("name", "이름", `${buildQuizCards("name").length}장`, { id: "name", name: "이름" }, "이름 얼굴 인물"),
     item("age", "나이", `${buildQuizCards("age").length}장`, { id: "age", name: "나이" }, "나이 연령"),
     item("height", "키", `${buildQuizCards("height").length}장`, { id: "height", name: "키" }, "키 신장"),
     item("bounty", "현상금", `${buildQuizCards("bounty").length}장`, { id: "bounty", name: "현상금" }, "현상금"),
@@ -1128,6 +1285,7 @@ function buildQuizCards(category) {
   data.people.forEach((person) => {
     const fruit = findFruit(person.devilFruitId);
     const map = {
+      name: ["이 인물의 이름은?", person.name],
       age: [`${person.name}의 나이는?`, `${person.age}세`],
       height: [`${person.name}의 현재 키는?`, `${currentHeight(person)}cm`],
       bounty: [`${person.name}의 현재 현상금은?`, formatBounty(currentBounty(person))],
@@ -1139,19 +1297,25 @@ function buildQuizCards(category) {
       fruit: [`${person.name}이 먹은 악마의 열매는?`, fruit?.name || ""],
       organization: [`${person.name}의 소속은?`, `${organizationName(person.organization)} / ${subOrganizationName(person.subOrganization)}`]
     };
-    if (map[category] && map[category][1]) {
-      cards.push({ category, front: map[category][0], back: map[category][1] });
+    if (map[category] && map[category][1] && (category !== "name" || person.imageUrl)) {
+      cards.push({
+        category,
+        personId: person.id,
+        front: map[category][0],
+        back: map[category][1],
+        imageUrl: category === "name" ? person.imageUrl : ""
+      });
     }
     if (category === "timeline") {
-      person.timeline.forEach((entry) => {
-        cards.push({ category, front: `${person.name}: ${timelineContent(entry)}은 언제?`, back: timelineYear(entry) });
+      (person.timeline || []).forEach((entry) => {
+        cards.push({ category, personId: person.id, front: `${person.name}: ${timelineContent(entry)}은 언제?`, back: timelineYear(entry), imageUrl: "" });
       });
     }
   });
   data.devilFruits.forEach((fruit) => {
     if (category === "fruit") {
       const currentUser = findPerson(fruit.currentUserId);
-      if (currentUser) cards.push({ category, front: `${fruit.name}의 현재 능력자는?`, back: currentUser.name });
+      if (currentUser) cards.push({ category, personId: currentUser.id, front: `${fruit.name}의 현재 능력자는?`, back: currentUser.name, imageUrl: "" });
     }
   });
   return cards;
@@ -1159,6 +1323,80 @@ function buildQuizCards(category) {
 
 function randomCard(category, cards) {
   return cards[Math.floor(Math.random() * cards.length)] || { category, front: "카드 없음", back: "카드 없음" };
+}
+
+function startQuizSession(category, cards, mode = "all", limit = cards.length) {
+  const count = Math.min(Math.max(Number(limit) || cards.length, 1), cards.length);
+  const selectedCards = mode === "random" ? shuffleCards(cards).slice(0, count) : cards.slice(0, count);
+  quizSession = {
+    category,
+    cards: selectedCards,
+    index: 0,
+    correct: 0,
+    wrong: 0,
+    answered: false,
+    lastAnswer: "",
+    lastCorrect: false
+  };
+  quizAnswerDraft = "";
+}
+
+function shuffleCards(cards) {
+  const shuffled = [...cards];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+  return shuffled;
+}
+
+function checkQuizAnswer() {
+  if (!quizSession || quizSession.answered) return;
+  const input = document.querySelector("#quizAnswerInput");
+  const card = quizSession.cards[quizSession.index];
+  const answer = input?.value || "";
+  quizAnswerDraft = answer;
+  markQuizAnswer(answerMatches(answer, card?.back || ""), answer);
+}
+
+function markQuizAnswer(isCorrect, answer = null) {
+  if (!quizSession || quizSession.answered) return;
+  quizSession.answered = true;
+  quizSession.lastAnswer = answer ?? (document.querySelector("#quizAnswerInput")?.value || "");
+  quizSession.lastCorrect = Boolean(isCorrect);
+  if (isCorrect) quizSession.correct += 1;
+  else quizSession.wrong += 1;
+  render();
+}
+
+function nextQuizCard() {
+  if (!quizSession) return;
+  if (quizSession.index < quizSession.cards.length - 1) {
+    quizSession.index += 1;
+  } else {
+    quizSession.index = quizSession.cards.length;
+  }
+  quizSession.answered = false;
+  quizSession.lastAnswer = "";
+  quizSession.lastCorrect = false;
+  quizAnswerDraft = "";
+  render();
+}
+
+function answerMatches(answer, expected) {
+  const normalizedAnswer = normalizeQuizAnswer(answer);
+  const normalizedExpected = normalizeQuizAnswer(expected);
+  if (!normalizedAnswer || !normalizedExpected) return false;
+  return normalizedAnswer === normalizedExpected
+    || (normalizedAnswer.length >= 2 && normalizedExpected.includes(normalizedAnswer))
+    || (normalizedExpected.length >= 2 && normalizedAnswer.includes(normalizedExpected));
+}
+
+function normalizeQuizAnswer(value) {
+  return String(value || "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]/gu, "");
 }
 
 function flipQuizCard() {
@@ -1278,8 +1516,17 @@ function editorShell(newButtonId, newButtonLabel, pickButtons, formId) {
   `;
 }
 
-function pickButton(kind, id, title, sub) {
-  return `<button class="edit-pick" data-${kind}-id="${escapeAttribute(id)}" type="button"><strong>${escapeHtml(title)}</strong><span>${escapeHtml(sub)}</span></button>`;
+function pickButton(kind, id, title, sub, imageUrl = "") {
+  const image = imageUrl ? `<img class="edit-pick-thumb" src="${escapeAttribute(imageUrl)}" alt="" loading="lazy" decoding="async" />` : "";
+  return `
+    <button class="edit-pick ${image ? "with-thumb" : ""}" data-${kind}-id="${escapeAttribute(id)}" type="button">
+      ${image}
+      <span class="edit-pick-copy">
+        <strong>${escapeHtml(title)}</strong>
+        <span>${escapeHtml(sub)}</span>
+      </span>
+    </button>
+  `;
 }
 
 function formHead(title, deleteId, hideDelete) {

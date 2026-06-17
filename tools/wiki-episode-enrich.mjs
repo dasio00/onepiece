@@ -257,7 +257,7 @@ function buildPersonTitleMap(people) {
   const short = new Map();
   for (const person of people) {
     const candidates = [
-      person.wikiTitle,
+      person.wikiReferenceOnly ? "" : person.wikiTitle,
       person.sourceNameEn,
       stripParenthetical(person.sourceNameEn),
       person.name

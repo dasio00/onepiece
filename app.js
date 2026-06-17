@@ -437,6 +437,7 @@ function renderPersonDetail(person) {
         </div>
         ${renderQuickInfoBlock("likes", "좋아하는 것", person.likes || "미등록")}
         ${renderQuickInfoBlock("description", "인물 설명", person.description || person.note || "미등록")}
+        ${renderWikiReferenceBlock(person)}
         ${renderHistoryBlock("키 이력", person.heightHistory, (entry) => `${entry.period || "시기 미등록"} · ${entry.cm || 0}cm`, "height")}
         ${renderHistoryBlock("현상금 이력", person.bountyHistory, (entry) => `${entry.period || "시기 미등록"} · ${formatBounty(entry.amount)}`, "bounty")}
         ${person.bodyMeasurementsEnabled ? renderHistoryBlock("B-W-H 이력", person.bodyMeasurementsHistory, (entry) => `${entry.period || "시기 미등록"} · B${entry.bust || 0} W${entry.waist || 0} H${entry.hip || 0}`) : ""}
@@ -475,6 +476,21 @@ function renderQuickInfoBlock(kind, title, text) {
       </div>
       <p>${escapeHtml(text)}</p>
       <div class="quick-edit-slot" id="quickEdit-${escapeAttribute(kind)}"></div>
+    </div>
+  `;
+}
+
+function renderWikiReferenceBlock(person) {
+  if (!person.wikiUrl && !person.wikiTitle) return "";
+  const fallbackUrl = person.wikiTitle ? `https://onepiece.fandom.com/wiki/${encodeURIComponent(String(person.wikiTitle).replaceAll(" ", "_"))}` : "";
+  const href = person.wikiUrl || fallbackUrl;
+  const label = person.wikiReferenceOnly ? "위키 참고" : "위키";
+  const note = person.wikiReferenceOnly ? (person.wikiReferenceNote || "참고 페이지") : (person.wikiTitle || href);
+  return `
+    <div class="info-block wiki-reference">
+      <strong>${escapeHtml(label)}</strong>
+      <p><a class="wiki-reference-link" href="${escapeAttribute(href)}" target="_blank" rel="noreferrer">${escapeHtml(person.wikiTitle || href)}</a></p>
+      ${person.wikiReferenceOnly ? `<p class="muted">${escapeHtml(note)}</p>` : ""}
     </div>
   `;
 }

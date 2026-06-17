@@ -125,6 +125,78 @@ const WIKI_TITLE_OVERRIDES = new Map([
 const DEVIL_FRUIT_SKIP_PERSON_IDS = new Set([
   "wt100-460"
 ]);
+const WIKI_REFERENCE_TITLE_OVERRIDES = new Map([
+  ["wt100-38", "Buggy Pirates"],
+  ["wt100-41", "Buggy Pirates"],
+  ["wt100-83", "Animal Species"],
+  ["wt100-105", "Animal Species"],
+  ["wt100-138", "Snow Sculptures"],
+  ["wt100-139", "Snow Sculptures"],
+  ["wt100-155", "Animal Species/Arabasta Saga"],
+  ["wt100-161", "Animal Species/Arabasta Saga"],
+  ["wt100-164", "Snow Sculptures"],
+  ["wt100-165", "Snow Sculptures"],
+  ["wt100-166", "Animal Species/Arabasta Saga"],
+  ["wt100-173", "Animal Species/Arabasta Saga"],
+  ["wt100-180", "Animal Species/Arabasta Saga"],
+  ["wt100-189", "Animal Species/Arabasta Saga"],
+  ["wt100-191", "Animal Species/Arabasta Saga"],
+  ["wt100-192", "Animal Species/Arabasta Saga"],
+  ["wt100-209", "Animal Species/Arabasta Saga"],
+  ["wt100-210", "Animal Species/Arabasta Saga"],
+  ["wt100-220", "Tsumegeri Guards"],
+  ["wt100-277", "Animal Species/Sky Island Saga"],
+  ["wt100-281", "Animal Species/Sky Island Saga"],
+  ["wt100-324", "Animal Species/Sky Island Saga"],
+  ["wt100-325", "Animal Species/Water 7 Saga"],
+  ["wt100-326", "Animal Species/Water 7 Saga"],
+  ["wt100-329", "Animal Species/Water 7 Saga"],
+  ["wt100-330", "Animal Species/Water 7 Saga"],
+  ["wt100-355", "Animal Species/Water 7 Saga"],
+  ["wt100-451", "Zombies"],
+  ["wt100-466", "Zombies"],
+  ["wt100-476", "Sea Beast"],
+  ["wt100-560", "Animal Species/Summit War Saga"],
+  ["wt100-565", "Animal Species/Summit War Saga"],
+  ["wt100-567", "Animal Species/Summit War Saga"],
+  ["wt100-582", "Animal Species/Summit War Saga"],
+  ["wt100-654", "Animal Species/Summit War Saga"],
+  ["wt100-655", "Animal Species/Summit War Saga"],
+  ["wt100-657", "Animal Species/Summit War Saga"],
+  ["wt100-708", "Sea Beast"],
+  ["wt100-744", "Sea Beast"],
+  ["wt100-757", "Sea Beast"],
+  ["wt100-831", "Animal Species/Dressrosa Saga"],
+  ["wt100-847", "Animal Species/Dressrosa Saga"],
+  ["wt100-848", "Animal Species/Dressrosa Saga"],
+  ["wt100-851", "Animal Species/Dressrosa Saga"],
+  ["wt100-870", "Tsuji Shibai"],
+  ["wt100-931", "Animal Species/Whole Cake Island Saga"],
+  ["wt100-932", "Animal Species/Whole Cake Island Saga"],
+  ["wt100-939", "Animal Species/Whole Cake Island Saga"],
+  ["wt100-974", "Animal Species/Whole Cake Island Saga"],
+  ["wt100-977", "Totto Land"],
+  ["wt100-989", "Animal Species/Whole Cake Island Saga"],
+  ["wt100-1028", "Tartes"],
+  ["wt100-1102", "Animal Species/Wano Country Saga"],
+  ["wt100-1103", "Animal Species/Wano Country Saga"],
+  ["wt100-1105", "Animal Species/Wano Country Saga"],
+  ["wt100-1114", "Animal Species/Wano Country Saga"],
+  ["wt100-1115", "Animal Species/Wano Country Saga"],
+  ["wt100-1130", "Den Den Mushi"],
+  ["wt100-1211", "Animal Species/Wano Country Saga"],
+  ["wt100-1219", "Animal Species/Wano Country Saga"],
+  ["wt100-1221", "Animal Species/Wano Country Saga"],
+  ["wt100-1237", "Animal Species/Wano Country Saga"],
+  ["wt100-1438", "Animal Species/Final Saga"],
+  ["wt100-1474", "Animal Species/Strong World"],
+  ["wt100-1511", "Animal Species/Summit War Saga"],
+  ["wt100-1512", "South Bird"],
+  ["wt100-1513", "South Bird"],
+  ["wt100-1514", "South Bird"],
+  ["wt100-1520", "Sea Beast"],
+  ["wt100-1521", "Sea Beast"]
+]);
 const resolvedTitleCache = new Map();
 const searchResultCache = new Map();
 
@@ -202,6 +274,19 @@ if (!skipWiki) {
     const person = data.people.find((item) => item.id === entry.id);
     const wiki = await findWikiPageForOfficialCharacter(entry, person);
     if (!wiki) {
+      const referenceTitle = WIKI_REFERENCE_TITLE_OVERRIDES.get(entry.id);
+      if (referenceTitle) {
+        wikiEntries.push({
+          id: entry.id,
+          sourceNameJa: entry.sourceNameJa,
+          sourceNameEn: entry.sourceNameEn,
+          wikiTitle: referenceTitle,
+          wikiUrl: wikiUrl(referenceTitle),
+          referenceOnly: true,
+          patch: buildReferencePatch(referenceTitle)
+        });
+        continue;
+      }
       unmatched.push({ id: entry.id, sourceNameJa: entry.sourceNameJa, sourceNameEn: entry.sourceNameEn });
       continue;
     }
@@ -604,6 +689,15 @@ function buildFruitPatches(personId, info) {
       };
     })
     .filter(Boolean);
+}
+
+function buildReferencePatch(title) {
+  return {
+    wikiTitle: title,
+    wikiUrl: wikiUrl(title),
+    wikiReferenceOnly: true,
+    wikiReferenceNote: `One Piece Wiki reference page: ${title}`
+  };
 }
 
 function applyEnrichmentBlock(text, payload) {

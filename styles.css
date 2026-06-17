@@ -2270,7 +2270,7 @@ textarea:focus-visible {
 }
 
 .quiz-workspace .quiz-card {
-  min-height: 0;
+  min-height: 250px;
   margin: 0;
   gap: 8px;
   padding: 14px;
@@ -2324,6 +2324,48 @@ textarea:focus-visible {
 .quiz-feedback span,
 .quiz-complete span {
   color: var(--muted);
+}
+
+.quiz-study-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.quiz-nav-button {
+  display: grid;
+  place-items: center;
+  gap: 3px;
+  min-height: 56px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 8px;
+  background: #ffffff;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.quiz-nav-button.primary {
+  border-color: var(--accent-2);
+  background: var(--soft);
+  color: var(--accent-2);
+}
+
+.quiz-nav-button:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.quiz-nav-button span {
+  color: inherit;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.quiz-nav-button b {
+  font-size: 12px;
+  line-height: 1.1;
 }
 
 @media (max-width: 860px) {
@@ -2380,6 +2422,7 @@ textarea:focus-visible {
   }
 
   .quiz-workspace .quiz-card {
+    min-height: 220px;
     padding: 12px;
   }
 

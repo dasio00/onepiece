@@ -630,9 +630,8 @@ function renderQuizDetail(category) {
           <strong>${quizMode === "study" ? "학습 완료" : "풀이 완료"}</strong>
           <span>${quizMode === "study" ? `${quizSession.cards.length}장을 모두 확인했습니다.` : `정답 ${quizSession.correct}개 · 오답 ${quizSession.wrong}개`}</span>
         </div>
-      ` : `
+        ` : `
         <div class="quiz-card ${showStudyBack ? "flipped" : ""}" id="quizCard">
-          <span>${showStudyBack ? "뒷면" : "앞면"}</span>
           ${!showStudyBack && card.imageUrl ? `<img class="quiz-face" src="${escapeAttribute(card.imageUrl)}" alt="" loading="lazy" decoding="async" />` : ""}
           <strong>${escapeHtml(showStudyBack ? card.back : card.front)}</strong>
         </div>
@@ -648,9 +647,19 @@ function renderQuizDetail(category) {
           </form>
           ${feedback}
         ` : `
-          <div class="form-actions">
-            <button class="primary" id="flipStudyQuizButton" type="button">${showStudyBack ? "앞면 보기" : "정답 보기"}</button>
-            <button class="sub-card" id="nextQuizButton" type="button">${quizSession.index >= quizSession.cards.length - 1 ? "완료하기" : "다음 카드"}</button>
+          <div class="form-actions quiz-study-actions">
+            <button class="quiz-nav-button" id="prevQuizButton" type="button" ${quizSession.index <= 0 ? "disabled" : ""} title="이전 카드">
+              <span aria-hidden="true">◀</span>
+              <b>이전 카드</b>
+            </button>
+            <button class="quiz-nav-button primary" id="flipStudyQuizButton" type="button" title="${showStudyBack ? "문제 보기" : "정답 보기"}">
+              <span aria-hidden="true">●</span>
+              <b>${showStudyBack ? "문제 보기" : "정답 보기"}</b>
+            </button>
+            <button class="quiz-nav-button" id="nextQuizButton" type="button" title="${quizSession.index >= quizSession.cards.length - 1 ? "완료하기" : "다음 카드"}">
+              <span aria-hidden="true">▶</span>
+              <b>${quizSession.index >= quizSession.cards.length - 1 ? "완료" : "다음 카드"}</b>
+            </button>
           </div>
         `}
       `}
@@ -700,6 +709,7 @@ function renderQuizDetail(category) {
     quizStudyFlipped = !quizStudyFlipped;
     render();
   });
+  document.querySelector("#prevQuizButton")?.addEventListener("click", previousQuizCard);
   document.querySelector("#nextQuizButton")?.addEventListener("click", nextQuizCard);
 }
 
@@ -1576,6 +1586,17 @@ function markQuizAnswer(isCorrect, answer = null) {
   quizSession.lastCorrect = Boolean(isCorrect);
   if (isCorrect) quizSession.correct += 1;
   else quizSession.wrong += 1;
+  render();
+}
+
+function previousQuizCard() {
+  if (!quizSession || quizSession.index <= 0) return;
+  quizSession.index -= 1;
+  quizSession.answered = false;
+  quizSession.lastAnswer = "";
+  quizSession.lastCorrect = false;
+  quizAnswerDraft = "";
+  quizStudyFlipped = false;
   render();
 }
 

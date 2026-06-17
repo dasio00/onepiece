@@ -20,6 +20,8 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 }));
 
 const apply = args.get("apply") === "true";
+const applyOutput = args.get("apply-output") === "true";
+const mergeOutput = args.get("merge-output") === "true";
 const start = Number(args.get("start") || 1);
 const limit = Number(args.get("limit") || 100);
 const end = Number(args.get("end") || (start + limit - 1));
@@ -28,10 +30,22 @@ await fs.mkdir(CACHE_DIR, { recursive: true });
 
 const dataText = await fs.readFile(DATA_PATH, "utf8");
 const data = loadData(dataText);
+
+if (applyOutput) {
+  const previous = JSON.parse(await fs.readFile(OUTPUT_PATH, "utf8"));
+  await fs.writeFile(DATA_PATH, applyEpisodeBlock(dataText, previous.episodes || []));
+  console.log(JSON.stringify({
+    appliedOutput: true,
+    episodes: previous.episodes?.length || 0,
+    misses: previous.misses?.length || 0
+  }, null, 2));
+  process.exit(0);
+}
+
 const personMap = buildPersonTitleMap(data.people);
 const techniqueMap = buildTechniqueNameMap(data.techniques);
-const episodes = [];
-const misses = [];
+let episodes = [];
+let misses = [];
 
 for (let chapter = start; chapter <= end; chapter += 1) {
   const pageTitle = `Chapter ${chapter}`;
@@ -42,6 +56,10 @@ for (let chapter = start; chapter <= end; chapter += 1) {
   } catch (error) {
     misses.push({ chapter, error: String(error.message || error) });
   }
+}
+
+if (mergeOutput) {
+  ({ episodes, misses } = await mergeWithPreviousOutput(episodes, misses, start, end));
 }
 
 await fs.writeFile(OUTPUT_PATH, `${JSON.stringify({ generatedAt: new Date().toISOString(), start, end, episodes, misses }, null, 2)}\n`);
@@ -64,6 +82,34 @@ function loadData(text) {
   vm.createContext(context);
   vm.runInContext(text, context, { filename: "data.js" });
   return context.window.onePieceData;
+}
+
+async function mergeWithPreviousOutput(currentEpisodes, currentMisses, rangeStart, rangeEnd) {
+  let previous = null;
+  try {
+    previous = JSON.parse(await fs.readFile(OUTPUT_PATH, "utf8"));
+  } catch {
+    previous = null;
+  }
+  if (!previous) return { episodes: currentEpisodes, misses: currentMisses };
+
+  const inRange = (chapter) => Number(chapter) >= rangeStart && Number(chapter) <= rangeEnd;
+  const episodeMap = new Map();
+  for (const episode of previous.episodes || []) {
+    if (!inRange(episode.number)) episodeMap.set(episode.number, episode);
+  }
+  for (const episode of currentEpisodes) episodeMap.set(episode.number, episode);
+
+  const missMap = new Map();
+  for (const miss of previous.misses || []) {
+    if (!inRange(miss.chapter)) missMap.set(miss.chapter, miss);
+  }
+  for (const miss of currentMisses) missMap.set(miss.chapter, miss);
+
+  return {
+    episodes: [...episodeMap.values()].sort((a, b) => a.number - b.number),
+    misses: [...missMap.values()].sort((a, b) => a.chapter - b.chapter)
+  };
 }
 
 async function getChapterSource(pageTitle) {

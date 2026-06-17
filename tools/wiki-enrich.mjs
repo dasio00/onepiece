@@ -78,6 +78,10 @@ const COMMON_ORG_IDS = new Map([
   [204, "red-hair"],
   [271, "straw-hat"]
 ]);
+const WIKI_TITLE_OVERRIDES = new Map([
+  ["wt100-501", "Trafalgar D. Water Law"],
+  ["wt100-1093", "Nerona Imu"]
+]);
 const resolvedTitleCache = new Map();
 const searchResultCache = new Map();
 
@@ -90,6 +94,9 @@ const apply = args.get("apply") === "true";
 const skipWiki = args.get("skip-wiki") === "true";
 const detailLimit = args.get("all") === "true" ? Number.POSITIVE_INFINITY : Number(args.get("limit") || 50);
 const applyOutput = args.get("apply-output") === "true";
+const startId = Number(args.get("start-id") || 1);
+const endId = Number(args.get("end-id") || Number.POSITIVE_INFINITY);
+const mergeOutput = args.get("merge-output") === "true";
 
 await fs.mkdir(WIKI_CACHE_DIR, { recursive: true });
 await fs.mkdir(CACHE_DIR, { recursive: true });
@@ -142,7 +149,13 @@ for (const person of people) {
 }
 
 if (!skipWiki) {
-  for (const entry of officialEntries.slice(0, detailLimit)) {
+  const wikiCandidates = officialEntries
+    .filter((entry) => {
+      const number = idNumber(entry.id);
+      return number >= startId && number <= endId;
+    })
+    .slice(0, detailLimit);
+  for (const entry of wikiCandidates) {
     const person = data.people.find((item) => item.id === entry.id);
     const wiki = await findWikiPageForOfficialCharacter(entry, person);
     if (!wiki) {
@@ -153,7 +166,9 @@ if (!skipWiki) {
     const fruitPatches = buildFruitPatches(entry.id, wiki.info);
     if (fruitPatches.length) {
       patch.devilFruitId = fruitPatches[0].id;
-      fruitPatches.forEach((fruitPatch) => fruitEntries.set(fruitPatch.id, fruitPatch));
+      fruitPatches.forEach((fruitPatch) => {
+        if (!fruitEntries.has(fruitPatch.id)) fruitEntries.set(fruitPatch.id, fruitPatch);
+      });
     }
     wikiEntries.push({
       id: entry.id,
@@ -168,10 +183,10 @@ if (!skipWiki) {
 }
 
 const subOrganizations = buildSubOrganizationEntries(wt100Options.organizations);
-const output = {
+let output = {
   generatedAt: new Date().toISOString(),
   officialMatched: officialEntries.length,
-  wikiTried: skipWiki ? 0 : Math.min(officialEntries.length, Number.isFinite(detailLimit) ? detailLimit : officialEntries.length),
+  wikiTried: skipWiki ? 0 : wikiEntries.length + unmatched.length,
   wikiMatched: wikiEntries.length,
   unmatched,
   subOrganizations: subOrganizations.length,
@@ -181,24 +196,31 @@ const output = {
   fruitEntries: [...fruitEntries.values()]
 };
 
+if (mergeOutput) {
+  output = await mergeWithPreviousOutput(output, startId, endId);
+}
+
 await fs.writeFile(OUTPUT_PATH, `${JSON.stringify(output, null, 2)}\n`);
 
 if (apply) {
   const nextText = applyEnrichmentBlock(dataText, {
-    officialEntries,
-    wikiEntries,
-    subOrganizations,
-    fruitEntries: [...fruitEntries.values()]
+    officialEntries: output.officialEntries,
+    wikiEntries: output.wikiEntries,
+    subOrganizations: buildSubOrganizationEntries(wt100Options.organizations),
+    fruitEntries: output.fruitEntries
   });
   await fs.writeFile(DATA_PATH, nextText);
 }
 
 console.log(JSON.stringify({
-  officialMatched: officialEntries.length,
+  officialMatched: output.officialEntries.length,
   wikiTried: output.wikiTried,
-  wikiMatched: wikiEntries.length,
-  fruits: fruitEntries.size,
-  subOrganizations: subOrganizations.length,
+  wikiMatched: output.wikiMatched,
+  fruits: output.fruitEntries.length,
+  subOrganizations: output.subOrganizations,
+  startId,
+  endId: Number.isFinite(endId) ? endId : null,
+  merged: mergeOutput,
   output: path.relative(ROOT, OUTPUT_PATH),
   applied: apply
 }, null, 2));
@@ -208,6 +230,54 @@ function loadData(text) {
   vm.createContext(context);
   vm.runInContext(text, context, { filename: "data.js" });
   return context.window.onePieceData;
+}
+
+function idNumber(id) {
+  const match = String(id || "").match(/^wt100-(\d+)$/);
+  const number = Number(match?.[1] || String(id || "").replace(/\D+/g, ""));
+  return Number.isFinite(number) ? number : Number.POSITIVE_INFINITY;
+}
+
+async function mergeWithPreviousOutput(current, rangeStart, rangeEnd) {
+  let previous = null;
+  try {
+    previous = JSON.parse(await fs.readFile(OUTPUT_PATH, "utf8"));
+  } catch {
+    previous = null;
+  }
+  if (!previous) return current;
+
+  const inCurrentRange = (id) => {
+    const number = idNumber(id);
+    return number >= rangeStart && number <= rangeEnd;
+  };
+  const mergeById = (oldItems = [], newItems = [], replaceRange = false) => {
+    const map = new Map();
+    oldItems.forEach((item) => {
+      if (!replaceRange || !inCurrentRange(item.id)) map.set(item.id, item);
+    });
+    newItems.forEach((item) => map.set(item.id, item));
+    return [...map.values()].sort((a, b) => idNumber(a.id) - idNumber(b.id));
+  };
+  const officialEntries = current.officialEntries.length ? current.officialEntries : (previous.officialEntries || []);
+  const wikiEntries = mergeById(previous.wikiEntries || [], current.wikiEntries || [], true);
+  const unmatched = mergeById(previous.unmatched || [], current.unmatched || [], true);
+  const fruitMap = new Map();
+  [...(previous.fruitEntries || []), ...(current.fruitEntries || [])].forEach((item) => fruitMap.set(item.id, item));
+  const triedIds = new Set([...wikiEntries, ...unmatched].map((item) => item.id));
+
+  return {
+    generatedAt: current.generatedAt,
+    officialMatched: officialEntries.length,
+    wikiTried: triedIds.size,
+    wikiMatched: wikiEntries.length,
+    unmatched,
+    subOrganizations: current.subOrganizations,
+    fruits: fruitMap.size,
+    officialEntries,
+    wikiEntries,
+    fruitEntries: [...fruitMap.values()]
+  };
 }
 
 async function getWt100Master() {
@@ -295,11 +365,17 @@ function buildSubOrganizationEntries(organizations) {
 }
 
 async function findWikiPageForOfficialCharacter(entry, person) {
+  const overrideTitle = WIKI_TITLE_OVERRIDES.get(entry.id);
+  if (overrideTitle) {
+    const title = await resolvePageTitle(overrideTitle) || overrideTitle;
+    const info = await getPageInfo(title);
+    return { title, info };
+  }
   if (person?.wikiTitle && !String(person.wikiTitle).includes("/")) {
     try {
       const title = await resolvePageTitle(person.wikiTitle) || person.wikiTitle;
       const info = await getPageInfo(title);
-      return { title, info };
+      if (isCharacterPageMatch(entry, info)) return { title, info };
     } catch {
       // Fall back to the normal candidate search if a saved title no longer resolves.
     }
@@ -530,9 +606,15 @@ function isCharacterPageMatch(entry, info) {
   const officialEn = normalizeName(firstFieldByPrefix(info.fields, "Official English Name"));
   const title = normalizeName(info.title);
   const jaMatches = info.japaneseNames.some((name) => normalizeJapanese(name) === expectedJa);
-  const enMatches = officialEn && (officialEn === expectedEn || expectedEn.includes(officialEn) || officialEn.includes(expectedEn));
-  const titleMatches = title && (title === expectedEn || expectedEn.includes(title) || title.includes(expectedEn));
+  const enMatches = officialEn && safeNameMatch(expectedEn, officialEn);
+  const titleMatches = title && safeNameMatch(expectedEn, title);
   return jaMatches || enMatches || (titleMatches && expectedEn.length > 4);
+}
+
+function safeNameMatch(expected, actual) {
+  if (!expected || !actual) return false;
+  if (expected === actual) return true;
+  return Math.min(expected.length, actual.length) >= 5 && (expected.includes(actual) || actual.includes(expected));
 }
 
 function firstFieldByPrefix(fields, prefix) {

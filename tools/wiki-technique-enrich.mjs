@@ -17,6 +17,8 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 }));
 
 const apply = args.get("apply") === "true";
+const applyOutput = args.get("apply-output") === "true";
+const mergeOutput = args.get("merge-output") !== "false";
 const perPage = Number(args.get("per-page") || 80);
 
 const SOURCES = [
@@ -24,18 +26,65 @@ const SOURCES = [
   { title: "Three Sword Style", ownerId: "wt100-2" },
   { title: "Art of Weather", ownerId: "wt100-3" },
   { title: "Pop Greens", ownerId: "wt100-4" },
-  { title: "Black Leg Style", ownerId: "wt100-5" }
+  { title: "Black Leg Style", ownerId: "wt100-5" },
+  { title: "Fish-Man Karate", ownerId: "wt100-553" },
+  { title: "Rokushiki", ownerId: "wt100-367" },
+  { title: "Electro", ownerId: "wt100-896" },
+  { title: "Hasshoken", ownerId: "wt100-798" },
+  { title: "Okama Kenpo", ownerId: "wt100-575" },
+  { title: "Ope Ope no Mi", ownerId: "wt100-501" },
+  { title: "Mero Mero no Mi", ownerId: "wt100-543" },
+  { title: "Hana Hana no Mi", ownerId: "wt100-131" },
+  { title: "Yomi Yomi no Mi", ownerId: "wt100-443" },
+  { title: "Bara Bara no Mi", ownerId: "wt100-39" },
+  { title: "Suna Suna no Mi", ownerId: "wt100-179" },
+  { title: "Goro Goro no Mi", ownerId: "wt100-299" },
+  { title: "Magu Magu no Mi", ownerId: "wt100-442" },
+  { title: "Hie Hie no Mi", ownerId: "wt100-346" },
+  { title: "Pika Pika no Mi", ownerId: "wt100-520" },
+  { title: "Gura Gura no Mi", ownerId: "wt100-270" },
+  { title: "Yami Yami no Mi", ownerId: "wt100-274" },
+  { title: "Ito Ito no Mi", ownerId: "wt100-266" },
+  { title: "Mochi Mochi no Mi", ownerId: "wt100-996" },
+  { title: "Uo Uo no Mi, Model: Seiryu", ownerId: "wt100-886" },
+  { title: "Tori Tori no Mi, Model: Phoenix", ownerId: "wt100-435" },
+  { title: "Nikyu Nikyu no Mi", ownerId: "wt100-267" },
+  { title: "Jiki Jiki no Mi", ownerId: "wt100-496" },
+  { title: "Horo Horo no Mi", ownerId: "wt100-458" },
+  { title: "Doku Doku no Mi", ownerId: "wt100-561" },
+  { title: "Soru Soru no Mi", ownerId: "wt100-763" },
+  { title: "Hobi Hobi no Mi", ownerId: "wt100-858" },
+  { title: "Zushi Zushi no Mi", ownerId: "wt100-793" },
+  { title: "Mera Mera no Mi", ownerId: "wt100-645" }
 ];
 
 await fs.mkdir(CACHE_DIR, { recursive: true });
 
 const dataText = await fs.readFile(DATA_PATH, "utf8");
 const data = loadData(dataText);
+
+if (applyOutput) {
+  const previous = JSON.parse(await fs.readFile(OUTPUT_PATH, "utf8"));
+  await fs.writeFile(DATA_PATH, applyTechniqueBlock(dataText, previous.entries || []));
+  console.log(JSON.stringify({
+    appliedOutput: true,
+    techniques: previous.entries?.length || 0
+  }, null, 2));
+  process.exit(0);
+}
+
 const existingNames = new Set(data.techniques.map((item) => normalizeName(item.name)));
 const entries = [];
+const skippedSources = [];
 
 for (const source of SOURCES) {
-  const html = await getPageHtml(source.title);
+  let html = "";
+  try {
+    html = await getPageHtml(source.title);
+  } catch (error) {
+    skippedSources.push({ title: source.title, error: String(error.message || error) });
+    continue;
+  }
   const names = extractTechniqueNames(html).slice(0, perPage);
   for (const name of names) {
     const normalized = normalizeName(name);
@@ -52,15 +101,18 @@ for (const source of SOURCES) {
   }
 }
 
-await fs.writeFile(OUTPUT_PATH, `${JSON.stringify({ generatedAt: new Date().toISOString(), entries }, null, 2)}\n`);
+const outputEntries = mergeOutput ? await mergeWithPreviousOutput(entries) : entries;
+await fs.writeFile(OUTPUT_PATH, `${JSON.stringify({ generatedAt: new Date().toISOString(), entries: outputEntries, skippedSources }, null, 2)}\n`);
 
 if (apply) {
-  await fs.writeFile(DATA_PATH, applyTechniqueBlock(dataText, entries));
+  await fs.writeFile(DATA_PATH, applyTechniqueBlock(dataText, outputEntries));
 }
 
 console.log(JSON.stringify({
   sources: SOURCES.length,
-  techniques: entries.length,
+  skippedSources: skippedSources.length,
+  newTechniques: entries.length,
+  techniques: outputEntries.length,
   output: path.relative(ROOT, OUTPUT_PATH),
   applied: apply
 }, null, 2));
@@ -70,6 +122,23 @@ function loadData(text) {
   vm.createContext(context);
   vm.runInContext(text, context, { filename: "data.js" });
   return context.window.onePieceData;
+}
+
+async function mergeWithPreviousOutput(currentEntries) {
+  let previous = null;
+  try {
+    previous = JSON.parse(await fs.readFile(OUTPUT_PATH, "utf8"));
+  } catch {
+    previous = null;
+  }
+  const map = new Map();
+  for (const entry of previous?.entries || []) {
+    if (isLikelyTechniqueName(entry.name)) map.set(normalizeName(entry.name), entry);
+  }
+  for (const entry of currentEntries) {
+    if (isLikelyTechniqueName(entry.name)) map.set(normalizeName(entry.name), entry);
+  }
+  return [...map.values()];
 }
 
 async function getPageHtml(title) {
@@ -110,6 +179,8 @@ function extractTechniqueNames(html) {
 function isLikelyTechniqueName(name) {
   if (!name || name.length < 3) return false;
   if (/^(Chapter|Episode|Volume|Anime|Manga|Movie|Game|Note|User|Users)$/i.test(name)) return false;
+  if (/^(Strengths|Weaknesses|Usage|Translation|Etymology|Major Battles|History)$/i.test(name)) return false;
+  if (/\b(?:Fruit|Fruits)\b$/i.test(name)) return false;
   if (/^[0-9\s.,:;!?-]+$/.test(name)) return false;
   return true;
 }
@@ -148,7 +219,7 @@ function cleanHtml(html) {
 }
 
 function normalizeName(value) {
-  return String(value || "").normalize("NFKC").toLowerCase().replace(/[^a-z0-9가-힣ぁ-んァ-ヶ一-龠]+/g, "");
+  return String(value || "").normalize("NFKC").toLowerCase().replace(/[^\p{Letter}\p{Number}]+/gu, "");
 }
 
 function slugify(value) {

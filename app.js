@@ -1398,7 +1398,7 @@ function buildPersonQuizCard(category, person, fruit) {
     birthday: hasRegisteredText(person.birthday) ? {
       front: `${person.name}의 생일은?`,
       back: person.birthday,
-      acceptedAnswers: [person.birthday]
+      acceptedAnswers: birthdayAnswerVariants(person.birthday)
     } : null,
     origin: origin ? {
       front: `${person.name}의 출신지는?`,
@@ -1474,6 +1474,26 @@ function bountyAnswerVariants(amount) {
     `${number}베리`,
     `${number.toLocaleString("ko-KR")}베리`
   ];
+}
+
+function birthdayAnswerVariants(birthday) {
+  const { month, day } = parseBirthday(birthday);
+  if (!month || !day) return [birthday].filter(hasRegisteredText);
+  const paddedMonth = month.padStart(2, "0");
+  const paddedDay = day.padStart(2, "0");
+  return [
+    birthday,
+    `${month}월 ${day}일`,
+    `${month}월${day}일`,
+    `${month}/${day}`,
+    `${paddedMonth}/${paddedDay}`,
+    `${month}-${day}`,
+    `${paddedMonth}-${paddedDay}`,
+    `${month}.${day}`,
+    `${paddedMonth}.${paddedDay}`,
+    `${month}${day}`,
+    `${paddedMonth}${paddedDay}`
+  ].filter(hasRegisteredText);
 }
 
 function randomCard(category, cards) {

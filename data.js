@@ -48881,8 +48881,12 @@ window.onePieceData = {
   originCountries: [
     { id: "goa-kingdom", regionId: "east-blue", name: "고아 왕국" },
     { id: "foosha-village", regionId: "east-blue", name: "후샤 마을" },
+    { id: "dawn-island", regionId: "east-blue", name: "돈 섬" },
+    { id: "loguetown", regionId: "east-blue", name: "로그타운" },
     { id: "shimotsuki-village", regionId: "east-blue", name: "시모츠키 마을" },
+    { id: "syrup-village", regionId: "east-blue", name: "시롭 마을" },
     { id: "cocoyasi-village", regionId: "east-blue", name: "코코야시 마을" },
+    { id: "conomi-islands", regionId: "east-blue", name: "코노미 제도" },
     { id: "ohara", regionId: "west-blue", name: "오하라" },
     { id: "baterilla", regionId: "south-blue", name: "바테리라" },
     { id: "germa-kingdom", regionId: "north-blue", name: "제르마 왕국" },
@@ -48923,6 +48927,8 @@ window.onePieceData = {
 
   subOrganizations: [
     { id: "straw-hat", organizationId: "pirates", name: "밀짚모자 일당", description: "예시 세부 조직입니다." },
+    { id: "roger-pirates", organizationId: "pirates", name: "로저 해적단", description: "해적왕 골 D. 로저가 이끈 해적단입니다." },
+    { id: "red-hair", organizationId: "pirates", name: "빨간 머리 해적단", description: "샹크스가 이끄는 해적단입니다." },
     { id: "heart", organizationId: "pirates", name: "하트 해적단", description: "" },
     { id: "kid", organizationId: "pirates", name: "키드 해적단", description: "" }
   ],
@@ -48958,3 +48964,208 @@ window.onePieceData = {
 
   bloodTypes: ["F", "XF", "X", "S"]
 };
+
+(() => {
+  const data = window.onePieceData;
+  const updatePerson = (id, next) => {
+    const person = data.people.find((item) => item.id === id);
+    if (!person) return;
+    Object.assign(person, next);
+  };
+
+  updatePerson("wt100-1", {
+    aliases: "밀짚모자 루피",
+    job: "해적 선장",
+    organization: "pirates",
+    subOrganization: "straw-hat",
+    age: 19,
+    birthday: "5월 5일",
+    heightCm: 174,
+    heightHistory: [{ period: "현재", cm: 174 }],
+    bounty: 3000000000,
+    bountyHistory: [{ period: "현재", amount: 3000000000 }],
+    bloodType: "F",
+    originRegion: "east-blue",
+    originCountry: "dawn-island",
+    origin: "이스트 블루 / 돈 섬",
+    description: "밀짚모자 일당의 선장. 고무고무 열매의 능력자로 해적왕을 목표로 항해한다.",
+    devilFruitId: "gum-gum",
+    haki: { armament: true, observation: true, conqueror: true },
+    timeline: [
+      { year: "12년 전", content: "샹크스와 만나 밀짚모자를 맡았다." },
+      { year: "현재", content: "와노국 이후 사황으로 인정받았다." }
+    ]
+  });
+
+  updatePerson("wt100-2", {
+    aliases: "해적 사냥꾼 조로",
+    job: "검사",
+    organization: "pirates",
+    subOrganization: "straw-hat",
+    age: 21,
+    birthday: "11월 11일",
+    heightCm: 181,
+    heightHistory: [{ period: "현재", cm: 181 }],
+    bounty: 1111000000,
+    bountyHistory: [{ period: "현재", amount: 1111000000 }],
+    bloodType: "XF",
+    originRegion: "east-blue",
+    originCountry: "shimotsuki-village",
+    origin: "이스트 블루 / 시모츠키 마을",
+    description: "밀짚모자 일당의 검사. 세계 제일의 대검호를 목표로 하는 삼도류 사용자다.",
+    haki: { armament: true, observation: true, conqueror: true },
+    timeline: [
+      { year: "어린 시절", content: "쿠이나와 세계 제일의 대검호가 되겠다고 약속했다." },
+      { year: "현재", content: "와노국 이후 현상금이 11억 1100만 베리가 되었다." }
+    ]
+  });
+
+  updatePerson("wt100-3", {
+    aliases: "도둑고양이 나미",
+    job: "항해사",
+    organization: "pirates",
+    subOrganization: "straw-hat",
+    age: 20,
+    birthday: "7월 3일",
+    heightCm: 170,
+    heightHistory: [{ period: "현재", cm: 170 }],
+    bounty: 366000000,
+    bountyHistory: [{ period: "현재", amount: 366000000 }],
+    bloodType: "X",
+    originRegion: "east-blue",
+    originCountry: "conomi-islands",
+    origin: "이스트 블루 / 코노미 제도",
+    description: "밀짚모자 일당의 항해사. 세계지도를 그리는 꿈을 가진 항해와 기상 판단의 전문가다.",
+    haki: { armament: false, observation: false, conqueror: false }
+  });
+
+  updatePerson("wt100-4", {
+    aliases: "갓 우솝, 저격왕",
+    job: "저격수",
+    organization: "pirates",
+    subOrganization: "straw-hat",
+    age: 19,
+    birthday: "4월 1일",
+    heightCm: 176,
+    heightHistory: [{ period: "현재", cm: 176 }],
+    bounty: 500000000,
+    bountyHistory: [{ period: "현재", amount: 500000000 }],
+    bloodType: "S",
+    originRegion: "east-blue",
+    originCountry: "syrup-village",
+    origin: "이스트 블루 / 시롭 마을",
+    description: "밀짚모자 일당의 저격수. 용감한 바다의 전사를 꿈꾸며 다양한 발명품과 저격술을 사용한다.",
+    haki: { armament: false, observation: true, conqueror: false }
+  });
+
+  updatePerson("wt100-5", {
+    aliases: "검은 다리 상디",
+    job: "요리사",
+    organization: "pirates",
+    subOrganization: "straw-hat",
+    age: 21,
+    birthday: "3월 2일",
+    heightCm: 180,
+    heightHistory: [{ period: "현재", cm: 180 }],
+    bounty: 1032000000,
+    bountyHistory: [{ period: "현재", amount: 1032000000 }],
+    bloodType: "S RH-",
+    originRegion: "north-blue",
+    originCountry: "germa-kingdom",
+    origin: "노스 블루 / 제르마 왕국",
+    description: "밀짚모자 일당의 요리사. 올 블루를 찾는 꿈을 가진 발차기 격투의 달인이다.",
+    haki: { armament: true, observation: true, conqueror: false }
+  });
+
+  updatePerson("wt100-7", {
+    aliases: "골드 로저, 해적왕",
+    job: "해적 선장",
+    organization: "pirates",
+    subOrganization: "roger-pirates",
+    age: 53,
+    birthday: "12월 31일",
+    heightCm: 274,
+    heightHistory: [{ period: "사망 당시", cm: 274 }],
+    bounty: 5564800000,
+    bountyHistory: [{ period: "최종", amount: 5564800000 }],
+    bloodType: "S",
+    originRegion: "east-blue",
+    originCountry: "loguetown",
+    origin: "이스트 블루 / 로그타운",
+    description: "로저 해적단의 선장이자 해적왕. 라프텔에 도달해 대해적시대를 연 인물이다.",
+    haki: { armament: true, observation: true, conqueror: true },
+    timeline: [
+      { year: "사망 전", content: "라프텔에 도달해 원피스의 실체를 확인했다." },
+      { year: "24년 전", content: "로그타운에서 처형되며 대해적시대의 계기를 만들었다." }
+    ]
+  });
+
+  updatePerson("wt100-8", {
+    aliases: "",
+    job: "해적 동경자",
+    organization: "etc",
+    subOrganization: "",
+    birthday: "1월 1일",
+    description: "골 D. 로저의 처형을 목격한 해적 동경자. 로저의 마지막 선언에 환호했다.",
+    timeline: [{ year: "24년 전", content: "로그타운에서 골 D. 로저의 처형을 지켜보았다." }]
+  });
+
+  updatePerson("wt100-9", {
+    aliases: "",
+    job: "음악가",
+    organization: "pirates",
+    subOrganization: "red-hair",
+    birthday: "10월 31일",
+    originRegion: "east-blue",
+    originCountry: "",
+    origin: "이스트 블루",
+    description: "빨간 머리 해적단의 간부이자 음악가인 원숭이. 본크 펀치와 함께 행동하는 경우가 많다."
+  });
+
+  updatePerson("wt100-10", {
+    aliases: "빨간 머리 샹크스",
+    job: "해적 선장",
+    organization: "pirates",
+    subOrganization: "red-hair",
+    age: 39,
+    birthday: "3월 9일",
+    heightCm: 199,
+    heightHistory: [{ period: "현재", cm: 199 }],
+    bounty: 4048900000,
+    bountyHistory: [{ period: "현재", amount: 4048900000 }],
+    bloodType: "XF",
+    description: "빨간 머리 해적단의 선장이자 사황. 루피에게 밀짚모자를 맡긴 인물이다.",
+    haki: { armament: true, observation: true, conqueror: true },
+    timeline: [
+      { year: "12년 전", content: "루피를 구하고 밀짚모자를 맡겼다." },
+      { year: "현재", content: "사황 중 한 명으로 활동한다." }
+    ]
+  });
+
+  updatePerson("wt100-11", {
+    aliases: "럭키 루",
+    job: "해적 간부, 요리사",
+    organization: "pirates",
+    subOrganization: "red-hair",
+    age: 35,
+    birthday: "7월 6일",
+    heightCm: 241,
+    heightHistory: [{ period: "현재", cm: 241 }],
+    bloodType: "F",
+    originRegion: "south-blue",
+    originCountry: "",
+    origin: "사우스 블루",
+    description: "빨간 머리 해적단의 간부이자 요리사. 샹크스를 따르는 초기 멤버 중 한 명이다."
+  });
+
+  const gumGum = data.devilFruits.find((fruit) => fruit.id === "gum-gum");
+  if (gumGum) {
+    Object.assign(gumGum, {
+      currentUserId: "wt100-1",
+      type: "zoan",
+      zoanSubtype: "mythical",
+      model: "니카",
+      awakened: true
+    });
+  }
+})();

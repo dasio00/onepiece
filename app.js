@@ -1,5 +1,6 @@
 const STORAGE_KEY = "onePieceDataBuilder.v3";
 const LEGACY_STORAGE_KEY = "onePieceDataBuilder.v2";
+const COMPARE_RECORD_KEY = "onePieceCompareGame.records.v1";
 const baseData = window.onePieceData;
 const basePeopleById = new Map((baseData.people || []).map((person) => [person.id, person]));
 const baseTechniquesById = new Map((baseData.techniques || []).map((technique) => [technique.id, technique]));
@@ -16,6 +17,7 @@ const viewConfig = {
   groups: { label: "그룹", title: "직접 만든 그룹 보기", listTitle: "그룹 목록" },
   timelines: { label: "연표", title: "인물별 연표 보기", listTitle: "연표 인물" },
   quiz: { label: "카드 퀴즈", title: "카테고리별 랜덤 카드 퀴즈", listTitle: "퀴즈 카테고리" },
+  compare: { label: "비교 게임", title: "큰 쪽을 맞히는 서바이벌 게임", listTitle: "비교 항목" },
   jobs: { label: "직업", title: "직업별 인물 보기", listTitle: "직업 목록" },
   stats: { label: "인물 정렬", title: "키·연령·현상금·생일 순서 보기", listTitle: "인물 목록" },
   bloodTypes: { label: "혈액형", title: "혈액형별 인물 보기", listTitle: "혈액형 목록" },
@@ -38,6 +40,12 @@ const quizCategoryMeta = [
   { id: "timeline", title: "연표", search: "연표 사건" }
 ];
 
+const compareMetricMeta = [
+  { id: "bounty", title: "현상금", search: "현상금 베리 높은 사람", prompt: "누가 현상금이 더 높을까?" },
+  { id: "age", title: "나이", search: "나이 연령 많은 사람", prompt: "누가 더 나이가 많을까?" },
+  { id: "height", title: "키", search: "키 신장 큰 사람", prompt: "누가 더 클까?" }
+];
+
 let currentView = "techniques";
 let activeId = "";
 let sortMode = "all";
@@ -56,6 +64,8 @@ let quizSession = null;
 let quizAnswerDraft = "";
 let quizMode = "test";
 let quizStudyFlipped = false;
+let compareGame = null;
+let compareRecords = loadCompareRecords();
 const LIST_BATCH_SIZE = 160;
 const EDITOR_PEOPLE_BATCH_SIZE = 160;
 let visibleListLimit = LIST_BATCH_SIZE;
@@ -163,6 +173,10 @@ function isListOnlyView() {
   return currentView === "stats";
 }
 
+function isGameLikeView() {
+  return currentView === "quiz" || currentView === "compare";
+}
+
 function render() {
   const config = viewConfig[currentView];
   viewLabel.textContent = config.label;
@@ -172,10 +186,10 @@ function render() {
   const listOnly = isListOnlyView();
   browseWorkspace.classList.toggle("hidden", isEditor);
   browseWorkspace.classList.toggle("list-only-workspace", listOnly);
-  browseWorkspace.classList.toggle("quiz-workspace", currentView === "quiz");
+  browseWorkspace.classList.toggle("quiz-workspace", isGameLikeView());
   editorWorkspace.classList.toggle("hidden", !isEditor);
   detailPane.classList.toggle("hidden", listOnly);
-  searchBox.classList.toggle("hidden", isEditor || currentView === "quiz");
+  searchBox.classList.toggle("hidden", isEditor || isGameLikeView());
 
   if (isEditor) {
     renderEditor();
@@ -269,6 +283,7 @@ function getItems(query = "") {
     ];
   }
   if (currentView === "quiz") return getQuizCategories();
+  if (currentView === "compare") return getCompareGameItems();
   if (currentView === "jobs") return groupBy(data.people, "job").map((group) => groupToItem(group, "명"));
   if (currentView === "stats") return sortedStatPeople().map((person) => ({ ...personToItem(person), title: `${person.name} · ${statValueLabel(person)}` }));
   if (currentView === "bloodTypes") {
@@ -327,6 +342,7 @@ function renderDetail(listItem) {
   if (currentView === "groups") return renderGroupDetail(listItem.raw);
   if (currentView === "timelines") return renderTimelineDetail(listItem.raw);
   if (currentView === "quiz") return renderQuizDetail(listItem.raw);
+  if (currentView === "compare") return renderCompareGame(listItem.raw);
 
   detail.innerHTML = `
     <h3>${escapeHtml(listItem.title)}</h3>
@@ -549,7 +565,7 @@ function renderTechniqueDetail(technique) {
       ${renderLocalizedNameChips(technique)}
     </div>
     <p class="note">${escapeHtml(technique.note || "")}</p>
-    <div class="episode-chip-grid">${renderEpisodeLinks(episodes, person.id)}</div>
+    <div class="episode-chip-grid">${renderEpisodeLinks(episodes)}</div>
   `;
   bindEpisodeLinks();
 }
@@ -596,7 +612,7 @@ function renderPersonDetail(person) {
         ${person.bodyMeasurementsEnabled ? renderHistoryBlock("B-W-H 이력", person.bodyMeasurementsHistory, (entry) => `${entry.period || "시기 미등록"} · B${entry.bust || 0} W${entry.waist || 0} H${entry.hip || 0}`) : ""}
       </div>
     </div>
-    <div class="episode-chip-grid">${renderEpisodeLinks(episodes)}</div>
+    <div class="episode-chip-grid">${renderEpisodeLinks(episodes, person.id)}</div>
   `;
   bindEpisodeLinks();
   bindPersonQuickEdit(person);
@@ -1238,6 +1254,239 @@ function bindQuizCategoryPicker() {
     quizStudyFlipped = false;
     render();
   });
+}
+
+function getCompareGameItems() {
+  return compareMetricMeta.map((metric) => {
+    const peopleCount = compareEligiblePeople(metric.id).length;
+    const best = compareRecords[metric.id] || 0;
+    return item(metric.id, metric.title, `참가 ${peopleCount}명 · 최고 ${best}회`, { ...metric, name: metric.title }, metric.search);
+  });
+}
+
+function renderCompareGame(metric) {
+  const metricId = metric?.id || "bounty";
+  const meta = compareMetric(metricId);
+  const eligible = compareEligiblePeople(metricId);
+  if (eligible.length < 2) {
+    detail.innerHTML = `
+      <h3>${escapeHtml(meta.title)} 비교 게임</h3>
+      ${renderCompareMetricControls(metricId)}
+      ${renderEmptyResult("비교할 수 있는 인물 데이터가 부족합니다.")}
+    `;
+    bindCompareGameControls();
+    return;
+  }
+  if (!compareGame || compareGame.metric !== metricId || !compareGameIsValid(compareGame)) {
+    startCompareGame(metricId);
+  }
+  const survivor = findPerson(compareGame.survivorId);
+  const challenger = findPerson(compareGame.challengerId);
+  detail.innerHTML = `
+    <h3>${escapeHtml(meta.title)} 비교 게임</h3>
+    <section class="compare-game">
+      <div class="compare-topbar">
+        ${renderCompareMetricControls(metricId)}
+        <button class="sub-card" id="compareRestartButton" type="button">새 게임</button>
+      </div>
+      <div class="compare-score">
+        <span>현재 ${compareGame.streak}회</span>
+        <span>최고 ${compareRecords[metricId] || 0}회</span>
+        <span>참가 ${eligible.length}명</span>
+      </div>
+      ${renderCompareFeedback(compareGame.lastResult)}
+      <p class="compare-prompt">${escapeHtml(meta.prompt)}</p>
+      <div class="compare-arena">
+        ${renderCompareCard(survivor, metricId, "생존자", compareGame.gameOver)}
+        <div class="compare-versus">VS</div>
+        ${renderCompareCard(challenger, metricId, "도전자", compareGame.gameOver)}
+      </div>
+      ${compareGame.gameOver ? `<button class="primary full" id="compareRestartBottomButton" type="button">다시 시작</button>` : ""}
+    </section>
+  `;
+  bindCompareGameControls();
+}
+
+function renderCompareMetricControls(selectedMetric) {
+  return `
+    <div class="compare-metric-controls">
+      ${compareMetricMeta.map((metric) => `
+        <button class="range ${metric.id === selectedMetric ? "active" : ""}" type="button" data-compare-metric="${escapeAttribute(metric.id)}">
+          ${escapeHtml(metric.title)}
+        </button>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderCompareCard(person, metricId, role, revealValue) {
+  if (!person) return renderEmptyResult("인물을 불러오지 못했습니다.");
+  const value = compareValue(person, metricId);
+  const image = person.imageUrl
+    ? `<img class="compare-face" src="${escapeAttribute(person.imageUrl)}" alt="" loading="lazy" decoding="async" />`
+    : `<div class="compare-face placeholder">이미지 없음</div>`;
+  return `
+    <button class="compare-card" type="button" data-compare-choice="${escapeAttribute(person.id)}" ${revealValue ? "disabled" : ""}>
+      <span class="mini-chip">${escapeHtml(role)}</span>
+      ${image}
+      <strong>${escapeHtml(person.name)}</strong>
+      <span>${escapeHtml(organizationName(person.organization))} · ${escapeHtml(personJobLabel(person))}</span>
+      <b class="compare-value">${revealValue ? escapeHtml(compareValueLabel(value, metricId)) : "?"}</b>
+    </button>
+  `;
+}
+
+function renderCompareFeedback(result) {
+  if (!result) return "";
+  const valueText = `${result.winnerName} ${compareValueLabel(result.winnerValue, result.metric)} / ${result.loserName} ${compareValueLabel(result.loserValue, result.metric)}`;
+  return `
+    <div class="quiz-feedback ${result.correct ? "correct" : "wrong"}">
+      <strong>${result.correct ? "정답" : "오답"}</strong>
+      <span>${escapeHtml(result.correct ? `${result.winnerName} 생존, ${result.streak}회째 진행 중입니다.` : `${result.winnerName} 쪽이 더 컸습니다. 기록은 ${result.streak}회입니다.`)}</span>
+      <span>${escapeHtml(valueText)}</span>
+    </div>
+  `;
+}
+
+function bindCompareGameControls() {
+  detail.querySelectorAll("[data-compare-metric]").forEach((button) => {
+    button.addEventListener("click", () => {
+      activeId = button.dataset.compareMetric;
+      startCompareGame(activeId);
+      render();
+    });
+  });
+  detail.querySelectorAll("[data-compare-choice]").forEach((button) => {
+    button.addEventListener("click", () => chooseComparePerson(button.dataset.compareChoice));
+  });
+  detail.querySelector("#compareRestartButton")?.addEventListener("click", () => {
+    startCompareGame(activeId || "bounty");
+    render();
+  });
+  detail.querySelector("#compareRestartBottomButton")?.addEventListener("click", () => {
+    startCompareGame(activeId || "bounty");
+    render();
+  });
+}
+
+function startCompareGame(metricId) {
+  const pair = pickComparePair(metricId);
+  compareGame = {
+    metric: metricId,
+    survivorId: pair[0]?.id || "",
+    challengerId: pair[1]?.id || "",
+    usedIds: pair.map((person) => person.id),
+    streak: 0,
+    gameOver: false,
+    lastResult: null
+  };
+}
+
+function chooseComparePerson(personId) {
+  if (!compareGame || compareGame.gameOver) return;
+  const metricId = compareGame.metric;
+  const survivor = findPerson(compareGame.survivorId);
+  const challenger = findPerson(compareGame.challengerId);
+  if (!survivor || !challenger) {
+    startCompareGame(metricId);
+    render();
+    return;
+  }
+  const survivorValue = compareValue(survivor, metricId);
+  const challengerValue = compareValue(challenger, metricId);
+  const winner = survivorValue >= challengerValue ? survivor : challenger;
+  const loser = winner.id === survivor.id ? challenger : survivor;
+  const winnerValue = Math.max(survivorValue, challengerValue);
+  const loserValue = Math.min(survivorValue, challengerValue);
+  const correct = personId === winner.id;
+  compareGame.lastResult = {
+    metric: metricId,
+    correct,
+    winnerName: winner.name,
+    loserName: loser.name,
+    winnerValue,
+    loserValue,
+    streak: compareGame.streak
+  };
+  if (!correct) {
+    compareGame.gameOver = true;
+    render();
+    return;
+  }
+  compareGame.streak += 1;
+  compareGame.lastResult.streak = compareGame.streak;
+  updateCompareRecord(metricId, compareGame.streak);
+  compareGame.survivorId = winner.id;
+  const nextChallenger = pickCompareChallenger(metricId, winner.id, compareGame.usedIds);
+  compareGame.challengerId = nextChallenger?.id || "";
+  if (nextChallenger) compareGame.usedIds = [...new Set([...(compareGame.usedIds || []), nextChallenger.id])];
+  compareGame.gameOver = !nextChallenger;
+  render();
+}
+
+function compareGameIsValid(game) {
+  const survivor = findPerson(game.survivorId);
+  const challenger = findPerson(game.challengerId);
+  if (!survivor || !challenger) return false;
+  return compareValue(survivor, game.metric) > 0 && compareValue(challenger, game.metric) > 0;
+}
+
+function pickComparePair(metricId) {
+  const people = shuffleCards(compareEligiblePeople(metricId));
+  for (let left = 0; left < people.length; left += 1) {
+    for (let right = left + 1; right < people.length; right += 1) {
+      if (compareValue(people[left], metricId) !== compareValue(people[right], metricId)) {
+        return [people[left], people[right]];
+      }
+    }
+  }
+  return people.slice(0, 2);
+}
+
+function pickCompareChallenger(metricId, survivorId, usedIds = []) {
+  const survivor = findPerson(survivorId);
+  const survivorValue = compareValue(survivor, metricId);
+  const used = new Set(usedIds);
+  const unused = shuffleCards(compareEligiblePeople(metricId).filter((person) => person.id !== survivorId && !used.has(person.id) && compareValue(person, metricId) !== survivorValue));
+  if (unused.length) return unused[0];
+  return shuffleCards(compareEligiblePeople(metricId).filter((person) => person.id !== survivorId && compareValue(person, metricId) !== survivorValue))[0] || null;
+}
+
+function compareEligiblePeople(metricId) {
+  return data.people.filter((person) => person.imageUrl && compareValue(person, metricId) > 0);
+}
+
+function compareMetric(metricId) {
+  return compareMetricMeta.find((metric) => metric.id === metricId) || compareMetricMeta[0];
+}
+
+function compareValue(person, metricId) {
+  if (!person) return 0;
+  if (metricId === "height") return currentHeight(person);
+  if (metricId === "age") return Number(person.age || 0);
+  if (metricId === "bounty") return currentBounty(person);
+  return 0;
+}
+
+function compareValueLabel(value, metricId) {
+  if (metricId === "height") return `${value}cm`;
+  if (metricId === "age") return `${value}세`;
+  if (metricId === "bounty") return formatBounty(value);
+  return String(value);
+}
+
+function loadCompareRecords() {
+  try {
+    return JSON.parse(localStorage.getItem(COMPARE_RECORD_KEY) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function updateCompareRecord(metricId, streak) {
+  if ((compareRecords[metricId] || 0) >= streak) return;
+  compareRecords = { ...compareRecords, [metricId]: streak };
+  localStorage.setItem(COMPARE_RECORD_KEY, JSON.stringify(compareRecords));
 }
 
 function renderEditor() {

@@ -2458,6 +2458,120 @@ textarea:focus-visible {
   color: var(--muted);
 }
 
+.compare-game {
+  display: grid;
+  gap: 12px;
+}
+
+.compare-topbar,
+.compare-metric-controls,
+.compare-score {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.compare-topbar {
+  justify-content: space-between;
+}
+
+.compare-score span {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 7px 9px;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.compare-prompt {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.compare-arena {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+.compare-card {
+  min-height: 360px;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  padding: 14px;
+  background: #ffffff;
+  color: var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+  cursor: pointer;
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  text-align: center;
+  transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease;
+}
+
+.compare-card:hover:not(:disabled),
+.compare-card:focus-visible:not(:disabled) {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--ink);
+  background: var(--soft);
+}
+
+.compare-card:disabled {
+  cursor: default;
+}
+
+.compare-face {
+  width: min(190px, 100%);
+  aspect-ratio: 1;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  object-fit: cover;
+  background: #eef2f7;
+}
+
+.compare-card strong {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.compare-card > span:not(.mini-chip) {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.compare-value {
+  min-width: min(100%, 210px);
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: var(--yellow);
+  font-size: 18px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.compare-versus {
+  align-self: center;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  width: 48px;
+  aspect-ratio: 1;
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: 3px 3px 0 var(--ink);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
 .quiz-study-actions {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2527,7 +2641,10 @@ textarea:focus-visible {
 
   .quiz-setup,
   .quiz-mode-controls,
+  .compare-topbar,
+  .compare-metric-controls,
   .quiz-score,
+  .compare-score,
   .quiz-answer .form-actions {
     display: grid;
     grid-template-columns: 1fr;
@@ -2564,5 +2681,21 @@ textarea:focus-visible {
 
   .quiz-workspace .quiz-face {
     width: min(132px, 42vw);
+  }
+
+  .compare-arena {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-versus {
+    justify-self: center;
+  }
+
+  .compare-card {
+    min-height: 300px;
+  }
+
+  .compare-face {
+    width: min(150px, 52vw);
   }
 }

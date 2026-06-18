@@ -3,6 +3,8 @@ const LEGACY_STORAGE_KEY = "onePieceDataBuilder.v2";
 const baseData = window.onePieceData;
 const basePeopleById = new Map((baseData.people || []).map((person) => [person.id, person]));
 const baseTechniquesById = new Map((baseData.techniques || []).map((technique) => [technique.id, technique]));
+const baseEpisodesById = new Map((baseData.episodes || []).map((episode) => [episode.id, episode]));
+const baseFruitsById = new Map((baseData.devilFruits || []).map((fruit) => [fruit.id, fruit]));
 const data = loadSavedData() || structuredClone(baseData);
 
 const viewConfig = {
@@ -232,7 +234,7 @@ function getItems() {
   if (currentView === "techniques") {
     return data.techniques.map((technique) => {
       const owner = findPerson(technique.ownerId);
-      return item(technique.id, technique.name, owner ? `사용자: ${owner.name}` : "사용자 미등록", technique, `${technique.name} ${owner?.name || ""}`);
+      return item(technique.id, localizedName(technique), owner ? `사용자: ${owner.name}` : "사용자 미등록", technique, `${localizedSearchText(technique)} ${owner?.name || ""}`);
     });
   }
   if (currentView === "people") return sortedPeople(personSortMode).map(personToItem);
@@ -247,7 +249,7 @@ function getItems() {
   if (currentView === "devilFruits") {
     return data.devilFruitTypes.map((type) => {
       const fruits = data.devilFruits.filter((fruit) => fruit.type === type.id);
-      return item(type.id, type.name, `열매 ${fruits.length}개`, { ...type, fruits }, `${type.name} ${fruits.map((fruit) => fruit.name).join(" ")}`);
+      return item(type.id, type.name, `열매 ${fruits.length}개`, { ...type, fruits }, `${type.name} ${fruits.map(localizedSearchText).join(" ")}`);
     });
   }
   if (currentView === "groups") {
@@ -374,7 +376,7 @@ function renderEpisodeDetail(episode) {
   return `
     <section class="nested-detail">
       <h4>${episode.number}화 · ${escapeHtml(episode.title || "제목 미등록")}</h4>
-      <p class="note">${escapeHtml(episode.summary || "간략한 내용이 없습니다.")}</p>
+      <p class="note">${escapeHtml(episodeSummaryText(episode))}</p>
       <div class="episode-columns">
         <section>
           <h5>등장 인물</h5>
@@ -413,11 +415,41 @@ function sortEpisodes(a, b) {
   return Number(a.volume) - Number(b.volume) || Number(a.number) - Number(b.number);
 }
 
+function localizedName(entry) {
+  return [entry?.nameKo, entry?.name, entry?.nameJa, entry?.nameEn].find(hasRegisteredText) || "이름 미등록";
+}
+
+function localizedSearchText(entry) {
+  return [entry?.nameKo, entry?.name, entry?.nameJa, entry?.nameEn, entry?.descriptionKo, entry?.descriptionEn, entry?.description]
+    .filter(hasRegisteredText)
+    .join(" ");
+}
+
+function renderLocalizedNameChips(entry) {
+  const currentName = localizedName(entry);
+  return [
+    entry?.nameJa && entry.nameJa !== currentName ? `<span class="chip">일본어: ${escapeHtml(entry.nameJa)}</span>` : "",
+    entry?.nameEn && entry.nameEn !== currentName ? `<span class="chip">영어: ${escapeHtml(entry.nameEn)}</span>` : ""
+  ].join("");
+}
+
+function localizedAnswerVariants(entry) {
+  return Array.from(new Set([entry?.nameKo, entry?.name, entry?.nameJa, entry?.nameEn].filter(hasRegisteredText)));
+}
+
+function episodeSummaryText(episode) {
+  return episode.summaryKo || episode.summary || "간략한 내용이 없습니다.";
+}
+
+function fruitDescriptionText(fruit) {
+  return fruit.descriptionKo || fruit.description || "";
+}
+
 function renderTechniqueResult(technique) {
   const owner = findPerson(technique.ownerId);
   return `
     <div class="result">
-      <strong>${escapeHtml(technique.name)}</strong>
+      <strong>${escapeHtml(localizedName(technique))}</strong>
       <span>${escapeHtml(owner?.name || "사용자 미등록")}</span>
     </div>
   `;
@@ -427,10 +459,11 @@ function renderTechniqueDetail(technique) {
   const owner = findPerson(technique.ownerId);
   const episodes = getEpisodesForTechnique(technique.id);
   detail.innerHTML = `
-    <h3>${escapeHtml(technique.name)}</h3>
+    <h3>${escapeHtml(localizedName(technique))}</h3>
     <div class="meta">
       <span class="chip">사용자: ${escapeHtml(owner?.name || "미등록")}</span>
       <span class="chip">${episodes.length}개 화수</span>
+      ${renderLocalizedNameChips(technique)}
     </div>
     <p class="note">${escapeHtml(technique.note || "")}</p>
     <div class="episode-chip-grid">${renderEpisodeLinks(episodes)}</div>
@@ -693,7 +726,7 @@ function renderPersonQuickEditForm(person, kind) {
   if (kind === "devilFruitId") {
     return `
       <form class="quick-edit-form">
-        <label>악마의 열매<select name="devilFruitId"><option value="">없음/미등록</option>${data.devilFruits.map((fruit) => option(fruit.id, fruit.name, person.devilFruitId)).join("")}</select></label>
+        <label>악마의 열매<select name="devilFruitId"><option value="">없음/미등록</option>${data.devilFruits.map((fruit) => option(fruit.id, localizedName(fruit), person.devilFruitId)).join("")}</select></label>
         ${quickEditActions()}
       </form>
     `;
@@ -723,7 +756,7 @@ function renderPersonQuickEditForm(person, kind) {
         <label>혈액형<select name="bloodType">${data.bloodTypes.map((type) => option(type, type, person.bloodType)).join("")}</select></label>
         <label>출신 바다/지역<select name="originRegion">${originRegionOptions(person.originRegion)}</select></label>
         <label>출신 국가<select name="originCountry">${originCountryOptions(person.originCountry)}</select></label>
-        <label>악마의 열매<select name="devilFruitId"><option value="">없음/미등록</option>${data.devilFruits.map((fruit) => option(fruit.id, fruit.name, person.devilFruitId)).join("")}</select></label>
+        <label>악마의 열매<select name="devilFruitId"><option value="">없음/미등록</option>${data.devilFruits.map((fruit) => option(fruit.id, localizedName(fruit), person.devilFruitId)).join("")}</select></label>
         <fieldset class="check-list compact">
           <legend>패기</legend>
           <label><input type="checkbox" name="hakiArmament" ${person.haki?.armament ? "checked" : ""} /> 무장색</label>
@@ -912,7 +945,7 @@ function renderDevilFruitTypeDetail(type) {
     <h3>${escapeHtml(type.name)}</h3>
     <div class="meta"><span class="chip">열매 ${type.fruits.length}개</span></div>
     <div class="sub-selector">
-      ${type.fruits.map((fruit) => `<button class="sub-card ${activeFruitId === fruit.id ? "active" : ""}" data-fruit-id="${escapeAttribute(fruit.id)}" type="button">${escapeHtml(fruit.name)}</button>`).join("") || "<span class=\"muted\">등록된 열매가 없습니다.</span>"}
+      ${type.fruits.map((fruit) => `<button class="sub-card ${activeFruitId === fruit.id ? "active" : ""}" data-fruit-id="${escapeAttribute(fruit.id)}" type="button">${escapeHtml(localizedName(fruit))}</button>`).join("") || "<span class=\"muted\">등록된 열매가 없습니다.</span>"}
     </div>
     ${selectedFruit ? renderFruitDetail(selectedFruit) : ""}
   `;
@@ -929,13 +962,14 @@ function renderFruitDetail(fruit) {
   const previousUsers = fruit.previousUserIds.map(findPerson).filter(Boolean);
   return `
     <section class="nested-detail">
-      <h4>${escapeHtml(fruit.name)}</h4>
+      <h4>${escapeHtml(localizedName(fruit))}</h4>
       <div class="meta">
         <span class="chip">각성: ${fruit.awakened ? "각성" : "미각성/미등록"}</span>
         ${fruit.type === "zoan" ? `<span class="chip">동물계 구분: ${escapeHtml(zoanSubtypeName(fruit.zoanSubtype))}</span>` : ""}
         ${fruit.type === "zoan" && fruit.model ? `<span class="chip">모델: ${escapeHtml(fruit.model)}</span>` : ""}
+        ${renderLocalizedNameChips(fruit)}
       </div>
-      <p class="note">${escapeHtml(fruit.description || "")}</p>
+      <p class="note">${escapeHtml(fruitDescriptionText(fruit))}</p>
       <div class="result-grid">
         ${currentUser ? `<div class="result"><strong>현재 능력자</strong>${renderPersonResult(currentUser)}</div>` : renderEmptyResult("현재 능력자가 미등록입니다.")}
         <div class="result"><strong>선대 능력자</strong>${previousUsers.map(renderPersonResult).join("") || "<span>등록된 선대 능력자가 없습니다.</span>"}</div>
@@ -1260,7 +1294,7 @@ function renderPersonForm(person = null) {
       ${renderPersonFormImage(draft)}
       ${field("imageUrl", "이미지 주소", draft.imageUrl)}
       <label>이미지 파일<input name="imageFile" type="file" accept="image/*" /></label>
-      <label>악마의 열매<select name="devilFruitId"><option value="">없음/미등록</option>${data.devilFruits.map((fruit) => option(fruit.id, fruit.name, draft.devilFruitId)).join("")}</select></label>
+      <label>악마의 열매<select name="devilFruitId"><option value="">없음/미등록</option>${data.devilFruits.map((fruit) => option(fruit.id, localizedName(fruit), draft.devilFruitId)).join("")}</select></label>
       <fieldset class="check-list">
         <legend>패기</legend>
         <label><input type="checkbox" name="hakiArmament" ${draft.haki?.armament ? "checked" : ""} /> 무장색</label>
@@ -1330,7 +1364,7 @@ function renderTechniqueEditor() {
   editorBody.innerHTML = editorShell(
     "newTechniqueButton",
     "새 기술 추가",
-    data.techniques.map((technique) => pickButton("technique", technique.id, technique.name, findPerson(technique.ownerId)?.name || "사용자 미등록")).join(""),
+    data.techniques.map((technique) => pickButton("technique", technique.id, localizedName(technique), findPerson(technique.ownerId)?.name || "사용자 미등록")).join(""),
     "techniqueFormWrap"
   );
   document.querySelector("#newTechniqueButton").addEventListener("click", () => renderTechniqueForm());
@@ -1375,7 +1409,7 @@ function renderFruitEditor() {
   editorBody.innerHTML = editorShell(
     "newFruitButton",
     "새 열매 추가",
-    data.devilFruits.map((fruit) => pickButton("fruit", fruit.id, fruit.name, devilFruitTypeName(fruit.type))).join(""),
+    data.devilFruits.map((fruit) => pickButton("fruit", fruit.id, localizedName(fruit), devilFruitTypeName(fruit.type))).join(""),
     "fruitFormWrap"
   );
   document.querySelector("#newFruitButton").addEventListener("click", () => renderFruitForm());
@@ -1783,7 +1817,7 @@ function ensureQuizCards() {
       quizCardCache.get("fruit").push({
         category: "fruit",
         personId: currentUser.id,
-        front: `${fruit.name}의 현재 능력자는?`,
+        front: `${localizedName(fruit)}의 현재 능력자는?`,
         back: currentUser.name,
         acceptedAnswers: [currentUser.name],
         imageUrl: currentUser.imageUrl || ""
@@ -1852,8 +1886,8 @@ function buildPersonQuizCard(category, person, fruit) {
     } : null,
     fruit: fruit?.name ? {
       front: `${person.name}이 먹은 악마의 열매는?`,
-      back: fruit.name,
-      acceptedAnswers: [fruit.name]
+      back: localizedName(fruit),
+      acceptedAnswers: localizedAnswerVariants(fruit)
     } : null,
     organization: organization ? {
       front: `${person.name}의 소속은?`,
@@ -2643,6 +2677,7 @@ function normalizeInPlace(target) {
     techniqueIds: [],
     summary: "",
     title: "",
+    ...baseEpisodesById.get(episode.id),
     ...episode
   }));
   target.organizations = target.organizations || structuredClone(baseData.organizations);
@@ -2655,6 +2690,7 @@ function normalizeInPlace(target) {
     zoanSubtype: "",
     model: "",
     awakened: false,
+    ...baseFruitsById.get(fruit.id),
     ...fruit
   }));
   target.groups = target.groups || structuredClone(baseData.groups);

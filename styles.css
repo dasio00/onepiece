@@ -570,6 +570,9 @@ textarea {
   padding: 0 12px;
   color: var(--ink);
   background: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .name-link:hover,
@@ -588,7 +591,7 @@ textarea {
 
 .episode-number-chip {
   min-width: 24px;
-  height: 24px;
+  min-height: 24px;
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 0 5px;
@@ -597,6 +600,20 @@ textarea {
   font-size: 12px;
   line-height: 1;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mini-chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 5px;
+  background: var(--soft);
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .episode-number-chip:hover {

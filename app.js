@@ -410,7 +410,7 @@ function renderEpisodeSearchDetail(episode) {
 }
 
 function renderEpisodeDetail(episode) {
-  const characters = episode.characterIds.map(findPerson).filter(Boolean);
+  const characters = episodeCharacterAppearances(episode);
   const techniques = episode.techniqueIds.map(findTechnique).filter(Boolean);
   return `
     <section class="nested-detail">
@@ -420,7 +420,7 @@ function renderEpisodeDetail(episode) {
       <div class="episode-columns">
         <section>
           <h5>등장 인물</h5>
-          <div class="simple-list">${characters.map(renderPersonNameLink).join("") || renderEmptyResult("등록된 등장 인물이 없습니다.")}</div>
+          <div class="simple-list">${characters.map(renderEpisodeCharacterLink).join("") || renderEmptyResult("등록된 등장 인물이 없습니다.")}</div>
         </section>
         <section>
           <h5>나온 기술</h5>
@@ -431,12 +431,45 @@ function renderEpisodeDetail(episode) {
   `;
 }
 
-function renderPersonNameLink(person) {
+function renderEpisodeCharacterLink(entry) {
+  return renderPersonNameLink(entry.person, entry.appearanceType);
+}
+
+function renderPersonNameLink(person, appearanceType = "") {
+  const label = appearanceTypeLabel(appearanceType);
   return `
     <button class="name-link" type="button" data-person-link="${escapeAttribute(person.id)}">
       ${escapeHtml(person.name)}
+      ${label ? `<span class="mini-chip">${escapeHtml(label)}</span>` : ""}
     </button>
   `;
+}
+
+function episodeCharacterAppearances(episode) {
+  const appearances = Array.isArray(episode.characterAppearances) ? episode.characterAppearances : [];
+  if (!appearances.length) {
+    return (episode.characterIds || []).map(findPerson).filter(Boolean).map((person) => ({ person, appearanceType: "main" }));
+  }
+  return appearances
+    .map((appearance) => ({
+      person: findPerson(appearance.characterId),
+      appearanceType: appearance.appearanceType || "main"
+    }))
+    .filter((entry) => entry.person);
+}
+
+function appearanceTypeForCharacter(episode, personId) {
+  const appearance = (episode.characterAppearances || []).find((entry) => entry.characterId === personId);
+  return appearance?.appearanceType || "main";
+}
+
+function appearanceTypeLabel(type) {
+  const labels = String(type || "")
+    .split("-")
+    .filter((part) => part !== "main")
+    .map((part) => part === "cover" ? "커버" : part === "flashback" ? "회상" : "")
+    .filter(Boolean);
+  return labels.join("+");
 }
 
 function getEpisodesForPerson(personId) {
@@ -516,7 +549,7 @@ function renderTechniqueDetail(technique) {
       ${renderLocalizedNameChips(technique)}
     </div>
     <p class="note">${escapeHtml(technique.note || "")}</p>
-    <div class="episode-chip-grid">${renderEpisodeLinks(episodes)}</div>
+    <div class="episode-chip-grid">${renderEpisodeLinks(episodes, person.id)}</div>
   `;
   bindEpisodeLinks();
 }
@@ -1257,13 +1290,15 @@ function renderEpisodeForm(episode = null) {
   bindEpisodeCharacterPicker(form, draft.characterIds || []);
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+    const characterIds = checkedValues(form, "characterIds");
     upsert(data.episodes, draft.id, {
       id: value(form, "id") || makeId("episode"),
       volume: Number(value(form, "volume") || 1),
       number: Number(value(form, "number") || 1),
       title: value(form, "title"),
       summary: value(form, "summary"),
-      characterIds: checkedValues(form, "characterIds"),
+      characterIds,
+      characterAppearances: syncEpisodeCharacterAppearances(draft, characterIds),
       techniqueIds: checkedValues(form, "techniqueIds")
     });
     saveData();
@@ -1713,12 +1748,24 @@ function renderDataManager() {
   });
 }
 
-function renderEpisodeLinks(episodes) {
-  return episodes.map((episode) => `
-    <button class="episode-number-chip" type="button" data-episode-link="${escapeAttribute(episode.id)}" title="${escapeAttribute(episodeTitleText(episode))}">
-      ${episode.number}
+function renderEpisodeLinks(episodes, personId = "") {
+  return episodes.map((episode) => {
+    const label = personId ? appearanceTypeLabel(appearanceTypeForCharacter(episode, personId)) : "";
+    const title = [episodeTitleText(episode), label].filter(Boolean).join(" · ");
+    return `
+    <button class="episode-number-chip" type="button" data-episode-link="${escapeAttribute(episode.id)}" title="${escapeAttribute(title)}">
+      <span>${episode.number}</span>${label ? `<span class="mini-chip">${escapeHtml(label)}</span>` : ""}
     </button>
-  `).join("") || `<span class="muted">등록된 화수가 없습니다.</span>`;
+  `;
+  }).join("") || `<span class="muted">등록된 화수가 없습니다.</span>`;
+}
+
+function syncEpisodeCharacterAppearances(episode, characterIds) {
+  const previous = new Map((episode.characterAppearances || []).map((appearance) => [appearance.characterId, appearance]));
+  return characterIds.map((characterId) => ({
+    characterId,
+    appearanceType: previous.get(characterId)?.appearanceType || "main"
+  }));
 }
 
 function bindEpisodeLinks() {
@@ -2763,6 +2810,7 @@ function normalizeInPlace(target) {
     const baseEpisode = baseEpisodesById.get(episode.id) || {};
     const merged = {
       characterIds: [],
+      characterAppearances: [],
       techniqueIds: [],
       summary: "",
       title: "",

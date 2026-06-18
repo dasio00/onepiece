@@ -157,9 +157,11 @@ function parseChapter(pageTitle, source, personMap, techniqueMap) {
   const title = firstFieldByPrefix(fields, "Viz Title") || cleanWikiText(firstFieldByPrefix(fields, "Japanese Title")) || pageTitle;
   const shortSummary = section(source.wikitext, "Short Summary");
   const summary = summarize(shortSummary);
-  const characterLinks = extractCharacterLinks(source.wikitext);
+  const characterEntries = extractCharacterEntries(source.wikitext);
+  const characterLinks = characterEntries.map((entry) => entry.title);
   const techniqueIds = extractTechniqueIds(source.wikitext, techniqueMap);
-  const characterIds = unique(characterLinks.map((titleText) => personIdForTitle(titleText, personMap)).filter(Boolean));
+  const characterAppearances = buildCharacterAppearances(characterEntries, personMap);
+  const characterIds = unique(characterAppearances.map((appearance) => appearance.characterId));
   return {
     id: `wiki-chapter-${number}`,
     volume,
@@ -167,6 +169,7 @@ function parseChapter(pageTitle, source, personMap, techniqueMap) {
     title,
     summary,
     characterIds,
+    characterAppearances,
     techniqueIds,
     sourceTitle: pageTitle,
     sourceUrl: wikiUrl(pageTitle),
@@ -191,9 +194,9 @@ function section(wikitext, heading) {
   return wikitext.match(pattern)?.[2] || "";
 }
 
-function extractCharacterLinks(wikitext) {
+function extractCharacterEntries(wikitext) {
   const characters = section(wikitext, "Characters");
-  const links = [];
+  const entries = [];
   for (const line of characters.split(/\r?\n/)) {
     if (!line.trim().startsWith("*")) continue;
     if (/\(mentioned only\)/i.test(line)) continue;
@@ -201,9 +204,40 @@ function extractCharacterLinks(wikitext) {
     if (!link) continue;
     const title = link[1].trim();
     if (isNonCharacterTitle(title)) continue;
-    links.push(title);
+    const noteText = cleanWikiText(line);
+    entries.push({
+      title,
+      isCover: /\bcover\b/i.test(noteText),
+      isFlashback: /\bflashback\b/i.test(noteText)
+    });
   }
-  return unique(links);
+  return entries;
+}
+
+function buildCharacterAppearances(characterEntries, personMap) {
+  const byPerson = new Map();
+  for (const entry of characterEntries) {
+    const characterId = personIdForTitle(entry.title, personMap);
+    if (!characterId) continue;
+    const current = byPerson.get(characterId) || { characterId, sourceTitle: entry.title, hasMain: false, hasCover: false, hasFlashback: false };
+    if (entry.isCover) current.hasCover = true;
+    if (entry.isFlashback) current.hasFlashback = true;
+    if (!entry.isCover && !entry.isFlashback) current.hasMain = true;
+    byPerson.set(characterId, current);
+  }
+  return [...byPerson.values()].map(({ characterId, sourceTitle, hasMain, hasCover, hasFlashback }) => ({
+    characterId,
+    sourceTitle,
+    appearanceType: appearanceTypeFromFlags({ hasMain, hasCover, hasFlashback })
+  }));
+}
+
+function appearanceTypeFromFlags({ hasMain, hasCover, hasFlashback }) {
+  const parts = [];
+  if (hasMain) parts.push("main");
+  if (hasFlashback) parts.push("flashback");
+  if (hasCover) parts.push("cover");
+  return parts.join("-") || "main";
 }
 
 function extractTechniqueIds(wikitext, techniqueMap) {

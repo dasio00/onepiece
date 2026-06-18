@@ -269,6 +269,49 @@ const TECHNIQUE_PREFIXES = new Map(Object.entries({
   "Zushi Zushi": "쿠궁쿠궁",
 }));
 
+const LUFFY_NAMU_HAND_TECHNIQUE_NAMES = new Map(Object.entries({
+  "wiki-tech-gomu-gomu-no-pistol": "고무고무 총 (피스톨)",
+  "wiki-tech-gomu-gomu-no-pistol-shot": "고무고무 총 (피스톨) 산탄 (샷)",
+  "wiki-tech-gomu-gomu-no-rocket": "고무고무 로켓",
+  "wiki-tech-gomu-gomu-no-tsuchi": "고무고무 해머",
+  "wiki-tech-gomu-gomu-no-kama": "고무고무 낫",
+  "wiki-tech-gomu-gomu-no-bazooka": "고무고무 바주카",
+  "wiki-tech-gomu-gomu-no-gatling": "고무고무 총난타 (개틀링)",
+  "wiki-tech-buso-koka-gomu-gomu-no-gatling": "무장 강화 고무고무 총난타 (개틀링)",
+  "wiki-tech-gomu-gomu-no-ogama": "고무고무 대형 낫",
+  "wiki-tech-gomu-gomu-no-bullet": "고무고무 총탄 (불릿)",
+  "wiki-tech-buso-koka-gomu-gomu-no-bullet": "무장 강화 고무고무 총탄 (불릿)",
+  "wiki-tech-gomu-gomu-no-kazaguruma": "고무고무 풍차",
+  "wiki-tech-gomu-gomu-no-tate": "고무고무 방패",
+  "wiki-tech-gomu-gomu-no-ami": "고무고무 그물",
+  "wiki-tech-gomu-gomu-no-bow-gun": "고무고무 석궁",
+  "wiki-tech-gomu-gomu-no-storm": "고무고무 폭풍우 (스톰)",
+  "wiki-tech-gomu-gomu-no-rifle": "고무고무 회전탄 (라이플)",
+  "wiki-tech-gomu-gomu-no-cannon": "고무고무 공성포 (캐넌)",
+  "wiki-tech-gomu-gomu-no-ame": "고무고무 비",
+  "wiki-tech-gomu-gomu-no-snake-shot": "고무고무 뱀 총 (스네이크 샷)",
+  "wiki-tech-gomu-gomu-no-tsuppari": "고무고무 밀쳐내기",
+  "wiki-tech-gomu-gomu-no-amidori": "고무고무 움켜쥐기",
+  "wiki-tech-gomu-gomu-no-nagenawa": "고무고무 밧줄 감기",
+  "wiki-tech-gomu-gomu-no-tsuribashi": "고무고무 다리",
+  "wiki-tech-gomu-gomu-no-propeller": "고무고무 프로펠러",
+  "wiki-tech-gomu-gomu-no-sadowari": "고무고무 모래 가르기",
+  "wiki-tech-gomu-gomu-no-zenmai": "고무고무 용수철",
+  "wiki-tech-gomu-gomu-no-bungee": "고무고무 번지",
+  "wiki-tech-gomu-gomu-no-tomotsuna": "고무고무 밧줄",
+  "wiki-tech-gomu-gomu-no-yo-yo": "고무고무 요요",
+  "wiki-tech-gomu-gomu-no-koma": "고무고무 팽이",
+  "wiki-tech-gomu-gomu-no-twin-pistol": "고무고무 트윈 총 (피스톨)",
+  "wiki-tech-gomu-gomu-no-hyakuman-do-bazooka": "고무고무 백만도 바주카",
+  "wiki-tech-gomu-gomu-no-mushitoriami": "고무고무 잠자리채",
+  "wiki-tech-gomu-gomu-no-ricochet": "고무고무 리코셰",
+  "wiki-tech-gomu-gomu-no-jutte": "고무고무 짓테",
+  "wiki-tech-gomu-gomu-no-senjukannon": "고무고무 천수관음",
+  "wiki-tech-gomu-gomu-no-screw": "고무고무 스크류",
+  "wiki-tech-gomu-gomu-no-home-run": "고무고무 홈런",
+  "wiki-tech-gomu-gomu-no-gomu-doryoku": "고무고무 고무 동력",
+}));
+
 const TECHNIQUE_WORDS = new Map(Object.entries({
   Age: "에이지",
   Axe: "도끼",
@@ -428,7 +471,7 @@ function buildTechniquePatches(data, techniqueJapanese) {
     const nameEn = String(technique.nameEn || technique.name || "").trim();
     const sourceMap = techniqueJapanese.get(technique.sourceTitle);
     const nameJa = sourceMap?.get(normalizeName(nameEn)) || "";
-    const nameKo = koreanTechniqueName(nameEn);
+    const nameKo = LUFFY_NAMU_HAND_TECHNIQUE_NAMES.get(technique.id) || koreanTechniqueName(nameEn);
     if (!nameJa && !nameKo && !hasLatin(nameEn)) continue;
     patches[technique.id] = removeEmpty({ nameKo, nameJa });
   }

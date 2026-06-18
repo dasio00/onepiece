@@ -1293,6 +1293,7 @@ function renderCompareGame(metric) {
         <span>현재 ${compareGame.streak}회</span>
         <span>최고 ${compareRecords[metricId] || 0}회</span>
         <span>참가 ${eligible.length}명</span>
+        <span>근접 매칭</span>
       </div>
       ${renderCompareFeedback(compareGame.lastResult)}
       <p class="compare-prompt">${escapeHtml(meta.prompt)}</p>
@@ -1433,23 +1434,38 @@ function compareGameIsValid(game) {
 
 function pickComparePair(metricId) {
   const people = shuffleCards(compareEligiblePeople(metricId));
-  for (let left = 0; left < people.length; left += 1) {
-    for (let right = left + 1; right < people.length; right += 1) {
-      if (compareValue(people[left], metricId) !== compareValue(people[right], metricId)) {
-        return [people[left], people[right]];
-      }
-    }
-  }
+  const anchor = people[0];
+  const opponent = pickCloseCompareCandidate(metricId, anchor, people.filter((person) => person.id !== anchor?.id));
+  if (anchor && opponent) return [anchor, opponent];
   return people.slice(0, 2);
 }
 
 function pickCompareChallenger(metricId, survivorId, usedIds = []) {
   const survivor = findPerson(survivorId);
-  const survivorValue = compareValue(survivor, metricId);
   const used = new Set(usedIds);
-  const unused = shuffleCards(compareEligiblePeople(metricId).filter((person) => person.id !== survivorId && !used.has(person.id) && compareValue(person, metricId) !== survivorValue));
-  if (unused.length) return unused[0];
-  return shuffleCards(compareEligiblePeople(metricId).filter((person) => person.id !== survivorId && compareValue(person, metricId) !== survivorValue))[0] || null;
+  const people = compareEligiblePeople(metricId).filter((person) => person.id !== survivorId);
+  const unused = people.filter((person) => !used.has(person.id));
+  return pickCloseCompareCandidate(metricId, survivor, unused)
+    || pickCloseCompareCandidate(metricId, survivor, people)
+    || null;
+}
+
+function pickCloseCompareCandidate(metricId, anchor, candidates, poolSize = 10) {
+  if (!anchor) return null;
+  const anchorValue = compareValue(anchor, metricId);
+  const anchorMatchValue = compareMatchValue(anchor, metricId);
+  const ranked = shuffleCards(candidates)
+    .map((person) => ({
+      person,
+      value: compareValue(person, metricId),
+      distance: Math.abs(compareMatchValue(person, metricId) - anchorMatchValue)
+    }))
+    .filter((entry) => entry.value > 0 && entry.value !== anchorValue)
+    .sort((a, b) => a.distance - b.distance);
+  const closePool = ranked.slice(0, Math.min(poolSize, ranked.length));
+  if (!closePool.length) return null;
+  const weighted = closePool.flatMap((entry, index) => Array(Math.max(closePool.length - index, 1)).fill(entry.person));
+  return weighted[Math.floor(Math.random() * weighted.length)] || closePool[0].person;
 }
 
 function compareEligiblePeople(metricId) {
@@ -1466,6 +1482,12 @@ function compareValue(person, metricId) {
   if (metricId === "age") return Number(person.age || 0);
   if (metricId === "bounty") return currentBounty(person);
   return 0;
+}
+
+function compareMatchValue(person, metricId) {
+  const value = compareValue(person, metricId);
+  if (metricId === "bounty") return Math.log10(Math.max(value, 1));
+  return value;
 }
 
 function compareValueLabel(value, metricId) {

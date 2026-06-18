@@ -502,7 +502,7 @@ function renderPersonDetail(person) {
             ${quickChip("aliases", "별명", person.aliases || "미등록")}
             ${quickChip("organization", "조직", organizationName(person.organization))}
             ${quickChip("subOrganization", "세부 조직", subOrganizationName(person.subOrganization))}
-            ${quickChip("job", "직업", person.job || "미등록")}
+            ${quickChip("job", "직업", personJobLabel(person))}
             ${quickChip("age", "연령", person.age ? `${person.age}세` : "미등록")}
             ${quickChip("birthday", "생일", person.birthday || "미등록")}
             ${quickChip("height", "키", currentHeight(person) ? `${currentHeight(person)}cm` : "미등록")}
@@ -534,7 +534,8 @@ function personDescriptionText(person) {
   const description = String(person.description || "").trim();
   if (description && !isAutoWikiDescription(description)) return description;
   const facts = [];
-  if (hasRegisteredText(person.job)) facts.push(person.job);
+  const jobLabel = personJobLabel(person);
+  if (hasRegisteredText(jobLabel)) facts.push(jobLabel);
   if (hasRegisteredText(person.birthday)) facts.push(`생일 ${person.birthday}`);
   if (currentHeight(person)) facts.push(`키 ${currentHeight(person)}cm`);
   if (currentBounty(person)) facts.push(`현상금 ${formatBounty(currentBounty(person))}`);
@@ -542,6 +543,17 @@ function personDescriptionText(person) {
   if (origin) facts.push(`출신 ${origin}`);
   if (facts.length) return `자동 보강된 기본 정보: ${facts.join(" · ")}`;
   return person.note || "정리된 설명이 아직 없습니다.";
+}
+
+function personJobLabel(person) {
+  const category = String(person?.job || person?.jobCategory || "").trim();
+  const detail = String(person?.jobDetail || "").trim();
+  if (category && detail && category !== detail) return `${category} · ${detail}`;
+  return category || detail || "미등록";
+}
+
+function personJobSearchText(person) {
+  return [person.job, person.jobCategory, person.jobDetail, person.jobEn].filter(Boolean).join(" ");
 }
 
 function isAutoWikiDescription(text) {
@@ -680,7 +692,8 @@ function renderPersonQuickEditForm(person, kind) {
   if (kind === "job") {
     return `
       <form class="quick-edit-form">
-        ${field("job", "직업", person.job || "")}
+        ${field("job", "직업 대분류", person.job || "")}
+        ${field("jobDetail", "세부 직업", person.jobDetail || "")}
         ${quickEditActions()}
       </form>
     `;
@@ -759,7 +772,8 @@ function renderPersonQuickEditForm(person, kind) {
     return `
       <form class="quick-edit-form">
         ${field("aliases", "별명", person.aliases || "")}
-        ${field("job", "직업", person.job || "")}
+        ${field("job", "직업 대분류", person.job || "")}
+        ${field("jobDetail", "세부 직업", person.jobDetail || "")}
         ${field("age", "연령", person.age || "", "number")}
         ${birthdayField(person.birthday)}
         <label>조직<select name="organization">${organizationOptions(person.organization)}</select></label>
@@ -822,7 +836,11 @@ function quickEditActions() {
 
 function savePersonQuickEdit(person, kind, form) {
   if (kind === "aliases") person.aliases = value(form, "aliases");
-  if (kind === "job") person.job = value(form, "job");
+  if (kind === "job") {
+    person.job = value(form, "job");
+    person.jobCategory = person.job;
+    person.jobDetail = value(form, "jobDetail");
+  }
   if (kind === "age") person.age = Number(value(form, "age") || 0);
   if (kind === "birthday") person.birthday = readBirthday(form);
   if (kind === "organization") person.organization = value(form, "organization");
@@ -845,6 +863,8 @@ function savePersonQuickEdit(person, kind, form) {
     Object.assign(person, {
       aliases: value(form, "aliases"),
       job: value(form, "job"),
+      jobCategory: value(form, "job"),
+      jobDetail: value(form, "jobDetail"),
       age: Number(value(form, "age") || 0),
       birthday: readBirthday(form),
       organization: value(form, "organization"),
@@ -1283,7 +1303,8 @@ function renderPersonForm(person = null) {
       ${field("id", "고유 ID", draft.id)}
       ${field("name", "이름", draft.name)}
       ${field("aliases", "별명", draft.aliases)}
-      ${field("job", "직업", draft.job)}
+      ${field("job", "직업 대분류", draft.job)}
+      ${field("jobDetail", "세부 직업", draft.jobDetail || "")}
       <label>조직<select name="organization">${organizationOptions(draft.organization)}</select></label>
       <label>세부 조직<select name="subOrganization">${subOrganizationOptions(draft.subOrganization)}</select></label>
       ${field("age", "연령", draft.age, "number")}
@@ -1698,6 +1719,8 @@ function formToPerson(form, draft) {
     name: value(form, "name"),
     aliases: value(form, "aliases"),
     job: value(form, "job"),
+    jobCategory: value(form, "job"),
+    jobDetail: value(form, "jobDetail"),
     organization: value(form, "organization"),
     subOrganization: value(form, "subOrganization"),
     age: Number(value(form, "age") || 0),
@@ -1733,7 +1756,7 @@ function renderPersonResult(person) {
       ${image}
       <div>
         <strong>${escapeHtml(person.name)}</strong>
-        <span>${escapeHtml(organizationName(person.organization))} · ${escapeHtml(subOrganizationName(person.subOrganization))} · ${escapeHtml(person.job)} · ${person.age}세 · ${currentHeight(person)}cm · ${formatBounty(currentBounty(person))}</span>
+        <span>${escapeHtml(organizationName(person.organization))} · ${escapeHtml(subOrganizationName(person.subOrganization))} · ${escapeHtml(personJobLabel(person))} · ${person.age}세 · ${currentHeight(person)}cm · ${formatBounty(currentBounty(person))}</span>
       </div>
     </div>
   `;
@@ -2104,9 +2127,9 @@ function personToItem(person) {
   return item(
     person.id,
     person.name,
-    `${organizationName(person.organization)} / ${subOrganizationName(person.subOrganization)} / ${person.job}`,
+    `${organizationName(person.organization)} / ${subOrganizationName(person.subOrganization)} / ${personJobLabel(person)}`,
     person,
-    `${person.name} ${person.aliases} ${person.job} ${person.origin} ${originRegionName(person.originRegion)} ${originCountryName(person.originCountry)} ${person.birthday} ${person.bloodType} ${organizationName(person.organization)} ${subOrganizationName(person.subOrganization)} ${findFruit(person.devilFruitId)?.name || ""}`
+    `${person.name} ${person.aliases} ${personJobSearchText(person)} ${person.origin} ${originRegionName(person.originRegion)} ${originCountryName(person.originCountry)} ${person.birthday} ${person.bloodType} ${organizationName(person.organization)} ${subOrganizationName(person.subOrganization)} ${findFruit(person.devilFruitId)?.name || ""}`
   );
 }
 
@@ -2340,7 +2363,7 @@ function renderCharacterSearchResults(selectedIds = [], query = "") {
   return results.map((person) => `
     <button class="picker-result" type="button" data-add-character="${escapeAttribute(person.id)}">
       <strong>${escapeHtml(person.name)}</strong>
-      <span>${escapeHtml(organizationName(person.organization))} · ${escapeHtml(subOrganizationName(person.subOrganization))} · ${escapeHtml(person.job || "직업 미등록")}</span>
+      <span>${escapeHtml(organizationName(person.organization))} · ${escapeHtml(subOrganizationName(person.subOrganization))} · ${escapeHtml(personJobLabel(person))}</span>
     </button>
   `).join("") || `<p class="picker-empty">검색 결과가 없습니다.</p>`;
 }
@@ -2494,6 +2517,9 @@ function blankPerson() {
     name: "",
     aliases: "",
     job: "",
+    jobCategory: "",
+    jobDetail: "",
+    jobEn: "",
     organization: "etc",
     subOrganization: "",
     age: "",
@@ -2658,6 +2684,9 @@ function fileToDataUrl(file) {
 function normalizeInPlace(target) {
   target.people = (target.people || []).map((person) => ({
     aliases: "",
+    jobCategory: "",
+    jobDetail: "",
+    jobEn: "",
     subOrganization: "",
     birthday: "",
     originRegion: "",

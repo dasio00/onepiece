@@ -9,6 +9,7 @@ const TECHNIQUE_CACHE_DIR = path.join(ROOT, "tools", ".cache", "onepiece-wiki", 
 const PAGE_CACHE_DIR = path.join(ROOT, "tools", ".cache", "onepiece-wiki", "pages");
 const LUFFY_NAMU_PATH = path.join(ROOT, "tools", "luffy-namu-techniques.json");
 const EPISODE_NAMU_PATH = path.join(ROOT, "tools", "episode-namu-titles.json");
+const JOB_CATEGORIES_PATH = path.join(ROOT, "tools", "job-categories.json");
 const START_MARKER = "/* LOCALIZATION_AUTO_START */";
 const END_MARKER = "/* LOCALIZATION_AUTO_END */";
 
@@ -374,16 +375,18 @@ async function main() {
   const fruitJapanese = await readFruitJapaneseNames(data);
   const luffyNamu = await readJsonFile(LUFFY_NAMU_PATH, { namePatches: {}, entries: [] });
   const episodeNamu = await readJsonFile(EPISODE_NAMU_PATH, { titlePatches: {} });
+  const jobCategories = await readJsonFile(JOB_CATEGORIES_PATH, { personPatches: {} });
   const luffyNamuEntries = normalizeLuffyNamuEntries(luffyNamu.entries || []);
   const techniquePatches = buildTechniquePatches(data, techniqueJapanese, luffyNamu.namePatches || {});
   const fruitPatches = buildFruitPatches(data, fruitJapanese);
-  const block = buildLocalizationBlock(techniquePatches, fruitPatches, luffyNamuEntries, episodeNamu.titlePatches || {});
+  const block = buildLocalizationBlock(techniquePatches, fruitPatches, luffyNamuEntries, episodeNamu.titlePatches || {}, jobCategories.personPatches || {});
   await fs.writeFile(DATA_PATH, replaceBlock(dataText, block));
   console.log(JSON.stringify({
     techniquePatches: Object.keys(techniquePatches).length,
     techniqueJapanese: Object.values(techniquePatches).filter((item) => item.nameJa).length,
     luffyTechniqueEntries: luffyNamuEntries.length,
     episodeTitlePatches: Object.keys(episodeNamu.titlePatches || {}).length,
+    personJobPatches: Object.keys(jobCategories.personPatches || {}).length,
     fruitPatches: Object.keys(fruitPatches).length,
     fruitJapanese: Object.values(fruitPatches).filter((item) => item.nameJa).length,
   }, null, 2));
@@ -610,7 +613,7 @@ function translateTechniquePhrase(text) {
     .trim();
 }
 
-function buildLocalizationBlock(techniquePatches, fruitPatches, luffyNamuEntries, episodeTitlePatches) {
+function buildLocalizationBlock(techniquePatches, fruitPatches, luffyNamuEntries, episodeTitlePatches, personJobPatches) {
   return `${START_MARKER}
 (() => {
   const data = window.onePieceData;
@@ -618,6 +621,7 @@ function buildLocalizationBlock(techniquePatches, fruitPatches, luffyNamuEntries
   const fruitPatches = ${JSON.stringify(fruitPatches, null, 2)};
   const luffyNamuEntries = ${JSON.stringify(luffyNamuEntries, null, 2)};
   const episodeTitlePatches = ${JSON.stringify(episodeTitlePatches, null, 2)};
+  const personJobPatches = ${JSON.stringify(personJobPatches, null, 2)};
   const hasLatin = (value) => /[A-Za-z]/.test(String(value || ""));
   const hasHangul = (value) => /[가-힣]/.test(String(value || ""));
   const upsertById = (list, item) => {
@@ -632,6 +636,13 @@ function buildLocalizationBlock(techniquePatches, fruitPatches, luffyNamuEntries
     if (patch.nameKo && hasHangul(patch.nameKo)) item.name = patch.nameKo;
     else if (patch.nameJa) item.name = patch.nameJa;
   };
+  data.people.forEach((person) => {
+    const patch = personJobPatches[person.id];
+    if (!patch) return;
+    if (!person.jobEn && person.job && hasLatin(person.job)) person.jobEn = person.job;
+    Object.assign(person, patch);
+    if (patch.jobCategory) person.job = patch.jobCategory;
+  });
   luffyNamuEntries.forEach((entry) => upsertById(data.techniques, entry));
   data.techniques.forEach((technique) => setNameFields(technique, techniquePatches[technique.id]));
   data.devilFruits.forEach((fruit) => {

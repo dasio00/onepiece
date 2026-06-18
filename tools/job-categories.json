@@ -1,0 +1,7546 @@
+{
+  "generatedFrom": "One Piece character job fields; broad Korean categories generated from source job text and organization ids.",
+  "generatedAt": "2026-06-18",
+  "categories": [
+    "해적",
+    "해군",
+    "혁명군/반란 세력",
+    "세계정부/첩보기관",
+    "왕족/귀족",
+    "무사/전투원",
+    "범죄/지하세계",
+    "의료/학술",
+    "기술/장인",
+    "요리/접객",
+    "상업/서비스직",
+    "예술/연예",
+    "종교/신관",
+    "교사/학생",
+    "동물/생물",
+    "좀비/개조 생물",
+    "노예/포로",
+    "민간인/기타"
+  ],
+  "personPatches": {
+    "wt100-1": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장"
+    },
+    "wt100-2": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "검사"
+    },
+    "wt100-3": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "항해사"
+    },
+    "wt100-4": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "저격수"
+    },
+    "wt100-5": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "요리사"
+    },
+    "wt100-7": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장"
+    },
+    "wt100-8": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 동경자"
+    },
+    "wt100-9": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "음악가"
+    },
+    "wt100-10": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장"
+    },
+    "wt100-11": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부, 요리사"
+    },
+    "wt100-12": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-13": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-15": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "술집 주인",
+      "jobEn": "Bar Owner"
+    },
+    "wt100-16": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "산적 두목",
+      "jobEn": "Bandit Leader"
+    },
+    "wt100-17": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "생선 장수",
+      "jobEn": "Fishmonger"
+    },
+    "wt100-18": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "생선 장수",
+      "jobEn": "Fishmonger"
+    },
+    "wt100-19": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "시장",
+      "jobEn": "Mayor"
+    },
+    "wt100-20": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Foosha Village 's local Sea King"
+    },
+    "wt100-21": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 대위",
+      "jobEn": "Marine Captain"
+    },
+    "wt100-22": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-23": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-24": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-25": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-26": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "웨이트리스",
+      "jobEn": "Waitress"
+    },
+    "wt100-27": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "소령",
+      "jobEn": "Lieutenant Commander"
+    },
+    "wt100-28": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-29": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "바텐더",
+      "jobEn": "Bartender"
+    },
+    "wt100-30": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 대위",
+      "jobEn": "Marine Captain (former)"
+    },
+    "wt100-31": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중위",
+      "jobEn": "Marine Lieutenant Junior Grade"
+    },
+    "wt100-32": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 신병",
+      "jobEn": "Marine Seaman Recruit"
+    },
+    "wt100-33": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "견습 검사",
+      "jobEn": "Trainee Swordsman"
+    },
+    "wt100-34": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Dojo Master"
+    },
+    "wt100-35": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 사령관",
+      "jobEn": "Marine Commander"
+    },
+    "wt100-37": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-39": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-42": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-43": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-44": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-45": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "시장",
+      "jobEn": "Mayor"
+    },
+    "wt100-46": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물 가게 주인",
+      "jobEn": "Pet Shop Owner"
+    },
+    "wt100-47": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "서점 주인",
+      "jobEn": "Bookstore Owner"
+    },
+    "wt100-48": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-50": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "수호자",
+      "jobEn": "Guardian of the Island of Rare Animals Pirate (former)"
+    },
+    "wt100-51": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "시장",
+      "jobEn": "Mayor"
+    },
+    "wt100-52": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "통치자",
+      "jobEn": "Ruler of Mokomo Dukedom"
+    },
+    "wt100-53": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pretend Pirate (former)"
+    },
+    "wt100-54": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pretend Pirate (formerly)"
+    },
+    "wt100-55": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain (former)"
+    },
+    "wt100-56": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의대생",
+      "jobEn": "Medical student"
+    },
+    "wt100-57": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Kaya's security guards"
+    },
+    "wt100-58": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "집사",
+      "jobEn": "Butler"
+    },
+    "wt100-59": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 소령",
+      "jobEn": "Marine Lieutenant Commander"
+    },
+    "wt100-60": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-61": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-62": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "조선공",
+      "jobEn": "Shipwright"
+    },
+    "wt100-64": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "현상금 사냥꾼",
+      "jobEn": "Bounty Hunter (former)"
+    },
+    "wt100-65": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "현상금 사냥꾼",
+      "jobEn": "Bounty Hunter (former)"
+    },
+    "wt100-66": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 소령",
+      "jobEn": "Marine Lieutenant Commander"
+    },
+    "wt100-69": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Head Chef of Baratie , Pirate Captain (former)"
+    },
+    "wt100-71": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "파티시에",
+      "jobEn": "Patissier"
+    },
+    "wt100-72": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 일등병",
+      "jobEn": "Marine Seaman First Class"
+    },
+    "wt100-73": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "레슬러",
+      "jobEn": "Wrestler"
+    },
+    "wt100-74": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-75": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "육가공 요리사",
+      "jobEn": "Charcutier"
+    },
+    "wt100-77": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain / Admiral"
+    },
+    "wt100-78": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-79": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Commander of the Krieg Pirates ' second unit"
+    },
+    "wt100-80": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-81": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-82": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-85": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 대위",
+      "jobEn": "Marine Captain"
+    },
+    "wt100-86": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-87": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "타코야키 장수",
+      "jobEn": "Takoyaki seller"
+    },
+    "wt100-88": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "노동자",
+      "jobEn": "Laborer"
+    },
+    "wt100-89": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "귤 농부",
+      "jobEn": "Mikan Farmer"
+    },
+    "wt100-90": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Sheriff of Cocoyasi Village"
+    },
+    "wt100-91": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-92": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-93": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "해적",
+      "jobEn": "Arlong Pirates' pet (former)"
+    },
+    "wt100-94": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-95": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-96": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-97": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-98": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 준장",
+      "jobEn": "Marine Commodore"
+    },
+    "wt100-99": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "귤 농부",
+      "jobEn": "Mikan Farmer"
+    },
+    "wt100-100": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-101": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "가정주부",
+      "jobEn": "Housefather"
+    },
+    "wt100-102": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "가정주부",
+      "jobEn": "Housemother"
+    },
+    "wt100-106": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 준장",
+      "jobEn": "Commodore"
+    },
+    "wt100-107": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-108": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-109": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-110": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "판매원",
+      "jobEn": "Salesperson"
+    },
+    "wt100-111": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Arms Shop Proprietor"
+    },
+    "wt100-112": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Arms Shop Proprietress"
+    },
+    "wt100-113": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "생선 장수",
+      "jobEn": "Fishmonger"
+    },
+    "wt100-114": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 상사",
+      "jobEn": "Marine Chief Petty Officer"
+    },
+    "wt100-115": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-117": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군",
+      "jobEn": "Captain"
+    },
+    "wt100-118": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "지휘관",
+      "jobEn": "Supreme Commander of the Revolutionary Army"
+    },
+    "wt100-119": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "코팅 기술자",
+      "jobEn": "Coating Mechanic"
+    },
+    "wt100-120": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-121": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-130": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-131": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "고고학자",
+      "jobEn": "Archaeologist"
+    },
+    "wt100-132": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "공주",
+      "jobEn": "Princess of Arabasta"
+    },
+    "wt100-134": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-135": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Frontier Agent (former)"
+    },
+    "wt100-136": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "암살자",
+      "jobEn": "Assassin (former)"
+    },
+    "wt100-137": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "암살자",
+      "jobEn": "Assassin (former)"
+    },
+    "wt100-140": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "현상금 사냥꾼",
+      "jobEn": "Bounty Hunter"
+    },
+    "wt100-141": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "현상금 사냥꾼",
+      "jobEn": "Bounty Hunter"
+    },
+    "wt100-142": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Captain of the Royal Guard"
+    },
+    "wt100-143": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "현상금 사냥꾼",
+      "jobEn": "Bounty Hunter"
+    },
+    "wt100-144": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Frontier Agent (former)"
+    },
+    "wt100-145": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-146": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "카페 직원",
+      "jobEn": "Cafe Employee"
+    },
+    "wt100-147": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "요리/접객",
+      "jobEn": "Cafe Pâtissier"
+    },
+    "wt100-150": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-151": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-153": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-154": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "카페 직원",
+      "jobEn": "Cafe Employee"
+    },
+    "wt100-156": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Frontier Agent"
+    },
+    "wt100-160": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King of the Evil Black Drum Kingdom"
+    },
+    "wt100-162": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "주부",
+      "jobEn": "Housewife"
+    },
+    "wt100-163": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King of the Sakura Kingdom"
+    },
+    "wt100-168": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "사쿠라 왕국 수석 의사",
+      "jobEn": "Head- Doctor of the Sakura Kingdom"
+    },
+    "wt100-169": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Wapol 's Pet"
+    },
+    "wt100-170": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Evil Chief of Staff (Chief of Staff)"
+    },
+    "wt100-171": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Evil Magistrate (Magistrate)"
+    },
+    "wt100-174": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-175": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King (former)"
+    },
+    "wt100-176": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King of Arabasta"
+    },
+    "wt100-177": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen of Newkama Land"
+    },
+    "wt100-178": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate , Captain"
+    },
+    "wt100-179": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-181": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "식당 주인",
+      "jobEn": "Restaurant owner"
+    },
+    "wt100-182": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "2nd Division Commander"
+    },
+    "wt100-183": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "현상금 사냥꾼",
+      "jobEn": "Bounty Hunter"
+    },
+    "wt100-184": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "카페 웨이트리스",
+      "jobEn": "Cafe Waitress"
+    },
+    "wt100-185": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "요리/접객",
+      "jobEn": "Cafe Delivery Boy"
+    },
+    "wt100-186": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "요리/접객",
+      "jobEn": "Spiders Cafe Owner"
+    },
+    "wt100-187": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-188": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "운송수단",
+      "jobEn": "Transportation"
+    },
+    "wt100-193": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "왕실 운송수단",
+      "jobEn": "Royal Transport"
+    },
+    "wt100-194": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Yuba villager"
+    },
+    "wt100-195": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕족/귀족",
+      "jobEn": "Environmental Minister"
+    },
+    "wt100-196": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "Rebel (former)"
+    },
+    "wt100-197": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "Rebel (former)"
+    },
+    "wt100-198": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "Rebel (former)"
+    },
+    "wt100-200": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "불량배 두목",
+      "jobEn": "Thug Leader"
+    },
+    "wt100-201": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "구두닦이",
+      "jobEn": "Shoeshiner"
+    },
+    "wt100-202": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "Rebel (former)"
+    },
+    "wt100-203": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "용병",
+      "jobEn": "Mercenary"
+    },
+    "wt100-204": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "지휘관",
+      "jobEn": "Commander of Royal Guards"
+    },
+    "wt100-205": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "지휘관",
+      "jobEn": "Commander of Royal Guards"
+    },
+    "wt100-206": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "부매니저",
+      "jobEn": "Assistant-Manager"
+    },
+    "wt100-207": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "호위",
+      "jobEn": "Bodyguards"
+    },
+    "wt100-208": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Ukkari Hot-Springs Resort Transportation"
+    },
+    "wt100-211": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "왕실 운송수단",
+      "jobEn": "Royal Transport"
+    },
+    "wt100-212": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "왕실 운송수단",
+      "jobEn": "Royal Transport"
+    },
+    "wt100-213": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "왕실 운송수단",
+      "jobEn": "Royal Transport"
+    },
+    "wt100-214": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "왕실 운송수단",
+      "jobEn": "Royal Transport"
+    },
+    "wt100-216": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "왕실 운송수단",
+      "jobEn": "Royal Transport"
+    },
+    "wt100-217": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Cafe Mascot"
+    },
+    "wt100-218": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Frontier Agent (former)"
+    },
+    "wt100-221": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-222": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "샨디아 전사",
+      "jobEn": "Shandia Warrior"
+    },
+    "wt100-223": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Frontier Agent"
+    },
+    "wt100-224": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Frontier Agent (former)"
+    },
+    "wt100-226": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 소장",
+      "jobEn": "Rear Admiral"
+    },
+    "wt100-227": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "채권 추심원",
+      "jobEn": "Debt Collector"
+    },
+    "wt100-228": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-229": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "왕실 주방장",
+      "jobEn": "Royal Head Chef"
+    },
+    "wt100-230": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 상사",
+      "jobEn": "Chief Petty Officer"
+    },
+    "wt100-231": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "시녀",
+      "jobEn": "Lady's maid"
+    },
+    "wt100-232": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen of the Arabasta Kingdom"
+    },
+    "wt100-233": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 소위",
+      "jobEn": "Marine Ensign"
+    },
+    "wt100-234": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-235": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-236": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-237": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-238": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "염색공",
+      "jobEn": "Dyer"
+    },
+    "wt100-239": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "호텔 주인",
+      "jobEn": "Hotel owner"
+    },
+    "wt100-240": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "부선장",
+      "jobEn": "First Mate (former)"
+    },
+    "wt100-242": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "포수",
+      "jobEn": "Gunner"
+    },
+    "wt100-243": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "전투원",
+      "jobEn": "Combatant"
+    },
+    "wt100-244": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "항해사",
+      "jobEn": "Navigator"
+    },
+    "wt100-245": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "요리사",
+      "jobEn": "Chef"
+    },
+    "wt100-246": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "전투원",
+      "jobEn": "Combatant"
+    },
+    "wt100-247": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-248": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "바텐더",
+      "jobEn": "Bartender"
+    },
+    "wt100-249": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-250": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-251": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-252": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-255": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Protector of the island"
+    },
+    "wt100-256": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Co-Head of the World Government (Public)"
+    },
+    "wt100-257": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Co-Head of the World Government (Public)"
+    },
+    "wt100-258": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Co-Head of the World Government (Public)"
+    },
+    "wt100-259": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Co-Head of the World Government (Public)"
+    },
+    "wt100-260": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Co-Head of the World Government (Public)"
+    },
+    "wt100-261": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-262": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-263": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-264": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-265": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Inspector General"
+    },
+    "wt100-266": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-267": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "지휘관",
+      "jobEn": "Army Commander of the Revolutionary Army"
+    },
+    "wt100-268": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "티타닉 선장",
+      "jobEn": "Titanic Captain (Captain of the Fifth Ship)"
+    },
+    "wt100-269": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-270": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-271": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "간호사",
+      "jobEn": "Nurse"
+    },
+    "wt100-272": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "티타닉 선장",
+      "jobEn": "Titanic Captain (Captain of the First Ship)"
+    },
+    "wt100-273": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "티타닉 선장",
+      "jobEn": "Titanic Captain (Captain of the Third Ship)"
+    },
+    "wt100-274": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-275": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "티타닉 선장",
+      "jobEn": "Titanic Captain (Captain of the Ninth Ship)"
+    },
+    "wt100-276": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Doc Q's horse"
+    },
+    "wt100-278": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "스카이피아 신",
+      "jobEn": "God of Skypiea"
+    },
+    "wt100-279": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Gan Fall's Pet"
+    },
+    "wt100-280": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Heaven's Gate Inspector (former)"
+    },
+    "wt100-282": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이트리스",
+      "jobEn": "Waitress"
+    },
+    "wt100-283": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-284": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "다이얼 보트 기술자",
+      "jobEn": "Dial Boat Engineer"
+    },
+    "wt100-285": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-287": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "에넬 신관",
+      "jobEn": "Priest of Enel"
+    },
+    "wt100-288": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "전투 애완동물",
+      "jobEn": "Battle Pet"
+    },
+    "wt100-289": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "에넬 신관",
+      "jobEn": "Priest of Enel"
+    },
+    "wt100-291": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "샨디아 전사",
+      "jobEn": "Shandia Warrior"
+    },
+    "wt100-292": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "샨디아 전사",
+      "jobEn": "Shandia Warrior"
+    },
+    "wt100-293": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "샨디아 전사",
+      "jobEn": "Shandia Warrior"
+    },
+    "wt100-294": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "샨디아 전사",
+      "jobEn": "Shandia Warrior"
+    },
+    "wt100-295": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "샨디아 전사",
+      "jobEn": "Shandia Warrior"
+    },
+    "wt100-296": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "에넬 신관",
+      "jobEn": "Priest of Enel (former)"
+    },
+    "wt100-297": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "신관",
+      "jobEn": "Priest of Enel (former), Head Clerk of Hot Springs Resort"
+    },
+    "wt100-298": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "지휘관",
+      "jobEn": "Commander of the Divine Soldiers (former)"
+    },
+    "wt100-299": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "스카이피아 신",
+      "jobEn": "God of Skypiea (former)"
+    },
+    "wt100-302": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "성직자",
+      "jobEn": "Clergyman"
+    },
+    "wt100-303": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군",
+      "jobEn": "Lieutenants of the Divine Soldiers"
+    },
+    "wt100-304": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군",
+      "jobEn": "Lieutenants of the Divine Soldiers"
+    },
+    "wt100-305": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "샨디아 전사",
+      "jobEn": "Shandia Warrior"
+    },
+    "wt100-306": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "샨디아 전사",
+      "jobEn": "Shandia Warrior"
+    },
+    "wt100-307": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "샨디아 전사",
+      "jobEn": "Shandia Warrior"
+    },
+    "wt100-308": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Member of the Divine Squad"
+    },
+    "wt100-310": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕족/귀족",
+      "jobEn": "Chief of Shandia"
+    },
+    "wt100-311": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "전사",
+      "jobEn": "Warrior"
+    },
+    "wt100-312": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "탐험가",
+      "jobEn": "Explorer"
+    },
+    "wt100-313": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "요리/접객",
+      "jobEn": "Pantri"
+    },
+    "wt100-315": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Shandia Villager"
+    },
+    "wt100-317": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "선의",
+      "jobEn": "Ship's Doctor"
+    },
+    "wt100-319": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕족/귀족",
+      "jobEn": "Chief of Shandia"
+    },
+    "wt100-321": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-322": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "스카이피아 신",
+      "jobEn": "God of Skypiea"
+    },
+    "wt100-323": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "예술/연예",
+      "jobEn": "Miss Skypiea (former)"
+    },
+    "wt100-327": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-328": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "유목민",
+      "jobEn": "Nomad, Stilt walker"
+    },
+    "wt100-331": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-332": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-333": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-334": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-335": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-336": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-337": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-338": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-339": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-340": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-341": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-342": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-343": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-344": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-345": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "조선공",
+      "jobEn": "Shipwright"
+    },
+    "wt100-346": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "티타닉 선장",
+      "jobEn": "Titanic Captain (Captain of the Tenth Ship)"
+    },
+    "wt100-347": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "해왕류",
+      "jobEn": "Sea King"
+    },
+    "wt100-348": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "조선공",
+      "jobEn": "Shipwright"
+    },
+    "wt100-350": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Sunday stationmaster of the Shift Station"
+    },
+    "wt100-351": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-352": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Stationmaster"
+    },
+    "wt100-353": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-354": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Bull Rental Salesman"
+    },
+    "wt100-356": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "해체업자",
+      "jobEn": "Dismantler"
+    },
+    "wt100-357": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "해체업자",
+      "jobEn": "Dismantler"
+    },
+    "wt100-358": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "해체업자",
+      "jobEn": "Dismantler, Bounty Hunter"
+    },
+    "wt100-359": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "해체업자",
+      "jobEn": "Dismantler"
+    },
+    "wt100-360": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "해체업자",
+      "jobEn": "Dismantler, Bounty Hunter (former)"
+    },
+    "wt100-361": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "감정사",
+      "jobEn": "Appraiser"
+    },
+    "wt100-362": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-363": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "President of the Galley-La Company"
+    },
+    "wt100-364": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Iceburg's pet"
+    },
+    "wt100-365": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-366": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Vice President of Galley-La"
+    },
+    "wt100-367": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-368": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Rob Lucci 's Pet"
+    },
+    "wt100-369": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "1번 도크 반장",
+      "jobEn": "Dock 1 Foreman"
+    },
+    "wt100-370": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Government official"
+    },
+    "wt100-372": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-373": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "바텐더",
+      "jobEn": "Bartenders"
+    },
+    "wt100-374": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "바텐더",
+      "jobEn": "Bartenders"
+    },
+    "wt100-375": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "1번 도크 반장",
+      "jobEn": "Dock One Foreman"
+    },
+    "wt100-376": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-377": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "목수",
+      "jobEn": "Carpenter"
+    },
+    "wt100-378": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "조선공",
+      "jobEn": "Shipwright"
+    },
+    "wt100-380": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Judge"
+    },
+    "wt100-381": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 0 장관",
+      "jobEn": "CP0 Chief (former)"
+    },
+    "wt100-382": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Station Manager"
+    },
+    "wt100-383": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Station Manager"
+    },
+    "wt100-384": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-385": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Marine Vice Admiral"
+    },
+    "wt100-386": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-387": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent (former)"
+    },
+    "wt100-388": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "해체업자",
+      "jobEn": "Dismantler"
+    },
+    "wt100-389": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "해체업자",
+      "jobEn": "Dismantler"
+    },
+    "wt100-390": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "해체업자",
+      "jobEn": "Dismantler"
+    },
+    "wt100-392": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "운송수단",
+      "jobEn": "Transportation"
+    },
+    "wt100-393": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "운송수단",
+      "jobEn": "Transportation"
+    },
+    "wt100-394": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "초등학생",
+      "jobEn": "Elementary school students (pre-timeskip)"
+    },
+    "wt100-395": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "초등학생",
+      "jobEn": "Elementary school students (pre-timeskip)"
+    },
+    "wt100-396": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-397": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-398": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-399": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate , Gate Guardian (former)"
+    },
+    "wt100-400": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-401": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이트리스",
+      "jobEn": "Waitress"
+    },
+    "wt100-402": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "에니에스 로비 재판장",
+      "jobEn": "Chief Justices of Enies Lobby"
+    },
+    "wt100-405": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "주부",
+      "jobEn": "Housewife"
+    },
+    "wt100-406": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인",
+      "jobEn": "Civilian"
+    },
+    "wt100-408": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "고고학자",
+      "jobEn": "Archaeologist"
+    },
+    "wt100-409": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "고고학자",
+      "jobEn": "Archaeologist"
+    },
+    "wt100-410": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "고고학자",
+      "jobEn": "Archaeologist"
+    },
+    "wt100-411": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "고고학자",
+      "jobEn": "Archaeologist"
+    },
+    "wt100-412": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "고고학자",
+      "jobEn": "Archaeologist"
+    },
+    "wt100-413": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "고고학자",
+      "jobEn": "Archaeologist"
+    },
+    "wt100-414": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "고고학자",
+      "jobEn": "Archaeologist"
+    },
+    "wt100-415": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "오하라 고고학자",
+      "jobEn": "Professor and archaeologist of the Tree of Knowledge"
+    },
+    "wt100-416": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "역사 교사",
+      "jobEn": "History Teacher Vice Admiral (former)"
+    },
+    "wt100-417": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 9 장관",
+      "jobEn": "CP9 Chief (former)"
+    },
+    "wt100-418": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-419": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-420": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "고고학자",
+      "jobEn": "Archaeologist"
+    },
+    "wt100-421": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "농부",
+      "jobEn": "Farmer"
+    },
+    "wt100-422": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "시민",
+      "jobEn": "Citizen"
+    },
+    "wt100-423": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-424": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "스팬담의 검",
+      "jobEn": "Spandam 's sword"
+    },
+    "wt100-426": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-427": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-428": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-429": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-430": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-431": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 대위",
+      "jobEn": "Marine Captain"
+    },
+    "wt100-432": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 대위",
+      "jobEn": "Marine Captain"
+    },
+    "wt100-433": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 대위",
+      "jobEn": "Marine Captain"
+    },
+    "wt100-434": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-435": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "1st Division Commander (former)"
+    },
+    "wt100-436": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-437": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "기자",
+      "jobEn": "Reporter"
+    },
+    "wt100-439": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "하인",
+      "jobEn": "Manservant"
+    },
+    "wt100-440": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "Revolutionary Army Intelligence Controller"
+    },
+    "wt100-441": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "4th Division Commander"
+    },
+    "wt100-442": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 원수",
+      "jobEn": "Fleet Admiral"
+    },
+    "wt100-443": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "음악가",
+      "jobEn": "Musician"
+    },
+    "wt100-444": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "와일드 좀비",
+      "jobEn": "Wild Zombie"
+    },
+    "wt100-445": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "와일드 좀비",
+      "jobEn": "Wild Zombie"
+    },
+    "wt100-446": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "와일드 좀비",
+      "jobEn": "Wild Zombie"
+    },
+    "wt100-447": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "와일드 좀비",
+      "jobEn": "Wild Zombie"
+    },
+    "wt100-448": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "배우",
+      "jobEn": "Actress (in life)"
+    },
+    "wt100-449": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-450": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "서프라이즈 좀비 두목",
+      "jobEn": "Surprise Zombie Boss"
+    },
+    "wt100-452": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Chairman of Thriller Bark Victim's Association"
+    },
+    "wt100-453": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Perona's servant"
+    },
+    "wt100-454": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "병사 좀비",
+      "jobEn": "Soldier Zombies"
+    },
+    "wt100-455": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "병사 좀비",
+      "jobEn": "Soldier Zombies"
+    },
+    "wt100-456": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "병사 좀비",
+      "jobEn": "Soldier Zombies"
+    },
+    "wt100-457": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "장군",
+      "jobEn": "Reporter Soldier Zombies and General Zombies Commander"
+    },
+    "wt100-458": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-459": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-460": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "장군 좀비",
+      "jobEn": "General Zombie"
+    },
+    "wt100-461": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-462": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-463": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "와일드 좀비",
+      "jobEn": "Wild Zombie"
+    },
+    "wt100-464": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "장군 좀비",
+      "jobEn": "General Zombie"
+    },
+    "wt100-465": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "장군 좀비",
+      "jobEn": "General Zombie"
+    },
+    "wt100-467": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-468": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "특수 좀비",
+      "jobEn": "Special Zombie"
+    },
+    "wt100-469": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "좀비",
+      "jobEn": "Wild Zombie Vice Commander"
+    },
+    "wt100-470": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate , Captain"
+    },
+    "wt100-471": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 상사",
+      "jobEn": "Chief Petty Officer"
+    },
+    "wt100-473": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "메이드",
+      "jobEn": "Maid"
+    },
+    "wt100-474": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-475": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-477": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이트리스",
+      "jobEn": "Fashion designing apprentice Takoyaki seller Waitress at Mermaid Cafe"
+    },
+    "wt100-478": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "패션 디자이너",
+      "jobEn": "Fashion Designer"
+    },
+    "wt100-479": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Leader of the Rosy Life Riders (formerly the Flying Fish Riders)"
+    },
+    "wt100-480": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-481": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-482": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-483": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Duval's pet"
+    },
+    "wt100-484": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "가게 주인",
+      "jobEn": "Store owner"
+    },
+    "wt100-485": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-486": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-487": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "세계귀족",
+      "jobEn": "World Noble"
+    },
+    "wt100-488": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "세계귀족",
+      "jobEn": "World Noble"
+    },
+    "wt100-489": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-490": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "현상금 사냥꾼",
+      "jobEn": "Bounty Hunter"
+    },
+    "wt100-491": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "현상금 사냥꾼",
+      "jobEn": "Bounty Hunter"
+    },
+    "wt100-492": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "바텐더",
+      "jobEn": "Bartender"
+    },
+    "wt100-493": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-494": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-495": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-496": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-497": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-498": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "소드 대장",
+      "jobEn": "Captain of SWORD"
+    },
+    "wt100-499": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-500": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-501": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-502": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-503": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-504": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-505": {
+      "jobCategory": "노예/포로",
+      "job": "노예/포로",
+      "jobDetail": "노예상",
+      "jobEn": "Slave trader"
+    },
+    "wt100-506": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "세계귀족",
+      "jobEn": "World Noble"
+    },
+    "wt100-507": {
+      "jobCategory": "노예/포로",
+      "job": "노예/포로",
+      "jobDetail": "노예",
+      "jobEn": "Slave"
+    },
+    "wt100-509": {
+      "jobCategory": "노예/포로",
+      "job": "노예/포로",
+      "jobDetail": "노예",
+      "jobEn": "Slave"
+    },
+    "wt100-510": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-511": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-512": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "범죄/지하세계",
+      "jobEn": "Owner of Human Auctioning House (former)"
+    },
+    "wt100-513": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-514": {
+      "jobCategory": "노예/포로",
+      "job": "노예/포로",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer, Slave (former)"
+    },
+    "wt100-515": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "음악가",
+      "jobEn": "Musician"
+    },
+    "wt100-517": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-518": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 소장",
+      "jobEn": "Rear Admiral"
+    },
+    "wt100-519": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "사이보그",
+      "jobEn": "Cyborgs"
+    },
+    "wt100-520": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 대장",
+      "jobEn": "Admiral"
+    },
+    "wt100-521": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-522": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 장교",
+      "jobEn": "Marine Officer (former)"
+    },
+    "wt100-523": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "생선 장수",
+      "jobEn": "Fishmonger (former)"
+    },
+    "wt100-524": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "생선 장수",
+      "jobEn": "Fishmonger (former)"
+    },
+    "wt100-525": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "생선 장수",
+      "jobEn": "Fishmonger (former)"
+    },
+    "wt100-526": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "생선 장수",
+      "jobEn": "Fishmonger (former)"
+    },
+    "wt100-527": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-528": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-529": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-530": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "전사",
+      "jobEn": "Warrior (Former), Pirate"
+    },
+    "wt100-531": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-532": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "전사",
+      "jobEn": "Warrior"
+    },
+    "wt100-533": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Kuja warrior"
+    },
+    "wt100-534": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "아마존 릴리 황제",
+      "jobEn": "Empress of Amazon Lily (former)"
+    },
+    "wt100-535": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "전사",
+      "jobEn": "Warrior"
+    },
+    "wt100-536": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "전사",
+      "jobEn": "Warrior"
+    },
+    "wt100-538": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-539": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-540": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-541": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-542": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-543": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Captain of the Kuja Pirates"
+    },
+    "wt100-544": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "통치자",
+      "jobEn": "Ruler of Amazon Lily"
+    },
+    "wt100-545": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "통치자",
+      "jobEn": "Ruler of Amazon Lily"
+    },
+    "wt100-546": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "뱀 무기",
+      "jobEn": "Snake Weapon"
+    },
+    "wt100-547": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "시녀",
+      "jobEn": "Lady's maid"
+    },
+    "wt100-549": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-550": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "과학자",
+      "jobEn": "Scientist"
+    },
+    "wt100-551": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "예술/연예",
+      "jobEn": "Okama"
+    },
+    "wt100-552": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "탐험가",
+      "jobEn": "Explorer"
+    },
+    "wt100-553": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-554": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "사이보그 동물",
+      "jobEn": "Cyborg animal"
+    },
+    "wt100-556": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중위",
+      "jobEn": "Marine Lieutenant Junior Grade"
+    },
+    "wt100-557": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "서장",
+      "jobEn": "Chief Warden"
+    },
+    "wt100-559": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "간수장",
+      "jobEn": "Head Jailer"
+    },
+    "wt100-561": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "부서장",
+      "jobEn": "Vice Warden"
+    },
+    "wt100-562": {
+      "jobCategory": "노예/포로",
+      "job": "노예/포로",
+      "jobDetail": "죄수",
+      "jobEn": "Prisoner"
+    },
+    "wt100-563": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Level 2 Guardian"
+    },
+    "wt100-566": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Chief Guard ( 牢番長 , Rōban Chō )"
+    },
+    "wt100-568": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Chief Guard ( 獄卒長 , Gokusotsu Chō )"
+    },
+    "wt100-569": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Level 2 Guardian"
+    },
+    "wt100-570": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 준장",
+      "jobEn": "Commodore"
+    },
+    "wt100-571": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "임펠 다운 죄수",
+      "jobEn": "Prisoner of Impel Down"
+    },
+    "wt100-572": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "옥졸수",
+      "jobEn": "Jailer Beast"
+    },
+    "wt100-573": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중위",
+      "jobEn": "Marine Lieutenant"
+    },
+    "wt100-574": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "Revolutionary"
+    },
+    "wt100-575": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "지휘관",
+      "jobEn": "G Army Commander of the Revolutionary Army"
+    },
+    "wt100-576": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "옥졸수",
+      "jobEn": "Jailer Beast"
+    },
+    "wt100-577": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "티타닉 선장",
+      "jobEn": "Titanic Captain (Captain of the Second Ship)"
+    },
+    "wt100-578": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "옥졸수",
+      "jobEn": "Jailer Beast"
+    },
+    "wt100-579": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "옥졸수",
+      "jobEn": "Jailer Beast"
+    },
+    "wt100-581": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-583": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-585": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer"
+    },
+    "wt100-586": {
+      "jobCategory": "노예/포로",
+      "job": "노예/포로",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer, Prisoner of the Great Prison (former)"
+    },
+    "wt100-587": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-588": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 소장",
+      "jobEn": "Marine Rear Admiral"
+    },
+    "wt100-589": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "임펠 다운 죄수",
+      "jobEn": "Prisoner of Impel Down"
+    },
+    "wt100-590": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "임펠 다운 경비병",
+      "jobEn": "Impel Down Guard"
+    },
+    "wt100-591": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-592": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-593": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-594": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-595": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-596": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-597": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-598": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "8th Division Commander"
+    },
+    "wt100-599": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "5th Division Commander (former)"
+    },
+    "wt100-600": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "10th Division Commander"
+    },
+    "wt100-601": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "14th Division Commander"
+    },
+    "wt100-602": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "7th Division Commander"
+    },
+    "wt100-603": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "9th Division Commander"
+    },
+    "wt100-604": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "15th Division Commander"
+    },
+    "wt100-605": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "12th Division Commander"
+    },
+    "wt100-606": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "6th Division Commander"
+    },
+    "wt100-607": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "16th Division Commander (former)"
+    },
+    "wt100-608": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "13th Division Commander"
+    },
+    "wt100-609": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "기자",
+      "jobEn": "Reporter"
+    },
+    "wt100-610": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-611": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-613": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-614": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-615": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-616": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-617": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-618": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-619": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-620": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-621": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-622": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-623": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-624": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-625": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-626": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "11th Division Commander"
+    },
+    "wt100-627": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-628": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-629": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-630": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-631": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-632": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-633": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-634": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "티타닉 선장",
+      "jobEn": "Titanic Captain (Captain of the Seventh Ship)"
+    },
+    "wt100-635": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "티타닉 선장",
+      "jobEn": "Titanic Captain (Captain of the Eighth Ship)"
+    },
+    "wt100-636": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "티타닉 선장",
+      "jobEn": "Titanic Captain (Captain of the Sixth Ship)"
+    },
+    "wt100-637": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "티타닉 선장",
+      "jobEn": "Titanic Captain (Captain of the Fourth Ship)"
+    },
+    "wt100-638": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-639": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-640": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 장교",
+      "jobEn": "Marine Officer"
+    },
+    "wt100-641": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Leader of the Centaur Patrol Unit (former)"
+    },
+    "wt100-642": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "산적 두목",
+      "jobEn": "Mountain Bandit Boss"
+    },
+    "wt100-643": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "산적",
+      "jobEn": "bandit"
+    },
+    "wt100-644": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "산적",
+      "jobEn": "bandit"
+    },
+    "wt100-645": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "Chief of Staff ( 参謀総長 , Sanbō Sōchō ) of the Revolutionary Army"
+    },
+    "wt100-646": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-647": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-648": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "귀족",
+      "jobEn": "Noble"
+    },
+    "wt100-649": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "귀족",
+      "jobEn": "Noble"
+    },
+    "wt100-650": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King of the Goa Kingdom"
+    },
+    "wt100-651": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "귀족",
+      "jobEn": "Noble"
+    },
+    "wt100-652": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "귀족",
+      "jobEn": "Noble"
+    },
+    "wt100-653": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "세계귀족",
+      "jobEn": "World Noble"
+    },
+    "wt100-656": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "Revolutionary"
+    },
+    "wt100-658": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "지휘관",
+      "jobEn": "Commander-in-Chief"
+    },
+    "wt100-659": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-660": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-662": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-663": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 대위",
+      "jobEn": "Marine Captain"
+    },
+    "wt100-664": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-665": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-666": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-667": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-668": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-669": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-670": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-671": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-672": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-673": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-674": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-675": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-676": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-677": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-678": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-679": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-680": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-681": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "도둑",
+      "jobEn": "Thief, Manager (former)"
+    },
+    "wt100-682": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-683": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-684": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-685": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-686": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-687": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-688": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-689": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-690": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-691": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-692": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-693": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-694": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-695": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-696": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-697": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "바텐더",
+      "jobEn": "Bartender"
+    },
+    "wt100-698": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "생선 장수",
+      "jobEn": "Fishmonger"
+    },
+    "wt100-699": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-700": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-701": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 소장",
+      "jobEn": "Rear Admiral"
+    },
+    "wt100-702": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-703": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-704": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-705": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕자",
+      "jobEn": "Prince of the Ryugu Kingdom"
+    },
+    "wt100-706": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕자",
+      "jobEn": "Prince of the Ryugu Kingdom"
+    },
+    "wt100-707": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕자",
+      "jobEn": "Prince of the Ryugu Kingdom"
+    },
+    "wt100-709": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer"
+    },
+    "wt100-710": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer"
+    },
+    "wt100-711": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer"
+    },
+    "wt100-712": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "용병",
+      "jobEn": "Mercenary"
+    },
+    "wt100-713": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "요리/접객",
+      "jobEn": "Proprietor of the Mermaid Cafe"
+    },
+    "wt100-714": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer"
+    },
+    "wt100-715": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-716": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-717": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-718": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-719": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-720": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer"
+    },
+    "wt100-721": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King of the Ryugu Kingdom"
+    },
+    "wt100-722": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "운송수단",
+      "jobEn": "Neptune's transportation and pet"
+    },
+    "wt100-723": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Shirahoshi 's pet"
+    },
+    "wt100-724": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "대신",
+      "jobEn": "Minister of Ryugu Kingdom"
+    },
+    "wt100-725": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "대신",
+      "jobEn": "Minister of Ryugu Kingdom"
+    },
+    "wt100-726": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "공주",
+      "jobEn": "Princess of the Ryugu Kingdom"
+    },
+    "wt100-727": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-728": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-729": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer"
+    },
+    "wt100-730": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "조선공",
+      "jobEn": "Shipwright"
+    },
+    "wt100-731": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Biera 's assistant"
+    },
+    "wt100-732": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "모험가",
+      "jobEn": "Adventurer"
+    },
+    "wt100-733": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer"
+    },
+    "wt100-734": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen of the Ryugu Kingdom"
+    },
+    "wt100-735": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer"
+    },
+    "wt100-737": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "Revolutionary Army Officer"
+    },
+    "wt100-738": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-745": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-746": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-747": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-748": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "계산원",
+      "jobEn": "Cashier"
+    },
+    "wt100-749": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "강도",
+      "jobEn": "Robber (formerly)"
+    },
+    "wt100-751": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 소장",
+      "jobEn": "Marine Rear Admiral"
+    },
+    "wt100-752": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "전투원",
+      "jobEn": "Combatant"
+    },
+    "wt100-753": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "전투원",
+      "jobEn": "Combatant"
+    },
+    "wt100-755": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "세계귀족",
+      "jobEn": "World Noble"
+    },
+    "wt100-756": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "세계귀족",
+      "jobEn": "World Noble"
+    },
+    "wt100-759": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-760": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "가수",
+      "jobEn": "Singer"
+    },
+    "wt100-761": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "드러머",
+      "jobEn": "Drummer"
+    },
+    "wt100-762": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "트럼펫 연주자",
+      "jobEn": "Trumpeter"
+    },
+    "wt100-763": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-764": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "전투원",
+      "jobEn": "Combatant"
+    },
+    "wt100-765": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "경비병",
+      "jobEn": "Guard"
+    },
+    "wt100-773": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "옥졸수",
+      "jobEn": "Jailer Beast"
+    },
+    "wt100-774": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Caesar's secretary (Undercover)"
+    },
+    "wt100-775": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "과학자",
+      "jobEn": "Scientist"
+    },
+    "wt100-777": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-781": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet , Bio-Chemical weapon of mass destruction"
+    },
+    "wt100-782": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 정예 간부",
+      "jobEn": "Pirate Elite Officer"
+    },
+    "wt100-783": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-784": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 준장",
+      "jobEn": "Commodore"
+    },
+    "wt100-786": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate (former)"
+    },
+    "wt100-787": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "쇼군",
+      "jobEn": "Shogun"
+    },
+    "wt100-788": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-789": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-790": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Kuzan's traveling companion (former)"
+    },
+    "wt100-791": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "과학자",
+      "jobEn": "Scientist"
+    },
+    "wt100-793": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 대장",
+      "jobEn": "Admiral"
+    },
+    "wt100-794": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "아나운서",
+      "jobEn": "Announcer"
+    },
+    "wt100-795": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "공주",
+      "jobEn": "Princess of Dressrosa"
+    },
+    "wt100-796": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "검투사",
+      "jobEn": "Gladiator (former)"
+    },
+    "wt100-797": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "검투사",
+      "jobEn": "Gladiator"
+    },
+    "wt100-798": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "12th Leader of the Happo Navy (retired)"
+    },
+    "wt100-799": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Captain of the Third Ship of the Straw Hat Grand Fleet"
+    },
+    "wt100-800": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "부선장",
+      "jobEn": "First Mate of the Happo Navy"
+    },
+    "wt100-801": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "암살자",
+      "jobEn": "Assassin"
+    },
+    "wt100-802": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "암살자",
+      "jobEn": "Assassin"
+    },
+    "wt100-803": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Tactician"
+    },
+    "wt100-804": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-805": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-806": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-807": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-808": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Captain of the Seventh Ship of the Straw Hat Grand Fleet"
+    },
+    "wt100-809": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Captain of the First Ship of the Straw Hat Grand Fleet"
+    },
+    "wt100-810": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "공주",
+      "jobEn": "Lady-in-waiting, Gladiator (former), Princess Of Dressrosa (former)"
+    },
+    "wt100-811": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Staff Officer"
+    },
+    "wt100-812": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-813": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-814": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-815": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-816": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Captain of the Second Ship of the Straw Hat Grand Fleet"
+    },
+    "wt100-817": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "현상금 사냥꾼",
+      "jobEn": "Bounty Hunter"
+    },
+    "wt100-818": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Captain of the Fourth Ship of the Straw Hat Grand Fleet"
+    },
+    "wt100-819": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "검투사",
+      "jobEn": "Gladiator"
+    },
+    "wt100-820": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Captain of the Sixth Ship of the Straw Hat Grand Fleet"
+    },
+    "wt100-821": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "마법사",
+      "jobEn": "Sorcerer"
+    },
+    "wt100-822": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "검투사",
+      "jobEn": "Gladiator"
+    },
+    "wt100-824": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "방화범",
+      "jobEn": "Pyromaniac (Viz: Arsonist )"
+    },
+    "wt100-825": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Army Commander (Viz: Military Captain)"
+    },
+    "wt100-826": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "검투사",
+      "jobEn": "Gladiator"
+    },
+    "wt100-827": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "무술가",
+      "jobEn": "Martial Artist , Pirate"
+    },
+    "wt100-828": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Army Commander (Viz: Military Captain)"
+    },
+    "wt100-829": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-830": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "Revolutionary Army member Fish-Man Karate Instructor Fish-Man Jujutsu Martial Artist"
+    },
+    "wt100-834": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Captain of the Fifth Ship of the Straw Hat Grand Fleet"
+    },
+    "wt100-835": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Vice Chief ( 副長 , Fukuchō )"
+    },
+    "wt100-836": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Vice-chief ( 副長 , Fukuchō )"
+    },
+    "wt100-837": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-838": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-839": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-840": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "정찰병",
+      "jobEn": "Scout"
+    },
+    "wt100-841": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-843": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-849": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Leader of Yellow Kabu Squad"
+    },
+    "wt100-850": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Leader of Pink Bee Squad"
+    },
+    "wt100-852": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "정찰병",
+      "jobEn": "Scout"
+    },
+    "wt100-853": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "정찰병",
+      "jobEn": "Scout"
+    },
+    "wt100-854": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "정찰병",
+      "jobEn": "Scout"
+    },
+    "wt100-855": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Cavendish's steed"
+    },
+    "wt100-856": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-857": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-858": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 특무 간부",
+      "jobEn": "Pirate Special Officer"
+    },
+    "wt100-859": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-860": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "정찰병",
+      "jobEn": "Scout"
+    },
+    "wt100-861": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-862": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-863": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 최고 간부",
+      "jobEn": "Pirate Executive Officer"
+    },
+    "wt100-864": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 최고 간부",
+      "jobEn": "Pirate Executive Officer"
+    },
+    "wt100-866": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-867": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "공주",
+      "jobEn": "Princess (former)"
+    },
+    "wt100-868": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 최고 간부",
+      "jobEn": "Pirate Executive Officer"
+    },
+    "wt100-869": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "극장 배우",
+      "jobEn": "Theatre Performer (former)"
+    },
+    "wt100-872": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "공주",
+      "jobEn": "Aide to Princess Mansherry"
+    },
+    "wt100-873": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-874": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 사령관",
+      "jobEn": "Marine Commander"
+    },
+    "wt100-876": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "세계귀족",
+      "jobEn": "World Noble (Former)"
+    },
+    "wt100-877": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-878": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-879": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-880": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "공주",
+      "jobEn": "Princess"
+    },
+    "wt100-884": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "무용수",
+      "jobEn": "Dancer (former)"
+    },
+    "wt100-885": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-886": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕족/귀족",
+      "jobEn": "Governor-General"
+    },
+    "wt100-888": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-889": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate (former)"
+    },
+    "wt100-893": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "수호자",
+      "jobEn": "Guardian"
+    },
+    "wt100-894": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "수호자",
+      "jobEn": "Guardian"
+    },
+    "wt100-895": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "총사",
+      "jobEn": "Musketeer"
+    },
+    "wt100-896": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "통치자",
+      "jobEn": "Ruler of Mokomo Dukedom"
+    },
+    "wt100-898": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "총사",
+      "jobEn": "Musketeer"
+    },
+    "wt100-899": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-900": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "간호사",
+      "jobEn": "Nurse"
+    },
+    "wt100-901": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "대간판",
+      "jobEn": "All-Star"
+    },
+    "wt100-902": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi of the Gifters ( ギフターズ真打ち , Gifutāzu Shin'uchi )"
+    },
+    "wt100-904": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-905": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Captain of the Musketeers"
+    },
+    "wt100-906": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "다이묘",
+      "jobEn": "Daimyo"
+    },
+    "wt100-907": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Three Inuarashi Musketeers"
+    },
+    "wt100-908": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Three Inuarashi Musketeers"
+    },
+    "wt100-909": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "야쿠자 두목",
+      "jobEn": "Yakuza Boss"
+    },
+    "wt100-910": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-911": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-912": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-913": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 참모",
+      "jobEn": "Pirate , Advisor"
+    },
+    "wt100-914": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "무사/전투원",
+      "jobEn": "Captain of the Guardians"
+    },
+    "wt100-915": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "수호자",
+      "jobEn": "Guardian"
+    },
+    "wt100-917": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Recon Squad"
+    },
+    "wt100-918": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "다이묘",
+      "jobEn": "Daimyo"
+    },
+    "wt100-919": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-920": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-921": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-922": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King of the Roshwan Kingdom"
+    },
+    "wt100-923": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King of the Ballywood Kingdom"
+    },
+    "wt100-924": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-925": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen of the Frauce Kingdom"
+    },
+    "wt100-926": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-927": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "조타수",
+      "jobEn": "Helmsman"
+    },
+    "wt100-928": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen of the Goa Kingdom"
+    },
+    "wt100-929": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-930": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate , Assassin , Combatant"
+    },
+    "wt100-933": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕자",
+      "jobEn": "Prince"
+    },
+    "wt100-934": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "공주",
+      "jobEn": "Princess"
+    },
+    "wt100-937": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-938": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "대신",
+      "jobEn": "Minister of Design (former)"
+    },
+    "wt100-942": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-943": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-944": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King of the Germa Kingdom"
+    },
+    "wt100-945": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "요리사",
+      "jobEn": "Cook"
+    },
+    "wt100-947": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-948": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "스위트 장성",
+      "jobEn": "Sweet Commander"
+    },
+    "wt100-949": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Master of the Seducing Woods"
+    },
+    "wt100-950": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕자",
+      "jobEn": "Prince"
+    },
+    "wt100-951": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕자",
+      "jobEn": "Prince"
+    },
+    "wt100-952": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "주방장",
+      "jobEn": "Head Chef"
+    },
+    "wt100-953": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "간호사",
+      "jobEn": "Nurse"
+    },
+    "wt100-954": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen of the Germa Kingdom"
+    },
+    "wt100-955": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "탈것",
+      "jobEn": "Steed"
+    },
+    "wt100-956": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Spy"
+    },
+    "wt100-957": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-958": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-959": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-960": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-961": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-962": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-963": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-972": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-973": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "스위트 장성",
+      "jobEn": "Sweet Commander"
+    },
+    "wt100-978": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-979": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "경비병",
+      "jobEn": "Guard"
+    },
+    "wt100-980": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-983": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Partner ( 相棒 , Aibō , Viz: \"Sidekick\")"
+    },
+    "wt100-984": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-985": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-986": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-987": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-988": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "총주방장",
+      "jobEn": "Executive Chef"
+    },
+    "wt100-990": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "범죄/지하세계",
+      "jobEn": "Emperor of the Underworld"
+    },
+    "wt100-991": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "World Economy News Paper President"
+    },
+    "wt100-992": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "장의사",
+      "jobEn": "Undertaker"
+    },
+    "wt100-993": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "기술/장인",
+      "jobEn": "Warehouseman ( 倉庫業老舗 , Sōkogyō Shinise , English versions: \"Warehouse Kingpin\")"
+    },
+    "wt100-994": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Shipping Magnate ( 海運王 , Kaiun-ō , Viz: \"Shipping King\")"
+    },
+    "wt100-995": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "장기 밀매상",
+      "jobEn": "Organ Trader"
+    },
+    "wt100-996": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "스위트 장성",
+      "jobEn": "Sweet Commander"
+    },
+    "wt100-997": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-998": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-999": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1000": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1001": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1002": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1003": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1004": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1005": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1006": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1007": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1008": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1009": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1010": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1011": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1012": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1013": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1014": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "아동 납치범",
+      "jobEn": "Child Trafficker"
+    },
+    "wt100-1015": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1016": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate (former)"
+    },
+    "wt100-1017": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain (former)"
+    },
+    "wt100-1018": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain (former)"
+    },
+    "wt100-1020": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1021": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1022": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1023": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1024": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1025": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1026": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1030": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "주방장",
+      "jobEn": "Head Chef"
+    },
+    "wt100-1031": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1032": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1033": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1034": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1035": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1036": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1037": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-1038": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-1039": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-1040": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1041": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirates"
+    },
+    "wt100-1042": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1043": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1044": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1045": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1046": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1047": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1048": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1049": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1050": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1051": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Officer"
+    },
+    "wt100-1052": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1053": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1054": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1055": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1056": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1057": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1058": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1059": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1060": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1061": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1062": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-1063": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "예술/연예",
+      "jobEn": "Miss Universe"
+    },
+    "wt100-1064": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "농부",
+      "jobEn": "Farmer"
+    },
+    "wt100-1065": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "공주",
+      "jobEn": "Princess (former)"
+    },
+    "wt100-1066": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1067": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "지휘관",
+      "jobEn": "West Army Commander of the Revolutionary Army"
+    },
+    "wt100-1068": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "지휘관",
+      "jobEn": "East Army Commander of the Revolutionary Army"
+    },
+    "wt100-1069": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "지휘관",
+      "jobEn": "South Army Commander of the Revolutionary Army"
+    },
+    "wt100-1070": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "지휘관",
+      "jobEn": "North Army Commander of the Revolutionary Army"
+    },
+    "wt100-1071": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕족/귀족",
+      "jobEn": "Princesses of the Roshwan Kingdom"
+    },
+    "wt100-1072": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕족/귀족",
+      "jobEn": "Princesses of the Roshwan Kingdom"
+    },
+    "wt100-1073": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕족/귀족",
+      "jobEn": "Princesses of the Roshwan Kingdom"
+    },
+    "wt100-1074": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕족/귀족",
+      "jobEn": "Princesses of the Roshwan Kingdom"
+    },
+    "wt100-1075": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen of the Tajine Kingdom"
+    },
+    "wt100-1076": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King of the Shishano Kingdom"
+    },
+    "wt100-1077": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "East Army Deputy Commander"
+    },
+    "wt100-1078": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-1079": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-1080": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-1081": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-1082": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen of the Gingapore Kingdom"
+    },
+    "wt100-1083": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-1084": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen of the Bestland Kingdom"
+    },
+    "wt100-1085": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-1086": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕자",
+      "jobEn": "Prince"
+    },
+    "wt100-1087": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-1088": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕자",
+      "jobEn": "Prince"
+    },
+    "wt100-1089": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-1090": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-1091": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King (former)"
+    },
+    "wt100-1092": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-1093": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King of the World (clandestine)"
+    },
+    "wt100-1095": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-1097": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "목수",
+      "jobEn": "Carpenter"
+    },
+    "wt100-1099": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "게이샤",
+      "jobEn": "Geisha Master"
+    },
+    "wt100-1100": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1101": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Magistrate"
+    },
+    "wt100-1106": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이터",
+      "jobEn": "Waiter"
+    },
+    "wt100-1107": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "쿠노이치 견습",
+      "jobEn": "Kunoichi in training"
+    },
+    "wt100-1110": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "도공",
+      "jobEn": "Swordsmith"
+    },
+    "wt100-1111": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1112": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "교사",
+      "jobEn": "Teacher (former)"
+    },
+    "wt100-1113": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1116": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "찻집 주인",
+      "jobEn": "Tea House Owner"
+    },
+    "wt100-1117": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "다이묘",
+      "jobEn": "Daimyo of Ringo"
+    },
+    "wt100-1118": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "스모 선수",
+      "jobEn": "Sumo Wrestler"
+    },
+    "wt100-1119": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1120": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1121": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "염색공",
+      "jobEn": "Dyer"
+    },
+    "wt100-1122": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1123": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "식당 주인",
+      "jobEn": "Restaurant Owner"
+    },
+    "wt100-1124": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "식당 주인",
+      "jobEn": "Restaurant Owner"
+    },
+    "wt100-1126": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1127": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1128": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-1129": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "스모 선수",
+      "jobEn": "Sumo Wrestler"
+    },
+    "wt100-1131": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1134": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1135": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "소방관",
+      "jobEn": "Firefighter"
+    },
+    "wt100-1137": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1138": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1139": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1140": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "다이묘",
+      "jobEn": "Daimyo"
+    },
+    "wt100-1143": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "가신",
+      "jobEn": "Retainer of the Kouzuki Family"
+    },
+    "wt100-1144": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1145": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1146": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "쿠노이치",
+      "jobEn": "Kunoichi"
+    },
+    "wt100-1147": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "산적",
+      "jobEn": "Bandit"
+    },
+    "wt100-1151": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이터",
+      "jobEn": "Waiter"
+    },
+    "wt100-1154": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1155": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "대간판",
+      "jobEn": "All-Star"
+    },
+    "wt100-1156": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "대간판",
+      "jobEn": "All-Star"
+    },
+    "wt100-1157": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "신문 배달원",
+      "jobEn": "Newspaper deliveryman"
+    },
+    "wt100-1158": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1159": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1160": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1161": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1162": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1163": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1164": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1166": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "무기상",
+      "jobEn": "Arms dealer"
+    },
+    "wt100-1167": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이터",
+      "jobEn": "Waiter"
+    },
+    "wt100-1168": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이터",
+      "jobEn": "Waiter"
+    },
+    "wt100-1169": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1173": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Kamuro"
+    },
+    "wt100-1175": {
+      "jobCategory": "노예/포로",
+      "job": "노예/포로",
+      "jobDetail": "죄수",
+      "jobEn": "Prisoner (former)"
+    },
+    "wt100-1176": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "신관",
+      "jobEn": "Priest (former)"
+    },
+    "wt100-1177": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "방화범",
+      "jobEn": "Arsonist"
+    },
+    "wt100-1178": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "기술/장인",
+      "jobEn": "Lumber Dealer (former)"
+    },
+    "wt100-1179": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "호위",
+      "jobEn": "Bodyguard"
+    },
+    "wt100-1180": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "오이란",
+      "jobEn": "Oiran"
+    },
+    "wt100-1181": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "전당포 주인",
+      "jobEn": "Pawn Shop Owner"
+    },
+    "wt100-1183": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "집주인",
+      "jobEn": "Landlord"
+    },
+    "wt100-1184": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "게이샤",
+      "jobEn": "Geisha"
+    },
+    "wt100-1187": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Taikomochi"
+    },
+    "wt100-1188": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "쇼군",
+      "jobEn": "Shogun of Wano Country (former)"
+    },
+    "wt100-1189": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1191": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "소바 가게 주인",
+      "jobEn": "Soba Shop Owner"
+    },
+    "wt100-1192": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1195": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1196": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1197": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1198": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1199": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1200": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1201": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1202": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1203": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1204": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1205": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕족/귀족",
+      "jobEn": "Official"
+    },
+    "wt100-1206": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Machi-bugyō"
+    },
+    "wt100-1207": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1208": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1209": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1210": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1212": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이터",
+      "jobEn": "Waiter"
+    },
+    "wt100-1213": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이터",
+      "jobEn": "Waiter"
+    },
+    "wt100-1214": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "승병",
+      "jobEn": "Warrior Monk"
+    },
+    "wt100-1215": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1220": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "가신",
+      "jobEn": "Retainer (former)"
+    },
+    "wt100-1222": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "가신",
+      "jobEn": "Retainer"
+    },
+    "wt100-1223": {
+      "jobCategory": "노예/포로",
+      "job": "노예/포로",
+      "jobDetail": "죄수",
+      "jobEn": "Prisoner (former)"
+    },
+    "wt100-1224": {
+      "jobCategory": "노예/포로",
+      "job": "노예/포로",
+      "jobDetail": "죄수",
+      "jobEn": "Prisoner (former)"
+    },
+    "wt100-1225": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이터",
+      "jobEn": "Waiter"
+    },
+    "wt100-1226": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이터",
+      "jobEn": "Waiter"
+    },
+    "wt100-1227": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "웨이터",
+      "jobEn": "Waiter"
+    },
+    "wt100-1228": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "다이묘",
+      "jobEn": "Daimyo"
+    },
+    "wt100-1229": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1230": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1231": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1232": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1233": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1234": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1235": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "가신",
+      "jobEn": "Retainer"
+    },
+    "wt100-1236": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "가신",
+      "jobEn": "Retainer"
+    },
+    "wt100-1238": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "가신",
+      "jobEn": "Retainer"
+    },
+    "wt100-1239": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "야쿠자 두목",
+      "jobEn": "Yakuza boss"
+    },
+    "wt100-1240": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "야쿠자 두목",
+      "jobEn": "Yakuza boss"
+    },
+    "wt100-1241": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "야쿠자 두목",
+      "jobEn": "Yakuza Boss"
+    },
+    "wt100-1242": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "야쿠자 두목",
+      "jobEn": "Yakuza boss"
+    },
+    "wt100-1243": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "다이묘",
+      "jobEn": "Daimyo of Ringo"
+    },
+    "wt100-1244": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "조선공",
+      "jobEn": "Shipwright"
+    },
+    "wt100-1247": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "닌자",
+      "jobEn": "Ninja"
+    },
+    "wt100-1248": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "도공",
+      "jobEn": "Swordsmith"
+    },
+    "wt100-1249": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-1250": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1251": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕자",
+      "jobEn": "Prince"
+    },
+    "wt100-1252": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1253": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1255": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1256": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1257": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1261": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "가신",
+      "jobEn": "Retainer"
+    },
+    "wt100-1262": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "가신",
+      "jobEn": "Retainer of the Kouzuki Family"
+    },
+    "wt100-1263": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "가게 주인",
+      "jobEn": "Shopkeeper"
+    },
+    "wt100-1264": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1265": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1266": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "야쿠자",
+      "jobEn": "Yakuza"
+    },
+    "wt100-1267": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "지휘관",
+      "jobEn": "Commander of the Divine Soldiers (former)"
+    },
+    "wt100-1268": {
+      "jobCategory": "종교/신관",
+      "job": "종교/신관",
+      "jobDetail": "주술사",
+      "jobEn": "Shaman (self-proclaimed)"
+    },
+    "wt100-1271": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1273": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "예술/연예",
+      "jobEn": "Biwa hōshi"
+    },
+    "wt100-1275": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate (former)"
+    },
+    "wt100-1276": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1277": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1278": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1279": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1280": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1281": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1282": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1283": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1284": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1285": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1286": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1287": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1288": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "통치자",
+      "jobEn": "Ruler of Mokomo Dukedom (Former)"
+    },
+    "wt100-1289": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1290": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1291": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1292": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1295": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "가신",
+      "jobEn": "Retainer"
+    },
+    "wt100-1296": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi (former)"
+    },
+    "wt100-1297": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1298": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1299": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1300": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1301": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1302": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1303": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1304": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1305": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1306": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1307": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1308": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1310": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1311": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1312": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1318": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1319": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1320": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1321": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1322": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1323": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1324": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1325": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1327": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "신우치",
+      "jobEn": "Shinuchi"
+    },
+    "wt100-1328": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1329": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1330": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1331": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1332": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1333": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1334": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1335": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1336": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1337": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 간부",
+      "jobEn": "Pirate Officer"
+    },
+    "wt100-1338": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-1339": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1340": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "생체 병기",
+      "jobEn": "Living Weapon"
+    },
+    "wt100-1341": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1342": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "기프터즈",
+      "jobEn": "Gifter"
+    },
+    "wt100-1344": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1345": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "사무라이",
+      "jobEn": "Samurai"
+    },
+    "wt100-1346": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1347": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1348": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1353": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "게이샤",
+      "jobEn": "Geisha"
+    },
+    "wt100-1354": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1355": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1356": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1357": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1358": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1359": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1360": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1361": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1362": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1363": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1364": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1365": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "애완동물",
+      "jobEn": "Pet"
+    },
+    "wt100-1367": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Master of Tea Ceremonies"
+    },
+    "wt100-1368": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 대장",
+      "jobEn": "Admiral"
+    },
+    "wt100-1369": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Director of the Marine Bureau of Investigation"
+    },
+    "wt100-1372": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "가수",
+      "jobEn": "Singer"
+    },
+    "wt100-1375": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "비서",
+      "jobEn": "Secretary"
+    },
+    "wt100-1376": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1379": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-1380": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "지휘관",
+      "jobEn": "Commander"
+    },
+    "wt100-1381": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 소장",
+      "jobEn": "Rear Admiral"
+    },
+    "wt100-1382": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "과학자",
+      "jobEn": "Scientist"
+    },
+    "wt100-1383": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "과학자",
+      "jobEn": "Scientist"
+    },
+    "wt100-1384": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "과학자",
+      "jobEn": "Scientist"
+    },
+    "wt100-1387": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "사이보그",
+      "jobEn": "Cyborgs"
+    },
+    "wt100-1389": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "과학자",
+      "jobEn": "Scientist"
+    },
+    "wt100-1390": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "과학자",
+      "jobEn": "Scientist"
+    },
+    "wt100-1391": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "과학자",
+      "jobEn": "Scientist"
+    },
+    "wt100-1392": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "조수",
+      "jobEn": "Assistant"
+    },
+    "wt100-1394": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 대위",
+      "jobEn": "Marine Captain"
+    },
+    "wt100-1395": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "사이보그",
+      "jobEn": "Cyborgs"
+    },
+    "wt100-1396": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "신문 칼럼니스트",
+      "jobEn": "Newspaper Columnist"
+    },
+    "wt100-1398": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "바텐더",
+      "jobEn": "Bartender"
+    },
+    "wt100-1399": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1400": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-1401": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-1402": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-1403": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1404": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1405": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1406": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1407": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 소장",
+      "jobEn": "Rear Admiral"
+    },
+    "wt100-1408": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "West Army Deputy Commander"
+    },
+    "wt100-1409": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "South Army Deputy Commander"
+    },
+    "wt100-1410": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "North Army Deputy Commander"
+    },
+    "wt100-1411": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "세계귀족",
+      "jobEn": "World Noble"
+    },
+    "wt100-1412": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen of the Arabasta Kingdom"
+    },
+    "wt100-1413": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "생체 병기",
+      "jobEn": "Living weapons"
+    },
+    "wt100-1414": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "생체 병기",
+      "jobEn": "Living weapons"
+    },
+    "wt100-1415": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "생체 병기",
+      "jobEn": "Living weapons"
+    },
+    "wt100-1416": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "세계정부/첩보기관",
+      "jobEn": "Co-Head of the World Government (Public)"
+    },
+    "wt100-1417": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-1418": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-1419": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-1420": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-1421": {
+      "jobCategory": "노예/포로",
+      "job": "노예/포로",
+      "jobDetail": "노예",
+      "jobEn": "Slave"
+    },
+    "wt100-1422": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "East Army Captain of the Revolutionary Army, Slave (former)"
+    },
+    "wt100-1423": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "장군 좀비",
+      "jobEn": "General Zombie"
+    },
+    "wt100-1424": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "무법자",
+      "jobEn": "Outlaw"
+    },
+    "wt100-1425": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain / Admiral"
+    },
+    "wt100-1426": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King (former)"
+    },
+    "wt100-1427": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King"
+    },
+    "wt100-1428": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen dowager of the Sorbet Kingdom"
+    },
+    "wt100-1429": {
+      "jobCategory": "세계정부/첩보기관",
+      "job": "세계정부/첩보기관",
+      "jobDetail": "사이퍼 폴 요원",
+      "jobEn": "Cipher Pol Agent"
+    },
+    "wt100-1430": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1431": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1432": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1433": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1434": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1435": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "항해사",
+      "jobEn": "Navigator"
+    },
+    "wt100-1436": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "요리사",
+      "jobEn": "Cook"
+    },
+    "wt100-1437": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "아마존 릴리 황제",
+      "jobEn": "Empress of Amazon Lily"
+    },
+    "wt100-1445": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "왕자",
+      "jobEn": "Prince"
+    },
+    "wt100-1446": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "언어 교사",
+      "jobEn": "Language Teacher"
+    },
+    "wt100-1447": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1448": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1449": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1450": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1451": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "전사",
+      "jobEn": "Warrior"
+    },
+    "wt100-1452": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "수석 사서",
+      "jobEn": "Chief Librarian"
+    },
+    "wt100-1453": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1454": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1455": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "신의 기사단",
+      "jobEn": "Knight of God"
+    },
+    "wt100-1456": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "신의 기사단 사령관",
+      "jobEn": "Commander of Knights of God"
+    },
+    "wt100-1457": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "국왕",
+      "jobEn": "King of the Warland Kingdom"
+    },
+    "wt100-1458": {
+      "jobCategory": "좀비/개조 생물",
+      "job": "좀비/개조 생물",
+      "jobDetail": "와일드 좀비",
+      "jobEn": "Wild Zombie"
+    },
+    "wt100-1461": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "수학 교사",
+      "jobEn": "Math Teacher"
+    },
+    "wt100-1462": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "교장",
+      "jobEn": "Principal"
+    },
+    "wt100-1463": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "발명가",
+      "jobEn": "Inventor"
+    },
+    "wt100-1464": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1465": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1472": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1473": {
+      "jobCategory": "동물/생물",
+      "job": "동물/생물",
+      "jobDetail": "동물/생물",
+      "jobEn": "Goldberg 's shield"
+    },
+    "wt100-1475": {
+      "jobCategory": "교사/학생",
+      "job": "교사/학생",
+      "jobDetail": "학생",
+      "jobEn": "Student"
+    },
+    "wt100-1476": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "바텐더",
+      "jobEn": "Bartender Circus Performer (former)"
+    },
+    "wt100-1477": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "여왕",
+      "jobEn": "Queen of the Warland Kingdom"
+    },
+    "wt100-1479": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1480": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1481": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 고문",
+      "jobEn": "Pirate Guru"
+    },
+    "wt100-1482": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1483": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1485": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate (former)"
+    },
+    "wt100-1487": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1488": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1489": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1490": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1491": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1492": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1493": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "공주",
+      "jobEn": "Princess of Goldfish Empire"
+    },
+    "wt100-1496": {
+      "jobCategory": "요리/접객",
+      "job": "요리/접객",
+      "jobDetail": "요리/접객",
+      "jobEn": "Holder of the Takoyaki recipe and sauce"
+    },
+    "wt100-1497": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "촌장",
+      "jobEn": "Village Chief"
+    },
+    "wt100-1498": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "의사",
+      "jobEn": "Doctor"
+    },
+    "wt100-1499": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "요리사",
+      "jobEn": "Chef"
+    },
+    "wt100-1500": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "요리사",
+      "jobEn": "Chef"
+    },
+    "wt100-1501": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Onsen manager"
+    },
+    "wt100-1502": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "광부",
+      "jobEn": "Digger"
+    },
+    "wt100-1503": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Boss of the Forest"
+    },
+    "wt100-1504": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "중위",
+      "jobEn": "First Lieutenant"
+    },
+    "wt100-1505": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "하사",
+      "jobEn": "Sergeant"
+    },
+    "wt100-1506": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "장군",
+      "jobEn": "General"
+    },
+    "wt100-1507": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1508": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Captain , Pirate"
+    },
+    "wt100-1509": {
+      "jobCategory": "의료/학술",
+      "job": "의료/학술",
+      "jobDetail": "과학자",
+      "jobEn": "Scientist"
+    },
+    "wt100-1510": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1515": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "유목민",
+      "jobEn": "Nomad"
+    },
+    "wt100-1516": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "유목민",
+      "jobEn": "Nomad"
+    },
+    "wt100-1517": {
+      "jobCategory": "왕족/귀족",
+      "job": "왕족/귀족",
+      "jobDetail": "시장",
+      "jobEn": "Mayor"
+    },
+    "wt100-1519": {
+      "jobCategory": "혁명군/반란 세력",
+      "job": "혁명군/반란 세력",
+      "jobDetail": "혁명군/반란 세력",
+      "jobEn": "Revolutionist commander"
+    },
+    "wt100-1523": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Leader of the Niho Navy"
+    },
+    "wt100-1524": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1525": {
+      "jobCategory": "예술/연예",
+      "job": "예술/연예",
+      "jobDetail": "음악가",
+      "jobEn": "Musician"
+    },
+    "wt100-1529": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적 선장",
+      "jobEn": "Pirate Captain"
+    },
+    "wt100-1530": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1531": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1532": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1533": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1534": {
+      "jobCategory": "상업/서비스직",
+      "job": "상업/서비스직",
+      "jobDetail": "상업/서비스직",
+      "jobEn": "Hairstylist"
+    },
+    "wt100-1535": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "스모 선수",
+      "jobEn": "Sumo Wrestler"
+    },
+    "wt100-1536": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "목수",
+      "jobEn": "Carpenter"
+    },
+    "wt100-1538": {
+      "jobCategory": "범죄/지하세계",
+      "job": "범죄/지하세계",
+      "jobDetail": "암살자",
+      "jobEn": "Assassin (former)"
+    },
+    "wt100-1539": {
+      "jobCategory": "민간인/기타",
+      "job": "민간인/기타",
+      "jobDetail": "민간인/기타",
+      "jobEn": "Pandaman 's rival"
+    },
+    "wt100-1545": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "해군 중장",
+      "jobEn": "Vice Admiral"
+    },
+    "wt100-1555": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1556": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1557": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1564": {
+      "jobCategory": "무사/전투원",
+      "job": "무사/전투원",
+      "jobDetail": "검사",
+      "jobEn": "Swordsman"
+    },
+    "wt100-1570": {
+      "jobCategory": "해군",
+      "job": "해군",
+      "jobDetail": "요리사",
+      "jobEn": "Cook"
+    },
+    "wt100-1571": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    },
+    "wt100-1572": {
+      "jobCategory": "기술/장인",
+      "job": "기술/장인",
+      "jobDetail": "패션 디자이너",
+      "jobEn": "Fashion designer"
+    },
+    "wt100-1574": {
+      "jobCategory": "해적",
+      "job": "해적",
+      "jobDetail": "해적",
+      "jobEn": "Pirate"
+    }
+  }
+}

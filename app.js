@@ -1469,7 +1469,12 @@ function pickCloseCompareCandidate(metricId, anchor, candidates, poolSize = 10) 
 }
 
 function compareEligiblePeople(metricId) {
-  return data.people.filter((person) => person.imageUrl && compareValue(person, metricId) > 0);
+  return data.people.filter((person) => person.imageUrl && compareValue(person, metricId) > 0 && !isExcludedFromCompareMetric(person, metricId));
+}
+
+function isExcludedFromCompareMetric(person, metricId) {
+  if (metricId !== "bounty") return false;
+  return person.organization === "navy" || /해군|소드/.test(String(person.jobDetail || ""));
 }
 
 function compareMetric(metricId) {

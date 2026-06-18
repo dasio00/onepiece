@@ -743,7 +743,7 @@ ${START_MARKER}
   const blank = (value) => value === undefined || value === null || value === "" || value === 0 || (Array.isArray(value) && value.length === 0);
   const fill = (target, key, value) => {
     if (value === undefined || value === null) return;
-    const always = new Set(["sourceFaceId", "sourceNameJa", "sourceNameEn", "sourceSearch", "appearanceArcIds", "wikiTitle", "wikiUrl"]);
+    const always = new Set(["sourceFaceId", "sourceNameJa", "sourceNameEn", "sourceSearch", "appearanceArcIds", "wikiTitle", "wikiUrl", "origin", "originRegion", "originCountry"]);
     if (always.has(key) || blank(target[key]) || (key === "organization" && target[key] === "etc")) target[key] = value;
   };
   const fillPerson = (id, patch) => {
@@ -899,6 +899,13 @@ function mapOrigin(value) {
   if (text.includes("syrup")) return { originRegion: "east-blue", originCountry: "syrup-village", origin: "\uC774\uC2A4\uD2B8 \uBE14\uB8E8 / \uC2DC\uB7FD \uB9C8\uC744" };
   if (text.includes("cocoyasi") || text.includes("conomi")) return { originRegion: "east-blue", originCountry: "conomi-islands", origin: "\uC774\uC2A4\uD2B8 \uBE14\uB8E8 / \uCF54\uB178\uBBF8 \uC81C\uB3C4" };
   if (text.includes("loguetown")) return { originRegion: "east-blue", originCountry: "loguetown", origin: "\uC774\uC2A4\uD2B8 \uBE14\uB8E8 / \uB85C\uADF8\uD0C0\uC6B4" };
+  if (text.includes("arabasta")) return { originRegion: "grand-line", originCountry: "alabasta", origin: "\uADF8\uB79C\uB4DC\uB77C\uC778 / \uC54C\uB77C\uBC14\uC2A4\uD0C0 \uC655\uAD6D" };
+  if (text.includes("skypiea")) return { originRegion: "grand-line", originCountry: "skypiea", origin: "\uADF8\uB79C\uB4DC\uB77C\uC778 / \uC2A4\uCE74\uC774\uD53C\uC544" };
+  if (text.includes("water 7") || text.includes("water seven")) return { originRegion: "grand-line", originCountry: "water-seven", origin: "\uADF8\uB79C\uB4DC\uB77C\uC778 / \uC6CC\uD130 \uC138\uBE10" };
+  if (text.includes("dressrosa")) return { originRegion: "grand-line", originCountry: "dressrosa", origin: "\uADF8\uB79C\uB4DC\uB77C\uC778 / \uB4DC\uB808\uC2A4\uB85C\uC790 \uC655\uAD6D" };
+  if (text.includes("wano")) return { originRegion: "grand-line", originCountry: "wano", origin: "\uADF8\uB79C\uB4DC\uB77C\uC778 / \uC640\uB178\uAD6D" };
+  if (text.includes("egghead")) return { originRegion: "grand-line", originCountry: "egghead", origin: "\uADF8\uB79C\uB4DC\uB77C\uC778 / \uC5D0\uADF8\uD5E4\uB4DC" };
+  if (text.includes("elbaf") || text.includes("elbaph")) return { originRegion: "grand-line", originCountry: "elbaf", origin: "\uADF8\uB79C\uB4DC\uB77C\uC778 / \uC5D8\uBC14\uD504" };
   if (text.includes("east blue")) return { originRegion: "east-blue", originCountry: "", origin: "\uC774\uC2A4\uD2B8 \uBE14\uB8E8" };
   if (text.includes("west blue")) return { originRegion: "west-blue", originCountry: "", origin: "\uC6E8\uC2A4\uD2B8 \uBE14\uB8E8" };
   if (text.includes("south blue")) return { originRegion: "south-blue", originCountry: "", origin: "\uC0AC\uC6B0\uC2A4 \uBE14\uB8E8" };

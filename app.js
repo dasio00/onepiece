@@ -1298,7 +1298,7 @@ function renderCompareGame(metric) {
       ${renderCompareFeedback(compareGame.lastResult)}
       <p class="compare-prompt">${escapeHtml(meta.prompt)}</p>
       <div class="compare-arena">
-        ${renderCompareCard(survivor, metricId, "생존자", compareGame.gameOver)}
+        ${renderCompareCard(survivor, metricId, "생존자", compareGame.gameOver || compareGame.streak > 0)}
         <div class="compare-versus">VS</div>
         ${renderCompareCard(challenger, metricId, "도전자", compareGame.gameOver)}
       </div>

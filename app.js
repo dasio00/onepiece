@@ -339,7 +339,7 @@ function getEpisodeVolumeItems() {
         `${volume}권`,
         `${sorted.length}화`,
         { volume, episodes: sorted },
-        `${volume}권 ${sorted.map((episode) => `${episode.number}화 ${episode.title}`).join(" ")}`
+        `${volume}권 ${sorted.map((episode) => `${episode.number}화 ${episodeTitleText(episode)} ${episode.titleJa || ""}`).join(" ")}`
       );
     });
 }
@@ -375,7 +375,8 @@ function renderEpisodeDetail(episode) {
   const techniques = episode.techniqueIds.map(findTechnique).filter(Boolean);
   return `
     <section class="nested-detail">
-      <h4>${episode.number}화 · ${escapeHtml(episode.title || "제목 미등록")}</h4>
+      <h4>${episode.number}화 · ${escapeHtml(episodeTitleText(episode))}</h4>
+      ${episodeTitleSubtext(episode) ? `<p class="note">${escapeHtml(episodeTitleSubtext(episode))}</p>` : ""}
       <p class="note">${escapeHtml(episodeSummaryText(episode))}</p>
       <div class="episode-columns">
         <section>
@@ -423,6 +424,16 @@ function localizedSearchText(entry) {
   return [entry?.nameKo, entry?.name, entry?.nameJa, entry?.nameEn, entry?.descriptionKo, entry?.descriptionEn, entry?.description]
     .filter(hasRegisteredText)
     .join(" ");
+}
+
+function episodeTitleText(episode) {
+  return [episode?.titleKo, episode?.title, episode?.titleJa, episode?.titleEn].find(hasRegisteredText) || "제목 미등록";
+}
+
+function episodeTitleSubtext(episode) {
+  return episode?.titleJa && episode.titleJa !== episodeTitleText(episode)
+    ? `일본 제목: ${episode.titleJa}`
+    : "";
 }
 
 function renderLocalizedNameChips(entry) {
@@ -1155,7 +1166,7 @@ function renderEpisodeEditor() {
     data.episodes
       .slice()
       .sort((a, b) => Number(a.volume) - Number(b.volume) || Number(a.number) - Number(b.number))
-      .map((episode) => pickButton("episode", episode.id, `${episode.volume}권 ${episode.number}화`, episode.title || "제목 미등록"))
+      .map((episode) => pickButton("episode", episode.id, `${episode.volume}권 ${episode.number}화`, episodeTitleText(episode)))
       .join(""),
     "episodeFormWrap"
   );
@@ -1644,7 +1655,7 @@ function renderDataManager() {
 
 function renderEpisodeLinks(episodes) {
   return episodes.map((episode) => `
-    <button class="episode-number-chip" type="button" data-episode-link="${escapeAttribute(episode.id)}" title="${escapeAttribute(episode.title || "제목 미등록")}">
+    <button class="episode-number-chip" type="button" data-episode-link="${escapeAttribute(episode.id)}" title="${escapeAttribute(episodeTitleText(episode))}">
       ${episode.number}
     </button>
   `).join("") || `<span class="muted">등록된 화수가 없습니다.</span>`;
@@ -2679,14 +2690,30 @@ function normalizeInPlace(target) {
       savedTechniqueIds.add(technique.id);
     }
   });
-  target.episodes = (target.episodes || structuredClone(baseData.episodes) || []).map((episode) => ({
-    characterIds: [],
-    techniqueIds: [],
-    summary: "",
-    title: "",
-    ...baseEpisodesById.get(episode.id),
-    ...episode
-  }));
+  target.episodes = (target.episodes || structuredClone(baseData.episodes) || []).map((episode) => {
+    const baseEpisode = baseEpisodesById.get(episode.id) || {};
+    const merged = {
+      characterIds: [],
+      techniqueIds: [],
+      summary: "",
+      title: "",
+      ...baseEpisode,
+      ...episode
+    };
+    const savedTitle = String(episode.title || "");
+    if (baseEpisode.titleKo && (!episode.titleKo || savedTitle === baseEpisode.titleEn || /[A-Za-z]/.test(savedTitle))) {
+      merged.title = baseEpisode.titleKo;
+      merged.titleKo = baseEpisode.titleKo;
+    }
+    return merged;
+  });
+  const savedEpisodeIds = new Set(target.episodes.map((episode) => episode.id));
+  baseData.episodes.forEach((episode) => {
+    if (!savedEpisodeIds.has(episode.id)) {
+      target.episodes.push(structuredClone(episode));
+      savedEpisodeIds.add(episode.id);
+    }
+  });
   target.organizations = target.organizations || structuredClone(baseData.organizations);
   target.originRegions = target.originRegions || structuredClone(baseData.originRegions);
   target.originCountries = target.originCountries || structuredClone(baseData.originCountries);

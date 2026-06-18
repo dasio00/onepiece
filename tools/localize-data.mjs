@@ -7,6 +7,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA_PATH = path.join(ROOT, "data.js");
 const TECHNIQUE_CACHE_DIR = path.join(ROOT, "tools", ".cache", "onepiece-wiki", "techniques");
 const PAGE_CACHE_DIR = path.join(ROOT, "tools", ".cache", "onepiece-wiki", "pages");
+const LUFFY_NAMU_PATH = path.join(ROOT, "tools", "luffy-namu-techniques.json");
 const START_MARKER = "/* LOCALIZATION_AUTO_START */";
 const END_MARKER = "/* LOCALIZATION_AUTO_END */";
 
@@ -370,13 +371,16 @@ async function main() {
   const data = loadData(dataText);
   const techniqueJapanese = await readTechniqueJapaneseNames();
   const fruitJapanese = await readFruitJapaneseNames(data);
-  const techniquePatches = buildTechniquePatches(data, techniqueJapanese);
+  const luffyNamu = await readJsonFile(LUFFY_NAMU_PATH, { namePatches: {}, entries: [] });
+  const luffyNamuEntries = normalizeLuffyNamuEntries(luffyNamu.entries || []);
+  const techniquePatches = buildTechniquePatches(data, techniqueJapanese, luffyNamu.namePatches || {});
   const fruitPatches = buildFruitPatches(data, fruitJapanese);
-  const block = buildLocalizationBlock(techniquePatches, fruitPatches);
+  const block = buildLocalizationBlock(techniquePatches, fruitPatches, luffyNamuEntries);
   await fs.writeFile(DATA_PATH, replaceBlock(dataText, block));
   console.log(JSON.stringify({
     techniquePatches: Object.keys(techniquePatches).length,
     techniqueJapanese: Object.values(techniquePatches).filter((item) => item.nameJa).length,
+    luffyTechniqueEntries: luffyNamuEntries.length,
     fruitPatches: Object.keys(fruitPatches).length,
     fruitJapanese: Object.values(fruitPatches).filter((item) => item.nameJa).length,
   }, null, 2));
@@ -387,6 +391,25 @@ function loadData(text) {
   vm.createContext(context);
   vm.runInContext(text, context, { filename: DATA_PATH });
   return context.window.onePieceData;
+}
+
+async function readJsonFile(filePath, fallback) {
+  try {
+    return JSON.parse(await fs.readFile(filePath, "utf8"));
+  } catch (error) {
+    if (error.code === "ENOENT") return fallback;
+    throw error;
+  }
+}
+
+function normalizeLuffyNamuEntries(entries) {
+  return entries
+    .map((entry) => removeEmpty({
+      ...entry,
+      name: entry.nameKo || entry.name || entry.nameJa || entry.nameEn,
+      ownerId: entry.ownerId || "wt100-1",
+    }))
+    .filter((entry) => entry.id && entry.name);
 }
 
 async function readTechniqueJapaneseNames() {
@@ -465,13 +488,14 @@ function extractTechniqueNames(html) {
   return map;
 }
 
-function buildTechniquePatches(data, techniqueJapanese) {
+function buildTechniquePatches(data, techniqueJapanese, luffyPatches = {}) {
   const patches = {};
   for (const technique of data.techniques || []) {
     const nameEn = String(technique.nameEn || technique.name || "").trim();
     const sourceMap = techniqueJapanese.get(technique.sourceTitle);
-    const nameJa = sourceMap?.get(normalizeName(nameEn)) || "";
-    const nameKo = LUFFY_NAMU_HAND_TECHNIQUE_NAMES.get(technique.id) || koreanTechniqueName(nameEn);
+    const luffyPatch = luffyPatches[technique.id] || {};
+    const nameJa = luffyPatch.nameJa || sourceMap?.get(normalizeName(nameEn)) || "";
+    const nameKo = luffyPatch.nameKo || LUFFY_NAMU_HAND_TECHNIQUE_NAMES.get(technique.id) || koreanTechniqueName(nameEn);
     if (!nameJa && !nameKo && !hasLatin(nameEn)) continue;
     patches[technique.id] = removeEmpty({ nameKo, nameJa });
   }
@@ -583,14 +607,20 @@ function translateTechniquePhrase(text) {
     .trim();
 }
 
-function buildLocalizationBlock(techniquePatches, fruitPatches) {
+function buildLocalizationBlock(techniquePatches, fruitPatches, luffyNamuEntries) {
   return `${START_MARKER}
 (() => {
   const data = window.onePieceData;
   const techniquePatches = ${JSON.stringify(techniquePatches, null, 2)};
   const fruitPatches = ${JSON.stringify(fruitPatches, null, 2)};
+  const luffyNamuEntries = ${JSON.stringify(luffyNamuEntries, null, 2)};
   const hasLatin = (value) => /[A-Za-z]/.test(String(value || ""));
   const hasHangul = (value) => /[가-힣]/.test(String(value || ""));
+  const upsertById = (list, item) => {
+    const index = list.findIndex((entry) => entry.id === item.id);
+    if (index === -1) list.push(item);
+    else list[index] = { ...list[index], ...item };
+  };
   const setNameFields = (item, patch) => {
     if (!item || !patch) return;
     if (!item.nameEn && hasLatin(item.name)) item.nameEn = item.name;
@@ -598,6 +628,7 @@ function buildLocalizationBlock(techniquePatches, fruitPatches) {
     if (patch.nameKo && hasHangul(patch.nameKo)) item.name = patch.nameKo;
     else if (patch.nameJa) item.name = patch.nameJa;
   };
+  luffyNamuEntries.forEach((entry) => upsertById(data.techniques, entry));
   data.techniques.forEach((technique) => setNameFields(technique, techniquePatches[technique.id]));
   data.devilFruits.forEach((fruit) => {
     if (!fruit.descriptionEn && fruit.description && hasLatin(fruit.description)) fruit.descriptionEn = fruit.description;

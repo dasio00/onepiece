@@ -2672,6 +2672,13 @@ function normalizeInPlace(target) {
     ...baseTechniquesById.get(technique.id),
     ...technique
   }));
+  const savedTechniqueIds = new Set(target.techniques.map((technique) => technique.id));
+  baseData.techniques.forEach((technique) => {
+    if (!savedTechniqueIds.has(technique.id)) {
+      target.techniques.push(structuredClone(technique));
+      savedTechniqueIds.add(technique.id);
+    }
+  });
   target.episodes = (target.episodes || structuredClone(baseData.episodes) || []).map((episode) => ({
     characterIds: [],
     techniqueIds: [],

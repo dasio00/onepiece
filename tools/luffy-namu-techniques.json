@@ -1,0 +1,1223 @@
+{
+  "generatedFrom": "Namu Wiki Luffy techniques through section 4.5 and linked gear pages",
+  "generatedAt": "2026-06-18T02:53:10.433Z",
+  "namePatches": {
+    "wiki-tech-gomu-gomu-no-pistol": {
+      "nameKo": "고무고무 총 (피스톨)",
+      "nameJa": "ゴムゴムの 銃 (ピストル)"
+    },
+    "wiki-tech-gomu-gomu-no-pistol-shot": {
+      "nameKo": "고무고무 총 (피스톨) 산탄 (샷)",
+      "nameJa": "ゴムゴムの 銃 (ピストル) 散弾 (ショット)"
+    },
+    "wiki-tech-gomu-gomu-no-rocket": {
+      "nameKo": "고무고무 로켓",
+      "nameJa": "ゴムゴムのロケット"
+    },
+    "wiki-tech-gomu-gomu-no-tsuchi": {
+      "nameKo": "고무고무 해머",
+      "nameJa": "ゴムゴムの 槌 (つち)"
+    },
+    "wiki-tech-gomu-gomu-no-kama": {
+      "nameKo": "고무고무 낫",
+      "nameJa": "ゴムゴムの 鎌 (かま)"
+    },
+    "wiki-tech-gomu-gomu-no-bazooka": {
+      "nameKo": "고무고무 바주카",
+      "nameJa": "ゴムゴムのバズーカ"
+    },
+    "wiki-tech-gomu-gomu-no-gatling": {
+      "nameKo": "고무고무 총난타 (개틀링)",
+      "nameJa": "ゴムゴムの 銃乱打 (ガトリング)"
+    },
+    "wiki-tech-buso-koka-gomu-gomu-no-gatling": {
+      "nameKo": "무장 강화 고무고무 총난타 (개틀링)",
+      "nameJa": "武装化 ゴムゴムの 銃乱打 (ガトリング)"
+    },
+    "wiki-tech-gomu-gomu-no-ogama": {
+      "nameKo": "고무고무 대형 낫",
+      "nameJa": "ゴムゴムの 大鎌 (おおがま)"
+    },
+    "wiki-tech-gomu-gomu-no-bullet": {
+      "nameKo": "고무고무 총탄 (불릿)",
+      "nameJa": "ゴムゴムの 銃弾 (ブレット)"
+    },
+    "wiki-tech-buso-koka-gomu-gomu-no-bullet": {
+      "nameKo": "무장 강화 고무고무 총탄 (불릿)",
+      "nameJa": "武装化ゴムゴムの 銃弾 (ブレット)"
+    },
+    "wiki-tech-gomu-gomu-no-kazaguruma": {
+      "nameKo": "고무고무 풍차",
+      "nameJa": "ゴムゴムの 風車 (ふうしゃ)"
+    },
+    "wiki-tech-gomu-gomu-no-tate": {
+      "nameKo": "고무고무 방패",
+      "nameJa": "ゴムゴムの 盾 (たて)"
+    },
+    "wiki-tech-gomu-gomu-no-ami": {
+      "nameKo": "고무고무 그물",
+      "nameJa": "ゴムゴムの 網 (あみ)"
+    },
+    "wiki-tech-gomu-gomu-no-bow-gun": {
+      "nameKo": "고무고무 석궁",
+      "nameJa": "ゴムゴムのボーガン"
+    },
+    "wiki-tech-gomu-gomu-no-storm": {
+      "nameKo": "고무고무 폭풍우 (스톰)",
+      "nameJa": "ゴムゴムの 暴風雨 (ストーム)"
+    },
+    "wiki-tech-gomu-gomu-no-rifle": {
+      "nameKo": "고무고무 회전탄 (라이플)",
+      "nameJa": "ゴムゴムの 回転弾 (ライフル)"
+    },
+    "wiki-tech-gomu-gomu-no-cannon": {
+      "nameKo": "고무고무 공성포 (캐넌)",
+      "nameJa": "ゴムゴムの 攻城砲 (キャノン)"
+    },
+    "wiki-tech-gomu-gomu-no-ame": {
+      "nameKo": "고무고무 비",
+      "nameJa": "ゴムゴムの 雨 (あめ)"
+    },
+    "wiki-tech-gomu-gomu-no-snake-shot": {
+      "nameKo": "고무고무 뱀 총 (스네이크 샷)",
+      "nameJa": "ゴムゴムの 蛇銃 (スネークショット)"
+    },
+    "wiki-tech-gomu-gomu-no-tsuppari": {
+      "nameKo": "고무고무 밀쳐내기",
+      "nameJa": "ゴムゴムのつっぱり"
+    },
+    "wiki-tech-gomu-gomu-no-amidori": {
+      "nameKo": "고무고무 움켜쥐기",
+      "nameJa": "ゴムゴムの網取"
+    },
+    "wiki-tech-gomu-gomu-no-nagenawa": {
+      "nameKo": "고무고무 밧줄 감기",
+      "nameJa": "ゴムゴムの投げ縄"
+    },
+    "wiki-tech-gomu-gomu-no-propeller": {
+      "nameKo": "고무고무 프로펠러",
+      "nameJa": "ゴムゴムのプロペラ"
+    },
+    "wiki-tech-gomu-gomu-no-sadowari": {
+      "nameKo": "고무고무 모래 가르기",
+      "nameJa": "ゴムゴムの砂土割り"
+    },
+    "wiki-tech-gomu-gomu-no-zenmai": {
+      "nameKo": "고무고무 용수철",
+      "nameJa": "ゴムゴムのゼンマイ"
+    },
+    "wiki-tech-gomu-gomu-no-bungee": {
+      "nameKo": "고무고무 번지",
+      "nameJa": "ゴムゴムのバンジー"
+    },
+    "wiki-tech-gomu-gomu-no-yo-yo": {
+      "nameKo": "고무고무 요요",
+      "nameJa": "ゴムゴムのヨーヨー"
+    },
+    "wiki-tech-gomu-gomu-no-twin-pistol": {
+      "nameKo": "고무고무 트윈 총 (피스톨)",
+      "nameJa": "ゴムゴムのツイン 銃 (ピストル)"
+    },
+    "wiki-tech-gomu-gomu-no-mushitoriami": {
+      "nameKo": "고무고무 잠자리채",
+      "nameJa": "ゴムゴムの虫取り網"
+    },
+    "wiki-tech-gomu-gomu-no-ricochet": {
+      "nameKo": "고무고무 리코셰",
+      "nameJa": "ゴムゴムのリコチェット"
+    },
+    "wiki-tech-gomu-gomu-no-jutte": {
+      "nameKo": "고무고무 짓테",
+      "nameJa": "ゴムゴムの十手"
+    },
+    "wiki-tech-gomu-gomu-no-senjukannon": {
+      "nameKo": "고무고무 천수관음",
+      "nameJa": "ゴムゴムの千手観音"
+    },
+    "wiki-tech-gomu-gomu-no-screw": {
+      "nameKo": "고무고무 스크류",
+      "nameJa": "ゴムゴムのスクリュー"
+    },
+    "wiki-tech-gomu-gomu-no-home-run": {
+      "nameKo": "고무고무 홈런",
+      "nameJa": "ゴムゴムのホームラン"
+    },
+    "wiki-tech-gomu-gomu-no-gomu-doryoku": {
+      "nameKo": "고무고무 고무 동력",
+      "nameJa": "ゴムゴムのゴム動力"
+    },
+    "wiki-tech-luffy-punch": {
+      "nameKo": "루피 펀치",
+      "nameJa": "ルフィパンチ"
+    },
+    "wiki-tech-luffy-swing": {
+      "nameKo": "루피 스윙",
+      "nameJa": "ルフィスイング"
+    },
+    "wiki-tech-gomu-rush": {
+      "nameKo": "고무 러쉬",
+      "nameJa": "ゴムラッシュ"
+    },
+    "wiki-tech-gomu-gomu-no-muchi": {
+      "nameKo": "고무고무 채찍",
+      "nameJa": "ゴムゴムの 鞭 (ムチ)"
+    },
+    "wiki-tech-gomu-gomu-no-yari": {
+      "nameKo": "고무고무 창",
+      "nameJa": "ゴムゴムの 槍 (やり)"
+    },
+    "wiki-tech-gomu-gomu-no-ono": {
+      "nameKo": "고무고무 도끼",
+      "nameJa": "ゴムゴムの 戦斧 (おの)"
+    },
+    "wiki-tech-gomu-gomu-no-ozuchi": {
+      "nameKo": "고무고무 대망치",
+      "nameJa": "ゴムゴムの 大槌 (おおづち)"
+    },
+    "wiki-tech-gomu-gomu-no-stamp": {
+      "nameKo": "고무고무 스탬프",
+      "nameJa": "ゴムゴムのスタンプ"
+    },
+    "wiki-tech-gomu-gomu-no-tako-stamp": {
+      "nameKo": "고무고무 문어 스탬프",
+      "nameJa": "ゴムゴムのタコスタンプ"
+    },
+    "wiki-tech-gomu-gomu-no-kazan": {
+      "nameKo": "고무고무 화산",
+      "nameJa": "ゴムゴムの火山"
+    },
+    "wiki-tech-gomu-gomu-no-ufo": {
+      "nameKo": "고무고무 UFO",
+      "nameJa": "ゴムゴムの UFO (ユーフォー)"
+    },
+    "wiki-tech-gomu-gomu-no-spring-bullet": {
+      "nameKo": "고무고무 스프링 총탄 (불릿)",
+      "nameJa": "ゴムゴムのスプリング 銃弾 (ブレット)"
+    },
+    "wiki-tech-gomu-gomu-no-shoot": {
+      "nameKo": "고무고무 슛",
+      "nameJa": "ゴムゴムのシュート"
+    },
+    "wiki-tech-kung-fu-kick": {
+      "nameKo": "쿵푸 킥",
+      "nameJa": "カンフーキック"
+    },
+    "wiki-tech-gomu-gomu-no-fusen": {
+      "nameKo": "고무고무 풍선",
+      "nameJa": "ゴムゴムの風船"
+    },
+    "wiki-tech-gomu-gomu-no-kane": {
+      "nameKo": "고무고무 종",
+      "nameJa": "ゴムゴムの 鐘 (かね)"
+    },
+    "wiki-tech-atama-buso-gomu-gomu-no-kane": {
+      "nameKo": "무장 고무고무 종",
+      "nameJa": "武装 ゴムゴムの 鐘 (かね)"
+    },
+    "wiki-tech-gomu-gomu-no-ikebana": {
+      "nameKo": "고무고무 꽃꽂이",
+      "nameJa": "ゴムゴムの生け花"
+    },
+    "wiki-tech-gomu-gomu-no-dame-da": {
+      "nameKo": "고무고무 안 돼",
+      "nameJa": "ゴムゴムのダメだ"
+    },
+    "wiki-tech-gomu-gomu-no-baku-baku": {
+      "nameKo": "고무고무 우걱우걱",
+      "nameJa": "ゴムゴムのバクバク"
+    },
+    "wiki-tech-gomu-gomu-no-marunoko": {
+      "nameKo": "고무고무 회전톱",
+      "nameJa": "ゴムゴムの 丸鋸 (まるのこ)"
+    },
+    "wiki-tech-gomu-gomu-no-hanabi": {
+      "nameKo": "고무고무 불꽃",
+      "nameJa": "ゴムゴムの 花火 (はなび)"
+    },
+    "wiki-tech-gomu-gomu-no-boh": {
+      "nameKo": "고무고무 멍",
+      "nameJa": "ゴムゴムのボー"
+    },
+    "wiki-tech-gomu-gomu-no-tako": {
+      "nameKo": "고무고무 문어",
+      "nameJa": "ゴムゴムのたこ"
+    },
+    "wiki-tech-gomu-gomu-no-mikata-robo": {
+      "nameKo": "고무고무 우리 편 로봇",
+      "nameJa": "ゴムゴムの味方ロボ"
+    },
+    "wiki-tech-mikata-robo-kick": {
+      "nameKo": "우리 편 로봇 킥",
+      "nameJa": "味方ロボキック"
+    },
+    "wiki-tech-gomu-gomu-no-haragi": {
+      "nameKo": "고무고무 뱃살 개그",
+      "nameJa": "ゴムゴムのハラギ"
+    },
+    "wiki-tech-gomu-gomu-no-migawari": {
+      "nameKo": "고무고무 대타",
+      "nameJa": "ゴムゴムの 身代り (みかわり)"
+    },
+    "wiki-tech-gomu-gomu-no-orei-fire": {
+      "nameKo": "고무고무 답례 포 (파이어)",
+      "nameJa": "ゴムゴムの お礼砲 (おれいファイア)"
+    },
+    "wiki-tech-gomu-gomu-no-midare-gui": {
+      "nameKo": "고무고무 마구 먹기",
+      "nameJa": "ゴムゴムの乱れ食い"
+    },
+    "wiki-tech-gomu-gomu-no-tsuribashi": {
+      "nameKo": "고무고무 다리",
+      "nameJa": "ゴムゴムの吊橋"
+    },
+    "wiki-tech-gomu-gomu-no-pachinko": {
+      "nameKo": "고무고무 새총",
+      "nameJa": "ゴムゴムのパチンコ"
+    },
+    "wiki-tech-gomu-gomu-no-mizu-kure": {
+      "nameKo": "고무고무 물 줘",
+      "nameJa": "ゴムゴムの水くれ"
+    },
+    "wiki-tech-gomu-gomu-no-dance": {
+      "nameKo": "고무고무 무도 (댄스)",
+      "nameJa": "ゴムゴムの 舞踏 (ダンス)"
+    }
+  },
+  "entries": [
+    {
+      "id": "namu-luffy-gomu-gomu-jet-pistol",
+      "name": "고무고무 JET (제트) 총 (피스톨)",
+      "nameKo": "고무고무 JET (제트) 총 (피스톨)",
+      "nameEn": "Gum-Gum Jet Pistol",
+      "nameJa": "ゴムゴムの JET (ジェット) 銃 (ピストル)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-stamp",
+      "name": "고무고무 JET (제트) 스탬프",
+      "nameKo": "고무고무 JET (제트) 스탬프",
+      "nameEn": "Gum-Gum Jet Stamp",
+      "nameJa": "ゴムゴムの JET (ジェット) スタンプ",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-bazooka",
+      "name": "고무고무 JET (제트) 바주카",
+      "nameKo": "고무고무 JET (제트) 바주카",
+      "nameEn": "Gum-Gum Jet Bazooka",
+      "nameJa": "ゴムゴムの JET (ジェット) バズーカ",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-no-jet-whip",
+      "name": "고무고무 JET (제트) 채찍 (윕)",
+      "nameKo": "고무고무 JET (제트) 채찍 (윕)",
+      "nameEn": "Gomu Gomu no Jet Whip",
+      "nameJa": "ゴムゴムの JET (ジェット) 鞭 (ウィップ)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-bullet",
+      "name": "고무고무 JET (제트) 총탄 (불릿)",
+      "nameKo": "고무고무 JET (제트) 총탄 (불릿)",
+      "nameEn": "Gum-Gum Jet Bullet",
+      "nameJa": "ゴムゴムの JET (ジェット) 銃弾 (ブレット)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-twin-jet-pistol",
+      "name": "고무고무 트윈 JET (제트) 총 (피스톨)",
+      "nameKo": "고무고무 트윈 JET (제트) 총 (피스톨)",
+      "nameEn": "Gum-Gum Twin Jet Pistol",
+      "nameJa": "ゴムゴムのツイン JET (ジェット) 銃 (ピストル)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-gatling",
+      "name": "고무고무 JET (제트) 총난타 (개틀링)",
+      "nameKo": "고무고무 JET (제트) 총난타 (개틀링)",
+      "nameEn": "Gum-Gum Jet Gatling",
+      "nameJa": "ゴムゴムの JET (ジェット) 銃乱打 (ガトリング)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-rocket",
+      "name": "고무고무 JET (제트) 로켓",
+      "nameKo": "고무고무 JET (제트) 로켓",
+      "nameEn": "Gum-Gum Jet Rocket",
+      "nameJa": "ゴムゴムの JET (ジェット) ロケット",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-cannon",
+      "name": "고무고무 JET (제트) 공성포 (캐넌)",
+      "nameKo": "고무고무 JET (제트) 공성포 (캐넌)",
+      "nameEn": "Gum-Gum Jet Cannon",
+      "nameJa": "ゴムゴムの JET (ジェット) 攻城砲 (キャノン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-human-shield",
+      "name": "고무고무 JET (제트) 대타",
+      "nameKo": "고무고무 JET (제트) 대타",
+      "nameEn": "Gum-Gum Jet Human Shield",
+      "nameJa": "ゴムゴムの JET (ジェット) 身代り (みかわり)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-hammer",
+      "name": "고무고무 JET (제트) 해머",
+      "nameKo": "고무고무 JET (제트) 해머",
+      "nameEn": "Gum Gum Jet Hammer",
+      "nameJa": "ゴムゴムの JET (ジェット) ハンマー",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-mace",
+      "name": "고무고무 JET (제트) 모두봉 (메이스)",
+      "nameKo": "고무고무 JET (제트) 모두봉 (메이스)",
+      "nameEn": "Gum-Gum Jet Mace",
+      "nameJa": "ゴムゴムの JET (ジェット) 鉾頭棒 (メイス)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-spear",
+      "name": "고무고무 JET (제트) 창 (스피어)",
+      "nameKo": "고무고무 JET (제트) 창 (스피어)",
+      "nameEn": "Gum-Gum Jet Spear",
+      "nameJa": "ゴムゴムの JET (ジェット) 槍 (スピア)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-rifle",
+      "name": "고무고무 JET (제트) 회전탄 (라이플)",
+      "nameKo": "고무고무 JET (제트) 회전탄 (라이플)",
+      "nameEn": "Gum-Gum Jet Rifle",
+      "nameJa": "ゴムゴムの JET (ジェット) ライフル",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gear-2-28",
+      "name": "고무고무 JET (제트) 미사일",
+      "nameKo": "고무고무 JET (제트) 미사일",
+      "nameJa": "ゴムゴムの JET (ジェット) ミサイル",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gear-2-29",
+      "name": "고무고무 JET (제트) 도끼 (액스)",
+      "nameKo": "고무고무 JET (제트) 도끼 (액스)",
+      "nameJa": "ゴムゴムの JET (ジェット) 斧 (アックス)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gear-2-30",
+      "name": "고무고무 JET (제트) 창 (랜스)",
+      "nameKo": "고무고무 JET (제트) 창 (랜스)",
+      "nameJa": "ゴムゴムの JET (ジェット) 槍 (ランス)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gear-2-31",
+      "name": "고무고무 JET (제트) 스탬프 난타 (개틀링)",
+      "nameKo": "고무고무 JET (제트) 스탬프 난타 (개틀링)",
+      "nameJa": "ゴムゴムの JET (ジェット) スタンプガトリング",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-red-hawk",
+      "name": "고무고무 불주먹 총 (레드 호크)",
+      "nameKo": "고무고무 불주먹 총 (레드 호크)",
+      "nameEn": "Gum-Gum Red Hawk",
+      "nameJa": "ゴムゴムの 火拳銃 (レッドホーク)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gear-2-34",
+      "name": "고무고무 매 (호크) 회전탄 (라이플)",
+      "nameKo": "고무고무 매 (호크) 회전탄 (라이플)",
+      "nameJa": "ゴムゴムの 鷹 (ホーク) ライフル",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-hawk-gatling",
+      "name": "고무고무 매 (호크) 총난타 (개틀링)",
+      "nameKo": "고무고무 매 (호크) 총난타 (개틀링)",
+      "nameEn": "Gum-Gum Hawk Gatling",
+      "nameJa": "ゴムゴムの 鷹銃乱打 (ホークガトリング)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-eagle-bazooka",
+      "name": "고무고무 독수리 (이글) 바주카",
+      "nameKo": "고무고무 독수리 (이글) 바주카",
+      "nameEn": "Gum-Gum Eagle Bazooka",
+      "nameJa": "ゴムゴムの 鷲 (イーグル) バズーカ",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gear-2-37",
+      "name": "고무고무 매 (호크) 채찍 (윕)",
+      "nameKo": "고무고무 매 (호크) 채찍 (윕)",
+      "nameJa": "ゴムゴムの 鷹鞭 (ホークウィップ)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gear-2-38",
+      "name": "고무고무 매 (호크) 스탬프",
+      "nameKo": "고무고무 매 (호크) 스탬프",
+      "nameJa": "ゴムゴムの 鷹 (ホーク) スタンプ",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gear-2-39",
+      "name": "고무고무 매 (호크) 총탄 (불릿)",
+      "nameKo": "고무고무 매 (호크) 총탄 (불릿)",
+      "nameJa": "ゴムゴムの 鷹銃弾 (ホークブレット)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gear-2-40",
+      "name": "고무고무 매 (호크) 도끼 (액스)",
+      "nameKo": "고무고무 매 (호크) 도끼 (액스)",
+      "nameJa": "ゴムゴムの 鷹斧 (ホークアックス)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gear-2-41",
+      "name": "고무고무 매 (호크) 트윈 총 (피스톨)",
+      "nameKo": "고무고무 매 (호크) 트윈 총 (피스톨)",
+      "nameJa": "ゴムゴムの 鷹 (ホーク) ツイン 銃 (ピストル)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-gear-2-42",
+      "name": "고무고무 독수리 (이글) 폭풍우 (스톰)",
+      "nameKo": "고무고무 독수리 (이글) 폭풍우 (스톰)",
+      "nameJa": "ゴムゴムの 鷲 (イーグル) 暴風雨 (ストーム)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202",
+      "note": "Namu Wiki source: Gear 2"
+    },
+    {
+      "id": "namu-luffy-bone-balloon",
+      "name": "뼈풍선",
+      "nameKo": "뼈풍선",
+      "nameEn": "Bone Balloon",
+      "nameJa": "骨風船",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gear-3-12",
+      "name": "고무고무 거인의 (기간트) 총 (피스톨)",
+      "nameKo": "고무고무 거인의 (기간트) 총 (피스톨)",
+      "nameJa": "ゴムゴムの 巨人の銃 (ギガントピストル)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gear-3-14",
+      "name": "고무고무 거인의 (기간트) 도끼 (액스)",
+      "nameKo": "고무고무 거인의 (기간트) 도끼 (액스)",
+      "nameJa": "ゴムゴムの 巨人の斧 (ギガントアックス)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-thor-axe",
+      "name": "고무고무 거인의 (기간트) 천둥 (토르) 도끼 (액스)",
+      "nameKo": "고무고무 거인의 (기간트) 천둥 (토르) 도끼 (액스)",
+      "nameEn": "Gum-Gum Giant Thor Axe",
+      "nameJa": "ゴムゴムの 巨人の雷斧 (ギガントトールアックス)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-whip",
+      "name": "고무고무 거인의 (기간트) 채찍 (윕)",
+      "nameKo": "고무고무 거인의 (기간트) 채찍 (윕)",
+      "nameEn": "Gum-Gum Giant Whip",
+      "nameJa": "ゴムゴムの 巨人の鞭 (ギガントウィップ)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-bazooka",
+      "name": "고무고무 거인의 (기간트) 바주카",
+      "nameKo": "고무고무 거인의 (기간트) 바주카",
+      "nameEn": "Gum-Gum Giant Bazooka",
+      "nameJa": "ゴムゴムの 巨人のバズーカ (ギガントバズーカ)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-rifle",
+      "name": "고무고무 거인의 (기간트) 회전탄 (라이플)",
+      "nameKo": "고무고무 거인의 (기간트) 회전탄 (라이플)",
+      "nameEn": "Gum-Gum Giant Rifle",
+      "nameJa": "ゴムゴムの 巨人の回転弾 (ギガントライフル)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-stamp",
+      "name": "고무고무 거인의 (기간트) 스탬프",
+      "nameKo": "고무고무 거인의 (기간트) 스탬프",
+      "nameEn": "Gum-Gum Giant Stamp",
+      "nameJa": "ゴムゴムの 巨人のスタンプ (ギガントスタンプ)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-balloon",
+      "name": "고무고무 거인의 (기간트) 풍선",
+      "nameKo": "고무고무 거인의 (기간트) 풍선",
+      "nameEn": "Gum-Gum Giant Balloon",
+      "nameJa": "ゴムゴムの 巨人の風船 (ギガントフーセン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-sumo-slap",
+      "name": "고무고무 거인의 (기간트) 밀쳐내기",
+      "nameKo": "고무고무 거인의 (기간트) 밀쳐내기",
+      "nameEn": "Gum-Gum Giant Sumo Slap",
+      "nameJa": "ゴムゴムの 巨人のつっぱり (ギガントつっぱり)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gear-3-22",
+      "name": "고무고무 거인의 (기간트) 파리채",
+      "nameKo": "고무고무 거인의 (기간트) 파리채",
+      "nameJa": "ゴムゴムの 巨人のハエたたき (ギガントハエたたき)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gear-3-23",
+      "name": "고무고무 거인의 (기간트) 총난타 (개틀링)",
+      "nameKo": "고무고무 거인의 (기간트) 총난타 (개틀링)",
+      "nameJa": "ゴムゴムの 巨人の銃乱打 (ギガントガトリング)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-elephant-gun",
+      "name": "고무고무 코끼리 (엘리펀트) 총 (건)",
+      "nameKo": "고무고무 코끼리 (엘리펀트) 총 (건)",
+      "nameEn": "Gum-Gum Elephant Gun",
+      "nameJa": "ゴムゴムの 象銃 (エレファント・ガン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-elephant-gatling",
+      "name": "고무고무 코끼리 총난타 (엘리펀트 개틀링)",
+      "nameKo": "고무고무 코끼리 총난타 (엘리펀트 개틀링)",
+      "nameEn": "Gum-Gum Elephant Gatling",
+      "nameJa": "ゴムゴムの 象銃乱打 (エレファント・ガトリング)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-grizzly-magnum",
+      "name": "고무고무 회색곰 (그리즐리) 총 (매그넘)",
+      "nameKo": "고무고무 회색곰 (그리즐리) 총 (매그넘)",
+      "nameEn": "Gum-Gum Grizzly Magnum",
+      "nameJa": "ゴムゴムの 灰熊銃 (グリズリー・マグナム)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-thor-elephant-gun",
+      "name": "고무고무 뇌장 (토르) 코끼리 (엘리펀트) 총 (건)",
+      "nameKo": "고무고무 뇌장 (토르) 코끼리 (엘리펀트) 총 (건)",
+      "nameEn": "Gum-Gum Thor Elephant Gun",
+      "nameJa": "ゴムゴムの 雷将象銃 (トールエレファント・ガン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gear-3-28",
+      "name": "고무고무 회색곰 (그리즐리) 코크 스크류 총 (매그넘)",
+      "nameKo": "고무고무 회색곰 (그리즐리) 코크 스크류 총 (매그넘)",
+      "nameJa": "ゴムゴムの 灰熊コークスクリュー銃 (グリズリーコークスクリューマグナム)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gear-3-29",
+      "name": "고무고무 코끼리 (엘리펀트) 폭풍우 (스톰)",
+      "nameKo": "고무고무 코끼리 (엘리펀트) 폭풍우 (스톰)",
+      "nameJa": "ゴムゴムの 象暴風雨 (エレファントストーム)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-elephant-whip",
+      "name": "고무고무 코끼리 (엘리펀트) 채찍 (윕)",
+      "nameKo": "고무고무 코끼리 (엘리펀트) 채찍 (윕)",
+      "nameEn": "Gum-Gum Elephant Whip",
+      "nameJa": "ゴムゴムの 象鞭 (エレファントウィップ)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-jet-shell",
+      "name": "고무고무 거인의 JET 포탄 (기간트 제트 쉘)",
+      "nameKo": "고무고무 거인의 JET 포탄 (기간트 제트 쉘)",
+      "nameEn": "Gum-Gum Giant Jet Shell",
+      "nameJa": "ゴムゴムの 巨人のJET砲弾 (ギガントジェットシェル)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2 + Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202%20%2B%20%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 2 + Gear 3"
+    },
+    {
+      "id": "namu-luffy-gear-2-plus-3-04",
+      "name": "고무고무 거인의 JET 총난타 (기간트 제트 개틀링)",
+      "nameKo": "고무고무 거인의 JET 총난타 (기간트 제트 개틀링)",
+      "nameJa": "ゴムゴムの 巨人のJET銃乱打 (ギガントジェットガトリング)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2 + Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202%20%2B%20%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 2 + Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-red-roc",
+      "name": "고무고무 업화 (레드) 권총 (로크)",
+      "nameKo": "고무고무 업화 (레드) 권총 (로크)",
+      "nameEn": "Gum-Gum Red Roc",
+      "nameJa": "ゴムゴムの 業火拳銃 (レッドロック)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2 + Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202%20%2B%20%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 2 + Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-roc-gun",
+      "name": "고무고무 괴조 (로크) 총 (건)",
+      "nameKo": "고무고무 괴조 (로크) 총 (건)",
+      "nameEn": "Gum-Gum Roc Gun",
+      "nameJa": "ゴムゴムの 怪鳥銃 (ロック・ガン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2 + Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202%20%2B%20%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 2 + Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-roc-gatling",
+      "name": "고무고무 괴조 총난타 (로크 개틀링)",
+      "nameKo": "고무고무 괴조 총난타 (로크 개틀링)",
+      "nameEn": "Gum-Gum Roc Gatling",
+      "nameJa": "ゴムゴムの 怪鳥銃乱打 (ロック・ガトリング)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 2 + Gear 3",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202%20%2B%20%EA%B8%B0%EC%96%B4%203",
+      "note": "Namu Wiki source: Gear 2 + Gear 3"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-kong-gun",
+      "name": "고무고무 원숭이 왕 (콩) 총 (건)",
+      "nameKo": "고무고무 원숭이 왕 (콩) 총 (건)",
+      "nameEn": "Gum-Gum Kong Gun",
+      "nameJa": "ゴムゴムの 猿王 (コング) 銃 (ガン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-rhino-schneider",
+      "name": "고무고무 코뿔소 (라이노) 곡사포 (슈나이더)",
+      "nameKo": "고무고무 코뿔소 (라이노) 곡사포 (슈나이더)",
+      "nameEn": "Gum Gum Rhino Schneider",
+      "nameJa": "ゴムゴムの 犀榴弾砲 (リノシュナイダー)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-culverin",
+      "name": "고무고무 구렁이 포 (컬버린)",
+      "nameKo": "고무고무 구렁이 포 (컬버린)",
+      "nameEn": "Gum-Gum Culverin",
+      "nameJa": "ゴムゴムの 大蛇砲 (カルヴァリン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-double-culverin",
+      "name": "고무고무 더블 구렁이 포 (컬버린)",
+      "nameKo": "고무고무 더블 구렁이 포 (컬버린)",
+      "nameEn": "Gum-Gum Double Culverin",
+      "nameJa": "ゴムゴムのダブル 大蛇砲 (カルヴァリン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-leo-bazooka",
+      "name": "고무고무 사자 (레오) 바주카",
+      "nameKo": "고무고무 사자 (레오) 바주카",
+      "nameEn": "Gum-Gum Leo Bazooka",
+      "nameJa": "ゴムゴムの 獅子 (レオ) ・バズーカ",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-kong-organ-gun",
+      "name": "고무고무 원숭이 왕 (콩) 까마귀 떼 포 (오르간)",
+      "nameKo": "고무고무 원숭이 왕 (콩) 까마귀 떼 포 (오르간)",
+      "nameEn": "Gum-Gum Kong Organ Gun",
+      "nameJa": "ゴムゴムの 猿王群鴉砲 (コングオルガン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-kong-rifle",
+      "name": "고무고무 원숭이 왕 (콩) 회전탄 (라이플)",
+      "nameKo": "고무고무 원숭이 왕 (콩) 회전탄 (라이플)",
+      "nameEn": "Gum-Gum Kong Rifle",
+      "nameJa": "ゴムゴムの 猿王 (コング) 回轉彈 (ライフル)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-kong-gatling",
+      "name": "고무고무 원숭이 왕 (콩) 총난타 (개틀링)",
+      "nameKo": "고무고무 원숭이 왕 (콩) 총난타 (개틀링)",
+      "nameEn": "Gum-Gum Kong Gatling",
+      "nameJa": "ゴムゴムの 猿王 (コング) 銃乱打 (ガトリング)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-king-kong-gun",
+      "name": "고무고무 원숭이 대왕 (킹 콩) 총 (건)",
+      "nameKo": "고무고무 원숭이 대왕 (킹 콩) 총 (건)",
+      "nameEn": "Gum-Gum King Kong Gun",
+      "nameJa": "ゴムゴムの 大 (キング) 猿王 (コング) 銃 (ガン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-leo-rex-bazooka",
+      "name": "고무고무 사자 (레오) 왕 (렉스) 바주카",
+      "nameKo": "고무고무 사자 (레오) 왕 (렉스) 바주카",
+      "nameEn": "Gum-Gum Leo Rex Bazooka",
+      "nameJa": "ゴムゴムの 獅子 (レオ) 王 (レックス) ・バズーカ",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-king-king-king-kong-gun",
+      "name": "고무고무 원숭이 대대대왕 (킹킹킹 콩) 총 (건)",
+      "nameKo": "고무고무 원숭이 대대대왕 (킹킹킹 콩) 총 (건)",
+      "nameEn": "Gum-Gum King King King Kong Gun",
+      "nameJa": "ゴムゴムの 大大大 (キングキングキング) 猿王 (コング) 銃 (ガン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-king-kong-gatling",
+      "name": "고무고무 원숭이 대왕 (킹 콩) 총난타 (개틀링)",
+      "nameKo": "고무고무 원숭이 대왕 (킹 콩) 총난타 (개틀링)",
+      "nameEn": "Gum-Gum King Kong Gatling",
+      "nameJa": "ゴムゴムの 大 (キング) 猿王 (コング) 銃乱打 (ガトリング)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gear-4-40",
+      "name": "고무고무 원숭이 패왕 (오버 콩) 총 (건)",
+      "nameKo": "고무고무 원숭이 패왕 (오버 콩) 총 (건)",
+      "nameJa": "ゴムゴムの 覇 (オーバー) 猿王 (コング) 銃 (ガン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gear-4-47",
+      "name": "고무고무 캐넌볼",
+      "nameKo": "고무고무 캐넌볼",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gear-4-68",
+      "name": "고무고무 JET (제트) 구렁이 포 (컬버린)",
+      "nameKo": "고무고무 JET (제트) 구렁이 포 (컬버린)",
+      "nameJa": "ゴムゴムのJET 大蛇砲 (カルヴァリン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gear-4-69",
+      "name": "고무고무 검은 (블랙) 뱀 군단 (맘바)",
+      "nameKo": "고무고무 검은 (블랙) 뱀 군단 (맘바)",
+      "nameJa": "ゴムゴムの 黒い蛇群 (ブラックマンバ)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gear-4-71",
+      "name": "고무고무 라이노 스탬피드",
+      "nameKo": "고무고무 라이노 스탬피드",
+      "nameJa": "ゴムゴムのリノスタンピード",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gear-4-72",
+      "name": "고무고무 왕 (킹) 뱀 (코브라)",
+      "nameKo": "고무고무 왕 (킹) 뱀 (코브라)",
+      "nameJa": "ゴムゴムの 王蛇 (キング・コブラ)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gear-4-73",
+      "name": "고무고무 뱀 용왕 포 (나가 우르반)",
+      "nameKo": "고무고무 뱀 용왕 포 (나가 우르반)",
+      "nameJa": "ゴムゴムの 蛇龍王砲 (ナーガ・ウルバン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gear-4-74",
+      "name": "고무고무 아홉 머리 뱀 (히드라)",
+      "nameKo": "고무고무 아홉 머리 뱀 (히드라)",
+      "nameJa": "ゴムゴムの 九頭蛇 (ヒュドラ)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 4",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204",
+      "note": "Namu Wiki source: Gear 4"
+    },
+    {
+      "id": "namu-luffy-gear-5-48",
+      "name": "고무고무 탈출 로켓",
+      "nameKo": "고무고무 탈출 로켓",
+      "nameJa": "ゴムゴムの脱出ロケット",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gear-5-50",
+      "name": "고무고무 거인 (기간트)",
+      "nameKo": "고무고무 거인 (기간트)",
+      "nameJa": "ゴムゴムの 巨人 (ギガント)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gear-5-51",
+      "name": "고무고무 줄넘기",
+      "nameKo": "고무고무 줄넘기",
+      "nameJa": "ゴムゴムの縄飛び",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gear-5-52",
+      "name": "고무고무 반격",
+      "nameKo": "고무고무 반격",
+      "nameJa": "ゴムゴムのお返し",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gear-5-53",
+      "name": "고무고무 번개",
+      "nameKo": "고무고무 번개",
+      "nameJa": "ゴムゴムの雷",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-bajrang-gun",
+      "name": "고무고무 원숭이 신 (바즈랑) 총 (건)",
+      "nameKo": "고무고무 원숭이 신 (바즈랑) 총 (건)",
+      "nameEn": "Gum-Gum Bajrang Gun",
+      "nameJa": "ゴムゴムの 猿神 (バジュラング) 銃 (ガン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-mole-pistol",
+      "name": "고무고무 두더지 총 (피스톨)",
+      "nameKo": "고무고무 두더지 총 (피스톨)",
+      "nameEn": "Gum-Gum Mole Pistol",
+      "nameJa": "ゴムゴムのモグラ 銃 (ピストル)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-whip",
+      "name": "고무고무 하얀 (던) 채찍 (윕)",
+      "nameKo": "고무고무 하얀 (던) 채찍 (윕)",
+      "nameEn": "Gum-Gum Dawn Whip",
+      "nameJa": "ゴムゴムの 白い (ドーン) 鞭 (ウィップ)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-rocket",
+      "name": "고무고무 하얀 (던) 로켓",
+      "nameKo": "고무고무 하얀 (던) 로켓",
+      "nameEn": "Gum-Gum Dawn Rocket",
+      "nameJa": "ゴムゴムの 白い (ドーン) ロケット",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-stamp",
+      "name": "고무고무 하얀 (던) 스탬프",
+      "nameKo": "고무고무 하얀 (던) 스탬프",
+      "nameEn": "Gum-Gum Dawn Stamp",
+      "nameJa": "ゴムゴムの 白い (ドーン) スタンプ",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-star-gun",
+      "name": "고무고무 흰 별 총 (스타 건)",
+      "nameKo": "고무고무 흰 별 총 (스타 건)",
+      "nameEn": "Gum-Gum Star Gun",
+      "nameJa": "ゴムゴムの 白星銃 (スターガン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-gatling",
+      "name": "고무고무 하얀 (던) 총난타 (개틀링)",
+      "nameKo": "고무고무 하얀 (던) 총난타 (개틀링)",
+      "nameEn": "Gum-Gum Dawn Gatling",
+      "nameJa": "ゴムゴムの 白い (ドーン) 銃乱打 (ガトリング)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gear-5-64",
+      "name": "고무고무 하얀 (던) 바이스 (심벌)",
+      "nameKo": "고무고무 하얀 (던) 바이스 (심벌)",
+      "nameJa": "ゴムゴムの 白い (ドーン) 万力 (シンバル)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-balloon",
+      "name": "고무고무 하얀 (던) 풍선 (벌룬)",
+      "nameKo": "고무고무 하얀 (던) 풍선 (벌룬)",
+      "nameEn": "Gum-Gum Dawn Balloon",
+      "nameJa": "ゴムゴムの 白い (ドーン) 風船 (バルーン)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-pistol",
+      "name": "고무고무 하얀 (던) 권총 (피스톨)",
+      "nameKo": "고무고무 하얀 (던) 권총 (피스톨)",
+      "nameEn": "Gum-Gum Dawn Pistol",
+      "nameJa": "ゴムゴムの 白い (ドーン) 拳銃 (ピストル)",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-thor-rifle",
+      "name": "고무고무 하얀 (던) 번개 (토르) 회전탄 (라이플)",
+      "nameKo": "고무고무 하얀 (던) 번개 (토르) 회전탄 (라이플)",
+      "nameEn": "Gum-Gum Dawn Thor Rifle",
+      "nameJa": "白い雷回転弾",
+      "ownerId": "wt100-1",
+      "sourceTitle": "Gear 5",
+      "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205",
+      "note": "Namu Wiki source: Gear 5"
+    }
+  ]
+}

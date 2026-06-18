@@ -45,6 +45,7 @@ const compareMetricMeta = [
   { id: "age", title: "나이", search: "나이 연령 많은 사람", prompt: "누가 더 나이가 많을까?" },
   { id: "height", title: "키", search: "키 신장 큰 사람", prompt: "누가 더 클까?" }
 ];
+const compareRevealDelayMs = 900;
 
 let currentView = "techniques";
 let activeId = "";
@@ -1298,9 +1299,9 @@ function renderCompareGame(metric) {
       ${renderCompareFeedback(compareGame.lastResult)}
       <p class="compare-prompt">${escapeHtml(meta.prompt)}</p>
       <div class="compare-arena">
-        ${renderCompareCard(survivor, metricId, "생존자", compareGame.gameOver || compareGame.streak > 0)}
+        ${renderCompareCard(survivor, metricId, "생존자", compareGame.gameOver || compareGame.revealing || compareGame.streak > 0, compareGame.gameOver || compareGame.revealing)}
         <div class="compare-versus">VS</div>
-        ${renderCompareCard(challenger, metricId, "도전자", compareGame.gameOver)}
+        ${renderCompareCard(challenger, metricId, "도전자", compareGame.gameOver || compareGame.revealing, compareGame.gameOver || compareGame.revealing)}
       </div>
       ${compareGame.gameOver ? `<button class="primary full" id="compareRestartBottomButton" type="button">다시 시작</button>` : ""}
     </section>
@@ -1320,14 +1321,14 @@ function renderCompareMetricControls(selectedMetric) {
   `;
 }
 
-function renderCompareCard(person, metricId, role, revealValue) {
+function renderCompareCard(person, metricId, role, revealValue, disabled = false) {
   if (!person) return renderEmptyResult("인물을 불러오지 못했습니다.");
   const value = compareValue(person, metricId);
   const image = person.imageUrl
     ? `<img class="compare-face" src="${escapeAttribute(person.imageUrl)}" alt="" loading="lazy" decoding="async" />`
     : `<div class="compare-face placeholder">이미지 없음</div>`;
   return `
-    <button class="compare-card" type="button" data-compare-choice="${escapeAttribute(person.id)}" ${revealValue ? "disabled" : ""}>
+    <button class="compare-card" type="button" data-compare-choice="${escapeAttribute(person.id)}" ${disabled ? "disabled" : ""}>
       <span class="mini-chip">${escapeHtml(role)}</span>
       ${image}
       <strong>${escapeHtml(person.name)}</strong>
@@ -1379,12 +1380,14 @@ function startCompareGame(metricId) {
     usedIds: pair.map((person) => person.id),
     streak: 0,
     gameOver: false,
+    revealing: false,
+    revealToken: "",
     lastResult: null
   };
 }
 
 function chooseComparePerson(personId) {
-  if (!compareGame || compareGame.gameOver) return;
+  if (!compareGame || compareGame.gameOver || compareGame.revealing) return;
   const metricId = compareGame.metric;
   const survivor = findPerson(compareGame.survivorId);
   const challenger = findPerson(compareGame.challengerId);
@@ -1400,6 +1403,7 @@ function chooseComparePerson(personId) {
   const winnerValue = Math.max(survivorValue, challengerValue);
   const loserValue = Math.min(survivorValue, challengerValue);
   const correct = personId === winner.id;
+  const nextStreak = correct ? compareGame.streak + 1 : compareGame.streak;
   compareGame.lastResult = {
     metric: metricId,
     correct,
@@ -1407,22 +1411,33 @@ function chooseComparePerson(personId) {
     loserName: loser.name,
     winnerValue,
     loserValue,
-    streak: compareGame.streak
+    streak: nextStreak
   };
   if (!correct) {
     compareGame.gameOver = true;
+    compareGame.revealing = true;
     render();
     return;
   }
-  compareGame.streak += 1;
-  compareGame.lastResult.streak = compareGame.streak;
+  compareGame.streak = nextStreak;
   updateCompareRecord(metricId, compareGame.streak);
-  compareGame.survivorId = winner.id;
   const nextChallenger = pickCompareChallenger(metricId, winner.id, compareGame.usedIds);
-  compareGame.challengerId = nextChallenger?.id || "";
-  if (nextChallenger) compareGame.usedIds = [...new Set([...(compareGame.usedIds || []), nextChallenger.id])];
+  const revealToken = `${Date.now()}-${Math.random()}`;
+  compareGame.revealing = true;
+  compareGame.revealToken = revealToken;
   compareGame.gameOver = !nextChallenger;
   render();
+  if (nextChallenger) {
+    window.setTimeout(() => {
+      if (!compareGame || compareGame.metric !== metricId || compareGame.revealToken !== revealToken || compareGame.gameOver) return;
+      compareGame.survivorId = winner.id;
+      compareGame.challengerId = nextChallenger.id;
+      compareGame.usedIds = [...new Set([...(compareGame.usedIds || []), nextChallenger.id])];
+      compareGame.revealing = false;
+      compareGame.revealToken = "";
+      render();
+    }, compareRevealDelayMs);
+  }
 }
 
 function compareGameIsValid(game) {

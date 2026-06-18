@@ -1,6 +1,8 @@
 const STORAGE_KEY = "onePieceDataBuilder.v3";
 const LEGACY_STORAGE_KEY = "onePieceDataBuilder.v2";
 const baseData = window.onePieceData;
+const basePeopleById = new Map((baseData.people || []).map((person) => [person.id, person]));
+const baseTechniquesById = new Map((baseData.techniques || []).map((technique) => [technique.id, technique]));
 const data = loadSavedData() || structuredClone(baseData);
 
 const viewConfig = {
@@ -52,7 +54,12 @@ let quizSession = null;
 let quizAnswerDraft = "";
 let quizMode = "test";
 let quizStudyFlipped = false;
+const LIST_BATCH_SIZE = 160;
+const EDITOR_PEOPLE_BATCH_SIZE = 160;
+let visibleListLimit = LIST_BATCH_SIZE;
+let editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
 const quizCardCache = new Map();
+let lookupIndexes = {};
 
 const tabs = document.querySelectorAll(".tab");
 const viewLabel = document.querySelector("#viewLabel");
@@ -87,6 +94,7 @@ mobileViewSelect.addEventListener("change", () => switchView(mobileViewSelect.va
 rangeButtons.forEach((button) => {
   button.addEventListener("click", () => {
     sortMode = button.dataset.range;
+    resetVisibleListLimit();
     rangeButtons.forEach((item) => item.classList.toggle("active", item === button));
     render();
   });
@@ -95,12 +103,14 @@ rangeButtons.forEach((button) => {
 personSortSelect.addEventListener("change", () => {
   personSortMode = personSortSelect.value;
   activeId = "";
+  resetVisibleListLimit();
   render();
 });
 
 statMetricSelect.addEventListener("change", () => {
   statMetric = statMetricSelect.value;
   activeId = "";
+  resetVisibleListLimit();
   render();
 });
 
@@ -108,6 +118,7 @@ statDirectionButtons.forEach((button) => {
   button.addEventListener("click", () => {
     statDirection = button.dataset.statDirection;
     activeId = "";
+    resetVisibleListLimit();
     render();
   });
 });
@@ -115,12 +126,16 @@ statDirectionButtons.forEach((button) => {
 editorModeButtons.forEach((button) => {
   button.addEventListener("click", () => {
     editorMode = button.dataset.editorMode;
+    editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
     editorModeButtons.forEach((item) => item.classList.toggle("active", item === button));
     renderEditor();
   });
 });
 
-searchInput.addEventListener("input", render);
+searchInput.addEventListener("input", () => {
+  resetVisibleListLimit();
+  render();
+});
 
 function switchView(view) {
   currentView = view;
@@ -128,6 +143,7 @@ function switchView(view) {
   activeFruitId = "";
   activeSubOrgId = "";
   activeEpisodeId = "";
+  resetVisibleListLimit();
   sortMode = "all";
   if (view === "people") personSortMode = "appearance";
   searchInput.value = "";
@@ -173,9 +189,14 @@ function render() {
   const items = getItems();
   const query = searchInput.value.trim().toLowerCase();
   const filteredItems = query ? items.filter((item) => item.searchText.includes(query)) : items;
+  const visibleItems = filteredItems.slice(0, visibleListLimit);
+  const hasMore = visibleItems.length < filteredItems.length;
 
-  countBadge.textContent = `${filteredItems.length}개`;
-  itemList.innerHTML = filteredItems.map(renderListItem).join("");
+  countBadge.textContent = hasMore ? `${visibleItems.length}/${filteredItems.length}개` : `${filteredItems.length}개`;
+  itemList.innerHTML = `
+    ${visibleItems.map(renderListItem).join("")}
+    ${hasMore ? renderLoadMoreButton(filteredItems.length - visibleItems.length) : ""}
+  `;
   itemList.querySelectorAll(".item").forEach((button) => {
     button.addEventListener("click", () => {
       activeId = button.dataset.id;
@@ -184,6 +205,10 @@ function render() {
       activeEpisodeId = "";
       render();
     });
+  });
+  itemList.querySelector("[data-load-more]")?.addEventListener("click", () => {
+    visibleListLimit += LIST_BATCH_SIZE;
+    render();
   });
 
   if (listOnly) activeId = "";
@@ -197,6 +222,10 @@ function render() {
     return;
   }
   renderDetail(activeItem);
+}
+
+function resetVisibleListLimit() {
+  visibleListLimit = LIST_BATCH_SIZE;
 }
 
 function getItems() {
@@ -256,6 +285,14 @@ function renderListItem(listItem) {
         <strong>${escapeHtml(listItem.title)}</strong>
         <span>${escapeHtml(listItem.sub)}</span>
       </span>
+    </button>
+  `;
+}
+
+function renderLoadMoreButton(remainingCount) {
+  return `
+    <button class="list-more-button" type="button" data-load-more>
+      더 보기 <span>${Math.min(remainingCount, LIST_BATCH_SIZE)}개</span>
     </button>
   `;
 }
@@ -436,7 +473,7 @@ function renderPersonDetail(person) {
           <div class="quick-edit-slot" id="quickEdit-tags"></div>
         </div>
         ${renderQuickInfoBlock("likes", "좋아하는 것", person.likes || "미등록")}
-        ${renderQuickInfoBlock("description", "인물 설명", person.description || person.note || "미등록")}
+        ${renderQuickInfoBlock("description", "인물 설명", personDescriptionText(person))}
         ${renderWikiReferenceBlock(person)}
         ${renderHistoryBlock("키 이력", person.heightHistory, (entry) => `${entry.period || "시기 미등록"} · ${entry.cm || 0}cm`, "height")}
         ${renderHistoryBlock("현상금 이력", person.bountyHistory, (entry) => `${entry.period || "시기 미등록"} · ${formatBounty(entry.amount)}`, "bounty")}
@@ -447,6 +484,24 @@ function renderPersonDetail(person) {
   `;
   bindEpisodeLinks();
   bindPersonQuickEdit(person);
+}
+
+function personDescriptionText(person) {
+  const description = String(person.description || "").trim();
+  if (description && !isAutoWikiDescription(description)) return description;
+  const facts = [];
+  if (hasRegisteredText(person.job)) facts.push(person.job);
+  if (hasRegisteredText(person.birthday)) facts.push(`생일 ${person.birthday}`);
+  if (currentHeight(person)) facts.push(`키 ${currentHeight(person)}cm`);
+  if (currentBounty(person)) facts.push(`현상금 ${formatBounty(currentBounty(person))}`);
+  const origin = registeredOriginLabel(person);
+  if (origin) facts.push(`출신 ${origin}`);
+  if (facts.length) return `자동 보강된 기본 정보: ${facts.join(" · ")}`;
+  return person.note || "정리된 설명이 아직 없습니다.";
+}
+
+function isAutoWikiDescription(text) {
+  return /One Piece Wiki infobox 기준 자동 보강 정보/.test(text);
 }
 
 function renderTimelineBlock(timeline) {
@@ -494,13 +549,28 @@ function renderWikiReferenceBlock(person) {
   const href = person.wikiUrl || fallbackUrl;
   const label = person.wikiReferenceOnly ? "위키 참고" : "위키";
   const note = person.wikiReferenceOnly ? (person.wikiReferenceNote || "참고 페이지") : (person.wikiTitle || href);
+  const fields = wikiFieldSummary(person);
   return `
     <div class="info-block wiki-reference">
       <strong>${escapeHtml(label)}</strong>
       <p><a class="wiki-reference-link" href="${escapeAttribute(href)}" target="_blank" rel="noreferrer">${escapeHtml(person.wikiTitle || href)}</a></p>
+      ${fields ? `<p class="muted">보강 항목: ${escapeHtml(fields)}</p>` : ""}
       ${person.wikiReferenceOnly ? `<p class="muted">${escapeHtml(note)}</p>` : ""}
     </div>
   `;
+}
+
+function wikiFieldSummary(person) {
+  const fields = [];
+  if (hasRegisteredText(person.aliases)) fields.push("별명");
+  if (hasRegisteredText(person.job)) fields.push("직업");
+  if (hasRegisteredText(person.birthday)) fields.push("생일");
+  if (currentHeight(person)) fields.push("키");
+  if (currentBounty(person)) fields.push("현상금");
+  if (hasRegisteredText(person.bloodType)) fields.push("혈액형");
+  if (registeredOriginLabel(person)) fields.push("출신지");
+  if (person.devilFruitId) fields.push("악마의 열매");
+  return fields.join(", ");
 }
 
 function quickChip(kind, label, value) {
@@ -1108,6 +1178,8 @@ function renderPeopleEditor() {
     if (!query) return true;
     return personToItem(person).searchText.includes(query);
   });
+  const visiblePeople = people.slice(0, editorPeopleLimit);
+  const hasMorePeople = visiblePeople.length < people.length;
   editorBody.innerHTML = editorShell(
     "newPersonButton",
     "새 인물 추가",
@@ -1126,14 +1198,17 @@ function renderPeopleEditor() {
           <option value="bountyDesc" ${personSortMode === "bountyDesc" ? "selected" : ""}>현상금 높은 순</option>
           <option value="birthday" ${personSortMode === "birthday" ? "selected" : ""}>생일순</option>
         </select></label>
+        <span class="edit-count">${hasMorePeople ? `${visiblePeople.length}/${people.length}명 표시` : `${people.length}명`}</span>
       </div>
-      ${people.map((person) => pickButton("person", person.id, person.name, `${organizationName(person.organization)} · ${subOrganizationName(person.subOrganization)}`, person.imageUrl)).join("")}
+      ${visiblePeople.map((person) => pickButton("person", person.id, person.name, `${organizationName(person.organization)} · ${subOrganizationName(person.subOrganization)}`, person.imageUrl)).join("")}
+      ${hasMorePeople ? `<button class="list-more-button" id="morePeopleButton" type="button">더 보기 <span>${Math.min(people.length - visiblePeople.length, EDITOR_PEOPLE_BATCH_SIZE)}명</span></button>` : ""}
     `,
     "personFormWrap"
   );
   document.querySelector("#newPersonButton").addEventListener("click", () => renderPersonForm());
   document.querySelector("#personEditorSearchInput").addEventListener("input", (event) => {
     personEditorQuery = event.target.value;
+    editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
     const cursor = event.target.selectionStart || personEditorQuery.length;
     renderPeopleEditor();
     const input = document.querySelector("#personEditorSearchInput");
@@ -1142,6 +1217,11 @@ function renderPeopleEditor() {
   });
   document.querySelector("#personEditorSortSelect").addEventListener("change", (event) => {
     personSortMode = event.target.value;
+    editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
+    renderPeopleEditor();
+  });
+  document.querySelector("#morePeopleButton")?.addEventListener("click", () => {
+    editorPeopleLimit += EDITOR_PEOPLE_BATCH_SIZE;
     renderPeopleEditor();
   });
   editorBody.querySelectorAll("[data-person-id]").forEach((button) => button.addEventListener("click", () => renderPersonForm(findPerson(button.dataset.personId))));
@@ -1488,20 +1568,35 @@ function renderGroupForm(group = null) {
 }
 
 function renderDataManager() {
+  const summary = [
+    ["인물", data.people.length],
+    ["기술", data.techniques.length],
+    ["에피소드", data.episodes.length],
+    ["열매", data.devilFruits.length],
+    ["세부 조직", data.subOrganizations.length],
+    ["출신 국가", data.originCountries.length]
+  ];
   editorBody.innerHTML = `
     <section class="data-manager">
       <h3>데이터 관리</h3>
       <p>웹에서 저장한 내용은 이 브라우저에 남습니다. JSON으로 내보내면 다른 곳에 옮길 수 있습니다.</p>
+      <div class="data-summary">
+        ${summary.map(([label, count]) => `<span><b>${escapeHtml(label)}</b>${count.toLocaleString("ko-KR")}개</span>`).join("")}
+      </div>
       <div class="data-actions">
         <button class="primary" id="exportButton" type="button">JSON 내보내기</button>
         <label class="file-button">JSON 불러오기<input id="importInput" type="file" accept="application/json" /></label>
+        <button class="sub-card" id="previewJsonButton" type="button">JSON 미리보기 생성</button>
         <button class="danger" id="resetButton" type="button">처음 예시로 되돌리기</button>
       </div>
-      <textarea id="jsonPreview" rows="16" readonly>${escapeHtml(JSON.stringify(data, null, 2))}</textarea>
+      <textarea id="jsonPreview" rows="16" readonly placeholder="미리보기가 필요할 때만 생성합니다."></textarea>
     </section>
   `;
   document.querySelector("#exportButton").addEventListener("click", exportJson);
   document.querySelector("#importInput").addEventListener("change", importJson);
+  document.querySelector("#previewJsonButton").addEventListener("click", () => {
+    document.querySelector("#jsonPreview").value = JSON.stringify(data, null, 2);
+  });
   document.querySelector("#resetButton").addEventListener("click", () => {
     localStorage.removeItem(STORAGE_KEY);
     localStorage.removeItem(LEGACY_STORAGE_KEY);
@@ -2333,6 +2428,21 @@ function upsert(list, oldId, next) {
   else list.push(next);
 }
 
+function refreshLookupIndexes() {
+  lookupIndexes = {
+    people: new Map(data.people.map((person) => [person.id, person])),
+    techniques: new Map(data.techniques.map((technique) => [technique.id, technique])),
+    episodes: new Map(data.episodes.map((episode) => [episode.id, episode])),
+    fruits: new Map(data.devilFruits.map((fruit) => [fruit.id, fruit])),
+    groups: new Map(data.groups.map((group) => [group.id, group])),
+    subOrganizations: new Map(data.subOrganizations.map((sub) => [sub.id, sub])),
+    originCountries: new Map(data.originCountries.map((country) => [country.id, country])),
+    organizations: new Map(data.organizations.map((org) => [org.id, org])),
+    originRegions: new Map(data.originRegions.map((region) => [region.id, region])),
+    devilFruitTypes: new Map(data.devilFruitTypes.map((type) => [type.id, type]))
+  };
+}
+
 function blankPerson() {
   return {
     id: makeId("person"),
@@ -2358,51 +2468,51 @@ function blankPerson() {
 }
 
 function findPerson(id) {
-  return data.people.find((person) => person.id === id);
+  return lookupIndexes.people?.get(id);
 }
 
 function findTechnique(id) {
-  return data.techniques.find((technique) => technique.id === id);
+  return lookupIndexes.techniques?.get(id);
 }
 
 function findEpisode(id) {
-  return data.episodes.find((episode) => episode.id === id);
+  return lookupIndexes.episodes?.get(id);
 }
 
 function findFruit(id) {
-  return data.devilFruits.find((fruit) => fruit.id === id);
+  return lookupIndexes.fruits?.get(id);
 }
 
 function findGroup(id) {
-  return data.groups.find((group) => group.id === id);
+  return lookupIndexes.groups?.get(id);
 }
 
 function findSubOrganization(id) {
-  return data.subOrganizations.find((sub) => sub.id === id);
+  return lookupIndexes.subOrganizations?.get(id);
 }
 
 function findOriginCountry(id) {
-  return data.originCountries.find((country) => country.id === id);
+  return lookupIndexes.originCountries?.get(id);
 }
 
 function organizationName(id) {
-  return data.organizations.find((org) => org.id === id)?.name || "기타";
+  return lookupIndexes.organizations?.get(id)?.name || "기타";
 }
 
 function originRegionName(id) {
-  return data.originRegions.find((region) => region.id === id)?.name || "미등록";
+  return lookupIndexes.originRegions?.get(id)?.name || "미등록";
 }
 
 function originCountryName(id) {
-  return data.originCountries.find((country) => country.id === id)?.name || "미등록";
+  return lookupIndexes.originCountries?.get(id)?.name || "미등록";
 }
 
 function subOrganizationName(id) {
-  return data.subOrganizations.find((sub) => sub.id === id)?.name || "미등록";
+  return lookupIndexes.subOrganizations?.get(id)?.name || "미등록";
 }
 
 function devilFruitTypeName(id) {
-  return data.devilFruitTypes.find((type) => type.id === id)?.name || "미등록";
+  return lookupIndexes.devilFruitTypes?.get(id)?.name || "미등록";
 }
 
 function zoanSubtypeName(id) {
@@ -2517,7 +2627,7 @@ function normalizeInPlace(target) {
     bodyMeasurementsEnabled: false,
     bodyMeasurementsHistory: [],
     timeline: [],
-    ...(baseData.people || []).find((basePerson) => basePerson.id === person.id),
+    ...basePeopleById.get(person.id),
     ...person
   })).map((person) => ({
     ...person,
@@ -2525,7 +2635,7 @@ function normalizeInPlace(target) {
     bountyHistory: person.bountyHistory?.length ? person.bountyHistory : [{ period: "현재", amount: Number(person.bounty || 0) }]
   }));
   target.techniques = (target.techniques || []).map((technique) => ({
-    ...(baseData.techniques || []).find((baseTechnique) => baseTechnique.id === technique.id),
+    ...baseTechniquesById.get(technique.id),
     ...technique
   }));
   target.episodes = (target.episodes || structuredClone(baseData.episodes) || []).map((episode) => ({
@@ -2563,6 +2673,7 @@ function loadSavedData() {
 
 function saveData() {
   invalidateDataCaches();
+  refreshLookupIndexes();
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 }
 
@@ -2607,4 +2718,5 @@ function escapeAttribute(input) {
 }
 
 normalizeInPlace(data);
+refreshLookupIndexes();
 render();

@@ -2572,6 +2572,28 @@ textarea:focus-visible {
   font-weight: 900;
 }
 
+.compare-tie-button {
+  width: 64px;
+  min-height: 48px;
+  aspect-ratio: auto;
+  border-radius: 8px;
+  padding: 0 8px;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease;
+}
+
+.compare-tie-button:hover:not(:disabled),
+.compare-tie-button:focus-visible:not(:disabled) {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--ink);
+  background: var(--accent);
+}
+
+.compare-tie-button:disabled {
+  cursor: default;
+}
+
 .quiz-study-actions {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -46,6 +46,7 @@ const compareMetricMeta = [
   { id: "height", title: "키", search: "키 신장 큰 사람", prompt: "누가 더 클까?" }
 ];
 const compareRevealDelayMs = 900;
+const compareTieChoice = "__tie__";
 
 let currentView = "techniques";
 let activeId = "";
@@ -1300,7 +1301,7 @@ function renderCompareGame(metric) {
       <p class="compare-prompt">${escapeHtml(meta.prompt)}</p>
       <div class="compare-arena">
         ${renderCompareCard(survivor, metricId, "생존자", compareGame.gameOver || compareGame.revealing || compareGame.streak > 0, compareGame.gameOver || compareGame.revealing)}
-        <div class="compare-versus">VS</div>
+        <button class="compare-versus compare-tie-button" type="button" data-compare-choice="${compareTieChoice}" ${compareGame.gameOver || compareGame.revealing ? "disabled" : ""}>같다</button>
         ${renderCompareCard(challenger, metricId, "도전자", compareGame.gameOver || compareGame.revealing, compareGame.gameOver || compareGame.revealing)}
       </div>
       ${compareGame.gameOver ? `<button class="primary full" id="compareRestartBottomButton" type="button">다시 시작</button>` : ""}
@@ -1341,10 +1342,13 @@ function renderCompareCard(person, metricId, role, revealValue, disabled = false
 function renderCompareFeedback(result) {
   if (!result) return "";
   const valueText = `${result.winnerName} ${compareValueLabel(result.winnerValue, result.metric)} / ${result.loserName} ${compareValueLabel(result.loserValue, result.metric)}`;
+  const message = result.tie
+    ? (result.correct ? `두 인물의 값이 같았습니다. ${result.winnerName} 생존, ${result.streak}회째 진행 중입니다.` : `두 인물의 값이 같았습니다. 기록은 ${result.streak}회입니다.`)
+    : (result.correct ? `${result.winnerName} 생존, ${result.streak}회째 진행 중입니다.` : `${result.winnerName} 쪽이 더 컸습니다. 기록은 ${result.streak}회입니다.`);
   return `
     <div class="quiz-feedback ${result.correct ? "correct" : "wrong"}">
       <strong>${result.correct ? "정답" : "오답"}</strong>
-      <span>${escapeHtml(result.correct ? `${result.winnerName} 생존, ${result.streak}회째 진행 중입니다.` : `${result.winnerName} 쪽이 더 컸습니다. 기록은 ${result.streak}회입니다.`)}</span>
+      <span>${escapeHtml(message)}</span>
       <span>${escapeHtml(valueText)}</span>
     </div>
   `;
@@ -1398,15 +1402,17 @@ function chooseComparePerson(personId) {
   }
   const survivorValue = compareValue(survivor, metricId);
   const challengerValue = compareValue(challenger, metricId);
-  const winner = survivorValue >= challengerValue ? survivor : challenger;
+  const tie = survivorValue === challengerValue;
+  const winner = tie ? survivor : (survivorValue > challengerValue ? survivor : challenger);
   const loser = winner.id === survivor.id ? challenger : survivor;
   const winnerValue = Math.max(survivorValue, challengerValue);
   const loserValue = Math.min(survivorValue, challengerValue);
-  const correct = personId === winner.id;
+  const correct = tie ? personId === compareTieChoice : personId === winner.id;
   const nextStreak = correct ? compareGame.streak + 1 : compareGame.streak;
   compareGame.lastResult = {
     metric: metricId,
     correct,
+    tie,
     winnerName: winner.name,
     loserName: loser.name,
     winnerValue,

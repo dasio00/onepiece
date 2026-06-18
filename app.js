@@ -135,6 +135,10 @@ editorModeButtons.forEach((button) => {
 });
 
 searchInput.addEventListener("input", () => {
+  if (currentView === "episodes") {
+    activeId = "";
+    activeEpisodeId = "";
+  }
   resetVisibleListLimit();
   render();
 });
@@ -178,7 +182,8 @@ function render() {
     return;
   }
 
-  listTitle.textContent = config.listTitle;
+  const query = searchInput.value.trim().toLowerCase();
+  listTitle.textContent = currentView === "episodes" && query ? "에피소드 목록" : config.listTitle;
   rangeControls.classList.add("hidden");
   personSortControls.classList.toggle("hidden", currentView !== "people");
   personSortSelect.value = personSortMode;
@@ -188,8 +193,7 @@ function render() {
     button.classList.toggle("active", button.dataset.statDirection === statDirection);
   });
 
-  const items = getItems();
-  const query = searchInput.value.trim().toLowerCase();
+  const items = getItems(query);
   const filteredItems = query ? items.filter((item) => item.searchText.includes(query)) : items;
   const visibleItems = filteredItems.slice(0, visibleListLimit);
   const hasMore = visibleItems.length < filteredItems.length;
@@ -214,8 +218,11 @@ function render() {
   });
 
   if (listOnly) activeId = "";
-  if (!listOnly && !activeId && filteredItems.length > 0) activeId = filteredItems[0].id;
-  const activeItem = filteredItems.find((item) => item.id === activeId);
+  let activeItem = filteredItems.find((item) => item.id === activeId);
+  if (!listOnly && (!activeId || !activeItem) && filteredItems.length > 0) {
+    activeId = filteredItems[0].id;
+    activeItem = filteredItems[0];
+  }
   itemList.querySelectorAll(".item").forEach((button) => {
     button.classList.toggle("active", button.dataset.id === activeId);
   });
@@ -230,7 +237,7 @@ function resetVisibleListLimit() {
   visibleListLimit = LIST_BATCH_SIZE;
 }
 
-function getItems() {
+function getItems(query = "") {
   if (currentView === "techniques") {
     return data.techniques.map((technique) => {
       const owner = findPerson(technique.ownerId);
@@ -238,7 +245,7 @@ function getItems() {
     });
   }
   if (currentView === "people") return sortedPeople(personSortMode).map(personToItem);
-  if (currentView === "episodes") return getEpisodeVolumeItems();
+  if (currentView === "episodes") return query ? getEpisodeSearchItems() : getEpisodeVolumeItems();
   if (currentView === "organizations") {
     return data.organizations.map((org) => {
       const people = data.people.filter((person) => person.organization === org.id);
@@ -309,7 +316,11 @@ function renderDetail(listItem) {
 
   if (currentView === "techniques") return renderTechniqueDetail(listItem.raw);
   if (currentView === "people") return renderPersonDetail(listItem.raw);
-  if (currentView === "episodes") return renderEpisodeVolumeDetail(listItem.raw);
+  if (currentView === "episodes") {
+    return listItem.raw?.kind === "episode"
+      ? renderEpisodeSearchDetail(listItem.raw.episode)
+      : renderEpisodeVolumeDetail(listItem.raw);
+  }
   if (currentView === "organizations") return renderOrganizationDetail(listItem.raw);
   if (currentView === "origins") return renderOriginRegionDetail(listItem.raw);
   if (currentView === "devilFruits") return renderDevilFruitTypeDetail(listItem.raw);
@@ -344,6 +355,25 @@ function getEpisodeVolumeItems() {
     });
 }
 
+function getEpisodeSearchItems() {
+  return [...data.episodes]
+    .sort(sortEpisodes)
+    .map(episodeToItem);
+}
+
+function episodeToItem(episode) {
+  const subtitle = episodeTitleSubtext(episode);
+  const characterNames = (episode.characterIds || []).map(findPerson).filter(Boolean).map((person) => person.name).join(" ");
+  const techniqueNames = (episode.techniqueIds || []).map(findTechnique).filter(Boolean).map(localizedSearchText).join(" ");
+  return item(
+    episode.id,
+    `${episode.number}화 · ${episodeTitleText(episode)}`,
+    `${episode.volume}권${subtitle ? ` · ${subtitle}` : ""}`,
+    { kind: "episode", episode },
+    `${episode.volume}권 ${episode.number}화 ${episodeTitleText(episode)} ${subtitle} ${episode.titleEn || ""} ${episodeSummaryText(episode)} ${characterNames} ${techniqueNames}`
+  );
+}
+
 function renderEpisodeVolumeDetail(volumeData) {
   const selectedEpisode = activeEpisodeId
     ? volumeData.episodes.find((episode) => episode.id === activeEpisodeId)
@@ -367,6 +397,15 @@ function renderEpisodeVolumeDetail(volumeData) {
       render();
     });
   });
+  bindEpisodeLinks();
+}
+
+function renderEpisodeSearchDetail(episode) {
+  activeEpisodeId = episode.id;
+  detail.innerHTML = `
+    <h3>${episode.volume}권 ${episode.number}화</h3>
+    ${renderEpisodeDetail(episode)}
+  `;
   bindEpisodeLinks();
 }
 
@@ -1695,6 +1734,7 @@ function navigateToEpisode(episodeId) {
   const episode = findEpisode(episodeId);
   if (!episode) return;
   currentView = "episodes";
+  searchInput.value = "";
   activeId = String(episode.volume);
   activeEpisodeId = episode.id;
   activeFruitId = "";

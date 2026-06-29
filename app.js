@@ -549,10 +549,10 @@ function fruitDescriptionText(fruit) {
 function renderTechniqueResult(technique) {
   const owner = findPerson(technique.ownerId);
   return `
-    <div class="result">
+    <button class="result result-button" type="button" data-technique-link="${escapeAttribute(technique.id)}">
       <strong>${escapeHtml(localizedName(technique))}</strong>
       <span>${escapeHtml(owner?.name || "사용자 미등록")}</span>
-    </div>
+    </button>
   `;
 }
 
@@ -578,6 +578,7 @@ function renderPersonDetail(person) {
     : `<div class="portrait placeholder">이미지 없음</div>`;
   const fruit = findFruit(person.devilFruitId);
   const episodes = getEpisodesForPerson(person.id);
+  const techniques = getTechniquesForPerson(person.id);
 
   detail.innerHTML = `
     <div class="person-detail-head">
@@ -612,12 +613,38 @@ function renderPersonDetail(person) {
         ${renderHistoryBlock("키 이력", person.heightHistory, (entry) => `${entry.period || "시기 미등록"} · ${entry.cm || 0}cm`, "height")}
         ${renderHistoryBlock("현상금 이력", person.bountyHistory, (entry) => `${entry.period || "시기 미등록"} · ${formatBounty(entry.amount)}`, "bounty")}
         ${person.bodyMeasurementsEnabled ? renderHistoryBlock("B-W-H 이력", person.bodyMeasurementsHistory, (entry) => `${entry.period || "시기 미등록"} · B${entry.bust || 0} W${entry.waist || 0} H${entry.hip || 0}`) : ""}
+        ${renderPersonTechniqueBlock(techniques)}
       </div>
     </div>
     <div class="episode-chip-grid">${renderEpisodeLinks(episodes, person.id)}</div>
   `;
   bindEpisodeLinks();
   bindPersonQuickEdit(person);
+}
+
+function getTechniquesForPerson(personId) {
+  return data.techniques
+    .filter((technique) => technique.ownerId === personId)
+    .sort((a, b) => localizedName(a).localeCompare(localizedName(b), "ko"));
+}
+
+function renderPersonTechniqueBlock(techniques) {
+  if (!techniques.length) {
+    return `
+      <section class="info-block">
+        <strong>사용 기술</strong>
+        <p>등록된 기술이 없습니다.</p>
+      </section>
+    `;
+  }
+  return `
+    <section class="info-block">
+      <strong>사용 기술</strong>
+      <div class="result-grid compact-results">
+        ${techniques.map(renderTechniqueResult).join("")}
+      </div>
+    </section>
+  `;
 }
 
 function personDescriptionText(person) {
@@ -2072,6 +2099,9 @@ function bindEpisodeLinks() {
   detail.querySelectorAll("[data-person-link]").forEach((button) => {
     button.addEventListener("click", () => navigateToPerson(button.dataset.personLink));
   });
+  detail.querySelectorAll("[data-technique-link]").forEach((button) => {
+    button.addEventListener("click", () => navigateToTechnique(button.dataset.techniqueLink));
+  });
 }
 
 function navigateToEpisode(episodeId) {
@@ -2090,6 +2120,19 @@ function navigateToEpisode(episodeId) {
 function navigateToPerson(personId) {
   currentView = "people";
   activeId = personId;
+  activeEpisodeId = "";
+  activeFruitId = "";
+  activeSubOrgId = "";
+  setActiveTab();
+  render();
+}
+
+function navigateToTechnique(techniqueId) {
+  const technique = findTechnique(techniqueId);
+  if (!technique) return;
+  currentView = "techniques";
+  searchInput.value = "";
+  activeId = techniqueId;
   activeEpisodeId = "";
   activeFruitId = "";
   activeSubOrgId = "";
@@ -3066,32 +3109,81 @@ function fileToDataUrl(file) {
 }
 
 function normalizeInPlace(target) {
-  target.people = (target.people || []).map((person) => ({
-    aliases: "",
-    jobCategory: "",
-    jobDetail: "",
-    jobEn: "",
-    subOrganization: "",
-    birthday: "",
-    originRegion: "",
-    originCountry: "",
-    bounty: 0,
-    bountyHistory: [],
-    heightHistory: [],
-    likes: "",
-    description: "",
-    devilFruitId: "",
-    haki: { armament: false, observation: false, conqueror: false },
-    bodyMeasurementsEnabled: false,
-    bodyMeasurementsHistory: [],
-    timeline: [],
-    ...basePeopleById.get(person.id),
-    ...person
-  })).map((person) => ({
-    ...person,
-    heightHistory: person.heightHistory?.length ? person.heightHistory : [{ period: "현재", cm: Number(person.heightCm || 0) }],
-    bountyHistory: person.bountyHistory?.length ? person.bountyHistory : [{ period: "현재", amount: Number(person.bounty || 0) }]
-  }));
+  const blank = (value) => value === undefined || value === null || value === "" || value === 0 || (Array.isArray(value) && value.length === 0);
+  const fillFromBase = (merged, saved, base, keys) => {
+    keys.forEach((key) => {
+      if (blank(saved[key]) && !blank(base[key])) merged[key] = structuredClone(base[key]);
+    });
+  };
+  const mergeBaseList = (savedList = [], baseList = []) => {
+    const baseById = new Map(baseList.map((item) => [item.id, item]));
+    const merged = savedList.map((item) => ({
+      ...structuredClone(baseById.get(item.id) || {}),
+      ...item
+    }));
+    const savedIds = new Set(merged.map((item) => item.id));
+    baseList.forEach((item) => {
+      if (!savedIds.has(item.id)) {
+        merged.push(structuredClone(item));
+        savedIds.add(item.id);
+      }
+    });
+    return merged;
+  };
+  target.people = (target.people || []).map((person) => {
+    const basePerson = basePeopleById.get(person.id) || {};
+    const merged = {
+      aliases: "",
+      jobCategory: "",
+      jobDetail: "",
+      jobEn: "",
+      subOrganization: "",
+      birthday: "",
+      originRegion: "",
+      originCountry: "",
+      bounty: 0,
+      bountyHistory: [],
+      heightHistory: [],
+      likes: "",
+      description: "",
+      devilFruitId: "",
+      haki: { armament: false, observation: false, conqueror: false },
+      bodyMeasurementsEnabled: false,
+      bodyMeasurementsHistory: [],
+      timeline: [],
+      ...basePerson,
+      ...person
+    };
+    fillFromBase(merged, person, basePerson, [
+      "aliases", "job", "jobCategory", "jobDetail", "jobEn", "age", "birthday",
+      "heightCm", "heightHistory", "bounty", "bountyHistory", "bloodType",
+      "originRegion", "originCountry", "origin", "description", "wikiTitle", "wikiUrl"
+    ]);
+    if ((blank(person.organization) || person.organization === "etc") && !blank(basePerson.organization)) merged.organization = basePerson.organization;
+    if ((blank(person.subOrganization) || (person.id === "wt100-21" && person.subOrganization === "wt-org-281")) && !blank(basePerson.subOrganization)) {
+      merged.subOrganization = basePerson.subOrganization;
+    }
+    if (person.id === "wt100-21" && /대위/.test(String(person.jobDetail || "")) && !blank(basePerson.jobDetail)) {
+      merged.jobDetail = basePerson.jobDetail;
+    }
+    const savedHaki = person.haki || {};
+    const baseHaki = basePerson.haki || {};
+    const savedHasHaki = Boolean(savedHaki.armament || savedHaki.observation || savedHaki.conqueror);
+    const baseHasHaki = Boolean(baseHaki.armament || baseHaki.observation || baseHaki.conqueror);
+    if (!savedHasHaki && baseHasHaki) merged.haki = structuredClone(baseHaki);
+    return {
+      ...merged,
+      heightHistory: merged.heightHistory?.length ? merged.heightHistory : [{ period: "현재", cm: Number(merged.heightCm || 0) }],
+      bountyHistory: merged.bountyHistory?.length ? merged.bountyHistory : [{ period: "현재", amount: Number(merged.bounty || 0) }]
+    };
+  });
+  const savedPersonIds = new Set(target.people.map((person) => person.id));
+  baseData.people.forEach((person) => {
+    if (!savedPersonIds.has(person.id)) {
+      target.people.push(structuredClone(person));
+      savedPersonIds.add(person.id);
+    }
+  });
   target.techniques = (target.techniques || []).map((technique) => ({
     ...baseTechniquesById.get(technique.id),
     ...technique
@@ -3128,13 +3220,12 @@ function normalizeInPlace(target) {
       savedEpisodeIds.add(episode.id);
     }
   });
-  target.organizations = target.organizations || structuredClone(baseData.organizations);
-  target.originRegions = target.originRegions || structuredClone(baseData.originRegions);
-  target.originCountries = target.originCountries || structuredClone(baseData.originCountries);
-  target.subOrganizations = target.subOrganizations || structuredClone(baseData.subOrganizations);
-  target.devilFruitTypes = target.devilFruitTypes || structuredClone(baseData.devilFruitTypes);
-  target.devilFruits = target.devilFruits || structuredClone(baseData.devilFruits);
-  target.devilFruits = target.devilFruits.map((fruit) => ({
+  target.organizations = mergeBaseList(target.organizations, baseData.organizations);
+  target.originRegions = mergeBaseList(target.originRegions, baseData.originRegions);
+  target.originCountries = mergeBaseList(target.originCountries, baseData.originCountries);
+  target.subOrganizations = mergeBaseList(target.subOrganizations, baseData.subOrganizations);
+  target.devilFruitTypes = mergeBaseList(target.devilFruitTypes, baseData.devilFruitTypes);
+  target.devilFruits = mergeBaseList(target.devilFruits, baseData.devilFruits).map((fruit) => ({
     zoanSubtype: "",
     model: "",
     awakened: false,

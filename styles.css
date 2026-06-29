@@ -452,6 +452,23 @@ textarea {
   background: #ffffff;
 }
 
+.result-button {
+  width: 100%;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.result-button:hover {
+  border-color: var(--accent-2);
+  background: var(--soft);
+}
+
+.compact-results {
+  margin-top: 10px;
+}
+
 .person-result {
   display: flex;
   align-items: center;

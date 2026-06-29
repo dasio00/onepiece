@@ -18,6 +18,7 @@ const viewConfig = {
   timelines: { label: "연표", title: "인물별 연표 보기", listTitle: "연표 인물" },
   quiz: { label: "카드 퀴즈", title: "카테고리별 랜덤 카드 퀴즈", listTitle: "퀴즈 카테고리" },
   compare: { label: "비교 게임", title: "큰 쪽을 맞히는 서바이벌 게임", listTitle: "비교 항목" },
+  search: { label: "통합 검색", title: "전체 데이터 빠르게 찾기", listTitle: "검색 결과" },
   jobs: { label: "직업", title: "직업별 인물 보기", listTitle: "직업 목록" },
   stats: { label: "인물 정렬", title: "키·연령·현상금·생일 순서 보기", listTitle: "인물 목록" },
   bloodTypes: { label: "혈액형", title: "혈액형별 인물 보기", listTitle: "혈액형 목록" },
@@ -68,11 +69,13 @@ let quizMode = "test";
 let quizStudyFlipped = false;
 let compareGame = null;
 let compareRecords = loadCompareRecords();
+let activePersonPanel = "basic";
 const LIST_BATCH_SIZE = 160;
 const EDITOR_PEOPLE_BATCH_SIZE = 160;
 let visibleListLimit = LIST_BATCH_SIZE;
 let editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
 const quizCardCache = new Map();
+const listItemCache = new Map();
 let lookupIndexes = {};
 
 const tabs = document.querySelectorAll(".tab");
@@ -94,6 +97,7 @@ const statSortControls = document.querySelector("#statSortControls");
 const statMetricSelect = document.querySelector("#statMetricSelect");
 const statDirectionButtons = document.querySelectorAll("[data-stat-direction]");
 const mobileViewSelect = document.querySelector("#mobileViewSelect");
+const mobileNavButtons = document.querySelectorAll("[data-mobile-nav]");
 const browseWorkspace = document.querySelector("#browseWorkspace");
 const editorWorkspace = document.querySelector("#editorWorkspace");
 const editorBody = document.querySelector("#editorBody");
@@ -104,6 +108,10 @@ tabs.forEach((tab) => {
 });
 
 mobileViewSelect.addEventListener("change", () => switchView(mobileViewSelect.value));
+
+mobileNavButtons.forEach((button) => {
+  button.addEventListener("click", () => switchView(button.dataset.mobileNav));
+});
 
 rangeButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -161,6 +169,7 @@ function switchView(view) {
   activeFruitId = "";
   activeSubOrgId = "";
   activeEpisodeId = "";
+  activePersonPanel = "basic";
   resetVisibleListLimit();
   sortMode = "all";
   if (view === "people") personSortMode = "appearance";
@@ -181,6 +190,7 @@ function isGameLikeView() {
 
 function render() {
   const config = viewConfig[currentView];
+  syncActiveNavigation();
   viewLabel.textContent = config.label;
   viewTitle.textContent = config.title;
 
@@ -192,6 +202,9 @@ function render() {
   editorWorkspace.classList.toggle("hidden", !isEditor);
   detailPane.classList.toggle("hidden", listOnly);
   searchBox.classList.toggle("hidden", isEditor || isGameLikeView());
+  searchInput.placeholder = currentView === "search"
+    ? "인물, 기술, 열매, 에피소드 전체 검색"
+    : "이름, 조직, 열매, 직업 검색";
 
   if (isEditor) {
     renderEditor();
@@ -209,7 +222,7 @@ function render() {
     button.classList.toggle("active", button.dataset.statDirection === statDirection);
   });
 
-  const items = getItems(query);
+  const items = getCachedItems(query);
   const filteredItems = query ? items.filter((item) => item.searchText.includes(query)) : items;
   const visibleItems = filteredItems.slice(0, visibleListLimit);
   const hasMore = visibleItems.length < filteredItems.length;
@@ -253,6 +266,20 @@ function resetVisibleListLimit() {
   visibleListLimit = LIST_BATCH_SIZE;
 }
 
+function getCachedItems(query = "") {
+  if (currentView === "compare") return getItems(query);
+  const key = [
+    currentView,
+    currentView === "episodes" ? Boolean(query) : "",
+    currentView === "people" ? personSortMode : "",
+    currentView === "people" ? sortMode : "",
+    currentView === "stats" ? statMetric : "",
+    currentView === "stats" ? statDirection : ""
+  ].join("|");
+  if (!listItemCache.has(key)) listItemCache.set(key, getItems(query));
+  return listItemCache.get(key);
+}
+
 function getItems(query = "") {
   if (currentView === "techniques") {
     return data.techniques.map((technique) => {
@@ -286,6 +313,7 @@ function getItems(query = "") {
   }
   if (currentView === "quiz") return getQuizCategories();
   if (currentView === "compare") return getCompareGameItems();
+  if (currentView === "search") return getGlobalSearchItems();
   if (currentView === "jobs") return groupBy(data.people, "job").map((group) => groupToItem(group, "명"));
   if (currentView === "stats") return sortedStatPeople().map((person) => ({ ...personToItem(person), title: `${person.name} · ${statValueLabel(person)}` }));
   if (currentView === "bloodTypes") {
@@ -302,7 +330,7 @@ function getItems(query = "") {
 }
 
 function renderListItem(listItem) {
-  const showImage = ["people", "stats"].includes(currentView) && listItem.raw?.imageUrl;
+  const showImage = (["people", "stats"].includes(currentView) || listItem.raw?.resultType === "person") && listItem.raw?.imageUrl;
   const image = showImage ? `<img class="item-thumb" src="${escapeAttribute(listItem.raw.imageUrl)}" alt="" loading="lazy" decoding="async" />` : "";
   return `
     <button class="item" type="button" data-id="${escapeAttribute(listItem.id)}">
@@ -345,6 +373,7 @@ function renderDetail(listItem) {
   if (currentView === "timelines") return renderTimelineDetail(listItem.raw);
   if (currentView === "quiz") return renderQuizDetail(listItem.raw);
   if (currentView === "compare") return renderCompareGame(listItem.raw);
+  if (currentView === "search") return renderGlobalSearchDetail(listItem.raw);
 
   detail.innerHTML = `
     <h3>${escapeHtml(listItem.title)}</h3>
@@ -355,7 +384,7 @@ function renderDetail(listItem) {
 
 function getEpisodeVolumeItems() {
   const volumes = new Map();
-  data.episodes.forEach((episode) => {
+  [...data.episodes].sort(sortEpisodes).forEach((episode) => {
     if (!volumes.has(episode.volume)) volumes.set(episode.volume, []);
     volumes.get(episode.volume).push(episode);
   });
@@ -377,6 +406,63 @@ function getEpisodeSearchItems() {
   return [...data.episodes]
     .sort(sortEpisodes)
     .map(episodeToItem);
+}
+
+function getGlobalSearchItems() {
+  const people = data.people.map((person) => {
+    const fruit = findFruit(person.devilFruitId);
+    return item(
+      `person:${person.id}`,
+      person.name,
+      `인물 · ${organizationName(person.organization)} · ${personJobLabel(person)}`,
+      { resultType: "person", entity: person, imageUrl: person.imageUrl },
+      `${person.name} ${person.nameKo || ""} ${person.nameEn || ""} ${person.sourceNameJa || ""} ${person.sourceNameEn || ""} ${person.wikiTitle || ""} ${person.aliases} ${personJobSearchText(person)} ${person.birthday} ${person.bloodType} ${registeredOriginLabel(person)} ${organizationName(person.organization)} ${subOrganizationName(person.subOrganization)} ${fruit ? localizedSearchText(fruit) : ""}`
+    );
+  });
+  const techniques = data.techniques.map((technique) => {
+    const owner = findPerson(technique.ownerId);
+    return item(
+      `technique:${technique.id}`,
+      localizedName(technique),
+      `기술 · ${owner?.name || "사용자 미등록"}`,
+      { resultType: "technique", entity: technique },
+      `${localizedSearchText(technique)} ${owner?.name || ""} ${technique.note || ""}`
+    );
+  });
+  const fruits = data.devilFruits.map((fruit) => {
+    const user = findPerson(fruit.currentUserId);
+    return item(
+      `fruit:${fruit.id}`,
+      localizedName(fruit),
+      `악마의 열매 · ${devilFruitTypeName(fruit.type)} · ${user?.name || "능력자 미등록"}`,
+      { resultType: "fruit", entity: fruit },
+      `${localizedSearchText(fruit)} ${fruitDescriptionText(fruit)} ${devilFruitTypeName(fruit.type)} ${user?.name || ""}`
+    );
+  });
+  const episodes = data.episodes.map((episode) => {
+    const result = episodeToItem(episode);
+    return {
+      ...result,
+      id: `episode:${episode.id}`,
+      sub: `에피소드 · ${result.sub}`,
+      raw: { resultType: "episode", episode: result.raw.episode }
+    };
+  });
+  return [...people, ...techniques, ...fruits, ...episodes];
+}
+
+function renderGlobalSearchDetail(result) {
+  if (!result) return;
+  if (result.resultType === "person") return renderPersonDetail(result.entity);
+  if (result.resultType === "technique") return renderTechniqueDetail(result.entity);
+  if (result.resultType === "episode") return renderEpisodeSearchDetail(result.episode);
+  if (result.resultType === "fruit") {
+    detail.innerHTML = `
+      <h3>${escapeHtml(localizedName(result.entity))}</h3>
+      ${renderFruitDetail(result.entity)}
+    `;
+    bindEpisodeLinks();
+  }
 }
 
 function episodeToItem(episode) {
@@ -491,15 +577,11 @@ function appearanceTypeLabel(type) {
 }
 
 function getEpisodesForPerson(personId) {
-  return data.episodes
-    .filter((episode) => episode.characterIds.includes(personId))
-    .sort(sortEpisodes);
+  return lookupIndexes.episodesByPerson?.get(personId) || [];
 }
 
 function getEpisodesForTechnique(techniqueId) {
-  return data.episodes
-    .filter((episode) => episode.techniqueIds.includes(techniqueId))
-    .sort(sortEpisodes);
+  return lookupIndexes.episodesByTechnique?.get(techniqueId) || [];
 }
 
 function sortEpisodes(a, b) {
@@ -579,53 +661,142 @@ function renderPersonDetail(person) {
   const fruit = findFruit(person.devilFruitId);
   const episodes = getEpisodesForPerson(person.id);
   const techniques = getTechniquesForPerson(person.id);
+  const panels = ["basic", "abilities", "episodes", "history"];
+  if (!panels.includes(activePersonPanel)) activePersonPanel = "basic";
 
   detail.innerHTML = `
     <div class="person-detail-head">
       ${image}
       <div>
         <h3>${escapeHtml(person.name)}</h3>
-        <div class="quick-section">
-          <div class="quick-section-head">
-            <strong>태그</strong>
-          </div>
-          <div class="meta">
-            ${quickChip("aliases", "별명", person.aliases || "미등록")}
-            ${quickChip("organization", "조직", organizationName(person.organization))}
-            ${quickChip("subOrganization", "세부 조직", subOrganizationName(person.subOrganization))}
-            ${quickChip("job", "직업", personJobLabel(person))}
-            ${quickChip("age", "연령", person.age ? `${person.age}세` : "미등록")}
-            ${quickChip("birthday", "생일", person.birthday || "미등록")}
-            ${quickChip("height", "키", currentHeight(person) ? `${currentHeight(person)}cm` : "미등록")}
-            ${quickChip("bounty", "현상금", formatBounty(currentBounty(person)))}
-            ${quickChip("bloodType", "혈액형", person.bloodType || "미등록")}
-            ${quickChip("origin", "출신지", `${originRegionName(person.originRegion)} / ${originCountryName(person.originCountry)}`)}
-            ${quickChip("devilFruitId", "악마의 열매", fruit?.name || "없음/미등록")}
-            ${quickChip("haki", "무장색", person.haki?.armament ? "있음" : "없음")}
-            ${quickChip("haki", "견문색", person.haki?.observation ? "있음" : "없음")}
-            ${quickChip("haki", "패왕색", person.haki?.conqueror ? "있음" : "없음")}
-          </div>
-          <div class="quick-edit-slot" id="quickEdit-tags"></div>
-        </div>
-        ${renderQuickInfoBlock("likes", "좋아하는 것", person.likes || "미등록")}
-        ${renderQuickInfoBlock("description", "인물 설명", personDescriptionText(person))}
-        ${renderWikiReferenceBlock(person)}
-        ${renderHistoryBlock("키 이력", person.heightHistory, (entry) => `${entry.period || "시기 미등록"} · ${entry.cm || 0}cm`, "height")}
-        ${renderHistoryBlock("현상금 이력", person.bountyHistory, (entry) => `${entry.period || "시기 미등록"} · ${formatBounty(entry.amount)}`, "bounty")}
-        ${person.bodyMeasurementsEnabled ? renderHistoryBlock("B-W-H 이력", person.bodyMeasurementsHistory, (entry) => `${entry.period || "시기 미등록"} · B${entry.bust || 0} W${entry.waist || 0} H${entry.hip || 0}`) : ""}
-        ${renderPersonTechniqueBlock(techniques)}
+        <div class="data-status-row">${renderPersonStatusBadges(person, fruit, techniques, episodes)}</div>
+        ${renderPersonPanelTabs(activePersonPanel)}
       </div>
     </div>
-    <div class="episode-chip-grid">${renderEpisodeLinks(episodes, person.id)}</div>
+    <div class="person-panel-stack">
+      ${renderPersonBasicPanel(person)}
+      ${renderPersonAbilitiesPanel(person, fruit, techniques)}
+      ${renderPersonEpisodesPanel(episodes, person.id)}
+      ${renderPersonHistoryPanel(person)}
+    </div>
   `;
   bindEpisodeLinks();
+  bindPersonDetailControls(person);
+}
+
+function renderPersonPanelTabs(activePanel) {
+  return `
+    <div class="person-panel-tabs">
+      ${[
+        ["basic", "기본정보"],
+        ["abilities", "기술·능력"],
+        ["episodes", "등장화수"],
+        ["history", "이력"]
+      ].map(([id, label]) => `
+        <button class="person-panel-tab ${activePanel === id ? "active" : ""}" data-person-panel="${id}" type="button">${label}</button>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderPersonPanel(id, content) {
+  return `<section class="person-panel ${activePersonPanel === id ? "active" : ""}" data-person-panel-content="${id}" ${activePersonPanel === id ? "" : "hidden"}>${content}</section>`;
+}
+
+function renderPersonBasicPanel(person) {
+  return renderPersonPanel("basic", `
+    <div class="quick-section">
+      <div class="quick-section-head"><strong>태그</strong></div>
+      <div class="meta">
+        ${quickChip("aliases", "별명", person.aliases || "미등록")}
+        ${quickChip("organization", "조직", organizationName(person.organization))}
+        ${quickChip("subOrganization", "세부 조직", subOrganizationName(person.subOrganization))}
+        ${quickChip("job", "직업", personJobLabel(person))}
+        ${quickChip("age", "연령", person.age ? `${person.age}세` : "미등록")}
+        ${quickChip("birthday", "생일", person.birthday || "미등록")}
+        ${quickChip("bloodType", "혈액형", person.bloodType || "미등록")}
+        ${quickChip("origin", "출신지", registeredOriginLabel(person) || "미등록")}
+      </div>
+      <div class="quick-edit-slot" id="quickEdit-tags"></div>
+    </div>
+    ${renderQuickInfoBlock("likes", "좋아하는 것", person.likes || "미등록")}
+    ${renderQuickInfoBlock("description", "인물 설명", personDescriptionText(person))}
+    ${renderWikiReferenceBlock(person)}
+  `);
+}
+
+function renderPersonAbilitiesPanel(person, fruit, techniques) {
+  return renderPersonPanel("abilities", `
+    <div class="quick-section">
+      <div class="quick-section-head"><strong>능력</strong></div>
+      <div class="meta">
+        ${quickChip("devilFruitId", "악마의 열매", fruit?.name || "해당 없음/미등록")}
+        ${quickChip("haki", "무장색", person.haki?.armament ? "있음" : "없음")}
+        ${quickChip("haki", "견문색", person.haki?.observation ? "있음" : "없음")}
+        ${quickChip("haki", "패왕색", person.haki?.conqueror ? "있음" : "없음")}
+      </div>
+      <div class="quick-edit-slot" id="quickEdit-abilities"></div>
+    </div>
+    ${renderPersonTechniqueBlock(techniques)}
+  `);
+}
+
+function renderPersonEpisodesPanel(episodes, personId) {
+  return renderPersonPanel("episodes", `
+    <div class="info-block">
+      <strong>등장화수</strong>
+      <p>${episodes.length ? `${episodes.length}개 화수에 연결되어 있습니다.` : "등록된 화수가 없습니다."}</p>
+      <div class="episode-chip-grid">${renderEpisodeLinks(episodes, personId)}</div>
+    </div>
+  `);
+}
+
+function renderPersonHistoryPanel(person) {
+  return renderPersonPanel("history", `
+    ${renderHistoryBlock("키 이력", person.heightHistory, (entry) => `${entry.period || "시기 미등록"} · ${entry.cm || 0}cm`, "height")}
+    ${renderHistoryBlock("현상금 이력", person.bountyHistory, (entry) => `${entry.period || "시기 미등록"} · ${formatBounty(entry.amount)}`, "bounty")}
+    ${person.bodyMeasurementsEnabled ? renderHistoryBlock("B-W-H 이력", person.bodyMeasurementsHistory, (entry) => `${entry.period || "시기 미등록"} · B${entry.bust || 0} W${entry.waist || 0} H${entry.hip || 0}`) : ""}
+  `);
+}
+
+function renderPersonStatusBadges(person, fruit, techniques, episodes) {
+  const coreFields = [
+    person.aliases,
+    personJobLabel(person) !== "미등록" ? personJobLabel(person) : "",
+    person.age,
+    person.birthday,
+    currentHeight(person),
+    currentBounty(person),
+    person.bloodType,
+    registeredOriginLabel(person),
+    organizationName(person.organization) !== "기타" ? organizationName(person.organization) : ""
+  ];
+  const filledCount = coreFields.filter((value) => hasRegisteredText(value) || Number(value) > 0).length;
+  return [
+    statusBadge(person.wikiUrl ? "위키 연결" : "위키 미확인", person.wikiUrl ? "good" : "warn"),
+    statusBadge(`기본 ${filledCount}/${coreFields.length}`, filledCount >= 6 ? "good" : "warn"),
+    statusBadge(fruit ? "열매 등록" : "열매 해당 없음/미등록", fruit ? "good" : "neutral"),
+    statusBadge(techniques.length ? `기술 ${techniques.length}개` : "기술 미등록", techniques.length ? "good" : "warn"),
+    statusBadge(episodes.length ? `화수 ${episodes.length}개` : "화수 미등록", episodes.length ? "good" : "warn")
+  ].join("");
+}
+
+function statusBadge(label, tone = "neutral") {
+  return `<span class="data-status ${escapeAttribute(tone)}">${escapeHtml(label)}</span>`;
+}
+
+function bindPersonDetailControls(person) {
+  detail.querySelectorAll("[data-person-panel]").forEach((button) => {
+    button.addEventListener("click", () => {
+      activePersonPanel = button.dataset.personPanel;
+      renderPersonDetail(person);
+    });
+  });
   bindPersonQuickEdit(person);
 }
 
 function getTechniquesForPerson(personId) {
-  return data.techniques
-    .filter((technique) => technique.ownerId === personId)
-    .sort((a, b) => localizedName(a).localeCompare(localizedName(b), "ko"));
+  return lookupIndexes.techniquesByPerson?.get(personId) || [];
 }
 
 function renderPersonTechniqueBlock(techniques) {
@@ -2108,6 +2279,7 @@ function navigateToEpisode(episodeId) {
   const episode = findEpisode(episodeId);
   if (!episode) return;
   currentView = "episodes";
+  activePersonPanel = "basic";
   searchInput.value = "";
   activeId = String(episode.volume);
   activeEpisodeId = episode.id;
@@ -2119,6 +2291,7 @@ function navigateToEpisode(episodeId) {
 
 function navigateToPerson(personId) {
   currentView = "people";
+  activePersonPanel = "basic";
   activeId = personId;
   activeEpisodeId = "";
   activeFruitId = "";
@@ -2131,6 +2304,7 @@ function navigateToTechnique(techniqueId) {
   const technique = findTechnique(techniqueId);
   if (!technique) return;
   currentView = "techniques";
+  activePersonPanel = "basic";
   searchInput.value = "";
   activeId = techniqueId;
   activeEpisodeId = "";
@@ -2229,9 +2403,14 @@ function renderEmptyResult(message) {
 }
 
 function setActiveTab() {
-  tabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.view === currentView));
-  mobileViewSelect.value = currentView;
+  syncActiveNavigation();
   searchInput.value = "";
+}
+
+function syncActiveNavigation() {
+  tabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.view === currentView));
+  mobileNavButtons.forEach((button) => button.classList.toggle("active", button.dataset.mobileNav === currentView));
+  mobileViewSelect.value = currentView;
 }
 
 function getQuizCategories() {
@@ -2556,7 +2735,7 @@ function personToItem(person) {
     person.name,
     `${organizationName(person.organization)} / ${subOrganizationName(person.subOrganization)} / ${personJobLabel(person)}`,
     person,
-    `${person.name} ${person.aliases} ${personJobSearchText(person)} ${person.origin} ${originRegionName(person.originRegion)} ${originCountryName(person.originCountry)} ${person.birthday} ${person.bloodType} ${organizationName(person.organization)} ${subOrganizationName(person.subOrganization)} ${findFruit(person.devilFruitId)?.name || ""}`
+    `${person.name} ${person.nameKo || ""} ${person.nameEn || ""} ${person.sourceNameJa || ""} ${person.sourceNameEn || ""} ${person.wikiTitle || ""} ${person.aliases} ${personJobSearchText(person)} ${person.origin} ${originRegionName(person.originRegion)} ${originCountryName(person.originCountry)} ${person.birthday} ${person.bloodType} ${organizationName(person.organization)} ${subOrganizationName(person.subOrganization)} ${findFruit(person.devilFruitId)?.name || ""}`
   );
 }
 
@@ -2641,13 +2820,7 @@ function statValueLabel(person) {
 }
 
 function buildAppearanceOrderMap() {
-  const map = new Map();
-  [...data.episodes].sort(sortEpisodes).forEach((episode) => {
-    (episode.characterIds || []).forEach((personId) => {
-      if (!map.has(personId)) map.set(personId, Number(episode.number || 0));
-    });
-  });
-  return map;
+  return lookupIndexes.appearanceOrder || new Map();
 }
 
 function editorShell(newButtonId, newButtonLabel, pickButtons, formId) {
@@ -2924,6 +3097,27 @@ function upsert(list, oldId, next) {
 }
 
 function refreshLookupIndexes() {
+  const episodesByPerson = new Map();
+  const episodesByTechnique = new Map();
+  const techniquesByPerson = new Map();
+  const appearanceOrder = new Map();
+  const pushToMap = (map, id, value) => {
+    if (!id) return;
+    if (!map.has(id)) map.set(id, []);
+    map.get(id).push(value);
+  };
+  data.episodes.forEach((episode) => {
+    const characterIds = new Set([...(episode.characterIds || []), ...(episode.characterAppearances || []).map((entry) => entry.characterId)]);
+    characterIds.forEach((id) => {
+      if (id && !appearanceOrder.has(id)) appearanceOrder.set(id, Number(episode.number || 0));
+    });
+    characterIds.forEach((id) => pushToMap(episodesByPerson, id, episode));
+    (episode.techniqueIds || []).forEach((id) => pushToMap(episodesByTechnique, id, episode));
+  });
+  episodesByPerson.forEach((episodes) => episodes.sort(sortEpisodes));
+  episodesByTechnique.forEach((episodes) => episodes.sort(sortEpisodes));
+  data.techniques.forEach((technique) => pushToMap(techniquesByPerson, technique.ownerId, technique));
+  techniquesByPerson.forEach((techniques) => techniques.sort((a, b) => localizedName(a).localeCompare(localizedName(b), "ko")));
   lookupIndexes = {
     people: new Map(data.people.map((person) => [person.id, person])),
     techniques: new Map(data.techniques.map((technique) => [technique.id, technique])),
@@ -2934,7 +3128,11 @@ function refreshLookupIndexes() {
     originCountries: new Map(data.originCountries.map((country) => [country.id, country])),
     organizations: new Map(data.organizations.map((org) => [org.id, org])),
     originRegions: new Map(data.originRegions.map((region) => [region.id, region])),
-    devilFruitTypes: new Map(data.devilFruitTypes.map((type) => [type.id, type]))
+    devilFruitTypes: new Map(data.devilFruitTypes.map((type) => [type.id, type])),
+    episodesByPerson,
+    episodesByTechnique,
+    techniquesByPerson,
+    appearanceOrder
   };
 }
 
@@ -3254,6 +3452,7 @@ function saveData() {
 
 function invalidateDataCaches() {
   quizCardCache.clear();
+  listItemCache.clear();
   quizSession = null;
   quizAnswerDraft = "";
   quizStudyFlipped = false;

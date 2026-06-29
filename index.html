@@ -27,6 +27,7 @@
           <button class="tab" data-view="timelines" type="button">연표</button>
           <button class="tab" data-view="quiz" type="button">카드 퀴즈</button>
           <button class="tab" data-view="compare" type="button">비교 게임</button>
+          <button class="tab" data-view="search" type="button">통합 검색</button>
           <button class="tab" data-view="jobs" type="button">직업</button>
           <button class="tab" data-view="stats" type="button">인물 정렬</button>
           <button class="tab" data-view="bloodTypes" type="button">혈액형</button>
@@ -53,6 +54,7 @@
               <option value="timelines">연표</option>
               <option value="quiz">카드 퀴즈</option>
               <option value="compare">비교 게임</option>
+              <option value="search">통합 검색</option>
               <option value="jobs">직업</option>
               <option value="stats">인물 정렬</option>
               <option value="bloodTypes">혈액형</option>
@@ -134,6 +136,15 @@
         </section>
       </main>
     </div>
+
+    <nav class="bottom-nav" aria-label="빠른 이동">
+      <button class="bottom-nav-button" data-mobile-nav="people" type="button"><span>사람</span></button>
+      <button class="bottom-nav-button" data-mobile-nav="episodes" type="button"><span>화수</span></button>
+      <button class="bottom-nav-button" data-mobile-nav="techniques" type="button"><span>기술</span></button>
+      <button class="bottom-nav-button" data-mobile-nav="search" type="button"><span>검색</span></button>
+      <button class="bottom-nav-button" data-mobile-nav="quiz" type="button"><span>퀴즈</span></button>
+      <button class="bottom-nav-button edit" data-mobile-nav="editor" type="button"><span>수정</span></button>
+    </nav>
 
     <script src="./data.js"></script>
     <script src="./app.js"></script>

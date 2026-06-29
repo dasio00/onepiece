@@ -343,6 +343,14 @@ textarea {
   font-size: 26px;
 }
 
+.person-name-alt {
+  display: block;
+  margin: -2px 0 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
 .person-detail-head {
   display: grid;
   grid-template-columns: 180px minmax(0, 1fr);
@@ -478,6 +486,10 @@ textarea {
 .result strong {
   display: block;
   margin-bottom: 4px;
+}
+
+.result .person-name-alt {
+  margin: -2px 0 4px;
 }
 
 .result span {

@@ -284,7 +284,7 @@ function getItems(query = "") {
   if (currentView === "techniques") {
     return data.techniques.map((technique) => {
       const owner = findPerson(technique.ownerId);
-      return item(technique.id, localizedName(technique), owner ? `사용자: ${owner.name}` : "사용자 미등록", technique, `${localizedSearchText(technique)} ${owner?.name || ""}`);
+      return item(technique.id, localizedName(technique), owner ? `사용자: ${personDisplayName(owner)}` : "사용자 미등록", technique, `${localizedSearchText(technique)} ${personNameSearchText(owner)}`);
     });
   }
   if (currentView === "people") return sortedPeople(personSortMode).map(personToItem);
@@ -308,14 +308,14 @@ function getItems(query = "") {
   if (currentView === "timelines") {
     return [
       item("combined", "통합 연표", `${getCombinedTimeline().length}개 연도`, { mode: "combined" }, getCombinedTimeline().map((group) => group.year).join(" ")),
-      ...data.people.map((person) => item(person.id, person.name, `연표 ${person.timeline.length}개`, person, `${person.name} ${person.aliases} ${person.timeline.map((entry) => `${timelineYear(entry)} ${timelineContent(entry)}`).join(" ")}`))
+      ...data.people.map((person) => item(person.id, personDisplayName(person), `연표 ${person.timeline.length}개`, person, `${personNameSearchText(person)} ${person.aliases} ${person.timeline.map((entry) => `${timelineYear(entry)} ${timelineContent(entry)}`).join(" ")}`))
     ];
   }
   if (currentView === "quiz") return getQuizCategories();
   if (currentView === "compare") return getCompareGameItems();
   if (currentView === "search") return getGlobalSearchItems();
   if (currentView === "jobs") return groupBy(data.people, "job").map((group) => groupToItem(group, "명"));
-  if (currentView === "stats") return sortedStatPeople().map((person) => ({ ...personToItem(person), title: `${person.name} · ${statValueLabel(person)}` }));
+  if (currentView === "stats") return sortedStatPeople().map((person) => ({ ...personToItem(person), title: `${personDisplayName(person)} · ${statValueLabel(person)}` }));
   if (currentView === "bloodTypes") {
     return data.bloodTypes.map((type) => groupToItem({ id: type, name: type, people: data.people.filter((person) => person.bloodType === type) }, "명"));
   }
@@ -413,10 +413,10 @@ function getGlobalSearchItems() {
     const fruit = findFruit(person.devilFruitId);
     return item(
       `person:${person.id}`,
-      person.name,
+      personDisplayName(person),
       `인물 · ${organizationName(person.organization)} · ${personJobLabel(person)}`,
       { resultType: "person", entity: person, imageUrl: person.imageUrl },
-      `${person.name} ${person.nameKo || ""} ${person.nameEn || ""} ${person.sourceNameJa || ""} ${person.sourceNameEn || ""} ${person.wikiTitle || ""} ${person.aliases} ${personJobSearchText(person)} ${person.birthday} ${person.bloodType} ${registeredOriginLabel(person)} ${organizationName(person.organization)} ${subOrganizationName(person.subOrganization)} ${fruit ? localizedSearchText(fruit) : ""}`
+      `${personNameSearchText(person)} ${person.aliases} ${personJobSearchText(person)} ${person.birthday} ${person.bloodType} ${registeredOriginLabel(person)} ${organizationName(person.organization)} ${subOrganizationName(person.subOrganization)} ${fruit ? localizedSearchText(fruit) : ""}`
     );
   });
   const techniques = data.techniques.map((technique) => {
@@ -424,9 +424,9 @@ function getGlobalSearchItems() {
     return item(
       `technique:${technique.id}`,
       localizedName(technique),
-      `기술 · ${owner?.name || "사용자 미등록"}`,
+      `기술 · ${owner ? personDisplayName(owner) : "사용자 미등록"}`,
       { resultType: "technique", entity: technique },
-      `${localizedSearchText(technique)} ${owner?.name || ""} ${technique.note || ""}`
+      `${localizedSearchText(technique)} ${personNameSearchText(owner)} ${technique.note || ""}`
     );
   });
   const fruits = data.devilFruits.map((fruit) => {
@@ -434,9 +434,9 @@ function getGlobalSearchItems() {
     return item(
       `fruit:${fruit.id}`,
       localizedName(fruit),
-      `악마의 열매 · ${devilFruitTypeName(fruit.type)} · ${user?.name || "능력자 미등록"}`,
+      `악마의 열매 · ${devilFruitTypeName(fruit.type)} · ${user ? personDisplayName(user) : "능력자 미등록"}`,
       { resultType: "fruit", entity: fruit },
-      `${localizedSearchText(fruit)} ${fruitDescriptionText(fruit)} ${devilFruitTypeName(fruit.type)} ${user?.name || ""}`
+      `${localizedSearchText(fruit)} ${fruitDescriptionText(fruit)} ${devilFruitTypeName(fruit.type)} ${personNameSearchText(user)}`
     );
   });
   const episodes = data.episodes.map((episode) => {
@@ -467,7 +467,7 @@ function renderGlobalSearchDetail(result) {
 
 function episodeToItem(episode) {
   const subtitle = episodeTitleSubtext(episode);
-  const characterNames = (episode.characterIds || []).map(findPerson).filter(Boolean).map((person) => person.name).join(" ");
+  const characterNames = (episode.characterIds || []).map(findPerson).filter(Boolean).map(personNameSearchText).join(" ");
   const techniqueNames = (episode.techniqueIds || []).map(findTechnique).filter(Boolean).map(localizedSearchText).join(" ");
   return item(
     episode.id,
@@ -543,7 +543,7 @@ function renderPersonNameLink(person, appearanceType = "") {
   const label = appearanceTypeLabel(appearanceType);
   return `
     <button class="name-link" type="button" data-person-link="${escapeAttribute(person.id)}">
-      ${escapeHtml(person.name)}
+      ${escapeHtml(personDisplayName(person))}
       ${label ? `<span class="mini-chip">${escapeHtml(label)}</span>` : ""}
     </button>
   `;
@@ -592,6 +592,48 @@ function localizedName(entry) {
   return [entry?.nameKo, entry?.name, entry?.nameJa, entry?.nameEn].find(hasRegisteredText) || "이름 미등록";
 }
 
+function personDisplayName(person) {
+  return [person?.nameKo, person?.name, person?.sourceNameJa, person?.sourceNameEn, person?.nameEn].find(hasRegisteredText) || "이름 미등록";
+}
+
+function personOriginalNameText(person) {
+  const current = personDisplayName(person);
+  return Array.from(new Set([
+    person?.sourceNameJa,
+    person?.sourceNameEn,
+    person?.nameJa,
+    person?.nameEn,
+    person?.name
+  ].filter(hasRegisteredText).filter((name) => name !== current))).join(" / ");
+}
+
+function personNameSearchText(person) {
+  if (!person) return "";
+  return [
+    personDisplayName(person),
+    person.nameKo,
+    person.name,
+    person.nameJa,
+    person.nameEn,
+    person.sourceNameJa,
+    person.sourceNameEn,
+    person.wikiTitle
+  ].filter(hasRegisteredText).join(" ");
+}
+
+function personAnswerVariants(person) {
+  if (!person) return [];
+  return Array.from(new Set([
+    personDisplayName(person),
+    person.nameKo,
+    person.name,
+    person.nameJa,
+    person.nameEn,
+    person.sourceNameJa,
+    person.sourceNameEn
+  ].filter(hasRegisteredText)));
+}
+
 function localizedSearchText(entry) {
   return [entry?.nameKo, entry?.name, entry?.nameJa, entry?.nameEn, entry?.descriptionKo, entry?.descriptionEn, entry?.description]
     .filter(hasRegisteredText)
@@ -633,7 +675,7 @@ function renderTechniqueResult(technique) {
   return `
     <button class="result result-button" type="button" data-technique-link="${escapeAttribute(technique.id)}">
       <strong>${escapeHtml(localizedName(technique))}</strong>
-      <span>${escapeHtml(owner?.name || "사용자 미등록")}</span>
+      <span>${escapeHtml(owner ? personDisplayName(owner) : "사용자 미등록")}</span>
     </button>
   `;
 }
@@ -644,7 +686,7 @@ function renderTechniqueDetail(technique) {
   detail.innerHTML = `
     <h3>${escapeHtml(localizedName(technique))}</h3>
     <div class="meta">
-      <span class="chip">사용자: ${escapeHtml(owner?.name || "미등록")}</span>
+      <span class="chip">사용자: ${escapeHtml(owner ? personDisplayName(owner) : "미등록")}</span>
       <span class="chip">${episodes.length}개 화수</span>
       ${renderLocalizedNameChips(technique)}
     </div>
@@ -655,8 +697,10 @@ function renderTechniqueDetail(technique) {
 }
 
 function renderPersonDetail(person) {
+  const displayName = personDisplayName(person);
+  const originalName = personOriginalNameText(person);
   const image = person.imageUrl
-    ? `<img class="portrait" src="${escapeAttribute(person.imageUrl)}" alt="${escapeAttribute(person.name)} 이미지" decoding="async" />`
+    ? `<img class="portrait" src="${escapeAttribute(person.imageUrl)}" alt="${escapeAttribute(displayName)} 이미지" decoding="async" />`
     : `<div class="portrait placeholder">이미지 없음</div>`;
   const fruit = findFruit(person.devilFruitId);
   const episodes = getEpisodesForPerson(person.id);
@@ -668,7 +712,8 @@ function renderPersonDetail(person) {
     <div class="person-detail-head">
       ${image}
       <div>
-        <h3>${escapeHtml(person.name)}</h3>
+        <h3>${escapeHtml(displayName)}</h3>
+        ${originalName ? `<p class="person-name-alt">${escapeHtml(originalName)}</p>` : ""}
         <div class="data-status-row">${renderPersonStatusBadges(person, fruit, techniques, episodes)}</div>
         ${renderPersonPanelTabs(activePersonPanel)}
       </div>
@@ -708,6 +753,7 @@ function renderPersonBasicPanel(person) {
     <div class="quick-section">
       <div class="quick-section-head"><strong>태그</strong></div>
       <div class="meta">
+        ${quickChip("nameKo", "한국어 이름", person.nameKo || "미등록")}
         ${quickChip("aliases", "별명", person.aliases || "미등록")}
         ${quickChip("organization", "조직", organizationName(person.organization))}
         ${quickChip("subOrganization", "세부 조직", subOrganizationName(person.subOrganization))}
@@ -969,6 +1015,14 @@ function openPersonQuickEdit(person, kind) {
 }
 
 function renderPersonQuickEditForm(person, kind) {
+  if (kind === "nameKo") {
+    return `
+      <form class="quick-edit-form">
+        ${field("nameKo", "한국어 이름", person.nameKo || "")}
+        ${quickEditActions()}
+      </form>
+    `;
+  }
   if (kind === "aliases") {
     return `
       <form class="quick-edit-form">
@@ -1059,6 +1113,7 @@ function renderPersonQuickEditForm(person, kind) {
   if (kind === "tags") {
     return `
       <form class="quick-edit-form">
+        ${field("nameKo", "한국어 이름", person.nameKo || "")}
         ${field("aliases", "별명", person.aliases || "")}
         ${field("job", "직업 대분류", person.job || "")}
         ${field("jobDetail", "세부 직업", person.jobDetail || "")}
@@ -1123,6 +1178,7 @@ function quickEditActions() {
 }
 
 function savePersonQuickEdit(person, kind, form) {
+  if (kind === "nameKo") person.nameKo = value(form, "nameKo");
   if (kind === "aliases") person.aliases = value(form, "aliases");
   if (kind === "job") {
     person.job = value(form, "job");
@@ -1149,6 +1205,7 @@ function savePersonQuickEdit(person, kind, form) {
   }
   if (kind === "tags") {
     Object.assign(person, {
+      nameKo: value(form, "nameKo"),
       aliases: value(form, "aliases"),
       job: value(form, "job"),
       jobCategory: value(form, "job"),
@@ -1187,7 +1244,7 @@ function savePersonQuickEdit(person, kind, form) {
 function renderTimelineDetail(person) {
   if (person.mode === "combined") return renderCombinedTimelineDetail();
   detail.innerHTML = `
-    <h3>${escapeHtml(person.name)} 연표</h3>
+    <h3>${escapeHtml(personDisplayName(person))} 연표</h3>
     <p class="note">수정 탭의 인물 수정에서 년도와 내용을 추가할 수 있습니다.</p>
     ${renderTimelineBlock(person.timeline)}
   `;
@@ -1530,7 +1587,7 @@ function renderCompareCard(person, metricId, role, revealValue, disabled = false
     <button class="compare-card" type="button" data-compare-choice="${escapeAttribute(person.id)}" ${disabled ? "disabled" : ""}>
       <span class="mini-chip">${escapeHtml(role)}</span>
       ${image}
-      <strong>${escapeHtml(person.name)}</strong>
+      <strong>${escapeHtml(personDisplayName(person))}</strong>
       <span>${escapeHtml(organizationName(person.organization))} · ${escapeHtml(personJobLabel(person))}</span>
       <b class="compare-value">${revealValue ? escapeHtml(compareValueLabel(value, metricId)) : "?"}</b>
     </button>
@@ -1611,8 +1668,8 @@ function chooseComparePerson(personId) {
     metric: metricId,
     correct,
     tie,
-    winnerName: winner.name,
-    loserName: loser.name,
+    winnerName: personDisplayName(winner),
+    loserName: personDisplayName(loser),
     winnerValue,
     loserValue,
     streak: nextStreak
@@ -1834,7 +1891,7 @@ function renderPeopleEditor() {
         </select></label>
         <span class="edit-count">${hasMorePeople ? `${visiblePeople.length}/${people.length}명 표시` : `${people.length}명`}</span>
       </div>
-      ${visiblePeople.map((person) => pickButton("person", person.id, person.name, `${organizationName(person.organization)} · ${subOrganizationName(person.subOrganization)}`, person.imageUrl)).join("")}
+      ${visiblePeople.map((person) => pickButton("person", person.id, personDisplayName(person), `${organizationName(person.organization)} · ${subOrganizationName(person.subOrganization)}`, person.imageUrl)).join("")}
       ${hasMorePeople ? `<button class="list-more-button" id="morePeopleButton" type="button">더 보기 <span>${Math.min(people.length - visiblePeople.length, EDITOR_PEOPLE_BATCH_SIZE)}명</span></button>` : ""}
     `,
     "personFormWrap"
@@ -1871,6 +1928,7 @@ function renderPersonForm(person = null) {
       ${formHead(isNew ? "새 인물 추가" : "인물 수정", "deletePersonButton", isNew)}
       ${field("id", "고유 ID", draft.id)}
       ${field("name", "이름", draft.name)}
+      ${field("nameKo", "한국어 이름", draft.nameKo || "")}
       ${field("aliases", "별명", draft.aliases)}
       ${field("job", "직업 대분류", draft.job)}
       ${field("jobDetail", "세부 직업", draft.jobDetail || "")}
@@ -1932,13 +1990,13 @@ function renderPersonForm(person = null) {
     document.querySelector("#timelineRows").insertAdjacentHTML("beforeend", renderTimelineRow({ year: "", content: "" }));
   });
   form.elements.imageUrl.addEventListener("input", () => {
-    updatePersonImagePreview(form.elements.imageUrl.value, value(form, "name"));
+    updatePersonImagePreview(form.elements.imageUrl.value, value(form, "nameKo") || value(form, "name"));
   });
   form.elements.imageFile.addEventListener("change", async () => {
     const file = form.elements.imageFile.files[0];
     if (file) {
       form.elements.imageUrl.value = await fileToDataUrl(file);
-      updatePersonImagePreview(form.elements.imageUrl.value, value(form, "name"));
+      updatePersonImagePreview(form.elements.imageUrl.value, value(form, "nameKo") || value(form, "name"));
     }
   });
   form.addEventListener("submit", (event) => {
@@ -1982,7 +2040,7 @@ function renderTechniqueForm(technique = null) {
       ${formHead(isNew ? "새 기술 추가" : "기술 수정", "deleteTechniqueButton", isNew)}
       ${field("id", "고유 ID", draft.id)}
       ${field("name", "기술명", draft.name)}
-      <label>사용자<select name="ownerId"><option value="">미등록</option>${data.people.map((person) => option(person.id, person.name, draft.ownerId)).join("")}</select></label>
+      <label>사용자<select name="ownerId"><option value="">미등록</option>${data.people.map((person) => option(person.id, personDisplayName(person), draft.ownerId)).join("")}</select></label>
       <label>메모<textarea name="note" rows="4">${escapeHtml(draft.note || "")}</textarea></label>
       <div class="form-actions"><button class="primary" type="submit">저장</button></div>
     </form>
@@ -2036,7 +2094,7 @@ function renderFruitForm(fruit = null) {
       </select></label>
       ${field("model", "모델", draft.model || "")}
       <label class="inline-check"><input name="awakened" type="checkbox" ${draft.awakened ? "checked" : ""} /> 각성</label>
-      <label>현재 능력자<select name="currentUserId"><option value="">미등록</option>${data.people.map((person) => option(person.id, person.name, draft.currentUserId)).join("")}</select></label>
+      <label>현재 능력자<select name="currentUserId"><option value="">미등록</option>${data.people.map((person) => option(person.id, personDisplayName(person), draft.currentUserId)).join("")}</select></label>
       ${checkboxList("previousUserIds", "선대 능력자", data.people, draft.previousUserIds)}
       <label>설명<textarea name="description" rows="4">${escapeHtml(draft.description || "")}</textarea></label>
       <div class="form-actions"><button class="primary" type="submit">저장</button></div>
@@ -2318,6 +2376,7 @@ function formToPerson(form, draft) {
   return {
     id: value(form, "id") || makeId("person"),
     name: value(form, "name"),
+    nameKo: value(form, "nameKo"),
     aliases: value(form, "aliases"),
     job: value(form, "job"),
     jobCategory: value(form, "job"),
@@ -2352,11 +2411,13 @@ function formToPerson(form, draft) {
 
 function renderPersonResult(person) {
   const image = person.imageUrl ? `<img class="result-thumb" src="${escapeAttribute(person.imageUrl)}" alt="" loading="lazy" decoding="async" />` : "";
+  const originalName = personOriginalNameText(person);
   return `
     <div class="result person-result">
       ${image}
       <div>
-        <strong>${escapeHtml(person.name)}</strong>
+        <strong>${escapeHtml(personDisplayName(person))}</strong>
+        ${originalName ? `<small class="person-name-alt">${escapeHtml(originalName)}</small>` : ""}
         <span>${escapeHtml(organizationName(person.organization))} · ${escapeHtml(subOrganizationName(person.subOrganization))} · ${escapeHtml(personJobLabel(person))} · ${person.age}세 · ${currentHeight(person)}cm · ${formatBounty(currentBounty(person))}</span>
       </div>
     </div>
@@ -2370,7 +2431,7 @@ function renderPersonFormImage(person) {
   return `
     <div class="person-form-visual" id="personImagePreview">
       <img class="person-form-thumb" src="${escapeAttribute(person.imageUrl)}" alt="" loading="lazy" decoding="async" />
-      <span>${escapeHtml(person.name || "이름 미등록")}</span>
+      <span>${escapeHtml(personDisplayName(person))}</span>
     </div>
   `;
 }
@@ -2440,10 +2501,11 @@ function ensureQuizCards() {
       const year = timelineYear(entry);
       const content = timelineContent(entry);
       if (year && content && person.imageUrl) {
+        const displayName = personDisplayName(person);
         quizCardCache.get("timeline").push({
           category: "timeline",
           personId: person.id,
-          front: `${person.name}: ${content}은 언제?`,
+          front: `${displayName}: ${content}은 언제?`,
           back: year,
           acceptedAnswers: [year],
           imageUrl: person.imageUrl || ""
@@ -2458,8 +2520,8 @@ function ensureQuizCards() {
         category: "fruit",
         personId: currentUser.id,
         front: `${localizedName(fruit)}의 현재 능력자는?`,
-        back: currentUser.name,
-        acceptedAnswers: [currentUser.name],
+        back: personDisplayName(currentUser),
+        acceptedAnswers: personAnswerVariants(currentUser),
         imageUrl: currentUser.imageUrl || ""
       });
     }
@@ -2475,62 +2537,63 @@ function buildPersonQuizCard(category, person, fruit) {
   const bounty = currentBounty(person);
   const origin = registeredOriginLabel(person);
   const organization = registeredOrganizationLabel(person);
+  const displayName = personDisplayName(person);
   const definitions = {
-    name: imageUrl && person.name ? {
+    name: imageUrl && hasRegisteredText(displayName) ? {
       front: "이 인물의 이름은?",
-      back: person.name,
-      acceptedAnswers: [person.name]
+      back: displayName,
+      acceptedAnswers: personAnswerVariants(person)
     } : null,
     age: age > 0 ? {
-      front: `${person.name}의 나이는?`,
+      front: `${displayName}의 나이는?`,
       back: `${age}세`,
       acceptedAnswers: [String(age), `${age}세`, `${age}살`],
       numericAnswer: age
     } : null,
     height: height > 0 ? {
-      front: `${person.name}의 현재 키는?`,
+      front: `${displayName}의 현재 키는?`,
       back: `${height}cm`,
       acceptedAnswers: [String(height), `${height}cm`, `${height}센티`, `${height}센티미터`],
       numericAnswer: height
     } : null,
     bounty: bounty > 0 ? {
-      front: `${person.name}의 현재 현상금은?`,
+      front: `${displayName}의 현재 현상금은?`,
       back: formatBounty(bounty),
       acceptedAnswers: bountyAnswerVariants(bounty),
       numericAnswer: bounty
     } : null,
     bloodType: hasRegisteredText(person.bloodType) ? {
-      front: `${person.name}의 혈액형은?`,
+      front: `${displayName}의 혈액형은?`,
       back: person.bloodType,
       acceptedAnswers: [person.bloodType]
     } : null,
     birthday: hasRegisteredText(person.birthday) ? {
-      front: `${person.name}의 생일은?`,
+      front: `${displayName}의 생일은?`,
       back: person.birthday,
       acceptedAnswers: birthdayAnswerVariants(person.birthday)
     } : null,
     origin: origin ? {
-      front: `${person.name}의 출신지는?`,
+      front: `${displayName}의 출신지는?`,
       back: origin,
       acceptedAnswers: origin.split("/").map((part) => part.trim()).filter(Boolean).concat(origin)
     } : null,
     alias: hasRegisteredText(person.aliases) ? {
-      front: `${person.name}의 별명은?`,
+      front: `${displayName}의 별명은?`,
       back: person.aliases,
       acceptedAnswers: [person.aliases]
     } : null,
     likes: hasRegisteredText(person.likes) ? {
-      front: `${person.name}이 좋아하는 것은?`,
+      front: `${displayName}이 좋아하는 것은?`,
       back: person.likes,
       acceptedAnswers: [person.likes]
     } : null,
     fruit: fruit?.name ? {
-      front: `${person.name}이 먹은 악마의 열매는?`,
+      front: `${displayName}이 먹은 악마의 열매는?`,
       back: localizedName(fruit),
       acceptedAnswers: localizedAnswerVariants(fruit)
     } : null,
     organization: organization ? {
-      front: `${person.name}의 소속은?`,
+      front: `${displayName}의 소속은?`,
       back: organization,
       acceptedAnswers: organization.split("/").map((part) => part.trim()).filter(Boolean).concat(organization)
     } : null
@@ -2732,15 +2795,15 @@ function flipQuizCard() {
 function personToItem(person) {
   return item(
     person.id,
-    person.name,
+    personDisplayName(person),
     `${organizationName(person.organization)} / ${subOrganizationName(person.subOrganization)} / ${personJobLabel(person)}`,
     person,
-    `${person.name} ${person.nameKo || ""} ${person.nameEn || ""} ${person.sourceNameJa || ""} ${person.sourceNameEn || ""} ${person.wikiTitle || ""} ${person.aliases} ${personJobSearchText(person)} ${person.origin} ${originRegionName(person.originRegion)} ${originCountryName(person.originCountry)} ${person.birthday} ${person.bloodType} ${organizationName(person.organization)} ${subOrganizationName(person.subOrganization)} ${findFruit(person.devilFruitId)?.name || ""}`
+    `${personNameSearchText(person)} ${person.aliases} ${personJobSearchText(person)} ${person.origin} ${originRegionName(person.originRegion)} ${originCountryName(person.originCountry)} ${person.birthday} ${person.bloodType} ${organizationName(person.organization)} ${subOrganizationName(person.subOrganization)} ${findFruit(person.devilFruitId)?.name || ""}`
   );
 }
 
 function groupToItem(group, unit) {
-  return item(group.id, group.name, `${group.people.length}${unit}`, group, `${group.name} ${group.people.map((person) => person.name).join(" ")}`);
+  return item(group.id, group.name, `${group.people.length}${unit}`, group, `${group.name} ${group.people.map(personNameSearchText).join(" ")}`);
 }
 
 function item(id, title, sub, raw, searchText) {
@@ -2771,7 +2834,7 @@ function sortedPeople(key = "name") {
       const bValue = valueFor(b);
       const aMissing = !Number.isFinite(aValue) || aValue <= 0;
       const bMissing = !Number.isFinite(bValue) || bValue <= 0;
-      if (aMissing && bMissing) return a.name.localeCompare(b.name, "ko");
+      if (aMissing && bMissing) return personDisplayName(a).localeCompare(personDisplayName(b), "ko");
       if (aMissing) return 1;
       if (bMissing) return -1;
       return direction === "desc" ? bValue - aValue : aValue - bValue;
@@ -2787,7 +2850,7 @@ function sortedPeople(key = "name") {
   if (key === "bountyDesc") return numberSort(currentBounty, "desc");
   if (key === "birthday") return numberSort(birthdaySortValue);
   if (key === "id") return people.sort((a, b) => String(a.id || "").localeCompare(String(b.id || ""), "ko", { numeric: true }));
-  return people.sort((a, b) => a.name.localeCompare(b.name, "ko"));
+  return people.sort((a, b) => personDisplayName(a).localeCompare(personDisplayName(b), "ko"));
 }
 
 function sortedStatPeople() {
@@ -2796,7 +2859,7 @@ function sortedStatPeople() {
     const bValue = statSortValue(b);
     const aMissing = !Number.isFinite(aValue) || aValue <= 0;
     const bMissing = !Number.isFinite(bValue) || bValue <= 0;
-    if (aMissing && bMissing) return a.name.localeCompare(b.name, "ko");
+    if (aMissing && bMissing) return personDisplayName(a).localeCompare(personDisplayName(b), "ko");
     if (aMissing) return 1;
     if (bMissing) return -1;
     return statDirection === "desc" ? bValue - aValue : aValue - bValue;
@@ -2942,7 +3005,7 @@ function renderSelectedCharacterChips(ids = []) {
     const person = findPerson(id);
     return `
       <button class="selected-person-chip" type="button" data-remove-character="${escapeAttribute(id)}">
-        ${escapeHtml(person?.name || id)} <span>삭제</span>
+        ${escapeHtml(person ? personDisplayName(person) : id)} <span>삭제</span>
       </button>
     `;
   }).join("") || `<p class="picker-empty">아직 선택된 인물이 없습니다.</p>`;
@@ -2962,7 +3025,7 @@ function renderCharacterSearchResults(selectedIds = [], query = "") {
 
   return results.map((person) => `
     <button class="picker-result" type="button" data-add-character="${escapeAttribute(person.id)}">
-      <strong>${escapeHtml(person.name)}</strong>
+      <strong>${escapeHtml(personDisplayName(person))}</strong>
       <span>${escapeHtml(organizationName(person.organization))} · ${escapeHtml(subOrganizationName(person.subOrganization))} · ${escapeHtml(personJobLabel(person))}</span>
     </button>
   `).join("") || `<p class="picker-empty">검색 결과가 없습니다.</p>`;
@@ -2973,7 +3036,7 @@ function checkboxList(name, label, people, selectedIds) {
     <fieldset class="check-list">
       <legend>${escapeHtml(label)}</legend>
       ${people.map((person) => `
-        <label><input type="checkbox" name="${escapeAttribute(name)}" value="${escapeAttribute(person.id)}" ${selectedIds.includes(person.id) ? "checked" : ""} /> ${escapeHtml(person.name)}</label>
+        <label><input type="checkbox" name="${escapeAttribute(name)}" value="${escapeAttribute(person.id)}" ${selectedIds.includes(person.id) ? "checked" : ""} /> ${escapeHtml(personDisplayName(person))}</label>
       `).join("")}
     </fieldset>
   `;
@@ -3140,6 +3203,7 @@ function blankPerson() {
   return {
     id: makeId("person"),
     name: "",
+    nameKo: "",
     aliases: "",
     job: "",
     jobCategory: "",
@@ -3272,7 +3336,7 @@ function getCombinedTimeline() {
     person.timeline.forEach((entry) => {
       const year = timelineYear(entry) || "미등록";
       if (!map.has(year)) map.set(year, []);
-      map.get(year).push({ personName: person.name, content: timelineContent(entry) });
+      map.get(year).push({ personName: personDisplayName(person), content: timelineContent(entry) });
     });
   });
   return Array.from(map.entries()).map(([year, events]) => ({ year, events }));
@@ -3332,6 +3396,7 @@ function normalizeInPlace(target) {
     const basePerson = basePeopleById.get(person.id) || {};
     const merged = {
       aliases: "",
+      nameKo: "",
       jobCategory: "",
       jobDetail: "",
       jobEn: "",
@@ -3354,7 +3419,7 @@ function normalizeInPlace(target) {
     };
     fillFromBase(merged, person, basePerson, [
       "aliases", "job", "jobCategory", "jobDetail", "jobEn", "age", "birthday",
-      "heightCm", "heightHistory", "bounty", "bountyHistory", "bloodType",
+      "nameKo", "heightCm", "heightHistory", "bounty", "bountyHistory", "bloodType",
       "originRegion", "originCountry", "origin", "description", "wikiTitle", "wikiUrl"
     ]);
     if ((blank(person.organization) || person.organization === "etc") && !blank(basePerson.organization)) merged.organization = basePerson.organization;

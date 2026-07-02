@@ -1339,32 +1339,34 @@ function renderDevilFruitTypeDetail(type) {
 
 function renderZoanFruitTypeDetail(type) {
   const fruits = [...type.fruits].sort(sortZoanFruits);
-  const groups = buildZoanSubtypeGroups(fruits);
-  const groupKeys = new Set(["all", ...groups.map((group) => group.key)]);
+  const families = buildZoanFamilies(fruits);
+  const groupKeys = new Set(["all", ...families.map((family) => family.key)]);
   if (!groupKeys.has(activeFruitGroupKey)) activeFruitGroupKey = "all";
-  const visibleGroups = activeFruitGroupKey === "all"
-    ? groups
-    : groups.filter((group) => group.key === activeFruitGroupKey);
-  const visibleFruits = visibleGroups.flatMap((group) => group.families.flatMap((family) => family.fruits));
+  const visibleFamilies = activeFruitGroupKey === "all"
+    ? families
+    : families.filter((family) => family.key === activeFruitGroupKey);
+  const visibleFruits = visibleFamilies.flatMap((family) => family.fruits);
   const selectedFruit = visibleFruits.find((fruit) => fruit.id === activeFruitId) || visibleFruits[0] || fruits[0];
   if (selectedFruit) activeFruitId = selectedFruit.id;
+  const subtypeCounts = zoanSubtypeCounts(fruits);
 
   detail.innerHTML = `
     <h3>${escapeHtml(type.name)}</h3>
     <div class="meta">
       <span class="chip">열매 ${fruits.length}개</span>
-      ${groups.map((group) => `<span class="chip">${escapeHtml(group.name)} ${group.count}개</span>`).join("")}
+      <span class="chip">계열 ${families.length}개</span>
+      ${subtypeCounts.map(([key, count]) => `<span class="chip">${escapeHtml(zoanSubtypeName(key))} ${count}개</span>`).join("")}
     </div>
     <div class="sub-selector fruit-group-selector">
       <button class="sub-card ${activeFruitGroupKey === "all" ? "active" : ""}" data-fruit-group="all" type="button">전체</button>
-      ${groups.map((group) => `
-        <button class="sub-card ${activeFruitGroupKey === group.key ? "active" : ""}" data-fruit-group="${escapeAttribute(group.key)}" type="button">
-          ${escapeHtml(group.name)} <span>${group.count}</span>
+      ${families.map((family) => `
+        <button class="sub-card ${activeFruitGroupKey === family.key ? "active" : ""}" data-fruit-group="${escapeAttribute(family.key)}" type="button">
+          ${escapeHtml(family.name)} <span>${family.fruits.length}</span>
         </button>
       `).join("")}
     </div>
     <div class="fruit-family-stack">
-      ${visibleGroups.map(renderZoanSubtypeGroup).join("") || renderEmptyResult("등록된 동물계 열매가 없습니다.")}
+      ${visibleFamilies.map(renderZoanFamily).join("") || renderEmptyResult("등록된 동물계 열매가 없습니다.")}
     </div>
     ${selectedFruit ? renderFruitDetail(selectedFruit) : ""}
   `;
@@ -1383,23 +1385,9 @@ function renderZoanFruitTypeDetail(type) {
   });
 }
 
-function renderZoanSubtypeGroup(group) {
-  return `
-    <section class="fruit-group">
-      <div class="fruit-group-head">
-        <strong>${escapeHtml(group.name)}</strong>
-        <span>${group.count}개 열매 · ${group.families.length}개 계열</span>
-      </div>
-      <div class="fruit-family-list">
-        ${group.families.map(renderZoanFamily).join("")}
-      </div>
-    </section>
-  `;
-}
-
 function renderZoanFamily(family) {
   return `
-    <section class="fruit-family">
+    <section class="fruit-group">
       <div class="fruit-family-title">
         <strong>${escapeHtml(family.name)}</strong>
         <span>${family.fruits.length > 1 ? `${family.fruits.length}개 모델` : zoanFruitVariantLabel(family.fruits[0])}</span>
@@ -1408,7 +1396,7 @@ function renderZoanFamily(family) {
         ${family.fruits.map((fruit) => `
           <button class="sub-card fruit-model-card ${activeFruitId === fruit.id ? "active" : ""}" data-fruit-id="${escapeAttribute(fruit.id)}" type="button">
             <strong>${escapeHtml(zoanFruitVariantLabel(fruit))}</strong>
-            <span>${escapeHtml(zoanFruitUserLabel(fruit))}</span>
+            <span>${escapeHtml(zoanSubtypeName(zoanSubtypeKey(fruit)))} · ${escapeHtml(zoanFruitUserLabel(fruit))}</span>
           </button>
         `).join("")}
       </div>
@@ -1416,24 +1404,11 @@ function renderZoanFamily(family) {
   `;
 }
 
-function buildZoanSubtypeGroups(fruits) {
-  const order = ["smile", "mythical", "ancient", "normal"];
-  return order.map((key) => {
-    const groupFruits = fruits.filter((fruit) => zoanSubtypeKey(fruit) === key);
-    return {
-      key,
-      name: zoanSubtypeName(key),
-      count: groupFruits.length,
-      families: buildZoanFamilies(groupFruits)
-    };
-  }).filter((group) => group.count > 0);
-}
-
 function buildZoanFamilies(fruits) {
   const families = new Map();
   fruits.forEach((fruit) => {
     const familyName = zoanFruitFamilyName(fruit);
-    if (!families.has(familyName)) families.set(familyName, { name: familyName, fruits: [] });
+    if (!families.has(familyName)) families.set(familyName, { key: familyName, name: familyName, fruits: [] });
     families.get(familyName).fruits.push(fruit);
   });
   return Array.from(families.values())
@@ -1445,10 +1420,17 @@ function buildZoanFamilies(fruits) {
 }
 
 function sortZoanFruits(a, b) {
-  const order = { smile: 0, mythical: 1, ancient: 2, normal: 3 };
-  return (order[zoanSubtypeKey(a)] ?? 9) - (order[zoanSubtypeKey(b)] ?? 9)
-    || zoanFruitFamilyName(a).localeCompare(zoanFruitFamilyName(b), "ko", { numeric: true })
+  const order = { normal: 0, ancient: 1, mythical: 2, smile: 3 };
+  return zoanFruitFamilyName(a).localeCompare(zoanFruitFamilyName(b), "ko", { numeric: true })
+    || (order[zoanSubtypeKey(a)] ?? 9) - (order[zoanSubtypeKey(b)] ?? 9)
     || zoanFruitVariantLabel(a).localeCompare(zoanFruitVariantLabel(b), "ko", { numeric: true });
+}
+
+function zoanSubtypeCounts(fruits) {
+  const order = ["normal", "ancient", "mythical", "smile"];
+  const counts = new Map();
+  fruits.forEach((fruit) => counts.set(zoanSubtypeKey(fruit), (counts.get(zoanSubtypeKey(fruit)) || 0) + 1));
+  return order.filter((key) => counts.has(key)).map((key) => [key, counts.get(key)]);
 }
 
 function zoanSubtypeKey(fruit) {
@@ -1473,7 +1455,7 @@ function zoanFruitFamilyName(fruit) {
   if (isSmileFruit(fruit)) return "스마일";
   if (fruit.id === "gum-gum") return "사람사람 열매";
   const name = localizedName(fruit);
-  const modelMatch = name.match(/^(.+?열매)\s*모델\b/);
+  const modelMatch = name.match(/^(.+?열매)\s*모델/);
   if (modelMatch) return modelMatch[1].trim();
   return name.replace(/\s*\([^)]*\)\s*$/g, "").trim();
 }

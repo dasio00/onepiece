@@ -574,8 +574,7 @@ textarea {
   font-size: 12px;
 }
 
-.fruit-family-stack,
-.fruit-family-list {
+.fruit-family-stack {
   display: grid;
   gap: 12px;
 }
@@ -603,11 +602,6 @@ textarea {
 .fruit-model-card span {
   color: var(--muted);
   font-size: 12px;
-}
-
-.fruit-family {
-  border-left: 3px solid var(--line);
-  padding-left: 12px;
 }
 
 .fruit-model-selector {

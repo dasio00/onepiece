@@ -569,6 +569,65 @@ textarea {
   font-size: 20px;
 }
 
+.fruit-group-selector .sub-card span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.fruit-family-stack,
+.fruit-family-list {
+  display: grid;
+  gap: 12px;
+}
+
+.fruit-group {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.fruit-group-head,
+.fruit-family-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.fruit-group-head strong {
+  font-size: 18px;
+}
+
+.fruit-group-head span,
+.fruit-family-title span,
+.fruit-model-card span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.fruit-family {
+  border-left: 3px solid var(--line);
+  padding-left: 12px;
+}
+
+.fruit-model-selector {
+  margin-bottom: 0;
+}
+
+.fruit-model-card {
+  height: auto;
+  min-height: 44px;
+  display: inline-grid;
+  align-content: center;
+  gap: 2px;
+  text-align: left;
+  padding: 8px 12px;
+}
+
+.fruit-model-card strong {
+  font-size: 13px;
+}
+
 .episode-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

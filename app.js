@@ -59,6 +59,7 @@ let statMetric = "height";
 let statDirection = "asc";
 let editorMode = "people";
 let activeFruitId = "";
+let activeFruitGroupKey = "all";
 let activeSubOrgId = "";
 let activeEpisodeId = "";
 let activeQuizCard = null;
@@ -236,6 +237,7 @@ function render() {
     button.addEventListener("click", () => {
       activeId = button.dataset.id;
       activeFruitId = "";
+      activeFruitGroupKey = "all";
       activeSubOrgId = "";
       activeEpisodeId = "";
       render();
@@ -299,7 +301,7 @@ function getItems(query = "") {
   if (currentView === "devilFruits") {
     return data.devilFruitTypes.map((type) => {
       const fruits = data.devilFruits.filter((fruit) => fruit.type === type.id);
-      return item(type.id, type.name, `열매 ${fruits.length}개`, { ...type, fruits }, `${type.name} ${fruits.map(localizedSearchText).join(" ")}`);
+      return item(type.id, type.name, `열매 ${fruits.length}개`, { ...type, fruits }, `${type.name} ${fruits.map((fruit) => `${localizedSearchText(fruit)} ${fruitClassificationSearchText(fruit)}`).join(" ")}`);
     });
   }
   if (currentView === "groups") {
@@ -431,12 +433,13 @@ function getGlobalSearchItems() {
   });
   const fruits = data.devilFruits.map((fruit) => {
     const user = findPerson(fruit.currentUserId);
+    const classification = fruit.type === "zoan" ? ` · ${zoanSubtypeName(zoanSubtypeKey(fruit))}${zoanFruitModelName(fruit) ? ` · 모델 ${zoanFruitModelName(fruit)}` : ""}` : "";
     return item(
       `fruit:${fruit.id}`,
       localizedName(fruit),
-      `악마의 열매 · ${devilFruitTypeName(fruit.type)} · ${user ? personDisplayName(user) : "능력자 미등록"}`,
+      `악마의 열매 · ${devilFruitTypeName(fruit.type)}${classification} · ${user ? personDisplayName(user) : "능력자 미등록"}`,
       { resultType: "fruit", entity: fruit },
-      `${localizedSearchText(fruit)} ${fruitDescriptionText(fruit)} ${devilFruitTypeName(fruit.type)} ${personNameSearchText(user)}`
+      `${localizedSearchText(fruit)} ${fruitDescriptionText(fruit)} ${devilFruitTypeName(fruit.type)} ${fruitClassificationSearchText(fruit)} ${personNameSearchText(user)}`
     );
   });
   const episodes = data.episodes.map((episode) => {
@@ -776,7 +779,7 @@ function renderPersonAbilitiesPanel(person, fruit, techniques) {
     <div class="quick-section">
       <div class="quick-section-head"><strong>능력</strong></div>
       <div class="meta">
-        ${quickChip("devilFruitId", "악마의 열매", fruit?.name || "해당 없음/미등록")}
+        ${quickChip("devilFruitId", "악마의 열매", fruit ? localizedName(fruit) : "해당 없음/미등록")}
         ${quickChip("haki", "무장색", person.haki?.armament ? "있음" : "없음")}
         ${quickChip("haki", "견문색", person.haki?.observation ? "있음" : "없음")}
         ${quickChip("haki", "패왕색", person.haki?.conqueror ? "있음" : "없음")}
@@ -1314,6 +1317,7 @@ function renderOriginRegionDetail(region) {
 }
 
 function renderDevilFruitTypeDetail(type) {
+  if (type.id === "zoan") return renderZoanFruitTypeDetail(type);
   const selectedFruit = activeFruitId ? findFruit(activeFruitId) : type.fruits[0];
   if (!activeFruitId && selectedFruit) activeFruitId = selectedFruit.id;
 
@@ -1333,6 +1337,176 @@ function renderDevilFruitTypeDetail(type) {
   });
 }
 
+function renderZoanFruitTypeDetail(type) {
+  const fruits = [...type.fruits].sort(sortZoanFruits);
+  const groups = buildZoanSubtypeGroups(fruits);
+  const groupKeys = new Set(["all", ...groups.map((group) => group.key)]);
+  if (!groupKeys.has(activeFruitGroupKey)) activeFruitGroupKey = "all";
+  const visibleGroups = activeFruitGroupKey === "all"
+    ? groups
+    : groups.filter((group) => group.key === activeFruitGroupKey);
+  const visibleFruits = visibleGroups.flatMap((group) => group.families.flatMap((family) => family.fruits));
+  const selectedFruit = visibleFruits.find((fruit) => fruit.id === activeFruitId) || visibleFruits[0] || fruits[0];
+  if (selectedFruit) activeFruitId = selectedFruit.id;
+
+  detail.innerHTML = `
+    <h3>${escapeHtml(type.name)}</h3>
+    <div class="meta">
+      <span class="chip">열매 ${fruits.length}개</span>
+      ${groups.map((group) => `<span class="chip">${escapeHtml(group.name)} ${group.count}개</span>`).join("")}
+    </div>
+    <div class="sub-selector fruit-group-selector">
+      <button class="sub-card ${activeFruitGroupKey === "all" ? "active" : ""}" data-fruit-group="all" type="button">전체</button>
+      ${groups.map((group) => `
+        <button class="sub-card ${activeFruitGroupKey === group.key ? "active" : ""}" data-fruit-group="${escapeAttribute(group.key)}" type="button">
+          ${escapeHtml(group.name)} <span>${group.count}</span>
+        </button>
+      `).join("")}
+    </div>
+    <div class="fruit-family-stack">
+      ${visibleGroups.map(renderZoanSubtypeGroup).join("") || renderEmptyResult("등록된 동물계 열매가 없습니다.")}
+    </div>
+    ${selectedFruit ? renderFruitDetail(selectedFruit) : ""}
+  `;
+  detail.querySelectorAll("[data-fruit-group]").forEach((button) => {
+    button.addEventListener("click", () => {
+      activeFruitGroupKey = button.dataset.fruitGroup;
+      activeFruitId = "";
+      render();
+    });
+  });
+  detail.querySelectorAll("[data-fruit-id]").forEach((button) => {
+    button.addEventListener("click", () => {
+      activeFruitId = button.dataset.fruitId;
+      render();
+    });
+  });
+}
+
+function renderZoanSubtypeGroup(group) {
+  return `
+    <section class="fruit-group">
+      <div class="fruit-group-head">
+        <strong>${escapeHtml(group.name)}</strong>
+        <span>${group.count}개 열매 · ${group.families.length}개 계열</span>
+      </div>
+      <div class="fruit-family-list">
+        ${group.families.map(renderZoanFamily).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderZoanFamily(family) {
+  return `
+    <section class="fruit-family">
+      <div class="fruit-family-title">
+        <strong>${escapeHtml(family.name)}</strong>
+        <span>${family.fruits.length > 1 ? `${family.fruits.length}개 모델` : zoanFruitVariantLabel(family.fruits[0])}</span>
+      </div>
+      <div class="sub-selector fruit-model-selector">
+        ${family.fruits.map((fruit) => `
+          <button class="sub-card fruit-model-card ${activeFruitId === fruit.id ? "active" : ""}" data-fruit-id="${escapeAttribute(fruit.id)}" type="button">
+            <strong>${escapeHtml(zoanFruitVariantLabel(fruit))}</strong>
+            <span>${escapeHtml(zoanFruitUserLabel(fruit))}</span>
+          </button>
+        `).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function buildZoanSubtypeGroups(fruits) {
+  const order = ["smile", "mythical", "ancient", "normal"];
+  return order.map((key) => {
+    const groupFruits = fruits.filter((fruit) => zoanSubtypeKey(fruit) === key);
+    return {
+      key,
+      name: zoanSubtypeName(key),
+      count: groupFruits.length,
+      families: buildZoanFamilies(groupFruits)
+    };
+  }).filter((group) => group.count > 0);
+}
+
+function buildZoanFamilies(fruits) {
+  const families = new Map();
+  fruits.forEach((fruit) => {
+    const familyName = zoanFruitFamilyName(fruit);
+    if (!families.has(familyName)) families.set(familyName, { name: familyName, fruits: [] });
+    families.get(familyName).fruits.push(fruit);
+  });
+  return Array.from(families.values())
+    .map((family) => ({
+      ...family,
+      fruits: family.fruits.sort((a, b) => zoanFruitVariantLabel(a).localeCompare(zoanFruitVariantLabel(b), "ko", { numeric: true }))
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name, "ko", { numeric: true }));
+}
+
+function sortZoanFruits(a, b) {
+  const order = { smile: 0, mythical: 1, ancient: 2, normal: 3 };
+  return (order[zoanSubtypeKey(a)] ?? 9) - (order[zoanSubtypeKey(b)] ?? 9)
+    || zoanFruitFamilyName(a).localeCompare(zoanFruitFamilyName(b), "ko", { numeric: true })
+    || zoanFruitVariantLabel(a).localeCompare(zoanFruitVariantLabel(b), "ko", { numeric: true });
+}
+
+function zoanSubtypeKey(fruit) {
+  if (fruit.zoanSubtype === "smile") return "smile";
+  if (isSmileFruit(fruit)) return "smile";
+  if (["mythical", "ancient", "normal"].includes(fruit.zoanSubtype)) return fruit.zoanSubtype;
+  return "normal";
+}
+
+function isSmileFruit(fruit) {
+  return /스마일|smile/i.test([
+    fruit?.id,
+    fruit?.name,
+    fruit?.nameKo,
+    fruit?.nameEn,
+    fruit?.description,
+    fruit?.descriptionKo
+  ].filter(Boolean).join(" "));
+}
+
+function zoanFruitFamilyName(fruit) {
+  if (isSmileFruit(fruit)) return "스마일";
+  if (fruit.id === "gum-gum") return "사람사람 열매";
+  const name = localizedName(fruit);
+  const modelMatch = name.match(/^(.+?열매)\s*모델\b/);
+  if (modelMatch) return modelMatch[1].trim();
+  return name.replace(/\s*\([^)]*\)\s*$/g, "").trim();
+}
+
+function zoanFruitModelName(fruit) {
+  if (fruit.model) return fruit.model;
+  if (isSmileFruit(fruit)) return localizedName(fruit).replace(/\s*스마일\s*$/i, "").trim();
+  return "";
+}
+
+function zoanFruitVariantLabel(fruit) {
+  if (isSmileFruit(fruit)) return zoanFruitModelName(fruit) || localizedName(fruit);
+  if (fruit.model) return `모델 ${fruit.model}`;
+  const family = zoanFruitFamilyName(fruit);
+  const name = localizedName(fruit);
+  return name === family ? "기본형" : name.replace(family, "").trim() || name;
+}
+
+function zoanFruitUserLabel(fruit) {
+  const user = findPerson(fruit.currentUserId);
+  return user ? personDisplayName(user) : "능력자 미등록";
+}
+
+function fruitClassificationSearchText(fruit) {
+  if (fruit?.type !== "zoan") return "";
+  return [
+    zoanSubtypeName(zoanSubtypeKey(fruit)),
+    zoanFruitFamilyName(fruit),
+    zoanFruitModelName(fruit),
+    isSmileFruit(fruit) ? "스마일 SMILE 인조 동물계" : ""
+  ].filter(Boolean).join(" ");
+}
+
 function renderFruitDetail(fruit) {
   const currentUser = findPerson(fruit.currentUserId);
   const previousUsers = fruit.previousUserIds.map(findPerson).filter(Boolean);
@@ -1341,8 +1515,9 @@ function renderFruitDetail(fruit) {
       <h4>${escapeHtml(localizedName(fruit))}</h4>
       <div class="meta">
         <span class="chip">각성: ${fruit.awakened ? "각성" : "미각성/미등록"}</span>
-        ${fruit.type === "zoan" ? `<span class="chip">동물계 구분: ${escapeHtml(zoanSubtypeName(fruit.zoanSubtype))}</span>` : ""}
-        ${fruit.type === "zoan" && fruit.model ? `<span class="chip">모델: ${escapeHtml(fruit.model)}</span>` : ""}
+        ${fruit.type === "zoan" ? `<span class="chip">동물계 구분: ${escapeHtml(zoanSubtypeName(zoanSubtypeKey(fruit)))}</span>` : ""}
+        ${fruit.type === "zoan" ? `<span class="chip">계열: ${escapeHtml(zoanFruitFamilyName(fruit))}</span>` : ""}
+        ${fruit.type === "zoan" && zoanFruitModelName(fruit) ? `<span class="chip">모델: ${escapeHtml(zoanFruitModelName(fruit))}</span>` : ""}
         ${renderLocalizedNameChips(fruit)}
       </div>
       <p class="note">${escapeHtml(fruitDescriptionText(fruit))}</p>
@@ -2091,6 +2266,7 @@ function renderFruitForm(fruit = null) {
         ${option("normal", "일반종", draft.zoanSubtype || "")}
         ${option("ancient", "고대종", draft.zoanSubtype || "")}
         ${option("mythical", "환수종", draft.zoanSubtype || "")}
+        ${option("smile", "스마일", draft.zoanSubtype || "")}
       </select></label>
       ${field("model", "모델", draft.model || "")}
       <label class="inline-check"><input name="awakened" type="checkbox" ${draft.awakened ? "checked" : ""} /> 각성</label>
@@ -2342,6 +2518,7 @@ function navigateToEpisode(episodeId) {
   activeId = String(episode.volume);
   activeEpisodeId = episode.id;
   activeFruitId = "";
+  activeFruitGroupKey = "all";
   activeSubOrgId = "";
   setActiveTab();
   render();
@@ -3276,7 +3453,7 @@ function devilFruitTypeName(id) {
 }
 
 function zoanSubtypeName(id) {
-  return { normal: "일반종", ancient: "고대종", mythical: "환수종" }[id] || "미등록";
+  return { normal: "일반종", ancient: "고대종", mythical: "환수종", smile: "스마일" }[id] || "미등록";
 }
 
 function formatBounty(amount) {

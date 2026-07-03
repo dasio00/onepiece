@@ -1,11 +1,27 @@
+const PATCH_STORAGE_KEY = "onePieceDataBuilder.patches.v1";
 const STORAGE_KEY = "onePieceDataBuilder.v3";
 const LEGACY_STORAGE_KEY = "onePieceDataBuilder.v2";
 const COMPARE_RECORD_KEY = "onePieceCompareGame.records.v1";
+const PERSISTED_LIST_KEYS = [
+  "people",
+  "techniques",
+  "episodes",
+  "organizations",
+  "originRegions",
+  "originCountries",
+  "subOrganizations",
+  "devilFruitTypes",
+  "devilFruits",
+  "groups",
+  "bloodTypes"
+];
 const baseData = window.onePieceData;
 const basePeopleById = new Map((baseData.people || []).map((person) => [person.id, person]));
 const baseTechniquesById = new Map((baseData.techniques || []).map((technique) => [technique.id, technique]));
 const baseEpisodesById = new Map((baseData.episodes || []).map((episode) => [episode.id, episode]));
 const baseFruitsById = new Map((baseData.devilFruits || []).map((fruit) => [fruit.id, fruit]));
+let normalizedBaseCache = null;
+let storageWarningShown = false;
 const data = loadSavedData() || structuredClone(baseData);
 
 const viewConfig = {
@@ -2449,6 +2465,7 @@ function renderDataManager() {
     document.querySelector("#jsonPreview").value = JSON.stringify(data, null, 2);
   });
   document.querySelector("#resetButton").addEventListener("click", () => {
+    localStorage.removeItem(PATCH_STORAGE_KEY);
     localStorage.removeItem(STORAGE_KEY);
     localStorage.removeItem(LEGACY_STORAGE_KEY);
     Object.keys(data).forEach((key) => delete data[key]);
@@ -3660,10 +3677,25 @@ function normalizeInPlace(target) {
 }
 
 function loadSavedData() {
+  const patch = loadJsonFromStorage(PATCH_STORAGE_KEY);
+  if (patch) {
+    return applySavedPatch(structuredClone(baseData), patch);
+  }
+
+  const legacy = loadJsonFromStorage(STORAGE_KEY) || loadJsonFromStorage(LEGACY_STORAGE_KEY);
+  if (legacy) {
+    return normalizeInPlace(legacy);
+  }
+
+  return null;
+}
+
+function loadJsonFromStorage(key) {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY) || localStorage.getItem(LEGACY_STORAGE_KEY);
-    return raw ? normalizeInPlace(JSON.parse(raw)) : null;
-  } catch {
+    const raw = localStorage.getItem(key);
+    return raw ? JSON.parse(raw) : null;
+  } catch (error) {
+    console.warn(`Failed to load saved data from ${key}.`, error);
     return null;
   }
 }
@@ -3671,7 +3703,104 @@ function loadSavedData() {
 function saveData() {
   invalidateDataCaches();
   refreshLookupIndexes();
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  persistDataPatch();
+}
+
+function persistDataPatch() {
+  const patch = createDataPatch(data);
+  try {
+    if (hasPatchChanges(patch)) {
+      localStorage.setItem(PATCH_STORAGE_KEY, JSON.stringify(patch));
+    } else {
+      localStorage.removeItem(PATCH_STORAGE_KEY);
+    }
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(LEGACY_STORAGE_KEY);
+    return true;
+  } catch (error) {
+    console.warn("Failed to save local changes.", error);
+    showStorageWarning();
+    return false;
+  }
+}
+
+function showStorageWarning() {
+  if (storageWarningShown) return;
+  storageWarningShown = true;
+  alert("브라우저 저장공간이 부족해서 수정 내용을 저장하지 못했습니다. 데이터 관리에서 JSON 내보내기로 백업한 뒤, 사진은 주소(URL) 위주로 쓰면 더 안정적입니다.");
+}
+
+function createDataPatch(source) {
+  const base = getNormalizedBaseData();
+  const lists = {};
+  PERSISTED_LIST_KEYS.forEach((key) => {
+    lists[key] = createListPatch(source[key] || [], base[key] || []);
+  });
+  return {
+    version: 1,
+    updatedAt: new Date().toISOString(),
+    lists
+  };
+}
+
+function createListPatch(currentList, baseList) {
+  const baseById = new Map(baseList.map((item) => [item.id, item]));
+  const currentIds = new Set(currentList.map((item) => item.id));
+  const upserts = currentList
+    .filter((item) => !stableEqual(item, baseById.get(item.id)))
+    .map((item) => structuredClone(item));
+  const deletions = baseList
+    .filter((item) => !currentIds.has(item.id))
+    .map((item) => item.id);
+  return { upserts, deletions };
+}
+
+function applySavedPatch(target, patch) {
+  const lists = patch?.lists || {};
+  PERSISTED_LIST_KEYS.forEach((key) => {
+    const listPatch = lists[key];
+    if (!listPatch) return;
+    const deletions = new Set(listPatch.deletions || []);
+    const list = (target[key] || []).filter((item) => !deletions.has(item.id));
+    (listPatch.upserts || []).forEach((item) => {
+      upsert(list, item.id, structuredClone(item));
+    });
+    target[key] = list;
+  });
+  return normalizeInPlace(target);
+}
+
+function hasPatchChanges(patch) {
+  return Object.values(patch.lists || {}).some((listPatch) => (
+    (listPatch.upserts || []).length || (listPatch.deletions || []).length
+  ));
+}
+
+function getNormalizedBaseData() {
+  if (!normalizedBaseCache) {
+    normalizedBaseCache = normalizeInPlace(structuredClone(baseData));
+  }
+  return normalizedBaseCache;
+}
+
+function stableEqual(a, b) {
+  return stableStringify(a) === stableStringify(b);
+}
+
+function stableStringify(value) {
+  return JSON.stringify(canonicalize(value));
+}
+
+function canonicalize(value) {
+  if (Array.isArray(value)) return value.map(canonicalize);
+  if (!value || typeof value !== "object") return value;
+  return Object.keys(value)
+    .filter((key) => value[key] !== undefined)
+    .sort()
+    .reduce((result, key) => {
+      result[key] = canonicalize(value[key]);
+      return result;
+    }, {});
 }
 
 function invalidateDataCaches() {

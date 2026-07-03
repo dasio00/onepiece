@@ -819,18 +819,41 @@ function renderTechniqueResult(technique) {
 
 function renderTechniqueDetail(technique) {
   const owner = findPerson(technique.ownerId);
-  const episodes = getEpisodesForTechnique(technique.id);
+  const usages = getTechniqueEpisodeUsages(technique.id);
+  const totalCount = usages.reduce((sum, usage) => sum + usage.count, 0);
   detail.innerHTML = `
     <h3>${escapeHtml(localizedName(technique))}</h3>
     <div class="meta">
       <span class="chip">사용자: ${escapeHtml(owner ? personDisplayName(owner) : "미등록")}</span>
-      <span class="chip">${episodes.length}개 화수</span>
+      <span class="chip">${usages.length}개 화수</span>
+      <span class="chip">총 ${totalCount}회</span>
       ${renderLocalizedNameChips(technique)}
     </div>
     <p class="note">${escapeHtml(technique.note || "")}</p>
-    <div class="episode-chip-grid">${renderEpisodeLinks(episodes)}</div>
+    <div class="episode-chip-grid">${renderTechniqueEpisodeUsageLinks(usages)}</div>
   `;
   bindEpisodeLinks();
+}
+
+function getTechniqueEpisodeUsages(techniqueId) {
+  return data.episodes
+    .map((episode) => {
+      const entries = episodeTechniqueAppearances(episode).filter((entry) => entry.technique.id === techniqueId);
+      return entries.length ? { episode, count: entries.length } : null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => sortEpisodes(a.episode, b.episode));
+}
+
+function renderTechniqueEpisodeUsageLinks(usages) {
+  return usages.map(({ episode, count }) => {
+    const title = `${episodeTitleText(episode)} · ${count}회`;
+    return `
+      <button class="episode-number-chip technique-episode-chip" type="button" data-episode-link="${escapeAttribute(episode.id)}" title="${escapeAttribute(title)}">
+        <span>${episode.number}</span><span class="mini-chip">${count}회</span>
+      </button>
+    `;
+  }).join("") || `<span class="muted">등록된 화수가 없습니다.</span>`;
 }
 
 function renderPersonDetail(person) {

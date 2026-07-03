@@ -646,8 +646,16 @@ textarea {
 
 .episode-technique-item {
   display: grid;
-  grid-template-columns: auto minmax(0, max-content) auto minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1fr);
   gap: 8px;
+  align-items: start;
+  min-width: 0;
+}
+
+.episode-technique-pair {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
   align-items: center;
   min-width: 0;
 }
@@ -658,6 +666,23 @@ textarea {
   gap: 6px;
   align-items: center;
   min-width: 0;
+}
+
+.episode-technique-pair .episode-technique-users {
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.episode-technique-pair .name-link {
+  min-width: 0;
+}
+
+.episode-technique-pair .technique-name-link {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .episode-technique-plus {
@@ -1768,7 +1793,6 @@ textarea:focus-visible {
   .editor-layout,
   .person-detail-head,
   .episode-columns,
-  .episode-technique-item,
   .episode-technique-row,
   .timeline-row,
   .bwh-row,
@@ -1781,10 +1805,6 @@ textarea:focus-visible {
   .episode-technique-row-number {
     width: 24px;
     height: 24px;
-  }
-
-  .episode-technique-slash {
-    display: none;
   }
 
   .toolbar {

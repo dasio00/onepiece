@@ -578,13 +578,15 @@ function renderEpisodeTechniqueAppearance(entry, index) {
   return `
     <div class="episode-technique-item">
       <span class="episode-technique-order">${index + 1}</span>
-      <span class="episode-technique-users">
-        ${people.length ? people.map((person) => renderPersonNameLink(person)).join(`<span class="episode-technique-plus">+</span>`) : (owner ? renderPersonNameLink(owner) : `<span class="muted">사용자 미등록</span>`)}
+      <span class="episode-technique-pair">
+        <span class="episode-technique-users">
+          ${people.length ? people.map((person) => renderPersonNameLink(person)).join(`<span class="episode-technique-plus">+</span>`) : (owner ? renderPersonNameLink(owner) : `<span class="muted">사용자 미등록</span>`)}
+        </span>
+        <span class="episode-technique-slash">/</span>
+        <button class="name-link technique-name-link" type="button" data-technique-link="${escapeAttribute(technique.id)}">
+          ${escapeHtml(localizedName(technique))}
+        </button>
       </span>
-      <span class="episode-technique-slash">/</span>
-      <button class="name-link technique-name-link" type="button" data-technique-link="${escapeAttribute(technique.id)}">
-        ${escapeHtml(localizedName(technique))}
-      </button>
     </div>
   `;
 }

@@ -607,6 +607,14 @@ function sortEpisodes(a, b) {
   return Number(a.volume) - Number(b.volume) || Number(a.number) - Number(b.number);
 }
 
+function inferEpisodeVolume(number) {
+  const chapter = Number(number || 0);
+  if (!Number.isFinite(chapter) || chapter <= 0) return 1;
+  if (chapter >= 1180) return 116 + Math.floor((chapter - 1180) / 11);
+  if (chapter >= 1167) return 115;
+  return Math.floor((chapter - 1) / 11) + 1;
+}
+
 function localizedName(entry) {
   return [entry?.nameKo, entry?.name, entry?.nameJa, entry?.nameEn].find(hasRegisteredText) || "이름 미등록";
 }
@@ -1997,7 +2005,8 @@ function renderEpisodeEditor() {
 function renderEpisodeForm(episode = null) {
   const isNew = !episode;
   const target = document.querySelector("#episodeFormWrap");
-  const draft = episode || { id: makeId("episode"), volume: 1, number: 1, title: "", summary: "", characterIds: [], techniqueIds: [] };
+  const nextNumber = nextEpisodeNumber();
+  const draft = episode || { id: makeId("episode"), volume: inferEpisodeVolume(nextNumber), number: nextNumber, title: "", summary: "", characterIds: [], techniqueIds: [] };
   target.innerHTML = `
     <form id="episodeForm">
       ${formHead(isNew ? "새 에피소드 추가" : "에피소드 수정", "deleteEpisodeButton", isNew)}
@@ -2013,13 +2022,17 @@ function renderEpisodeForm(episode = null) {
   `;
   const form = document.querySelector("#episodeForm");
   bindEpisodeCharacterPicker(form, draft.characterIds || []);
+  form.elements.number.addEventListener("input", () => {
+    form.elements.volume.value = inferEpisodeVolume(form.elements.number.value);
+  });
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const characterIds = checkedValues(form, "characterIds");
+    const number = Number(value(form, "number") || 1);
     upsert(data.episodes, draft.id, {
       id: value(form, "id") || makeId("episode"),
-      volume: Number(value(form, "volume") || 1),
-      number: Number(value(form, "number") || 1),
+      volume: Number(value(form, "volume") || inferEpisodeVolume(number)),
+      number,
       title: value(form, "title"),
       summary: value(form, "summary"),
       characterIds,
@@ -3522,6 +3535,10 @@ function makeId(prefix) {
   return `${prefix}-${Date.now().toString(36)}`;
 }
 
+function nextEpisodeNumber() {
+  return Math.max(0, ...data.episodes.map((episode) => Number(episode.number || 0))) + 1;
+}
+
 function fileToDataUrl(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -3650,6 +3667,7 @@ function normalizeInPlace(target) {
       merged.title = baseEpisode.titleKo;
       merged.titleKo = baseEpisode.titleKo;
     }
+    if (!Number(merged.volume)) merged.volume = inferEpisodeVolume(merged.number);
     return merged;
   });
   const savedEpisodeIds = new Set(target.episodes.map((episode) => episode.id));

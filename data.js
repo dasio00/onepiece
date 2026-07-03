@@ -326584,6 +326584,21 @@ window.onePieceData = {
 })();
 /* WIKI_EPISODE_AUTO_END */
 
+/* EPISODE_VOLUME_RULES_START */
+(() => {
+  const inferEpisodeVolume = (number) => {
+    const chapter = Number(number || 0);
+    if (!Number.isFinite(chapter) || chapter <= 0) return 1;
+    if (chapter >= 1180) return 116 + Math.floor((chapter - 1180) / 11);
+    if (chapter >= 1167) return 115;
+    return Math.floor((chapter - 1) / 11) + 1;
+  };
+  window.onePieceData.episodes.forEach((episode) => {
+    if (!Number(episode.volume)) episode.volume = inferEpisodeVolume(episode.number);
+  });
+})();
+/* EPISODE_VOLUME_RULES_END */
+
 /* LOCALIZATION_AUTO_START */
 (() => {
   const data = window.onePieceData;

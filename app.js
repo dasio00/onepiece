@@ -498,7 +498,7 @@ function renderGlobalSearchDetail(result) {
 function episodeToItem(episode) {
   const subtitle = episodeTitleSubtext(episode);
   const characterNames = (episode.characterIds || []).map(findPerson).filter(Boolean).map(personNameSearchText).join(" ");
-  const techniqueNames = (episode.techniqueIds || []).map(findTechnique).filter(Boolean).map(localizedSearchText).join(" ");
+  const techniqueNames = episodeTechniqueIdList(episode).map(findTechnique).filter(Boolean).map(localizedSearchText).join(" ");
   return item(
     episode.id,
     `${episode.number}화 · ${episodeTitleText(episode)}`,
@@ -545,7 +545,7 @@ function renderEpisodeSearchDetail(episode) {
 
 function renderEpisodeDetail(episode) {
   const characters = episodeCharacterAppearances(episode);
-  const techniques = episode.techniqueIds.map(findTechnique).filter(Boolean);
+  const techniques = episodeTechniqueAppearances(episode);
   return `
     <section class="nested-detail">
       <h4>${episode.number}화 · ${escapeHtml(episodeTitleText(episode))}</h4>
@@ -557,11 +557,27 @@ function renderEpisodeDetail(episode) {
           <div class="simple-list">${characters.map(renderEpisodeCharacterLink).join("") || renderEmptyResult("등록된 등장 인물이 없습니다.")}</div>
         </section>
         <section>
-          <h5>나온 기술</h5>
-          <div class="result-grid">${techniques.map(renderTechniqueResult).join("") || renderEmptyResult("등록된 기술이 없습니다.")}</div>
+          <h5>${episode.number}화에 나온 기술</h5>
+          <div class="episode-technique-list">${techniques.map(renderEpisodeTechniqueAppearance).join("") || renderEmptyResult("등록된 기술이 없습니다.")}</div>
         </section>
       </div>
     </section>
+  `;
+}
+
+function renderEpisodeTechniqueAppearance(entry, index) {
+  const person = entry.person;
+  const technique = entry.technique;
+  const owner = person || findPerson(technique.ownerId);
+  return `
+    <div class="episode-technique-item">
+      <span class="episode-technique-order">${index + 1}</span>
+      ${owner ? renderPersonNameLink(owner) : `<span class="muted">사용자 미등록</span>`}
+      <span class="episode-technique-slash">/</span>
+      <button class="name-link technique-name-link" type="button" data-technique-link="${escapeAttribute(technique.id)}">
+        ${escapeHtml(localizedName(technique))}
+      </button>
+    </div>
   `;
 }
 
@@ -590,6 +606,44 @@ function episodeCharacterAppearances(episode) {
       appearanceType: appearance.appearanceType || "main"
     }))
     .filter((entry) => entry.person);
+}
+
+function normalizeEpisodeTechniqueAppearances(episode, techniques = data.techniques || []) {
+  const techniquesById = new Map((techniques || []).map((technique) => [technique.id, technique]));
+  const rawRows = Array.isArray(episode.techniqueAppearances) ? episode.techniqueAppearances : [];
+  const rows = rawRows.length
+    ? rawRows
+    : (episode.techniqueIds || []).map((techniqueId) => ({ techniqueId }));
+  return rows
+    .map((entry) => {
+      const techniqueId = entry.techniqueId || entry.id || "";
+      const technique = techniquesById.get(techniqueId);
+      return {
+        characterId: entry.characterId || entry.personId || entry.ownerId || technique?.ownerId || technique?.user || "",
+        techniqueId
+      };
+    })
+    .filter((entry) => entry.techniqueId);
+}
+
+function episodeTechniqueAppearances(episode) {
+  return normalizeEpisodeTechniqueAppearances(episode)
+    .map((entry) => ({
+      ...entry,
+      person: findPerson(entry.characterId),
+      technique: findTechnique(entry.techniqueId)
+    }))
+    .filter((entry) => entry.technique);
+}
+
+function episodeTechniqueIdList(episode, techniques = data.techniques || []) {
+  const appearanceIds = normalizeEpisodeTechniqueAppearances(episode, techniques).map((entry) => entry.techniqueId).filter(Boolean);
+  const fallbackIds = Array.isArray(episode.techniqueIds) ? episode.techniqueIds : [];
+  return Array.from(new Set((appearanceIds.length ? appearanceIds : fallbackIds).filter(Boolean)));
+}
+
+function techniqueIdsFromAppearanceRows(rows = []) {
+  return Array.from(new Set(rows.map((row) => row.techniqueId).filter(Boolean)));
 }
 
 function appearanceTypeForCharacter(episode, personId) {
@@ -2036,7 +2090,7 @@ function renderEpisodeForm(episode = null) {
   const isNew = !episode;
   const target = document.querySelector("#episodeFormWrap");
   const nextNumber = nextEpisodeNumber();
-  const draft = episode || { id: makeId("episode"), volume: inferEpisodeVolume(nextNumber), number: nextNumber, title: "", summary: "", characterIds: [], techniqueIds: [] };
+  const draft = episode || { id: makeId("episode"), volume: inferEpisodeVolume(nextNumber), number: nextNumber, title: "", summary: "", characterIds: [], characterAppearances: [], techniqueIds: [], techniqueAppearances: [] };
   target.innerHTML = `
     <form id="episodeForm">
       ${formHead(isNew ? "새 에피소드 추가" : "에피소드 수정", "deleteEpisodeButton", isNew)}
@@ -2046,18 +2100,24 @@ function renderEpisodeForm(episode = null) {
       ${field("title", "화 제목", draft.title)}
       <label>간략한 내용<textarea name="summary" rows="4">${escapeHtml(draft.summary || "")}</textarea></label>
       ${searchablePersonPicker(draft.characterIds || [])}
-      ${checkboxListForItems("techniqueIds", "나온 기술", data.techniques, draft.techniqueIds || [])}
+      ${renderEpisodeTechniqueEditor(draft)}
       <div class="form-actions"><button class="primary" type="submit">저장</button></div>
     </form>
   `;
   const form = document.querySelector("#episodeForm");
   bindEpisodeCharacterPicker(form, draft.characterIds || []);
+  bindEpisodeTechniqueEditor(form, draft);
   form.elements.number.addEventListener("input", () => {
     form.elements.volume.value = inferEpisodeVolume(form.elements.number.value);
   });
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const characterIds = checkedValues(form, "characterIds");
+    const techniqueAppearances = readEpisodeTechniqueRows(form);
+    const characterIds = uniqueExistingPersonIds([
+      ...checkedValues(form, "characterIds"),
+      ...techniqueAppearances.map((row) => row.characterId)
+    ]);
+    syncTechniqueOwnersFromEpisode(techniqueAppearances);
     const number = Number(value(form, "number") || 1);
     upsert(data.episodes, draft.id, {
       id: value(form, "id") || makeId("episode"),
@@ -2067,7 +2127,8 @@ function renderEpisodeForm(episode = null) {
       summary: value(form, "summary"),
       characterIds,
       characterAppearances: syncEpisodeCharacterAppearances(draft, characterIds),
-      techniqueIds: checkedValues(form, "techniqueIds")
+      techniqueAppearances,
+      techniqueIds: techniqueIdsFromAppearanceRows(techniqueAppearances)
     });
     saveData();
     renderEpisodeEditor();
@@ -3241,6 +3302,132 @@ function bindEpisodeCharacterPicker(form, selectedIds = []) {
   });
 }
 
+function renderEpisodeTechniqueEditor(draft) {
+  const rows = normalizeEpisodeTechniqueAppearances(draft);
+  const characterIds = uniqueExistingPersonIds([...(draft.characterIds || []), ...rows.map((row) => row.characterId)]);
+  return `
+    <fieldset class="check-list episode-technique-editor" id="episodeTechniqueEditor">
+      <legend>${escapeHtml(draft.number || "")}화에 나온 기술</legend>
+      <p class="picker-empty">사람 / 기술 순서대로 추가하세요. 같은 기술은 여러 번 추가하면 횟수까지 기록됩니다.</p>
+      <div class="episode-technique-rows" id="episodeTechniqueRows">
+        ${renderEpisodeTechniqueRows(rows, characterIds)}
+      </div>
+      <button class="episode-technique-add" id="addEpisodeTechniqueRow" type="button">사람 / 기술 추가</button>
+    </fieldset>
+  `;
+}
+
+function renderEpisodeTechniqueRows(rows = [], characterIds = []) {
+  return rows.map((row, index) => renderEpisodeTechniqueRow(row, index, characterIds)).join("")
+    || `<p class="picker-empty" data-empty-technique-rows>아직 기록한 기술이 없습니다.</p>`;
+}
+
+function renderEpisodeTechniqueRow(row = {}, index = 0, characterIds = []) {
+  return `
+    <div class="episode-technique-row" data-episode-technique-row>
+      <span class="episode-technique-row-number">${index + 1}</span>
+      <label>사람<select name="techniqueCharacterId" data-technique-character-select>
+        ${renderEpisodeTechniqueCharacterOptions(characterIds, row.characterId)}
+      </select></label>
+      <label>기술<select name="episodeTechniqueId" data-technique-select>
+        ${renderEpisodeTechniqueOptions(row.characterId, row.techniqueId)}
+      </select></label>
+      <button class="episode-technique-remove" type="button" data-remove-episode-technique>삭제</button>
+    </div>
+  `;
+}
+
+function renderEpisodeTechniqueCharacterOptions(characterIds = [], selectedId = "") {
+  const ids = uniqueExistingPersonIds([...characterIds, selectedId].filter(Boolean));
+  return `<option value="">사람 선택</option>${ids.map((id) => {
+    const person = findPerson(id);
+    return option(id, person ? personDisplayName(person) : id, selectedId);
+  }).join("")}`;
+}
+
+function renderEpisodeTechniqueOptions(characterId = "", selectedId = "") {
+  const sorted = data.techniques.slice().sort((a, b) => {
+    const aRank = a.ownerId === characterId ? 0 : a.ownerId ? 2 : 1;
+    const bRank = b.ownerId === characterId ? 0 : b.ownerId ? 2 : 1;
+    return aRank - bRank || localizedName(a).localeCompare(localizedName(b), "ko");
+  });
+  return `<option value="">기술 선택</option>${sorted.map((technique) => {
+    const owner = findPerson(technique.ownerId);
+    const suffix = owner ? ` / ${personDisplayName(owner)}` : " / 사용자 미등록";
+    return option(technique.id, `${localizedName(technique)}${suffix}`, selectedId);
+  }).join("")}`;
+}
+
+function bindEpisodeTechniqueEditor(form) {
+  const editor = form.querySelector("#episodeTechniqueEditor");
+  const rowsWrap = form.querySelector("#episodeTechniqueRows");
+  const characterPicker = form.querySelector("#episodeCharacterPicker");
+  if (!editor || !rowsWrap) return;
+
+  const currentCharacterIds = () => uniqueExistingPersonIds([
+    ...checkedValues(form, "characterIds"),
+    ...readEpisodeTechniqueRows(form).map((row) => row.characterId)
+  ]);
+  const ensureEmptyState = () => {
+    if (rowsWrap.querySelector("[data-episode-technique-row]")) return;
+    rowsWrap.innerHTML = `<p class="picker-empty" data-empty-technique-rows>아직 기록한 기술이 없습니다.</p>`;
+  };
+  const refreshRowNumbers = () => {
+    rowsWrap.querySelectorAll("[data-episode-technique-row]").forEach((row, index) => {
+      row.querySelector(".episode-technique-row-number").textContent = String(index + 1);
+    });
+    ensureEmptyState();
+  };
+  const refreshCharacterSelects = () => {
+    const ids = currentCharacterIds();
+    rowsWrap.querySelectorAll("[data-technique-character-select]").forEach((select) => {
+      const selected = select.value;
+      select.innerHTML = renderEpisodeTechniqueCharacterOptions(ids, selected);
+    });
+  };
+  const addRow = () => {
+    rowsWrap.querySelector("[data-empty-technique-rows]")?.remove();
+    const ids = currentCharacterIds();
+    const characterId = ids[0] || "";
+    const index = rowsWrap.querySelectorAll("[data-episode-technique-row]").length;
+    rowsWrap.insertAdjacentHTML("beforeend", renderEpisodeTechniqueRow({ characterId, techniqueId: "" }, index, ids));
+  };
+
+  editor.querySelector("#addEpisodeTechniqueRow").addEventListener("click", addRow);
+  editor.addEventListener("click", (event) => {
+    const removeButton = event.target.closest("[data-remove-episode-technique]");
+    if (!removeButton) return;
+    removeButton.closest("[data-episode-technique-row]")?.remove();
+    refreshRowNumbers();
+  });
+  editor.addEventListener("change", (event) => {
+    const characterSelect = event.target.closest("[data-technique-character-select]");
+    if (!characterSelect) return;
+    const row = characterSelect.closest("[data-episode-technique-row]");
+    const techniqueSelect = row?.querySelector("[data-technique-select]");
+    if (techniqueSelect) techniqueSelect.innerHTML = renderEpisodeTechniqueOptions(characterSelect.value, techniqueSelect.value);
+  });
+  characterPicker?.addEventListener("click", () => window.setTimeout(refreshCharacterSelects, 0));
+}
+
+function readEpisodeTechniqueRows(form) {
+  return Array.from(form.querySelectorAll("[data-episode-technique-row]"))
+    .map((row) => ({
+      characterId: row.querySelector("[data-technique-character-select]")?.value || "",
+      techniqueId: row.querySelector("[data-technique-select]")?.value || ""
+    }))
+    .filter((row) => row.characterId && row.techniqueId);
+}
+
+function syncTechniqueOwnersFromEpisode(rows = []) {
+  rows.forEach((row) => {
+    const technique = data.techniques.find((item) => item.id === row.techniqueId);
+    if (!technique || !row.characterId) return;
+    technique.ownerId = row.characterId;
+    technique.user = row.characterId;
+  });
+}
+
 function uniqueExistingPersonIds(ids = []) {
   return Array.from(new Set(ids)).filter((id) => findPerson(id));
 }
@@ -3420,7 +3607,7 @@ function refreshLookupIndexes() {
       if (id && !appearanceOrder.has(id)) appearanceOrder.set(id, Number(episode.number || 0));
     });
     characterIds.forEach((id) => pushToMap(episodesByPerson, id, episode));
-    (episode.techniqueIds || []).forEach((id) => pushToMap(episodesByTechnique, id, episode));
+    episodeTechniqueIdList(episode).forEach((id) => pushToMap(episodesByTechnique, id, episode));
   });
   episodesByPerson.forEach((episodes) => episodes.sort(sortEpisodes));
   episodesByTechnique.forEach((episodes) => episodes.sort(sortEpisodes));
@@ -3721,6 +3908,7 @@ function normalizeInPlace(target) {
       characterIds: [],
       characterAppearances: [],
       techniqueIds: [],
+      techniqueAppearances: [],
       summary: "",
       title: "",
       ...baseEpisode,
@@ -3732,6 +3920,8 @@ function normalizeInPlace(target) {
       merged.titleKo = baseEpisode.titleKo;
     }
     if (!Number(merged.volume)) merged.volume = inferEpisodeVolume(merged.number);
+    merged.techniqueAppearances = normalizeEpisodeTechniqueAppearances(merged, target.techniques);
+    merged.techniqueIds = techniqueIdsFromAppearanceRows(merged.techniqueAppearances);
     return merged;
   });
   const savedEpisodeIds = new Set(target.episodes.map((episode) => episode.id));

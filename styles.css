@@ -639,6 +639,85 @@ textarea {
   gap: 8px;
 }
 
+.episode-technique-list {
+  display: grid;
+  gap: 8px;
+}
+
+.episode-technique-item {
+  display: grid;
+  grid-template-columns: auto minmax(0, max-content) auto minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
+}
+
+.episode-technique-order,
+.episode-technique-row-number {
+  width: 28px;
+  height: 28px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  color: #ffffff;
+  background: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.episode-technique-slash {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.technique-name-link {
+  width: fit-content;
+  max-width: 100%;
+}
+
+.episode-technique-editor {
+  gap: 10px;
+}
+
+.episode-technique-rows {
+  display: grid;
+  gap: 8px;
+}
+
+.episode-technique-row {
+  display: grid;
+  grid-template-columns: auto minmax(130px, 1fr) minmax(180px, 1.4fr) auto;
+  gap: 8px;
+  align-items: end;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.episode-technique-row label {
+  margin: 0;
+}
+
+.episode-technique-add,
+.episode-technique-remove {
+  min-height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 12px;
+  color: var(--ink);
+  background: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.episode-technique-add:hover,
+.episode-technique-remove:hover {
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+  background: var(--soft);
+}
+
 .name-link,
 .episode-link {
   cursor: pointer;
@@ -1587,11 +1666,23 @@ textarea:focus-visible {
   .editor-layout,
   .person-detail-head,
   .episode-columns,
+  .episode-technique-item,
+  .episode-technique-row,
   .timeline-row,
   .bwh-row,
   .timeline-item {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .episode-technique-order,
+  .episode-technique-row-number {
+    width: 24px;
+    height: 24px;
+  }
+
+  .episode-technique-slash {
+    display: none;
   }
 
   .toolbar {

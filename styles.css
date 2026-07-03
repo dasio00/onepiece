@@ -652,6 +652,19 @@ textarea {
   min-width: 0;
 }
 
+.episode-technique-users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+}
+
+.episode-technique-plus {
+  color: var(--muted);
+  font-weight: 900;
+}
+
 .episode-technique-order,
 .episode-technique-row-number {
   width: 28px;
@@ -686,7 +699,7 @@ textarea {
 
 .episode-technique-row {
   display: grid;
-  grid-template-columns: auto minmax(130px, 1fr) minmax(180px, 1.4fr) auto;
+  grid-template-columns: auto minmax(130px, 0.9fr) minmax(180px, 1.2fr) minmax(180px, 1fr) auto;
   gap: 8px;
   align-items: end;
   padding: 10px;
@@ -699,6 +712,59 @@ textarea {
   margin: 0;
 }
 
+.episode-technique-participants {
+  display: grid;
+  gap: 6px;
+}
+
+.episode-technique-participants > span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.compact-participants {
+  gap: 5px;
+  min-height: 36px;
+}
+
+.selected-person-chip.locked {
+  cursor: default;
+  border-style: solid;
+  color: var(--ink);
+  background: #f8fafc;
+}
+
+.episode-technique-partner-tools {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px;
+}
+
+.episode-technique-open {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 10px;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  color: var(--ink);
+  background: #ffffff;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.episode-technique-open:hover {
+  color: #ffffff;
+  background: var(--accent-2);
+}
+
+.episode-technique-quick-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
 .episode-technique-add,
 .episode-technique-remove {
   min-height: 40px;
@@ -709,6 +775,11 @@ textarea {
   background: #ffffff;
   font-weight: 800;
   cursor: pointer;
+}
+
+.episode-technique-add.small {
+  min-height: 36px;
+  padding: 0 10px;
 }
 
 .episode-technique-add:hover,

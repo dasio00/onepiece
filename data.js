@@ -346931,3 +346931,79 @@ window.onePieceData = {
   });
 })();
 /* MANUAL_KOREAN_PERSON_NAMES_END */
+
+/* LUFFY_PHOTO_PROFILE_START */
+(() => {
+  const data = window.onePieceData;
+  const luffy = data.people.find((person) => person.id === "wt100-1");
+  if (!luffy) return;
+
+  Object.assign(luffy, {
+    nameKo: "몽키 D. 루피",
+    aliases: "밀짚모자 루피, 루피타로, 루시, 사황, 최악의 세대, 초신성, D의 일족",
+    job: "해적",
+    jobCategory: "해적",
+    jobDetail: "밀짚모자 일당 선장",
+    organization: "pirates",
+    subOrganization: "straw-hat",
+    age: 19,
+    birthday: "5월 5일",
+    heightCm: 174,
+    heightHistory: [
+      { period: "2년 전 / 정상전쟁 종료 시", cm: 172 },
+      { period: "2년 후 / 현재", cm: 174 }
+    ],
+    bounty: 3000000000,
+    bountyHistory: [
+      { period: "아론 격파 후", amount: 30000000 },
+      { period: "크로커다일 격파 후", amount: 100000000 },
+      { period: "사법의 섬 소동 후", amount: 300000000 },
+      { period: "정상전쟁 후", amount: 400000000 },
+      { period: "드레스로자 편 이후", amount: 500000000 },
+      { period: "홀케이크 아일랜드 편 이후", amount: 1500000000 },
+      { period: "와노국 편 이후 / 현재", amount: 3000000000 }
+    ],
+    bloodType: "F",
+    originRegion: "east-blue",
+    originCountry: "foosha-village",
+    origin: "이스트 블루 / 후샤 마을",
+    likes: "고기 전반. 고기가 있다면 어느 섬이든 좋아하며, 쵸파 기준 루피의 냄새는 고기 냄새.",
+    description: "밀짚모자 일당의 선장. 자유와 모험을 사랑하며 꿈은 세계 제일의 보물을 찾아 해적왕이 되는 것이다. 고무고무 열매를 먹은 고무 인간으로 타격에 강하고, 무장색·견문색·패왕색 패기를 모두 사용한다. 동료를 해치는 상대라면 세계정부나 사황에게도 물러서지 않는 성격이다. 정상전쟁에서 에이스를 잃은 뒤 2년간 수련해 신세계에 복귀했고, 와노국에서는 유앵과 패왕색을 두르는 전투를 익히며 카이도와 맞섰다. 와노국 이후 30억 베리 현상금의 사황으로 인정받았다.",
+    devilFruitId: "gum-gum",
+    haki: { armament: true, observation: true, conqueror: true },
+    timeline: [
+      { year: "12년 전", content: "고무고무 열매를 먹고 고무 인간이 되었으며 샹크스에게 밀짚모자를 맡았다." },
+      { year: "12년 전", content: "에이스, 사보와 만났다." },
+      { year: "2년 전", content: "후샤 마을에서 출항해 해적왕을 향한 첫 항해를 시작했다." },
+      { year: "2년 전", content: "아론을 격파하고 3,000만 베리 현상금이 걸렸다." },
+      { year: "2년 전", content: "크로커다일을 격파하고 현상금이 1억 베리가 되었다." },
+      { year: "2년 전", content: "사법의 섬 소동 후 현상금이 3억 베리가 되었다." },
+      { year: "2년 전", content: "정상전쟁에 참전했으나 형 에이스를 잃었다." },
+      { year: "2년 전", content: "정상전쟁 후 현상금이 4억 베리가 되었고, 2년 수련을 시작했다." },
+      { year: "2년 후", content: "샤본디 제도에서 동료들과 재집결해 신세계에 들어갔다." },
+      { year: "2년 후", content: "드레스로자에서 돈키호테 도플라밍고를 격파하고 현상금이 5억 베리가 되었다." },
+      { year: "2년 후", content: "홀케이크 아일랜드에서 카타쿠리를 격파하고 현상금이 15억 베리가 되었다." },
+      { year: "2년 후", content: "와노국에 루피타로로 잠입해 카이도와 싸우고 패배, 우동 감옥에 수감되었다." },
+      { year: "2년 후", content: "우동에서 무장색 패기 유앵을 단련하고 탈옥했다." },
+      { year: "2년 후", content: "오니가시마 습격에 참가해 카이도와 빅 맘에게 맞섰고, 패왕색을 두르는 전투를 깨달았다." },
+      { year: "현재", content: "와노국 이후 현상금 30억 베리의 사황으로 인정받았다." }
+    ],
+    note: "사진 자료 기준: 단행본 1권 1화 첫 등장. 루피타로는 단행본 91권 912화. 별자리 황소자리, 이미지 컬러 빨강, 이미지 넘버 01/56, 동물 비유 원숭이. 취침은 졸릴 때, 기상은 눈이 떠졌을 때이며 수면은 약 5시간. 싫어하는 것은 어떤 가게의 체리파이. 특기 요리는 날고기 그릇에 얹기. 성우는 타나카 마유미."
+  });
+
+  const gumGum = data.devilFruits.find((fruit) => fruit.id === "gum-gum");
+  if (gumGum) {
+    Object.assign(gumGum, {
+      nameKo: "고무고무 열매",
+      nameJa: "ゴムゴムの実",
+      type: "zoan",
+      zoanSubtype: "mythical",
+      model: "니카",
+      awakened: true,
+      currentUserId: "wt100-1",
+      descriptionKo: "세계정부가 고무고무 열매라 부르던 환수종 악마의 열매. 실제 정체는 사람사람 열매 모델 니카이며, 루피가 각성 후 더욱 자유로운 고무의 힘을 다룬다."
+    });
+    gumGum.description = gumGum.descriptionKo;
+  }
+})();
+/* LUFFY_PHOTO_PROFILE_END */

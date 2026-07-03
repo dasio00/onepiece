@@ -2924,3 +2924,27 @@ textarea:focus-visible {
     width: min(150px, 52vw);
   }
 }
+
+.name-mode-toggle {
+  display: grid;
+  gap: 6px;
+  min-width: 150px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.name-mode-toggle select {
+  height: 42px;
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  padding: 0 10px;
+  color: var(--ink);
+  background: #ffffff;
+  font-weight: 800;
+}
+
+@media (max-width: 860px) {
+  .name-mode-toggle {
+    min-width: 0;
+  }
+}

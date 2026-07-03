@@ -2,6 +2,7 @@ const PATCH_STORAGE_KEY = "onePieceDataBuilder.patches.v1";
 const STORAGE_KEY = "onePieceDataBuilder.v3";
 const LEGACY_STORAGE_KEY = "onePieceDataBuilder.v2";
 const COMPARE_RECORD_KEY = "onePieceCompareGame.records.v1";
+const NAME_DISPLAY_MODE_KEY = "onePieceNameDisplayMode.v1";
 const PERSISTED_LIST_KEYS = [
   "people",
   "techniques",
@@ -73,6 +74,7 @@ let personEditorQuery = "";
 let episodeCharacterQuery = "";
 let statMetric = "height";
 let statDirection = "asc";
+let nameDisplayMode = loadNameDisplayMode();
 let editorMode = "people";
 let activeFruitId = "";
 let activeFruitGroupKey = "all";
@@ -114,6 +116,7 @@ const statSortControls = document.querySelector("#statSortControls");
 const statMetricSelect = document.querySelector("#statMetricSelect");
 const statDirectionButtons = document.querySelectorAll("[data-stat-direction]");
 const mobileViewSelect = document.querySelector("#mobileViewSelect");
+const nameModeSelect = document.querySelector("#nameModeSelect");
 const mobileNavButtons = document.querySelectorAll("[data-mobile-nav]");
 const browseWorkspace = document.querySelector("#browseWorkspace");
 const editorWorkspace = document.querySelector("#editorWorkspace");
@@ -125,6 +128,14 @@ tabs.forEach((tab) => {
 });
 
 mobileViewSelect.addEventListener("change", () => switchView(mobileViewSelect.value));
+
+nameModeSelect.value = nameDisplayMode;
+nameModeSelect.addEventListener("change", () => {
+  nameDisplayMode = nameModeSelect.value === "ja" ? "ja" : "ko";
+  localStorage.setItem(NAME_DISPLAY_MODE_KEY, nameDisplayMode);
+  invalidateNameDisplayCaches();
+  render();
+});
 
 mobileNavButtons.forEach((button) => {
   button.addEventListener("click", () => switchView(button.dataset.mobileNav));
@@ -616,16 +627,27 @@ function inferEpisodeVolume(number) {
 }
 
 function localizedName(entry) {
-  return [entry?.nameKo, entry?.name, entry?.nameJa, entry?.nameEn].find(hasRegisteredText) || "이름 미등록";
+  return preferredLocalizedNames(entry).find(hasRegisteredText) || "이름 미등록";
+}
+
+function preferredLocalizedNames(entry) {
+  if (nameDisplayMode === "ja") {
+    return [entry?.nameJa, entry?.sourceNameJa, entry?.name, entry?.nameKo, entry?.nameEn, entry?.sourceNameEn];
+  }
+  return [entry?.nameKo, entry?.name, entry?.nameJa, entry?.sourceNameJa, entry?.nameEn, entry?.sourceNameEn];
 }
 
 function personDisplayName(person) {
-  return [person?.nameKo, person?.name, person?.sourceNameJa, person?.sourceNameEn, person?.nameEn].find(hasRegisteredText) || "이름 미등록";
+  if (nameDisplayMode === "ja") {
+    return [person?.sourceNameJa, person?.nameJa, person?.name, person?.nameKo, person?.sourceNameEn, person?.nameEn].find(hasRegisteredText) || "이름 미등록";
+  }
+  return [person?.nameKo, person?.name, person?.sourceNameJa, person?.nameJa, person?.sourceNameEn, person?.nameEn].find(hasRegisteredText) || "이름 미등록";
 }
 
 function personOriginalNameText(person) {
   const current = personDisplayName(person);
   return Array.from(new Set([
+    person?.nameKo,
     person?.sourceNameJa,
     person?.sourceNameEn,
     person?.nameJa,
@@ -1694,6 +1716,14 @@ function bindQuizCategoryPicker() {
   });
 }
 
+function loadNameDisplayMode() {
+  try {
+    return localStorage.getItem(NAME_DISPLAY_MODE_KEY) === "ja" ? "ja" : "ko";
+  } catch (error) {
+    return "ko";
+  }
+}
+
 function getCompareGameItems() {
   return compareMetricMeta.map((metric) => {
     const peopleCount = compareEligiblePeople(metric.id).length;
@@ -2220,13 +2250,31 @@ function renderTechniqueEditor() {
 function renderTechniqueForm(technique = null) {
   const isNew = !technique;
   const target = document.querySelector("#techniqueFormWrap");
-  const draft = technique || { id: makeId("technique"), name: "", ownerId: "", note: "" };
+  const draft = technique || {
+    id: makeId("technique"),
+    name: "",
+    ownerId: "",
+    user: "",
+    target: "",
+    chapter: "",
+    location: "",
+    orderInStory: "",
+    reading: "",
+    originalNotation: "",
+    note: ""
+  };
   target.innerHTML = `
     <form id="techniqueForm">
       ${formHead(isNew ? "새 기술 추가" : "기술 수정", "deleteTechniqueButton", isNew)}
       ${field("id", "고유 ID", draft.id)}
       ${field("name", "기술명", draft.name)}
       <label>사용자<select name="ownerId"><option value="">미등록</option>${data.people.map((person) => option(person.id, personDisplayName(person), draft.ownerId)).join("")}</select></label>
+      ${field("target", "대상", draft.target || "")}
+      ${field("chapter", "등장 화수", draft.chapter || "", "number")}
+      ${field("location", "장소", draft.location || "")}
+      ${field("orderInStory", "작중 순서", draft.orderInStory || "", "number")}
+      ${field("reading", "읽는 법", draft.reading || "")}
+      ${field("originalNotation", "원문 표기", draft.originalNotation || "")}
       <label>메모<textarea name="note" rows="4">${escapeHtml(draft.note || "")}</textarea></label>
       <div class="form-actions"><button class="primary" type="submit">저장</button></div>
     </form>
@@ -2238,6 +2286,13 @@ function renderTechniqueForm(technique = null) {
       id: value(form, "id") || makeId("technique"),
       name: value(form, "name"),
       ownerId: value(form, "ownerId"),
+      user: value(form, "ownerId"),
+      target: value(form, "target"),
+      chapter: Number(value(form, "chapter") || 0),
+      location: value(form, "location"),
+      orderInStory: Number(value(form, "orderInStory") || 0),
+      reading: value(form, "reading"),
+      originalNotation: value(form, "originalNotation"),
       note: value(form, "note")
     });
     saveData();
@@ -2661,6 +2716,7 @@ function syncActiveNavigation() {
   tabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.view === currentView));
   mobileNavButtons.forEach((button) => button.classList.toggle("active", button.dataset.mobileNav === currentView));
   mobileViewSelect.value = currentView;
+  nameModeSelect.value = nameDisplayMode;
 }
 
 function getQuizCategories() {
@@ -3640,7 +3696,15 @@ function normalizeInPlace(target) {
       savedPersonIds.add(person.id);
     }
   });
-  target.techniques = (target.techniques || []).map((technique) => ({
+  target.techniques = (target.techniques || []).map((technique, index) => ({
+    user: "",
+    target: "",
+    chapter: 0,
+    location: "",
+    orderInStory: index + 1,
+    reading: "",
+    originalNotation: "",
+    note: "",
     ...baseTechniquesById.get(technique.id),
     ...technique
   }));
@@ -3827,6 +3891,11 @@ function invalidateDataCaches() {
   quizSession = null;
   quizAnswerDraft = "";
   quizStudyFlipped = false;
+}
+
+function invalidateNameDisplayCaches() {
+  quizCardCache.clear();
+  listItemCache.clear();
 }
 
 function exportJson() {

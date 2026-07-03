@@ -712,6 +712,37 @@ textarea {
   margin: 0;
 }
 
+.episode-technique-pick {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.episode-technique-new {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px;
+}
+
+.episode-technique-new input {
+  min-width: 0;
+}
+
+.episode-technique-status {
+  min-height: 16px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.episode-technique-status[data-status-type="ok"] {
+  color: #15803d;
+}
+
+.episode-technique-status[data-status-type="warn"] {
+  color: var(--accent);
+}
+
 .episode-technique-participants {
   display: grid;
   gap: 6px;

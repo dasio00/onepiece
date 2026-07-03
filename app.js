@@ -3428,9 +3428,16 @@ function renderEpisodeTechniqueRow(row = {}, index = 0, characterIds = []) {
       <label>사람<select name="techniqueCharacterId" data-technique-character-select>
         ${renderEpisodeTechniqueCharacterOptions(characterIds, primaryId)}
       </select></label>
-      <label>기술<select name="episodeTechniqueId" data-technique-select>
-        ${renderEpisodeTechniqueOptions(primaryId, row.techniqueId)}
-      </select></label>
+      <div class="episode-technique-pick">
+        <label>기술<select name="episodeTechniqueId" data-technique-select>
+          ${renderEpisodeTechniqueOptions(primaryId, row.techniqueId)}
+        </select></label>
+        <div class="episode-technique-new">
+          <input type="text" data-new-technique-name placeholder="새 기술명" />
+          <button class="episode-technique-add small" type="button" data-create-episode-technique>기술 추가</button>
+        </div>
+        <span class="episode-technique-status" data-new-technique-status></span>
+      </div>
       <div class="episode-technique-participants">
         <span>합동 인물</span>
         <div class="selected-person-list compact-participants" data-technique-participants>
@@ -3548,9 +3555,13 @@ function bindEpisodeTechniqueEditor(form, baseCharacterIds = []) {
     const removeButton = event.target.closest("[data-remove-episode-technique]");
     const addPartnerButton = event.target.closest("[data-add-technique-partner]");
     const removePartnerButton = event.target.closest("[data-remove-technique-participant]");
+    const createTechniqueButton = event.target.closest("[data-create-episode-technique]");
     if (removeButton) {
       removeButton.closest("[data-episode-technique-row]")?.remove();
       refreshRowNumbers();
+    }
+    if (createTechniqueButton) {
+      createEpisodeTechniqueFromRow(createTechniqueButton.closest("[data-episode-technique-row]"), form);
     }
     if (addPartnerButton) {
       const row = addPartnerButton.closest("[data-episode-technique-row]");
@@ -3582,6 +3593,59 @@ function bindEpisodeTechniqueEditor(form, baseCharacterIds = []) {
     if (partnerSelect) partnerSelect.innerHTML = renderEpisodeTechniquePartnerOptions(currentCharacterIds(), ids);
   });
   characterPicker?.addEventListener("click", () => window.setTimeout(refreshCharacterSelects, 0));
+}
+
+function createEpisodeTechniqueFromRow(row, form) {
+  if (!row) return;
+  const characterId = row.querySelector("[data-technique-character-select]")?.value || "";
+  const nameInput = row.querySelector("[data-new-technique-name]");
+  const techniqueSelect = row.querySelector("[data-technique-select]");
+  const status = row.querySelector("[data-new-technique-status]");
+  const name = nameInput?.value.trim() || "";
+  const setStatus = (message, type = "") => {
+    if (!status) return;
+    status.textContent = message;
+    status.dataset.statusType = type;
+  };
+  if (!characterId) {
+    setStatus("사람을 먼저 선택하세요.", "warn");
+    return;
+  }
+  if (!name) {
+    setStatus("새 기술명을 입력하세요.", "warn");
+    return;
+  }
+  const existing = findExistingTechniqueForCharacter(characterId, name);
+  const technique = existing || {
+    id: makeId("technique"),
+    name,
+    ownerId: characterId,
+    user: characterId,
+    target: "",
+    chapter: Number(findEpisode(form.dataset.episodeTechniqueForm)?.number || 0),
+    location: "",
+    orderInStory: data.techniques.length + 1,
+    reading: "",
+    originalNotation: "",
+    note: ""
+  };
+  if (!existing) {
+    data.techniques.push(technique);
+    saveData();
+  }
+  if (techniqueSelect) techniqueSelect.innerHTML = renderEpisodeTechniqueOptions(characterId, technique.id);
+  if (nameInput) nameInput.value = "";
+  setStatus(existing ? "이미 등록된 기술을 선택했습니다." : "기술 탭에 추가했습니다.", existing ? "info" : "ok");
+}
+
+function findExistingTechniqueForCharacter(characterId, name) {
+  const normalized = name.trim().toLocaleLowerCase("ko-KR");
+  return data.techniques.find((technique) => {
+    if (technique.ownerId !== characterId && technique.user !== characterId) return false;
+    return [technique.name, technique.nameKo, technique.nameJa, technique.nameEn, technique.originalNotation]
+      .filter(hasRegisteredText)
+      .some((candidate) => candidate.trim().toLocaleLowerCase("ko-KR") === normalized);
+  });
 }
 
 function readEpisodeTechniqueRows(form) {

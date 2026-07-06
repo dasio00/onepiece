@@ -2,6 +2,7 @@ const PATCH_STORAGE_KEY = "onePieceDataBuilder.patches.v1";
 const STORAGE_KEY = "onePieceDataBuilder.v3";
 const LEGACY_STORAGE_KEY = "onePieceDataBuilder.v2";
 const COMPARE_RECORD_KEY = "onePieceCompareGame.records.v1";
+const COMPARE_FILTER_KEY = "onePieceCompareGame.filters.v1";
 const NAME_DISPLAY_MODE_KEY = "onePieceNameDisplayMode.v1";
 const PERSISTED_LIST_KEYS = [
   "people",
@@ -89,6 +90,7 @@ let quizMode = "test";
 let quizStudyFlipped = false;
 let compareGame = null;
 let compareRecords = loadCompareRecords();
+let compareRangeFilters = loadCompareRangeFilters();
 let activePersonPanel = "basic";
 const LIST_BATCH_SIZE = 160;
 const EDITOR_PEOPLE_BATCH_SIZE = 160;
@@ -1853,7 +1855,8 @@ function renderCompareGame(metric) {
     detail.innerHTML = `
       <h3>${escapeHtml(meta.title)} 비교 게임</h3>
       ${renderCompareMetricControls(metricId)}
-      ${renderEmptyResult("비교할 수 있는 인물 데이터가 부족합니다.")}
+      ${renderCompareRangeControls(metricId)}
+      ${renderEmptyResult("현재 범위에서 비교할 수 있는 인물 데이터가 부족합니다. 범위를 넓히거나 전체로 돌려보세요.")}
     `;
     bindCompareGameControls();
     return;
@@ -1867,7 +1870,10 @@ function renderCompareGame(metric) {
     <h3>${escapeHtml(meta.title)} 비교 게임</h3>
     <section class="compare-game">
       <div class="compare-topbar">
-        ${renderCompareMetricControls(metricId)}
+        <div class="compare-control-stack">
+          ${renderCompareMetricControls(metricId)}
+          ${renderCompareRangeControls(metricId)}
+        </div>
         <button class="sub-card" id="compareRestartButton" type="button">새 게임</button>
       </div>
       <div class="compare-score">
@@ -1898,6 +1904,26 @@ function renderCompareMetricControls(selectedMetric) {
         </button>
       `).join("")}
     </div>
+  `;
+}
+
+function renderCompareRangeControls(metricId) {
+  const filter = compareRangeFilter(metricId);
+  const bounds = compareRangeBounds(metricId);
+  return `
+    <form class="compare-range-controls" id="compareRangeForm" data-compare-range-metric="${escapeAttribute(metricId)}">
+      <label>
+        <span>최소</span>
+        <input name="rangeMin" type="text" inputmode="numeric" value="${escapeAttribute(filter.min)}" placeholder="${escapeAttribute(compareRangePlaceholder(metricId, "min"))}" />
+      </label>
+      <label>
+        <span>최대</span>
+        <input name="rangeMax" type="text" inputmode="numeric" value="${escapeAttribute(filter.max)}" placeholder="${escapeAttribute(compareRangePlaceholder(metricId, "max"))}" />
+      </label>
+      <button class="range" type="button" data-compare-range-apply>범위 적용</button>
+      <button class="range" type="button" data-compare-range-reset>전체</button>
+      <span class="compare-range-summary">${escapeHtml(compareRangeSummary(metricId, bounds))}</span>
+    </form>
   `;
 }
 
@@ -1934,12 +1960,31 @@ function renderCompareFeedback(result) {
 }
 
 function bindCompareGameControls() {
+  const applyCompareRange = () => {
+    const form = detail.querySelector("#compareRangeForm");
+    if (!form) return;
+    const metricId = form.dataset.compareRangeMetric || activeId || "bounty";
+    updateCompareRangeFilter(metricId, value(form, "rangeMin"), value(form, "rangeMax"));
+    startCompareGame(metricId);
+    render();
+  };
   detail.querySelectorAll("[data-compare-metric]").forEach((button) => {
     button.addEventListener("click", () => {
       activeId = button.dataset.compareMetric;
       startCompareGame(activeId);
       render();
     });
+  });
+  detail.querySelector("#compareRangeForm")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    applyCompareRange();
+  });
+  detail.querySelector("[data-compare-range-apply]")?.addEventListener("click", applyCompareRange);
+  detail.querySelector("[data-compare-range-reset]")?.addEventListener("click", () => {
+    const metricId = detail.querySelector("#compareRangeForm")?.dataset.compareRangeMetric || activeId || "bounty";
+    updateCompareRangeFilter(metricId, "", "");
+    startCompareGame(metricId);
+    render();
   });
   detail.querySelectorAll("[data-compare-choice]").forEach((button) => {
     button.addEventListener("click", () => chooseComparePerson(button.dataset.compareChoice));
@@ -2029,7 +2074,11 @@ function compareGameIsValid(game) {
   const survivor = findPerson(game.survivorId);
   const challenger = findPerson(game.challengerId);
   if (!survivor || !challenger) return false;
-  return compareValue(survivor, game.metric) > 0 && compareValue(challenger, game.metric) > 0;
+  const bounds = compareRangeBounds(game.metric);
+  return compareValue(survivor, game.metric) > 0
+    && compareValue(challenger, game.metric) > 0
+    && comparePersonWithinBounds(survivor, game.metric, bounds)
+    && comparePersonWithinBounds(challenger, game.metric, bounds);
 }
 
 function pickComparePair(metricId) {
@@ -2069,7 +2118,13 @@ function pickCloseCompareCandidate(metricId, anchor, candidates, poolSize = 10) 
 }
 
 function compareEligiblePeople(metricId) {
-  return data.people.filter((person) => person.imageUrl && compareValue(person, metricId) > 0 && !isExcludedFromCompareMetric(person, metricId));
+  const bounds = compareRangeBounds(metricId);
+  return data.people.filter((person) => (
+    person.imageUrl
+    && compareValue(person, metricId) > 0
+    && !isExcludedFromCompareMetric(person, metricId)
+    && comparePersonWithinBounds(person, metricId, bounds)
+  ));
 }
 
 function isExcludedFromCompareMetric(person, metricId) {
@@ -2100,6 +2155,100 @@ function compareValueLabel(value, metricId) {
   if (metricId === "age") return `${value}세`;
   if (metricId === "bounty") return formatBounty(value);
   return String(value);
+}
+
+function compareRangeFilter(metricId) {
+  const filter = compareRangeFilters[metricId] || {};
+  return {
+    min: String(filter.min || ""),
+    max: String(filter.max || "")
+  };
+}
+
+function compareRangeBounds(metricId) {
+  const filter = compareRangeFilter(metricId);
+  let min = parseCompareRangeValue(filter.min, metricId);
+  let max = parseCompareRangeValue(filter.max, metricId);
+  if (Number.isFinite(min) && Number.isFinite(max) && min > max) {
+    [min, max] = [max, min];
+  }
+  return {
+    min: Number.isFinite(min) ? min : null,
+    max: Number.isFinite(max) ? max : null
+  };
+}
+
+function comparePersonWithinBounds(person, metricId, bounds = compareRangeBounds(metricId)) {
+  const value = compareValue(person, metricId);
+  if (bounds.min !== null && value < bounds.min) return false;
+  if (bounds.max !== null && value > bounds.max) return false;
+  return true;
+}
+
+function compareRangeSummary(metricId, bounds = compareRangeBounds(metricId)) {
+  const minText = bounds.min !== null ? compareValueLabel(bounds.min, metricId) : "";
+  const maxText = bounds.max !== null ? compareValueLabel(bounds.max, metricId) : "";
+  if (minText && maxText) return `${minText} 이상 · ${maxText} 이하`;
+  if (minText) return `${minText} 이상`;
+  if (maxText) return `${maxText} 이하`;
+  return "전체 범위";
+}
+
+function compareRangePlaceholder(metricId, side) {
+  if (metricId === "bounty") return side === "min" ? "예: 3억" : "예: 30억";
+  if (metricId === "height") return side === "min" ? "예: 170" : "예: 200";
+  if (metricId === "age") return side === "min" ? "예: 20" : "예: 50";
+  return "숫자";
+}
+
+function parseCompareRangeValue(input, metricId) {
+  const text = String(input || "").normalize("NFKC").replaceAll(",", "").trim();
+  if (!text) return NaN;
+  if (metricId === "bounty") return parseBountyInput(text);
+  const number = Number(text.replace(/[^\d.]/g, ""));
+  return Number.isFinite(number) ? number : NaN;
+}
+
+function parseBountyInput(input) {
+  const text = String(input || "").replace(/\s/g, "");
+  if (!text) return NaN;
+  let total = 0;
+  const oku = text.match(/(\d+(?:\.\d+)?)억/);
+  const man = text.match(/(\d+(?:\.\d+)?)만/);
+  if (oku) total += Number(oku[1]) * 100000000;
+  if (man) total += Number(man[1]) * 10000;
+  const rest = text
+    .replace(/(\d+(?:\.\d+)?)억/g, "")
+    .replace(/(\d+(?:\.\d+)?)만/g, "")
+    .replace(/베리/g, "")
+    .replace(/[^\d.]/g, "");
+  if (rest) total += Number(rest);
+  if (total) return Math.round(total);
+  const number = Number(text.replace(/[^\d.]/g, ""));
+  return Number.isFinite(number) ? number : NaN;
+}
+
+function updateCompareRangeFilter(metricId, min, max) {
+  compareRangeFilters = {
+    ...compareRangeFilters,
+    [metricId]: {
+      min: String(min || "").trim(),
+      max: String(max || "").trim()
+    }
+  };
+  saveCompareRangeFilters();
+}
+
+function loadCompareRangeFilters() {
+  try {
+    return JSON.parse(localStorage.getItem(COMPARE_FILTER_KEY) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function saveCompareRangeFilters() {
+  localStorage.setItem(COMPARE_FILTER_KEY, JSON.stringify(compareRangeFilters));
 }
 
 function loadCompareRecords() {

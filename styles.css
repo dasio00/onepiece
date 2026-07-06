@@ -2767,8 +2767,52 @@ textarea:focus-visible {
   gap: 8px;
 }
 
+.compare-control-stack {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
 .compare-topbar {
   justify-content: space-between;
+}
+
+.compare-range-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 8px;
+  min-width: 0;
+}
+
+.compare-range-controls label {
+  display: grid;
+  gap: 4px;
+  min-width: 112px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.compare-range-controls input {
+  width: 100%;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 10px;
+  color: var(--ink);
+  background: #ffffff;
+}
+
+.compare-range-summary {
+  align-self: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 9px;
+  background: #ffffff;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .compare-score span {
@@ -3072,11 +3116,17 @@ textarea:focus-visible {
   .quiz-mode-controls,
   .compare-topbar,
   .compare-metric-controls,
+  .compare-range-controls,
   .quiz-score,
   .compare-score,
   .quiz-answer .form-actions {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .compare-control-stack,
+  .compare-range-controls label {
+    min-width: 0;
   }
 
   .quiz-setup label {

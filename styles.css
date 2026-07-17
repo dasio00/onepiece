@@ -1077,6 +1077,11 @@ textarea {
   background: rgba(255, 255, 255, 0.96);
 }
 
+.edit-result-list {
+  display: grid;
+  gap: 8px;
+}
+
 .edit-pick {
   border: 1px solid var(--line);
   border-radius: 8px;

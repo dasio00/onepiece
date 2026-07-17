@@ -326611,3062 +326611,4151 @@ window.onePieceData = {
   },
   "wiki-tech-gomu-gomu-no-pistol": {
     "nameKo": "고무고무 총 (피스톨)",
-    "nameJa": "ゴムゴムの 銃 (ピストル)"
+    "nameJa": "ゴムゴムの 銃 (ピストル)",
+    "nameEn": "Gomu Gomu no Pistol"
   },
   "wiki-tech-gomu-gomu-no-pistol-shot": {
     "nameKo": "고무고무 총 (피스톨) 산탄 (샷)",
-    "nameJa": "ゴムゴムの 銃 (ピストル) 散弾 (ショット)"
+    "nameJa": "ゴムゴムの 銃 (ピストル) 散弾 (ショット)",
+    "nameEn": "Gomu Gomu no Pistol \"Shot\""
   },
   "wiki-tech-gomu-gomu-no-rocket": {
     "nameKo": "고무고무 로켓",
-    "nameJa": "ゴムゴムのロケット"
+    "nameJa": "ゴムゴムのロケット",
+    "nameEn": "Gomu Gomu no Rocket"
   },
   "wiki-tech-gomu-gomu-no-bazooka": {
     "nameKo": "고무고무 바주카",
-    "nameJa": "ゴムゴムのバズーカ"
+    "nameJa": "ゴムゴムのバズーカ",
+    "nameEn": "Gomu Gomu no Bazooka"
   },
   "wiki-tech-gomu-gomu-no-gatling": {
     "nameKo": "고무고무 총난타 (개틀링)",
-    "nameJa": "ゴムゴムの 銃乱打 (ガトリング)"
+    "nameJa": "ゴムゴムの 銃乱打 (ガトリング)",
+    "nameEn": "Gomu Gomu no Gatling"
   },
   "wiki-tech-gomu-gomu-no-bullet": {
     "nameKo": "고무고무 총탄 (불릿)",
-    "nameJa": "ゴムゴムの 銃弾 (ブレット)"
+    "nameJa": "ゴムゴムの 銃弾 (ブレット)",
+    "nameEn": "Gomu Gomu no Bullet"
   },
   "wiki-tech-gomu-gomu-no-cannon": {
     "nameKo": "고무고무 공성포 (캐넌)",
-    "nameJa": "ゴムゴムの 攻城砲 (キャノン)"
+    "nameJa": "ゴムゴムの 攻城砲 (キャノン)",
+    "nameEn": "Gomu Gomu no Cannon"
   },
   "wiki-tech-rubber-rubber-gun-wild-shot": {
-    "nameKo": "Rubber Rubber 건 Wild 샷"
+    "nameKo": "Rubber Rubber 건 Wild 샷",
+    "nameEn": "Rubber Rubber Gun Wild Shot"
   },
   "wiki-tech-gomu-gomu-no-bow-gun": {
     "nameKo": "고무고무 석궁",
-    "nameJa": "ゴムゴムのボーガン"
+    "nameJa": "ゴムゴムのボーガン",
+    "nameEn": "Gomu Gomu no Bow Gun"
   },
   "wiki-tech-gomu-gomu-no-rifle": {
     "nameKo": "고무고무 회전탄 (라이플)",
-    "nameJa": "ゴムゴムの 回転弾 (ライフル)"
+    "nameJa": "ゴムゴムの 回転弾 (ライフル)",
+    "nameEn": "Gomu Gomu no Rifle"
   },
   "wiki-tech-gomu-gomu-no-muchi": {
     "nameKo": "고무고무 채찍",
-    "nameJa": "ゴムゴムの 鞭 (ムチ)"
+    "nameJa": "ゴムゴムの 鞭 (ムチ)",
+    "nameEn": "Gomu Gomu no Muchi"
   },
   "wiki-tech-gomu-gomu-no-tsuchi": {
     "nameKo": "고무고무 해머",
-    "nameJa": "ゴムゴムの 槌 (つち)"
+    "nameJa": "ゴムゴムの 槌 (つち)",
+    "nameEn": "Gomu Gomu no Tsuchi"
   },
   "wiki-tech-gomu-gomu-no-kama": {
     "nameKo": "고무고무 낫",
-    "nameJa": "ゴムゴムの 鎌 (かま)"
+    "nameJa": "ゴムゴムの 鎌 (かま)",
+    "nameEn": "Gomu Gomu no Kama"
   },
   "wiki-tech-gomu-gomu-no-yari": {
     "nameKo": "고무고무 창",
-    "nameJa": "ゴムゴムの 槍 (やり)"
+    "nameJa": "ゴムゴムの 槍 (やり)",
+    "nameEn": "Gomu Gomu no Yari"
   },
   "wiki-tech-gomu-gomu-no-ogama": {
     "nameKo": "고무고무 대형 낫",
-    "nameJa": "ゴムゴムの 大鎌 (おおがま)"
+    "nameJa": "ゴムゴムの 大鎌 (おおがま)",
+    "nameEn": "Gomu Gomu no Ogama"
   },
   "wiki-tech-gomu-gomu-no-ono": {
     "nameKo": "고무고무 도끼",
-    "nameJa": "ゴムゴムの 戦斧 (おの)"
+    "nameJa": "ゴムゴムの 戦斧 (おの)",
+    "nameEn": "Gomu Gomu no Ono"
   },
   "wiki-tech-gomu-gomu-no-ozuchi": {
     "nameKo": "고무고무 대망치",
-    "nameJa": "ゴムゴムの 大槌 (おおづち)"
+    "nameJa": "ゴムゴムの 大槌 (おおづち)",
+    "nameEn": "Gomu Gomu no Ozuchi"
   },
   "wiki-tech-gomu-gomu-no-fusen": {
     "nameKo": "고무고무 풍선",
-    "nameJa": "ゴムゴムの風船"
+    "nameJa": "ゴムゴムの風船",
+    "nameEn": "Gomu Gomu no Fusen"
   },
   "wiki-tech-gomu-gomu-no-kane": {
     "nameKo": "고무고무 종",
-    "nameJa": "ゴムゴムの 鐘 (かね)"
+    "nameJa": "ゴムゴムの 鐘 (かね)",
+    "nameEn": "Gomu Gomu no Kane"
   },
   "wiki-tech-gomu-gomu-no-kazaguruma": {
     "nameKo": "고무고무 풍차",
-    "nameJa": "ゴムゴムの 風車 (ふうしゃ)"
+    "nameJa": "ゴムゴムの 風車 (ふうしゃ)",
+    "nameEn": "Gomu Gomu no Kazaguruma"
   },
   "wiki-tech-gomu-gomu-no-tate": {
     "nameKo": "고무고무 방패",
-    "nameJa": "ゴムゴムの 盾 (たて)"
+    "nameJa": "ゴムゴムの 盾 (たて)",
+    "nameEn": "Gomu Gomu no Tate"
   },
   "wiki-tech-gomu-gomu-no-ami": {
     "nameKo": "고무고무 그물",
-    "nameJa": "ゴムゴムの 網 (あみ)"
+    "nameJa": "ゴムゴムの 網 (あみ)",
+    "nameEn": "Gomu Gomu no Ami"
   },
   "wiki-tech-gomu-gomu-no-ikebana": {
     "nameKo": "고무고무 꽃꽂이",
-    "nameJa": "ゴムゴムの生け花"
+    "nameJa": "ゴムゴムの生け花",
+    "nameEn": "Gomu Gomu no Ikebana"
   },
   "wiki-tech-gomu-gomu-no-stamp": {
     "nameKo": "고무고무 스탬프",
-    "nameJa": "ゴムゴムのスタンプ"
+    "nameJa": "ゴムゴムのスタンプ",
+    "nameEn": "Gomu Gomu no Stamp"
   },
   "wiki-tech-gomu-gomu-no-dame-da": {
     "nameKo": "고무고무 안 돼",
-    "nameJa": "ゴムゴムのダメだ"
+    "nameJa": "ゴムゴムのダメだ",
+    "nameEn": "Gomu Gomu no Dame Da!"
   },
   "wiki-tech-gomu-gomu-no-baku-baku": {
     "nameKo": "고무고무 우걱우걱",
-    "nameJa": "ゴムゴムのバクバク"
+    "nameJa": "ゴムゴムのバクバク",
+    "nameEn": "Gomu Gomu no Baku Baku"
   },
   "wiki-tech-gomu-gomu-no-marunoko": {
     "nameKo": "고무고무 회전톱",
-    "nameJa": "ゴムゴムの 丸鋸 (まるのこ)"
+    "nameJa": "ゴムゴムの 丸鋸 (まるのこ)",
+    "nameEn": "Gomu Gomu no Marunoko"
   },
   "wiki-tech-gomu-gomu-no-storm": {
     "nameKo": "고무고무 폭풍우 (스톰)",
-    "nameJa": "ゴムゴムの 暴風雨 (ストーム)"
+    "nameJa": "ゴムゴムの 暴風雨 (ストーム)",
+    "nameEn": "Gomu Gomu no Storm"
   },
   "wiki-tech-gomu-gomu-no-hanabi": {
     "nameKo": "고무고무 불꽃",
-    "nameJa": "ゴムゴムの 花火 (はなび)"
+    "nameJa": "ゴムゴムの 花火 (はなび)",
+    "nameEn": "Gomu Gomu no Hanabi"
   },
   "wiki-tech-gomu-gomu-no-boh": {
     "nameKo": "고무고무 멍",
-    "nameJa": "ゴムゴムのボー"
+    "nameJa": "ゴムゴムのボー",
+    "nameEn": "Gomu Gomu no Boh..."
   },
   "wiki-tech-gomu-gomu-no-tako": {
     "nameKo": "고무고무 문어",
-    "nameJa": "ゴムゴムのたこ"
+    "nameJa": "ゴムゴムのたこ",
+    "nameEn": "Gomu Gomu no Tako"
   },
   "wiki-tech-gomu-gomu-no-mikata-robo": {
     "nameKo": "고무고무 우리 편 로봇",
-    "nameJa": "ゴムゴムの味方ロボ"
+    "nameJa": "ゴムゴムの味方ロボ",
+    "nameEn": "Gomu Gomu no Mikata Robo"
   },
   "wiki-tech-mikata-robo-kick": {
     "nameKo": "우리 편 로봇 킥",
-    "nameJa": "味方ロボキック"
+    "nameJa": "味方ロボキック",
+    "nameEn": "Mikata Robo Kick"
   },
   "wiki-tech-gomu-gomu-no-kazan": {
     "nameKo": "고무고무 화산",
-    "nameJa": "ゴムゴムの火山"
+    "nameJa": "ゴムゴムの火山",
+    "nameEn": "Gomu Gomu no Kazan"
   },
   "wiki-tech-gomu-gomu-no-haragi": {
     "nameKo": "고무고무 뱃살 개그",
-    "nameJa": "ゴムゴムのハラギ"
+    "nameJa": "ゴムゴムのハラギ",
+    "nameEn": "Gomu Gomu no Haragi"
   },
   "wiki-tech-gomu-gomu-no-ame": {
     "nameKo": "고무고무 비",
-    "nameJa": "ゴムゴムの 雨 (あめ)"
+    "nameJa": "ゴムゴムの 雨 (あめ)",
+    "nameEn": "Gomu Gomu no Ame"
   },
   "wiki-tech-gomu-gomu-no-migawari": {
     "nameKo": "고무고무 대타",
-    "nameJa": "ゴムゴムの 身代り (みかわり)"
+    "nameJa": "ゴムゴムの 身代り (みかわり)",
+    "nameEn": "Gomu Gomu no Migawari"
   },
   "wiki-tech-gomu-gomu-no-screw": {
     "nameKo": "고무고무 스크류",
-    "nameJa": "ゴムゴムのスクリュー"
+    "nameJa": "ゴムゴムのスクリュー",
+    "nameEn": "Gomu Gomu no Screw"
   },
   "wiki-tech-gomu-gomu-no-pachinko": {
     "nameKo": "고무고무 새총",
-    "nameJa": "ゴムゴムのパチンコ"
+    "nameJa": "ゴムゴムのパチンコ",
+    "nameEn": "Gomu Gomu no Pachinko"
   },
   "wiki-tech-gomu-gomu-no-amidori": {
     "nameKo": "고무고무 움켜쥐기",
-    "nameJa": "ゴムゴムの網取"
+    "nameJa": "ゴムゴムの網取",
+    "nameEn": "Gomu Gomu no Amidori"
   },
   "wiki-tech-gomu-gomu-no-tsuribashi": {
     "nameKo": "고무고무 다리",
-    "nameJa": "ゴムゴムの吊橋"
+    "nameJa": "ゴムゴムの吊橋",
+    "nameEn": "Gomu Gomu no Tsuribashi"
   },
   "wiki-tech-gomu-gomu-no-nagenawa": {
     "nameKo": "고무고무 밧줄 감기",
-    "nameJa": "ゴムゴムの投げ縄"
+    "nameJa": "ゴムゴムの投げ縄",
+    "nameEn": "Gomu Gomu no Nagenawa"
   },
   "wiki-tech-gomu-gomu-no-neji": {
     "nameKo": "고무고무 Neji",
-    "nameJa": "ゴムゴムのネジ"
+    "nameJa": "ゴムゴムのネジ",
+    "nameEn": "Gomu Gomu no Neji"
   },
   "wiki-tech-gomu-gomu-no-propeller": {
     "nameKo": "고무고무 프로펠러",
-    "nameJa": "ゴムゴムのプロペラ"
+    "nameJa": "ゴムゴムのプロペラ",
+    "nameEn": "Gomu Gomu no Propeller"
   },
   "wiki-tech-gomu-gomu-no-mizu-kure": {
     "nameKo": "고무고무 물 줘",
-    "nameJa": "ゴムゴムの水くれ"
+    "nameJa": "ゴムゴムの水くれ",
+    "nameEn": "Gomu Gomu no Mizu Kure"
   },
   "wiki-tech-gomu-gomu-no-sadowari": {
     "nameKo": "고무고무 모래 가르기",
-    "nameJa": "ゴムゴムの砂土割り"
+    "nameJa": "ゴムゴムの砂土割り",
+    "nameEn": "Gomu Gomu no Sadowari"
   },
   "wiki-tech-gomu-gomu-no-zenmai": {
     "nameKo": "고무고무 용수철",
-    "nameJa": "ゴムゴムのゼンマイ"
+    "nameJa": "ゴムゴムのゼンマイ",
+    "nameEn": "Gomu Gomu no Zenmai"
   },
   "wiki-tech-gomu-gomu-no-shoot": {
     "nameKo": "고무고무 슛",
-    "nameJa": "ゴムゴムのシュート"
+    "nameJa": "ゴムゴムのシュート",
+    "nameEn": "Gomu Gomu no Shoot"
   },
   "wiki-tech-gomu-gomu-no-bungee": {
     "nameKo": "고무고무 번지",
-    "nameJa": "ゴムゴムのバンジー"
+    "nameJa": "ゴムゴムのバンジー",
+    "nameEn": "Gomu Gomu no Bungee"
   },
   "wiki-tech-gomu-gomu-no-tomotsuna": {
     "nameKo": "고무고무 밧줄",
-    "nameJa": "ゴムゴムの艫綱"
+    "nameJa": "ゴムゴムの艫綱",
+    "nameEn": "Gomu Gomu no Tomotsuna"
   },
   "wiki-tech-gomu-gomu-no-warp": {
     "nameKo": "고무고무 Warp",
-    "nameJa": "ゴムゴムのワープ"
+    "nameJa": "ゴムゴムのワープ",
+    "nameEn": "Gomu Gomu no Warp"
   },
   "wiki-tech-gomu-gomu-no-home-run": {
     "nameKo": "고무고무 홈런",
-    "nameJa": "ゴムゴムのホームラン"
+    "nameJa": "ゴムゴムのホームラン",
+    "nameEn": "Gomu Gomu no Home Run"
   },
   "wiki-tech-gomu-gomu-no-yo-yo": {
     "nameKo": "고무고무 요요",
-    "nameJa": "ゴムゴムのヨーヨー"
+    "nameJa": "ゴムゴムのヨーヨー",
+    "nameEn": "Gomu Gomu no Yo-Yo"
   },
   "wiki-tech-gomu-gomu-no-koma": {
     "nameKo": "고무고무 팽이",
-    "nameJa": "ゴムゴムの独楽"
+    "nameJa": "ゴムゴムの独楽",
+    "nameEn": "Gomu Gomu no Koma"
   },
   "wiki-tech-gomu-gomu-no-jutte": {
     "nameKo": "고무고무 짓테",
-    "nameJa": "ゴムゴムの十手"
+    "nameJa": "ゴムゴムの十手",
+    "nameEn": "Gomu Gomu no Jutte"
   },
   "wiki-tech-gomu-gomu-no-senjukannon": {
     "nameKo": "고무고무 천수관음",
-    "nameJa": "ゴムゴムの千手観音"
+    "nameJa": "ゴムゴムの千手観音",
+    "nameEn": "Gomu Gomu no Senjukannon"
   },
   "wiki-tech-gomu-gomu-no-gomu-doryoku": {
     "nameKo": "고무고무 고무 동력",
-    "nameJa": "ゴムゴムのゴム動力"
+    "nameJa": "ゴムゴムのゴム動力",
+    "nameEn": "Gomu Gomu no Gomu Doryoku"
   },
   "wiki-tech-gomu-gomu-no-twin-pistol": {
     "nameKo": "고무고무 트윈 총 (피스톨)",
-    "nameJa": "ゴムゴムのツイン 銃 (ピストル)"
+    "nameJa": "ゴムゴムのツイン 銃 (ピストル)",
+    "nameEn": "Gomu Gomu no Twin Pistol"
   },
   "wiki-tech-gomu-gomu-no-hyakuman-do-bazooka": {
     "nameKo": "고무고무 백만도 바주카",
-    "nameJa": "ゴムゴムの百万度バズーカ"
+    "nameJa": "ゴムゴムの百万度バズーカ",
+    "nameEn": "Gomu Gomu no Hyakuman-do Bazooka"
   },
   "wiki-tech-gomu-gomu-no-mushitoriami": {
     "nameKo": "고무고무 잠자리채",
-    "nameJa": "ゴムゴムの虫取り網"
+    "nameJa": "ゴムゴムの虫取り網",
+    "nameEn": "Gomu Gomu no Mushitoriami"
   },
   "wiki-tech-gomu-gomu-no-ricochet": {
     "nameKo": "고무고무 리코셰",
-    "nameJa": "ゴムゴムのリコチェット"
+    "nameJa": "ゴムゴムのリコチェット",
+    "nameEn": "Gomu Gomu no Ricochet"
   },
   "wiki-tech-gomu-gomu-no-bakazu": {
     "nameKo": "고무고무 Bakazu?!",
-    "nameJa": "ゴムゴムのバカズ?!"
+    "nameJa": "ゴムゴムのバカズ?!",
+    "nameEn": "Gomu Gomu no Bakazu?!"
   },
   "wiki-tech-luffy-punch": {
     "nameKo": "루피 펀치",
-    "nameJa": "ルフィパンチ"
+    "nameJa": "ルフィパンチ",
+    "nameEn": "Luffy Punch"
   },
   "wiki-tech-luffy-swing": {
     "nameKo": "루피 스윙",
-    "nameJa": "ルフィスイング"
+    "nameJa": "ルフィスイング",
+    "nameEn": "Luffy Swing"
   },
   "wiki-tech-gomu-gomu-no-masakari": {
     "nameKo": "고무고무 Masakari",
-    "nameJa": "ゴムゴムのまさかり"
+    "nameJa": "ゴムゴムのまさかり",
+    "nameEn": "Gomu Gomu no Masakari"
   },
   "wiki-tech-gomu-gomu-no-dance": {
     "nameKo": "고무고무 무도 (댄스)",
-    "nameJa": "ゴムゴムの 舞踏 (ダンス)"
+    "nameJa": "ゴムゴムの 舞踏 (ダンス)",
+    "nameEn": "Gomu Gomu no Dance"
   },
   "wiki-tech-gomu-rush": {
     "nameKo": "고무 러쉬",
-    "nameJa": "ゴムラッシュ"
+    "nameJa": "ゴムラッシュ",
+    "nameEn": "Gomu Rush"
   },
   "wiki-tech-kung-fu-kick": {
     "nameKo": "쿵푸 킥",
-    "nameJa": "カンフーキック"
+    "nameJa": "カンフーキック",
+    "nameEn": "Kung Fu Kick"
   },
   "wiki-tech-gomu-gomu-no-snake-shot": {
     "nameKo": "고무고무 뱀 총 (스네이크 샷)",
-    "nameJa": "ゴムゴムの 蛇銃 (スネークショット)"
+    "nameJa": "ゴムゴムの 蛇銃 (スネークショット)",
+    "nameEn": "Gomu Gomu no Snake Shot"
   },
   "wiki-tech-gomu-gomu-no-orei-fire": {
     "nameKo": "고무고무 답례 포 (파이어)",
-    "nameJa": "ゴムゴムの お礼砲 (おれいファイア)"
+    "nameJa": "ゴムゴムの お礼砲 (おれいファイア)",
+    "nameEn": "Gomu Gomu no Orei Fire"
   },
   "wiki-tech-buso-koka-gomu-gomu-no-bullet": {
     "nameKo": "무장 강화 고무고무 총탄 (불릿)",
-    "nameJa": "武装化ゴムゴムの 銃弾 (ブレット)"
+    "nameJa": "武装化ゴムゴムの 銃弾 (ブレット)",
+    "nameEn": "Buso Koka: Gomu Gomu no Bullet"
   },
   "wiki-tech-buso-koka-gomu-gomu-no-gatling": {
     "nameKo": "무장 강화 고무고무 총난타 (개틀링)",
-    "nameJa": "武装化 ゴムゴムの 銃乱打 (ガトリング)"
+    "nameJa": "武装化 ゴムゴムの 銃乱打 (ガトリング)",
+    "nameEn": "Buso Koka: Gomu Gomu no Gatling"
   },
   "wiki-tech-gomu-gomu-no-ufo": {
     "nameKo": "고무고무 UFO",
-    "nameJa": "ゴムゴムの UFO (ユーフォー)"
+    "nameJa": "ゴムゴムの UFO (ユーフォー)",
+    "nameEn": "Gomu Gomu no UFO"
   },
   "wiki-tech-gomu-gomu-no-tsuppari": {
     "nameKo": "고무고무 밀쳐내기",
-    "nameJa": "ゴムゴムのつっぱり"
+    "nameJa": "ゴムゴムのつっぱり",
+    "nameEn": "Gomu Gomu no Tsuppari"
   },
   "wiki-tech-gomu-gomu-no-ude-fusen": {
     "nameKo": "고무고무 Ude Fusen",
-    "nameJa": "ゴムゴムの腕風船"
+    "nameJa": "ゴムゴムの腕風船",
+    "nameEn": "Gomu Gomu no Ude Fusen"
   },
   "wiki-tech-atama-buso-gomu-gomu-no-kane": {
     "nameKo": "무장 고무고무 종",
-    "nameJa": "武装 ゴムゴムの 鐘 (かね)"
+    "nameJa": "武装 ゴムゴムの 鐘 (かね)",
+    "nameEn": "Atama Buso: Gomu Gomu no Kane"
   },
   "wiki-tech-gomu-gomu-no-tako-stamp": {
     "nameKo": "고무고무 문어 스탬프",
-    "nameJa": "ゴムゴムのタコスタンプ"
+    "nameJa": "ゴムゴムのタコスタンプ",
+    "nameEn": "Gomu Gomu no Tako Stamp"
   },
   "wiki-tech-gomu-gomu-no-midare-gui": {
     "nameKo": "고무고무 마구 먹기",
-    "nameJa": "ゴムゴムの乱れ食い"
+    "nameJa": "ゴムゴムの乱れ食い",
+    "nameEn": "Gomu Gomu no Midare Gui"
   },
   "wiki-tech-gomu-gomu-no-spread": {
     "nameKo": "고무고무 Spread",
-    "nameJa": "ゴムゴムのスプレッド"
+    "nameJa": "ゴムゴムのスプレッド",
+    "nameEn": "Gomu Gomu no Spread"
   },
   "wiki-tech-gomu-gomu-no-spring-bullet": {
     "nameKo": "고무고무 스프링 총탄 (불릿)",
-    "nameJa": "ゴムゴムのスプリング 銃弾 (ブレット)"
+    "nameJa": "ゴムゴムのスプリング 銃弾 (ブレット)",
+    "nameEn": "Gomu Gomu no Spring Bullet"
   },
   "wiki-tech-oni-giri": {
     "nameKo": "삼도류 귀참",
-    "nameJa": "鬼斬り"
+    "nameJa": "鬼斬り",
+    "nameEn": "Oni Giri"
   },
   "wiki-tech-yaki-oni-giri": {
-    "nameJa": "焼鬼斬り"
+    "nameJa": "焼鬼斬り",
+    "nameEn": "Yaki Oni Giri"
   },
   "wiki-tech-enbima-yonezu-oni-giri": {
-    "nameJa": "艶美魔夜不眠鬼斬り"
+    "nameJa": "艶美魔夜不眠鬼斬り",
+    "nameEn": "Enbima Yonezu Oni Giri"
   },
   "wiki-tech-tora-gari": {
-    "nameJa": "虎狩り"
+    "nameJa": "虎狩り",
+    "nameEn": "Tora Gari"
   },
-  "wiki-tech-santoryu-ogi-sanzen-sekai": {},
+  "wiki-tech-santoryu-ogi-sanzen-sekai": {
+    "nameEn": "Santoryu Ogi: Sanzen Sekai"
+  },
   "wiki-tech-toro-nagashi": {
-    "nameJa": "刀狼流し"
+    "nameJa": "刀狼流し",
+    "nameEn": "Toro Nagashi"
   },
   "wiki-tech-tatsu-maki": {
-    "nameJa": "龍巻き"
+    "nameJa": "龍巻き",
+    "nameEn": "Tatsu Maki"
   },
   "wiki-tech-ushi-bari": {
-    "nameJa": "牛針"
+    "nameJa": "牛針",
+    "nameEn": "Ushi Bari"
   },
   "wiki-tech-gazami-dori": {
-    "nameJa": "蟹 （ ガザミ ） 獲り"
+    "nameJa": "蟹 （ ガザミ ） 獲り",
+    "nameEn": "Gazami Dori"
   },
   "wiki-tech-hyakuhachi-pound-ho": {
-    "nameJa": "百八 煩悩 （ ポンド ） 鳳"
+    "nameJa": "百八 煩悩 （ ポンド ） 鳳",
+    "nameEn": "Hyakuhachi Pound Ho"
   },
   "wiki-tech-karasuma-gari": {
-    "nameJa": "鴉魔狩り"
+    "nameJa": "鴉魔狩り",
+    "nameEn": "Karasuma Gari"
   },
   "wiki-tech-gyuki-yuzume": {
-    "nameJa": "牛鬼勇爪"
+    "nameJa": "牛鬼勇爪",
+    "nameEn": "Gyuki Yuzume"
   },
   "wiki-tech-ichi-gorilla": {
-    "nameJa": "一 剛力羅 （ ゴリラ ）"
+    "nameJa": "一 剛力羅 （ ゴリラ ）",
+    "nameEn": "Ichi Gorilla"
   },
   "wiki-tech-ni-gorilla": {
-    "nameJa": "二 剛力羅 （ ゴリラ ）"
+    "nameJa": "二 剛力羅 （ ゴリラ ）",
+    "nameEn": "Ni Gorilla"
   },
   "wiki-tech-nigori-zake": {
-    "nameJa": "二剛力斬 （ ニゴリザケ ）"
+    "nameJa": "二剛力斬 （ ニゴリザケ ）",
+    "nameEn": "Nigori-Zake"
   },
   "wiki-tech-hyokindama": {
-    "nameJa": "豹琴玉"
+    "nameJa": "豹琴玉",
+    "nameEn": "Hyokindama"
   },
   "wiki-tech-daibutsu-giri": {
-    "nameJa": "大仏斬り"
+    "nameJa": "大仏斬り",
+    "nameEn": "Daibutsu Giri"
   },
   "wiki-tech-yasha-garasu": {
-    "nameJa": "夜叉鴉"
+    "nameJa": "夜叉鴉",
+    "nameEn": "Yasha Garasu"
   },
-  "wiki-tech-santoryu-ogi-rokudo-no-tsuji": {},
+  "wiki-tech-santoryu-ogi-rokudo-no-tsuji": {
+    "nameEn": "Santoryu Ogi: Rokudo no Tsuji"
+  },
   "wiki-tech-kokujo-o-tatsumaki": {
-    "nameJa": "黒縄大龍巻"
+    "nameJa": "黒縄大龍巻",
+    "nameEn": "Kokujo O Tatsumaki"
   },
   "wiki-tech-rengoku-oni-giri": {
-    "nameJa": "煉獄鬼斬り"
+    "nameJa": "煉獄鬼斬り",
+    "nameEn": "Rengoku Oni Giri"
   },
   "wiki-tech-ul-tora-gari": {
-    "nameJa": "極虎狩り （ ウルトラがり ）"
+    "nameJa": "極虎狩り （ ウルトラがり ）",
+    "nameEn": "Ul-Tora Gari"
   },
   "wiki-tech-senhachiju-pound-ho": {
-    "nameJa": "千八十 煩悩 （ ポンド ） 鳳"
+    "nameJa": "千八十 煩悩 （ ポンド ） 鳳",
+    "nameEn": "Senhachiju Pound Ho"
   },
-  "wiki-tech-santoryu-ogi-ichidai-sanzen-daisen-sekai": {},
+  "wiki-tech-santoryu-ogi-ichidai-sanzen-daisen-sekai": {
+    "nameEn": "Santoryu Ogi: Ichidai Sanzen Daisen Sekai"
+  },
   "wiki-tech-kokoba-madara-gari": {
-    "nameJa": "虎虎婆彪狩り"
+    "nameJa": "虎虎婆彪狩り",
+    "nameEn": "Kokoba Madara Gari"
   },
   "wiki-tech-aka-oni-okomega": {
-    "nameJa": "赤鬼 怒巨 （ オコメガ ）"
+    "nameJa": "赤鬼 怒巨 （ オコメガ ）",
+    "nameEn": "Aka-Oni Okomega"
   },
-  "wiki-tech-en-o-santo-ryu-ippyakusanjo-hiryu-jigoku": {},
+  "wiki-tech-en-o-santo-ryu-ippyakusanjo-hiryu-jigoku": {
+    "nameEn": "En-Ō Santōryū: Ippyakusanjo Hiryu Jigoku"
+  },
   "wiki-tech-human-drill": {
-    "nameJa": "飛勇 （ ヒュー ） 萬螺旋 （ マンドリル ）"
+    "nameJa": "飛勇 （ ヒュー ） 萬螺旋 （ マンドリル ）",
+    "nameEn": "Human Drill"
   },
   "wiki-tech-ryoricho-gisoku-kick": {
-    "nameJa": "料理長義足キック"
+    "nameJa": "料理長義足キック",
+    "nameEn": "Ryoricho Gisoku Kick"
   },
   "wiki-tech-ryoricho-drop": {
-    "nameJa": "料理長ドロップ"
+    "nameJa": "料理長ドロップ",
+    "nameEn": "Ryoricho Drop"
   },
-  "wiki-tech-zeff-pulled-pork-pound": {},
-  "wiki-tech-zeff-fork-swing": {},
-  "wiki-tech-zeff-rolling-dish": {},
-  "wiki-tech-zeff-turnover-kick": {},
-  "wiki-tech-zeff-gut-stuffer": {},
-  "wiki-tech-zeff-chicken-flambe": {},
-  "wiki-tech-zeff-shrimp-summer": {},
-  "wiki-tech-zeff-tatty-trouncer": {},
-  "wiki-tech-zeff-shank-crank": {},
-  "wiki-tech-zeff-fish-fillet": {},
-  "wiki-tech-zeff-cooking-summer": {},
+  "wiki-tech-zeff-pulled-pork-pound": {
+    "nameEn": "Zeff Pulled Pork Pound:"
+  },
+  "wiki-tech-zeff-fork-swing": {
+    "nameEn": "Zeff Fork Swing"
+  },
+  "wiki-tech-zeff-rolling-dish": {
+    "nameEn": "Zeff Rolling Dish"
+  },
+  "wiki-tech-zeff-turnover-kick": {
+    "nameEn": "Zeff Turnover Kick"
+  },
+  "wiki-tech-zeff-gut-stuffer": {
+    "nameEn": "Zeff Gut Stuffer"
+  },
+  "wiki-tech-zeff-chicken-flambe": {
+    "nameEn": "Zeff Chicken Flambe"
+  },
+  "wiki-tech-zeff-shrimp-summer": {
+    "nameEn": "Zeff Shrimp Summer"
+  },
+  "wiki-tech-zeff-tatty-trouncer": {
+    "nameEn": "Zeff Tatty Trouncer"
+  },
+  "wiki-tech-zeff-shank-crank": {
+    "nameEn": "Zeff Shank Crank"
+  },
+  "wiki-tech-zeff-fish-fillet": {
+    "nameEn": "Zeff Fish Fillet"
+  },
+  "wiki-tech-zeff-cooking-summer": {
+    "nameEn": "Zeff Cooking Summer"
+  },
   "wiki-tech-zeff-knife-shot": {
-    "nameKo": "Zeff Knife 샷"
+    "nameKo": "Zeff Knife 샷",
+    "nameEn": "Zeff Knife Shot"
   },
-  "wiki-tech-zeff-frog-leg-kick": {},
-  "wiki-tech-zeff-open-face-slam": {},
+  "wiki-tech-zeff-frog-leg-kick": {
+    "nameEn": "Zeff Frog Leg Kick"
+  },
+  "wiki-tech-zeff-open-face-slam": {
+    "nameEn": "Zeff Open Face Slam"
+  },
   "wiki-tech-red-foot-pride": {
-    "nameKo": "레드 Foot Pride"
+    "nameKo": "레드 Foot Pride",
+    "nameEn": "Red Foot Pride"
   },
-  "wiki-tech-zeff-pegleg-shoot": {},
-  "wiki-tech-zeff-table-change": {},
-  "wiki-tech-zeff-leg-o-wisdom": {},
+  "wiki-tech-zeff-pegleg-shoot": {
+    "nameEn": "Zeff Pegleg Shoot"
+  },
+  "wiki-tech-zeff-table-change": {
+    "nameEn": "Zeff Table Change"
+  },
+  "wiki-tech-zeff-leg-o-wisdom": {
+    "nameEn": "Zeff Leg O' Wisdom"
+  },
   "wiki-tech-red-foot-shock": {
-    "nameKo": "레드 Foot Shock"
+    "nameKo": "레드 Foot Shock",
+    "nameEn": "Red Foot Shock"
   },
-  "wiki-tech-collier": {},
+  "wiki-tech-collier": {
+    "nameEn": "Collier"
+  },
   "wiki-tech-collier-shoot": {
-    "nameJa": "首肉 （ コリエ ） シュート"
+    "nameJa": "首肉 （ コリエ ） シュート",
+    "nameEn": "Collier Shoot"
   },
   "wiki-tech-e-paule": {
-    "nameJa": "肩肉 （ エポール ）"
+    "nameJa": "肩肉 （ エポール ）",
+    "nameEn": "Épaule"
   },
   "wiki-tech-e-paule-shoot": {
-    "nameJa": "肩肉 （ エポール ） シュート"
+    "nameJa": "肩肉 （ エポール ） シュート",
+    "nameEn": "Épaule Shoot"
   },
   "wiki-tech-co-telette": {
-    "nameJa": "背肉 （ コートレット ）"
+    "nameJa": "背肉 （ コートレット ）",
+    "nameEn": "Côtelette"
   },
   "wiki-tech-selle": {
-    "nameJa": "鞍下肉 （ セル ）"
+    "nameJa": "鞍下肉 （ セル ）",
+    "nameEn": "Selle"
   },
   "wiki-tech-poitrine": {
-    "nameJa": "胸肉 （ ポワトリーヌ ）"
+    "nameJa": "胸肉 （ ポワトリーヌ ）",
+    "nameEn": "Poitrine"
   },
   "wiki-tech-poitrine-shoot": {
-    "nameJa": "胸肉 （ ポワトリーヌ ） シュート"
+    "nameJa": "胸肉 （ ポワトリーヌ ） シュート",
+    "nameEn": "Poitrine Shoot"
   },
   "wiki-tech-gigot": {
-    "nameJa": "もも肉 （ ジゴー ）"
+    "nameJa": "もも肉 （ ジゴー ）",
+    "nameEn": "Gigot"
   },
   "wiki-tech-mouton-shot": {
     "nameKo": "Mouton 샷",
-    "nameJa": "羊肉 （ ムートン ） ショット"
+    "nameJa": "羊肉 （ ムートン ） ショット",
+    "nameEn": "Mouton Shot"
   },
   "wiki-tech-reception": {
-    "nameJa": "受付 （ レセプション ）"
+    "nameJa": "受付 （ レセプション ）",
+    "nameEn": "Reception"
   },
   "wiki-tech-anti-manner-kick-course": {
-    "nameJa": "反行儀 （ アンチマナー ） キックコース"
+    "nameJa": "反行儀 （ アンチマナー ） キックコース",
+    "nameEn": "Anti-Manner Kick Course"
   },
   "wiki-tech-basse-co-te": {
-    "nameJa": "肩ロース （ バース・コート ）"
+    "nameJa": "肩ロース （ バース・コート ）",
+    "nameEn": "Basse Côte"
   },
   "wiki-tech-longe": {
-    "nameJa": "腰肉 （ ロンジュ ）"
+    "nameJa": "腰肉 （ ロンジュ ）",
+    "nameEn": "Longe"
   },
   "wiki-tech-tendron": {
-    "nameJa": "後バラ肉 （ タンドロン ）"
+    "nameJa": "後バラ肉 （ タンドロン ）",
+    "nameEn": "Tendron"
   },
   "wiki-tech-flanchet": {
-    "nameJa": "腹肉 （ フランシェ ）"
+    "nameJa": "腹肉 （ フランシェ ）",
+    "nameEn": "Flanchet"
   },
   "wiki-tech-flanchet-shoot": {
-    "nameJa": "腹肉 （ フランシェ ） シュート"
+    "nameJa": "腹肉 （ フランシェ ） シュート",
+    "nameEn": "Flanchet Shoot"
   },
   "wiki-tech-quasi": {
-    "nameJa": "上部もも肉 （ カジ ）"
+    "nameJa": "上部もも肉 （ カジ ）",
+    "nameEn": "Quasi"
   },
   "wiki-tech-queue": {
-    "nameJa": "尾肉 （ クー ）"
+    "nameJa": "尾肉 （ クー ）",
+    "nameEn": "Queue"
   },
   "wiki-tech-cuisseau": {
-    "nameJa": "もも肉 （ キュイソー ）"
+    "nameJa": "もも肉 （ キュイソー ）",
+    "nameEn": "Cuisseau"
   },
   "wiki-tech-cuisseau-shoot": {
-    "nameJa": "もも肉 （ キュイソー ） シュート"
+    "nameJa": "もも肉 （ キュイソー ） シュート",
+    "nameEn": "Cuisseau Shoot"
   },
   "wiki-tech-jarret": {
-    "nameJa": "すね肉 （ ジャレ ）"
+    "nameJa": "すね肉 （ ジャレ ）",
+    "nameEn": "Jarret"
   },
   "wiki-tech-veau-shot": {
     "nameKo": "Veau 샷",
-    "nameJa": "仔牛肉 （ ヴォー ） ショット"
+    "nameJa": "仔牛肉 （ ヴォー ） ショット",
+    "nameEn": "Veau Shot"
   },
   "wiki-tech-concasse": {
-    "nameJa": "粗砕 （ コンカッセ ）"
+    "nameJa": "粗砕 （ コンカッセ ）",
+    "nameEn": "Concassé"
   },
   "wiki-tech-troisie-me-hachis": {
-    "nameJa": "三級挽き肉 （ トロワジェムアッシ ）"
+    "nameJa": "三級挽き肉 （ トロワジェムアッシ ）",
+    "nameEn": "Troisième Hachis"
   },
   "wiki-tech-bouquetie-re-shot": {
     "nameKo": "Bouquetière 샷",
-    "nameJa": "木犀型斬 （ ブクティエール ） ショット"
+    "nameJa": "木犀型斬 （ ブクティエール ） ショット",
+    "nameEn": "Bouquetière Shot"
   },
   "wiki-tech-slice-shoot": {
-    "nameJa": "切肉 （ スライス ） シュート"
+    "nameJa": "切肉 （ スライス ） シュート",
+    "nameEn": "Slice Shoot"
   },
   "wiki-tech-party-table-kick-course": {
-    "nameJa": "パーティーテーブルキックコース"
+    "nameJa": "パーティーテーブルキックコース",
+    "nameEn": "Party Table Kick Course"
   },
   "wiki-tech-brochette": {
-    "nameJa": "串焼き （ ブロシェット ）"
+    "nameJa": "串焼き （ ブロシェット ）",
+    "nameEn": "Brochette"
   },
   "wiki-tech-collier-frit": {
-    "nameJa": "首肉 （ コリエ ） フリット"
+    "nameJa": "首肉 （ コリエ ） フリット",
+    "nameEn": "Collier Frit"
   },
   "wiki-tech-frites-assorties": {
-    "nameJa": "揚げ物盛り合わせ （ フリットアソルティ ）"
+    "nameJa": "揚げ物盛り合わせ （ フリットアソルティ ）",
+    "nameEn": "Frites Assorties"
   },
   "wiki-tech-escalope": {
-    "nameJa": "薄切り肉のソテー （ エスカロップ ）"
+    "nameJa": "薄切り肉のソテー （ エスカロップ ）",
+    "nameEn": "Escalope"
   },
   "wiki-tech-il": {
-    "nameJa": "目 （ ウイユ ）"
+    "nameJa": "目 （ ウイユ ）",
+    "nameEn": "Œil"
   },
   "wiki-tech-nez": {
-    "nameJa": "鼻 （ ネ ）"
+    "nameJa": "鼻 （ ネ ）",
+    "nameEn": "Nez"
   },
   "wiki-tech-joue": {
-    "nameJa": "頬 （ ジュー ）"
+    "nameJa": "頬 （ ジュー ）",
+    "nameEn": "Joue"
   },
   "wiki-tech-joue-shoot": {
-    "nameJa": "ほほ肉 （ ジュー ） シュート"
+    "nameJa": "ほほ肉 （ ジュー ） シュート",
+    "nameEn": "Joue Shoot"
   },
   "wiki-tech-bouche": {
-    "nameJa": "口 （ ブーシュ ）"
+    "nameJa": "口 （ ブーシュ ）",
+    "nameEn": "Bouche"
   },
   "wiki-tech-dents": {
-    "nameJa": "歯 （ ダン ）"
+    "nameJa": "歯 （ ダン ）",
+    "nameEn": "Dents"
   },
   "wiki-tech-menton": {
-    "nameJa": "あご （ マントン ）"
+    "nameJa": "あご （ マントン ）",
+    "nameEn": "Menton"
   },
   "wiki-tech-parage-shot": {
     "nameKo": "Parage 샷",
-    "nameJa": "整形 （ パラージュ ） ショット"
+    "nameJa": "整形 （ パラージュ ） ショット",
+    "nameEn": "Parage Shot"
   },
   "wiki-tech-santen-de-coupage": {
-    "nameJa": "三点 切分 （ デクパージュ ）"
+    "nameJa": "三点 切分 （ デクパージュ ）",
+    "nameEn": "Santen Découpage"
   },
   "wiki-tech-shishinabe-shoot": {
-    "nameJa": "猪鍋シュート"
+    "nameJa": "猪鍋シュート",
+    "nameEn": "Shishinabe Shoot"
   },
   "wiki-tech-deuxie-me-hachis": {
-    "nameJa": "二級挽き肉 （ ドゥジェムアッシ ）"
+    "nameJa": "二級挽き肉 （ ドゥジェムアッシ ）",
+    "nameEn": "Deuxième Hachis"
   },
   "wiki-tech-extra-hachis": {
-    "nameJa": "最上級挽き肉 （ エクストラ・アッシ ）"
+    "nameJa": "最上級挽き肉 （ エクストラ・アッシ ）",
+    "nameEn": "Extra Hachis"
   },
   "wiki-tech-jenga-ho": {
-    "nameJa": "ジェンガ砲"
+    "nameJa": "ジェンガ砲",
+    "nameEn": "Jenga Ho"
   },
   "wiki-tech-jabot": {
-    "nameJa": "ヅャボ"
+    "nameJa": "ヅャボ",
+    "nameEn": "Jabot"
   },
   "wiki-tech-hell-memories": {
-    "nameJa": "地獄の思い出 （ ヘル・メモリーズ ）"
+    "nameJa": "地獄の思い出 （ ヘル・メモリーズ ）",
+    "nameEn": "Hell Memories"
   },
   "wiki-tech-sky-walk": {
-    "nameJa": "空中歩行 （ スカイウォーク ）"
+    "nameJa": "空中歩行 （ スカイウォーク ）",
+    "nameEn": "Sky Walk"
   },
   "wiki-tech-blue-walk": {
-    "nameJa": "海歩行 （ ブルーウォーク ）"
+    "nameJa": "海歩行 （ ブルーウォーク ）",
+    "nameEn": "Blue Walk"
   },
   "wiki-tech-karakusagawara-seiken": {
-    "nameJa": "唐草瓦正拳"
+    "nameJa": "唐草瓦正拳",
+    "nameEn": "Karakusagawara Seiken"
   },
   "wiki-tech-gosenmaigawara-seiken": {
-    "nameJa": "五千枚瓦正拳"
+    "nameJa": "五千枚瓦正拳",
+    "nameEn": "Gosenmaigawara Seiken"
   },
   "wiki-tech-yarinami": {
-    "nameJa": "槍波"
+    "nameJa": "槍波",
+    "nameEn": "Yarinami"
   },
   "wiki-tech-samehada-shotei": {
-    "nameJa": "鮫肌掌底"
+    "nameJa": "鮫肌掌底",
+    "nameEn": "Samehada Shotei"
   },
   "wiki-tech-samegawara-seiken": {
-    "nameJa": "鮫瓦正拳"
+    "nameJa": "鮫瓦正拳",
+    "nameEn": "Samegawara Seiken"
   },
   "wiki-tech-uchimizu": {
-    "nameJa": "撃水"
+    "nameJa": "撃水",
+    "nameEn": "Uchimizu"
   },
   "wiki-tech-nanasenmaigawara-mawashigeri": {
-    "nameJa": "七千枚瓦回し蹴り"
+    "nameJa": "七千枚瓦回し蹴り",
+    "nameEn": "Nanasenmaigawara Mawashigeri"
   },
-  "wiki-tech-fish-man-karate-ogi-buraikan": {},
+  "wiki-tech-fish-man-karate-ogi-buraikan": {
+    "nameEn": "Fish-Man Karate Ogi: Buraikan"
+  },
   "wiki-tech-soshark": {
-    "nameJa": "粗鮫 （ ソシャーク ）"
+    "nameJa": "粗鮫 （ ソシャーク ）",
+    "nameEn": "Soshark"
   },
-  "wiki-tech-fish-man-karate-ogi-onigawara-seiken": {},
+  "wiki-tech-fish-man-karate-ogi-onigawara-seiken": {
+    "nameEn": "Fish-Man Karate Ogi: Onigawara Seiken"
+  },
   "wiki-tech-gosenmaigawara-shuto": {
-    "nameJa": "五千枚瓦手刀"
+    "nameJa": "五千枚瓦手刀",
+    "nameEn": "Gosenmaigawara Shuto"
   },
   "wiki-tech-shizurase": {
-    "nameJa": "閑羅瀬"
+    "nameJa": "閑羅瀬",
+    "nameEn": "Shizurase"
   },
-  "wiki-tech-fish-man-karate-ogi-dai-kairyu-keri": {},
+  "wiki-tech-fish-man-karate-ogi-dai-kairyu-keri": {
+    "nameEn": "Fish-Man Karate Ogi: Dai Kairyu Keri"
+  },
   "wiki-tech-hyakumaigawara-seiken": {
-    "nameJa": "百枚瓦正拳"
+    "nameJa": "百枚瓦正拳",
+    "nameEn": "Hyakumaigawara Seiken"
   },
   "wiki-tech-wanto-giri": {
-    "nameJa": "腕刀斬り"
+    "nameJa": "腕刀斬り",
+    "nameEn": "Wanto Giri"
   },
   "wiki-tech-itomaki-kumite": {
-    "nameJa": "イトマキ組手"
+    "nameJa": "イトマキ組手",
+    "nameEn": "Itomaki Kumite"
   },
-  "wiki-tech-kaisoku-harakudashigeri": {},
+  "wiki-tech-kaisoku-harakudashigeri": {
+    "nameEn": "Kaisoku: Harakudashigeri"
+  },
   "wiki-tech-ka-ka-kakato-otoshi": {
-    "nameJa": "火華カカト落とし"
+    "nameJa": "火華カカト落とし",
+    "nameEn": "Ka Ka Kakato Otoshi"
   },
   "wiki-tech-kachiage-haisoku": {
-    "nameJa": "カチ上げ背足"
+    "nameJa": "カチ上げ背足",
+    "nameEn": "Kachiage Haisoku"
   },
   "wiki-tech-jodan-bakusho": {
-    "nameJa": "上段爆掌"
+    "nameJa": "上段爆掌",
+    "nameEn": "Jodan Bakusho"
   },
   "wiki-tech-appakushi-chokka-koro": {
-    "nameJa": "圧迫死直下航路"
+    "nameJa": "圧迫死直下航路",
+    "nameEn": "Appakushi Chokka Koro"
   },
   "wiki-tech-senmaigawara-seiken": {
-    "nameJa": "千枚瓦正拳"
+    "nameJa": "千枚瓦正拳",
+    "nameEn": "Senmaigawara Seiken"
   },
   "wiki-tech-kaimen-wari": {
-    "nameJa": "海面･割り"
+    "nameJa": "海面･割り",
+    "nameEn": "Kaimen Wari"
   },
   "wiki-tech-two-fish-engine": {
-    "nameJa": "魚々人泳法 （ ツーフィッシュエンジン ）"
+    "nameJa": "魚々人泳法 （ ツーフィッシュエンジン ）",
+    "nameEn": "Two Fish Engine"
   },
-  "wiki-tech-fish-man-karate-giganteum": {},
+  "wiki-tech-fish-man-karate-giganteum": {
+    "nameEn": "Fish-Man Karate: Giganteum"
+  },
   "wiki-tech-yabusame": {
-    "nameJa": "矢武鮫"
+    "nameJa": "矢武鮫",
+    "nameEn": "Yabusame"
   },
   "wiki-tech-umidaiko": {
-    "nameJa": "海太鼓"
+    "nameJa": "海太鼓",
+    "nameEn": "Umidaiko"
   },
   "wiki-tech-yonsenmaigawara-seiken": {
-    "nameJa": "四千枚瓦正拳"
+    "nameJa": "四千枚瓦正拳",
+    "nameEn": "Yonsenmaigawara Seiken"
   },
   "wiki-tech-gedan-geri": {
-    "nameJa": "下段蹴り"
+    "nameJa": "下段蹴り",
+    "nameEn": "Gedan-geri"
   },
   "wiki-tech-kakumei-gun-gyojin-karate-shihandai": {
-    "nameJa": "革命軍魚人空手師範代"
+    "nameJa": "革命軍魚人空手師範代",
+    "nameEn": "Kakumei-gun Gyojin Karate Shihandai"
   },
   "wiki-tech-o-uchimizu": {
-    "nameJa": "大撃水"
+    "nameJa": "大撃水",
+    "nameEn": "O Uchimizu"
   },
   "wiki-tech-o-yabusame": {
-    "nameJa": "大矢武鮫"
+    "nameJa": "大矢武鮫",
+    "nameEn": "O Yabusame"
   },
   "wiki-tech-mo-golova": {
-    "nameJa": "モー 頭 （ ガラヴァ ）"
+    "nameJa": "モー 頭 （ ガラヴァ ）",
+    "nameEn": "Mo Golova"
   },
   "wiki-tech-eleclaw": {
-    "nameJa": "エレ 爪 （ クロ ）"
+    "nameJa": "エレ 爪 （ クロ ）",
+    "nameEn": "Eleclaw"
   },
   "wiki-tech-electrical-luna": {
-    "nameJa": "エレクトリカルルナ"
+    "nameJa": "エレクトリカルルナ",
+    "nameEn": "Electrical Luna"
   },
   "wiki-tech-moon-rabbit": {
-    "nameJa": "月兎"
+    "nameJa": "月兎",
+    "nameEn": "Moon Rabbit"
   },
   "wiki-tech-comet-rabbit": {
-    "nameJa": "彗星兎"
+    "nameJa": "彗星兎",
+    "nameEn": "Comet Rabbit"
   },
   "wiki-tech-mink-assault": {
-    "nameJa": "ミンクアサルト"
+    "nameJa": "ミンクアサルト",
+    "nameEn": "Mink Assault"
   },
   "wiki-tech-electrical-tempesta": {
-    "nameJa": "エレクトリカルテンペスタ"
+    "nameJa": "エレクトリカルテンペスタ",
+    "nameEn": "Electrical Tempesta"
   },
   "wiki-tech-electrical-shower": {
-    "nameJa": "エレクトリカルシャワー"
+    "nameJa": "エレクトリカルシャワー",
+    "nameEn": "Electrical Shower"
   },
   "wiki-tech-electrical-full-power": {
-    "nameJa": "エレクトリカルフルパワー"
+    "nameJa": "エレクトリカルフルパワー",
+    "nameEn": "Electrical Full Power"
   },
   "wiki-tech-aka-byobu": {
-    "nameJa": "赤猫踊"
+    "nameJa": "赤猫踊",
+    "nameEn": "Aka Byobu"
   },
   "wiki-tech-inu-odoshi": {
-    "nameJa": "犬大門風"
+    "nameJa": "犬大門風",
+    "nameEn": "Inu Odoshi"
   },
   "wiki-tech-moon-raid": {
-    "nameJa": "月襲 （ ムーンレイド ）"
+    "nameJa": "月襲 （ ムーンレイド ）",
+    "nameEn": "Moon Raid"
   },
-  "wiki-tech-ninpo-ectoplasm-thunder": {},
+  "wiki-tech-ninpo-ectoplasm-thunder": {
+    "nameEn": "Ninpo: Ectoplasm Thunder"
+  },
   "wiki-tech-buto": {
-    "nameJa": "武頭"
+    "nameJa": "武頭",
+    "nameEn": "Buto"
   },
-  "wiki-tech-hasshoken-ogi-kiryu-kirikugi": {},
+  "wiki-tech-hasshoken-ogi-kiryu-kirikugi": {
+    "nameEn": "Hasshoken Ogi: Kiryu Kirikugi"
+  },
   "wiki-tech-buto-kaiten": {
-    "nameJa": "武頭回転"
+    "nameJa": "武頭回転",
+    "nameEn": "Buto Kaiten"
   },
   "wiki-tech-bujaogen": {
-    "nameJa": "武脚跟 （ ブジャオゲン ）"
+    "nameJa": "武脚跟 （ ブジャオゲン ）",
+    "nameEn": "Bujaogen"
   },
   "wiki-tech-hakucho-arabesque": {
-    "nameJa": "白鳥アラベスク"
+    "nameJa": "白鳥アラベスク",
+    "nameEn": "Hakucho Arabesque"
   },
   "wiki-tech-okama-dash": {
-    "nameJa": "オカマデャーッシュ"
+    "nameJa": "オカマデャーッシュ",
+    "nameEn": "Okama Dash"
   },
   "wiki-tech-chi-to-ase-to-namida-releve": {
-    "nameJa": "血と汗と涙のルルヴェ"
+    "nameJa": "血と汗と涙のルルヴェ",
+    "nameEn": "Chi to Ase to Namida Relevé"
   },
   "wiki-tech-dozo-okamai-knuckle": {
-    "nameJa": "どうぞオカマい 拳 （ ナックル ）"
+    "nameJa": "どうぞオカマい 拳 （ ナックル ）",
+    "nameEn": "Dozo Okamai Knuckle"
   },
   "wiki-tech-urabure-swan-butokai": {
-    "nameJa": "うらぶれ 白鳥 （ スワン ） 舞踏会"
+    "nameJa": "うらぶれ 白鳥 （ スワン ） 舞踏会",
+    "nameEn": "Urabure Swan Butokai"
   },
   "wiki-tech-okama-chop": {
-    "nameJa": "オカマチョップ"
+    "nameJa": "オカマチョップ",
+    "nameEn": "Okama Chop"
   },
   "wiki-tech-keri-pointe": {
-    "nameJa": "蹴爪先 （ ケリポアント ）"
+    "nameJa": "蹴爪先 （ ケリポアント ）",
+    "nameEn": "Keri Pointe"
   },
   "wiki-tech-mascara-boomerang": {
-    "nameJa": "マスカラブーメラン"
+    "nameJa": "マスカラブーメラン",
+    "nameEn": "Mascara Boomerang"
   },
-  "wiki-tech-grand-fouette-ano-natsu-no-hi-no-memoir": {},
+  "wiki-tech-grand-fouette-ano-natsu-no-hi-no-memoir": {
+    "nameEn": "Grand Fouetté: Ano Natsu no Hi no Memoir"
+  },
   "wiki-tech-prima": {
-    "nameJa": "主役技 （ プリマ ）"
+    "nameJa": "主役技 （ プリマ ）",
+    "nameEn": "Prima"
   },
   "wiki-tech-bombardier": {
-    "nameJa": "爆撃白鳥 （ ボンバルディエ ）"
+    "nameJa": "爆撃白鳥 （ ボンバルディエ ）",
+    "nameEn": "Bombardier"
   },
   "wiki-tech-ano-fuyu-no-sora-no-memoir": {
-    "nameJa": "あの冬の空の 回想録 （ メモワール ）"
+    "nameJa": "あの冬の空の 回想録 （ メモワール ）",
+    "nameEn": "Ano Fuyu no Sora no Memoir"
   },
   "wiki-tech-bombardier-arabesque": {
-    "nameJa": "爆弾白鳥 （ ボンバルディエ ） アラベスク"
+    "nameJa": "爆弾白鳥 （ ボンバルディエ ） アラベスク",
+    "nameEn": "Bombardier Arabesque"
   },
   "wiki-tech-ohikae-na-fouette": {
-    "nameJa": "お控え・ナ・ 鞭打 （ フエッテ ）"
+    "nameJa": "お控え・ナ・ 鞭打 （ フエッテ ）",
+    "nameEn": "Ohikae Na Fouetté"
   },
   "wiki-tech-ano-sabaku-no-kuni-no-memoir": {
-    "nameJa": "あの砂漠の国の 回想録 （ メモワール ）"
+    "nameJa": "あの砂漠の国の 回想録 （ メモワール ）",
+    "nameEn": "Ano Sabaku no Kuni no Memoir"
   },
   "wiki-tech-room": {
     "nameKo": "룸",
-    "nameJa": "ROOM （ ルーム ）"
+    "nameJa": "ROOM （ ルーム ）",
+    "nameEn": "ROOM"
   },
   "wiki-tech-amputate": {
-    "nameJa": "切断 （ アンピュテート ）"
+    "nameJa": "切断 （ アンピュテート ）",
+    "nameEn": "Amputate"
   },
   "wiki-tech-radio-knife": {
-    "nameJa": "ラジオナイフ"
+    "nameJa": "ラジオナイフ",
+    "nameEn": "Radio Knife"
   },
   "wiki-tech-shambles": {
-    "nameJa": "シャンブルズ"
+    "nameJa": "シャンブルズ",
+    "nameEn": "Shambles"
   },
   "wiki-tech-jinkaku-ishoku-shujutsu": {
-    "nameJa": "人格移植手術"
+    "nameJa": "人格移植手術",
+    "nameEn": "Jinkaku Ishoku Shujutsu"
   },
   "wiki-tech-takt": {
-    "nameJa": "タクト"
+    "nameJa": "タクト",
+    "nameEn": "Takt"
   },
   "wiki-tech-sterben": {
-    "nameJa": "死の刀 （ ステルベン ）"
+    "nameJa": "死の刀 （ ステルベン ）",
+    "nameEn": "Sterben"
   },
   "wiki-tech-scan": {
-    "nameJa": "スキャン"
+    "nameJa": "スキャン",
+    "nameEn": "Scan"
   },
   "wiki-tech-mes": {
-    "nameJa": "メス"
+    "nameJa": "メス",
+    "nameEn": "Mes"
   },
   "wiki-tech-counter-shock": {
-    "nameJa": "カウンターショック"
+    "nameJa": "カウンターショック",
+    "nameEn": "Counter Shock"
   },
   "wiki-tech-injection-shot": {
     "nameKo": "Injection 샷",
-    "nameJa": "注射 （ インジェクション ） ショット"
+    "nameJa": "注射 （ インジェクション ） ショット",
+    "nameEn": "Injection Shot"
   },
   "wiki-tech-gamma-knife": {
-    "nameJa": "ガンマナイフ"
+    "nameJa": "ガンマナイフ",
+    "nameEn": "Gamma Knife"
   },
   "wiki-tech-curtain": {
-    "nameJa": "抗菌武装 （ カーテン ）"
+    "nameJa": "抗菌武装 （ カーテン ）",
+    "nameEn": "Curtain"
   },
   "wiki-tech-k-room": {
-    "nameJa": "K・ROOM （ クローム ）"
+    "nameJa": "K・ROOM （ クローム ）",
+    "nameEn": "K-ROOM"
   },
   "wiki-tech-anesthesia": {
-    "nameJa": "麻酔 （ アナススィージャ ）"
+    "nameJa": "麻酔 （ アナススィージャ ）",
+    "nameEn": "Anesthesia"
   },
   "wiki-tech-shock-wille": {
-    "nameJa": "衝撃波動 （ ショックヴィレ ）"
+    "nameJa": "衝撃波動 （ ショックヴィレ ）",
+    "nameEn": "Shock Wille"
   },
   "wiki-tech-puncture-wille": {
-    "nameJa": "穿刺波動 （ パンクチャーヴィレ ）"
+    "nameJa": "穿刺波動 （ パンクチャーヴィレ ）",
+    "nameEn": "Puncture Wille"
   },
   "wiki-tech-r-room": {
-    "nameJa": "R （ リ ） ・ ROOM （ ルーム ）"
+    "nameJa": "R （ リ ） ・ ROOM （ ルーム ）",
+    "nameEn": "R-ROOM"
   },
   "wiki-tech-silent": {
-    "nameJa": "凪 （ サイレント ）"
+    "nameJa": "凪 （ サイレント ）",
+    "nameEn": "Silent"
   },
   "wiki-tech-resection": {
-    "nameJa": "切除 （ リセクション ）"
+    "nameJa": "切除 （ リセクション ）",
+    "nameEn": "Resection"
   },
   "wiki-tech-emergency": {
-    "nameJa": "救急 （ エマージェンシー ）"
+    "nameJa": "救急 （ エマージェンシー ）",
+    "nameEn": "Emergency"
   },
   "wiki-tech-accident": {
-    "nameJa": "不慮の事故 （ アクシデント ）"
+    "nameJa": "不慮の事故 （ アクシデント ）",
+    "nameEn": "Accident"
   },
   "wiki-tech-transection": {
-    "nameJa": "切断 （ トランセクション ）"
+    "nameJa": "切断 （ トランセクション ）",
+    "nameEn": "Transection"
   },
   "wiki-tech-catastrophe": {
-    "nameJa": "カタストロフィ"
+    "nameJa": "カタストロフィ",
+    "nameEn": "Catastrophe"
   },
   "wiki-tech-kaitengiri": {
-    "nameJa": "回転斬り"
+    "nameJa": "回転斬り",
+    "nameEn": "Kaitengiri"
   },
   "wiki-tech-kiriage": {
-    "nameJa": "斬り上げ"
+    "nameJa": "斬り上げ",
+    "nameEn": "Kiriage"
   },
   "wiki-tech-nagiharai": {
-    "nameJa": "なぎ払い"
+    "nameJa": "なぎ払い",
+    "nameEn": "Nagiharai"
   },
   "wiki-tech-kiri-oroshi": {
-    "nameJa": "斬り下ろし"
+    "nameJa": "斬り下ろし",
+    "nameEn": "Kiri Oroshi"
   },
   "wiki-tech-senkaigiri": {
-    "nameJa": "旋回斬り"
+    "nameJa": "旋回斬り",
+    "nameEn": "Senkaigiri"
   },
   "wiki-tech-mero-mero-mellow": {
-    "nameJa": "メロメロ 甘風 （ メロウ ）"
+    "nameJa": "メロメロ 甘風 （ メロウ ）",
+    "nameEn": "Mero Mero Mellow"
   },
   "wiki-tech-mezameyo": {
-    "nameJa": "目覚めよ"
+    "nameJa": "目覚めよ",
+    "nameEn": "Mezameyo"
   },
   "wiki-tech-pistol-kiss": {
     "nameKo": "총 Kiss",
-    "nameJa": "銃 （ ピストル ） キス"
+    "nameJa": "銃 （ ピストル ） キス",
+    "nameEn": "Pistol Kiss"
   },
   "wiki-tech-slave-arrow": {
-    "nameJa": "虜の矢 （ スレイブ･アロー ）"
+    "nameJa": "虜の矢 （ スレイブ･アロー ）",
+    "nameEn": "Slave Arrow"
   },
   "wiki-tech-perfume-femur": {
-    "nameJa": "芳香脚 （ パフューム･フェムル ）"
+    "nameJa": "芳香脚 （ パフューム･フェムル ）",
+    "nameEn": "Perfume Femur"
   },
   "wiki-tech-perfume-femur-magna": {
-    "nameJa": "大芳香脚 （ パフューム・フェムル・マグナ ）"
+    "nameJa": "大芳香脚 （ パフューム・フェムル・マグナ ）",
+    "nameEn": "Perfume Femur Magna"
   },
   "wiki-tech-joo-no-fumitsuke": {
-    "nameJa": "女王の踏みつけ"
+    "nameJa": "女王の踏みつけ",
+    "nameEn": "Joo no Fumitsuke"
   },
   "wiki-tech-toriko-no-ishiyumi": {
-    "nameJa": "虜の弩"
+    "nameJa": "虜の弩",
+    "nameEn": "Toriko no Ishiyumi"
   },
   "wiki-tech-dos-fleur": {
-    "nameJa": "二輪 （ ドス ） 咲き （ フルール ）"
+    "nameJa": "二輪 （ ドス ） 咲き （ フルール ）",
+    "nameEn": "Dos Fleur"
   },
   "wiki-tech-grab": {
     "nameKo": "그랩",
-    "nameJa": "グラップ"
+    "nameJa": "グラップ",
+    "nameEn": "Grab"
   },
   "wiki-tech-clutch": {
     "nameKo": "클러치",
-    "nameJa": "クラッチ"
+    "nameJa": "クラッチ",
+    "nameEn": "Clutch"
   },
   "wiki-tech-tres-fleur": {
-    "nameJa": "三輪 （ トレス ） 咲き （ フルール ）"
+    "nameJa": "三輪 （ トレス ） 咲き （ フルール ）",
+    "nameEn": "Tres Fleur"
   },
   "wiki-tech-cinco-fleur": {
-    "nameJa": "五輪 （ シンコ ） 咲き （ フルール ）"
+    "nameJa": "五輪 （ シンコ ） 咲き （ フルール ）",
+    "nameEn": "Cinco Fleur"
   },
   "wiki-tech-seis-fleur": {
-    "nameJa": "六輪 （ セイス ） 咲き （ フルール ）"
+    "nameJa": "六輪 （ セイス ） 咲き （ フルール ）",
+    "nameEn": "Seis Fleur"
   },
   "wiki-tech-twist": {
-    "nameJa": "ツイスト"
+    "nameJa": "ツイスト",
+    "nameEn": "Twist"
   },
   "wiki-tech-slap": {
-    "nameJa": "スラップ"
+    "nameJa": "スラップ",
+    "nameEn": "Slap"
   },
   "wiki-tech-ocho-fleur": {
-    "nameJa": "八輪咲き （ オーチョフルール ）"
+    "nameJa": "八輪咲き （ オーチョフルール ）",
+    "nameEn": "Ocho Fleur"
   },
   "wiki-tech-flip": {
-    "nameJa": "フリップ"
+    "nameJa": "フリップ",
+    "nameEn": "Flip"
   },
   "wiki-tech-nueve-fleur": {
-    "nameJa": "九輪 （ ヌエベ ） 咲き （ フルール ）"
+    "nameJa": "九輪 （ ヌエベ ） 咲き （ フルール ）",
+    "nameEn": "Nueve Fleur"
   },
   "wiki-tech-once-fleur": {
-    "nameJa": "十一輪 （ オンセ ） 咲き （ フルール ）"
+    "nameJa": "十一輪 （ オンセ ） 咲き （ フルール ）",
+    "nameEn": "Once Fleur"
   },
   "wiki-tech-slam": {
-    "nameJa": "スラム"
+    "nameJa": "スラム",
+    "nameEn": "Slam"
   },
   "wiki-tech-doce-fleur": {
-    "nameJa": "十二輪 （ ドーセ ） 咲き （ フルール ）"
+    "nameJa": "十二輪 （ ドーセ ） 咲き （ フルール ）",
+    "nameEn": "Doce Fleur"
   },
   "wiki-tech-diecise-is-fleur": {
-    "nameJa": "十六輪 （ ディエシセイス ） 咲き （ フルール ）"
+    "nameJa": "十六輪 （ ディエシセイス ） 咲き （ フルール ）",
+    "nameEn": "Dieciséis Fleur"
   },
   "wiki-tech-veinte-fleur": {
-    "nameJa": "二十輪 （ ベインテ ） 咲き （ フルール ）"
+    "nameJa": "二十輪 （ ベインテ ） 咲き （ フルール ）",
+    "nameEn": "Veinte Fleur"
   },
   "wiki-tech-calendula": {
-    "nameJa": "金盞花 （ カンデュラ ）"
+    "nameJa": "金盞花 （ カンデュラ ）",
+    "nameEn": "Calendula"
   },
   "wiki-tech-treinta-fleur": {
-    "nameJa": "三十輪 （ トレインタ ） 咲き （ フルール ）"
+    "nameJa": "三十輪 （ トレインタ ） 咲き （ フルール ）",
+    "nameEn": "Treinta Fleur"
   },
   "wiki-tech-strangle": {
-    "nameJa": "ストラングル"
+    "nameJa": "ストラングル",
+    "nameEn": "Strangle"
   },
   "wiki-tech-hang": {
-    "nameJa": "ハング"
+    "nameJa": "ハング",
+    "nameEn": "Hang"
   },
   "wiki-tech-ochenta-fleur": {
-    "nameJa": "八十輪 （ オチェンタ ） 咲き （ フルール ）"
+    "nameJa": "八十輪 （ オチェンタ ） 咲き （ フルール ）",
+    "nameEn": "Ochenta Fleur"
   },
   "wiki-tech-cuatro-manos": {
-    "nameJa": "四本樹 （ クワトロ・マーノス ）"
+    "nameJa": "四本樹 （ クワトロ・マーノス ）",
+    "nameEn": "Cuatro Manos"
   },
   "wiki-tech-hold": {
-    "nameJa": "ホールド"
+    "nameJa": "ホールド",
+    "nameEn": "Hold"
   },
   "wiki-tech-shock": {
-    "nameJa": "ショック"
+    "nameJa": "ショック",
+    "nameEn": "Shock"
   },
   "wiki-tech-cien-fleur": {
-    "nameJa": "百花繚乱 （ シエンフルール ）"
+    "nameJa": "百花繚乱 （ シエンフルール ）",
+    "nameEn": "Cien Fleur"
   },
   "wiki-tech-delphinium": {
-    "nameJa": "大飛燕草 （ デルフィニウム ）"
+    "nameJa": "大飛燕草 （ デルフィニウム ）",
+    "nameEn": "Delphinium"
   },
   "wiki-tech-wing": {
-    "nameJa": "ウイング"
+    "nameJa": "ウイング",
+    "nameEn": "Wing"
   },
   "wiki-tech-spider-net": {
-    "nameJa": "蜘蛛の華 （ スパイダーネット ）"
+    "nameJa": "蜘蛛の華 （ スパイダーネット ）",
+    "nameEn": "Spider Net"
   },
   "wiki-tech-big-tree": {
-    "nameJa": "大樹 （ ビッグツリー ）"
+    "nameJa": "大樹 （ ビッグツリー ）",
+    "nameEn": "Big Tree"
   },
   "wiki-tech-slalom-vine": {
-    "nameJa": "回転蔓 （ スラロームバイン ）"
+    "nameJa": "回転蔓 （ スラロームバイン ）",
+    "nameEn": "Slalom Vine"
   },
   "wiki-tech-dos-manos": {
-    "nameJa": "二本樹 （ ドス・マーノス ）"
+    "nameJa": "二本樹 （ ドス・マーノス ）",
+    "nameEn": "Dos Manos"
   },
   "wiki-tech-600-000-000-belly-jackpot": {
-    "nameJa": "６ 億 （ おく ） Ｂ （ ベル ） ・ ＪＡＣＫＰＯＴ （ ジャックポット ）"
+    "nameJa": "６ 億 （ おく ） Ｂ （ ベル ） ・ ＪＡＣＫＰＯＴ （ ジャックポット ）",
+    "nameEn": "600,000,000 Belly Jackpot"
   },
   "wiki-tech-ojos-fleur": {
-    "nameJa": "目抜咲き （ オッホスフルール ）"
+    "nameJa": "目抜咲き （ オッホスフルール ）",
+    "nameEn": "Ojos Fleur"
   },
   "wiki-tech-pierna-fleur": {
-    "nameJa": "脚場輪 （ ピエルナ ） 咲き （ フルール ）"
+    "nameJa": "脚場輪 （ ピエルナ ） 咲き （ フルール ）",
+    "nameEn": "Pierna Fleur"
   },
   "wiki-tech-robi-cho-suplex": {
-    "nameJa": "ロビッチョスープレックス"
+    "nameJa": "ロビッチョスープレックス",
+    "nameEn": "Robi-Cho Suplex"
   },
   "wiki-tech-oreja-fleur": {
-    "nameJa": "オレッハフルール"
+    "nameJa": "オレッハフルール",
+    "nameEn": "Oreja Fleur"
   },
   "wiki-tech-un-fleur": {
-    "nameJa": "ウンフルール"
+    "nameJa": "ウンフルール",
+    "nameEn": "Un Fleur"
   },
   "wiki-tech-defense": {
-    "nameJa": "ディフェンス"
+    "nameJa": "ディフェンス",
+    "nameEn": "Defense"
   },
   "wiki-tech-gran-fleur": {
-    "nameJa": "グランフルール"
+    "nameJa": "グランフルール",
+    "nameEn": "Gran Fleur"
   },
   "wiki-tech-rindo": {
-    "nameJa": "竜胆"
+    "nameJa": "竜胆",
+    "nameEn": "Rindo"
   },
   "wiki-tech-dos-mano": {
-    "nameJa": "二本樹 （ ドス・マーノ ）"
+    "nameJa": "二本樹 （ ドス・マーノ ）",
+    "nameEn": "Dos Mano"
   },
   "wiki-tech-craspedia": {
-    "nameJa": "金槌花 （ クラスペディア ）"
+    "nameJa": "金槌花 （ クラスペディア ）",
+    "nameEn": "Craspedia"
   },
   "wiki-tech-mil-fleur": {
-    "nameJa": "千紫万紅 （ ミル・フルール ）"
+    "nameJa": "千紫万紅 （ ミル・フルール ）",
+    "nameEn": "Mil Fleur"
   },
   "wiki-tech-gigantesco-mano": {
-    "nameJa": "巨大樹 （ ヒガンテスコ・マーノ ）"
+    "nameJa": "巨大樹 （ ヒガンテスコ・マーノ ）",
+    "nameEn": "Gigantesco Mano"
   },
   "wiki-tech-stomp": {
-    "nameJa": "ストンプ"
+    "nameJa": "ストンプ",
+    "nameEn": "Stomp"
   },
   "wiki-tech-spank": {
-    "nameJa": "スパンク"
+    "nameJa": "スパンク",
+    "nameEn": "Spank"
   },
   "wiki-tech-campo-de-flores": {
-    "nameJa": "花畑 （ カンポ・デ・フローレス ）"
+    "nameJa": "花畑 （ カンポ・デ・フローレス ）",
+    "nameEn": "Campo de Flores"
   },
   "wiki-tech-kochoran": {
-    "nameJa": "胡蝶蘭"
+    "nameJa": "胡蝶蘭",
+    "nameEn": "Kochoran"
   },
   "wiki-tech-hanagasa": {
-    "nameJa": "花傘"
+    "nameJa": "花傘",
+    "nameEn": "Hanagasa"
   },
   "wiki-tech-cuarenta-fleur": {
-    "nameJa": "四十輪 （ クワレンタ ） 咲き （ フルール ）"
+    "nameJa": "四十輪 （ クワレンタ ） 咲き （ フルール ）",
+    "nameEn": "Cuarenta Fleur"
   },
   "wiki-tech-cuatro-mano": {
-    "nameJa": "四本樹 （ クワトロ・マーノ ）"
+    "nameJa": "四本樹 （ クワトロ・マーノ ）",
+    "nameEn": "Cuatro Mano"
   },
   "wiki-tech-diez-fleur": {
-    "nameJa": "十輪咲き （ ヂィエスフルール ）"
+    "nameJa": "十輪咲き （ ヂィエスフルール ）",
+    "nameEn": "Diez Fleur"
   },
   "wiki-tech-cinco-mano": {
-    "nameJa": "五本樹 （ シンコ・マーノ ）"
+    "nameJa": "五本樹 （ シンコ・マーノ ）",
+    "nameEn": "Cinco Mano"
   },
   "wiki-tech-tres-mano": {
-    "nameJa": "三本樹 （ トレス・マーノ ）"
+    "nameJa": "三本樹 （ トレス・マーノ ）",
+    "nameEn": "Tres Mano"
   },
   "wiki-tech-freesia": {
-    "nameJa": "浅葱氷仙 （ フリージア ）"
+    "nameJa": "浅葱氷仙 （ フリージア ）",
+    "nameEn": "Freesia"
   },
   "wiki-tech-cuerpo-fleur": {
-    "nameJa": "体 （ クエルポ ） 咲き （ フルール ）"
+    "nameJa": "体 （ クエルポ ） 咲き （ フルール ）",
+    "nameEn": "Cuerpo Fleur"
   },
   "wiki-tech-doble-clutch": {
     "nameKo": "Doble 클러치",
-    "nameJa": "W （ ドーブレ ） ・クラッチ"
+    "nameJa": "W （ ドーブレ ） ・クラッチ",
+    "nameEn": "Doble Clutch"
   },
   "wiki-tech-gigante-fleur": {
-    "nameJa": "巨人咲き （ ヒガンテフルール ）"
+    "nameJa": "巨人咲き （ ヒガンテフルール ）",
+    "nameEn": "Gigante Fleur"
   },
   "wiki-tech-demonio-fleur": {
-    "nameJa": "悪魔咲き （ デモニオフルール ）"
+    "nameJa": "悪魔咲き （ デモニオフルール ）",
+    "nameEn": "Demonio Fleur"
   },
   "wiki-tech-cuatro-mano-hold": {
     "nameKo": "Cuatro Mano Hold",
-    "nameJa": "クラッチ Kuratchi"
+    "nameJa": "クラッチ Kuratchi",
+    "nameEn": "Cuatro Mano \"Hold\""
   },
-  "wiki-tech-hariko": {},
-  "wiki-tech-robi-cho-daisenpu": {},
-  "wiki-tech-face-fleur": {},
-  "wiki-tech-dick-fleur": {},
-  "wiki-tech-fuwa-flowers": {},
-  "wiki-tech-yomi": {},
-  "wiki-tech-kasuriuta-fubuki-giri": {},
-  "wiki-tech-ekakiuta-hitoyogiri": {},
+  "wiki-tech-hariko": {
+    "nameEn": "Hariko"
+  },
+  "wiki-tech-robi-cho-daisenpu": {
+    "nameEn": "Robi-Cho Daisenpu"
+  },
+  "wiki-tech-face-fleur": {
+    "nameEn": "Face Fleur"
+  },
+  "wiki-tech-dick-fleur": {
+    "nameEn": "Dick Fleur"
+  },
+  "wiki-tech-fuwa-flowers": {
+    "nameEn": "Fuwa Flowers"
+  },
+  "wiki-tech-yomi": {
+    "nameEn": "yomi"
+  },
+  "wiki-tech-kasuriuta-fubuki-giri": {
+    "nameEn": "Kasuriuta: Fubuki Giri"
+  },
+  "wiki-tech-ekakiuta-hitoyogiri": {
+    "nameEn": "Ekakiuta: Hitoyogiri"
+  },
   "wiki-tech-soul-parade": {
-    "nameJa": "魂の （ ソウル ） パラード"
+    "nameJa": "魂の （ ソウル ） パラード",
+    "nameEn": "Soul Parade"
   },
   "wiki-tech-ice-wall": {
-    "nameJa": "飛燕 （ スワロー ） バンドゥロル"
+    "nameJa": "飛燕 （ スワロー ） バンドゥロル",
+    "nameEn": "Ice Wall"
   },
-  "wiki-tech-swallow-banderole": {},
-  "wiki-tech-hanauta-sancho-tyamasi-no-yahazu-giri": {},
+  "wiki-tech-swallow-banderole": {
+    "nameEn": "Swallow Banderole"
+  },
+  "wiki-tech-hanauta-sancho-tyamasi-no-yahazu-giri": {
+    "nameEn": "Hanauta Sancho: Tyamasi no Yahazu Giri"
+  },
   "wiki-tech-cold-soul": {
-    "nameJa": "コールド 魂 （ ソウル ）"
+    "nameJa": "コールド 魂 （ ソウル ）",
+    "nameEn": "Cold Soul"
   },
-  "wiki-tech-phrase-d-armes-orchestra": {},
-  "wiki-tech-deathless-biezom": {},
+  "wiki-tech-phrase-d-armes-orchestra": {
+    "nameEn": "Phrase d'armes: Orchestra"
+  },
+  "wiki-tech-deathless-biezom": {
+    "nameEn": "Deathless Biezom"
+  },
   "wiki-tech-bara-bara-ho": {
-    "nameJa": "バラバラ砲"
+    "nameJa": "バラバラ砲",
+    "nameEn": "Bara Bara Ho"
   },
   "wiki-tech-chi-o-hau-bara-bara-ho": {
-    "nameJa": "地をはうバラバラ砲"
+    "nameJa": "地をはうバラバラ砲",
+    "nameEn": "Chi o Hau Bara Bara Ho"
   },
   "wiki-tech-bara-bara-ho-kirihanashi": {
-    "nameJa": "バラバラ砲切り離し"
+    "nameJa": "バラバラ砲切り離し",
+    "nameEn": "Bara Bara Ho Kirihanashi"
   },
   "wiki-tech-bara-bara-senbei": {
-    "nameJa": "バラバラせんべい"
+    "nameJa": "バラバラせんべい",
+    "nameEn": "Bara Bara Senbei"
   },
   "wiki-tech-bara-bara-kinkyu-dasshutsu": {
-    "nameJa": "バラバラ緊急脱出"
+    "nameJa": "バラバラ緊急脱出",
+    "nameEn": "Bara Bara Kinkyu Dasshutsu"
   },
   "wiki-tech-bara-bara-festival": {
-    "nameJa": "バラバラフェスティバル"
+    "nameJa": "バラバラフェスティバル",
+    "nameEn": "Bara Bara Festival"
   },
   "wiki-tech-bara-bara-car": {
-    "nameJa": "バラバラカー"
+    "nameJa": "バラバラカー",
+    "nameEn": "Bara Bara Car"
   },
   "wiki-tech-kuchu-kirimomi-dai-circus": {
-    "nameJa": "空中錐揉み大サーカス"
+    "nameJa": "空中錐揉み大サーカス",
+    "nameEn": "Kuchu Kirimomi Dai Circus"
   },
   "wiki-tech-bara-bara-hade-ni-gattai": {
-    "nameJa": "バラバラ派手に合体"
+    "nameJa": "バラバラ派手に合体",
+    "nameEn": "Bara Bara Hade ni Gattai"
   },
   "wiki-tech-bara-bara-kick": {
-    "nameJa": "バラバラキック"
+    "nameJa": "バラバラキック",
+    "nameEn": "Bara Bara Kick"
   },
   "wiki-tech-bara-bara-punch": {
-    "nameJa": "バラバラパンチ"
+    "nameJa": "バラバラパンチ",
+    "nameEn": "Bara Bara Punch"
   },
   "wiki-tech-bara-bara-carnival": {
-    "nameJa": "バラバラカー二バル"
+    "nameJa": "バラバラカー二バル",
+    "nameEn": "Bara Bara Carnival"
   },
-  "wiki-tech-chop-chop-psych": {},
+  "wiki-tech-chop-chop-psych": {
+    "nameEn": "Chop-Chop Psych"
+  },
   "wiki-tech-desert-spada": {
-    "nameJa": "砂漠の宝刀 （ デザート・スパーダ ）"
+    "nameJa": "砂漠の宝刀 （ デザート・スパーダ ）",
+    "nameEn": "Desert Spada"
   },
   "wiki-tech-desert-girasole": {
-    "nameJa": "砂漠の向日葵 （ デザート・ジラソーレ ）"
+    "nameJa": "砂漠の向日葵 （ デザート・ジラソーレ ）",
+    "nameEn": "Desert Girasole"
   },
   "wiki-tech-barja-n": {
-    "nameJa": "三日月形砂丘 （ バルハン ）"
+    "nameJa": "三日月形砂丘 （ バルハン ）",
+    "nameEn": "Barján"
   },
   "wiki-tech-sables": {
-    "nameJa": "砂嵐 （ サーブルス ）"
+    "nameJa": "砂嵐 （ サーブルス ）",
+    "nameEn": "Sables"
   },
   "wiki-tech-ground-secco": {
-    "nameJa": "干割 （ グラウンド・セッコ ）"
+    "nameJa": "干割 （ グラウンド・セッコ ）",
+    "nameEn": "Ground Secco"
   },
   "wiki-tech-ground-death": {
-    "nameJa": "浸食輪廻 （ グラウンド・デス ）"
+    "nameJa": "浸食輪廻 （ グラウンド・デス ）",
+    "nameEn": "Ground Death"
   },
-  "wiki-tech-sables-pesado": {},
+  "wiki-tech-sables-pesado": {
+    "nameEn": "Sables: Pesado"
+  },
   "wiki-tech-desert-la-spada": {
-    "nameJa": "砂漠の金剛宝刀 （ デザート・ラスパーダ ）"
+    "nameJa": "砂漠の金剛宝刀 （ デザート・ラスパーダ ）",
+    "nameEn": "Desert la Spada"
   },
   "wiki-tech-desert-grande-espada": {
-    "nameJa": "砂漠の大剣 （ デザート・グランデ・エスパーダ ）"
+    "nameJa": "砂漠の大剣 （ デザート・グランデ・エスパーダ ）",
+    "nameEn": "Desert Grande Espada"
   },
   "wiki-tech-el-thor": {
     "nameKo": "El 토르",
-    "nameJa": "神の裁き （ エル･トール ）"
+    "nameJa": "神の裁き （ エル･トール ）",
+    "nameEn": "El Thor"
   },
   "wiki-tech-vari": {
-    "nameJa": "放電 （ ヴァーリー ）"
+    "nameJa": "放電 （ ヴァーリー ）",
+    "nameEn": "Vari"
   },
   "wiki-tech-1-000-000-v": {
-    "nameJa": "100 万 （ まん ） V （ ボルト ）"
+    "nameJa": "100 万 （ まん ） V （ ボルト ）",
+    "nameEn": "1,000,000 V"
   },
   "wiki-tech-20-000-000-v": {
-    "nameJa": "2000 万 （ まん ） V （ ボルト ）"
+    "nameJa": "2000 万 （ まん ） V （ ボルト ）",
+    "nameEn": "20,000,000 V"
   },
   "wiki-tech-100-000-000-v": {
-    "nameJa": "1 億 （ おく ） V （ ボルト ）"
+    "nameJa": "1 億 （ おく ） V （ ボルト ）",
+    "nameEn": "100,000,000 V"
   },
   "wiki-tech-max-200-000-000-v": {
-    "nameJa": "MAX （ マックス ） 2 億 （ おく ） V （ ボルト ）"
+    "nameJa": "MAX （ マックス ） 2 億 （ おく ） V （ ボルト ）",
+    "nameEn": "MAX 200,000,000 V"
   },
   "wiki-tech-sango": {
-    "nameJa": "稲妻 （ サンゴ ）"
+    "nameJa": "稲妻 （ サンゴ ）",
+    "nameEn": "Sango"
   },
   "wiki-tech-kari": {
-    "nameJa": "電光 （ カリ ）"
+    "nameJa": "電光 （ カリ ）",
+    "nameEn": "Kari"
   },
   "wiki-tech-shinzo-massage": {
-    "nameJa": "心臓マッサージ"
+    "nameJa": "心臓マッサージ",
+    "nameEn": "Shinzo Massage"
   },
   "wiki-tech-30-000-000-v-hino": {
-    "nameJa": "3000 万 （ まん ） V （ ボルト ） 雷鳥 （ ヒノ ）"
+    "nameJa": "3000 万 （ まん ） V （ ボルト ） 雷鳥 （ ヒノ ）",
+    "nameEn": "30,000,000 V Hino"
   },
   "wiki-tech-kiten": {
-    "nameJa": "雷獣 （ キテン ）"
+    "nameJa": "雷獣 （ キテン ）",
+    "nameEn": "Kiten"
   },
   "wiki-tech-60-000-000-v-jamboule": {
-    "nameJa": "6000 万 （ まん ） V （ ボルト ） 雷龍 （ ジャムブウル ）"
+    "nameJa": "6000 万 （ まん ） V （ ボルト ） 雷龍 （ ジャムブウル ）",
+    "nameEn": "60,000,000 V Jamboule"
   },
   "wiki-tech-grom-puddling": {
-    "nameJa": "雷冶金 （ グローム･パドリング ）"
+    "nameJa": "雷冶金 （ グローム･パドリング ）",
+    "nameEn": "Grom Puddling"
   },
   "wiki-tech-deathpiea": {
-    "nameJa": "デスピア"
+    "nameJa": "デスピア",
+    "nameEn": "Deathpiea"
   },
   "wiki-tech-mamaragan": {
-    "nameJa": "万雷 （ ママラガン ）"
+    "nameJa": "万雷 （ ママラガン ）",
+    "nameEn": "Mamaragan"
   },
   "wiki-tech-raigo": {
-    "nameJa": "雷 （ らい ） 迎 （ ごう ）"
+    "nameJa": "雷 （ らい ） 迎 （ ごう ）",
+    "nameEn": "Raigo"
   },
   "wiki-tech-200-000-000-v-amaru": {
-    "nameJa": "2 億 （ おく ） V （ ボルト ） 雷神 （ アマル ）"
+    "nameJa": "2 億 （ おく ） V （ ボルト ） 雷神 （ アマル ）",
+    "nameEn": "200,000,000 V Amaru"
   },
-  "wiki-tech-amaru-kairai": {},
+  "wiki-tech-amaru-kairai": {
+    "nameEn": "Amaru: Kairai"
+  },
   "wiki-tech-raichoso": {
-    "nameJa": "雷 （ らい ） 鳥 （ ちょう ） 葬 （ そう ）"
+    "nameJa": "雷 （ らい ） 鳥 （ ちょう ） 葬 （ そう ）",
+    "nameEn": "Raichoso"
   },
   "wiki-tech-el-kratia": {
-    "nameJa": "神の怒り （ エル・クラティア ）"
+    "nameJa": "神の怒り （ エル・クラティア ）",
+    "nameEn": "El Kratia"
   },
   "wiki-tech-raiho": {
-    "nameJa": "雷 （ らい ） 咆 （ ほう ）"
+    "nameJa": "雷 （ らい ） 咆 （ ほう ）",
+    "nameEn": "Raiho"
   },
   "wiki-tech-kyofu-koso-ga-kami-nanoda": {
-    "nameJa": "恐 （ きょう ） 怖 （ ふ ） こそが 神 （ かみ ） なのだ"
+    "nameJa": "恐 （ きょう ） 怖 （ ふ ） こそが 神 （ かみ ） なのだ",
+    "nameEn": "Kyofu Koso ga Kami Nanoda"
   },
   "wiki-tech-raijo-rikka": {
-    "nameJa": "雷 （ らい ） 浄 （ じょう ） 陸 （ りっ ） 迦 （ か ）"
+    "nameJa": "雷 （ らい ） 浄 （ じょう ） 陸 （ りっ ） 迦 （ か ）",
+    "nameEn": "Raijo Rikka"
   },
   "wiki-tech-el-vajra": {
-    "nameJa": "神の金剛杵 （ エル・ヴァジュラ ）"
+    "nameJa": "神の金剛杵 （ エル・ヴァジュラ ）",
+    "nameEn": "El Vajra"
   },
   "wiki-tech-500-000-000-v-amaru": {
-    "nameJa": "5 億 （ おく ） V （ ボルト ） 雷神 （ アマル ）"
+    "nameJa": "5 億 （ おく ） V （ ボルト ） 雷神 （ アマル ）",
+    "nameEn": "500,000,000 V Amaru"
   },
-  "wiki-tech-hino": {},
-  "wiki-tech-amaru": {},
-  "wiki-tech-jamboule": {},
+  "wiki-tech-hino": {
+    "nameEn": "Hino"
+  },
+  "wiki-tech-amaru": {
+    "nameEn": "Amaru"
+  },
+  "wiki-tech-jamboule": {
+    "nameEn": "Jamboule"
+  },
   "wiki-tech-dai-funka": {
-    "nameJa": "大噴火 （ だいふんか ）"
+    "nameJa": "大噴火 （ だいふんか ）",
+    "nameEn": "Dai Funka"
   },
   "wiki-tech-ryusei-kazan": {
-    "nameJa": "流星火山 （ りゅうせいかざん ）"
+    "nameJa": "流星火山 （ りゅうせいかざん ）",
+    "nameEn": "Ryusei Kazan"
   },
   "wiki-tech-inugami-guren": {
-    "nameJa": "犬噛紅蓮 （ いぬがみぐれん ）"
+    "nameJa": "犬噛紅蓮 （ いぬがみぐれん ）",
+    "nameEn": "Inugami Guren"
   },
   "wiki-tech-meigo": {
-    "nameJa": "冥狗 （ めいごう ）"
+    "nameJa": "冥狗 （ めいごう ）",
+    "nameEn": "Meigo"
   },
   "wiki-tech-bakuretsu-kazan": {
-    "nameJa": "爆裂火山 （ ばくれつかざん ）"
+    "nameJa": "爆裂火山 （ ばくれつかざん ）",
+    "nameEn": "Bakuretsu Kazan"
   },
-  "wiki-tech-you-re-next": {},
+  "wiki-tech-you-re-next": {
+    "nameEn": "You're Next!"
+  },
   "wiki-tech-ice-age": {
     "nameKo": "Ice 에이지",
-    "nameJa": "氷河時代 （ アイス・エイジ ）"
+    "nameJa": "氷河時代 （ アイス・エイジ ）",
+    "nameEn": "Ice Age"
   },
   "wiki-tech-ice-saber": {
-    "nameJa": "アイスサーベル"
+    "nameJa": "アイスサーベル",
+    "nameEn": "Ice Saber"
   },
   "wiki-tech-ice-time": {
-    "nameJa": "アイスタイム"
+    "nameJa": "アイスタイム",
+    "nameEn": "Ice Time"
   },
-  "wiki-tech-ice-block-partisan": {},
+  "wiki-tech-ice-block-partisan": {
+    "nameEn": "Ice Block: Partisan"
+  },
   "wiki-tech-ice-ball": {
-    "nameJa": "アイス BALL （ ボール ）"
+    "nameJa": "アイス BALL （ ボール ）",
+    "nameEn": "Ice Ball"
   },
-  "wiki-tech-ice-block-pheasant-beak": {},
+  "wiki-tech-ice-block-pheasant-beak": {
+    "nameEn": "Ice Block: Pheasant Beak"
+  },
   "wiki-tech-ice-glove": {
-    "nameJa": "氷拳 （ アイスグローブ ）"
+    "nameJa": "氷拳 （ アイスグローブ ）",
+    "nameEn": "Ice Glove"
   },
   "wiki-tech-ice-body": {
-    "nameJa": "アイスバディ"
+    "nameJa": "アイスバディ",
+    "nameEn": "Ice Body"
   },
-  "wiki-tech-ice-block-phalanx": {},
+  "wiki-tech-ice-block-phalanx": {
+    "nameEn": "Ice Block: Phalanx"
+  },
   "wiki-tech-ice-circle": {
-    "nameJa": "アイスサークル"
+    "nameJa": "アイスサークル",
+    "nameEn": "Ice Circle"
   },
   "wiki-tech-ice-pick": {
-    "nameJa": "アイスピック"
+    "nameJa": "アイスピック",
+    "nameEn": "Ice Pick"
   },
-  "wiki-tech-ice-block-avalanche": {},
+  "wiki-tech-ice-block-avalanche": {
+    "nameEn": "Ice Block: Avalanche"
+  },
   "wiki-tech-ice-star": {
-    "nameJa": "氷星 （ アイス スター ）"
+    "nameJa": "氷星 （ アイス スター ）",
+    "nameEn": "Ice Star"
   },
   "wiki-tech-ice-nail": {
-    "nameJa": "アイスネイル"
+    "nameJa": "アイスネイル",
+    "nameEn": "Ice Nail"
   },
   "wiki-tech-yata-no-kagami": {
-    "nameJa": "八咫鏡 （ やたのかがみ ）"
+    "nameJa": "八咫鏡 （ やたのかがみ ）",
+    "nameEn": "Yata no Kagami"
   },
   "wiki-tech-amaterasu": {
-    "nameJa": "天照 （ あまてらす ）"
+    "nameJa": "天照 （ あまてらす ）",
+    "nameEn": "Amaterasu"
   },
   "wiki-tech-ama-no-murakumo": {
-    "nameJa": "天叢雲剣 （ あまのむらくも ）"
+    "nameJa": "天叢雲剣 （ あまのむらくも ）",
+    "nameEn": "Ama no Murakumo"
   },
   "wiki-tech-yasakani-no-magatama": {
-    "nameJa": "八尺瓊勾玉 （ やさかにのまがたま ）"
+    "nameJa": "八尺瓊勾玉 （ やさかにのまがたま ）",
+    "nameEn": "Yasakani no Magatama"
   },
   "wiki-tech-keri": {
-    "nameJa": "蹴り"
+    "nameJa": "蹴り",
+    "nameEn": "Keri"
   },
   "wiki-tech-laser-bakuhatsu": {
-    "nameJa": "レーザー爆発"
+    "nameJa": "レーザー爆発",
+    "nameEn": "Laser Bakuhatsu"
   },
   "wiki-tech-laser": {
-    "nameJa": "レーザー"
+    "nameJa": "レーザー",
+    "nameEn": "Laser"
   },
   "wiki-tech-shunkan-ido": {
-    "nameJa": "瞬間移動"
+    "nameJa": "瞬間移動",
+    "nameEn": "Shunkan Ido"
   },
   "wiki-tech-ama-no-iwato": {
-    "nameJa": "天岩戸 （ あまのいわと ）"
+    "nameJa": "天岩戸 （ あまのいわと ）",
+    "nameEn": "Ama no Iwato"
   },
   "wiki-tech-sanshu-no-jingi": {
-    "nameJa": "三種の神器"
+    "nameJa": "三種の神器",
+    "nameEn": "Sanshu no Jingi"
   },
   "wiki-tech-hakua": {
-    "nameJa": "破空阿 （ ハクア ）"
+    "nameJa": "破空阿 （ ハクア ）",
+    "nameEn": "Hakua"
   },
   "wiki-tech-kaishin": {
-    "nameJa": "海震"
+    "nameJa": "海震",
+    "nameEn": "Kaishin"
   },
   "wiki-tech-gekishin": {
-    "nameJa": "激震"
+    "nameJa": "激震",
+    "nameEn": "Gekishin"
   },
   "wiki-tech-shingen-no-ichigeki": {
-    "nameJa": "震源の一撃"
+    "nameJa": "震源の一撃",
+    "nameEn": "Shingen no Ichigeki"
   },
   "wiki-tech-kabutowari": {
-    "nameJa": "兜割"
+    "nameJa": "兜割",
+    "nameEn": "Kabutowari"
   },
   "wiki-tech-naginata-rasetsu": {
-    "nameJa": "薙刀羅刹"
+    "nameJa": "薙刀羅刹",
+    "nameEn": "Naginata Rasetsu"
   },
   "wiki-tech-shima-yurashi": {
-    "nameJa": "島揺らし"
+    "nameJa": "島揺らし",
+    "nameEn": "Shima Yurashi"
   },
   "wiki-tech-saikyo-no-ichigeki": {
-    "nameJa": "最強の一撃"
+    "nameJa": "最強の一撃",
+    "nameEn": "Saikyo no Ichigeki"
   },
   "wiki-tech-ikkitosen": {
-    "nameJa": "一騎当千"
+    "nameJa": "一騎当千",
+    "nameEn": "Ikkitosen"
   },
   "wiki-tech-tenchi-meido": {
-    "nameJa": "天地鳴動"
+    "nameJa": "天地鳴動",
+    "nameEn": "Tenchi Meido"
   },
-  "wiki-tech-strongest-rampage": {},
-  "wiki-tech-silent-rage": {},
+  "wiki-tech-strongest-rampage": {
+    "nameEn": "Strongest Rampage"
+  },
+  "wiki-tech-silent-rage": {
+    "nameEn": "Silent Rage"
+  },
   "wiki-tech-gurash": {
-    "nameJa": "震破 （ グラッシュ ）"
+    "nameJa": "震破 （ グラッシュ ）",
+    "nameEn": "Gurash"
   },
   "wiki-tech-black-hole": {
     "nameKo": "블랙 Hole",
-    "nameJa": "闇穴道 （ ブラック･ホール ）"
+    "nameJa": "闇穴道 （ ブラック･ホール ）",
+    "nameEn": "Black Hole"
   },
   "wiki-tech-kurouzu": {
-    "nameJa": "闇水 （ くろうず ）"
+    "nameJa": "闇水 （ くろうず ）",
+    "nameEn": "Kurouzu"
   },
   "wiki-tech-black-world": {
     "nameKo": "블랙 World",
-    "nameJa": "ブラック･ワールド"
+    "nameJa": "ブラック･ワールド",
+    "nameEn": "Black World"
   },
   "wiki-tech-yamiagari": {
-    "nameJa": "闇開"
+    "nameJa": "闇開",
+    "nameEn": "Yamiagari"
   },
   "wiki-tech-dark-matter": {
-    "nameJa": "闇黒星 （ ダーク・マター ）"
+    "nameJa": "闇黒星 （ ダーク・マター ）",
+    "nameEn": "Dark Matter"
   },
   "wiki-tech-black-road": {
     "nameKo": "블랙 Road",
-    "nameJa": "ブラック･ロード"
+    "nameJa": "ブラック･ロード",
+    "nameEn": "Black Road"
   },
   "wiki-tech-parasite": {
-    "nameJa": "寄生糸 （ パラサイト ）"
+    "nameJa": "寄生糸 （ パラサイト ）",
+    "nameEn": "Parasite"
   },
   "wiki-tech-torikago": {
-    "nameJa": "鳥カゴ"
+    "nameJa": "鳥カゴ",
+    "nameEn": "Torikago"
   },
   "wiki-tech-sora-no-michi": {
-    "nameJa": "空の道"
+    "nameJa": "空の道",
+    "nameEn": "Sora no Michi"
   },
   "wiki-tech-goshikito": {
-    "nameJa": "五色糸 （ ゴシキート ）"
+    "nameJa": "五色糸 （ ゴシキート ）",
+    "nameEn": "Goshikito"
   },
   "wiki-tech-overheat": {
-    "nameJa": "超過鞭糸 （ オーバーヒート ）"
+    "nameJa": "超過鞭糸 （ オーバーヒート ）",
+    "nameEn": "Overheat"
   },
   "wiki-tech-tamaito": {
-    "nameJa": "弾糸 （ タマイト ）"
+    "nameJa": "弾糸 （ タマイト ）",
+    "nameEn": "Tamaito"
   },
   "wiki-tech-black-knight": {
     "nameKo": "블랙 Knight",
-    "nameJa": "影騎糸 （ ブラックナイト ）"
+    "nameJa": "影騎糸 （ ブラックナイト ）",
+    "nameEn": "Black Knight"
   },
   "wiki-tech-fulbright": {
-    "nameJa": "降無頼糸 （ フルブライト ）"
+    "nameJa": "降無頼糸 （ フルブライト ）",
+    "nameEn": "Fulbright"
   },
   "wiki-tech-kumo-no-sugaki": {
-    "nameJa": "蜘蛛の巣がき"
+    "nameJa": "蜘蛛の巣がき",
+    "nameEn": "Kumo no Sugaki"
   },
   "wiki-tech-itonoko": {
-    "nameJa": "糸ノコ"
+    "nameJa": "糸ノコ",
+    "nameEn": "Itonoko"
   },
   "wiki-tech-shufuku-sagyo": {
-    "nameJa": "修復作業"
+    "nameJa": "修復作業",
+    "nameEn": "Shufuku Sagyo"
   },
   "wiki-tech-athlete": {
-    "nameJa": "足剃糸 （ アスリイト ）"
+    "nameJa": "足剃糸 （ アスリイト ）",
+    "nameEn": "Athlete"
   },
   "wiki-tech-break-white": {
-    "nameJa": "荒浪白糸 （ ブレイクホワイト ）"
+    "nameJa": "荒浪白糸 （ ブレイクホワイト ）",
+    "nameEn": "Break White"
   },
   "wiki-tech-off-white": {
-    "nameJa": "盾白糸 （ オフホワイト ）"
+    "nameJa": "盾白糸 （ オフホワイト ）",
+    "nameEn": "Off White"
   },
   "wiki-tech-billow-white": {
-    "nameJa": "大波白糸 （ ビローホワイト ）"
+    "nameJa": "大波白糸 （ ビローホワイト ）",
+    "nameEn": "Billow White"
   },
   "wiki-tech-ever-white": {
-    "nameJa": "海原白波 （ エバーホワイト ）"
+    "nameJa": "海原白波 （ エバーホワイト ）",
+    "nameEn": "Ever White"
   },
   "wiki-tech-flap-thread": {
-    "nameJa": "羽撃糸 （ フラップスレッド ）"
+    "nameJa": "羽撃糸 （ フラップスレッド ）",
+    "nameEn": "Flap Thread"
   },
   "wiki-tech-god-thread": {
-    "nameJa": "神誅殺 （ ゴッドスレッド ）"
+    "nameJa": "神誅殺 （ ゴッドスレッド ）",
+    "nameEn": "God Thread"
   },
   "wiki-tech-yanagi-mochi": {
-    "nameJa": "柳モチ"
+    "nameJa": "柳モチ",
+    "nameEn": "Yanagi Mochi"
   },
   "wiki-tech-mochi-tsuki": {
-    "nameJa": "モチ 突 （ ツキ ）"
+    "nameJa": "モチ 突 （ ツキ ）",
+    "nameEn": "Mochi Tsuki"
   },
   "wiki-tech-kaku-mochi": {
-    "nameJa": "角 （ かく ） モチ"
+    "nameJa": "角 （ かく ） モチ",
+    "nameEn": "Kaku Mochi"
   },
   "wiki-tech-yaki-mochi": {
-    "nameJa": "焼餅 （ ヤキモチ ）"
+    "nameJa": "焼餅 （ ヤキモチ ）",
+    "nameEn": "Yaki Mochi"
   },
   "wiki-tech-zan-giri-mochi": {
-    "nameJa": "斬 （ ザン ） ・ 切 （ ギリ ） ・ 餅 （ モチ ）"
+    "nameJa": "斬 （ ザン ） ・ 切 （ ギリ ） ・ 餅 （ モチ ）",
+    "nameEn": "Zan Giri Mochi"
   },
   "wiki-tech-nagare-mochi": {
-    "nameJa": "流れモチ"
+    "nameJa": "流れモチ",
+    "nameEn": "Nagare Mochi"
   },
   "wiki-tech-kagami-mochi": {
-    "nameJa": "加々身 （ かがみ ） モチ"
+    "nameJa": "加々身 （ かがみ ） モチ",
+    "nameEn": "Kagami Mochi"
   },
   "wiki-tech-amadare-mochi": {
-    "nameJa": "雨垂モチ"
+    "nameJa": "雨垂モチ",
+    "nameEn": "Amadare Mochi"
   },
   "wiki-tech-muso-donuts": {
-    "nameJa": "無双ドーナツ"
+    "nameJa": "無双ドーナツ",
+    "nameEn": "Muso Donuts"
   },
   "wiki-tech-mochi-ginchaku": {
-    "nameJa": "餅吟着 （ モチギンチャク ）"
+    "nameJa": "餅吟着 （ モチギンチャク ）",
+    "nameEn": "Mochi Ginchaku"
   },
   "wiki-tech-tori-mochi": {
-    "nameJa": "鳥モチ"
+    "nameJa": "鳥モチ",
+    "nameEn": "Tori Mochi"
   },
   "wiki-tech-mochi-hadan": {
-    "nameJa": "モチ刃弾"
+    "nameJa": "モチ刃弾",
+    "nameEn": "Mochi Hadan"
   },
   "wiki-tech-naguri-mochi": {
-    "nameJa": "ナグリ餅"
+    "nameJa": "ナグリ餅",
+    "nameEn": "Naguri Mochi"
   },
   "wiki-tech-kuzu-mochi": {
-    "nameJa": "九頭モチ"
+    "nameJa": "九頭モチ",
+    "nameEn": "Kuzu Mochi"
   },
   "wiki-tech-kashiwa-mochi": {
-    "nameJa": "拍手モチ"
+    "nameJa": "拍手モチ",
+    "nameEn": "Kashiwa Mochi"
   },
   "wiki-tech-kuri-mochi": {
-    "nameJa": "栗餅"
+    "nameJa": "栗餅",
+    "nameEn": "Kuri Mochi"
   },
-  "wiki-tech-kona-kona-no-mi": {},
+  "wiki-tech-kona-kona-no-mi": {
+    "nameEn": "Kona Kona no Mi"
+  },
   "wiki-tech-bolo-breath": {
-    "nameJa": "熱息 （ ボロブレス ）"
+    "nameJa": "熱息 （ ボロブレス ）",
+    "nameEn": "Bolo Breath"
   },
   "wiki-tech-kaifu": {
-    "nameJa": "壊風"
+    "nameJa": "壊風",
+    "nameEn": "Kaifu"
   },
   "wiki-tech-kaen-daiko": {
-    "nameJa": "火龍大炬 （ かえんダイコ ）"
+    "nameJa": "火龍大炬 （ かえんダイコ ）",
+    "nameEn": "Kaen Daiko"
   },
   "wiki-tech-fujiazami": {
-    "nameJa": "不 （ ふ ） 死 （ じ ） 薊 （ あざみ ）"
+    "nameJa": "不 （ ふ ） 死 （ じ ） 薊 （ あざみ ）",
+    "nameEn": "Fujiazami"
   },
   "wiki-tech-hoo-in": {
-    "nameJa": "鳳 （ ほう ） 凰 （ おう ） 印 （ いん ）"
+    "nameJa": "鳳 （ ほう ） 凰 （ おう ） 印 （ いん ）",
+    "nameEn": "Hoo-in"
   },
   "wiki-tech-nashi-no-tsubute": {
-    "nameJa": "鳳梨 （ なしの ） 礫 （ つぶて ）"
+    "nameJa": "鳳梨 （ なしの ） 礫 （ つぶて ）",
+    "nameEn": "Nashi no Tsubute"
   },
   "wiki-tech-bluebird": {
-    "nameJa": "青炎雁 （ ブルーバード ）"
+    "nameJa": "青炎雁 （ ブルーバード ）",
+    "nameEn": "Bluebird"
   },
   "wiki-tech-ongle": {
-    "nameJa": "鶴爪 （ オングル ）"
+    "nameJa": "鶴爪 （ オングル ）",
+    "nameEn": "Ongle"
   },
   "wiki-tech-power-leg-claw": {
-    "nameJa": "パワーレッグクロー"
+    "nameJa": "パワーレッグクロー",
+    "nameEn": "Power Leg Claw"
   },
   "wiki-tech-power-leg-spin": {
-    "nameJa": "パワーレッグスピン"
+    "nameJa": "パワーレッグスピン",
+    "nameEn": "Power Leg Spin"
   },
   "wiki-tech-power-leg-shoot": {
-    "nameJa": "パワーレッグシュート"
+    "nameJa": "パワーレッグシュート",
+    "nameEn": "Power Leg Shoot"
   },
   "wiki-tech-phoenix-spear": {
     "nameKo": "Phoenix 창",
-    "nameJa": "フェニックススピア"
+    "nameJa": "フェニックススピア",
+    "nameEn": "Phoenix Spear"
   },
   "wiki-tech-dive-attack": {
-    "nameJa": "ダイブアタック"
+    "nameJa": "ダイブアタック",
+    "nameEn": "Dive Attack"
   },
   "wiki-tech-air-raid-smash": {
-    "nameJa": "エアーレイドスマッシュ"
+    "nameJa": "エアーレイドスマッシュ",
+    "nameEn": "Air Raid Smash"
   },
   "wiki-tech-saisei-no-hono": {
-    "nameJa": "再生の炎"
+    "nameJa": "再生の炎",
+    "nameEn": "Saisei no Hono"
   },
   "wiki-tech-tensei-no-soen": {
-    "nameJa": "転生の蒼炎"
+    "nameJa": "転生の蒼炎",
+    "nameEn": "Tensei no Soen"
   },
   "wiki-tech-fushicho-no-goen": {
-    "nameJa": "不死鳥の豪炎"
+    "nameJa": "不死鳥の豪炎",
+    "nameEn": "Fushicho no Goen"
   },
   "wiki-tech-fushicho-no-mezame": {
-    "nameJa": "不死鳥の目覚め"
+    "nameJa": "不死鳥の目覚め",
+    "nameEn": "Fushicho no Mezame"
   },
   "wiki-tech-fushicho-no-yokugeki": {
-    "nameJa": "不死鳥の翼撃"
+    "nameJa": "不死鳥の翼撃",
+    "nameEn": "Fushicho no Yokugeki"
   },
   "wiki-tech-fushicho-no-shugeki": {
-    "nameJa": "不死鳥の蹴撃"
+    "nameJa": "不死鳥の蹴撃",
+    "nameEn": "Fushicho no Shugeki"
   },
   "wiki-tech-fushicho-no-kyoshu": {
-    "nameJa": "不死鳥の強襲"
+    "nameJa": "不死鳥の強襲",
+    "nameEn": "Fushicho no Kyoshu"
   },
   "wiki-tech-zoan-kei-genjushu": {
-    "nameJa": "「 動物 （ ゾオン ） 系」幻獣種"
+    "nameJa": "「 動物 （ ゾオン ） 系」幻獣種",
+    "nameEn": "Zoan-kei Genjushu"
   },
   "wiki-tech-genju-rengeki": {
-    "nameJa": "幻獣連撃"
+    "nameJa": "幻獣連撃",
+    "nameEn": "Genju Rengeki"
   },
   "wiki-tech-soen-no-kenjo": {
-    "nameJa": "蒼炎の拳浄 （ そうえんのけんじょう ）"
+    "nameJa": "蒼炎の拳浄 （ そうえんのけんじょう ）",
+    "nameEn": "Soen no Kenjo"
   },
   "wiki-tech-soen-no-tenkei": {
-    "nameJa": "蒼炎の天恵 （ そうえんのてんけい ）"
+    "nameJa": "蒼炎の天恵 （ そうえんのてんけい ）",
+    "nameEn": "Soen no Tenkei"
   },
   "wiki-tech-soen-no-kago": {
-    "nameJa": "蒼炎の加護 （ そうえんのかご ）"
+    "nameJa": "蒼炎の加護 （ そうえんのかご ）",
+    "nameEn": "Soen no Kago"
   },
   "wiki-tech-genjushu-no-hidariashi": {
-    "nameJa": "幻獣種の左脚 （ げんじゅうしゅのひだりあし ）"
+    "nameJa": "幻獣種の左脚 （ げんじゅうしゅのひだりあし ）",
+    "nameEn": "Genjushu no Hidariashi"
   },
   "wiki-tech-soen-no-dageki": {
-    "nameJa": "蒼炎の墜撃 （ そうえんのついげき ）"
+    "nameJa": "蒼炎の墜撃 （ そうえんのついげき ）",
+    "nameEn": "Soen no Dageki"
   },
   "wiki-tech-fushicho-ranbu": {
-    "nameJa": "不死鳥乱舞 （ ふしちょうらんぶ ）"
+    "nameJa": "不死鳥乱舞 （ ふしちょうらんぶ ）",
+    "nameEn": "Fushicho Ranbu"
   },
   "wiki-tech-tensei-no-hono": {
-    "nameJa": "転生の炎 （ てんせいのほのお ）"
+    "nameJa": "転生の炎 （ てんせいのほのお ）",
+    "nameEn": "Tensei no Hono"
   },
   "wiki-tech-fushicho-no-shukuen": {
-    "nameJa": "不死鳥の祝炎 （ ふしちょうのしゅくえん ）"
+    "nameJa": "不死鳥の祝炎 （ ふしちょうのしゅくえん ）",
+    "nameEn": "Fushicho no Shukuen"
   },
   "wiki-tech-fushicho-no-shumai": {
-    "nameJa": "不死鳥の襲舞 （ ふしちょうのしゅうまい ）"
+    "nameJa": "不死鳥の襲舞 （ ふしちょうのしゅうまい ）",
+    "nameEn": "Fushicho no Shumai"
   },
   "wiki-tech-soen-soso": {
-    "nameJa": "蒼炎双爪 （ そうえんそうそう ）"
+    "nameJa": "蒼炎双爪 （ そうえんそうそう ）",
+    "nameEn": "Soen Soso"
   },
   "wiki-tech-fushicho-kassho": {
-    "nameJa": "不死鳥滑翔 （ ふしちょうかっしょう ）"
+    "nameJa": "不死鳥滑翔 （ ふしちょうかっしょう ）",
+    "nameEn": "Fushicho Kassho"
   },
   "wiki-tech-soen-no-uzu": {
-    "nameJa": "蒼炎の渦 （ そうえんのうず ）"
+    "nameJa": "蒼炎の渦 （ そうえんのうず ）",
+    "nameEn": "Soen no Uzu"
   },
   "wiki-tech-fushicho-no-tsume": {
-    "nameJa": "不死鳥の爪 （ ふしちょうのつめ ）"
+    "nameJa": "不死鳥の爪 （ ふしちょうのつめ ）",
+    "nameEn": "Fushicho no Tsume"
   },
   "wiki-tech-chugi-no-tate": {
-    "nameJa": "忠義の盾 （ ちゅうぎのたて ）"
+    "nameJa": "忠義の盾 （ ちゅうぎのたて ）",
+    "nameEn": "Chugi no Tate"
   },
   "wiki-tech-pad-ho": {
-    "nameJa": "圧力 （ パッド ） 砲"
+    "nameJa": "圧力 （ パッド ） 砲",
+    "nameEn": "Pad Ho"
   },
   "wiki-tech-tsuppari-pad-ho": {
-    "nameJa": "つっぱり 圧力 （ パッド ） 砲"
+    "nameJa": "つっぱり 圧力 （ パッド ） 砲",
+    "nameEn": "Tsuppari Pad Ho"
   },
   "wiki-tech-puni": {
-    "nameJa": "ぷに"
+    "nameJa": "ぷに",
+    "nameEn": "Puni"
   },
   "wiki-tech-ursus-shock": {
-    "nameJa": "熊の衝撃 （ ウルスス･ショック ）"
+    "nameJa": "熊の衝撃 （ ウルスス･ショック ）",
+    "nameEn": "Ursus Shock"
   },
   "wiki-tech-kuma-no-te": {
-    "nameJa": "熊の手"
+    "nameJa": "熊の手",
+    "nameEn": "Kuma no Te"
   },
   "wiki-tech-hiki-tobashi": {
-    "nameJa": "弾き飛ばし"
+    "nameJa": "弾き飛ばし",
+    "nameEn": "Hiki Tobashi"
   },
   "wiki-tech-omae-ni-wa-jigoku-o-miseru": {
-    "nameKo": "Omae ni wa Jigoku o Miseru…"
+    "nameKo": "Omae ni wa Jigoku o Miseru…",
+    "nameEn": "\"Omae ni wa Jigoku o Miseru…\""
   },
-  "wiki-tech-where-would-you-like-to-travel": {},
+  "wiki-tech-where-would-you-like-to-travel": {
+    "nameEn": "Where would you like to travel?"
+  },
   "wiki-tech-big-eater": {
-    "nameJa": "暴贖握磁気 （ ビッグイーター ）"
+    "nameJa": "暴贖握磁気 （ ビッグイーター ）",
+    "nameEn": "Big Eater"
   },
   "wiki-tech-repel": {
-    "nameJa": "反発 （ リペル ）"
+    "nameJa": "反発 （ リペル ）",
+    "nameEn": "Repel"
   },
   "wiki-tech-punk-gibson": {
-    "nameJa": "磁気 （ パンク ） 弦 （ ギブソン ）"
+    "nameJa": "磁気 （ パンク ） 弦 （ ギブソン ）",
+    "nameEn": "Punk Gibson"
   },
   "wiki-tech-punk-rotten": {
-    "nameJa": "磁気 （ パンク ） 魔人 （ ロットン ）"
+    "nameJa": "磁気 （ パンク ） 魔人 （ ロットン ）",
+    "nameEn": "Punk Rotten"
   },
   "wiki-tech-slam-gibson": {
-    "nameJa": "破壊弦 （ スラムギブソン ）"
+    "nameJa": "破壊弦 （ スラムギブソン ）",
+    "nameEn": "Slam Gibson"
   },
   "wiki-tech-punk-pistols": {
-    "nameJa": "磁気 （ パンク ） ピストルズ"
+    "nameJa": "磁気 （ パンク ） ピストルズ",
+    "nameEn": "Punk Pistols"
   },
   "wiki-tech-punk-corna-dio": {
-    "nameJa": "磁気 （ パンク ） 大魔牛 （ コルナ・ディオ ）"
+    "nameJa": "磁気 （ パンク ） 大魔牛 （ コルナ・ディオ ）",
+    "nameEn": "Punk Corna Dio"
   },
   "wiki-tech-damned-punk": {
-    "nameJa": "電磁砲 （ ダムドパンク ）"
+    "nameJa": "電磁砲 （ ダムドパンク ）",
+    "nameEn": "Damned Punk"
   },
   "wiki-tech-assign": {
-    "nameJa": "付与 （ アサイン ）"
+    "nameJa": "付与 （ アサイン ）",
+    "nameEn": "Assign"
   },
   "wiki-tech-punk-clash": {
-    "nameJa": "磁気 （ パンク ） 激突 （ クラッシュ ）"
+    "nameJa": "磁気 （ パンク ） 激突 （ クラッシュ ）",
+    "nameEn": "Punk Clash"
   },
   "wiki-tech-genocide-raid": {
-    "nameJa": "ジェノサイド・レイド"
+    "nameJa": "ジェノサイド・レイド",
+    "nameEn": "Genocide Raid"
   },
   "wiki-tech-negative-hollow": {
-    "nameJa": "ネガティブ・ホロウ"
+    "nameJa": "ネガティブ・ホロウ",
+    "nameEn": "Negative Hollow"
   },
   "wiki-tech-negative-hollows": {
-    "nameJa": "ネガティブホロウズ"
+    "nameJa": "ネガティブホロウズ",
+    "nameEn": "Negative Hollows"
   },
   "wiki-tech-mini-hollow": {
-    "nameJa": "ミニホロ"
+    "nameJa": "ミニホロ",
+    "nameEn": "Mini Hollow"
   },
   "wiki-tech-ghost-rap": {
-    "nameJa": "ゴースト・ラップ"
+    "nameJa": "ゴースト・ラップ",
+    "nameEn": "Ghost Rap"
   },
   "wiki-tech-toku-hollow": {
-    "nameJa": "特ホロ"
+    "nameJa": "特ホロ",
+    "nameEn": "Toku Hollow"
   },
   "wiki-tech-kamikaze-rap": {
-    "nameJa": "神風ラップ"
+    "nameJa": "神風ラップ",
+    "nameEn": "Kamikaze Rap"
   },
   "wiki-tech-yutai-ridatsu": {
-    "nameJa": "幽体離脱"
+    "nameJa": "幽体離脱",
+    "nameEn": "Yutai Ridatsu"
   },
   "wiki-tech-ghost-masquerade": {
-    "nameJa": "幽霊舞会 （ ゴスト・マスクレイド ）"
+    "nameJa": "幽霊舞会 （ ゴスト・マスクレイド ）",
+    "nameEn": "Ghost Masquerade"
   },
   "wiki-tech-astral-explosion": {
-    "nameJa": "幽体 （ アストラル ） ・エクスポローション"
+    "nameJa": "幽体 （ アストラル ） ・エクスポローション",
+    "nameEn": "Astral Explosion"
   },
   "wiki-tech-hydra": {
-    "nameJa": "毒竜 （ ヒドラ ）"
+    "nameJa": "毒竜 （ ヒドラ ）",
+    "nameEn": "Hydra"
   },
   "wiki-tech-venom-road": {
-    "nameJa": "毒の道 （ ベノムロード ）"
+    "nameJa": "毒の道 （ ベノムロード ）",
+    "nameEn": "Venom Road"
   },
   "wiki-tech-chloro-ball": {
-    "nameJa": "毒ガス弾 （ クロロボール ）"
+    "nameJa": "毒ガス弾 （ クロロボール ）",
+    "nameEn": "Chloro Ball"
   },
   "wiki-tech-doku-fugu": {
-    "nameJa": "毒フグ"
+    "nameJa": "毒フグ",
+    "nameEn": "Doku Fugu"
   },
   "wiki-tech-doku-gumo": {
-    "nameJa": "毒 （ ドク ） ・ 雲 （ グモ ）"
+    "nameJa": "毒 （ ドク ） ・ 雲 （ グモ ）",
+    "nameEn": "Doku Gumo"
   },
-  "wiki-tech-venom-demon-jigoku-no-shinpan": {},
+  "wiki-tech-venom-demon-jigoku-no-shinpan": {
+    "nameEn": "Venom Demon: Jigoku no Shinpan"
+  },
   "wiki-tech-geburtstag": {
-    "nameJa": "ゲブーアツターク"
+    "nameJa": "ゲブーアツターク",
+    "nameEn": "Geburtstag"
   },
   "wiki-tech-incarnations": {
-    "nameJa": "化身"
+    "nameJa": "化身",
+    "nameEn": "Incarnations"
   },
   "wiki-tech-homies": {
-    "nameJa": "ホーミーズ"
+    "nameJa": "ホーミーズ",
+    "nameEn": "Homies"
   },
-  "wiki-tech-special-homies": {},
-  "wiki-tech-soul-pocus": {},
+  "wiki-tech-special-homies": {
+    "nameEn": "Special Homies"
+  },
+  "wiki-tech-soul-pocus": {
+    "nameEn": "Soul Pocus"
+  },
   "wiki-tech-raitei": {
-    "nameJa": "雷霆 （ ライテイ ）"
+    "nameJa": "雷霆 （ ライテイ ）",
+    "nameEn": "Raitei"
   },
   "wiki-tech-indra": {
-    "nameJa": "威鼓 （ インドラ ）"
+    "nameJa": "威鼓 （ インドラ ）",
+    "nameEn": "Indra"
   },
   "wiki-tech-tenman-daijizai-tenjin": {
-    "nameJa": "天満大自在天神"
+    "nameJa": "天満大自在天神",
+    "nameEn": "Tenman Daijizai Tenjin"
   },
   "wiki-tech-heavenly-feuer": {
-    "nameJa": "天上の火 （ ヘブンリーフォイアー ）"
+    "nameJa": "天上の火 （ ヘブンリーフォイアー ）",
+    "nameEn": "Heavenly Feuer"
   },
   "wiki-tech-heavenly-bonbon": {
-    "nameJa": "天上の （ ヘブンリー ） ボンボン"
+    "nameJa": "天上の （ ヘブンリー ） ボンボン",
+    "nameEn": "Heavenly Bonbon"
   },
   "wiki-tech-ikoku": {
-    "nameJa": "威国"
+    "nameJa": "威国",
+    "nameEn": "Ikoku"
   },
   "wiki-tech-fulgora": {
-    "nameJa": "震御雷 （ フルゴラ ）"
+    "nameJa": "震御雷 （ フルゴラ ）",
+    "nameEn": "Fulgora"
   },
   "wiki-tech-cognac": {
-    "nameJa": "皇帝剣 （ コニャック ）"
+    "nameJa": "皇帝剣 （ コニャック ）",
+    "nameEn": "Cognac"
   },
   "wiki-tech-hahaba": {
-    "nameJa": "破々刃 （ ハハバ ）"
+    "nameJa": "破々刃 （ ハハバ ）",
+    "nameEn": "Hahaba"
   },
   "wiki-tech-haha-no-hi": {
-    "nameJa": "刃母の炎"
+    "nameJa": "刃母の炎",
+    "nameEn": "Haha no Hi"
   },
   "wiki-tech-hakai": {
-    "nameJa": "覇海"
+    "nameJa": "覇海",
+    "nameEn": "Hakai"
   },
   "wiki-tech-maser-ho": {
-    "nameJa": "鳴光砲 （ メーザーほう ）"
+    "nameJa": "鳴光砲 （ メーザーほう ）",
+    "nameEn": "Maser Ho"
   },
   "wiki-tech-marma-raid": {
-    "nameJa": "マーマ 急襲 （ レイド ）"
+    "nameJa": "マーマ 急襲 （ レイド ）",
+    "nameEn": "Marma-Raid"
   },
   "wiki-tech-maser-saber": {
-    "nameJa": "鳴光剣 （ メーザーサーベル ）"
+    "nameJa": "鳴光剣 （ メーザーサーベル ）",
+    "nameEn": "Maser Saber"
   },
   "wiki-tech-heavenly-feuer-blitz": {
-    "nameJa": "天上の （ ヘヴンリー ） 火雷 （ フォイアブリッツ ）"
+    "nameJa": "天上の （ ヘヴンリー ） 火雷 （ フォイアブリッツ ）",
+    "nameEn": "Heavenly Feuer Blitz"
   },
-  "wiki-tech-doppelman": {},
+  "wiki-tech-doppelman": {
+    "nameEn": "Doppelman"
+  },
   "wiki-tech-keiyaku": {
-    "nameJa": "契約"
+    "nameJa": "契約",
+    "nameEn": "Keiyaku"
   },
   "wiki-tech-little-black-bears": {
     "nameKo": "Little 블랙 Bears",
-    "nameJa": "小熊玩具 （ リトルブラックベアーズ ）"
+    "nameJa": "小熊玩具 （ リトルブラックベアーズ ）",
+    "nameEn": "Little Black Bears"
   },
   "wiki-tech-atamawari-ningyo": {
-    "nameJa": "頭割り人形"
+    "nameJa": "頭割り人形",
+    "nameEn": "Atamawari Ningyo"
   },
   "wiki-tech-gravito": {
-    "nameJa": "重力刀 （ グラビとう ）"
+    "nameJa": "重力刀 （ グラビとう ）",
+    "nameEn": "Gravito"
   },
   "wiki-tech-moko": {
-    "nameJa": "猛虎 （ もうこ ）"
+    "nameJa": "猛虎 （ もうこ ）",
+    "nameEn": "Moko"
   },
   "wiki-tech-jigoku-tabi": {
-    "nameJa": "地獄旅"
+    "nameJa": "地獄旅",
+    "nameEn": "Jigoku Tabi"
   },
   "wiki-tech-abare-himatsuri": {
-    "nameJa": "あばれ火祭り"
+    "nameJa": "あばれ火祭り",
+    "nameEn": "Abare Himatsuri"
   },
   "wiki-tech-kagero": {
-    "nameJa": "陽炎 （ かげろう ）"
+    "nameJa": "陽炎 （ かげろう ）",
+    "nameEn": "Kagero"
   },
   "wiki-tech-enjomo": {
-    "nameJa": "炎上網 （ えんじょうもう ）"
+    "nameJa": "炎上網 （ えんじょうもう ）",
+    "nameEn": "Enjomo"
   },
   "wiki-tech-hiken": {
-    "nameJa": "火拳 （ ひけん ）"
+    "nameJa": "火拳 （ ひけん ）",
+    "nameEn": "Hiken"
   },
   "wiki-tech-higan": {
-    "nameJa": "火銃 （ ヒガン ）"
+    "nameJa": "火銃 （ ヒガン ）",
+    "nameEn": "Higan"
   },
   "wiki-tech-enkai": {
-    "nameJa": "炎戒 （ エンカイ ）"
+    "nameJa": "炎戒 （ エンカイ ）",
+    "nameEn": "Enkai"
   },
   "wiki-tech-hibashira": {
-    "nameJa": "火柱 （ ひばしら ）"
+    "nameJa": "火柱 （ ひばしら ）",
+    "nameEn": "Hibashira"
   },
   "wiki-tech-hotarubi": {
-    "nameJa": "蛍火 （ ほたるび ）"
+    "nameJa": "蛍火 （ ほたるび ）",
+    "nameEn": "Hotarubi"
   },
   "wiki-tech-hidaruma": {
-    "nameJa": "火達磨 （ ヒダルマ ）"
+    "nameJa": "火達磨 （ ヒダルマ ）",
+    "nameEn": "Hidaruma"
   },
-  "wiki-tech-shinka-shiranui": {},
+  "wiki-tech-shinka-shiranui": {
+    "nameEn": "Shinka: Shiranui"
+  },
   "wiki-tech-jujika": {
-    "nameJa": "十字火 （ じゅうじか ）"
+    "nameJa": "十字火 （ じゅうじか ）",
+    "nameEn": "Jujika"
   },
-  "wiki-tech-dai-enkai-entei": {},
+  "wiki-tech-dai-enkai-entei": {
+    "nameEn": "Dai Enkai: Entei"
+  },
   "wiki-tech-kyokaen": {
-    "nameJa": "鏡火炎 （ きょうかえん ）"
+    "nameJa": "鏡火炎 （ きょうかえん ）",
+    "nameEn": "Kyokaen"
   },
   "wiki-tech-hibuta": {
-    "nameJa": "火蓋 （ ひぶた ）"
+    "nameJa": "火蓋 （ ひぶた ）",
+    "nameEn": "Hibuta"
   },
   "wiki-tech-heat-breath": {
-    "nameJa": "戦火 （ せんか ）"
+    "nameJa": "戦火 （ せんか ）",
+    "nameEn": "Heat Breath"
   },
-  "wiki-tech-senka": {},
+  "wiki-tech-senka": {
+    "nameEn": "Senka"
+  },
   "wiki-tech-denkou-sekka": {
-    "nameJa": "電光 （ でんこう ） 石火 （ せっか ）"
+    "nameJa": "電光 （ でんこう ） 石火 （ せっか ）",
+    "nameEn": "Denkou Sekka"
   },
   "wiki-tech-mouka": {
-    "nameJa": "猛火 （ もうか ）"
+    "nameJa": "猛火 （ もうか ）",
+    "nameEn": "Mouka"
   },
   "wiki-tech-crimson-flower": {
-    "nameJa": "紅蓮 （ ぐれん ）"
+    "nameJa": "紅蓮 （ ぐれん ）",
+    "nameEn": "Crimson Flower"
   },
   "wiki-tech-kaen": {
-    "nameJa": "火燕 （ かえん ）"
+    "nameJa": "火燕 （ かえん ）",
+    "nameEn": "Kaen"
   },
   "wiki-tech-gouka-kenran": {
-    "nameJa": "業火拳乱 （ ごうかけんらん ）"
+    "nameJa": "業火拳乱 （ ごうかけんらん ）",
+    "nameEn": "Gouka Kenran"
   },
   "wiki-tech-heat-seed": {
-    "nameJa": "火種 （ ひだね ）"
+    "nameJa": "火種 （ ひだね ）",
+    "nameEn": "Heat Seed"
   },
   "wiki-tech-higuruma": {
-    "nameJa": "火車 （ ひぐるま ）"
+    "nameJa": "火車 （ ひぐるま ）",
+    "nameEn": "Higuruma"
   },
   "wiki-tech-nichirin": {
-    "nameJa": "日輪 （ にちりん ）"
+    "nameJa": "日輪 （ にちりん ）",
+    "nameEn": "Nichirin"
   },
   "wiki-tech-enten": {
-    "nameJa": "炎天 （ えんてん ）"
+    "nameJa": "炎天 （ えんてん ）",
+    "nameEn": "Enten"
   },
   "wiki-tech-onibi": {
-    "nameJa": "鬼火 （ おにび ）"
+    "nameJa": "鬼火 （ おにび ）",
+    "nameEn": "Onibi"
   },
   "wiki-tech-kageki": {
-    "nameJa": "火激 （ かげき ）"
+    "nameJa": "火激 （ かげき ）",
+    "nameEn": "Kageki"
   },
   "wiki-tech-rekka": {
-    "nameJa": "烈火 （ れっか ）"
+    "nameJa": "烈火 （ れっか ）",
+    "nameEn": "Rekka"
   },
   "wiki-tech-kasou": {
-    "nameJa": "火葬 （ かそう ）"
+    "nameJa": "火葬 （ かそう ）",
+    "nameEn": "Kasou"
   },
   "wiki-tech-heat-iron": {
-    "nameJa": "炎舞 （ えんぶ ）"
+    "nameJa": "炎舞 （ えんぶ ）",
+    "nameEn": "Heat Iron"
   },
-  "wiki-tech-enbu": {},
+  "wiki-tech-enbu": {
+    "nameEn": "Enbu"
+  },
   "wiki-tech-dazzling-inferno": {
-    "nameJa": "火祭 （ ひまつり ）"
+    "nameJa": "火祭 （ ひまつり ）",
+    "nameEn": "Dazzling Inferno"
   },
-  "wiki-tech-avian-flame-eater": {},
-  "wiki-tech-himatsuri": {},
+  "wiki-tech-avian-flame-eater": {
+    "nameEn": "Avian Flame Eater"
+  },
+  "wiki-tech-himatsuri": {
+    "nameEn": "Himatsuri"
+  },
   "wiki-tech-twin-guns-cross-fire": {
     "nameKo": "Twin Guns & Cross 불",
-    "nameJa": "双銃＆十字火"
+    "nameJa": "双銃＆十字火",
+    "nameEn": "Twin Guns & Cross Fire"
   },
-  "wiki-tech-shinka-shiranui-itto": {},
-  "wiki-tech-hotarubi-kasen": {},
-  "wiki-tech-hotarubi-funadama": {},
+  "wiki-tech-shinka-shiranui-itto": {
+    "nameEn": "Shinka: Shiranui Itto"
+  },
+  "wiki-tech-hotarubi-kasen": {
+    "nameEn": "Hotarubi: Kasen"
+  },
+  "wiki-tech-hotarubi-funadama": {
+    "nameEn": "Hotarubi: Funadama"
+  },
   "wiki-tech-hikyaku": {
-    "nameJa": "火脚 （ ひきゃく ）"
+    "nameJa": "火脚 （ ひきゃく ）",
+    "nameEn": "Hikyaku"
   },
-  "wiki-tech-dai-enkai-onibi": {},
-  "wiki-tech-hibashira-engoku": {},
-  "wiki-tech-moeru-ryusoken-kaen-ryuo": {},
+  "wiki-tech-dai-enkai-onibi": {
+    "nameEn": "Dai Enkai: Onibi"
+  },
+  "wiki-tech-hibashira-engoku": {
+    "nameEn": "Hibashira: Engoku"
+  },
+  "wiki-tech-moeru-ryusoken-kaen-ryuo": {
+    "nameEn": "Moeru Ryusoken: Kaen Ryuo"
+  },
   "wiki-tech-otebisha": {
-    "nameJa": "王手飛車"
+    "nameJa": "王手飛車",
+    "nameEn": "Otebisha"
   },
   "wiki-tech-gomu-gomu-no-heat-magnum": {
     "nameKo": "고무고무 Heat Magnum",
-    "nameJa": "ゴムゴムの 炎神銃 （ ヒートマグナム ）"
+    "nameJa": "ゴムゴムの 炎神銃 （ ヒートマグナム ）",
+    "nameEn": "Gomu Gomu no Heat Magnum"
   },
   "wiki-tech-hono-sanjujo-entei-ryuo-red-hawk": {
-    "nameKo": "Hono Sanjujo: Entei Ryuo 레드 호크"
+    "nameKo": "Hono Sanjujo: Entei Ryuo 레드 호크",
+    "nameEn": "Hono Sanjujo: Entei Ryuo Red Hawk"
   },
   "wiki-tech-enryu-hako": {
-    "nameJa": "炎竜爬行 （ ）"
+    "nameJa": "炎竜爬行 （ ）",
+    "nameEn": "Enryu Hako"
   },
   "namu-luffy-gomu-gomu-jet-pistol": {
-    "nameKo": "Gum-Gum 제트 총"
+    "nameKo": "고무고무 JET (제트) 총 (피스톨)",
+    "nameJa": "ゴムゴムの JET (ジェット) 銃 (ピストル)",
+    "nameEn": "Gum-Gum Jet Pistol"
   },
   "namu-luffy-gomu-gomu-jet-stamp": {
-    "nameKo": "Gum-Gum 제트 스탬프"
+    "nameKo": "고무고무 JET (제트) 스탬프",
+    "nameJa": "ゴムゴムの JET (ジェット) スタンプ",
+    "nameEn": "Gum-Gum Jet Stamp"
   },
   "namu-luffy-gomu-gomu-jet-bazooka": {
-    "nameKo": "Gum-Gum 제트 바주카"
+    "nameKo": "고무고무 JET (제트) 바주카",
+    "nameJa": "ゴムゴムの JET (ジェット) バズーカ",
+    "nameEn": "Gum-Gum Jet Bazooka"
   },
   "namu-luffy-gomu-gomu-no-jet-whip": {
-    "nameKo": "고무고무 제트 채찍"
+    "nameKo": "고무고무 JET (제트) 채찍 (윕)",
+    "nameJa": "ゴムゴムの JET (ジェット) 鞭 (ウィップ)",
+    "nameEn": "Gomu Gomu no Jet Whip"
   },
   "namu-luffy-gomu-gomu-jet-bullet": {
-    "nameKo": "Gum-Gum 제트 탄환"
+    "nameKo": "고무고무 JET (제트) 총탄 (불릿)",
+    "nameJa": "ゴムゴムの JET (ジェット) 銃弾 (ブレット)",
+    "nameEn": "Gum-Gum Jet Bullet"
   },
   "namu-luffy-gomu-gomu-twin-jet-pistol": {
-    "nameKo": "Gum-Gum Twin 제트 총"
+    "nameKo": "고무고무 트윈 JET (제트) 총 (피스톨)",
+    "nameJa": "ゴムゴムのツイン JET (ジェット) 銃 (ピストル)",
+    "nameEn": "Gum-Gum Twin Jet Pistol"
   },
   "namu-luffy-gomu-gomu-jet-gatling": {
-    "nameKo": "Gum-Gum 제트 개틀링"
+    "nameKo": "고무고무 JET (제트) 총난타 (개틀링)",
+    "nameJa": "ゴムゴムの JET (ジェット) 銃乱打 (ガトリング)",
+    "nameEn": "Gum-Gum Jet Gatling"
   },
   "namu-luffy-gomu-gomu-jet-rocket": {
-    "nameKo": "Gum-Gum 제트 로켓"
+    "nameKo": "고무고무 JET (제트) 로켓",
+    "nameJa": "ゴムゴムの JET (ジェット) ロケット",
+    "nameEn": "Gum-Gum Jet Rocket"
   },
   "namu-luffy-gomu-gomu-jet-cannon": {
-    "nameKo": "Gum-Gum 제트 대포"
+    "nameKo": "고무고무 JET (제트) 공성포 (캐넌)",
+    "nameJa": "ゴムゴムの JET (ジェット) 攻城砲 (キャノン)",
+    "nameEn": "Gum-Gum Jet Cannon"
   },
   "namu-luffy-gomu-gomu-jet-human-shield": {
-    "nameKo": "Gum-Gum 제트 Human Shield"
+    "nameKo": "고무고무 JET (제트) 대타",
+    "nameJa": "ゴムゴムの JET (ジェット) 身代り (みかわり)",
+    "nameEn": "Gum-Gum Jet Human Shield"
   },
   "namu-luffy-gomu-gomu-jet-hammer": {
-    "nameKo": "Gum Gum 제트 Hammer"
+    "nameKo": "고무고무 JET (제트) 해머",
+    "nameJa": "ゴムゴムの JET (ジェット) ハンマー",
+    "nameEn": "Gum Gum Jet Hammer"
   },
   "namu-luffy-gomu-gomu-jet-mace": {
-    "nameKo": "Gum-Gum 제트 Mace"
+    "nameKo": "고무고무 JET (제트) 모두봉 (메이스)",
+    "nameJa": "ゴムゴムの JET (ジェット) 鉾頭棒 (メイス)",
+    "nameEn": "Gum-Gum Jet Mace"
   },
   "namu-luffy-gomu-gomu-jet-spear": {
-    "nameKo": "Gum-Gum 제트 창"
+    "nameKo": "고무고무 JET (제트) 창 (스피어)",
+    "nameJa": "ゴムゴムの JET (ジェット) 槍 (スピア)",
+    "nameEn": "Gum-Gum Jet Spear"
   },
   "namu-luffy-gomu-gomu-jet-rifle": {
-    "nameKo": "Gum-Gum 제트 라이플"
+    "nameKo": "고무고무 JET (제트) 회전탄 (라이플)",
+    "nameJa": "ゴムゴムの JET (ジェット) ライフル",
+    "nameEn": "Gum-Gum Jet Rifle"
   },
   "namu-luffy-gear-2-28": {
-    "nameKo": "고무고무 JET (제트) 미사일"
+    "nameKo": "고무고무 JET (제트) 미사일",
+    "nameJa": "ゴムゴムの JET (ジェット) ミサイル",
+    "clearNameEn": true
   },
   "namu-luffy-gear-2-29": {
-    "nameKo": "고무고무 JET (제트) 도끼 (액스)"
+    "nameKo": "고무고무 JET (제트) 도끼 (액스)",
+    "nameJa": "ゴムゴムの JET (ジェット) 斧 (アックス)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-2-30": {
-    "nameKo": "고무고무 JET (제트) 창 (랜스)"
+    "nameKo": "고무고무 JET (제트) 창 (랜스)",
+    "nameJa": "ゴムゴムの JET (ジェット) 槍 (ランス)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-2-31": {
-    "nameKo": "고무고무 JET (제트) 스탬프 난타 (개틀링)"
+    "nameKo": "고무고무 JET (제트) 스탬프 난타 (개틀링)",
+    "nameJa": "ゴムゴムの JET (ジェット) スタンプガトリング",
+    "clearNameEn": true
   },
   "namu-luffy-gomu-gomu-red-hawk": {
-    "nameKo": "Gum-Gum 레드 호크"
+    "nameKo": "고무고무 불주먹 총 (레드 호크)",
+    "nameJa": "ゴムゴムの 火拳銃 (レッドホーク)",
+    "nameEn": "Gum-Gum Red Hawk"
   },
   "namu-luffy-gear-2-34": {
-    "nameKo": "고무고무 매 (호크) 회전탄 (라이플)"
+    "nameKo": "고무고무 매 (호크) 회전탄 (라이플)",
+    "nameJa": "ゴムゴムの 鷹 (ホーク) ライフル",
+    "clearNameEn": true
   },
   "namu-luffy-gomu-gomu-hawk-gatling": {
-    "nameKo": "Gum-Gum 호크 개틀링"
+    "nameKo": "고무고무 매 (호크) 총난타 (개틀링)",
+    "nameJa": "ゴムゴムの 鷹銃乱打 (ホークガトリング)",
+    "nameEn": "Gum-Gum Hawk Gatling"
   },
   "namu-luffy-gomu-gomu-eagle-bazooka": {
-    "nameKo": "Gum-Gum Eagle 바주카"
+    "nameKo": "고무고무 독수리 (이글) 바주카",
+    "nameJa": "ゴムゴムの 鷲 (イーグル) バズーカ",
+    "nameEn": "Gum-Gum Eagle Bazooka"
   },
   "namu-luffy-gear-2-37": {
-    "nameKo": "고무고무 매 (호크) 채찍 (윕)"
+    "nameKo": "고무고무 매 (호크) 채찍 (윕)",
+    "nameJa": "ゴムゴムの 鷹鞭 (ホークウィップ)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-2-38": {
-    "nameKo": "고무고무 매 (호크) 스탬프"
+    "nameKo": "고무고무 매 (호크) 스탬프",
+    "nameJa": "ゴムゴムの 鷹 (ホーク) スタンプ",
+    "clearNameEn": true
   },
   "namu-luffy-gear-2-39": {
-    "nameKo": "고무고무 매 (호크) 총탄 (불릿)"
+    "nameKo": "고무고무 매 (호크) 총탄 (불릿)",
+    "nameJa": "ゴムゴムの 鷹銃弾 (ホークブレット)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-2-40": {
-    "nameKo": "고무고무 매 (호크) 도끼 (액스)"
+    "nameKo": "고무고무 매 (호크) 도끼 (액스)",
+    "nameJa": "ゴムゴムの 鷹斧 (ホークアックス)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-2-41": {
-    "nameKo": "고무고무 매 (호크) 트윈 총 (피스톨)"
+    "nameKo": "고무고무 매 (호크) 트윈 총 (피스톨)",
+    "nameJa": "ゴムゴムの 鷹 (ホーク) ツイン 銃 (ピストル)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-2-42": {
-    "nameKo": "고무고무 독수리 (이글) 폭풍우 (스톰)"
+    "nameKo": "고무고무 독수리 (이글) 폭풍우 (스톰)",
+    "nameJa": "ゴムゴムの 鷲 (イーグル) 暴風雨 (ストーム)",
+    "clearNameEn": true
   },
   "namu-luffy-bone-balloon": {
-    "nameKo": "Bone 풍선"
+    "nameKo": "뼈풍선",
+    "nameJa": "骨風船",
+    "nameEn": "Bone Balloon"
   },
   "namu-luffy-gear-3-12": {
-    "nameKo": "고무고무 거인의 (기간트) 총 (피스톨)"
+    "nameKo": "고무고무 거인의 (기간트) 총 (피스톨)",
+    "nameJa": "ゴムゴムの 巨人の銃 (ギガントピストル)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-3-14": {
-    "nameKo": "고무고무 거인의 (기간트) 도끼 (액스)"
+    "nameKo": "고무고무 거인의 (기간트) 도끼 (액스)",
+    "nameJa": "ゴムゴムの 巨人の斧 (ギガントアックス)",
+    "clearNameEn": true
   },
   "namu-luffy-gomu-gomu-giant-thor-axe": {
-    "nameKo": "Gum-Gum Giant 토르 도끼"
+    "nameKo": "고무고무 거인의 (기간트) 천둥 (토르) 도끼 (액스)",
+    "nameJa": "ゴムゴムの 巨人の雷斧 (ギガントトールアックス)",
+    "nameEn": "Gum-Gum Giant Thor Axe"
   },
   "namu-luffy-gomu-gomu-giant-whip": {
-    "nameKo": "Gum-Gum Giant 채찍"
+    "nameKo": "고무고무 거인의 (기간트) 채찍 (윕)",
+    "nameJa": "ゴムゴムの 巨人の鞭 (ギガントウィップ)",
+    "nameEn": "Gum-Gum Giant Whip"
   },
   "namu-luffy-gomu-gomu-giant-bazooka": {
-    "nameKo": "Gum-Gum Giant 바주카"
+    "nameKo": "고무고무 거인의 (기간트) 바주카",
+    "nameJa": "ゴムゴムの 巨人のバズーカ (ギガントバズーカ)",
+    "nameEn": "Gum-Gum Giant Bazooka"
   },
   "namu-luffy-gomu-gomu-giant-rifle": {
-    "nameKo": "Gum-Gum Giant 라이플"
+    "nameKo": "고무고무 거인의 (기간트) 회전탄 (라이플)",
+    "nameJa": "ゴムゴムの 巨人の回転弾 (ギガントライフル)",
+    "nameEn": "Gum-Gum Giant Rifle"
   },
   "namu-luffy-gomu-gomu-giant-stamp": {
-    "nameKo": "Gum-Gum Giant 스탬프"
+    "nameKo": "고무고무 거인의 (기간트) 스탬프",
+    "nameJa": "ゴムゴムの 巨人のスタンプ (ギガントスタンプ)",
+    "nameEn": "Gum-Gum Giant Stamp"
   },
   "namu-luffy-gomu-gomu-giant-balloon": {
-    "nameKo": "Gum-Gum Giant 풍선"
+    "nameKo": "고무고무 거인의 (기간트) 풍선",
+    "nameJa": "ゴムゴムの 巨人の風船 (ギガントフーセン)",
+    "nameEn": "Gum-Gum Giant Balloon"
   },
-  "namu-luffy-gomu-gomu-giant-sumo-slap": {},
+  "namu-luffy-gomu-gomu-giant-sumo-slap": {
+    "nameKo": "고무고무 거인의 (기간트) 밀쳐내기",
+    "nameJa": "ゴムゴムの 巨人のつっぱり (ギガントつっぱり)",
+    "nameEn": "Gum-Gum Giant Sumo Slap"
+  },
   "namu-luffy-gear-3-22": {
-    "nameKo": "고무고무 거인의 (기간트) 파리채"
+    "nameKo": "고무고무 거인의 (기간트) 파리채",
+    "nameJa": "ゴムゴムの 巨人のハエたたき (ギガントハエたたき)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-3-23": {
-    "nameKo": "고무고무 거인의 (기간트) 총난타 (개틀링)"
+    "nameKo": "고무고무 거인의 (기간트) 총난타 (개틀링)",
+    "nameJa": "ゴムゴムの 巨人の銃乱打 (ギガントガトリング)",
+    "clearNameEn": true
   },
   "namu-luffy-gomu-gomu-elephant-gun": {
-    "nameKo": "Gum-Gum 엘리펀트 건"
+    "nameKo": "고무고무 코끼리 (엘리펀트) 총 (건)",
+    "nameJa": "ゴムゴムの 象銃 (エレファント・ガン)",
+    "nameEn": "Gum-Gum Elephant Gun"
   },
   "namu-luffy-gomu-gomu-elephant-gatling": {
-    "nameKo": "Gum-Gum 엘리펀트 개틀링"
+    "nameKo": "고무고무 코끼리 총난타 (엘리펀트 개틀링)",
+    "nameJa": "ゴムゴムの 象銃乱打 (エレファント・ガトリング)",
+    "nameEn": "Gum-Gum Elephant Gatling"
   },
-  "namu-luffy-gomu-gomu-grizzly-magnum": {},
+  "namu-luffy-gomu-gomu-grizzly-magnum": {
+    "nameKo": "고무고무 회색곰 (그리즐리) 총 (매그넘)",
+    "nameJa": "ゴムゴムの 灰熊銃 (グリズリー・マグナム)",
+    "nameEn": "Gum-Gum Grizzly Magnum"
+  },
   "namu-luffy-gomu-gomu-thor-elephant-gun": {
-    "nameKo": "Gum-Gum 토르 엘리펀트 건"
+    "nameKo": "고무고무 뇌장 (토르) 코끼리 (엘리펀트) 총 (건)",
+    "nameJa": "ゴムゴムの 雷将象銃 (トールエレファント・ガン)",
+    "nameEn": "Gum-Gum Thor Elephant Gun"
   },
   "namu-luffy-gear-3-28": {
-    "nameKo": "고무고무 회색곰 (그리즐리) 코크 스크류 총 (매그넘)"
+    "nameKo": "고무고무 회색곰 (그리즐리) 코크 스크류 총 (매그넘)",
+    "nameJa": "ゴムゴムの 灰熊コークスクリュー銃 (グリズリーコークスクリューマグナム)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-3-29": {
-    "nameKo": "고무고무 코끼리 (엘리펀트) 폭풍우 (스톰)"
+    "nameKo": "고무고무 코끼리 (엘리펀트) 폭풍우 (스톰)",
+    "nameJa": "ゴムゴムの 象暴風雨 (エレファントストーム)",
+    "clearNameEn": true
   },
   "namu-luffy-gomu-gomu-elephant-whip": {
-    "nameKo": "Gum-Gum 엘리펀트 채찍"
+    "nameKo": "고무고무 코끼리 (엘리펀트) 채찍 (윕)",
+    "nameJa": "ゴムゴムの 象鞭 (エレファントウィップ)",
+    "nameEn": "Gum-Gum Elephant Whip"
   },
   "namu-luffy-gomu-gomu-giant-jet-shell": {
-    "nameKo": "Gum-Gum Giant 제트 Shell"
+    "nameKo": "고무고무 거인의 JET 포탄 (기간트 제트 쉘)",
+    "nameJa": "ゴムゴムの 巨人のJET砲弾 (ギガントジェットシェル)",
+    "nameEn": "Gum-Gum Giant Jet Shell"
   },
   "namu-luffy-gear-2-plus-3-04": {
-    "nameKo": "고무고무 거인의 JET 총난타 (기간트 제트 개틀링)"
+    "nameKo": "고무고무 거인의 JET 총난타 (기간트 제트 개틀링)",
+    "nameJa": "ゴムゴムの 巨人のJET銃乱打 (ギガントジェットガトリング)",
+    "clearNameEn": true
   },
   "namu-luffy-gomu-gomu-red-roc": {
-    "nameKo": "Gum-Gum 레드 Roc"
+    "nameKo": "고무고무 업화 (레드) 권총 (로크)",
+    "nameJa": "ゴムゴムの 業火拳銃 (レッドロック)",
+    "nameEn": "Gum-Gum Red Roc"
   },
   "namu-luffy-gomu-gomu-roc-gun": {
-    "nameKo": "Gum-Gum Roc 건"
+    "nameKo": "고무고무 괴조 (로크) 총 (건)",
+    "nameJa": "ゴムゴムの 怪鳥銃 (ロック・ガン)",
+    "nameEn": "Gum-Gum Roc Gun"
   },
   "namu-luffy-gomu-gomu-roc-gatling": {
-    "nameKo": "Gum-Gum Roc 개틀링"
+    "nameKo": "고무고무 괴조 총난타 (로크 개틀링)",
+    "nameJa": "ゴムゴムの 怪鳥銃乱打 (ロック・ガトリング)",
+    "nameEn": "Gum-Gum Roc Gatling"
   },
   "namu-luffy-gomu-gomu-kong-gun": {
-    "nameKo": "Gum-Gum 콩 건"
+    "nameKo": "고무고무 원숭이 왕 (콩) 총 (건)",
+    "nameJa": "ゴムゴムの 猿王 (コング) 銃 (ガン)",
+    "nameEn": "Gum-Gum Kong Gun"
   },
-  "namu-luffy-gomu-gomu-rhino-schneider": {},
-  "namu-luffy-gomu-gomu-culverin": {},
-  "namu-luffy-gomu-gomu-double-culverin": {},
+  "namu-luffy-gomu-gomu-rhino-schneider": {
+    "nameKo": "고무고무 코뿔소 (라이노) 곡사포 (슈나이더)",
+    "nameJa": "ゴムゴムの 犀榴弾砲 (リノシュナイダー)",
+    "nameEn": "Gum Gum Rhino Schneider"
+  },
+  "namu-luffy-gomu-gomu-culverin": {
+    "nameKo": "고무고무 구렁이 포 (컬버린)",
+    "nameJa": "ゴムゴムの 大蛇砲 (カルヴァリン)",
+    "nameEn": "Gum-Gum Culverin"
+  },
+  "namu-luffy-gomu-gomu-double-culverin": {
+    "nameKo": "고무고무 더블 구렁이 포 (컬버린)",
+    "nameJa": "ゴムゴムのダブル 大蛇砲 (カルヴァリン)",
+    "nameEn": "Gum-Gum Double Culverin"
+  },
   "namu-luffy-gomu-gomu-leo-bazooka": {
-    "nameKo": "Gum-Gum Leo 바주카"
+    "nameKo": "고무고무 사자 (레오) 바주카",
+    "nameJa": "ゴムゴムの 獅子 (レオ) ・バズーカ",
+    "nameEn": "Gum-Gum Leo Bazooka"
   },
   "namu-luffy-gomu-gomu-kong-organ-gun": {
-    "nameKo": "Gum-Gum 콩 오르간 건"
+    "nameKo": "고무고무 원숭이 왕 (콩) 까마귀 떼 포 (오르간)",
+    "nameJa": "ゴムゴムの 猿王群鴉砲 (コングオルガン)",
+    "nameEn": "Gum-Gum Kong Organ Gun"
   },
   "namu-luffy-gomu-gomu-kong-rifle": {
-    "nameKo": "Gum-Gum 콩 라이플"
+    "nameKo": "고무고무 원숭이 왕 (콩) 회전탄 (라이플)",
+    "nameJa": "ゴムゴムの 猿王 (コング) 回轉彈 (ライフル)",
+    "nameEn": "Gum-Gum Kong Rifle"
   },
   "namu-luffy-gomu-gomu-kong-gatling": {
-    "nameKo": "Gum-Gum 콩 개틀링"
+    "nameKo": "고무고무 원숭이 왕 (콩) 총난타 (개틀링)",
+    "nameJa": "ゴムゴムの 猿王 (コング) 銃乱打 (ガトリング)",
+    "nameEn": "Gum-Gum Kong Gatling"
   },
   "namu-luffy-gomu-gomu-king-kong-gun": {
-    "nameKo": "Gum-Gum 킹 콩 건"
+    "nameKo": "고무고무 원숭이 대왕 (킹 콩) 총 (건)",
+    "nameJa": "ゴムゴムの 大 (キング) 猿王 (コング) 銃 (ガン)",
+    "nameEn": "Gum-Gum King Kong Gun"
   },
   "namu-luffy-gomu-gomu-leo-rex-bazooka": {
-    "nameKo": "Gum-Gum Leo Rex 바주카"
+    "nameKo": "고무고무 사자 (레오) 왕 (렉스) 바주카",
+    "nameJa": "ゴムゴムの 獅子 (レオ) 王 (レックス) ・バズーカ",
+    "nameEn": "Gum-Gum Leo Rex Bazooka"
   },
   "namu-luffy-gomu-gomu-king-king-king-kong-gun": {
-    "nameKo": "Gum-Gum 킹 킹 킹 콩 건"
+    "nameKo": "고무고무 원숭이 대대대왕 (킹킹킹 콩) 총 (건)",
+    "nameJa": "ゴムゴムの 大大大 (キングキングキング) 猿王 (コング) 銃 (ガン)",
+    "nameEn": "Gum-Gum King King King Kong Gun"
   },
   "namu-luffy-gomu-gomu-king-kong-gatling": {
-    "nameKo": "Gum-Gum 킹 콩 개틀링"
+    "nameKo": "고무고무 원숭이 대왕 (킹 콩) 총난타 (개틀링)",
+    "nameJa": "ゴムゴムの 大 (キング) 猿王 (コング) 銃乱打 (ガトリング)",
+    "nameEn": "Gum-Gum King Kong Gatling"
   },
   "namu-luffy-gear-4-40": {
-    "nameKo": "고무고무 원숭이 패왕 (오버 콩) 총 (건)"
+    "nameKo": "고무고무 원숭이 패왕 (오버 콩) 총 (건)",
+    "nameJa": "ゴムゴムの 覇 (オーバー) 猿王 (コング) 銃 (ガン)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-4-47": {
-    "nameKo": "고무고무 캐넌볼"
+    "nameKo": "고무고무 캐넌볼",
+    "clearNameEn": true
   },
   "namu-luffy-gear-4-68": {
-    "nameKo": "고무고무 JET (제트) 구렁이 포 (컬버린)"
+    "nameKo": "고무고무 JET (제트) 구렁이 포 (컬버린)",
+    "nameJa": "ゴムゴムのJET 大蛇砲 (カルヴァリン)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-4-69": {
-    "nameKo": "고무고무 검은 (블랙) 뱀 군단 (맘바)"
+    "nameKo": "고무고무 검은 (블랙) 뱀 군단 (맘바)",
+    "nameJa": "ゴムゴムの 黒い蛇群 (ブラックマンバ)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-4-71": {
-    "nameKo": "고무고무 라이노 스탬피드"
+    "nameKo": "고무고무 라이노 스탬피드",
+    "nameJa": "ゴムゴムのリノスタンピード",
+    "clearNameEn": true
   },
   "namu-luffy-gear-4-72": {
-    "nameKo": "고무고무 왕 (킹) 뱀 (코브라)"
+    "nameKo": "고무고무 왕 (킹) 뱀 (코브라)",
+    "nameJa": "ゴムゴムの 王蛇 (キング・コブラ)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-4-73": {
-    "nameKo": "고무고무 뱀 용왕 포 (나가 우르반)"
+    "nameKo": "고무고무 뱀 용왕 포 (나가 우르반)",
+    "nameJa": "ゴムゴムの 蛇龍王砲 (ナーガ・ウルバン)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-4-74": {
-    "nameKo": "고무고무 아홉 머리 뱀 (히드라)"
+    "nameKo": "고무고무 아홉 머리 뱀 (히드라)",
+    "nameJa": "ゴムゴムの 九頭蛇 (ヒュドラ)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-5-48": {
-    "nameKo": "고무고무 탈출 로켓"
+    "nameKo": "고무고무 탈출 로켓",
+    "nameJa": "ゴムゴムの脱出ロケット",
+    "clearNameEn": true
   },
   "namu-luffy-gear-5-50": {
-    "nameKo": "고무고무 거인 (기간트)"
+    "nameKo": "고무고무 거인 (기간트)",
+    "nameJa": "ゴムゴムの 巨人 (ギガント)",
+    "clearNameEn": true
   },
   "namu-luffy-gear-5-51": {
-    "nameKo": "고무고무 줄넘기"
+    "nameKo": "고무고무 줄넘기",
+    "nameJa": "ゴムゴムの縄飛び",
+    "clearNameEn": true
   },
   "namu-luffy-gear-5-52": {
-    "nameKo": "고무고무 반격"
+    "nameKo": "고무고무 반격",
+    "nameJa": "ゴムゴムのお返し",
+    "clearNameEn": true
   },
   "namu-luffy-gear-5-53": {
-    "nameKo": "고무고무 번개"
+    "nameKo": "고무고무 번개",
+    "nameJa": "ゴムゴムの雷",
+    "clearNameEn": true
   },
   "namu-luffy-gomu-gomu-bajrang-gun": {
-    "nameKo": "Gum-Gum Bajrang 건"
+    "nameKo": "고무고무 원숭이 신 (바즈랑) 총 (건)",
+    "nameJa": "ゴムゴムの 猿神 (バジュラング) 銃 (ガン)",
+    "nameEn": "Gum-Gum Bajrang Gun"
   },
   "namu-luffy-gomu-gomu-mole-pistol": {
-    "nameKo": "Gum-Gum Mole 총"
+    "nameKo": "고무고무 두더지 총 (피스톨)",
+    "nameJa": "ゴムゴムのモグラ 銃 (ピストル)",
+    "nameEn": "Gum-Gum Mole Pistol"
   },
   "namu-luffy-gomu-gomu-dawn-whip": {
-    "nameKo": "Gum-Gum 새벽 채찍"
+    "nameKo": "고무고무 하얀 (던) 채찍 (윕)",
+    "nameJa": "ゴムゴムの 白い (ドーン) 鞭 (ウィップ)",
+    "nameEn": "Gum-Gum Dawn Whip"
   },
   "namu-luffy-gomu-gomu-dawn-rocket": {
-    "nameKo": "Gum-Gum 새벽 로켓"
+    "nameKo": "고무고무 하얀 (던) 로켓",
+    "nameJa": "ゴムゴムの 白い (ドーン) ロケット",
+    "nameEn": "Gum-Gum Dawn Rocket"
   },
   "namu-luffy-gomu-gomu-dawn-stamp": {
-    "nameKo": "Gum-Gum 새벽 스탬프"
+    "nameKo": "고무고무 하얀 (던) 스탬프",
+    "nameJa": "ゴムゴムの 白い (ドーン) スタンプ",
+    "nameEn": "Gum-Gum Dawn Stamp"
   },
   "namu-luffy-gomu-gomu-star-gun": {
-    "nameKo": "Gum-Gum Star 건"
+    "nameKo": "고무고무 흰 별 총 (스타 건)",
+    "nameJa": "ゴムゴムの 白星銃 (スターガン)",
+    "nameEn": "Gum-Gum Star Gun"
   },
   "namu-luffy-gomu-gomu-dawn-gatling": {
-    "nameKo": "Gum-Gum 새벽 개틀링"
+    "nameKo": "고무고무 하얀 (던) 총난타 (개틀링)",
+    "nameJa": "ゴムゴムの 白い (ドーン) 銃乱打 (ガトリング)",
+    "nameEn": "Gum-Gum Dawn Gatling"
   },
   "namu-luffy-gear-5-64": {
-    "nameKo": "고무고무 하얀 (던) 바이스 (심벌)"
+    "nameKo": "고무고무 하얀 (던) 바이스 (심벌)",
+    "nameJa": "ゴムゴムの 白い (ドーン) 万力 (シンバル)",
+    "clearNameEn": true
   },
   "namu-luffy-gomu-gomu-dawn-balloon": {
-    "nameKo": "Gum-Gum 새벽 풍선"
+    "nameKo": "고무고무 하얀 (던) 풍선 (벌룬)",
+    "nameJa": "ゴムゴムの 白い (ドーン) 風船 (バルーン)",
+    "nameEn": "Gum-Gum Dawn Balloon"
   },
   "namu-luffy-gomu-gomu-dawn-pistol": {
-    "nameKo": "Gum-Gum 새벽 총"
+    "nameKo": "고무고무 하얀 (던) 권총 (피스톨)",
+    "nameJa": "ゴムゴムの 白い (ドーン) 拳銃 (ピストル)",
+    "nameEn": "Gum-Gum Dawn Pistol"
   },
   "namu-luffy-gomu-gomu-dawn-thor-rifle": {
-    "nameKo": "Gum-Gum 새벽 토르 라이플"
+    "nameKo": "고무고무 하얀 (던) 번개 (토르) 회전탄 (라이플)",
+    "nameJa": "白い雷回転弾",
+    "nameEn": "Gum-Gum Dawn Thor Rifle"
+  },
+  "manual-tech-koby-honesty-impact": {
+    "nameEn": "Honesty Impact"
+  },
+  "manual-tech-koby-soru": {
+    "nameKo": "체",
+    "nameJa": "剃",
+    "nameEn": "Soru"
   }
 };
   const fruitPatches = {
   "gum-gum": {
     "nameKo": "고무고무 열매",
     "nameJa": "ゴムゴムの実",
-    "descriptionKo": "고무고무 열매는 동물계 악마의 열매입니다. 동물계 세부 구분은 환수종입니다. 모델은 니카입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
+    "descriptionKo": "세계정부가 고무고무 열매라 부르던 환수종 악마의 열매. 실제 정체는 사람사람 열매 모델 니카이며, 루피가 각성 후 더욱 자유로운 고무의 힘을 다룬다.",
+    "model": "니카"
   },
   "slip-slip-fruit-smooth-smooth-fruit": {
     "nameKo": "매끌매끌 열매",
     "nameJa": "スベスベの実",
+    "nameEn": "Slip-Slip Fruit ; Smooth-Smooth Fruit",
     "descriptionKo": "매끌매끌 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "chop-chop-fruit": {
     "nameKo": "동강동강 열매",
     "nameJa": "バラバラの実",
+    "nameEn": "Chop-Chop Fruit",
     "descriptionKo": "동강동강 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "smoke-smoke-fruit-plume-plume-fruit-steam-steam-fruit": {
     "nameKo": "뭉게뭉게 열매",
     "nameJa": "モクモクの実",
+    "nameEn": "Smoke-Smoke Fruit ; Plume-Plume Fruit ; Steam-Steam Fruit",
     "descriptionKo": "뭉게뭉게 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "human-human-fruit": {
     "nameKo": "사람사람 열매",
     "nameJa": "ヒトヒトの実",
+    "nameEn": "Human-Human Fruit",
     "descriptionKo": "사람사람 열매는 동물계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "hana-hana-fruit-flower-flower-fruit": {
     "nameKo": "꽃꽃 열매",
     "nameJa": "ハナハナの実",
+    "nameEn": "Hana-Hana Fruit ; Flower-Flower Fruit",
     "descriptionKo": "꽃꽃 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "bomb-bomb-fruit-boom-boom-fruit": {
     "nameKo": "폭폭 열매",
     "nameJa": "ボムボムの実",
+    "nameEn": "Bomb-Bomb Fruit ; Boom-Boom Fruit",
     "descriptionKo": "폭폭 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "kilo-kilo-fruit": {
     "nameKo": "킬로킬로 열매",
     "nameJa": "キロキロの実",
+    "nameEn": "Kilo-Kilo Fruit",
     "descriptionKo": "킬로킬로 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "wax-wax-fruit": {
     "nameKo": "촥촥 열매",
     "nameJa": "ドルドルの実",
+    "nameEn": "Wax-Wax Fruit",
     "descriptionKo": "촥촥 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "munch-munch-fruit": {
     "nameKo": "우걱우걱 열매",
     "nameJa": "バクバクの実",
+    "nameEn": "Munch-Munch Fruit",
     "descriptionKo": "우걱우걱 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "ox-ox-fruit-bison-model-ox-ox-fruit-ox-ox-fruit-bison-form": {
     "nameKo": "소소 열매 모델 바이슨",
     "nameJa": "ウシウシの実 モデル バイソン",
+    "nameEn": "Ox-Ox Fruit, Bison Model ; Ox-Ox Fruit ; Ox-Ox Fruit, Bison Form",
     "descriptionKo": "소소 열매 모델 바이슨은 동물계 악마의 열매입니다. 모델은 바이슨입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "바이슨"
   },
   "clone-clone-fruit": {
     "nameKo": "복사복사 열매",
     "nameJa": "マネマネの実",
+    "nameEn": "Clone-Clone Fruit",
     "descriptionKo": "복사복사 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "sand-sand-fruit": {
     "nameKo": "모래모래 열매",
     "nameJa": "スナスナの実",
+    "nameEn": "Sand-Sand Fruit",
     "descriptionKo": "모래모래 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "flame-flame-fruit-flare-flare-fruit": {
     "nameKo": "이글이글 열매",
     "nameJa": "メラメラの実",
+    "nameEn": "Flame-Flame Fruit ; Flare-Flare Fruit",
     "descriptionKo": "이글이글 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "mole-mole-fruit-diggy-diggy-fruit": {
     "nameKo": "땅굴땅굴 열매",
     "nameJa": "モグモグの実",
+    "nameEn": "Mole-Mole Fruit ; Diggy-Diggy Fruit",
     "descriptionKo": "땅굴땅굴 열매는 동물계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "spike-spike-fruit": {
     "nameKo": "가시가시 열매",
     "nameJa": "トゲトゲの実",
+    "nameEn": "Spike-Spike Fruit",
     "descriptionKo": "가시가시 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "dice-dice-fruit": {
     "nameKo": "싹둑싹둑 열매",
     "nameJa": "スパスパの実",
+    "nameEn": "Dice-Dice Fruit",
     "descriptionKo": "싹둑싹둑 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "sickle-sickle-fruit-slash-slash-fruit": {
     "nameKo": "손톱손톱 열매",
     "nameJa": "カマカマの実",
+    "nameEn": "Sickle-Sickle Fruit Slash-Slash Fruit",
     "descriptionKo": "손톱손톱 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "tweet-tweet-fruit-falcon-type-tweet-tweet-fruit-bird-bird-fruit-model-falcon": {
     "nameKo": "새새 열매 모델 매",
     "nameJa": "トリトリの実 モデル 隼（ファルコン）",
+    "nameEn": "Tweet-Tweet Fruit Falcon Type ; Tweet-Tweet Fruit ; Bird-Bird Fruit, Model: Falcon",
     "descriptionKo": "새새 열매 모델 매는 동물계 악마의 열매입니다. 모델은 매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "매"
   },
   "dog-dog-fruit-model-jackal-mutt-mutt-fruit-jackal-mode-mutt-mutt-fruit-jackal-st": {
     "nameKo": "개개 열매 모델 자칼",
     "nameJa": "イヌイヌの実 モデル ジャッカル",
+    "nameEn": "Dog-Dog Fruit, Model: Jackal ; Mutt Mutt Fruit: Jackal Mode ; Mutt-Mutt Fruit: Jackal Strike",
     "descriptionKo": "개개 열매 모델 자칼은 동물계 악마의 열매입니다. 모델은 자칼입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "자칼"
   },
   "mutt-mutt-fruit-dachshund-type-mutt-mutt-fruit-mutt-mutt-fruit-fruit-dachshund-v": {
     "nameKo": "개개 열매 모델 닥스훈트",
     "nameJa": "イヌイヌの実 モデル ダックスフント",
+    "nameEn": "Mutt-Mutt Fruit, Dachshund Type ; Mutt-Mutt Fruit ; Mutt-Mutt Fruit Fruit, Dachshund Variety",
     "descriptionKo": "개개 열매 모델 닥스훈트는 동물계 악마의 열매입니다. 모델은 닥스훈트입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "닥스훈트"
   },
   "bind-bind-fruit-cage-cage-fruit": {
+    "nameKo": "감옥감옥 열매",
     "nameJa": "オリオリの実",
-    "descriptionKo": "감옥감옥 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameKo": "감옥감옥 열매"
+    "nameEn": "Bind-Bind Fruit ; Cage-Cage Fruit",
+    "descriptionKo": "감옥감옥 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "boing-boing-fruit-spring-spring-fruit": {
     "nameKo": "스프링스프링 열매",
     "nameJa": "バネバネの実",
+    "nameEn": "Boing-Boing Fruit ; Spring-Spring Fruit",
     "descriptionKo": "스프링스프링 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "wash-wash-fruit": {
     "nameKo": "워시워시 열매",
     "nameJa": "ウォシュウォシュの実",
+    "nameEn": "Wash-Wash Fruit",
     "descriptionKo": "워시워시 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "human-human-fruit-model-buddha": {
     "nameKo": "사람사람 열매 모델 대불",
     "nameJa": "ヒトヒトの実 モデル 大仏",
+    "nameEn": "Human-Human Fruit, Model: Buddha",
     "descriptionKo": "사람사람 열매 모델 대불은 동물계 악마의 열매입니다. 동물계 세부 구분은 환수종입니다. 모델은 대불입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "대불"
   },
   "string-string-fruit": {
     "nameKo": "실실 열매",
     "nameJa": "イトイトの実",
+    "nameEn": "String-String Fruit",
     "descriptionKo": "실실 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "paw-paw-fruit": {
     "nameKo": "도톰도톰 열매",
     "nameJa": "ニキュニキュの実",
+    "nameEn": "Paw-Paw Fruit",
     "descriptionKo": "도톰도톰 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "tremor-tremor-fruit": {
     "nameKo": "흔들흔들 열매",
     "nameJa": "グラグラの実",
+    "nameEn": "Tremor-Tremor Fruit",
     "descriptionKo": "흔들흔들 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "strong-strong-fruit": {
     "nameKo": "힘힘 열매",
     "nameJa": "リキリキの実",
+    "nameEn": "Strong-Strong Fruit",
     "descriptionKo": "힘힘 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "warp-warp-fruit": {
     "nameKo": "워프워프 열매",
     "nameJa": "ワプワプの実",
+    "nameEn": "Warp-Warp Fruit",
     "descriptionKo": "워프워프 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "dark-dark-fruit": {
     "nameKo": "어둠어둠 열매",
     "nameJa": "ヤミヤミの実",
+    "nameEn": "Dark-Dark Fruit",
     "descriptionKo": "어둠어둠 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "sick-sick-fruit": {
     "nameKo": "병병 열매",
     "nameJa": "シクシクの実",
+    "nameEn": "Sick-Sick Fruit",
     "descriptionKo": "병병 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "horse-horse-fruit-pegasus-model": {
     "nameKo": "말말 열매 모델 페가수스",
     "nameJa": "ウマウマの実 モデル ペガサス",
+    "nameEn": "Horse-Horse Fruit, Pegasus Model",
     "descriptionKo": "말말 열매 모델 페가수스는 동물계 악마의 열매입니다. 동물계 세부 구분은 환수종입니다. 모델은 페가수스입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "페가수스"
   },
   "horse-horse-fruit": {
     "nameKo": "말말 열매",
     "nameJa": "ウマウマの実",
+    "nameEn": "Horse-Horse Fruit",
     "descriptionKo": "말말 열매는 동물계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "rumble-rumble-fruit": {
     "nameKo": "번개번개 열매",
     "nameJa": "ゴロゴロの実",
+    "nameEn": "Rumble-Rumble Fruit",
     "descriptionKo": "번개번개 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "slow-slow-fruit": {
     "nameKo": "느릿느릿 열매",
     "nameJa": "ノロノロの実",
+    "nameEn": "Slow-Slow Fruit",
     "descriptionKo": "느릿느릿 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "ice-ice-fruit-chilly-chilly-fruit": {
     "nameKo": "얼음얼음 열매",
     "nameJa": "ヒエヒエの実",
+    "nameEn": "Ice-Ice Fruit ; Chilly-Chilly Fruit",
     "descriptionKo": "얼음얼음 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "ox-ox-fruit-giraffe-model": {
     "nameKo": "소소 열매 모델 기린",
     "nameJa": "ウシウシの実 モデル 麒麟（ジラフ）",
+    "nameEn": "Ox-Ox Fruit Giraffe Model",
     "descriptionKo": "소소 열매 모델 기린은 동물계 악마의 열매입니다. 모델은 기린입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "기린"
   },
   "bubble-bubble-fruit": {
     "nameKo": "거품거품 열매",
     "nameJa": "アワアワの実",
+    "nameEn": "Bubble-Bubble Fruit",
     "descriptionKo": "거품거품 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "cat-cat-fruit-leopard-model-cat-cat-fruit-model-leopard": {
     "nameKo": "고양고양 열매 모델 표범",
     "nameJa": "ネコネコの実 モデル 豹（レオパルド）",
+    "nameEn": "Cat-Cat Fruit Leopard Model ; Cat-Cat Fruit, Model: Leopard",
     "descriptionKo": "고양고양 열매 모델 표범은 동물계 악마의 열매입니다. 모델은 표범입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "표범"
   },
   "door-door-fruit": {
     "nameKo": "문문 열매",
     "nameJa": "ドアドアの実",
+    "nameEn": "Door-Door Fruit",
     "descriptionKo": "문문 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "mutt-mutt-fruit-wolf-model": {
     "nameKo": "개개 열매 모델 늑대",
     "nameJa": "イヌイヌの実 モデル 狼（ウルフ）",
+    "nameEn": "Mutt-Mutt Fruit Wolf Model",
     "descriptionKo": "개개 열매 모델 늑대는 동물계 악마의 열매입니다. 모델은 늑대입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "늑대"
   },
   "elephant-elephant-fruit-eleph-eleph-fruit": {
     "nameKo": "코끼리코끼리 열매",
     "nameJa": "ゾウゾウの実",
+    "nameEn": "Elephant-Elephant Fruit Eleph-Eleph Fruit",
     "descriptionKo": "코끼리코끼리 열매는 동물계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "berry-berry-fruit": {
     "nameKo": "송알송알 열매",
     "nameJa": "ベリベリの実",
+    "nameEn": "Berry-Berry Fruit",
     "descriptionKo": "송알송알 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "rust-rust-fruit": {
     "nameKo": "녹녹 열매",
     "nameJa": "サビサビの実",
+    "nameEn": "Rust-Rust Fruit",
     "descriptionKo": "녹녹 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "wheel-wheel-fruit": {
     "nameKo": "바퀴바퀴 열매",
     "nameJa": "シャリシャリの実",
+    "nameEn": "Wheel-Wheel Fruit",
     "descriptionKo": "바퀴바퀴 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "tweet-tweet-fruit-phoenix-model-bird-bird-fruit-model-phoenix": {
     "nameKo": "새새 열매 모델 불사조",
     "nameJa": "トリトリの実 モデル 不死鳥（フェニックス）",
+    "nameEn": "Tweet-Tweet Fruit, Phoenix Model Bird-Bird Fruit, Model: Phoenix",
     "descriptionKo": "새새 열매 모델 불사조는 동물계 악마의 열매입니다. 동물계 세부 구분은 환수종입니다. 모델은 불사조입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "불사조"
   },
   "twinkle-twinkle-fruit": {
+    "nameKo": "반짝반짝 열매",
     "nameJa": "キラキラの実",
-    "descriptionKo": "반짝반짝 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameKo": "반짝반짝 열매"
+    "nameEn": "Twinkle-Twinkle Fruit",
+    "descriptionKo": "반짝반짝 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "mag-mag-fruit-magma-magma-fruit": {
     "nameKo": "마그마그 열매",
     "nameJa": "マグマグの実",
+    "nameEn": "Mag-Mag Fruit Magma-Magma Fruit",
     "descriptionKo": "마그마그 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "revive-revive-fruit": {
     "nameKo": "부활부활 열매",
     "nameJa": "ヨミヨミの実",
+    "nameEn": "Revive-Revive Fruit",
     "descriptionKo": "부활부활 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "flying-squirrel-smile": {
     "nameKo": "날다람쥐 스마일",
+    "nameEn": "Flying Squirrel SMILE",
     "descriptionKo": "날다람쥐 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "clear-clear-fruit": {
     "nameKo": "투명투명 열매",
     "nameJa": "スケスケの実",
+    "nameEn": "Clear-Clear Fruit",
     "descriptionKo": "투명투명 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "hollow-hollow-fruit": {
     "nameKo": "홀로홀로 열매",
     "nameJa": "ホロホロの実",
+    "nameEn": "Hollow-Hollow Fruit",
     "descriptionKo": "홀로홀로 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "magnet-magnet-fruit": {
     "nameKo": "자기자기 열매",
     "nameJa": "ジキジキの実",
+    "nameEn": "Magnet-Magnet Fruit",
     "descriptionKo": "자기자기 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "shadow-shadow-fruit": {
     "nameKo": "그림자그림자 열매",
     "nameJa": "カゲカゲの実",
+    "nameEn": "Shadow-Shadow Fruit",
     "descriptionKo": "그림자그림자 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "castle-castle-fruit": {
     "nameKo": "성성 열매",
     "nameJa": "シロシロの実",
+    "nameEn": "Castle-Castle Fruit",
     "descriptionKo": "성성 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "age-age-fruit": {
     "nameKo": "나이나이 열매",
     "nameJa": "トシトシの実",
+    "nameEn": "Age-Age Fruit",
     "descriptionKo": "나이나이 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "straw-straw-fruit": {
     "nameKo": "짚짚 열매",
     "nameJa": "ワラワラの実",
+    "nameEn": "Straw-Straw Fruit",
     "descriptionKo": "짚짚 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "tone-tone-fruit": {
     "nameKo": "소리소리 열매",
     "nameJa": "オトオトの実",
+    "nameEn": "Tone-Tone Fruit",
     "descriptionKo": "소리소리 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "dragon-dragon-fruit-model-allosaurus": {
     "nameKo": "용용 열매 모델 알로사우루스",
     "nameJa": "リュウリュウの実 モデル アロサウルス",
+    "nameEn": "Dragon-Dragon Fruit, Model: Allosaurus",
     "descriptionKo": "용용 열매 모델 알로사우루스는 동물계 악마의 열매입니다. 동물계 세부 구분은 고대종입니다. 모델은 알로사우루스입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "알로사우루스"
   },
   "op-op-fruit": {
     "nameKo": "수술수술 열매",
     "nameJa": "オペオペの実",
+    "nameEn": "Op-Op Fruit",
     "descriptionKo": "수술수술 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "glint-glint-fruit": {
     "nameKo": "번쩍번쩍 열매",
     "nameJa": "ピカピカの実",
+    "nameEn": "Glint-Glint Fruit",
     "descriptionKo": "번쩍번쩍 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "love-love-fruit": {
     "nameKo": "매료매료 열매",
     "nameJa": "メロメロの実",
+    "nameEn": "Love-Love Fruit",
     "descriptionKo": "매료매료 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "snake-snake-fruit-anaconda-model-snake-snake-fruit-model-anaconda": {
     "nameKo": "뱀뱀 열매 모델 아나콘다",
     "nameJa": "ヘビヘビの実 モデル アナコンダ",
+    "nameEn": "Snake-Snake Fruit Anaconda Model Snake-Snake Fruit: Model Anaconda",
     "descriptionKo": "뱀뱀 열매 모델 아나콘다는 동물계 악마의 열매입니다. 모델은 아나콘다입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "아나콘다"
   },
   "snake-snake-fruit-king-cobra-model-snake-snake-fruit-model-king-cobra": {
     "nameKo": "뱀뱀 열매 모델 킹코브라",
     "nameJa": "ヘビヘビの実 モデル キングコブラ",
+    "nameEn": "Snake-Snake Fruit King Cobra Model ; Snake-Snake Fruit: Model King Cobra",
     "descriptionKo": "뱀뱀 열매 모델 킹코브라는 동물계 악마의 열매입니다. 모델은 킹코브라입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "킹코브라"
   },
   "venom-venom-fruit": {
     "nameKo": "독독 열매",
     "nameJa": "ドクドクの実",
+    "nameEn": "Venom-Venom Fruit",
     "descriptionKo": "독독 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "snip-snip-fruit-shear-shear-fruit": {
+    "nameKo": "썽둥썽둥 열매",
     "nameJa": "チョキチョキの実",
-    "descriptionKo": "썽둥썽둥 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameKo": "썽둥썽둥 열매"
+    "nameEn": "Snip-Snip Fruit ; Shear-Shear Fruit",
+    "descriptionKo": "썽둥썽둥 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "horm-horm-fruit-hor-hor-fruit": {
     "nameKo": "호르호르 열매",
     "nameJa": "ホルホルの実",
+    "nameEn": "Horm-Horm Fruit ; Hor-Hor Fruit",
     "descriptionKo": "호르호르 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "pocket-pocket-fruit": {
     "nameKo": "포켓포켓 열매",
     "nameJa": "ポケポケの実",
+    "nameEn": "Pocket-Pocket Fruit",
     "descriptionKo": "포켓포켓 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "huge-huge-fruit": {
+    "nameKo": "거대거대 열매",
     "nameJa": "デカデカの実",
-    "descriptionKo": "거대거대 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameKo": "거대거대 열매"
+    "nameEn": "Huge-Huge Fruit",
+    "descriptionKo": "거대거대 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "glug-glug-fruit": {
     "nameKo": "벌컥벌컥 열매",
     "nameJa": "ガブガブの実",
+    "nameEn": "Glug-Glug Fruit",
     "descriptionKo": "벌컥벌컥 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "dog-dog-fruit-model-nine-tailed-fox": {
     "nameKo": "개개 열매 모델 구미호",
     "nameJa": "イヌイヌの実 モデル 九尾の狐",
+    "nameEn": "Dog-Dog Fruit, Model: Nine Tailed Fox",
     "descriptionKo": "개개 열매 모델 구미호는 동물계 악마의 열매입니다. 동물계 세부 구분은 환수종입니다. 모델은 구미호입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "구미호"
   },
   "isle-isle-fruit": {
     "nameKo": "섬섬 열매",
     "nameJa": "シマシマの実",
+    "nameEn": "Isle-Isle Fruit",
     "descriptionKo": "섬섬 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "swamp-swamp-fruit": {
+    "nameKo": "늪늪 열매",
     "nameJa": "ヌマヌマの実",
-    "descriptionKo": "늪늪 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameKo": "늪늪 열매"
+    "nameEn": "Swamp-Swamp Fruit",
+    "descriptionKo": "늪늪 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "mark-mark-fruit": {
     "nameKo": "표적표적 열매",
     "nameJa": "マトマトの実",
+    "nameEn": "Mark-Mark Fruit",
     "descriptionKo": "표적표적 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "turtle-turtle-fruit": {
     "nameKo": "거북거북 열매",
     "nameJa": "カメカメの実",
+    "nameEn": "Turtle-Turtle Fruit",
     "descriptionKo": "거북거북 열매는 동물계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "egg-egg-fruit": {
     "nameKo": "달걀달걀 열매",
     "nameJa": "タマタマの実",
+    "nameEn": "Egg-Egg Fruit",
     "descriptionKo": "달걀달걀 열매는 동물계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "soul-soul-fruit": {
     "nameKo": "소울소울 열매",
     "nameJa": "ソルソルの実",
+    "nameEn": "Soul-Soul Fruit",
     "descriptionKo": "소울소울 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "snow-snow-fruit": {
     "nameKo": "눈눈 열매",
     "nameJa": "ユキユキの実",
+    "nameEn": "Snow-Snow Fruit",
     "descriptionKo": "눈눈 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "gas-gas-fruit": {
     "nameKo": "가스가스 열매",
     "nameJa": "ガスガスの実",
+    "nameEn": "Gas-Gas Fruit",
     "descriptionKo": "가스가스 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "sala-sala-fruit-model-axolotl": {
-    "nameJa": "サラサラの実 モデル アホロートル",
-    "descriptionKo": "도롱도롱 열매 모델 아홀로틀은 동물계 악마의 열매입니다. 모델은 아홀로틀입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "nameKo": "도롱도롱 열매 모델 아홀로틀",
+    "nameJa": "サラサラの実 モデル アホロートル",
+    "nameEn": "Sala-Sala Fruit, Model: Axolotl",
+    "descriptionKo": "도롱도롱 열매 모델 아홀로틀은 동물계 악마의 열매입니다. 모델은 아홀로틀입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "아홀로틀"
   },
   "garb-garb-jutsu-garb-garb-fruit": {
     "nameKo": "옷옷 열매",
-    "descriptionKo": "옷옷 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameJa": "フクフクの実"
+    "nameJa": "フクフクの実",
+    "nameEn": "Garb-Garb Jutsu ; Garb-Garb Fruit",
+    "descriptionKo": "옷옷 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "fish-fish-fruit-model-azure-dragon-fish-fish-fruit-azure-dragon-model": {
     "nameKo": "물고기물고기 열매 모델 청룡",
     "nameJa": "ウオウオの実 モデル 青龍",
+    "nameEn": "Fish-Fish Fruit, Model: Azure Dragon Fish-Fish Fruit, Azure Dragon Model",
     "descriptionKo": "물고기물고기 열매 모델 청룡은 동물계 악마의 열매입니다. 동물계 세부 구분은 환수종입니다. 모델은 청룡입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "청룡"
   },
   "arms-arms-fruit": {
     "nameKo": "무기무기 열매",
     "nameJa": "ブキブキの実",
+    "nameEn": "Arms-Arms Fruit",
     "descriptionKo": "무기무기 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "spin-spin-fruit": {
     "nameKo": "빙글빙글 열매",
     "nameJa": "グルグルの実",
+    "nameEn": "Spin-Spin Fruit",
     "descriptionKo": "빙글빙글 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "brain-brain-fruit": {
     "nameKo": "두뇌두뇌 열매",
     "nameJa": "ノミノミの実",
+    "nameEn": "Brain-Brain Fruit",
     "descriptionKo": "두뇌두뇌 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "press-press-fruit": {
     "nameKo": "쿠궁쿠궁 열매",
     "nameJa": "ズシズシの実",
+    "nameEn": "Press-Press Fruit",
     "descriptionKo": "쿠궁쿠궁 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "glare-glare-fruit": {
     "nameKo": "또록또록 열매",
     "nameJa": "ギロギロの実",
+    "nameEn": "Glare-Glare Fruit",
     "descriptionKo": "또록또록 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "jacket-jacket-fruit": {
     "nameKo": "재킷재킷 열매",
     "nameJa": "ジャケジャケの実",
+    "nameEn": "Jacket-Jacket Fruit",
     "descriptionKo": "재킷재킷 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "barrier-barrier-fruit-bari-bari-fruit": {
     "nameKo": "배리어배리어 열매",
     "nameJa": "バリバリの実",
+    "nameEn": "Barrier-Barrier Fruit ; Bari-Bari Fruit",
     "descriptionKo": "배리어배리어 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "stitch-stitch-power-sew-sew-fruit": {
     "nameKo": "바늘바늘 열매",
     "nameJa": "ヌイヌイの実",
+    "nameEn": "Stitch-Stitch Power ; Sew-Sew Fruit",
     "descriptionKo": "바늘바늘 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "art-art-fruit": {
     "nameKo": "아트아트 열매",
     "nameJa": "アトアトの実",
+    "nameEn": "Art-Art Fruit",
     "descriptionKo": "아트아트 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "bug-bug-fruit-model-rhinoceros-beetle": {
     "nameKo": "벌레벌레 열매 모델 장수풍뎅이",
     "nameJa": "ムシムシの実 モデル カブトムシ",
+    "nameEn": "Bug-Bug Fruit, Model: Rhinoceros beetle",
     "descriptionKo": "벌레벌레 열매 모델 장수풍뎅이는 동물계 악마의 열매입니다. 모델은 장수풍뎅이입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "장수풍뎅이"
   },
   "bug-bug-fruit-model-hornet": {
     "nameKo": "벌레벌레 열매 모델 말벌",
     "nameJa": "ムシムシの実 モデル スズメバチ",
+    "nameEn": "Bug-Bug Fruit, Model: Hornet",
     "descriptionKo": "벌레벌레 열매 모델 말벌은 동물계 악마의 열매입니다. 모델은 말벌입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "말벌"
   },
   "pop-pop-fruit": {
     "nameKo": "펑펑 열매",
     "nameJa": "パムパムの実",
+    "nameEn": "Pop-Pop Fruit",
     "descriptionKo": "펑펑 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "hobby-hobby-fruit": {
     "nameKo": "하비하비 열매",
     "nameJa": "ホビホビの実",
+    "nameEn": "Hobby-Hobby Fruit",
     "descriptionKo": "하비하비 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "swim-swim-fruit": {
     "nameKo": "헤엄헤엄 열매",
     "nameJa": "スイスイの実",
+    "nameEn": "Swim-Swim Fruit",
     "descriptionKo": "헤엄헤엄 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "ton-ton-fruit": {
     "nameKo": "톤톤 열매",
     "nameJa": "トントンの実",
+    "nameEn": "Ton-Ton Fruit",
     "descriptionKo": "톤톤 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "ripple-ripple-fruit": {
     "nameKo": "펄럭펄럭 열매",
     "nameJa": "ヒラヒラの実",
+    "nameEn": "Ripple-Ripple Fruit",
     "descriptionKo": "펄럭펄럭 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "stick-stick-fruit-sticky-sticky-fruit": {
+    "nameKo": "찐득찐득 열매",
     "nameJa": "ベタベタの実",
-    "descriptionKo": "찐득찐득 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameKo": "찐득찐득 열매"
+    "nameEn": "Stick-Stick Fruit Sticky-Sticky Fruit",
+    "descriptionKo": "찐득찐득 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "stone-stone-fruit": {
     "nameKo": "바위바위 열매",
     "nameJa": "イシイシの実",
+    "nameEn": "Stone-Stone Fruit",
     "descriptionKo": "바위바위 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "brush-brush-fruit": {
     "nameKo": "붓붓 열매",
     "nameJa": "フデフデの実",
+    "nameEn": "Brush-Brush Fruit",
     "descriptionKo": "붓붓 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "calm-calm-fruit": {
     "nameKo": "고요고요 열매",
     "nameJa": "ナギナギの実",
+    "nameEn": "Calm-Calm Fruit",
     "descriptionKo": "고요고요 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "heal-heal-fruit": {
     "nameKo": "치유치유 열매",
     "nameJa": "チユチユの実の実",
+    "nameEn": "Heal-Heal Fruit",
     "descriptionKo": "치유치유 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "elephant-elephant-fruit-ancient-zoan-model-mammoth-eleph-eleph-fruit-ancient-zoa": {
     "nameKo": "코끼리코끼리 열매 모델 매머드",
     "nameJa": "ゾウゾウの実 モデル マンモス",
+    "nameEn": "Elephant-Elephant Fruit, Ancient Zoan Model: Mammoth , Eleph-Eleph Fruit Ancient Zoan Model Mammoth",
     "descriptionKo": "코끼리코끼리 열매 모델 매머드는 동물계 악마의 열매입니다. 동물계 세부 구분은 고대종입니다. 모델은 매머드입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "매머드"
   },
   "sheep-smile": {
     "nameKo": "양 스마일",
+    "nameEn": "Sheep SMILE",
     "descriptionKo": "양 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "squirrel-smile": {
     "nameKo": "다람쥐 스마일",
+    "nameEn": "Squirrel SMILE",
     "descriptionKo": "다람쥐 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "scrolling-jutsu-scroll-scroll-fruit": {
+    "nameKo": "두루두루 열매",
     "nameJa": "マキマキの実",
-    "descriptionKo": "두루두루 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameKo": "두루두루 열매"
+    "nameEn": "Scrolling Jutsu ; Scroll-Scroll Fruit",
+    "descriptionKo": "두루두루 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "memo-memo-fruit": {
     "nameKo": "메모리메모리 열매",
     "nameJa": "メモメモの実",
+    "nameEn": "Memo-Memo Fruit",
     "descriptionKo": "메모리메모리 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "mirror-mirror-fruit": {
     "nameKo": "미러미러 열매",
-    "descriptionKo": "미러미러 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameJa": "ミラミラの実"
+    "nameJa": "ミラミラの実",
+    "nameEn": "Mirror-Mirror Fruit",
+    "descriptionKo": "미러미러 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "lick-lick-fruit": {
     "nameKo": "할짝할짝 열매",
     "nameJa": "ペロペロの実",
+    "nameEn": "Lick-Lick Fruit",
     "descriptionKo": "할짝할짝 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "bis-bis-fruit": {
     "nameKo": "비스킷비스킷 열매",
     "nameJa": "ビスビスの実",
+    "nameEn": "Bis-Bis Fruit",
     "descriptionKo": "비스킷비스킷 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "book-book-fruit": {
     "nameKo": "책책 열매",
-    "descriptionKo": "책책 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameJa": "ブクブクの実"
+    "nameJa": "ブクブクの実",
+    "nameEn": "Book-Book Fruit",
+    "descriptionKo": "책책 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "cream-cream-fruit": {
     "nameKo": "크림크림 열매",
     "nameJa": "クリクリの実",
+    "nameEn": "Cream-Cream Fruit",
     "descriptionKo": "크림크림 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "butter-butter-fruit": {
     "nameKo": "버터버터 열매",
     "nameJa": "バタバタの実",
+    "nameEn": "Butter-Butter Fruit",
     "descriptionKo": "버터버터 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "wring-wring-fruit": {
     "nameKo": "즙즙 열매",
     "nameJa": "シボシボの実",
+    "nameEn": "Wring-Wring Fruit",
     "descriptionKo": "즙즙 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "cook-cook-fruit": {
     "nameKo": "쿡쿡 열매",
     "nameJa": "ククククの実",
+    "nameEn": "Cook-Cook Fruit",
     "descriptionKo": "쿡쿡 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "tweet-tweet-fruit-albatross-model-bird-bird-fruit-model-albatross": {
     "nameKo": "새새 열매 모델 알바트로스",
     "nameJa": "トリトリの実 モデル アルバトロス",
+    "nameEn": "Tweet-Tweet Fruit, Albatross Model Bird-Bird Fruit, Model: Albatross",
     "descriptionKo": "새새 열매 모델 알바트로스는 동물계 악마의 열매입니다. 모델은 알바트로스입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "알바트로스"
   },
   "mochi-mochi-fruit": {
     "nameKo": "쫀득쫀득 열매",
     "nameJa": "モチモチの実",
+    "nameEn": "Mochi-Mochi Fruit",
     "descriptionKo": "쫀득쫀득 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "puff-puff-fruit": {
     "nameKo": "램프램프 열매",
     "nameJa": "ホヤホヤの実",
+    "nameEn": "Puff-Puff Fruit",
     "descriptionKo": "램프램프 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "heat-heat-fruit": {
     "nameKo": "열열 열매",
     "nameJa": "ネツネツの実",
+    "nameEn": "Heat-Heat Fruit",
     "descriptionKo": "열열 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "pile-pile-fruit": {
     "nameKo": "파일파일 열매",
     "nameJa": "ゴチャゴチャの実",
+    "nameEn": "Pile-Pile Fruit",
     "descriptionKo": "파일파일 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "push-push-fruit": {
     "nameKo": "푸시푸시 열매",
     "nameJa": "オシオシの実",
+    "nameEn": "Push-Push Fruit",
     "descriptionKo": "푸시푸시 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "pump-pump-fruit": {
     "nameKo": "격려격려 열매",
     "nameJa": "コブコブの実",
+    "nameEn": "Pump-Pump Fruit",
     "descriptionKo": "격려격려 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "soot-soot-fruit": {
+    "nameKo": "그을음그을음 열매",
     "nameJa": "ススススの実",
-    "descriptionKo": "그을음그을음 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameKo": "그을음그을음 열매"
+    "nameEn": "Soot-Soot Fruit",
+    "descriptionKo": "그을음그을음 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "millet-millet-fruit": {
     "nameKo": "수숫수숫 열매",
     "nameJa": "キビキビの実",
+    "nameEn": "Millet-Millet Fruit",
     "descriptionKo": "수숫수숫 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "dog-dog-fruit-model-tanuki": {
     "nameKo": "개개 열매 모델 바케다누키",
     "nameJa": "イヌイヌの実 モデル 化狸",
+    "nameEn": "Dog-Dog Fruit, Model Tanuki",
     "descriptionKo": "개개 열매 모델 바케다누키는 동물계 악마의 열매입니다. 모델은 바케다누키입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "바케다누키"
   },
   "bat-smile": {
     "nameKo": "박쥐 스마일",
+    "nameEn": "Bat SMILE",
     "descriptionKo": "박쥐 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "gazelle-smile": {
     "nameKo": "가젤 스마일",
+    "nameEn": "Gazelle SMILE",
     "descriptionKo": "가젤 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "mouse-smile": {
     "nameKo": "생쥐 스마일",
+    "nameEn": "Mouse SMILE",
     "descriptionKo": "생쥐 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "lion-smile": {
     "nameKo": "사자 스마일",
+    "nameEn": "Lion SMILE",
     "descriptionKo": "사자 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "rabbit-smile": {
     "nameKo": "토끼 스마일",
+    "nameEn": "Rabbit SMILE",
     "descriptionKo": "토끼 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "horse-smile": {
     "nameKo": "말 스마일",
+    "nameEn": "Horse SMILE",
     "descriptionKo": "말 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "ripe-ripe-enticement-jutsu-ripe-ripe-fruit": {
     "nameKo": "숙성숙성 열매",
     "nameJa": "ジュクジュクの実",
+    "nameEn": "Ripe-Ripe Enticement Jutsu ; Ripe-Ripe Fruit",
     "descriptionKo": "숙성숙성 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "hippopotamus-smile": {
     "nameKo": "하마 스마일",
+    "nameEn": "Hippopotamus SMILE",
     "descriptionKo": "하마 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "snake-snake-fruit-model-eight-headed-serpent": {
     "nameKo": "뱀뱀 열매 모델 야마타노오로치",
     "nameJa": "ヘビヘビの実 モデル 八岐大蛇",
+    "nameEn": "Snake-Snake Fruit, Model: Eight Headed Serpent",
     "descriptionKo": "뱀뱀 열매 모델 야마타노오로치는 동물계 악마의 열매입니다. 동물계 세부 구분은 환수종입니다. 모델은 야마타노오로치입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "야마타노오로치"
   },
   "dragon-dragon-fruit-model-spinosaurus": {
     "nameKo": "용용 열매 모델 스피노사우루스",
     "nameJa": "リュウリュウの実 モデル スピノサウルス",
+    "nameEn": "Dragon-Dragon Fruit, Model: Spinosaurus",
     "descriptionKo": "용용 열매 모델 스피노사우루스는 동물계 악마의 열매입니다. 동물계 세부 구분은 고대종입니다. 모델은 스피노사우루스입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "스피노사우루스"
   },
   "alpaca-smile": {
     "nameKo": "알파카 스마일",
+    "nameEn": "Alpaca SMILE",
     "descriptionKo": "알파카 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "monkey-smile": {
     "nameKo": "원숭이 스마일",
+    "nameEn": "Monkey SMILE",
     "descriptionKo": "원숭이 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "scorpion-smile": {
     "nameKo": "전갈 스마일",
+    "nameEn": "Scorpion SMILE",
     "descriptionKo": "전갈 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "elephant-smile": {
     "nameKo": "코끼리 스마일",
+    "nameEn": "Elephant SMILE",
     "descriptionKo": "코끼리 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "armadillo-smile": {
     "nameKo": "아르마딜로 스마일",
+    "nameEn": "Armadillo SMILE",
     "descriptionKo": "아르마딜로 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "hawk-smile": {
     "nameKo": "매 스마일",
+    "nameEn": "Hawk SMILE",
     "descriptionKo": "매 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "peregrine-falcon-smile": {
     "nameKo": "송골매 스마일",
+    "nameEn": "Peregrine Falcon SMILE",
     "descriptionKo": "송골매 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "swallowtail-butterfly-smile": {
     "nameKo": "호랑나비 스마일",
+    "nameEn": "Swallowtail Butterfly SMILE",
     "descriptionKo": "호랑나비 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "time-time-ability-time-time-fruit": {
     "nameKo": "시간시간 열매",
     "nameJa": "トキトキの実",
+    "nameEn": "Time-Time Ability ; Time-Time Fruit",
     "descriptionKo": "시간시간 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "barrier-barrier-fruit": {
     "nameKo": "배리어배리어 열매",
     "nameJa": "バリバリの実",
+    "nameEn": "Barrier-Barrier Fruit",
     "descriptionKo": "배리어배리어 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "dragon-dragon-fruit-pachycephalosaurus-model": {
     "nameKo": "용용 열매 모델 파키케팔로사우루스",
     "nameJa": "リュウリュウの実 モデル パキケファロサウルス",
+    "nameEn": "Dragon-Dragon Fruit, Pachycephalosaurus Model",
     "descriptionKo": "용용 열매 모델 파키케팔로사우루스는 동물계 악마의 열매입니다. 동물계 세부 구분은 고대종입니다. 모델은 파키케팔로사우루스입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "파키케팔로사우루스"
   },
   "cat-cat-fruit-saber-toothed-tiger-model": {
     "nameKo": "고양고양 열매 모델 검치호",
-    "descriptionKo": "고양고양 열매 모델 검치호는 동물계 악마의 열매입니다. 동물계 세부 구분은 고대종입니다. 모델은 검치호입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "nameJa": "ネコネコの実 モデル サーベルタイガー",
+    "nameEn": "Cat-Cat Fruit, Saber-Toothed Tiger Model",
+    "descriptionKo": "고양고양 열매 모델 검치호는 동물계 악마의 열매입니다. 동물계 세부 구분은 고대종입니다. 모델은 검치호입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "검치호"
   },
   "spider-spider-fruit-rosamygale-grauvogeli-model": {
-    "nameJa": "クモクモの実 モデル ロサミガレ・グラウボゲリィ",
-    "descriptionKo": "거미거미 열매 모델 로사미갈레 그라보겔리는 동물계 악마의 열매입니다. 동물계 세부 구분은 고대종입니다. 모델은 로사미갈레 그라보겔리입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "nameKo": "거미거미 열매 모델 로사미갈레 그라보겔리",
+    "nameJa": "クモクモの実 モデル ロサミガレ・グラウボゲリィ",
+    "nameEn": "Spider-Spider Fruit, Rosamygale grauvogeli Model",
+    "descriptionKo": "거미거미 열매 모델 로사미갈레 그라보겔리는 동물계 악마의 열매입니다. 동물계 세부 구분은 고대종입니다. 모델은 로사미갈레 그라보겔리입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "로사미갈레 그라보겔리"
   },
   "dragon-dragon-fruit-triceratops-model": {
     "nameKo": "용용 열매 모델 트리케라톱스",
     "nameJa": "リュウリュウの実 モデル トリケラトプス",
+    "nameEn": "Dragon-Dragon Fruit, Triceratops Model",
     "descriptionKo": "용용 열매 모델 트리케라톱스는 동물계 악마의 열매입니다. 동물계 세부 구분은 고대종입니다. 모델은 트리케라톱스입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "트리케라톱스"
   },
   "chinese-grasshopper-smile": {
     "nameKo": "중국 메뚜기 스마일",
+    "nameEn": "Chinese Grasshopper SMILE",
     "descriptionKo": "중국 메뚜기 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "wasp-smile": {
     "nameKo": "말벌 스마일",
+    "nameEn": "Wasp SMILE",
     "descriptionKo": "말벌 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "gastrimargus-grasshopper-smile": {
     "nameKo": "가스트리마르구스 메뚜기 스마일",
+    "nameEn": "Gastrimargus Grasshopper SMILE",
     "descriptionKo": "가스트리마르구스 메뚜기 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "phasmid-smile": {
     "nameKo": "대벌레 스마일",
+    "nameEn": "Phasmid SMILE",
     "descriptionKo": "대벌레 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "giant-tortoise-smile": {
     "nameKo": "거대거북 스마일",
+    "nameEn": "Giant Tortoise SMILE",
     "descriptionKo": "거대거북 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "crab-smile": {
     "nameKo": "게 스마일",
+    "nameEn": "Crab SMILE",
     "descriptionKo": "게 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "owl-smile": {
     "nameKo": "올빼미 스마일",
+    "nameEn": "Owl SMILE",
     "descriptionKo": "올빼미 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "wolf-smile": {
     "nameKo": "늑대 스마일",
+    "nameEn": "Wolf SMILE",
     "descriptionKo": "늑대 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "japanese-stag-beetle-smile": {
     "nameKo": "사슴벌레 스마일",
+    "nameEn": "Japanese Stag Beetle SMILE",
     "descriptionKo": "사슴벌레 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "rhinoceros-beetle-smile": {
     "nameKo": "장수풍뎅이 스마일",
+    "nameEn": "Rhinoceros Beetle SMILE",
     "descriptionKo": "장수풍뎅이 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "praying-mantis-smile": {
     "nameKo": "사마귀 스마일",
+    "nameEn": "Praying Mantis SMILE",
     "descriptionKo": "사마귀 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "dog-dog-fruit-model-okuchi-no-makami": {
     "nameKo": "개개 열매 모델 오오쿠치노마카미",
     "nameJa": "イヌイヌの実 モデル 大口真神",
+    "nameEn": "Dog-Dog Fruit, Model: Okuchi-no-Makami",
     "descriptionKo": "개개 열매 모델 오오쿠치노마카미는 동물계 악마의 열매입니다. 동물계 세부 구분은 환수종입니다. 모델은 오오쿠치노마카미입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "오오쿠치노마카미"
   },
   "gorilla-smile": {
     "nameKo": "고릴라 스마일",
+    "nameEn": "Gorilla SMILE",
     "descriptionKo": "고릴라 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "rhino-smile": {
     "nameKo": "코뿔소 스마일",
+    "nameEn": "Rhino SMILE",
     "descriptionKo": "코뿔소 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "hedgehog-smile": {
     "nameKo": "고슴도치 스마일",
+    "nameEn": "Hedgehog SMILE",
     "descriptionKo": "고슴도치 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "caucasus-beetle-smile": {
     "nameKo": "코카서스장수풍뎅이 스마일",
+    "nameEn": "Caucasus Beetle SMILE",
     "descriptionKo": "코카서스장수풍뎅이 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "giraffe-smile": {
     "nameKo": "기린 스마일",
+    "nameEn": "Giraffe SMILE",
     "descriptionKo": "기린 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "chicken-smile": {
     "nameKo": "닭 스마일",
+    "nameEn": "Chicken SMILE",
     "descriptionKo": "닭 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "rattlesnake-smile": {
     "nameKo": "방울뱀 스마일",
+    "nameEn": "Rattlesnake SMILE",
     "descriptionKo": "방울뱀 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "python-smile": {
     "nameKo": "비단뱀 스마일",
+    "nameEn": "Python SMILE",
     "descriptionKo": "비단뱀 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "japanese-rat-snake-smile": {
     "nameKo": "일본쥐뱀 스마일",
+    "nameEn": "Japanese Rat Snake SMILE",
     "descriptionKo": "일본쥐뱀 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "hognose-snake-smile": {
     "nameKo": "돼지코뱀 스마일",
+    "nameEn": "Hognose Snake SMILE",
     "descriptionKo": "돼지코뱀 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "white-snake-smile": {
     "nameKo": "흰뱀 스마일",
+    "nameEn": "White Snake SMILE",
     "descriptionKo": "흰뱀 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "caiman-smile": {
     "nameKo": "카이만 스마일",
+    "nameEn": "Caiman SMILE",
     "descriptionKo": "카이만 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "pug-smile": {
     "nameKo": "퍼그 스마일",
+    "nameEn": "Pug SMILE",
     "descriptionKo": "퍼그 스마일은 동물계 악마의 열매입니다. 한글 표시명을 기준으로 정리했습니다."
   },
   "woods-woods-fruit": {
     "nameKo": "숲숲 열매",
     "nameJa": "モリモリの実",
+    "nameEn": "Woods-Woods Fruit",
     "descriptionKo": "숲숲 열매는 자연계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "sing-sing-fruit": {
     "nameKo": "노래노래 열매",
     "nameJa": "ウタウタの実",
+    "nameEn": "Sing-Sing Fruit",
     "descriptionKo": "노래노래 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "dog-dog-fruit-model-hound": {
     "nameKo": "개개 열매 모델 하운드",
     "nameJa": "イヌイヌの実 モデル ハウンド",
+    "nameEn": "Dog-Dog Fruit, Model: Hound",
     "descriptionKo": "개개 열매 모델 하운드는 동물계 악마의 열매입니다. 모델은 하운드입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "하운드"
   },
   "whip-whip-fruit": {
     "nameKo": "채찍채찍 열매",
     "nameJa": "ムチムチの実",
+    "nameEn": "Whip-Whip Fruit",
     "descriptionKo": "채찍채찍 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "ott-ott-fruit": {
+    "nameKo": "수달수달 열매",
     "nameJa": "ラコラコの実",
-    "descriptionKo": "수달수달 열매는 동물계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
-    "nameKo": "수달수달 열매"
+    "nameEn": "Ott-Ott Fruit",
+    "descriptionKo": "수달수달 열매는 동물계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "ride-ride-fruit": {
     "nameKo": "라이드라이드 열매",
     "nameJa": "ノリノリの実",
+    "nameEn": "Ride-Ride Fruit",
     "descriptionKo": "라이드라이드 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "barrel-barrel-fruit": {
     "nameKo": "통통 열매",
     "nameJa": "ツツツツの実",
+    "nameEn": "Barrel-Barrel Fruit",
     "descriptionKo": "통통 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "float-float-fruit": {
     "nameKo": "둥실둥실 열매",
     "nameJa": "フワフワの実",
+    "nameEn": "Float-Float Fruit",
     "descriptionKo": "둥실둥실 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "human-human-fruit-model-nika": {
     "nameKo": "사람사람 열매 모델 니카",
     "nameJa": "ヒトヒトの実 モデル ニカ",
+    "nameEn": "Human-Human Fruit, Model: Nika",
     "descriptionKo": "사람사람 열매 모델 니카는 동물계 악마의 열매입니다. 동물계 세부 구분은 환수종입니다. 모델은 니카입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "니카"
   },
   "dragon-dragon-fruit-model-nidho-ggr": {
     "nameKo": "용용 열매 모델 니드호그",
     "nameJa": "リュウリュウの実 モデル ニーズヘッグ",
+    "nameEn": "Dragon-Dragon Fruit, Model: Nidhöggr",
     "descriptionKo": "용용 열매 모델 니드호그는 동물계 악마의 열매입니다. 동물계 세부 구분은 환수종입니다. 모델은 니드호그입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "니드호그"
   },
   "grow-grow-fruit": {
     "nameKo": "성장성장 열매",
     "nameJa": "イクイクの実",
+    "nameEn": "Grow-Grow Fruit",
     "descriptionKo": "성장성장 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "arrow-arrow-fruit": {
     "nameKo": "화살화살 열매",
     "nameJa": "アロアロの実",
+    "nameEn": "Arrow-Arrow Fruit",
     "descriptionKo": "화살화살 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "thorn-thorn-fruit": {
     "nameKo": "가시가시 열매",
     "nameJa": "イバイバの実",
+    "nameEn": "Thorn-Thorn Fruit",
     "descriptionKo": "가시가시 열매는 초인계 악마의 열매입니다. 한글명과 일본어 표기를 기준으로 정리했습니다."
   },
   "dragon-dragon-fruit-model-kirin": {
     "nameKo": "용용 열매 모델 기린",
     "nameJa": "リュウリュウの実 モデル 麒麟",
+    "nameEn": "Dragon-Dragon Fruit, Model: Kirin",
     "descriptionKo": "용용 열매 모델 기린은 동물계 악마의 열매입니다. 동물계 세부 구분은 환수종입니다. 모델은 기린입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "기린"
   },
   "dragon-dragon-fruit-model-pteranodon": {
     "nameKo": "용용 열매 모델 프테라노돈",
     "nameJa": "リュウリュウの実 モデル プテラノドン",
+    "nameEn": "Dragon-Dragon Fruit, Model: Pteranodon",
     "descriptionKo": "용용 열매 모델 프테라노돈은 동물계 악마의 열매입니다. 동물계 세부 구분은 고대종입니다. 모델은 프테라노돈입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "프테라노돈"
   },
   "dragon-dragon-fruit-model-brachiosaurus": {
     "nameKo": "용용 열매 모델 브라키오사우루스",
     "nameJa": "リュウリュウの実 モデル ブラキオサウルス",
+    "nameEn": "Dragon-Dragon Fruit, Model: Brachiosaurus",
     "descriptionKo": "용용 열매 모델 브라키오사우루스는 동물계 악마의 열매입니다. 동물계 세부 구분은 고대종입니다. 모델은 브라키오사우루스입니다. 한글명과 일본어 표기를 기준으로 정리했습니다.",
     "model": "브라키오사우루스"
   }
@@ -345243,6 +346332,7 @@ window.onePieceData = {
 };
   const hasLatin = (value) => /[A-Za-z]/.test(String(value || ""));
   const hasHangul = (value) => /[가-힣]/.test(String(value || ""));
+  const hasJapanese = (value) => /[ぁ-んァ-ヶ一-龯]/.test(String(value || ""));
   const upsertById = (list, item) => {
     const index = list.findIndex((entry) => entry.id === item.id);
     if (index === -1) list.push(item);
@@ -345250,8 +346340,14 @@ window.onePieceData = {
   };
   const setNameFields = (item, patch) => {
     if (!item || !patch) return;
-    if (!item.nameEn && hasLatin(item.name)) item.nameEn = item.name;
-    Object.assign(item, patch);
+    const nextPatch = { ...patch };
+    const clearNameEn = nextPatch.clearNameEn === true;
+    delete nextPatch.clearNameEn;
+    if (!item.nameEn && hasLatin(item.name) && !hasHangul(item.name) && !hasJapanese(item.name)) {
+      item.nameEn = item.name;
+    }
+    Object.assign(item, nextPatch);
+    if (clearNameEn) delete item.nameEn;
     if (patch.nameKo && hasHangul(patch.nameKo)) item.name = patch.nameKo;
     else if (patch.nameJa) item.name = patch.nameJa;
   };
@@ -347007,3 +348103,90 @@ window.onePieceData = {
   }
 })();
 /* LUFFY_PHOTO_PROFILE_END */
+
+/* CHARACTER_IDENTITY_CORRECTIONS_START */
+(() => {
+  const data = window.onePieceData;
+  const ninjinId = "wt100-52";
+  const carrotId = "wt100-896";
+  const ninjin = data.people.find((person) => person.id === ninjinId);
+
+  if (ninjin) {
+    Object.assign(ninjin, {
+      name: "닌진",
+      nameKo: "닌진",
+      nameEn: "Ninjin",
+      sourceNameEn: "Ninjin",
+      aliases: "Ninjin",
+      job: "해적",
+      organization: "pirates",
+      age: 11,
+      birthday: "2월 2일",
+      heightCm: 127,
+      heightHistory: [
+        {
+          period: "현재",
+          cm: 127
+        }
+      ],
+      bloodType: "X",
+      originRegion: "east-blue",
+      originCountry: "syrup-village",
+      origin: "이스트 블루 / 시럽 마을",
+      likes: "당근 주스",
+      description: "시럽 마을의 우솝 해적단 출신으로, 해적단 해산 뒤에는 술집을 열겠다고 다짐한 소년입니다.",
+      wikiTitle: "Ninjin",
+      wikiUrl: "https://onepiece.fandom.com/wiki/Ninjin",
+      jobEn: "Pretend Pirate (formerly)",
+      jobCategory: "해적",
+      jobDetail: "해적"
+    });
+    ninjin.sourceSearch = ["にんじん", "ニンジン", "Ninjin", "닌진"];
+  }
+
+  const normalizeTitle = (value) => String(value || "").trim().toLowerCase();
+  const peerAppearanceType = (episode) => {
+    const peer = (episode.characterAppearances || []).find((appearance) => {
+      const title = normalizeTitle(appearance.sourceTitle);
+      return title === "piiman" || title === "tamanegi";
+    });
+    return peer?.appearanceType || "main";
+  };
+
+  data.episodes.forEach((episode) => {
+    const sourceTitles = (episode.sourceCharacterTitles || []).map(normalizeTitle);
+    const appearances = (episode.characterAppearances || []).map((appearance) => {
+      const title = normalizeTitle(appearance.sourceTitle);
+      if (title === "carrot") return { ...appearance, characterId: carrotId };
+      if (title === "ninjin") return { ...appearance, characterId: ninjinId };
+      return appearance;
+    });
+    const hasNinjin = sourceTitles.includes("ninjin") || appearances.some((appearance) => normalizeTitle(appearance.sourceTitle) === "ninjin");
+    const hasCarrot = sourceTitles.includes("carrot") || appearances.some((appearance) => normalizeTitle(appearance.sourceTitle) === "carrot");
+    if (!hasNinjin && !hasCarrot) return;
+
+    if (hasNinjin && !appearances.some((appearance) => appearance.characterId === ninjinId)) {
+      appearances.push({
+        characterId: ninjinId,
+        sourceTitle: "Ninjin",
+        appearanceType: peerAppearanceType(episode)
+      });
+    }
+
+    const deduplicated = [];
+    const seenIds = new Set();
+    appearances.forEach((appearance) => {
+      if (!appearance.characterId || seenIds.has(appearance.characterId)) return;
+      seenIds.add(appearance.characterId);
+      deduplicated.push(appearance);
+    });
+    episode.characterAppearances = deduplicated;
+
+    const otherIds = (episode.characterIds || []).filter((id) => id !== ninjinId && id !== carrotId);
+    const correctedIds = deduplicated
+      .map((appearance) => appearance.characterId)
+      .filter((id) => id === ninjinId || id === carrotId);
+    episode.characterIds = [...new Set([...otherIds, ...correctedIds])];
+  });
+})();
+/* CHARACTER_IDENTITY_CORRECTIONS_END */

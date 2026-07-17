@@ -377,18 +377,27 @@ async function main() {
   const episodeNamu = await readJsonFile(EPISODE_NAMU_PATH, { titlePatches: {} });
   const jobCategories = await readJsonFile(JOB_CATEGORIES_PATH, { personPatches: {} });
   const luffyNamuEntries = normalizeLuffyNamuEntries(luffyNamu.entries || []);
-  const techniquePatches = buildTechniquePatches(data, techniqueJapanese, luffyNamu.namePatches || {});
+  const techniquePatches = buildTechniquePatches(
+    data,
+    techniqueJapanese,
+    luffyNamu.namePatches || {},
+    luffyNamuEntries
+  );
   const fruitPatches = buildFruitPatches(data, fruitJapanese);
   const block = buildLocalizationBlock(techniquePatches, fruitPatches, luffyNamuEntries, episodeNamu.titlePatches || {}, jobCategories.personPatches || {});
   await fs.writeFile(DATA_PATH, replaceBlock(dataText, block));
   console.log(JSON.stringify({
     techniquePatches: Object.keys(techniquePatches).length,
+    techniqueKorean: Object.values(techniquePatches).filter((item) => item.nameKo).length,
     techniqueJapanese: Object.values(techniquePatches).filter((item) => item.nameJa).length,
+    techniqueEnglish: Object.values(techniquePatches).filter((item) => item.nameEn).length,
     luffyTechniqueEntries: luffyNamuEntries.length,
     episodeTitlePatches: Object.keys(episodeNamu.titlePatches || {}).length,
     personJobPatches: Object.keys(jobCategories.personPatches || {}).length,
     fruitPatches: Object.keys(fruitPatches).length,
+    fruitKorean: Object.values(fruitPatches).filter((item) => item.nameKo).length,
     fruitJapanese: Object.values(fruitPatches).filter((item) => item.nameJa).length,
+    fruitEnglish: Object.values(fruitPatches).filter((item) => item.nameEn).length,
   }, null, 2));
 }
 
@@ -494,16 +503,32 @@ function extractTechniqueNames(html) {
   return map;
 }
 
-function buildTechniquePatches(data, techniqueJapanese, luffyPatches = {}) {
+function buildTechniquePatches(data, techniqueJapanese, luffyPatches = {}, curatedEntries = []) {
   const patches = {};
+  const curatedById = new Map(curatedEntries.map((entry) => [entry.id, entry]));
   for (const technique of data.techniques || []) {
     const nameEn = String(technique.nameEn || technique.name || "").trim();
     const sourceMap = techniqueJapanese.get(technique.sourceTitle);
     const luffyPatch = luffyPatches[technique.id] || {};
-    const nameJa = luffyPatch.nameJa || sourceMap?.get(normalizeName(nameEn)) || "";
-    const nameKo = luffyPatch.nameKo || LUFFY_NAMU_HAND_TECHNIQUE_NAMES.get(technique.id) || koreanTechniqueName(nameEn);
-    if (!nameJa && !nameKo && !hasLatin(nameEn)) continue;
-    patches[technique.id] = removeEmpty({ nameKo, nameJa });
+    const curatedEntry = curatedById.get(technique.id);
+    const isCuratedEntry = Boolean(curatedEntry);
+    const preservedNameEn = isCuratedEntry
+      ? String(curatedEntry.nameEn || "").trim()
+      : String(technique.nameEn || (isLatinOnly(technique.name) ? technique.name : "")).trim();
+    const nameJa = luffyPatch.nameJa
+      || curatedEntry?.nameJa
+      || sourceMap?.get(normalizeName(nameEn))
+      || technique.nameJa
+      || "";
+    const nameKo = luffyPatch.nameKo
+      || curatedEntry?.nameKo
+      || technique.nameKo
+      || LUFFY_NAMU_HAND_TECHNIQUE_NAMES.get(technique.id)
+      || koreanTechniqueName(nameEn);
+    if (!nameJa && !nameKo && !preservedNameEn && !hasLatin(nameEn)) continue;
+    const patch = removeEmpty({ nameKo, nameJa, nameEn: preservedNameEn });
+    if (isCuratedEntry && !preservedNameEn) patch.clearNameEn = true;
+    patches[technique.id] = patch;
   }
   return patches;
 }
@@ -512,12 +537,24 @@ function buildFruitPatches(data, fruitJapanese) {
   const patches = {};
   for (const fruit of data.devilFruits || []) {
     const nameEn = String(fruit.nameEn || fruit.name || "").trim();
-    const nameKo = EXACT_FRUIT_IDS.get(fruit.id) || koreanFruitName(nameEn);
-    const nameJa = fruitJapanese.get(fruit.id) || "";
-    const descriptionKo = koreanFruitDescription({ ...fruit, nameKo });
-    patches[fruit.id] = removeEmpty({ nameKo, nameJa, descriptionKo });
+    const preservedNameEn = String(fruit.nameEn || (isLatinOnly(fruit.name) ? fruit.name : "")).trim();
+    const nameKo = fruit.nameKo || EXACT_FRUIT_IDS.get(fruit.id) || koreanFruitName(nameEn);
+    const nameJa = fruitJapanese.get(fruit.id) || fruit.nameJa || "";
+    const descriptionKo = fruit.descriptionKo || koreanFruitDescription({ ...fruit, nameKo });
+    patches[fruit.id] = removeEmpty({
+      nameKo,
+      nameJa,
+      nameEn: preservedNameEn,
+      descriptionKo,
+      model: localizedFruitModel(fruit)
+    });
   }
   return patches;
+}
+
+function localizedFruitModel(fruit) {
+  const descriptionModel = String(fruit.descriptionKo || "").match(/모델은 ([^.]+)입니다\./)?.[1]?.trim();
+  return descriptionModel || fruit.model || "";
 }
 
 function koreanFruitDescription(fruit) {
@@ -624,6 +661,7 @@ function buildLocalizationBlock(techniquePatches, fruitPatches, luffyNamuEntries
   const personJobPatches = ${JSON.stringify(personJobPatches, null, 2)};
   const hasLatin = (value) => /[A-Za-z]/.test(String(value || ""));
   const hasHangul = (value) => /[가-힣]/.test(String(value || ""));
+  const hasJapanese = (value) => /[ぁ-んァ-ヶ一-龯]/.test(String(value || ""));
   const upsertById = (list, item) => {
     const index = list.findIndex((entry) => entry.id === item.id);
     if (index === -1) list.push(item);
@@ -631,8 +669,14 @@ function buildLocalizationBlock(techniquePatches, fruitPatches, luffyNamuEntries
   };
   const setNameFields = (item, patch) => {
     if (!item || !patch) return;
-    if (!item.nameEn && hasLatin(item.name)) item.nameEn = item.name;
-    Object.assign(item, patch);
+    const nextPatch = { ...patch };
+    const clearNameEn = nextPatch.clearNameEn === true;
+    delete nextPatch.clearNameEn;
+    if (!item.nameEn && hasLatin(item.name) && !hasHangul(item.name) && !hasJapanese(item.name)) {
+      item.nameEn = item.name;
+    }
+    Object.assign(item, nextPatch);
+    if (clearNameEn) delete item.nameEn;
     if (patch.nameKo && hasHangul(patch.nameKo)) item.name = patch.nameKo;
     else if (patch.nameJa) item.name = patch.nameJa;
   };
@@ -758,6 +802,14 @@ function hasLatin(value) {
 
 function hasHangul(value) {
   return /[가-힣]/.test(String(value || ""));
+}
+
+function hasJapanese(value) {
+  return /[ぁ-んァ-ヶ一-龯]/.test(String(value || ""));
+}
+
+function isLatinOnly(value) {
+  return hasLatin(value) && !hasHangul(value) && !hasJapanese(value);
 }
 
 function escapeRegExp(value) {

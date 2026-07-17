@@ -78,7 +78,14 @@ const COMMON_ORG_IDS = new Map([
   [204, "red-hair"],
   [271, "straw-hat"]
 ]);
+const OFFICIAL_PATCH_OVERRIDES = new Map([
+  ["wt100-52", {
+    sourceNameEn: "Ninjin",
+    sourceSearch: ["にんじん", "ニンジン", "Ninjin", "닌진"]
+  }]
+]);
 const WIKI_TITLE_OVERRIDES = new Map([
+  ["wt100-52", "Ninjin"],
   ["wt100-100", "Nako"],
   ["wt100-109", "Koze and Packy"],
   ["wt100-222", "Braham"],
@@ -274,9 +281,14 @@ for (const person of people) {
     faceId,
     sourceNameJa: official.name?.ja || person.name,
     sourceNameEn: normalizeOfficialEnglishName(official.name?.en || ""),
-    patch: buildOfficialPatch(official, wt100Options)
+    patch: {
+      ...buildOfficialPatch(official, wt100Options),
+      ...(OFFICIAL_PATCH_OVERRIDES.get(person.id) || {})
+    }
   });
 }
+
+const collidingOfficialEnglishNames = buildCollidingOfficialEnglishNames(officialEntries);
 
 if (!skipWiki) {
   const wikiCandidates = officialEntries
@@ -555,7 +567,7 @@ async function findWikiPageForOfficialCharacter(entry, person) {
   for (const title of unique(searchedCandidates)) {
     try {
       const info = await getPageInfo(title);
-      if (isExactSourceTitle(entry, title)) return { title, info };
+      if (isExactSourceTitle(entry, title, info)) return { title, info };
       if (isCharacterPageMatch(entry, info)) return { title, info };
     } catch {
       // Some WT100 English labels include aliases that do not map to real wiki pages.
@@ -778,6 +790,7 @@ function isCharacterPageMatch(entry, info) {
   const officialEn = normalizeName(firstFieldByPrefix(info.fields, "Official English Name"));
   const title = normalizeName(info.title);
   const jaMatches = info.japaneseNames.some((name) => normalizeJapanese(name) === expectedJa);
+  if (collidingOfficialEnglishNames.has(expectedEn)) return jaMatches;
   const enMatches = officialEn && safeNameMatch(expectedEn, officialEn);
   const titleMatches = title && safeNameMatch(expectedEn, title);
   return jaMatches || enMatches || (titleMatches && expectedEn.length > 4);
@@ -789,10 +802,29 @@ function safeNameMatch(expected, actual) {
   return Math.min(expected.length, actual.length) >= 5 && (expected.includes(actual) || actual.includes(expected));
 }
 
-function isExactSourceTitle(entry, title) {
+function isExactSourceTitle(entry, title, info) {
   const expected = normalizeName(entry.sourceNameEn);
   const actual = normalizeName(title);
-  return Boolean(expected && actual && expected === actual);
+  if (!expected || !actual || expected !== actual) return false;
+  if (!collidingOfficialEnglishNames.has(expected)) return true;
+  const expectedJa = normalizeJapanese(entry.sourceNameJa);
+  return Boolean(expectedJa && info.japaneseNames.some((name) => normalizeJapanese(name) === expectedJa));
+}
+
+function buildCollidingOfficialEnglishNames(entries) {
+  const japaneseNamesByEnglishName = new Map();
+  for (const entry of entries) {
+    const englishName = normalizeName(entry.sourceNameEn);
+    const japaneseName = normalizeJapanese(entry.sourceNameJa);
+    if (!englishName || !japaneseName) continue;
+    if (!japaneseNamesByEnglishName.has(englishName)) japaneseNamesByEnglishName.set(englishName, new Set());
+    japaneseNamesByEnglishName.get(englishName).add(japaneseName);
+  }
+  return new Set(
+    [...japaneseNamesByEnglishName.entries()]
+      .filter(([, japaneseNames]) => japaneseNames.size > 1)
+      .map(([englishName]) => englishName)
+  );
 }
 
 function firstFieldByPrefix(fields, prefix) {

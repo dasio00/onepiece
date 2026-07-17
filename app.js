@@ -93,6 +93,7 @@ let sortMode = "all";
 let personSortMode = "appearance";
 let personEditorSortMode = "appearance";
 let personEditorQuery = "";
+let techniqueEditorQuery = "";
 let episodeCharacterQuery = "";
 let statMetric = "height";
 let statDirection = "asc";
@@ -118,8 +119,10 @@ let compareRangeFilters = loadCompareRangeFilters();
 let activePersonPanel = "basic";
 const LIST_BATCH_SIZE = 160;
 const EDITOR_PEOPLE_BATCH_SIZE = 160;
+const EDITOR_TECHNIQUE_BATCH_SIZE = 160;
 let visibleListLimit = LIST_BATCH_SIZE;
 let editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
+let editorTechniqueLimit = EDITOR_TECHNIQUE_BATCH_SIZE;
 const quizCardCache = new Map();
 const listItemCache = new Map();
 let lookupIndexes = {};
@@ -219,6 +222,7 @@ editorContextTools.addEventListener("click", (event) => {
   if (!button) return;
   editorMode = button.dataset.editorTool;
   editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
+  editorTechniqueLimit = EDITOR_TECHNIQUE_BATCH_SIZE;
   if (editorMode !== viewEditorConfig[currentView]?.mode) editorSelectionId = "";
   renderEditorContext();
   renderEditor();
@@ -351,6 +355,7 @@ function openCurrentViewEditor() {
   editorMode = config.mode;
   editorSelectionId = currentEditorSelectionId(config.mode);
   editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
+  editorTechniqueLimit = EDITOR_TECHNIQUE_BATCH_SIZE;
   editorOpen = true;
   render();
 }
@@ -843,11 +848,22 @@ function localizedName(entry) {
   return preferredLocalizedNames(entry).find(hasRegisteredText) || "이름 미등록";
 }
 
+function hasHangulText(value) {
+  return /[가-힣]/.test(String(value || ""));
+}
+
+function hasJapaneseText(value) {
+  return /[ぁ-んァ-ヶ一-龯]/.test(String(value || ""));
+}
+
 function preferredLocalizedNames(entry) {
+  const legacyNameKo = hasHangulText(entry?.name) ? entry.name : "";
+  const legacyNameJa = hasJapaneseText(entry?.name) ? entry.name : "";
+  const legacyNameOther = !legacyNameKo && !legacyNameJa ? entry?.name : "";
   if (nameDisplayMode === "ja") {
-    return [entry?.nameJa, entry?.sourceNameJa, entry?.name, entry?.nameKo, entry?.nameEn, entry?.sourceNameEn];
+    return [entry?.nameJa, entry?.sourceNameJa, legacyNameJa, entry?.nameKo, legacyNameKo, entry?.nameEn, entry?.sourceNameEn, legacyNameOther];
   }
-  return [entry?.nameKo, entry?.name, entry?.nameJa, entry?.sourceNameJa, entry?.nameEn, entry?.sourceNameEn];
+  return [entry?.nameKo, legacyNameKo, entry?.nameJa, entry?.sourceNameJa, legacyNameJa, entry?.nameEn, entry?.sourceNameEn, legacyNameOther];
 }
 
 function personDisplayName(person) {
@@ -897,7 +913,20 @@ function personAnswerVariants(person) {
 }
 
 function localizedSearchText(entry) {
-  return [entry?.nameKo, entry?.name, entry?.nameJa, entry?.nameEn, entry?.descriptionKo, entry?.descriptionEn, entry?.description]
+  return [
+    entry?.nameKo,
+    entry?.name,
+    entry?.nameJa,
+    entry?.sourceNameJa,
+    entry?.reading,
+    entry?.originalNotation,
+    entry?.nameEn,
+    entry?.sourceNameEn,
+    entry?.sourceTitle,
+    entry?.descriptionKo,
+    entry?.descriptionEn,
+    entry?.description
+  ]
     .filter(hasRegisteredText)
     .join(" ");
 }
@@ -914,14 +943,27 @@ function episodeTitleSubtext(episode) {
 
 function renderLocalizedNameChips(entry) {
   const currentName = localizedName(entry);
+  const japaneseName = entry?.nameJa || entry?.originalNotation || "";
+  const reading = entry?.reading || "";
+  const japaneseWithReading = japaneseName && reading && !japaneseName.includes(reading)
+    ? `${japaneseName} (${reading})`
+    : japaneseName;
   return [
-    entry?.nameJa && entry.nameJa !== currentName ? `<span class="chip">일본어: ${escapeHtml(entry.nameJa)}</span>` : "",
-    entry?.nameEn && entry.nameEn !== currentName ? `<span class="chip">영어: ${escapeHtml(entry.nameEn)}</span>` : ""
+    japaneseWithReading && japaneseWithReading !== currentName ? `<span class="chip">일본어 원문: ${escapeHtml(japaneseWithReading)}</span>` : "",
+    !japaneseName && reading ? `<span class="chip">읽는 법: ${escapeHtml(reading)}</span>` : "",
+    entry?.nameEn && entry.nameEn !== currentName ? `<span class="chip">영어 위키명: ${escapeHtml(entry.nameEn)}</span>` : ""
   ].join("");
 }
 
 function localizedAnswerVariants(entry) {
-  return Array.from(new Set([entry?.nameKo, entry?.name, entry?.nameJa, entry?.nameEn].filter(hasRegisteredText)));
+  return Array.from(new Set([
+    entry?.nameKo,
+    entry?.name,
+    entry?.nameJa,
+    entry?.reading,
+    entry?.originalNotation,
+    entry?.nameEn
+  ].filter(hasRegisteredText)));
 }
 
 function episodeSummaryText(episode) {
@@ -946,6 +988,9 @@ function renderTechniqueDetail(technique) {
   const owner = findPerson(technique.ownerId);
   const usages = getTechniqueEpisodeUsages(technique.id);
   const totalCount = usages.reduce((sum, usage) => sum + usage.count, 0);
+  const sourceLink = technique.sourceUrl
+    ? `<p><a class="wiki-reference-link" href="${escapeAttribute(technique.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(technique.sourceTitle || technique.nameEn || "영어 위키 문서")}</a></p>`
+    : "";
   detail.innerHTML = `
     <h3>${escapeHtml(localizedName(technique))}</h3>
     <div class="meta">
@@ -955,6 +1000,7 @@ function renderTechniqueDetail(technique) {
       ${renderLocalizedNameChips(technique)}
     </div>
     <p class="note">${escapeHtml(technique.note || "")}</p>
+    ${sourceLink}
     <div class="episode-chip-grid">${renderTechniqueEpisodeUsageLinks(usages)}</div>
   `;
   bindEpisodeLinks();
@@ -2857,21 +2903,104 @@ function renderPersonForm(person = null) {
 }
 
 function renderTechniqueEditor() {
+  const listState = techniqueEditorListState();
   editorBody.innerHTML = editorShell(
     "newTechniqueButton",
     "새 기술 추가",
-    data.techniques.map((technique) => pickButton("technique", technique.id, localizedName(technique), findPerson(technique.ownerId)?.name || "사용자 미등록")).join(""),
+    `
+      <div class="edit-tools">
+        <label>검색<input id="techniqueEditorSearchInput" type="search" value="${escapeAttribute(techniqueEditorQuery)}" placeholder="한글·일본어·영어 기술명, 사용자, 메모 검색" aria-controls="techniqueEditorResults" /></label>
+        <span class="edit-count" id="techniqueEditorCount" aria-live="polite">${techniqueEditorCountText(listState)}</span>
+      </div>
+      <div class="edit-result-list" id="techniqueEditorResults">${techniqueEditorResultHtml(listState)}</div>
+    `,
     "techniqueFormWrap"
   );
   document.querySelector("#newTechniqueButton").addEventListener("click", () => {
     editorSelectionId = "";
     renderTechniqueForm();
   });
-  editorBody.querySelectorAll("[data-technique-id]").forEach((button) => button.addEventListener("click", () => {
+  document.querySelector("#techniqueEditorSearchInput").addEventListener("input", (event) => {
+    techniqueEditorQuery = event.target.value;
+    editorTechniqueLimit = EDITOR_TECHNIQUE_BATCH_SIZE;
+    updateTechniqueEditorResults();
+  });
+  editorBody.querySelector(".edit-list").addEventListener("click", (event) => {
+    const moreButton = event.target.closest("#moreTechniquesButton");
+    if (moreButton) {
+      editorTechniqueLimit += EDITOR_TECHNIQUE_BATCH_SIZE;
+      updateTechniqueEditorResults();
+      return;
+    }
+    const button = event.target.closest("[data-technique-id]");
+    if (!button) return;
     editorSelectionId = button.dataset.techniqueId;
     renderTechniqueForm(findTechnique(editorSelectionId));
-  }));
-  renderTechniqueForm(findTechnique(editorSelectionId) || data.techniques[0]);
+  });
+  renderTechniqueForm(findTechnique(editorSelectionId) || listState.techniques[0] || data.techniques[0]);
+}
+
+function techniqueEditorListState() {
+  const queryTerms = normalizeTechniqueEditorSearch(techniqueEditorQuery).split(/\s+/).filter(Boolean);
+  const techniques = data.techniques.filter((technique) => {
+    if (!queryTerms.length) return true;
+    const searchText = techniqueEditorSearchText(technique);
+    const compactSearchText = searchText.replace(/\s+/g, "");
+    return queryTerms.every((term) => searchText.includes(term) || compactSearchText.includes(term));
+  });
+  const visibleTechniques = techniques.slice(0, editorTechniqueLimit);
+  return {
+    techniques,
+    visibleTechniques,
+    hasMoreTechniques: visibleTechniques.length < techniques.length
+  };
+}
+
+function techniqueEditorCountText({ techniques, visibleTechniques, hasMoreTechniques }) {
+  const resultLabel = techniqueEditorQuery.trim() ? "검색 결과 " : "";
+  return `${resultLabel}${hasMoreTechniques ? `${visibleTechniques.length}/${techniques.length}개 표시` : `${techniques.length}개`}`;
+}
+
+function techniqueEditorResultHtml({ techniques, visibleTechniques, hasMoreTechniques }) {
+  const picks = visibleTechniques.map((technique) => {
+    const owner = findPerson(technique.ownerId || technique.user);
+    return pickButton("technique", technique.id, localizedName(technique), owner ? personDisplayName(owner) : "사용자 미등록");
+  }).join("");
+  const empty = picks ? "" : `<p class="picker-empty">검색 결과가 없습니다.</p>`;
+  const more = hasMoreTechniques
+    ? `<button class="list-more-button" id="moreTechniquesButton" type="button">더 보기 <span>${Math.min(techniques.length - visibleTechniques.length, EDITOR_TECHNIQUE_BATCH_SIZE)}개</span></button>`
+    : "";
+  return `${picks}${empty}${more}`;
+}
+
+function updateTechniqueEditorResults() {
+  const results = document.querySelector("#techniqueEditorResults");
+  const count = document.querySelector("#techniqueEditorCount");
+  if (!results || !count) return;
+  const listState = techniqueEditorListState();
+  results.innerHTML = techniqueEditorResultHtml(listState);
+  count.textContent = techniqueEditorCountText(listState);
+}
+
+function techniqueEditorSearchText(technique) {
+  const owner = findPerson(technique.ownerId || technique.user);
+  return normalizeTechniqueEditorSearch([
+    technique.nameKo,
+    technique.name,
+    technique.nameJa,
+    technique.sourceNameJa,
+    technique.nameEn,
+    technique.sourceNameEn,
+    technique.reading,
+    technique.originalNotation,
+    personNameSearchText(owner),
+    owner?.aliases,
+    technique.note
+  ].filter(hasRegisteredText).join(" "));
+}
+
+function normalizeTechniqueEditorSearch(text) {
+  return String(text || "").normalize("NFKC").toLocaleLowerCase("ko-KR");
 }
 
 function renderTechniqueForm(technique = null) {
@@ -2880,6 +3009,9 @@ function renderTechniqueForm(technique = null) {
   const draft = technique || {
     id: makeId("technique"),
     name: "",
+    nameKo: "",
+    nameJa: "",
+    nameEn: "",
     ownerId: "",
     user: "",
     target: "",
@@ -2888,20 +3020,30 @@ function renderTechniqueForm(technique = null) {
     orderInStory: "",
     reading: "",
     originalNotation: "",
+    sourceTitle: "",
+    sourceUrl: "",
     note: ""
   };
+  const formNameKo = draft.nameKo || (hasHangulText(draft.name) ? draft.name : "");
+  const formNameJa = draft.nameJa || (hasJapaneseText(draft.name) ? draft.name : "");
+  const formNameEn = draft.nameEn || (!hasHangulText(draft.name) && !hasJapaneseText(draft.name) ? draft.name : "");
   target.innerHTML = `
     <form id="techniqueForm">
       ${formHead(isNew ? "새 기술 추가" : "기술 수정", "deleteTechniqueButton", isNew)}
       ${field("id", "고유 ID", draft.id)}
-      ${field("name", "기술명", draft.name)}
+      <p class="muted">표시 우선순위는 한글명 → 일본어 원문(읽는 법) → 영어명입니다. 영어명과 위키 정보는 원문 연결에 사용됩니다.</p>
+      ${field("nameKo", "한글 기술명 (우선 표시)", formNameKo)}
+      ${field("nameJa", "일본어 원문·한자명", formNameJa)}
+      ${field("reading", "일본어 읽는 법", draft.reading || "")}
+      ${field("nameEn", "영어 기술명 (위키 연결)", formNameEn)}
+      ${field("originalNotation", "기타 원문 표기", draft.originalNotation || "")}
+      ${field("sourceTitle", "영어 위키 문서명", draft.sourceTitle || "")}
+      ${field("sourceUrl", "영어 위키 주소", draft.sourceUrl || "", "url")}
       <label>사용자<select name="ownerId"><option value="">미등록</option>${data.people.map((person) => option(person.id, personDisplayName(person), draft.ownerId)).join("")}</select></label>
       ${field("target", "대상", draft.target || "")}
       ${field("chapter", "등장 화수", draft.chapter || "", "number")}
       ${field("location", "장소", draft.location || "")}
       ${field("orderInStory", "작중 순서", draft.orderInStory || "", "number")}
-      ${field("reading", "읽는 법", draft.reading || "")}
-      ${field("originalNotation", "원문 표기", draft.originalNotation || "")}
       <label>메모<textarea name="note" rows="4">${escapeHtml(draft.note || "")}</textarea></label>
       <div class="form-actions"><button class="primary" type="submit">저장</button></div>
     </form>
@@ -2909,9 +3051,16 @@ function renderTechniqueForm(technique = null) {
   const form = document.querySelector("#techniqueForm");
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+    const nameKo = value(form, "nameKo");
+    const nameJa = value(form, "nameJa");
+    const nameEn = value(form, "nameEn");
     const next = {
+      ...draft,
       id: value(form, "id") || makeId("technique"),
-      name: value(form, "name"),
+      name: nameKo || nameJa || nameEn || value(form, "originalNotation") || draft.name || "",
+      nameKo,
+      nameJa,
+      nameEn,
       ownerId: value(form, "ownerId"),
       user: value(form, "ownerId"),
       target: value(form, "target"),
@@ -2920,6 +3069,8 @@ function renderTechniqueForm(technique = null) {
       orderInStory: Number(value(form, "orderInStory") || 0),
       reading: value(form, "reading"),
       originalNotation: value(form, "originalNotation"),
+      sourceTitle: value(form, "sourceTitle"),
+      sourceUrl: value(form, "sourceUrl"),
       note: value(form, "note")
     };
     upsert(data.techniques, draft.id, next);
@@ -5067,6 +5218,9 @@ function normalizeInPlace(target) {
     }
   });
   target.techniques = (target.techniques || []).map((technique, index) => ({
+    nameKo: "",
+    nameJa: "",
+    nameEn: "",
     user: "",
     target: "",
     chapter: 0,
@@ -5074,6 +5228,8 @@ function normalizeInPlace(target) {
     orderInStory: index + 1,
     reading: "",
     originalNotation: "",
+    sourceTitle: "",
+    sourceUrl: "",
     note: "",
     ...baseTechniquesById.get(technique.id),
     ...technique
@@ -5129,7 +5285,75 @@ function normalizeInPlace(target) {
   target.groups = target.groups || structuredClone(baseData.groups);
   target.bloodTypes = target.bloodTypes || structuredClone(baseData.bloodTypes);
   target.customQuizzes = (target.customQuizzes || []).map(normalizeCustomQuizDraft);
+  applyCharacterIdentityCorrections(target);
   return target;
+}
+
+function applyCharacterIdentityCorrections(target) {
+  const ninjinId = "wt100-52";
+  const carrotId = "wt100-896";
+  const ninjin = (target.people || []).find((person) => person.id === ninjinId);
+  const correctedNinjin = basePeopleById.get(ninjinId);
+  const hasLegacyCarrotData = ninjin && (
+    ninjin.wikiTitle === "Carrot"
+    || ninjin.nameKo === "캐럿"
+    || ninjin.sourceNameEn === "Carrot"
+    || (Number(ninjin.age) === 15 && ninjin.birthday === "5월 24일" && Number(ninjin.heightCm) === 161)
+  );
+  if (ninjin && correctedNinjin && hasLegacyCarrotData) {
+    [
+      "name", "nameKo", "nameEn", "sourceNameEn", "aliases", "job", "organization", "age", "birthday",
+      "heightCm", "heightHistory", "bloodType", "originRegion", "originCountry", "origin",
+      "likes", "description", "wikiTitle", "wikiUrl", "jobEn", "jobCategory", "jobDetail"
+    ].forEach((key) => {
+      ninjin[key] = structuredClone(correctedNinjin[key]);
+    });
+    ninjin.sourceSearch = structuredClone(correctedNinjin.sourceSearch);
+  }
+
+  const normalizeTitle = (value) => String(value || "").trim().toLowerCase();
+  const peerAppearanceType = (episode) => {
+    const peer = (episode.characterAppearances || []).find((appearance) => {
+      const title = normalizeTitle(appearance.sourceTitle);
+      return title === "piiman" || title === "tamanegi";
+    });
+    return peer?.appearanceType || "main";
+  };
+
+  (target.episodes || []).forEach((episode) => {
+    const sourceTitles = (episode.sourceCharacterTitles || []).map(normalizeTitle);
+    const appearances = (episode.characterAppearances || []).map((appearance) => {
+      const title = normalizeTitle(appearance.sourceTitle);
+      if (title === "carrot") return { ...appearance, characterId: carrotId };
+      if (title === "ninjin") return { ...appearance, characterId: ninjinId };
+      return appearance;
+    });
+    const hasNinjin = sourceTitles.includes("ninjin") || appearances.some((appearance) => normalizeTitle(appearance.sourceTitle) === "ninjin");
+    const hasCarrot = sourceTitles.includes("carrot") || appearances.some((appearance) => normalizeTitle(appearance.sourceTitle) === "carrot");
+    if (!hasNinjin && !hasCarrot) return;
+
+    if (hasNinjin && !appearances.some((appearance) => appearance.characterId === ninjinId)) {
+      appearances.push({
+        characterId: ninjinId,
+        sourceTitle: "Ninjin",
+        appearanceType: peerAppearanceType(episode)
+      });
+    }
+
+    const deduplicated = [];
+    const seenIds = new Set();
+    appearances.forEach((appearance) => {
+      if (!appearance.characterId || seenIds.has(appearance.characterId)) return;
+      seenIds.add(appearance.characterId);
+      deduplicated.push(appearance);
+    });
+    episode.characterAppearances = deduplicated;
+    const otherIds = (episode.characterIds || []).filter((id) => id !== ninjinId && id !== carrotId);
+    const correctedIds = deduplicated
+      .map((appearance) => appearance.characterId)
+      .filter((id) => id === ninjinId || id === carrotId);
+    episode.characterIds = [...new Set([...otherIds, ...correctedIds])];
+  });
 }
 
 function loadSavedData() {

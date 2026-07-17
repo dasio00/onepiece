@@ -11,7 +11,9 @@ const API = "https://onepiece.fandom.com/api.php";
 const START_MARKER = "/* WIKI_EPISODE_AUTO_START */";
 const END_MARKER = "/* WIKI_EPISODE_AUTO_END */";
 const PERSON_TITLE_OVERRIDES = new Map([
-  ["lordofthecoast", "wt100-20"]
+  ["lordofthecoast", "wt100-20"],
+  ["carrot", "wt100-896"],
+  ["ninjin", "wt100-52"]
 ]);
 
 const args = new Map(process.argv.slice(2).map((arg) => {

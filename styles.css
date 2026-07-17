@@ -990,6 +990,39 @@ textarea {
   overflow: hidden;
 }
 
+.view-edit-button {
+  flex: 0 0 auto;
+  min-width: 128px;
+  padding: 0 16px;
+}
+
+.editor-context-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.editor-context-bar .eyebrow {
+  margin-bottom: 4px;
+}
+
+.editor-context-bar h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.editor-context-actions,
+.editor-context-tools {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .editor-nav {
   display: flex;
   flex-wrap: wrap;
@@ -3243,7 +3276,7 @@ textarea:focus-visible {
     left: 10px;
     z-index: 30;
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 5px;
     border: 1px solid var(--line);
     border-radius: 16px;
@@ -3399,5 +3432,21 @@ textarea:focus-visible {
 @media (max-width: 860px) {
   .name-mode-toggle {
     min-width: 0;
+  }
+
+  .view-edit-button {
+    width: 100%;
+  }
+
+  .editor-context-bar,
+  .editor-context-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .editor-context-tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   }
 }

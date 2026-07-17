@@ -28,7 +28,6 @@
           <button class="tab" data-view="quiz" type="button">카드 퀴즈</button>
           <button class="tab" data-view="compare" type="button">비교 게임</button>
           <button class="tab" data-view="search" type="button">통합 검색</button>
-          <button class="tab edit-tab" data-view="editor" type="button">수정</button>
         </nav>
       </aside>
 
@@ -51,7 +50,6 @@
               <option value="quiz">카드 퀴즈</option>
               <option value="compare">비교 게임</option>
               <option value="search">통합 검색</option>
-              <option value="editor">수정</option>
             </select>
           </label>
           <label class="name-mode-toggle">
@@ -65,6 +63,7 @@
             <span>검색</span>
             <input id="searchInput" type="search" placeholder="이름, 조직, 열매, 직업 검색" />
           </label>
+          <button class="primary view-edit-button hidden" id="viewEditButton" type="button">현재 탭 수정</button>
         </header>
 
         <section class="workspace" id="browseWorkspace">
@@ -84,6 +83,10 @@
                 <option value="appearance">등장순</option>
                 <option value="id">고유 ID 순</option>
                 <option value="name">이름순</option>
+                <option value="height">키</option>
+                <option value="birthday">생일</option>
+                <option value="bounty">현상금</option>
+                <option value="age">나이</option>
               </select>
             </label>
             <label class="sort-controls hidden" id="personBrowseControls">
@@ -93,19 +96,10 @@
                 <option value="job">직업별</option>
                 <option value="bloodType">혈액형별</option>
                 <option value="origin">출신지별</option>
-                <option value="stats">수치 정렬</option>
               </select>
             </label>
             <div class="stat-sort-controls hidden" id="statSortControls">
-              <label>
-                <span>정렬 기준</span>
-                <select id="statMetricSelect">
-                  <option value="height">키</option>
-                  <option value="age">연령</option>
-                  <option value="bounty">현상금</option>
-                  <option value="birthday">생일</option>
-                </select>
-              </label>
+              <span id="statSortLabel">키 정렬 방향</span>
               <div class="stat-direction-controls">
                 <button class="range active" type="button" data-stat-direction="asc">오름차순</button>
                 <button class="range" type="button" data-stat-direction="desc">내림차순</button>
@@ -123,17 +117,16 @@
           </section>
         </section>
 
-        <section class="editor hidden" id="editorWorkspace" aria-label="수정 화면">
-          <div class="editor-nav">
-            <button class="editor-mode active" data-editor-mode="people" type="button">인물 수정</button>
-            <button class="editor-mode" data-editor-mode="episodes" type="button">에피소드 수정</button>
-            <button class="editor-mode" data-editor-mode="techniques" type="button">기술 수정</button>
-            <button class="editor-mode" data-editor-mode="fruits" type="button">열매 수정</button>
-            <button class="editor-mode" data-editor-mode="organizations" type="button">조직 수정</button>
-            <button class="editor-mode" data-editor-mode="origins" type="button">출신지 수정</button>
-            <button class="editor-mode" data-editor-mode="groups" type="button">그룹 수정</button>
-            <button class="editor-mode" data-editor-mode="customQuizzes" type="button">문제 만들기</button>
-            <button class="editor-mode" data-editor-mode="data" type="button">데이터 관리</button>
+        <section class="editor hidden" id="editorWorkspace" aria-label="현재 탭 수정 화면">
+          <div class="editor-context-bar">
+            <div>
+              <p class="eyebrow">현재 탭에서 바로 수정</p>
+              <h3 id="editorContextTitle">데이터 수정</h3>
+            </div>
+            <div class="editor-context-actions">
+              <div class="editor-context-tools" id="editorContextTools"></div>
+              <button class="sub-card" id="closeEditorButton" type="button">목록으로 돌아가기</button>
+            </div>
           </div>
           <div class="editor-body" id="editorBody"></div>
         </section>
@@ -146,7 +139,6 @@
       <button class="bottom-nav-button" data-mobile-nav="techniques" type="button"><span>기술</span></button>
       <button class="bottom-nav-button" data-mobile-nav="search" type="button"><span>검색</span></button>
       <button class="bottom-nav-button" data-mobile-nav="quiz" type="button"><span>퀴즈</span></button>
-      <button class="bottom-nav-button edit" data-mobile-nav="editor" type="button"><span>수정</span></button>
     </nav>
 
     <script src="./data.js"></script>

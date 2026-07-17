@@ -37,8 +37,30 @@ const viewConfig = {
   timelines: { label: "연표", title: "인물별 연표 보기", listTitle: "연표 인물" },
   quiz: { label: "카드 퀴즈", title: "카테고리별 랜덤 카드 퀴즈", listTitle: "퀴즈 카테고리" },
   compare: { label: "비교 게임", title: "큰 쪽을 맞히는 서바이벌 게임", listTitle: "비교 항목" },
-  search: { label: "통합 검색", title: "전체 데이터 빠르게 찾기", listTitle: "검색 결과" },
-  editor: { label: "수정", title: "웹에서 바로 데이터 수정", listTitle: "수정" }
+  search: { label: "통합 검색", title: "전체 데이터 빠르게 찾기", listTitle: "검색 결과" }
+};
+
+const viewEditorConfig = {
+  techniques: { mode: "techniques", title: "기술 수정", buttonLabel: "기술 수정" },
+  people: { mode: "people", title: "인물 수정", buttonLabel: "인물 수정", extraTools: ["origins"] },
+  episodes: { mode: "episodes", title: "에피소드 수정", buttonLabel: "에피소드 수정" },
+  organizations: { mode: "organizations", title: "조직 수정", buttonLabel: "조직 수정" },
+  devilFruits: { mode: "fruits", title: "악마의 열매 수정", buttonLabel: "열매 수정" },
+  groups: { mode: "groups", title: "그룹 수정", buttonLabel: "그룹 수정" },
+  timelines: { mode: "people", title: "인물 연표 수정", buttonLabel: "연표 수정" },
+  quiz: { mode: "customQuizzes", title: "퀴즈 문제 만들기", buttonLabel: "문제 만들기" }
+};
+
+const editorToolLabels = {
+  people: "인물 수정",
+  episodes: "에피소드 수정",
+  techniques: "기술 수정",
+  fruits: "열매 수정",
+  organizations: "조직 수정",
+  origins: "출신지 관리",
+  groups: "그룹 수정",
+  customQuizzes: "문제 만들기",
+  data: "데이터 관리"
 };
 
 const quizCategoryMeta = [
@@ -69,6 +91,7 @@ let currentView = "techniques";
 let activeId = "";
 let sortMode = "all";
 let personSortMode = "appearance";
+let personEditorSortMode = "appearance";
 let personEditorQuery = "";
 let episodeCharacterQuery = "";
 let statMetric = "height";
@@ -76,6 +99,8 @@ let statDirection = "asc";
 let personBrowseMode = "all";
 let nameDisplayMode = loadNameDisplayMode();
 let editorMode = "people";
+let editorOpen = false;
+let editorSelectionId = "";
 let activeFruitId = "";
 let activeFruitGroupKey = "all";
 let activeSubOrgId = "";
@@ -117,7 +142,7 @@ const personSortSelect = document.querySelector("#personSortSelect");
 const personBrowseControls = document.querySelector("#personBrowseControls");
 const personBrowseSelect = document.querySelector("#personBrowseSelect");
 const statSortControls = document.querySelector("#statSortControls");
-const statMetricSelect = document.querySelector("#statMetricSelect");
+const statSortLabel = document.querySelector("#statSortLabel");
 const statDirectionButtons = document.querySelectorAll("[data-stat-direction]");
 const mobileViewSelect = document.querySelector("#mobileViewSelect");
 const nameModeSelect = document.querySelector("#nameModeSelect");
@@ -125,7 +150,10 @@ const mobileNavButtons = document.querySelectorAll("[data-mobile-nav]");
 const browseWorkspace = document.querySelector("#browseWorkspace");
 const editorWorkspace = document.querySelector("#editorWorkspace");
 const editorBody = document.querySelector("#editorBody");
-const editorModeButtons = document.querySelectorAll(".editor-mode");
+const viewEditButton = document.querySelector("#viewEditButton");
+const closeEditorButton = document.querySelector("#closeEditorButton");
+const editorContextTitle = document.querySelector("#editorContextTitle");
+const editorContextTools = document.querySelector("#editorContextTools");
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => switchView(tab.dataset.view));
@@ -156,6 +184,7 @@ rangeButtons.forEach((button) => {
 
 personSortSelect.addEventListener("change", () => {
   personSortMode = personSortSelect.value;
+  if (isPersonStatSort()) statMetric = personSortMode;
   activeId = "";
   resetVisibleListLimit();
   render();
@@ -163,13 +192,6 @@ personSortSelect.addEventListener("change", () => {
 
 personBrowseSelect.addEventListener("change", () => {
   personBrowseMode = personBrowseSelect.value;
-  activeId = "";
-  resetVisibleListLimit();
-  render();
-});
-
-statMetricSelect.addEventListener("change", () => {
-  statMetric = statMetricSelect.value;
   activeId = "";
   resetVisibleListLimit();
   render();
@@ -184,13 +206,22 @@ statDirectionButtons.forEach((button) => {
   });
 });
 
-editorModeButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    editorMode = button.dataset.editorMode;
-    editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
-    editorModeButtons.forEach((item) => item.classList.toggle("active", item === button));
-    renderEditor();
-  });
+viewEditButton.addEventListener("click", openCurrentViewEditor);
+
+closeEditorButton.addEventListener("click", () => {
+  editorOpen = false;
+  editorSelectionId = "";
+  render();
+});
+
+editorContextTools.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-editor-tool]");
+  if (!button) return;
+  editorMode = button.dataset.editorTool;
+  editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
+  if (editorMode !== viewEditorConfig[currentView]?.mode) editorSelectionId = "";
+  renderEditorContext();
+  renderEditor();
 });
 
 searchInput.addEventListener("input", () => {
@@ -204,6 +235,8 @@ searchInput.addEventListener("input", () => {
 
 function switchView(view) {
   currentView = view;
+  editorOpen = false;
+  editorSelectionId = "";
   activeId = "";
   activeFruitId = "";
   activeSubOrgId = "";
@@ -229,11 +262,14 @@ function isGameLikeView() {
 
 function render() {
   const config = viewConfig[currentView];
+  const editorConfig = viewEditorConfig[currentView];
   syncActiveNavigation();
   viewLabel.textContent = config.label;
   viewTitle.textContent = config.title;
+  viewEditButton.classList.toggle("hidden", !editorConfig || editorOpen);
+  if (editorConfig) viewEditButton.textContent = editorConfig.buttonLabel;
 
-  const isEditor = currentView === "editor";
+  const isEditor = editorOpen && Boolean(editorConfig);
   const listOnly = isListOnlyView();
   browseWorkspace.classList.toggle("hidden", isEditor);
   browseWorkspace.classList.toggle("list-only-workspace", listOnly);
@@ -246,6 +282,7 @@ function render() {
     : "이름, 조직, 열매, 직업 검색";
 
   if (isEditor) {
+    renderEditorContext();
     renderEditor();
     return;
   }
@@ -257,8 +294,8 @@ function render() {
   personBrowseSelect.value = personBrowseMode;
   personSortControls.classList.toggle("hidden", currentView !== "people" || personBrowseMode !== "all");
   personSortSelect.value = personSortMode;
-  statSortControls.classList.toggle("hidden", currentView !== "people" || personBrowseMode !== "stats");
-  statMetricSelect.value = statMetric;
+  statSortControls.classList.toggle("hidden", currentView !== "people" || personBrowseMode !== "all" || !isPersonStatSort());
+  statSortLabel.textContent = `${personStatMetricLabel(statMetric)} 정렬 방향`;
   statDirectionButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.statDirection === statDirection);
   });
@@ -308,6 +345,38 @@ function resetVisibleListLimit() {
   visibleListLimit = LIST_BATCH_SIZE;
 }
 
+function openCurrentViewEditor() {
+  const config = viewEditorConfig[currentView];
+  if (!config) return;
+  editorMode = config.mode;
+  editorSelectionId = currentEditorSelectionId(config.mode);
+  editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
+  editorOpen = true;
+  render();
+}
+
+function currentEditorSelectionId(mode) {
+  if (mode === "people") return findPerson(activeId) ? activeId : "";
+  if (mode === "episodes") return findEpisode(activeEpisodeId || activeId) ? (activeEpisodeId || activeId) : "";
+  if (mode === "techniques") return findTechnique(activeId) ? activeId : "";
+  if (mode === "fruits") return findFruit(activeFruitId || activeId) ? (activeFruitId || activeId) : "";
+  if (mode === "groups") return findGroup(activeId) ? activeId : "";
+  if (mode === "origins") return findOriginCountry(activeSubOrgId) ? activeSubOrgId : "";
+  return "";
+}
+
+function renderEditorContext() {
+  const config = viewEditorConfig[currentView];
+  if (!config) return;
+  const tools = [config.mode, ...(config.extraTools || []), "data"];
+  editorContextTitle.textContent = editorMode === config.mode ? config.title : (editorToolLabels[editorMode] || config.title);
+  editorContextTools.innerHTML = tools.map((mode) => `
+    <button class="editor-mode ${editorMode === mode ? "active" : ""}" data-editor-tool="${escapeAttribute(mode)}" type="button">
+      ${escapeHtml(mode === config.mode ? config.title : (editorToolLabels[mode] || mode))}
+    </button>
+  `).join("");
+}
+
 function getCachedItems(query = "") {
   if (currentView === "compare") return getItems(query);
   const key = [
@@ -316,8 +385,8 @@ function getCachedItems(query = "") {
     currentView === "people" ? personSortMode : "",
     currentView === "people" ? personBrowseMode : "",
     currentView === "people" ? sortMode : "",
-    currentView === "people" && personBrowseMode === "stats" ? statMetric : "",
-    currentView === "people" && personBrowseMode === "stats" ? statDirection : ""
+    currentView === "people" && personBrowseMode === "all" && isPersonStatSort() ? statMetric : "",
+    currentView === "people" && personBrowseMode === "all" && isPersonStatSort() ? statDirection : ""
   ].join("|");
   if (!listItemCache.has(key)) listItemCache.set(key, getItems(query));
   return listItemCache.get(key);
@@ -382,13 +451,26 @@ function getPeopleBrowseItems() {
       );
     });
   }
-  if (personBrowseMode === "stats") {
+  if (personBrowseMode === "all" && isPersonStatSort()) {
     return sortedStatPeople().map((person) => ({
       ...personToItem(person),
       title: `${personDisplayName(person)} · ${statValueLabel(person)}`
     }));
   }
   return sortedPeople(personSortMode).map(personToItem);
+}
+
+function isPersonStatSort(mode = personSortMode) {
+  return ["height", "birthday", "bounty", "age"].includes(mode);
+}
+
+function personStatMetricLabel(metric) {
+  return {
+    height: "키",
+    birthday: "생일",
+    bounty: "현상금",
+    age: "나이"
+  }[metric] || "수치";
 }
 
 function renderListItem(listItem) {
@@ -1448,7 +1530,7 @@ function renderTimelineDetail(person) {
   if (person.mode === "combined") return renderCombinedTimelineDetail();
   detail.innerHTML = `
     <h3>${escapeHtml(personDisplayName(person))} 연표</h3>
-    <p class="note">수정 탭의 인물 수정에서 년도와 내용을 추가할 수 있습니다.</p>
+    <p class="note">상단의 연표 수정 버튼에서 년도와 내용을 바로 추가할 수 있습니다.</p>
     ${renderTimelineBlock(person.timeline)}
   `;
 }
@@ -2538,11 +2620,17 @@ function renderEpisodeEditor() {
       .join(""),
     "episodeFormWrap"
   );
-  document.querySelector("#newEpisodeButton").addEventListener("click", () => renderEpisodeForm());
-  editorBody.querySelectorAll("[data-episode-id]").forEach((button) => {
-    button.addEventListener("click", () => renderEpisodeForm(findEpisode(button.dataset.episodeId)));
+  document.querySelector("#newEpisodeButton").addEventListener("click", () => {
+    editorSelectionId = "";
+    renderEpisodeForm();
   });
-  renderEpisodeForm(data.episodes[0]);
+  editorBody.querySelectorAll("[data-episode-id]").forEach((button) => {
+    button.addEventListener("click", () => {
+      editorSelectionId = button.dataset.episodeId;
+      renderEpisodeForm(findEpisode(editorSelectionId));
+    });
+  });
+  renderEpisodeForm(findEpisode(editorSelectionId) || data.episodes[0]);
 }
 
 function renderEpisodeForm(episode = null) {
@@ -2575,7 +2663,7 @@ function renderEpisodeForm(episode = null) {
       ...techniqueAppearances.flatMap(episodeTechniqueCharacterIds)
     ]);
     const number = Number(value(form, "number") || 1);
-    upsert(data.episodes, draft.id, {
+    const next = {
       id: value(form, "id") || makeId("episode"),
       volume: Number(value(form, "volume") || inferEpisodeVolume(number)),
       number,
@@ -2585,19 +2673,25 @@ function renderEpisodeForm(episode = null) {
       characterAppearances: syncEpisodeCharacterAppearances(draft, characterIds),
       techniqueAppearances,
       techniqueIds: techniqueIdsFromAppearanceRows(techniqueAppearances)
-    });
+    };
+    upsert(data.episodes, draft.id, next);
+    editorSelectionId = next.id;
+    activeId = searchInput.value.trim() ? next.id : String(next.volume);
+    activeEpisodeId = next.id;
     saveData();
     renderEpisodeEditor();
   });
   document.querySelector("#deleteEpisodeButton")?.addEventListener("click", () => {
     data.episodes = data.episodes.filter((item) => item.id !== draft.id);
+    if (editorSelectionId === draft.id) editorSelectionId = "";
+    if (activeEpisodeId === draft.id) activeEpisodeId = "";
     saveData();
     renderEpisodeEditor();
   });
 }
 
 function renderPeopleEditor() {
-  const people = sortedPeople(personSortMode).filter((person) => {
+  const people = sortedPeople(personEditorSortMode).filter((person) => {
     const query = personEditorQuery.trim().toLowerCase();
     if (!query) return true;
     return personToItem(person).searchText.includes(query);
@@ -2611,16 +2705,16 @@ function renderPeopleEditor() {
       <div class="edit-tools">
         <label>검색<input id="personEditorSearchInput" type="search" value="${escapeAttribute(personEditorQuery)}" placeholder="이름, 조직, 직업 검색" /></label>
         <label>정렬<select id="personEditorSortSelect">
-          <option value="appearance" ${personSortMode === "appearance" ? "selected" : ""}>등장순</option>
-          <option value="id" ${personSortMode === "id" ? "selected" : ""}>고유 ID 순</option>
-          <option value="name" ${personSortMode === "name" ? "selected" : ""}>이름순</option>
-          <option value="heightAsc" ${personSortMode === "heightAsc" ? "selected" : ""}>키 낮은 순</option>
-          <option value="heightDesc" ${personSortMode === "heightDesc" ? "selected" : ""}>키 높은 순</option>
-          <option value="ageAsc" ${personSortMode === "ageAsc" ? "selected" : ""}>나이 낮은 순</option>
-          <option value="ageDesc" ${personSortMode === "ageDesc" ? "selected" : ""}>나이 높은 순</option>
-          <option value="bountyAsc" ${personSortMode === "bountyAsc" ? "selected" : ""}>현상금 낮은 순</option>
-          <option value="bountyDesc" ${personSortMode === "bountyDesc" ? "selected" : ""}>현상금 높은 순</option>
-          <option value="birthday" ${personSortMode === "birthday" ? "selected" : ""}>생일순</option>
+          <option value="appearance" ${personEditorSortMode === "appearance" ? "selected" : ""}>등장순</option>
+          <option value="id" ${personEditorSortMode === "id" ? "selected" : ""}>고유 ID 순</option>
+          <option value="name" ${personEditorSortMode === "name" ? "selected" : ""}>이름순</option>
+          <option value="heightAsc" ${personEditorSortMode === "heightAsc" ? "selected" : ""}>키 낮은 순</option>
+          <option value="heightDesc" ${personEditorSortMode === "heightDesc" ? "selected" : ""}>키 높은 순</option>
+          <option value="ageAsc" ${personEditorSortMode === "ageAsc" ? "selected" : ""}>나이 낮은 순</option>
+          <option value="ageDesc" ${personEditorSortMode === "ageDesc" ? "selected" : ""}>나이 높은 순</option>
+          <option value="bountyAsc" ${personEditorSortMode === "bountyAsc" ? "selected" : ""}>현상금 낮은 순</option>
+          <option value="bountyDesc" ${personEditorSortMode === "bountyDesc" ? "selected" : ""}>현상금 높은 순</option>
+          <option value="birthday" ${personEditorSortMode === "birthday" ? "selected" : ""}>생일순</option>
         </select></label>
         <span class="edit-count">${hasMorePeople ? `${visiblePeople.length}/${people.length}명 표시` : `${people.length}명`}</span>
       </div>
@@ -2629,7 +2723,10 @@ function renderPeopleEditor() {
     `,
     "personFormWrap"
   );
-  document.querySelector("#newPersonButton").addEventListener("click", () => renderPersonForm());
+  document.querySelector("#newPersonButton").addEventListener("click", () => {
+    editorSelectionId = "";
+    renderPersonForm();
+  });
   document.querySelector("#personEditorSearchInput").addEventListener("input", (event) => {
     personEditorQuery = event.target.value;
     editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
@@ -2640,7 +2737,7 @@ function renderPeopleEditor() {
     input.setSelectionRange(cursor, cursor);
   });
   document.querySelector("#personEditorSortSelect").addEventListener("change", (event) => {
-    personSortMode = event.target.value;
+    personEditorSortMode = event.target.value;
     editorPeopleLimit = EDITOR_PEOPLE_BATCH_SIZE;
     renderPeopleEditor();
   });
@@ -2648,8 +2745,11 @@ function renderPeopleEditor() {
     editorPeopleLimit += EDITOR_PEOPLE_BATCH_SIZE;
     renderPeopleEditor();
   });
-  editorBody.querySelectorAll("[data-person-id]").forEach((button) => button.addEventListener("click", () => renderPersonForm(findPerson(button.dataset.personId))));
-  renderPersonForm(people[0] || data.people[0]);
+  editorBody.querySelectorAll("[data-person-id]").forEach((button) => button.addEventListener("click", () => {
+    editorSelectionId = button.dataset.personId;
+    renderPersonForm(findPerson(editorSelectionId));
+  }));
+  renderPersonForm(findPerson(editorSelectionId) || people[0] || data.people[0]);
 }
 
 function renderPersonForm(person = null) {
@@ -2736,6 +2836,8 @@ function renderPersonForm(person = null) {
     event.preventDefault();
     const next = formToPerson(form, draft);
     upsert(data.people, draft.id, next);
+    editorSelectionId = next.id;
+    activeId = next.id;
     saveData();
     renderPeopleEditor();
   });
@@ -2747,6 +2849,8 @@ function renderPersonForm(person = null) {
       fruit.previousUserIds = fruit.previousUserIds.filter((id) => id !== draft.id);
     });
     data.groups.forEach((group) => { group.memberIds = group.memberIds.filter((id) => id !== draft.id); });
+    if (editorSelectionId === draft.id) editorSelectionId = "";
+    if (activeId === draft.id) activeId = "";
     saveData();
     renderPeopleEditor();
   });
@@ -2759,9 +2863,15 @@ function renderTechniqueEditor() {
     data.techniques.map((technique) => pickButton("technique", technique.id, localizedName(technique), findPerson(technique.ownerId)?.name || "사용자 미등록")).join(""),
     "techniqueFormWrap"
   );
-  document.querySelector("#newTechniqueButton").addEventListener("click", () => renderTechniqueForm());
-  editorBody.querySelectorAll("[data-technique-id]").forEach((button) => button.addEventListener("click", () => renderTechniqueForm(findTechnique(button.dataset.techniqueId))));
-  renderTechniqueForm(data.techniques[0]);
+  document.querySelector("#newTechniqueButton").addEventListener("click", () => {
+    editorSelectionId = "";
+    renderTechniqueForm();
+  });
+  editorBody.querySelectorAll("[data-technique-id]").forEach((button) => button.addEventListener("click", () => {
+    editorSelectionId = button.dataset.techniqueId;
+    renderTechniqueForm(findTechnique(editorSelectionId));
+  }));
+  renderTechniqueForm(findTechnique(editorSelectionId) || data.techniques[0]);
 }
 
 function renderTechniqueForm(technique = null) {
@@ -2799,7 +2909,7 @@ function renderTechniqueForm(technique = null) {
   const form = document.querySelector("#techniqueForm");
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    upsert(data.techniques, draft.id, {
+    const next = {
       id: value(form, "id") || makeId("technique"),
       name: value(form, "name"),
       ownerId: value(form, "ownerId"),
@@ -2811,12 +2921,17 @@ function renderTechniqueForm(technique = null) {
       reading: value(form, "reading"),
       originalNotation: value(form, "originalNotation"),
       note: value(form, "note")
-    });
+    };
+    upsert(data.techniques, draft.id, next);
+    editorSelectionId = next.id;
+    activeId = next.id;
     saveData();
     renderTechniqueEditor();
   });
   document.querySelector("#deleteTechniqueButton")?.addEventListener("click", () => {
     data.techniques = data.techniques.filter((item) => item.id !== draft.id);
+    if (editorSelectionId === draft.id) editorSelectionId = "";
+    if (activeId === draft.id) activeId = "";
     saveData();
     renderTechniqueEditor();
   });
@@ -2829,9 +2944,15 @@ function renderFruitEditor() {
     data.devilFruits.map((fruit) => pickButton("fruit", fruit.id, localizedName(fruit), devilFruitTypeName(fruit.type))).join(""),
     "fruitFormWrap"
   );
-  document.querySelector("#newFruitButton").addEventListener("click", () => renderFruitForm());
-  editorBody.querySelectorAll("[data-fruit-id]").forEach((button) => button.addEventListener("click", () => renderFruitForm(findFruit(button.dataset.fruitId))));
-  renderFruitForm(data.devilFruits[0]);
+  document.querySelector("#newFruitButton").addEventListener("click", () => {
+    editorSelectionId = "";
+    renderFruitForm();
+  });
+  editorBody.querySelectorAll("[data-fruit-id]").forEach((button) => button.addEventListener("click", () => {
+    editorSelectionId = button.dataset.fruitId;
+    renderFruitForm(findFruit(editorSelectionId));
+  }));
+  renderFruitForm(findFruit(editorSelectionId) || data.devilFruits[0]);
 }
 
 function renderFruitForm(fruit = null) {
@@ -2862,7 +2983,7 @@ function renderFruitForm(fruit = null) {
   const form = document.querySelector("#fruitForm");
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    upsert(data.devilFruits, draft.id, {
+    const next = {
       id: value(form, "id") || makeId("fruit"),
       name: value(form, "name"),
       type: value(form, "type"),
@@ -2872,13 +2993,20 @@ function renderFruitForm(fruit = null) {
       currentUserId: value(form, "currentUserId"),
       previousUserIds: checkedValues(form, "previousUserIds"),
       description: value(form, "description")
-    });
+    };
+    upsert(data.devilFruits, draft.id, next);
+    editorSelectionId = next.id;
+    activeId = next.type;
+    activeFruitId = next.id;
+    activeFruitGroupKey = "all";
     saveData();
     renderFruitEditor();
   });
   document.querySelector("#deleteFruitButton")?.addEventListener("click", () => {
     data.devilFruits = data.devilFruits.filter((item) => item.id !== draft.id);
     data.people.forEach((person) => { if (person.devilFruitId === draft.id) person.devilFruitId = ""; });
+    if (editorSelectionId === draft.id) editorSelectionId = "";
+    if (activeFruitId === draft.id) activeFruitId = "";
     saveData();
     renderFruitEditor();
   });
@@ -2926,11 +3054,17 @@ function renderOriginEditor() {
     `,
     "originCountryFormWrap"
   );
-  document.querySelector("#newOriginCountryButton").addEventListener("click", () => renderOriginCountryForm());
-  editorBody.querySelectorAll("[data-origin-country-id]").forEach((button) => {
-    button.addEventListener("click", () => renderOriginCountryForm(findOriginCountry(button.dataset.originCountryId)));
+  document.querySelector("#newOriginCountryButton").addEventListener("click", () => {
+    editorSelectionId = "";
+    renderOriginCountryForm();
   });
-  renderOriginCountryForm(countries[0]);
+  editorBody.querySelectorAll("[data-origin-country-id]").forEach((button) => {
+    button.addEventListener("click", () => {
+      editorSelectionId = button.dataset.originCountryId;
+      renderOriginCountryForm(findOriginCountry(editorSelectionId));
+    });
+  });
+  renderOriginCountryForm(findOriginCountry(editorSelectionId) || countries[0]);
 }
 
 function renderOriginCountryForm(country = null) {
@@ -2963,6 +3097,7 @@ function renderOriginCountryForm(country = null) {
         person.origin = `${originRegionName(next.regionId)} / ${next.name}`;
       }
     });
+    editorSelectionId = next.id;
     saveData();
     renderOriginEditor();
   });
@@ -2974,6 +3109,7 @@ function renderOriginCountryForm(country = null) {
         person.origin = originRegionName(person.originRegion);
       }
     });
+    if (editorSelectionId === draft.id) editorSelectionId = "";
     saveData();
     renderOriginEditor();
   });
@@ -2986,9 +3122,15 @@ function renderGroupEditor() {
     data.groups.map((group) => pickButton("group", group.id, group.name, `멤버 ${group.memberIds.length}명`)).join(""),
     "groupFormWrap"
   );
-  document.querySelector("#newGroupButton").addEventListener("click", () => renderGroupForm());
-  editorBody.querySelectorAll("[data-group-id]").forEach((button) => button.addEventListener("click", () => renderGroupForm(findGroup(button.dataset.groupId))));
-  renderGroupForm(data.groups[0]);
+  document.querySelector("#newGroupButton").addEventListener("click", () => {
+    editorSelectionId = "";
+    renderGroupForm();
+  });
+  editorBody.querySelectorAll("[data-group-id]").forEach((button) => button.addEventListener("click", () => {
+    editorSelectionId = button.dataset.groupId;
+    renderGroupForm(findGroup(editorSelectionId));
+  }));
+  renderGroupForm(findGroup(editorSelectionId) || data.groups[0]);
 }
 
 function renderGroupForm(group = null) {
@@ -3008,12 +3150,17 @@ function renderGroupForm(group = null) {
   const form = document.querySelector("#groupForm");
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    upsert(data.groups, draft.id, { id: value(form, "id") || makeId("group"), name: value(form, "name"), memberIds: checkedValues(form, "memberIds"), description: value(form, "description") });
+    const next = { id: value(form, "id") || makeId("group"), name: value(form, "name"), memberIds: checkedValues(form, "memberIds"), description: value(form, "description") };
+    upsert(data.groups, draft.id, next);
+    editorSelectionId = next.id;
+    activeId = next.id;
     saveData();
     renderGroupEditor();
   });
   document.querySelector("#deleteGroupButton")?.addEventListener("click", () => {
     data.groups = data.groups.filter((item) => item.id !== draft.id);
+    if (editorSelectionId === draft.id) editorSelectionId = "";
+    if (activeId === draft.id) activeId = "";
     saveData();
     renderGroupEditor();
   });
@@ -3030,11 +3177,17 @@ function renderCustomQuizEditor() {
     `,
     "customQuizFormWrap"
   );
-  document.querySelector("#newCustomQuizButton").addEventListener("click", () => renderCustomQuizForm());
-  editorBody.querySelectorAll("[data-custom-quiz-id]").forEach((button) => {
-    button.addEventListener("click", () => renderCustomQuizForm(findCustomQuiz(button.dataset.customQuizId)));
+  document.querySelector("#newCustomQuizButton").addEventListener("click", () => {
+    editorSelectionId = "";
+    renderCustomQuizForm();
   });
-  renderCustomQuizForm(data.customQuizzes[0]);
+  editorBody.querySelectorAll("[data-custom-quiz-id]").forEach((button) => {
+    button.addEventListener("click", () => {
+      editorSelectionId = button.dataset.customQuizId;
+      renderCustomQuizForm(findCustomQuiz(editorSelectionId));
+    });
+  });
+  renderCustomQuizForm(findCustomQuiz(editorSelectionId) || data.customQuizzes[0]);
 }
 
 function renderCustomQuizForm(quiz = null, settings = {}) {
@@ -3115,12 +3268,14 @@ function renderCustomQuizForm(quiz = null, settings = {}) {
       return;
     }
     upsert(data.customQuizzes, quiz?.id || next.id, next);
+    editorSelectionId = next.id;
     saveData();
     quizCardCache.clear();
     (settings.onSaved || renderCustomQuizEditor)(next);
   });
   target.querySelector("#deleteCustomQuizButton")?.addEventListener("click", () => {
     data.customQuizzes = data.customQuizzes.filter((item) => item.id !== quiz.id);
+    if (editorSelectionId === quiz.id) editorSelectionId = "";
     saveData();
     quizCardCache.clear();
     (settings.onDeleted || renderCustomQuizEditor)();
@@ -4037,7 +4192,8 @@ function sortedStatPeople() {
     if (aMissing && bMissing) return personDisplayName(a).localeCompare(personDisplayName(b), "ko");
     if (aMissing) return 1;
     if (bMissing) return -1;
-    return statDirection === "desc" ? bValue - aValue : aValue - bValue;
+    const difference = statDirection === "desc" ? bValue - aValue : aValue - bValue;
+    return difference || personDisplayName(a).localeCompare(personDisplayName(b), "ko");
   });
 }
 
@@ -4050,10 +4206,12 @@ function statSortValue(person) {
 }
 
 function statValueLabel(person) {
+  const sortValue = statSortValue(person);
+  if (!Number.isFinite(sortValue) || sortValue <= 0) return "미등록";
   if (statMetric === "height") return `${currentHeight(person)}cm`;
-  if (statMetric === "age") return `${person.age || 0}세`;
+  if (statMetric === "age") return `${person.age}세`;
   if (statMetric === "bounty") return formatBounty(currentBounty(person));
-  if (statMetric === "birthday") return person.birthday || "미등록";
+  if (statMetric === "birthday") return person.birthday;
   return "미등록";
 }
 
@@ -4767,8 +4925,10 @@ function parseBirthday(birthday = "") {
 
 function birthdaySortValue(person) {
   const { month, day } = parseBirthday(person.birthday);
-  if (!month || !day) return Infinity;
-  return Number(month) * 100 + Number(day);
+  const monthNumber = Number(month);
+  const dayNumber = Number(day);
+  if (monthNumber < 1 || monthNumber > 12 || dayNumber < 1 || dayNumber > 31) return Infinity;
+  return monthNumber * 100 + dayNumber;
 }
 
 function readBirthday(form) {

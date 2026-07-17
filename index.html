@@ -28,10 +28,6 @@
           <button class="tab" data-view="quiz" type="button">카드 퀴즈</button>
           <button class="tab" data-view="compare" type="button">비교 게임</button>
           <button class="tab" data-view="search" type="button">통합 검색</button>
-          <button class="tab" data-view="jobs" type="button">직업</button>
-          <button class="tab" data-view="stats" type="button">인물 정렬</button>
-          <button class="tab" data-view="bloodTypes" type="button">혈액형</button>
-          <button class="tab" data-view="origins" type="button">출신지</button>
           <button class="tab edit-tab" data-view="editor" type="button">수정</button>
         </nav>
       </aside>
@@ -55,10 +51,6 @@
               <option value="quiz">카드 퀴즈</option>
               <option value="compare">비교 게임</option>
               <option value="search">통합 검색</option>
-              <option value="jobs">직업</option>
-              <option value="stats">인물 정렬</option>
-              <option value="bloodTypes">혈액형</option>
-              <option value="origins">출신지</option>
               <option value="editor">수정</option>
             </select>
           </label>
@@ -92,13 +84,16 @@
                 <option value="appearance">등장순</option>
                 <option value="id">고유 ID 순</option>
                 <option value="name">이름순</option>
-                <option value="heightAsc">키 낮은 순</option>
-                <option value="heightDesc">키 높은 순</option>
-                <option value="ageAsc">나이 낮은 순</option>
-                <option value="ageDesc">나이 높은 순</option>
-                <option value="bountyAsc">현상금 낮은 순</option>
-                <option value="bountyDesc">현상금 높은 순</option>
-                <option value="birthday">생일순</option>
+              </select>
+            </label>
+            <label class="sort-controls hidden" id="personBrowseControls">
+              <span>둘러보기</span>
+              <select id="personBrowseSelect">
+                <option value="all">전체 인물</option>
+                <option value="job">직업별</option>
+                <option value="bloodType">혈액형별</option>
+                <option value="origin">출신지별</option>
+                <option value="stats">수치 정렬</option>
               </select>
             </label>
             <div class="stat-sort-controls hidden" id="statSortControls">
@@ -137,6 +132,7 @@
             <button class="editor-mode" data-editor-mode="organizations" type="button">조직 수정</button>
             <button class="editor-mode" data-editor-mode="origins" type="button">출신지 수정</button>
             <button class="editor-mode" data-editor-mode="groups" type="button">그룹 수정</button>
+            <button class="editor-mode" data-editor-mode="customQuizzes" type="button">문제 만들기</button>
             <button class="editor-mode" data-editor-mode="data" type="button">데이터 관리</button>
           </div>
           <div class="editor-body" id="editorBody"></div>

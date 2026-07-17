@@ -15,7 +15,8 @@ const PERSISTED_LIST_KEYS = [
   "devilFruitTypes",
   "devilFruits",
   "groups",
-  "bloodTypes"
+  "bloodTypes",
+  "customQuizzes"
 ];
 const baseData = window.onePieceData;
 const basePeopleById = new Map((baseData.people || []).map((person) => [person.id, person]));
@@ -37,10 +38,6 @@ const viewConfig = {
   quiz: { label: "카드 퀴즈", title: "카테고리별 랜덤 카드 퀴즈", listTitle: "퀴즈 카테고리" },
   compare: { label: "비교 게임", title: "큰 쪽을 맞히는 서바이벌 게임", listTitle: "비교 항목" },
   search: { label: "통합 검색", title: "전체 데이터 빠르게 찾기", listTitle: "검색 결과" },
-  jobs: { label: "직업", title: "직업별 인물 보기", listTitle: "직업 목록" },
-  stats: { label: "인물 정렬", title: "키·연령·현상금·생일 순서 보기", listTitle: "인물 목록" },
-  bloodTypes: { label: "혈액형", title: "혈액형별 인물 보기", listTitle: "혈액형 목록" },
-  origins: { label: "출신지", title: "출신지별 인물 보기", listTitle: "출신지 목록" },
   editor: { label: "수정", title: "웹에서 바로 데이터 수정", listTitle: "수정" }
 };
 
@@ -56,7 +53,8 @@ const quizCategoryMeta = [
   { id: "likes", title: "좋아하는 것", search: "좋아하는 것" },
   { id: "fruit", title: "악마의 열매", search: "악마의 열매" },
   { id: "organization", title: "조직", search: "조직 세부 조직" },
-  { id: "timeline", title: "연표", search: "연표 사건" }
+  { id: "timeline", title: "연표", search: "연표 사건" },
+  { id: "custom", title: "직접 만든 문제", search: "이미지 객관식 순서 문제" }
 ];
 
 const compareMetricMeta = [
@@ -75,6 +73,7 @@ let personEditorQuery = "";
 let episodeCharacterQuery = "";
 let statMetric = "height";
 let statDirection = "asc";
+let personBrowseMode = "all";
 let nameDisplayMode = loadNameDisplayMode();
 let editorMode = "people";
 let activeFruitId = "";
@@ -115,6 +114,8 @@ const rangeControls = document.querySelector("#rangeControls");
 const rangeButtons = document.querySelectorAll("[data-range]");
 const personSortControls = document.querySelector("#personSortControls");
 const personSortSelect = document.querySelector("#personSortSelect");
+const personBrowseControls = document.querySelector("#personBrowseControls");
+const personBrowseSelect = document.querySelector("#personBrowseSelect");
 const statSortControls = document.querySelector("#statSortControls");
 const statMetricSelect = document.querySelector("#statMetricSelect");
 const statDirectionButtons = document.querySelectorAll("[data-stat-direction]");
@@ -155,6 +156,13 @@ rangeButtons.forEach((button) => {
 
 personSortSelect.addEventListener("change", () => {
   personSortMode = personSortSelect.value;
+  activeId = "";
+  resetVisibleListLimit();
+  render();
+});
+
+personBrowseSelect.addEventListener("change", () => {
+  personBrowseMode = personBrowseSelect.value;
   activeId = "";
   resetVisibleListLimit();
   render();
@@ -212,7 +220,7 @@ function switchView(view) {
 }
 
 function isListOnlyView() {
-  return currentView === "stats";
+  return false;
 }
 
 function isGameLikeView() {
@@ -245,9 +253,11 @@ function render() {
   const query = searchInput.value.trim().toLowerCase();
   listTitle.textContent = currentView === "episodes" && query ? "에피소드 목록" : config.listTitle;
   rangeControls.classList.add("hidden");
-  personSortControls.classList.toggle("hidden", currentView !== "people");
+  personBrowseControls.classList.toggle("hidden", currentView !== "people");
+  personBrowseSelect.value = personBrowseMode;
+  personSortControls.classList.toggle("hidden", currentView !== "people" || personBrowseMode !== "all");
   personSortSelect.value = personSortMode;
-  statSortControls.classList.toggle("hidden", currentView !== "stats");
+  statSortControls.classList.toggle("hidden", currentView !== "people" || personBrowseMode !== "stats");
   statMetricSelect.value = statMetric;
   statDirectionButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.statDirection === statDirection);
@@ -304,9 +314,10 @@ function getCachedItems(query = "") {
     currentView,
     currentView === "episodes" ? Boolean(query) : "",
     currentView === "people" ? personSortMode : "",
+    currentView === "people" ? personBrowseMode : "",
     currentView === "people" ? sortMode : "",
-    currentView === "stats" ? statMetric : "",
-    currentView === "stats" ? statDirection : ""
+    currentView === "people" && personBrowseMode === "stats" ? statMetric : "",
+    currentView === "people" && personBrowseMode === "stats" ? statDirection : ""
   ].join("|");
   if (!listItemCache.has(key)) listItemCache.set(key, getItems(query));
   return listItemCache.get(key);
@@ -319,7 +330,7 @@ function getItems(query = "") {
       return item(technique.id, localizedName(technique), owner ? `사용자: ${personDisplayName(owner)}` : "사용자 미등록", technique, `${localizedSearchText(technique)} ${personNameSearchText(owner)}`);
     });
   }
-  if (currentView === "people") return sortedPeople(personSortMode).map(personToItem);
+  if (currentView === "people") return getPeopleBrowseItems();
   if (currentView === "episodes") return query ? getEpisodeSearchItems() : getEpisodeVolumeItems();
   if (currentView === "organizations") {
     return data.organizations.map((org) => {
@@ -346,23 +357,42 @@ function getItems(query = "") {
   if (currentView === "quiz") return getQuizCategories();
   if (currentView === "compare") return getCompareGameItems();
   if (currentView === "search") return getGlobalSearchItems();
-  if (currentView === "jobs") return groupBy(data.people, "job").map((group) => groupToItem(group, "명"));
-  if (currentView === "stats") return sortedStatPeople().map((person) => ({ ...personToItem(person), title: `${personDisplayName(person)} · ${statValueLabel(person)}` }));
-  if (currentView === "bloodTypes") {
-    return data.bloodTypes.map((type) => groupToItem({ id: type, name: type, people: data.people.filter((person) => person.bloodType === type) }, "명"));
-  }
-  if (currentView === "origins") {
-    return data.originRegions.map((region) => {
-      const people = data.people.filter((person) => person.originRegion === region.id);
-      const countries = data.originCountries.filter((country) => country.regionId === region.id);
-      return item(region.id, region.name, `국가 ${countries.length}개 · 인물 ${people.length}명`, { ...region, people, countries }, `${region.name} ${countries.map((country) => country.name).join(" ")}`);
-    });
-  }
   return [];
 }
 
+function getPeopleBrowseItems() {
+  if (personBrowseMode === "job") {
+    return groupBy(data.people, "job").map((group) => groupToItem(group, "명"));
+  }
+  if (personBrowseMode === "bloodType") {
+    return data.bloodTypes.map((type) => (
+      groupToItem({ id: type, name: type, people: data.people.filter((person) => person.bloodType === type) }, "명")
+    ));
+  }
+  if (personBrowseMode === "origin") {
+    return data.originRegions.map((region) => {
+      const people = data.people.filter((person) => person.originRegion === region.id);
+      const countries = data.originCountries.filter((country) => country.regionId === region.id);
+      return item(
+        region.id,
+        region.name,
+        `국가 ${countries.length}개 · 인물 ${people.length}명`,
+        { ...region, people, countries },
+        `${region.name} ${countries.map((country) => country.name).join(" ")}`
+      );
+    });
+  }
+  if (personBrowseMode === "stats") {
+    return sortedStatPeople().map((person) => ({
+      ...personToItem(person),
+      title: `${personDisplayName(person)} · ${statValueLabel(person)}`
+    }));
+  }
+  return sortedPeople(personSortMode).map(personToItem);
+}
+
 function renderListItem(listItem) {
-  const showImage = (["people", "stats"].includes(currentView) || listItem.raw?.resultType === "person") && listItem.raw?.imageUrl;
+  const showImage = (currentView === "people" || listItem.raw?.resultType === "person") && listItem.raw?.imageUrl;
   const image = showImage ? `<img class="item-thumb" src="${escapeAttribute(listItem.raw.imageUrl)}" alt="" loading="lazy" decoding="async" />` : "";
   return `
     <button class="item" type="button" data-id="${escapeAttribute(listItem.id)}">
@@ -392,14 +422,15 @@ function renderDetail(listItem) {
   }
 
   if (currentView === "techniques") return renderTechniqueDetail(listItem.raw);
-  if (currentView === "people") return renderPersonDetail(listItem.raw);
+  if (currentView === "people") {
+    return listItem.raw?.people ? renderPersonGroupDetail(listItem.raw) : renderPersonDetail(listItem.raw);
+  }
   if (currentView === "episodes") {
     return listItem.raw?.kind === "episode"
       ? renderEpisodeSearchDetail(listItem.raw.episode)
       : renderEpisodeVolumeDetail(listItem.raw);
   }
   if (currentView === "organizations") return renderOrganizationDetail(listItem.raw);
-  if (currentView === "origins") return renderOriginRegionDetail(listItem.raw);
   if (currentView === "devilFruits") return renderDevilFruitTypeDetail(listItem.raw);
   if (currentView === "groups") return renderGroupDetail(listItem.raw);
   if (currentView === "timelines") return renderTimelineDetail(listItem.raw);
@@ -411,6 +442,14 @@ function renderDetail(listItem) {
     <h3>${escapeHtml(listItem.title)}</h3>
     <div class="meta"><span class="chip">${listItem.raw.people.length}명</span></div>
     <div class="result-grid">${listItem.raw.people.map(renderPersonResult).join("") || renderEmptyResult("등록된 사람이 없습니다.")}</div>
+  `;
+}
+
+function renderPersonGroupDetail(group) {
+  detail.innerHTML = `
+    <h3>${escapeHtml(group.name)}</h3>
+    <div class="meta"><span class="chip">${group.people.length}명</span></div>
+    <div class="result-grid">${group.people.map(renderPersonResult).join("") || renderEmptyResult("등록된 인물이 없습니다.")}</div>
   `;
 }
 
@@ -1687,10 +1726,14 @@ function renderQuizDetail(category) {
   if (!cards.length) {
     detail.innerHTML = `
       <h3>${escapeHtml(category.name)} 카드 퀴즈</h3>
-      ${renderQuizCategoryPicker(category.id)}
+      <div class="quiz-topbar">
+        ${renderQuizCategoryPicker(category.id)}
+        ${renderQuizCreatorButton()}
+      </div>
       ${renderEmptyResult("이 카테고리로 만들 수 있는 카드가 없습니다.")}
     `;
     bindQuizCategoryPicker();
+    bindQuizCreatorButton();
     return;
   }
   if (!quizSession || quizSession.category !== category.id) {
@@ -1714,6 +1757,7 @@ function renderQuizDetail(category) {
     <div class="quiz-panel">
       <div class="quiz-topbar">
         ${renderQuizCategoryPicker(category.id)}
+        ${renderQuizCreatorButton()}
         <div class="quiz-mode-controls">
           <button class="range ${quizMode === "test" ? "active" : ""}" data-quiz-mode="test" type="button">문제 풀이</button>
           <button class="range ${quizMode === "study" ? "active" : ""}" data-quiz-mode="study" type="button">학습</button>
@@ -1726,19 +1770,10 @@ function renderQuizDetail(category) {
         </div>
         ` : `
         <div class="quiz-card ${showStudyBack ? "flipped" : ""}" id="quizCard">
-          ${!showStudyBack && card.imageUrl ? `<img class="quiz-face" src="${escapeAttribute(card.imageUrl)}" alt="" loading="lazy" decoding="async" />` : ""}
-          <strong>${escapeHtml(showStudyBack ? card.back : card.front)}</strong>
+          ${renderQuizCardContent(card, showStudyBack)}
         </div>
         ${quizMode === "test" ? `
-          <form class="quiz-answer" id="quizAnswerForm">
-            <label>답 입력<input id="quizAnswerInput" name="quizAnswer" autocomplete="off" value="${escapeAttribute(quizAnswerDraft)}" ${quizSession.answered ? "disabled" : ""} /></label>
-            <div class="form-actions">
-              <button class="primary" type="submit" ${quizSession.answered ? "disabled" : ""}>채점</button>
-              <button class="sub-card" id="markCorrectButton" type="button" ${quizSession.answered ? "disabled" : ""}>정답으로 기록</button>
-              <button class="sub-card" id="markWrongButton" type="button" ${quizSession.answered ? "disabled" : ""}>오답으로 기록</button>
-              <button class="sub-card" id="nextQuizButton" type="button">${quizSession.index >= quizSession.cards.length - 1 ? "결과 보기" : "다음 문제"}</button>
-            </div>
-          </form>
+          ${renderQuizAnswerControls(card)}
           ${feedback}
         ` : `
           <div class="form-actions quiz-study-actions">
@@ -1770,6 +1805,7 @@ function renderQuizDetail(category) {
     </div>
   `;
   bindQuizCategoryPicker();
+  bindQuizCreatorButton();
   document.querySelectorAll("[data-quiz-mode]").forEach((button) => {
     button.addEventListener("click", () => {
       quizMode = button.dataset.quizMode;
@@ -1799,12 +1835,194 @@ function renderQuizDetail(category) {
     document.querySelector("#markCorrectButton").addEventListener("click", () => markQuizAnswer(true));
     document.querySelector("#markWrongButton").addEventListener("click", () => markQuizAnswer(false));
   }
+  detail.querySelectorAll("[data-choice-answer]").forEach((button) => {
+    button.addEventListener("click", () => markQuizAnswer(button.dataset.choiceAnswer === String(card.correctOptionIndex), button.textContent.trim()));
+  });
+  detail.querySelector("#multipleQuizForm")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const selected = Array.from(detail.querySelectorAll('[name="multipleQuizOption"]:checked'))
+      .map((input) => Number(input.value))
+      .sort((a, b) => a - b);
+    const expected = [...card.correctOptionIndexes].sort((a, b) => a - b);
+    const answer = selected.map((index) => card.options[index]).join(", ");
+    markQuizAnswer(selected.length === expected.length && selected.every((value, index) => value === expected[index]), answer);
+  });
+  bindSequenceQuizControls(card);
+  detail.querySelector("#matchQuizForm")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const selected = card.pairs.map((pair, index) => detail.querySelector(`[name="matchAnswer${index}"]`)?.value || "");
+    const correct = selected.every((value, index) => value !== "" && Number(value) === card.correctRightIndexes[index]);
+    const answer = selected.map((value, index) => `${card.pairs[index].left} → ${card.rightOptions[Number(value)] || "미선택"}`).join(", ");
+    markQuizAnswer(correct, answer);
+  });
+  detail.querySelector("#revealCustomAnswerButton")?.addEventListener("click", () => markQuizAnswer(true, "정답 확인"));
   document.querySelector("#flipStudyQuizButton")?.addEventListener("click", () => {
     quizStudyFlipped = !quizStudyFlipped;
     render();
   });
   document.querySelector("#prevQuizButton")?.addEventListener("click", previousQuizCard);
   document.querySelector("#nextQuizButton")?.addEventListener("click", nextQuizCard);
+}
+
+function renderQuizCardContent(card, showBack) {
+  if (showBack) {
+    return `<strong>${escapeHtml(card.back)}</strong>`;
+  }
+  if (card.customType === "order" && card.images?.length > 1 && !card.orderItems?.length) {
+    return `
+      <strong>${escapeHtml(card.front)}</strong>
+      <div class="custom-order-grid">
+        ${card.images.map((image, index) => `
+          <figure class="custom-order-tile">
+            <img src="${escapeAttribute(image.url)}" alt="" loading="lazy" decoding="async" />
+            <figcaption>${index + 1}</figcaption>
+          </figure>
+        `).join("")}
+      </div>
+    `;
+  }
+  return `
+    ${card.imageUrl ? `<img class="${card.customType ? "custom-quiz-prompt-image" : "quiz-face"}" src="${escapeAttribute(card.imageUrl)}" alt="" loading="lazy" decoding="async" />` : ""}
+    <strong>${escapeHtml(card.front)}</strong>
+  `;
+}
+
+function renderQuizAnswerControls(card) {
+  if (card.customType === "choice") {
+    return `
+      <div class="quiz-answer custom-choice-answer">
+        <div class="custom-choice-grid">
+          ${card.options.map((optionText, index) => `
+            <button class="sub-card" data-choice-answer="${index}" type="button" ${quizSession.answered ? "disabled" : ""}>
+              ${index + 1}. ${escapeHtml(optionText)}
+            </button>
+          `).join("")}
+        </div>
+        <div class="form-actions">
+          <button class="sub-card" id="revealCustomAnswerButton" type="button" ${quizSession.answered ? "disabled" : ""}>정답으로 기록</button>
+          <button class="sub-card" id="nextQuizButton" type="button">${quizSession.index >= quizSession.cards.length - 1 ? "결과 보기" : "다음 문제"}</button>
+        </div>
+      </div>
+    `;
+  }
+  if (card.customType === "multiple") {
+    return `
+      <form class="quiz-answer" id="multipleQuizForm">
+        <div class="custom-choice-grid">
+          ${card.options.map((optionText, index) => `
+            <label class="custom-check-option">
+              <input name="multipleQuizOption" type="checkbox" value="${index}" ${quizSession.answered ? "disabled" : ""} />
+              <span>${index + 1}. ${escapeHtml(optionText)}</span>
+            </label>
+          `).join("")}
+        </div>
+        <div class="form-actions">
+          <button class="primary" type="submit" ${quizSession.answered ? "disabled" : ""}>채점</button>
+          ${renderCustomQuizNextButton()}
+        </div>
+      </form>
+    `;
+  }
+  if (card.customType === "order") {
+    return renderSequenceQuizControls(card, card.orderItems?.length ? card.orderItems : card.images.map((image, index) => image.label || `이미지 ${index + 1}`));
+  }
+  if (card.customType === "scramble") {
+    return renderSequenceQuizControls(card, card.pieces);
+  }
+  if (card.customType === "match") {
+    return `
+      <form class="quiz-answer" id="matchQuizForm">
+        <div class="custom-match-grid">
+          ${card.pairs.map((pair, index) => `
+            <label>
+              <span>${escapeHtml(pair.left)}</span>
+              <select name="matchAnswer${index}" ${quizSession.answered ? "disabled" : ""}>
+                <option value="">연결할 항목 선택</option>
+                ${card.rightOptions.map((rightText, rightIndex) => option(String(rightIndex), rightText, "")).join("")}
+              </select>
+            </label>
+          `).join("")}
+        </div>
+        <div class="form-actions">
+          <button class="primary" type="submit" ${quizSession.answered ? "disabled" : ""}>채점</button>
+          ${renderCustomQuizNextButton()}
+        </div>
+      </form>
+    `;
+  }
+  return `
+    <form class="quiz-answer" id="quizAnswerForm">
+      <label>답 입력<input id="quizAnswerInput" name="quizAnswer" autocomplete="off" value="${escapeAttribute(quizAnswerDraft)}" ${quizSession.answered ? "disabled" : ""} /></label>
+      <div class="form-actions">
+        <button class="primary" type="submit" ${quizSession.answered ? "disabled" : ""}>채점</button>
+        <button class="sub-card" id="markCorrectButton" type="button" ${quizSession.answered ? "disabled" : ""}>정답으로 기록</button>
+        <button class="sub-card" id="markWrongButton" type="button" ${quizSession.answered ? "disabled" : ""}>오답으로 기록</button>
+        <button class="sub-card" id="nextQuizButton" type="button">${quizSession.index >= quizSession.cards.length - 1 ? "결과 보기" : "다음 문제"}</button>
+      </div>
+    </form>
+  `;
+}
+
+function renderSequenceQuizControls(card, items) {
+  return `
+    <form class="quiz-answer" id="sequenceQuizForm">
+      <div class="sequence-answer" id="sequenceQuizAnswer" aria-live="polite">
+        <span>항목을 순서대로 선택하세요.</span>
+      </div>
+      <div class="sequence-pool">
+        ${items.map((itemText, index) => `
+          <button class="sub-card" data-sequence-index="${index}" type="button" ${quizSession.answered ? "disabled" : ""}>
+            ${escapeHtml(itemText)}
+          </button>
+        `).join("")}
+      </div>
+      <div class="form-actions">
+        <button class="primary" type="submit" ${quizSession.answered ? "disabled" : ""}>채점</button>
+        <button class="sub-card" id="resetSequenceQuizButton" type="button" ${quizSession.answered ? "disabled" : ""}>다시 선택</button>
+        ${renderCustomQuizNextButton()}
+      </div>
+    </form>
+  `;
+}
+
+function bindSequenceQuizControls(card) {
+  const form = detail.querySelector("#sequenceQuizForm");
+  if (!form) return;
+  const items = card.customType === "scramble"
+    ? card.pieces
+    : (card.orderItems?.length ? card.orderItems : card.images.map((image, index) => image.label || `이미지 ${index + 1}`));
+  let selectedIndexes = [];
+  const answerBox = form.querySelector("#sequenceQuizAnswer");
+  const buttons = Array.from(form.querySelectorAll("[data-sequence-index]"));
+  const refresh = () => {
+    answerBox.innerHTML = selectedIndexes.length
+      ? selectedIndexes.map((index, position) => `<b><span>${position + 1}</span>${escapeHtml(items[index])}</b>`).join("")
+      : "<span>항목을 순서대로 선택하세요.</span>";
+    buttons.forEach((button) => {
+      button.disabled = quizSession.answered || selectedIndexes.includes(Number(button.dataset.sequenceIndex));
+    });
+  };
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      selectedIndexes.push(Number(button.dataset.sequenceIndex));
+      refresh();
+    });
+  });
+  form.querySelector("#resetSequenceQuizButton").addEventListener("click", () => {
+    selectedIndexes = [];
+    refresh();
+  });
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const answer = card.customType === "scramble"
+      ? selectedIndexes.map((index) => items[index]).join("")
+      : selectedIndexes.map((index) => index + 1).join("");
+    markQuizAnswer(answerMatches(answer, card), selectedIndexes.map((index) => items[index]).join(" → "));
+  });
+}
+
+function renderCustomQuizNextButton() {
+  return `<button class="sub-card" id="nextQuizButton" type="button">${quizSession.index >= quizSession.cards.length - 1 ? "결과 보기" : "다음 문제"}</button>`;
 }
 
 function renderQuizCategoryPicker(selectedId) {
@@ -1828,6 +2046,38 @@ function bindQuizCategoryPicker() {
     quizAnswerDraft = "";
     quizStudyFlipped = false;
     render();
+  });
+}
+
+function renderQuizCreatorButton() {
+  return `<button class="sub-card" id="openQuizCreatorButton" type="button">문제 만들기</button>`;
+}
+
+function bindQuizCreatorButton() {
+  detail.querySelector("#openQuizCreatorButton")?.addEventListener("click", () => renderQuizCreator());
+}
+
+function renderQuizCreator(quiz = null) {
+  detail.innerHTML = `
+    <h3>퀴즈 문제 만들기</h3>
+    <div class="quiz-panel">
+      <div class="quiz-topbar">
+        <button class="sub-card" id="backToQuizButton" type="button">카드 퀴즈로 돌아가기</button>
+      </div>
+      <div id="quizCreatorFormWrap"></div>
+    </div>
+  `;
+  detail.querySelector("#backToQuizButton").addEventListener("click", () => render());
+  renderCustomQuizForm(quiz, {
+    target: detail.querySelector("#quizCreatorFormWrap"),
+    onSaved: () => {
+      quizCardCache.clear();
+      activeId = "custom";
+      quizSession = null;
+      quizAnswerDraft = "";
+      render();
+    },
+    onDeleted: () => render()
   });
 }
 
@@ -2273,6 +2523,7 @@ function renderEditor() {
   if (editorMode === "organizations") renderOrganizationEditor();
   if (editorMode === "origins") renderOriginEditor();
   if (editorMode === "groups") renderGroupEditor();
+  if (editorMode === "customQuizzes") renderCustomQuizEditor();
   if (editorMode === "data") renderDataManager();
 }
 
@@ -2768,12 +3019,266 @@ function renderGroupForm(group = null) {
   });
 }
 
+function renderCustomQuizEditor() {
+  data.customQuizzes ||= [];
+  editorBody.innerHTML = editorShell(
+    "newCustomQuizButton",
+    "새 퀴즈 문제 추가",
+    `
+      <div class="edit-note">직접 고른 이미지로 주관식, 객관식, 순서 배열, 글자 배열, 좌우 연결 문제를 만듭니다.</div>
+      ${data.customQuizzes.map((quiz) => pickButton("custom-quiz", quiz.id, quiz.question || "제목 없는 문제", customQuizTypeLabel(quiz.type), quiz.images?.[0]?.url || "")).join("")}
+    `,
+    "customQuizFormWrap"
+  );
+  document.querySelector("#newCustomQuizButton").addEventListener("click", () => renderCustomQuizForm());
+  editorBody.querySelectorAll("[data-custom-quiz-id]").forEach((button) => {
+    button.addEventListener("click", () => renderCustomQuizForm(findCustomQuiz(button.dataset.customQuizId)));
+  });
+  renderCustomQuizForm(data.customQuizzes[0]);
+}
+
+function renderCustomQuizForm(quiz = null, settings = {}) {
+  const isNew = !quiz || !(data.customQuizzes || []).some((item) => item.id === quiz.id);
+  const target = settings.target || document.querySelector("#customQuizFormWrap");
+  const draft = normalizeCustomQuizDraft(quiz);
+  target.innerHTML = `
+    <form id="customQuizForm">
+      ${formHead(isNew ? "새 퀴즈 문제" : "퀴즈 문제 수정", "deleteCustomQuizButton", isNew)}
+      ${field("id", "고유 ID", draft.id)}
+      <label>문제 유형
+        <select name="type" id="customQuizTypeSelect">
+          ${option("text", "주관식 입력", draft.type)}
+          ${option("choice", "단일 선택 객관식", draft.type)}
+          ${option("multiple", "복수 정답 객관식", draft.type)}
+          ${option("order", "순서 배열", draft.type)}
+          ${option("scramble", "글자 조각 배열", draft.type)}
+          ${option("match", "좌우 항목 연결", draft.type)}
+        </select>
+      </label>
+      <label>문제 문장<input name="question" value="${escapeAttribute(draft.question)}" placeholder="예: 이 장면의 인물은 누구?" /></label>
+      <fieldset class="timeline-editor custom-quiz-image-editor">
+        <legend>문제 이미지</legend>
+        <div id="customQuizImageRows">${renderCustomQuizImageRows(draft)}</div>
+        <button class="sub-card ${draft.type === "order" ? "" : "hidden"}" id="addCustomQuizImageButton" type="button">이미지 추가</button>
+      </fieldset>
+      <fieldset class="timeline-editor ${["text", "scramble"].includes(draft.type) ? "" : "hidden"}" id="customTextFields">
+        <legend>주관식 정답</legend>
+        <label>정답<input name="textAnswer" value="${escapeAttribute(draft.textAnswer)}" placeholder="정확한 정답" /></label>
+        <label>추가 인정 답안<input name="alternativeAnswers" value="${escapeAttribute(draft.alternativeAnswers.join(" | "))}" placeholder="답안 여러 개는 | 로 구분" /></label>
+        <label class="${draft.type === "scramble" ? "" : "hidden"}">글자 조각<input name="scramblePieces" value="${escapeAttribute(draft.pieces.join(", "))}" placeholder="예: 진, 공, 로, 켓, 트" /></label>
+      </fieldset>
+      <fieldset class="timeline-editor ${["choice", "multiple"].includes(draft.type) ? "" : "hidden"}" id="customChoiceFields">
+        <legend>선택지</legend>
+        ${[0, 1, 2, 3].map((index) => field(`option${index}`, `${index + 1}번 보기`, draft.options[index] || "")).join("")}
+        <label class="${draft.type === "choice" ? "" : "hidden"}">정답 번호<input name="correctOptionIndex" type="number" min="1" max="4" value="${Number(draft.correctOptionIndex || 0) + 1}" /></label>
+        <label class="${draft.type === "multiple" ? "" : "hidden"}">정답 번호들<input name="correctOptionIndexes" value="${escapeAttribute(draft.correctOptionIndexes.map((index) => index + 1).join(", "))}" placeholder="예: 1, 3, 4" /></label>
+      </fieldset>
+      <fieldset class="timeline-editor ${draft.type === "order" ? "" : "hidden"}" id="customOrderFields">
+        <legend>순서 정답</legend>
+        <p class="edit-note">텍스트 항목을 입력하면 항목 순서 문제로, 비워두고 이미지를 여러 장 넣으면 이미지 순서 문제로 출제됩니다.</p>
+        ${[0, 1, 2, 3].map((index) => field(`orderItem${index}`, `${index + 1}번 항목`, draft.orderItems[index] || "")).join("")}
+        <label>정답 순서<input name="answerOrder" inputmode="numeric" value="${escapeAttribute(draft.answerOrder)}" placeholder="예: 3214" /></label>
+      </fieldset>
+      <fieldset class="timeline-editor ${draft.type === "match" ? "" : "hidden"}" id="customMatchFields">
+        <legend>좌우 연결 정답</legend>
+        <div class="custom-pair-editor">
+          ${[0, 1, 2, 3].map((index) => `
+            <label>${index + 1}번 왼쪽<input name="pairLeft${index}" value="${escapeAttribute(draft.pairs[index]?.left || "")}" /></label>
+            <label>${index + 1}번 오른쪽<input name="pairRight${index}" value="${escapeAttribute(draft.pairs[index]?.right || "")}" /></label>
+          `).join("")}
+        </div>
+      </fieldset>
+      <div class="data-status warn hidden" id="customQuizFormError" role="alert"></div>
+      <div class="form-actions"><button class="primary" type="submit">저장</button></div>
+    </form>
+  `;
+  const form = target.querySelector("#customQuizForm");
+  form.elements.type.addEventListener("change", () => {
+    const nextDraft = readCustomQuizForm(form);
+    nextDraft.type = form.elements.type.value;
+    renderCustomQuizForm(nextDraft, settings);
+  });
+  form.querySelector("#addCustomQuizImageButton")?.addEventListener("click", () => {
+    const nextDraft = readCustomQuizForm(form);
+    nextDraft.images.push({ url: "", label: "" });
+    renderCustomQuizForm(nextDraft, settings);
+  });
+  bindCustomQuizImageInputs(form, settings);
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const next = readCustomQuizForm(form);
+    const validationMessage = customQuizValidationMessage(next);
+    if (validationMessage) {
+      const errorBox = form.querySelector("#customQuizFormError");
+      errorBox.textContent = validationMessage;
+      errorBox.classList.remove("hidden");
+      return;
+    }
+    upsert(data.customQuizzes, quiz?.id || next.id, next);
+    saveData();
+    quizCardCache.clear();
+    (settings.onSaved || renderCustomQuizEditor)(next);
+  });
+  target.querySelector("#deleteCustomQuizButton")?.addEventListener("click", () => {
+    data.customQuizzes = data.customQuizzes.filter((item) => item.id !== quiz.id);
+    saveData();
+    quizCardCache.clear();
+    (settings.onDeleted || renderCustomQuizEditor)();
+  });
+}
+
+function normalizeCustomQuizDraft(quiz = null) {
+  const supportedTypes = ["text", "choice", "multiple", "order", "scramble", "match"];
+  const type = supportedTypes.includes(quiz?.type) ? quiz.type : "choice";
+  const images = (quiz?.images?.length ? quiz.images : [{ url: quiz?.imageUrl || "", label: "" }]).map((image) => ({
+    url: image.url || "",
+    label: image.label || ""
+  }));
+  if (!images.length) images.push({ url: "", label: "" });
+  const pairs = (quiz?.pairs || []).map((pair) => ({
+    left: pair?.left || "",
+    right: pair?.right || ""
+  }));
+  while (pairs.length < 4) pairs.push({ left: "", right: "" });
+  return {
+    id: quiz?.id || makeId("quiz"),
+    type,
+    question: quiz?.question || "",
+    images: type === "order" ? images.slice(0, 6) : [images[0] || { url: "", label: "" }],
+    options: [...(quiz?.options || ["", "", "", ""]), "", "", "", ""].slice(0, 4),
+    correctOptionIndex: Number(quiz?.correctOptionIndex || 0),
+    correctOptionIndexes: (quiz?.correctOptionIndexes || []).map(Number).filter((index) => index >= 0 && index < 4),
+    textAnswer: quiz?.textAnswer || quiz?.answer || "",
+    alternativeAnswers: (quiz?.alternativeAnswers || []).map((answer) => String(answer || "").trim()).filter(Boolean),
+    answerOrder: quiz?.answerOrder || "",
+    orderItems: [...(quiz?.orderItems || ["", "", "", ""]), "", "", "", ""].slice(0, 4),
+    pieces: (quiz?.pieces || []).map((piece) => String(piece || "")).filter(Boolean),
+    pairs: pairs.slice(0, 4)
+  };
+}
+
+function renderCustomQuizImageRows(draft) {
+  const rows = draft.type === "order" ? draft.images : draft.images.slice(0, 1);
+  return rows.map((image, index) => `
+    <div class="custom-image-row">
+      ${image.url ? `<img class="custom-image-preview" src="${escapeAttribute(image.url)}" alt="" loading="lazy" decoding="async" />` : `<div class="custom-image-preview empty">${index + 1}</div>`}
+      <label>이미지 주소<input name="customImageUrl" value="${escapeAttribute(image.url)}" /></label>
+      <label class="file-button">파일 선택<input name="customImageFile" type="file" accept="image/*" data-image-index="${index}" /></label>
+      <button class="sub-card ${draft.type !== "order" || rows.length <= 1 ? "hidden" : ""}" type="button" data-remove-custom-image="${index}">삭제</button>
+    </div>
+  `).join("");
+}
+
+function bindCustomQuizImageInputs(form, settings = {}) {
+  form.querySelectorAll("[data-remove-custom-image]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const nextDraft = readCustomQuizForm(form);
+      nextDraft.images.splice(Number(button.dataset.removeCustomImage), 1);
+      renderCustomQuizForm(nextDraft, settings);
+    });
+  });
+  form.querySelectorAll('[name="customImageFile"]').forEach((input) => {
+    input.addEventListener("change", async () => {
+      const file = input.files[0];
+      if (!file) return;
+      const urls = Array.from(form.querySelectorAll('[name="customImageUrl"]'));
+      urls[Number(input.dataset.imageIndex)].value = await fileToDataUrl(file);
+      renderCustomQuizForm(readCustomQuizForm(form), settings);
+    });
+  });
+}
+
+function readCustomQuizForm(form) {
+  const supportedTypes = ["text", "choice", "multiple", "order", "scramble", "match"];
+  const selectedType = value(form, "type");
+  const type = supportedTypes.includes(selectedType) ? selectedType : "choice";
+  const images = Array.from(form.querySelectorAll('[name="customImageUrl"]'))
+    .map((input, index) => ({ url: input.value.trim(), label: String(index + 1) }))
+    .filter((image, index) => image.url || index === 0);
+  const piecesText = value(form, "scramblePieces");
+  const pieces = piecesText.includes(",")
+    ? piecesText.split(",").map((piece) => piece.trim()).filter(Boolean)
+    : Array.from(piecesText.replace(/\s/g, ""));
+  return {
+    id: value(form, "id") || makeId("quiz"),
+    type,
+    question: value(form, "question"),
+    images: type === "order" ? images.slice(0, 6) : [images[0] || { url: "", label: "1" }],
+    options: [0, 1, 2, 3].map((index) => value(form, `option${index}`)),
+    correctOptionIndex: Math.min(3, Math.max(0, Number(value(form, "correctOptionIndex") || 1) - 1)),
+    correctOptionIndexes: parseQuizIndexList(value(form, "correctOptionIndexes"), 4),
+    textAnswer: value(form, "textAnswer"),
+    alternativeAnswers: value(form, "alternativeAnswers").split("|").map((answer) => answer.trim()).filter(Boolean),
+    answerOrder: value(form, "answerOrder"),
+    orderItems: [0, 1, 2, 3].map((index) => value(form, `orderItem${index}`)),
+    pieces,
+    pairs: [0, 1, 2, 3].map((index) => ({
+      left: value(form, `pairLeft${index}`),
+      right: value(form, `pairRight${index}`)
+    }))
+  };
+}
+
+function customQuizTypeLabel(type) {
+  return {
+    text: "주관식",
+    choice: "단일 선택",
+    multiple: "복수 선택",
+    order: "순서 배열",
+    scramble: "글자 배열",
+    match: "좌우 연결"
+  }[type] || "단일 선택";
+}
+
+function parseQuizIndexList(valueText, maxCount) {
+  return String(valueText || "")
+    .split(/[^0-9]+/)
+    .map((valueTextPart) => Number(valueTextPart) - 1)
+    .filter((index, position, indexes) => index >= 0 && index < maxCount && indexes.indexOf(index) === position);
+}
+
+function customQuizValidationMessage(quiz) {
+  if (!hasRegisteredText(quiz.question)) return "문제 문장을 입력하세요.";
+  const images = (quiz.images || []).filter((image) => hasRegisteredText(image.url));
+  if (!images.length) return "문제 이미지를 주소로 입력하거나 파일로 선택하세요.";
+  if (quiz.type === "text") {
+    return hasRegisteredText(quiz.textAnswer) ? "" : "주관식 정답을 입력하세요.";
+  }
+  if (quiz.type === "choice" || quiz.type === "multiple") {
+    if ((quiz.options || []).filter(hasRegisteredText).length < 2) return "선택지를 두 개 이상 입력하세요.";
+    if (quiz.type === "choice" && !hasRegisteredText(quiz.options[quiz.correctOptionIndex])) return "입력된 선택지의 정답 번호를 지정하세요.";
+    if (quiz.type === "multiple" && !(quiz.correctOptionIndexes || []).length) return "복수 정답 번호를 하나 이상 입력하세요.";
+    return "";
+  }
+  if (quiz.type === "scramble") {
+    if (!hasRegisteredText(quiz.textAnswer)) return "완성될 정답을 입력하세요.";
+    return (quiz.pieces || []).length >= 2 ? "" : "글자 조각을 두 개 이상 입력하세요.";
+  }
+  if (quiz.type === "match") {
+    const pairCount = (quiz.pairs || []).filter((pair) => hasRegisteredText(pair.left) && hasRegisteredText(pair.right)).length;
+    return pairCount >= 2 ? "" : "좌우 연결 항목을 두 쌍 이상 입력하세요.";
+  }
+  const orderItems = (quiz.orderItems || []).filter(hasRegisteredText);
+  const itemCount = orderItems.length || images.length;
+  if (itemCount < 2) return "순서를 정할 항목 또는 이미지를 두 개 이상 입력하세요.";
+  const answerOrder = String(quiz.answerOrder || "").replace(/[^1-9]/g, "").split("");
+  const uniqueNumbers = new Set(answerOrder);
+  return answerOrder.length === itemCount && uniqueNumbers.size === itemCount
+    ? ""
+    : `1부터 ${itemCount}까지 한 번씩 사용한 정답 순서를 입력하세요.`;
+}
+
+function findCustomQuiz(id) {
+  return (data.customQuizzes || []).find((quiz) => quiz.id === id);
+}
+
 function renderDataManager() {
   const summary = [
     ["인물", data.people.length],
     ["기술", data.techniques.length],
     ["에피소드", data.episodes.length],
     ["열매", data.devilFruits.length],
+    ["직접 만든 문제", (data.customQuizzes || []).length],
     ["세부 조직", data.subOrganizations.length],
     ["출신 국가", data.originCountries.length]
   ];
@@ -3080,7 +3585,123 @@ function ensureQuizCards() {
       });
     }
   });
+  (data.customQuizzes || []).forEach((quiz) => {
+    const card = buildCustomQuizCard(quiz);
+    if (card) quizCardCache.get("custom").push(card);
+  });
   quizCardCache.set("__ready", true);
+}
+
+function buildCustomQuizCard(quiz) {
+  if (!quiz?.id || !hasRegisteredText(quiz.question)) return null;
+  const supportedTypes = ["text", "choice", "multiple", "order", "scramble", "match"];
+  const type = supportedTypes.includes(quiz.type) ? quiz.type : "choice";
+  const images = (quiz.images || []).filter((image) => hasRegisteredText(image.url));
+  const imageUrl = images[0]?.url || "";
+  if (!imageUrl) return null;
+  if (type === "text") {
+    const answer = String(quiz.textAnswer || "").trim();
+    if (!answer) return null;
+    const alternativeAnswers = (quiz.alternativeAnswers || []).map((item) => String(item || "").trim()).filter(Boolean);
+    return {
+      category: "custom",
+      customType: "text",
+      sourceId: quiz.id,
+      front: quiz.question,
+      back: answer,
+      acceptedAnswers: [answer, ...alternativeAnswers],
+      imageUrl
+    };
+  }
+  if (type === "choice" || type === "multiple") {
+    const options = (quiz.options || []).map((option) => String(option || "").trim()).filter(Boolean);
+    if (options.length < 2) return null;
+    if (type === "multiple") {
+      const correctOptionIndexes = (quiz.correctOptionIndexes || [])
+        .map(Number)
+        .filter((index, position, indexes) => index >= 0 && index < options.length && indexes.indexOf(index) === position)
+        .sort((a, b) => a - b);
+      if (!correctOptionIndexes.length) return null;
+      return {
+        category: "custom",
+        customType: "multiple",
+        sourceId: quiz.id,
+        front: quiz.question,
+        back: correctOptionIndexes.map((index) => options[index]).join(", "),
+        acceptedAnswers: [correctOptionIndexes.map((index) => index + 1).join("")],
+        imageUrl,
+        options,
+        correctOptionIndexes
+      };
+    }
+    const correctIndex = Number(quiz.correctOptionIndex || 0);
+    if (!options[correctIndex]) return null;
+    return {
+      category: "custom",
+      customType: "choice",
+      sourceId: quiz.id,
+      front: quiz.question,
+      back: options[correctIndex],
+      acceptedAnswers: [options[correctIndex], String(correctIndex + 1)],
+      imageUrl: images[0].url,
+      options,
+      correctOptionIndex: correctIndex
+    };
+  }
+  if (type === "scramble") {
+    const answer = String(quiz.textAnswer || "").trim();
+    const pieces = (quiz.pieces || []).map((piece) => String(piece || "")).filter(Boolean);
+    if (!answer || pieces.length < 2) return null;
+    return {
+      category: "custom",
+      customType: "scramble",
+      sourceId: quiz.id,
+      front: quiz.question,
+      back: answer,
+      acceptedAnswers: [answer, ...(quiz.alternativeAnswers || [])],
+      imageUrl,
+      pieces
+    };
+  }
+  if (type === "match") {
+    const pairs = (quiz.pairs || [])
+      .map((pair) => ({ left: String(pair?.left || "").trim(), right: String(pair?.right || "").trim() }))
+      .filter((pair) => pair.left && pair.right);
+    if (pairs.length < 2) return null;
+    const rightOptions = shuffleCards(pairs.map((pair) => pair.right));
+    return {
+      category: "custom",
+      customType: "match",
+      sourceId: quiz.id,
+      front: quiz.question,
+      back: pairs.map((pair) => `${pair.left} → ${pair.right}`).join(", "),
+      acceptedAnswers: [],
+      imageUrl,
+      pairs,
+      rightOptions,
+      correctRightIndexes: pairs.map((pair) => rightOptions.indexOf(pair.right))
+    };
+  }
+  const orderItems = (quiz.orderItems || []).map((item) => String(item || "").trim()).filter(Boolean);
+  const itemCount = orderItems.length || images.length;
+  const answerOrder = String(quiz.answerOrder || "")
+    .replace(/[^1-9]/g, "")
+    .split("")
+    .map((digit) => Number(digit))
+    .filter((number, index, list) => number >= 1 && number <= itemCount && list.indexOf(number) === index);
+  if (itemCount < 2 || answerOrder.length !== itemCount) return null;
+  return {
+    category: "custom",
+    customType: "order",
+    sourceId: quiz.id,
+    front: quiz.question,
+    back: answerOrder.map((number) => orderItems[number - 1] || `이미지 ${number}`).join(" → "),
+    acceptedAnswers: [answerOrder.join(""), answerOrder.join("-"), answerOrder.join(",")],
+    imageUrl,
+    images,
+    orderItems,
+    answerOrder
+  };
 }
 
 function buildPersonQuizCard(category, person, fruit) {
@@ -4347,6 +4968,7 @@ function normalizeInPlace(target) {
   }));
   target.groups = target.groups || structuredClone(baseData.groups);
   target.bloodTypes = target.bloodTypes || structuredClone(baseData.bloodTypes);
+  target.customQuizzes = (target.customQuizzes || []).map(normalizeCustomQuizDraft);
   return target;
 }
 

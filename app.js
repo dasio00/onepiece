@@ -86,6 +86,8 @@ const compareMetricMeta = [
 ];
 const compareRevealDelayMs = 900;
 const compareTieChoice = "__tie__";
+const SHORTS_EXPORT_WIDTH = 1080;
+const SHORTS_EXPORT_HEIGHT = 1920;
 
 let currentView = "techniques";
 let activeId = "";
@@ -1886,6 +1888,7 @@ function renderQuizDetail(category) {
       <div class="quiz-topbar">
         ${renderQuizCategoryPicker(category.id)}
         ${renderQuizCreatorButton()}
+        ${renderShortsExportButton(card)}
         <div class="quiz-mode-controls">
           <button class="range ${quizMode === "test" ? "active" : ""}" data-quiz-mode="test" type="button">문제 풀이</button>
           <button class="range ${quizMode === "study" ? "active" : ""}" data-quiz-mode="study" type="button">학습</button>
@@ -1934,6 +1937,7 @@ function renderQuizDetail(category) {
   `;
   bindQuizCategoryPicker();
   bindQuizCreatorButton();
+  bindShortsExportButton(card);
   document.querySelectorAll("[data-quiz-mode]").forEach((button) => {
     button.addEventListener("click", () => {
       quizMode = button.dataset.quizMode;
@@ -2183,6 +2187,517 @@ function renderQuizCreatorButton() {
 
 function bindQuizCreatorButton() {
   detail.querySelector("#openQuizCreatorButton")?.addEventListener("click", () => renderQuizCreator());
+}
+
+function renderShortsExportButton(card) {
+  if (!card) return "";
+  return `<button class="primary shorts-export-trigger" id="openShortsExportButton" type="button">9:16 쇼츠 카드</button>`;
+}
+
+function bindShortsExportButton(card) {
+  detail.querySelector("#openShortsExportButton")?.addEventListener("click", () => openShortsExport(card));
+}
+
+async function openShortsExport(card) {
+  closeShortsExport();
+  const categoryTitle = quizCategoryMeta.find((category) => category.id === card.category)?.title || "퀴즈";
+  const modal = document.createElement("div");
+  modal.className = "shorts-export-overlay";
+  modal.id = "shortsExportOverlay";
+  modal.innerHTML = `
+    <section class="shorts-export-dialog" role="dialog" aria-modal="true" aria-labelledby="shortsExportTitle">
+      <header class="shorts-export-head">
+        <div>
+          <p class="eyebrow">1080 × 1920 PNG</p>
+          <h3 id="shortsExportTitle">9:16 쇼츠 카드 내보내기</h3>
+          <p>${escapeHtml(categoryTitle)} 퀴즈를 문제 → 정답 공개 흐름으로 저장합니다.</p>
+        </div>
+        <button class="shorts-export-close" id="closeShortsExportButton" type="button" aria-label="닫기">×</button>
+      </header>
+      <div class="shorts-export-status" id="shortsExportStatus" role="status">
+        <span class="shorts-export-spinner" aria-hidden="true"></span>
+        <b>고해상도 미리보기를 만들고 있습니다.</b>
+      </div>
+      <div class="shorts-export-previews" aria-live="polite">
+        <figure class="shorts-export-preview">
+          <figcaption><b>1</b><span>문제 카드</span></figcaption>
+          <div class="shorts-export-image-wrap">
+            <div class="shorts-export-skeleton"></div>
+            <img id="shortsQuestionPreview" alt="문제 카드 미리보기" />
+          </div>
+          <button class="sub-card" data-shorts-save="question" type="button" disabled>문제 카드 저장</button>
+        </figure>
+        <figure class="shorts-export-preview">
+          <figcaption><b>2</b><span>정답 공개 카드</span></figcaption>
+          <div class="shorts-export-image-wrap">
+            <div class="shorts-export-skeleton"></div>
+            <img id="shortsAnswerPreview" alt="정답 공개 카드 미리보기" />
+          </div>
+          <button class="sub-card" data-shorts-save="answer" type="button" disabled>정답 카드 저장</button>
+        </figure>
+      </div>
+      <div class="shorts-export-actions">
+        <button class="primary" id="saveShortsPairButton" type="button" disabled>2장 공유·저장</button>
+        <p>휴대폰에서는 공유 메뉴의 ‘이미지 저장’을 이용할 수 있습니다. 공유 기능이 없으면 PNG 파일로 내려받습니다.</p>
+      </div>
+    </section>
+  `;
+  document.body.appendChild(modal);
+  document.body.classList.add("shorts-export-open");
+  modal.querySelector("#closeShortsExportButton").addEventListener("click", closeShortsExport);
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) closeShortsExport();
+  });
+  document.addEventListener("keydown", handleShortsExportEscape);
+
+  try {
+    await document.fonts?.ready;
+    const media = await loadShortsExportMedia(card);
+    const question = await createShortsExportAsset(card, false, media);
+    const answer = await createShortsExportAsset(card, true, media);
+    media.forEach((item) => item.image?.close?.());
+    if (!document.body.contains(modal)) {
+      URL.revokeObjectURL(question.url);
+      URL.revokeObjectURL(answer.url);
+      return;
+    }
+    modal.shortsExportAssets = { question, answer };
+    modal.querySelector("#shortsQuestionPreview").src = question.url;
+    modal.querySelector("#shortsAnswerPreview").src = answer.url;
+    modal.querySelectorAll(".shorts-export-skeleton").forEach((item) => item.remove());
+    modal.querySelectorAll("[data-shorts-save]").forEach((button) => {
+      button.disabled = false;
+      button.addEventListener("click", () => saveShortsExportAssets([button.dataset.shortsSave], modal));
+    });
+    const pairButton = modal.querySelector("#saveShortsPairButton");
+    pairButton.disabled = false;
+    pairButton.addEventListener("click", () => saveShortsExportAssets(["question", "answer"], modal));
+    setShortsExportStatus(
+      modal,
+      media.some((item) => item.image)
+        ? "미리보기가 준비되었습니다. 문제 카드 다음에 정답 카드를 배치하세요."
+        : "미리보기가 준비되었습니다. 원본 이미지 대신 OP 그래픽을 사용했습니다.",
+      media.some((item) => item.image) ? "ready" : "warning"
+    );
+  } catch (error) {
+    console.error(error);
+    setShortsExportStatus(modal, "카드를 만드는 중 문제가 생겼습니다. 잠시 후 다시 시도해 주세요.", "error");
+  }
+}
+
+function handleShortsExportEscape(event) {
+  if (event.key === "Escape") closeShortsExport();
+}
+
+function closeShortsExport() {
+  const modal = document.querySelector("#shortsExportOverlay");
+  if (!modal) return;
+  Object.values(modal.shortsExportAssets || {}).forEach((asset) => URL.revokeObjectURL(asset.url));
+  modal.remove();
+  document.body.classList.remove("shorts-export-open");
+  document.removeEventListener("keydown", handleShortsExportEscape);
+}
+
+function setShortsExportStatus(modal, message, state) {
+  const status = modal.querySelector("#shortsExportStatus");
+  status.className = `shorts-export-status ${state}`;
+  status.innerHTML = `<span aria-hidden="true">${state === "ready" ? "✓" : state === "warning" ? "!" : "×"}</span><b>${escapeHtml(message)}</b>`;
+}
+
+async function loadShortsExportMedia(card) {
+  const urls = card.customType === "order" && card.images?.length
+    ? card.images.slice(0, 4).map((image) => image.url)
+    : [card.imageUrl];
+  return Promise.all(urls.filter(Boolean).map(async (url) => {
+    try {
+      const response = await fetch(url, { mode: "cors", cache: "force-cache" });
+      if (!response.ok) throw new Error(`Image request failed: ${response.status}`);
+      const blob = await response.blob();
+      const image = await decodeShortsExportImage(blob);
+      return { image, url };
+    } catch (error) {
+      return { image: null, url };
+    }
+  }));
+}
+
+async function decodeShortsExportImage(blob) {
+  if (typeof createImageBitmap === "function") return createImageBitmap(blob);
+  const objectUrl = URL.createObjectURL(blob);
+  try {
+    return await new Promise((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => resolve(image);
+      image.onerror = () => reject(new Error("Image decode failed"));
+      image.src = objectUrl;
+    });
+  } finally {
+    URL.revokeObjectURL(objectUrl);
+  }
+}
+
+async function createShortsExportAsset(card, revealAnswer, media) {
+  const canvas = document.createElement("canvas");
+  canvas.width = SHORTS_EXPORT_WIDTH;
+  canvas.height = SHORTS_EXPORT_HEIGHT;
+  drawShortsExportCard(canvas, card, revealAnswer, media);
+  const blob = await canvasToPngBlob(canvas);
+  return {
+    blob,
+    url: URL.createObjectURL(blob),
+    filename: shortsExportFilename(card, revealAnswer)
+  };
+}
+
+function drawShortsExportCard(canvas, card, revealAnswer, media) {
+  const ctx = canvas.getContext("2d");
+  const width = canvas.width;
+  const height = canvas.height;
+  const categoryTitle = quizCategoryMeta.find((category) => category.id === card.category)?.title || "퀴즈";
+  const background = ctx.createLinearGradient(0, 0, width, height);
+  background.addColorStop(0, "#0b2036");
+  background.addColorStop(0.56, "#102f4a");
+  background.addColorStop(1, revealAnswer ? "#17443f" : "#11243a");
+  ctx.fillStyle = background;
+  ctx.fillRect(0, 0, width, height);
+  drawShortsBackgroundPattern(ctx, width, height, revealAnswer);
+
+  drawShortsRoundRect(ctx, 58, 58, 964, 1804, 42);
+  ctx.fillStyle = "rgba(255, 255, 255, 0.05)";
+  ctx.fill();
+  ctx.strokeStyle = revealAnswer ? "#58d6bd" : "#ffd166";
+  ctx.lineWidth = 4;
+  ctx.stroke();
+
+  ctx.fillStyle = revealAnswer ? "#58d6bd" : "#ffd166";
+  ctx.font = '900 32px "Noto Sans KR", "Malgun Gothic", sans-serif';
+  ctx.textAlign = "left";
+  ctx.textBaseline = "middle";
+  ctx.fillText(revealAnswer ? "ANSWER REVEAL" : "ONE PIECE QUIZ", 104, 128);
+  ctx.textAlign = "right";
+  ctx.fillStyle = "#ffffff";
+  ctx.font = '800 28px "Noto Sans KR", "Malgun Gothic", sans-serif';
+  ctx.fillText(categoryTitle, 976, 128);
+
+  drawShortsMedia(ctx, media, 144, 220, 792, 720, revealAnswer);
+
+  const options = shortsExportOptions(card);
+  ctx.fillStyle = revealAnswer ? "#58d6bd" : "#ffd166";
+  ctx.font = '900 30px "Noto Sans KR", "Malgun Gothic", sans-serif';
+  ctx.textAlign = "center";
+  ctx.fillText(revealAnswer ? "정답 공개" : "QUESTION", width / 2, 1020);
+  drawShortsFittedText(ctx, card.front, {
+    x: 126,
+    y: 1070,
+    width: 828,
+    height: options.length ? 205 : 340,
+    maxFontSize: 62,
+    minFontSize: 39,
+    color: "#ffffff",
+    weight: 900
+  });
+
+  if (options.length) {
+    drawShortsOptions(ctx, options, 126, 1295, 828, 250);
+  }
+
+  const revealY = options.length ? 1580 : 1515;
+  const revealHeight = options.length ? 196 : 270;
+  drawShortsRoundRect(ctx, 112, revealY, 856, revealHeight, 30);
+  ctx.fillStyle = revealAnswer ? "#ffd166" : "rgba(4, 15, 28, 0.7)";
+  ctx.fill();
+  ctx.strokeStyle = revealAnswer ? "#ffe6a8" : "rgba(255, 209, 102, 0.65)";
+  ctx.lineWidth = 3;
+  ctx.stroke();
+
+  if (revealAnswer) {
+    ctx.fillStyle = "#51350a";
+    ctx.font = '900 27px "Noto Sans KR", "Malgun Gothic", sans-serif';
+    ctx.textAlign = "center";
+    ctx.fillText("정답", width / 2, revealY + 42);
+    drawShortsFittedText(ctx, card.back, {
+      x: 152,
+      y: revealY + 70,
+      width: 776,
+      height: revealHeight - 92,
+      maxFontSize: options.length ? 48 : 68,
+      minFontSize: 32,
+      color: "#16283d",
+      weight: 900
+    });
+  } else {
+    ctx.fillStyle = "#ffd166";
+    ctx.font = '900 42px "Noto Sans KR", "Malgun Gothic", sans-serif';
+    ctx.textAlign = "center";
+    ctx.fillText("정답은 잠시 후 공개!", width / 2, revealY + revealHeight / 2 - 14);
+    ctx.fillStyle = "#dce8f5";
+    ctx.font = '700 27px "Noto Sans KR", "Malgun Gothic", sans-serif';
+    ctx.fillText("화면을 멈추고 먼저 맞혀 보세요", width / 2, revealY + revealHeight / 2 + 42);
+  }
+
+  ctx.fillStyle = "rgba(255, 255, 255, 0.72)";
+  ctx.font = '700 24px "Noto Sans KR", "Malgun Gothic", sans-serif';
+  ctx.textAlign = "left";
+  ctx.fillText("원피스 데이터 탐색기", 106, 1818);
+  ctx.textAlign = "right";
+  ctx.fillText(revealAnswer ? "02  정답" : "01  문제", 974, 1818);
+}
+
+function drawShortsBackgroundPattern(ctx, width, height, revealAnswer) {
+  ctx.save();
+  ctx.globalAlpha = 0.11;
+  ctx.strokeStyle = revealAnswer ? "#58d6bd" : "#ffd166";
+  ctx.lineWidth = 2;
+  for (let y = -width; y < height + width; y += 150) {
+    ctx.beginPath();
+    ctx.moveTo(0, y);
+    ctx.lineTo(width, y + width);
+    ctx.stroke();
+  }
+  ctx.globalAlpha = 0.09;
+  ctx.fillStyle = "#ffffff";
+  [180, 900, 1640].forEach((y, index) => {
+    ctx.beginPath();
+    ctx.arc(index % 2 ? 1000 : 80, y, 190 + index * 30, 0, Math.PI * 2);
+    ctx.fill();
+  });
+  ctx.restore();
+}
+
+function drawShortsMedia(ctx, media, x, y, width, height, revealAnswer) {
+  drawShortsRoundRect(ctx, x, y, width, height, 34);
+  ctx.save();
+  ctx.clip();
+  const available = media.filter((item) => item.image);
+  if (!available.length) {
+    const placeholder = ctx.createLinearGradient(x, y, x + width, y + height);
+    placeholder.addColorStop(0, revealAnswer ? "#1e6a60" : "#244867");
+    placeholder.addColorStop(1, "#0b1f33");
+    ctx.fillStyle = placeholder;
+    ctx.fillRect(x, y, width, height);
+    ctx.fillStyle = "rgba(255, 255, 255, 0.1)";
+    ctx.beginPath();
+    ctx.arc(x + width / 2, y + height / 2, 240, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = revealAnswer ? "#58d6bd" : "#ffd166";
+    ctx.font = '900 170px "Segoe UI", sans-serif';
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("OP", x + width / 2, y + height / 2);
+  } else if (available.length === 1) {
+    drawShortsImageCover(ctx, available[0].image, x, y, width, height);
+  } else {
+    const gap = 8;
+    const columns = 2;
+    const rows = Math.ceil(available.length / columns);
+    const cellWidth = (width - gap) / columns;
+    const cellHeight = (height - gap * (rows - 1)) / rows;
+    available.forEach((item, index) => {
+      const cellX = x + (index % columns) * (cellWidth + gap);
+      const cellY = y + Math.floor(index / columns) * (cellHeight + gap);
+      drawShortsImageCover(ctx, item.image, cellX, cellY, cellWidth, cellHeight);
+      ctx.fillStyle = "rgba(5, 18, 31, 0.82)";
+      ctx.beginPath();
+      ctx.arc(cellX + 34, cellY + 34, 23, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = "#ffffff";
+      ctx.font = '900 24px "Noto Sans KR", "Malgun Gothic", sans-serif';
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(String(index + 1), cellX + 34, cellY + 35);
+    });
+  }
+  ctx.restore();
+  drawShortsRoundRect(ctx, x, y, width, height, 34);
+  ctx.strokeStyle = revealAnswer ? "#58d6bd" : "#ffd166";
+  ctx.lineWidth = 5;
+  ctx.stroke();
+}
+
+function drawShortsImageCover(ctx, image, x, y, width, height) {
+  const scale = Math.max(width / image.width, height / image.height);
+  const sourceWidth = width / scale;
+  const sourceHeight = height / scale;
+  const sourceX = (image.width - sourceWidth) / 2;
+  const sourceY = (image.height - sourceHeight) / 2;
+  ctx.drawImage(image, sourceX, sourceY, sourceWidth, sourceHeight, x, y, width, height);
+}
+
+function shortsExportOptions(card) {
+  if (["choice", "multiple"].includes(card.customType)) {
+    return (card.options || []).slice(0, 6).map((optionText, index) => `${index + 1}. ${optionText}`);
+  }
+  if (card.customType === "scramble") {
+    return (card.pieces || []).slice(0, 6).map((piece) => `조각 · ${piece}`);
+  }
+  if (card.customType === "match") {
+    return (card.pairs || []).slice(0, 6).map((pair, index) => `${index + 1}. ${pair.left}`);
+  }
+  if (card.customType === "order" && card.orderItems?.length) {
+    return card.orderItems.slice(0, 6).map((itemText, index) => `${index + 1}. ${itemText}`);
+  }
+  return [];
+}
+
+function drawShortsOptions(ctx, options, x, y, width, height) {
+  const columns = options.length > 3 ? 2 : 1;
+  const rows = Math.ceil(options.length / columns);
+  const gap = 12;
+  const itemWidth = (width - gap * (columns - 1)) / columns;
+  const itemHeight = Math.min(74, (height - gap * (rows - 1)) / rows);
+  options.forEach((optionText, index) => {
+    const column = index % columns;
+    const row = Math.floor(index / columns);
+    const itemX = x + column * (itemWidth + gap);
+    const itemY = y + row * (itemHeight + gap);
+    drawShortsRoundRect(ctx, itemX, itemY, itemWidth, itemHeight, 18);
+    ctx.fillStyle = "rgba(255, 255, 255, 0.09)";
+    ctx.fill();
+    ctx.strokeStyle = "rgba(255, 255, 255, 0.22)";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    drawShortsFittedText(ctx, optionText, {
+      x: itemX + 18,
+      y: itemY + 12,
+      width: itemWidth - 36,
+      height: itemHeight - 24,
+      maxFontSize: 29,
+      minFontSize: 22,
+      color: "#ffffff",
+      weight: 750,
+      align: "left"
+    });
+  });
+}
+
+function drawShortsFittedText(ctx, text, settings) {
+  const {
+    x,
+    y,
+    width,
+    height,
+    maxFontSize,
+    minFontSize,
+    color,
+    weight,
+    align = "center"
+  } = settings;
+  let fontSize = maxFontSize;
+  let lines = [];
+  let lineHeight = fontSize * 1.28;
+  while (fontSize >= minFontSize) {
+    ctx.font = `${weight} ${fontSize}px "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif`;
+    lines = wrapShortsText(ctx, String(text || ""), width);
+    lineHeight = fontSize * 1.28;
+    if (lines.length * lineHeight <= height) break;
+    fontSize -= 2;
+  }
+  const maxLines = Math.max(1, Math.floor(height / lineHeight));
+  if (lines.length > maxLines) {
+    lines = lines.slice(0, maxLines);
+    let lastLine = lines[maxLines - 1];
+    while (lastLine && ctx.measureText(`${lastLine}…`).width > width) lastLine = lastLine.slice(0, -1);
+    lines[maxLines - 1] = `${lastLine.trim()}…`;
+  }
+  ctx.fillStyle = color;
+  ctx.textAlign = align;
+  ctx.textBaseline = "top";
+  const startY = y + Math.max(0, (height - lines.length * lineHeight) / 2);
+  const textX = align === "left" ? x : x + width / 2;
+  lines.forEach((line, index) => ctx.fillText(line, textX, startY + index * lineHeight));
+}
+
+function wrapShortsText(ctx, text, maxWidth) {
+  const lines = [];
+  String(text || "").split(/\n/).forEach((paragraph) => {
+    const characters = Array.from(paragraph);
+    let line = "";
+    let lastSpaceIndex = -1;
+    characters.forEach((character) => {
+      const candidate = `${line}${character}`;
+      if (character === " ") lastSpaceIndex = line.length;
+      if (line && ctx.measureText(candidate).width > maxWidth) {
+        if (lastSpaceIndex > 0) {
+          lines.push(line.slice(0, lastSpaceIndex).trim());
+          line = `${line.slice(lastSpaceIndex + 1)}${character}`.trimStart();
+        } else {
+          lines.push(line.trim());
+          line = character.trimStart();
+        }
+        lastSpaceIndex = line.lastIndexOf(" ");
+      } else {
+        line = candidate;
+      }
+    });
+    if (line.trim() || !characters.length) lines.push(line.trim());
+  });
+  return lines.length ? lines : [""];
+}
+
+function drawShortsRoundRect(ctx, x, y, width, height, radius) {
+  const safeRadius = Math.min(radius, width / 2, height / 2);
+  ctx.beginPath();
+  ctx.moveTo(x + safeRadius, y);
+  ctx.arcTo(x + width, y, x + width, y + height, safeRadius);
+  ctx.arcTo(x + width, y + height, x, y + height, safeRadius);
+  ctx.arcTo(x, y + height, x, y, safeRadius);
+  ctx.arcTo(x, y, x + width, y, safeRadius);
+  ctx.closePath();
+}
+
+function canvasToPngBlob(canvas) {
+  return new Promise((resolve, reject) => {
+    canvas.toBlob((blob) => {
+      if (blob) resolve(blob);
+      else reject(new Error("PNG blob creation failed"));
+    }, "image/png");
+  });
+}
+
+async function saveShortsExportAssets(keys, modal) {
+  const assets = keys.map((key) => modal.shortsExportAssets?.[key]).filter(Boolean);
+  if (!assets.length) return;
+  const status = modal.querySelector("#shortsExportStatus");
+  const files = assets.map((asset) => new File([asset.blob], asset.filename, { type: "image/png" }));
+  try {
+    if (navigator.share && navigator.canShare?.({ files })) {
+      await navigator.share({
+        title: "원피스 9:16 퀴즈 카드",
+        text: "문제 카드 다음에 정답 공개 카드를 배치하세요.",
+        files
+      });
+      setShortsExportStatus(modal, `${files.length}장 공유 준비가 완료되었습니다.`, "ready");
+      return;
+    }
+    assets.forEach((asset, index) => {
+      window.setTimeout(() => downloadShortsAsset(asset), index * 180);
+    });
+    setShortsExportStatus(modal, `${assets.length}장 PNG 다운로드를 시작했습니다.`, "ready");
+  } catch (error) {
+    if (error?.name === "AbortError") {
+      status?.focus?.();
+      return;
+    }
+    assets.forEach((asset, index) => {
+      window.setTimeout(() => downloadShortsAsset(asset), index * 180);
+    });
+    setShortsExportStatus(modal, "공유 대신 PNG 다운로드를 시작했습니다.", "warning");
+  }
+}
+
+function downloadShortsAsset(asset) {
+  const link = document.createElement("a");
+  link.href = asset.url;
+  link.download = asset.filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+}
+
+function shortsExportFilename(card, revealAnswer) {
+  const category = String(card.category || "quiz").replace(/[^\p{L}\p{N}-]+/gu, "-");
+  const person = String(card.personId || card.sourceId || "card").replace(/[^\p{L}\p{N}-]+/gu, "-");
+  return `onepiece-${category}-${person}-${revealAnswer ? "02-answer" : "01-question"}.png`;
 }
 
 function renderQuizCreator(quiz = null) {

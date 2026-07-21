@@ -1,0 +1,6939 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "2499c1d218e46576b2dc18548956bd3483cd7fba",
+  "generatedAt": "2026-07-19T22:13:22.902Z",
+  "items": [
+    {
+      "id": "namu-luffy-bone-balloon",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "뼈풍선",
+        "nameJa": "骨風船",
+        "nameEn": "Bone Balloon",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-28",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 미사일",
+        "nameJa": "ゴムゴムの JET (ジェット) ミサイル",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-29",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 도끼 (액스)",
+        "nameJa": "ゴムゴムの JET (ジェット) 斧 (アックス)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-30",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 창 (랜스)",
+        "nameJa": "ゴムゴムの JET (ジェット) 槍 (ランス)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-31",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 스탬프 난타 (개틀링)",
+        "nameJa": "ゴムゴムの JET (ジェット) スタンプガトリング",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-34",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 매 (호크) 회전탄 (라이플)",
+        "nameJa": "ゴムゴムの 鷹 (ホーク) ライフル",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-37",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 매 (호크) 채찍 (윕)",
+        "nameJa": "ゴムゴムの 鷹鞭 (ホークウィップ)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-38",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 매 (호크) 스탬프",
+        "nameJa": "ゴムゴムの 鷹 (ホーク) スタンプ",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-39",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 매 (호크) 총탄 (불릿)",
+        "nameJa": "ゴムゴムの 鷹銃弾 (ホークブレット)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-40",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 매 (호크) 도끼 (액스)",
+        "nameJa": "ゴムゴムの 鷹斧 (ホークアックス)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-41",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 매 (호크) 트윈 총 (피스톨)",
+        "nameJa": "ゴムゴムの 鷹 (ホーク) ツイン 銃 (ピストル)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-42",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 독수리 (이글) 폭풍우 (스톰)",
+        "nameJa": "ゴムゴムの 鷲 (イーグル) 暴風雨 (ストーム)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-2-plus-3-04",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 JET 총난타 (기간트 제트 개틀링)",
+        "nameJa": "ゴムゴムの 巨人のJET銃乱打 (ギガントジェットガトリング)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 2 + Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202%20%2B%20%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-3-12",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 (기간트) 총 (피스톨)",
+        "nameJa": "ゴムゴムの 巨人の銃 (ギガントピストル)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-3-14",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 (기간트) 도끼 (액스)",
+        "nameJa": "ゴムゴムの 巨人の斧 (ギガントアックス)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-3-22",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 (기간트) 파리채",
+        "nameJa": "ゴムゴムの 巨人のハエたたき (ギガントハエたたき)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-3-23",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 (기간트) 총난타 (개틀링)",
+        "nameJa": "ゴムゴムの 巨人の銃乱打 (ギガントガトリング)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-3-28",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 회색곰 (그리즐리) 코크 스크류 총 (매그넘)",
+        "nameJa": "ゴムゴムの 灰熊コークスクリュー銃 (グリズリーコークスクリューマグナム)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-3-29",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 코끼리 (엘리펀트) 폭풍우 (스톰)",
+        "nameJa": "ゴムゴムの 象暴風雨 (エレファントストーム)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-4-40",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 원숭이 패왕 (오버 콩) 총 (건)",
+        "nameJa": "ゴムゴムの 覇 (オーバー) 猿王 (コング) 銃 (ガン)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-4-47",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 캐넌볼",
+        "nameJa": "",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "nameJa",
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-4-68",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 구렁이 포 (컬버린)",
+        "nameJa": "ゴムゴムのJET 大蛇砲 (カルヴァリン)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-4-69",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 검은 (블랙) 뱀 군단 (맘바)",
+        "nameJa": "ゴムゴムの 黒い蛇群 (ブラックマンバ)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-4-71",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 라이노 스탬피드",
+        "nameJa": "ゴムゴムのリノスタンピード",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-4-72",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 왕 (킹) 뱀 (코브라)",
+        "nameJa": "ゴムゴムの 王蛇 (キング・コブラ)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-4-73",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 뱀 용왕 포 (나가 우르반)",
+        "nameJa": "ゴムゴムの 蛇龍王砲 (ナーガ・ウルバン)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-4-74",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 아홉 머리 뱀 (히드라)",
+        "nameJa": "ゴムゴムの 九頭蛇 (ヒュドラ)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-5-48",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 탈출 로켓",
+        "nameJa": "ゴムゴムの脱出ロケット",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-5-50",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인 (기간트)",
+        "nameJa": "ゴムゴムの 巨人 (ギガント)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-5-51",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 줄넘기",
+        "nameJa": "ゴムゴムの縄飛び",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-5-52",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 반격",
+        "nameJa": "ゴムゴムのお返し",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-5-53",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 번개",
+        "nameJa": "ゴムゴムの雷",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gear-5-64",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 하얀 (던) 바이스 (심벌)",
+        "nameJa": "ゴムゴムの 白い (ドーン) 万力 (シンバル)",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "nameEn",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-bajrang-gun",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 원숭이 신 (바즈랑) 총 (건)",
+        "nameJa": "ゴムゴムの 猿神 (バジュラング) 銃 (ガン)",
+        "nameEn": "Gum-Gum Bajrang Gun",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-culverin",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 구렁이 포 (컬버린)",
+        "nameJa": "ゴムゴムの 大蛇砲 (カルヴァリン)",
+        "nameEn": "Gum-Gum Culverin",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-balloon",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 하얀 (던) 풍선 (벌룬)",
+        "nameJa": "ゴムゴムの 白い (ドーン) 風船 (バルーン)",
+        "nameEn": "Gum-Gum Dawn Balloon",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-gatling",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 하얀 (던) 총난타 (개틀링)",
+        "nameJa": "ゴムゴムの 白い (ドーン) 銃乱打 (ガトリング)",
+        "nameEn": "Gum-Gum Dawn Gatling",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-pistol",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 하얀 (던) 권총 (피스톨)",
+        "nameJa": "ゴムゴムの 白い (ドーン) 拳銃 (ピストル)",
+        "nameEn": "Gum-Gum Dawn Pistol",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-rocket",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 하얀 (던) 로켓",
+        "nameJa": "ゴムゴムの 白い (ドーン) ロケット",
+        "nameEn": "Gum-Gum Dawn Rocket",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-stamp",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 하얀 (던) 스탬프",
+        "nameJa": "ゴムゴムの 白い (ドーン) スタンプ",
+        "nameEn": "Gum-Gum Dawn Stamp",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-thor-rifle",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 하얀 (던) 번개 (토르) 회전탄 (라이플)",
+        "nameJa": "白い雷回転弾",
+        "nameEn": "Gum-Gum Dawn Thor Rifle",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-dawn-whip",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 하얀 (던) 채찍 (윕)",
+        "nameJa": "ゴムゴムの 白い (ドーン) 鞭 (ウィップ)",
+        "nameEn": "Gum-Gum Dawn Whip",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-double-culverin",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 더블 구렁이 포 (컬버린)",
+        "nameJa": "ゴムゴムのダブル 大蛇砲 (カルヴァリン)",
+        "nameEn": "Gum-Gum Double Culverin",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-eagle-bazooka",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 독수리 (이글) 바주카",
+        "nameJa": "ゴムゴムの 鷲 (イーグル) バズーカ",
+        "nameEn": "Gum-Gum Eagle Bazooka",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-elephant-gatling",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 코끼리 총난타 (엘리펀트 개틀링)",
+        "nameJa": "ゴムゴムの 象銃乱打 (エレファント・ガトリング)",
+        "nameEn": "Gum-Gum Elephant Gatling",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-elephant-gun",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 코끼리 (엘리펀트) 총 (건)",
+        "nameJa": "ゴムゴムの 象銃 (エレファント・ガン)",
+        "nameEn": "Gum-Gum Elephant Gun",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-elephant-whip",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 코끼리 (엘리펀트) 채찍 (윕)",
+        "nameJa": "ゴムゴムの 象鞭 (エレファントウィップ)",
+        "nameEn": "Gum-Gum Elephant Whip",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-balloon",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 (기간트) 풍선",
+        "nameJa": "ゴムゴムの 巨人の風船 (ギガントフーセン)",
+        "nameEn": "Gum-Gum Giant Balloon",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-bazooka",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 (기간트) 바주카",
+        "nameJa": "ゴムゴムの 巨人のバズーカ (ギガントバズーカ)",
+        "nameEn": "Gum-Gum Giant Bazooka",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-jet-shell",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 JET 포탄 (기간트 제트 쉘)",
+        "nameJa": "ゴムゴムの 巨人のJET砲弾 (ギガントジェットシェル)",
+        "nameEn": "Gum-Gum Giant Jet Shell",
+        "reading": "",
+        "sourceTitle": "Gear 2 + Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202%20%2B%20%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-rifle",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 (기간트) 회전탄 (라이플)",
+        "nameJa": "ゴムゴムの 巨人の回転弾 (ギガントライフル)",
+        "nameEn": "Gum-Gum Giant Rifle",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-stamp",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 (기간트) 스탬프",
+        "nameJa": "ゴムゴムの 巨人のスタンプ (ギガントスタンプ)",
+        "nameEn": "Gum-Gum Giant Stamp",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-sumo-slap",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 (기간트) 밀쳐내기",
+        "nameJa": "ゴムゴムの 巨人のつっぱり (ギガントつっぱり)",
+        "nameEn": "Gum-Gum Giant Sumo Slap",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-thor-axe",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 (기간트) 천둥 (토르) 도끼 (액스)",
+        "nameJa": "ゴムゴムの 巨人の雷斧 (ギガントトールアックス)",
+        "nameEn": "Gum-Gum Giant Thor Axe",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-giant-whip",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 거인의 (기간트) 채찍 (윕)",
+        "nameJa": "ゴムゴムの 巨人の鞭 (ギガントウィップ)",
+        "nameEn": "Gum-Gum Giant Whip",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-grizzly-magnum",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 회색곰 (그리즐리) 총 (매그넘)",
+        "nameJa": "ゴムゴムの 灰熊銃 (グリズリー・マグナム)",
+        "nameEn": "Gum-Gum Grizzly Magnum",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-hawk-gatling",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 매 (호크) 총난타 (개틀링)",
+        "nameJa": "ゴムゴムの 鷹銃乱打 (ホークガトリング)",
+        "nameEn": "Gum-Gum Hawk Gatling",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-bazooka",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 바주카",
+        "nameJa": "ゴムゴムの JET (ジェット) バズーカ",
+        "nameEn": "Gum-Gum Jet Bazooka",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-bullet",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 총탄 (불릿)",
+        "nameJa": "ゴムゴムの JET (ジェット) 銃弾 (ブレット)",
+        "nameEn": "Gum-Gum Jet Bullet",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-cannon",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 공성포 (캐넌)",
+        "nameJa": "ゴムゴムの JET (ジェット) 攻城砲 (キャノン)",
+        "nameEn": "Gum-Gum Jet Cannon",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-gatling",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 총난타 (개틀링)",
+        "nameJa": "ゴムゴムの JET (ジェット) 銃乱打 (ガトリング)",
+        "nameEn": "Gum-Gum Jet Gatling",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-hammer",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 해머",
+        "nameJa": "ゴムゴムの JET (ジェット) ハンマー",
+        "nameEn": "Gum Gum Jet Hammer",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-human-shield",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 대타",
+        "nameJa": "ゴムゴムの JET (ジェット) 身代り (みかわり)",
+        "nameEn": "Gum-Gum Jet Human Shield",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-mace",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 모두봉 (메이스)",
+        "nameJa": "ゴムゴムの JET (ジェット) 鉾頭棒 (メイス)",
+        "nameEn": "Gum-Gum Jet Mace",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-pistol",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 총 (피스톨)",
+        "nameJa": "ゴムゴムの JET (ジェット) 銃 (ピストル)",
+        "nameEn": "Gum-Gum Jet Pistol",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-rifle",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 회전탄 (라이플)",
+        "nameJa": "ゴムゴムの JET (ジェット) ライフル",
+        "nameEn": "Gum-Gum Jet Rifle",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-rocket",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 로켓",
+        "nameJa": "ゴムゴムの JET (ジェット) ロケット",
+        "nameEn": "Gum-Gum Jet Rocket",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-spear",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 창 (스피어)",
+        "nameJa": "ゴムゴムの JET (ジェット) 槍 (スピア)",
+        "nameEn": "Gum-Gum Jet Spear",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-jet-stamp",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 스탬프",
+        "nameJa": "ゴムゴムの JET (ジェット) スタンプ",
+        "nameEn": "Gum-Gum Jet Stamp",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-king-king-king-kong-gun",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 원숭이 대대대왕 (킹킹킹 콩) 총 (건)",
+        "nameJa": "ゴムゴムの 大大大 (キングキングキング) 猿王 (コング) 銃 (ガン)",
+        "nameEn": "Gum-Gum King King King Kong Gun",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-king-kong-gatling",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 원숭이 대왕 (킹 콩) 총난타 (개틀링)",
+        "nameJa": "ゴムゴムの 大 (キング) 猿王 (コング) 銃乱打 (ガトリング)",
+        "nameEn": "Gum-Gum King Kong Gatling",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-king-kong-gun",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 원숭이 대왕 (킹 콩) 총 (건)",
+        "nameJa": "ゴムゴムの 大 (キング) 猿王 (コング) 銃 (ガン)",
+        "nameEn": "Gum-Gum King Kong Gun",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-kong-gatling",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 원숭이 왕 (콩) 총난타 (개틀링)",
+        "nameJa": "ゴムゴムの 猿王 (コング) 銃乱打 (ガトリング)",
+        "nameEn": "Gum-Gum Kong Gatling",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-kong-gun",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 원숭이 왕 (콩) 총 (건)",
+        "nameJa": "ゴムゴムの 猿王 (コング) 銃 (ガン)",
+        "nameEn": "Gum-Gum Kong Gun",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-kong-organ-gun",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 원숭이 왕 (콩) 까마귀 떼 포 (오르간)",
+        "nameJa": "ゴムゴムの 猿王群鴉砲 (コングオルガン)",
+        "nameEn": "Gum-Gum Kong Organ Gun",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-kong-rifle",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 원숭이 왕 (콩) 회전탄 (라이플)",
+        "nameJa": "ゴムゴムの 猿王 (コング) 回轉彈 (ライフル)",
+        "nameEn": "Gum-Gum Kong Rifle",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-leo-bazooka",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 사자 (레오) 바주카",
+        "nameJa": "ゴムゴムの 獅子 (レオ) ・バズーカ",
+        "nameEn": "Gum-Gum Leo Bazooka",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-leo-rex-bazooka",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 사자 (레오) 왕 (렉스) 바주카",
+        "nameJa": "ゴムゴムの 獅子 (レオ) 王 (レックス) ・バズーカ",
+        "nameEn": "Gum-Gum Leo Rex Bazooka",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-mole-pistol",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 두더지 총 (피스톨)",
+        "nameJa": "ゴムゴムのモグラ 銃 (ピストル)",
+        "nameEn": "Gum-Gum Mole Pistol",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-no-jet-whip",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 JET (제트) 채찍 (윕)",
+        "nameJa": "ゴムゴムの JET (ジェット) 鞭 (ウィップ)",
+        "nameEn": "Gomu Gomu no Jet Whip",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-red-hawk",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 불주먹 총 (레드 호크)",
+        "nameJa": "ゴムゴムの 火拳銃 (レッドホーク)",
+        "nameEn": "Gum-Gum Red Hawk",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-red-roc",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 업화 (레드) 권총 (로크)",
+        "nameJa": "ゴムゴムの 業火拳銃 (レッドロック)",
+        "nameEn": "Gum-Gum Red Roc",
+        "reading": "",
+        "sourceTitle": "Gear 2 + Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202%20%2B%20%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-rhino-schneider",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 코뿔소 (라이노) 곡사포 (슈나이더)",
+        "nameJa": "ゴムゴムの 犀榴弾砲 (リノシュナイダー)",
+        "nameEn": "Gum Gum Rhino Schneider",
+        "reading": "",
+        "sourceTitle": "Gear 4",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%204"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-roc-gatling",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 괴조 총난타 (로크 개틀링)",
+        "nameJa": "ゴムゴムの 怪鳥銃乱打 (ロック・ガトリング)",
+        "nameEn": "Gum-Gum Roc Gatling",
+        "reading": "",
+        "sourceTitle": "Gear 2 + Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202%20%2B%20%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-roc-gun",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 괴조 (로크) 총 (건)",
+        "nameJa": "ゴムゴムの 怪鳥銃 (ロック・ガン)",
+        "nameEn": "Gum-Gum Roc Gun",
+        "reading": "",
+        "sourceTitle": "Gear 2 + Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202%20%2B%20%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-star-gun",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 흰 별 총 (스타 건)",
+        "nameJa": "ゴムゴムの 白星銃 (スターガン)",
+        "nameEn": "Gum-Gum Star Gun",
+        "reading": "",
+        "sourceTitle": "Gear 5",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%205"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-thor-elephant-gun",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 뇌장 (토르) 코끼리 (엘리펀트) 총 (건)",
+        "nameJa": "ゴムゴムの 雷将象銃 (トールエレファント・ガン)",
+        "nameEn": "Gum-Gum Thor Elephant Gun",
+        "reading": "",
+        "sourceTitle": "Gear 3",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%203"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "namu-luffy-gomu-gomu-twin-jet-pistol",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 트윈 JET (제트) 총 (피스톨)",
+        "nameJa": "ゴムゴムのツイン JET (ジェット) 銃 (ピストル)",
+        "nameEn": "Gum-Gum Twin Jet Pistol",
+        "reading": "",
+        "sourceTitle": "Gear 2",
+        "sourceUrl": "https://namu.wiki/w/%EA%B8%B0%EC%96%B4%202"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "oni-giri",
+      "ownerId": "zoro",
+      "current": {
+        "nameKo": "삼도류 귀참",
+        "nameJa": "",
+        "nameEn": "",
+        "reading": "",
+        "sourceTitle": "",
+        "sourceUrl": ""
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "도깨비 참수",
+          "score": 7,
+          "sourceTitle": "롤로노아 조로/기술",
+          "sourceUrl": "https://namu.wiki/w/%EB%A1%A4%EB%A1%9C%EB%85%B8%EC%95%84%20%EC%A1%B0%EB%A1%9C/%EA%B8%B0%EC%88%A0",
+          "match": "exact-Japanese-base+exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-1-000-000-v",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "100 万 （ まん ） V （ ボルト ）",
+        "nameEn": "1,000,000 V",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-100-000-000-v",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "1 億 （ おく ） V （ ボルト ）",
+        "nameEn": "100,000,000 V",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-20-000-000-v",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "2000 万 （ まん ） V （ ボルト ）",
+        "nameEn": "20,000,000 V",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-200-000-000-v-amaru",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "2 億 （ おく ） V （ ボルト ） 雷神 （ アマル ）",
+        "nameEn": "200,000,000 V Amaru",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-30-000-000-v-hino",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "3000 万 （ まん ） V （ ボルト ） 雷鳥 （ ヒノ ）",
+        "nameEn": "30,000,000 V Hino",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-500-000-000-v-amaru",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "5 億 （ おく ） V （ ボルト ） 雷神 （ アマル ）",
+        "nameEn": "500,000,000 V Amaru",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-60-000-000-v-jamboule",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "6000 万 （ まん ） V （ ボルト ） 雷龍 （ ジャムブウル ）",
+        "nameEn": "60,000,000 V Jamboule",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-600-000-000-belly-jackpot",
+      "ownerId": "wt100-131",
+      "current": {
+        "nameKo": "",
+        "nameJa": "６ 億 （ おく ） Ｂ （ ベル ） ・ ＪＡＣＫＰＯＴ （ ジャックポット ）",
+        "nameEn": "600,000,000 Belly Jackpot",
+        "reading": "",
+        "sourceTitle": "Hana Hana no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-abare-himatsuri",
+      "ownerId": "wt100-793",
+      "current": {
+        "nameKo": "",
+        "nameJa": "あばれ火祭り",
+        "nameEn": "Abare Himatsuri",
+        "reading": "",
+        "sourceTitle": "Zushi Zushi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Zushi_Zushi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-air-raid-smash",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "エアーレイドスマッシュ",
+        "nameEn": "Air Raid Smash",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-aka-byobu",
+      "ownerId": "wt100-896",
+      "current": {
+        "nameKo": "",
+        "nameJa": "赤猫踊",
+        "nameEn": "Aka Byobu",
+        "reading": "",
+        "sourceTitle": "Electro",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Electro"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-aka-oni-okomega",
+      "ownerId": "wt100-2",
+      "current": {
+        "nameKo": "",
+        "nameJa": "赤鬼 怒巨 （ オコメガ ）",
+        "nameEn": "Aka-Oni Okomega",
+        "reading": "",
+        "sourceTitle": "Three Sword Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-amaru",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Amaru",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-amaru-kairai",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Amaru: Kairai",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-amputate",
+      "ownerId": "wt100-501",
+      "current": {
+        "nameKo": "",
+        "nameJa": "切断 （ アンピュテート ）",
+        "nameEn": "Amputate",
+        "reading": "",
+        "sourceTitle": "Ope Ope no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ope_Ope_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "절단 (엠퓨테이트)",
+          "score": 8,
+          "sourceTitle": "수술수술 열매",
+          "sourceUrl": "https://namu.wiki/w/%EC%88%98%EC%88%A0%EC%88%98%EC%88%A0%20%EC%97%B4%EB%A7%A4",
+          "match": "exact-Japanese+exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-ano-fuyu-no-sora-no-memoir",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "あの冬の空の 回想録 （ メモワール ）",
+        "nameEn": "Ano Fuyu no Sora no Memoir",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ano-sabaku-no-kuni-no-memoir",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "あの砂漠の国の 回想録 （ メモワール ）",
+        "nameEn": "Ano Sabaku no Kuni no Memoir",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-appakushi-chokka-koro",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "圧迫死直下航路",
+        "nameEn": "Appakushi Chokka Koro",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-astral-explosion",
+      "ownerId": "wt100-458",
+      "current": {
+        "nameKo": "",
+        "nameJa": "幽体 （ アストラル ） ・エクスポローション",
+        "nameEn": "Astral Explosion",
+        "reading": "",
+        "sourceTitle": "Horo Horo no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Horo_Horo_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-atama-buso-gomu-gomu-no-kane",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "무장 고무고무 종",
+        "nameJa": "武装 ゴムゴムの 鐘 (かね)",
+        "nameEn": "Atama Buso: Gomu Gomu no Kane",
+        "reading": "",
+        "sourceTitle": "Gomu Gomu no Mi/Techniques",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-atamawari-ningyo",
+      "ownerId": "wt100-858",
+      "current": {
+        "nameKo": "",
+        "nameJa": "頭割り人形",
+        "nameEn": "Atamawari Ningyo",
+        "reading": "",
+        "sourceTitle": "Hobi Hobi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hobi_Hobi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-avian-flame-eater",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Avian Flame Eater",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-bakuretsu-kazan",
+      "ownerId": "wt100-442",
+      "current": {
+        "nameKo": "",
+        "nameJa": "爆裂火山 （ ばくれつかざん ）",
+        "nameEn": "Bakuretsu Kazan",
+        "reading": "",
+        "sourceTitle": "Magu Magu no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Magu_Magu_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-bara-bara-hade-ni-gattai",
+      "ownerId": "wt100-39",
+      "current": {
+        "nameKo": "",
+        "nameJa": "バラバラ派手に合体",
+        "nameEn": "Bara Bara Hade ni Gattai",
+        "reading": "",
+        "sourceTitle": "Bara Bara no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Bara_Bara_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-bara-bara-ho-kirihanashi",
+      "ownerId": "wt100-39",
+      "current": {
+        "nameKo": "",
+        "nameJa": "バラバラ砲切り離し",
+        "nameEn": "Bara Bara Ho Kirihanashi",
+        "reading": "",
+        "sourceTitle": "Bara Bara no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Bara_Bara_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-black-hole",
+      "ownerId": "wt100-274",
+      "current": {
+        "nameKo": "블랙 Hole",
+        "nameJa": "闇穴道 （ ブラック･ホール ）",
+        "nameEn": "Black Hole",
+        "reading": "",
+        "sourceTitle": "Yami Yami no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yami_Yami_no_Mi"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "암혈도 (블랙홀)",
+          "score": 3,
+          "sourceTitle": "마샬 D. 티치/기술",
+          "sourceUrl": "https://namu.wiki/w/%EB%A7%88%EC%83%AC%20D.%20%ED%8B%B0%EC%B9%98/%EA%B8%B0%EC%88%A0",
+          "match": "exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-black-knight",
+      "ownerId": "wt100-266",
+      "current": {
+        "nameKo": "블랙 Knight",
+        "nameJa": "影騎糸 （ ブラックナイト ）",
+        "nameEn": "Black Knight",
+        "reading": "",
+        "sourceTitle": "Ito Ito no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ito_Ito_no_Mi"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "영기사 (블랙 나이트)",
+          "score": 8,
+          "sourceTitle": "돈키호테 도플라밍고/기술",
+          "sourceUrl": "https://namu.wiki/w/%EB%8F%88%ED%82%A4%ED%98%B8%ED%85%8C%20%EB%8F%84%ED%94%8C%EB%9D%BC%EB%B0%8D%EA%B3%A0/%EA%B8%B0%EC%88%A0",
+          "match": "exact-Japanese+exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-bombardier-arabesque",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "爆弾白鳥 （ ボンバルディエ ） アラベスク",
+        "nameEn": "Bombardier Arabesque",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-buso-koka-gomu-gomu-no-bullet",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "무장 강화 고무고무 총탄 (불릿)",
+        "nameJa": "武装化ゴムゴムの 銃弾 (ブレット)",
+        "nameEn": "Buso Koka: Gomu Gomu no Bullet",
+        "reading": "",
+        "sourceTitle": "Gomu Gomu no Mi/Techniques",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-buso-koka-gomu-gomu-no-gatling",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "무장 강화 고무고무 총난타 (개틀링)",
+        "nameJa": "武装化 ゴムゴムの 銃乱打 (ガトリング)",
+        "nameEn": "Buso Koka: Gomu Gomu no Gatling",
+        "reading": "",
+        "sourceTitle": "Gomu Gomu no Mi/Techniques",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-buto",
+      "ownerId": "wt100-798",
+      "current": {
+        "nameKo": "",
+        "nameJa": "武頭",
+        "nameEn": "Buto",
+        "reading": "",
+        "sourceTitle": "Hasshoken",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hasshoken"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-buto-kaiten",
+      "ownerId": "wt100-798",
+      "current": {
+        "nameKo": "",
+        "nameJa": "武頭回転",
+        "nameEn": "Buto Kaiten",
+        "reading": "",
+        "sourceTitle": "Hasshoken",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hasshoken"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-chi-to-ase-to-namida-releve",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "血と汗と涙のルルヴェ",
+        "nameEn": "Chi to Ase to Namida Relevé",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-chop-chop-psych",
+      "ownerId": "wt100-39",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Chop-Chop Psych",
+        "reading": "",
+        "sourceTitle": "Bara Bara no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Bara_Bara_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-chugi-no-tate",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "忠義の盾 （ ちゅうぎのたて ）",
+        "nameEn": "Chugi no Tate",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-cold-soul",
+      "ownerId": "wt100-443",
+      "current": {
+        "nameKo": "",
+        "nameJa": "コールド 魂 （ ソウル ）",
+        "nameEn": "Cold Soul",
+        "reading": "",
+        "sourceTitle": "Yomi Yomi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-collier-frit",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "首肉 （ コリエ ） フリット",
+        "nameEn": "Collier Frit",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-comet-rabbit",
+      "ownerId": "wt100-896",
+      "current": {
+        "nameKo": "",
+        "nameJa": "彗星兎",
+        "nameEn": "Comet Rabbit",
+        "reading": "",
+        "sourceTitle": "Electro",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Electro"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-craspedia",
+      "ownerId": "wt100-131",
+      "current": {
+        "nameKo": "",
+        "nameJa": "金槌花 （ クラスペディア ）",
+        "nameEn": "Craspedia",
+        "reading": "",
+        "sourceTitle": "Hana Hana no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-crimson-flower",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "紅蓮 （ ぐれん ）",
+        "nameEn": "Crimson Flower",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-cuatro-mano",
+      "ownerId": "wt100-131",
+      "current": {
+        "nameKo": "",
+        "nameJa": "四本樹 （ クワトロ・マーノ ）",
+        "nameEn": "Cuatro Mano",
+        "reading": "",
+        "sourceTitle": "Hana Hana no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "4그루 나무 (콰트로 마노)",
+          "score": 7,
+          "sourceTitle": "니코 로빈/기술",
+          "sourceUrl": "https://namu.wiki/w/%EB%8B%88%EC%BD%94%20%EB%A1%9C%EB%B9%88/%EA%B8%B0%EC%88%A0",
+          "match": "exact-Japanese-base+exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-cuatro-mano-hold",
+      "ownerId": "wt100-131",
+      "current": {
+        "nameKo": "Cuatro Mano Hold",
+        "nameJa": "クラッチ Kuratchi",
+        "nameEn": "Cuatro Mano \"Hold\"",
+        "reading": "",
+        "sourceTitle": "Hana Hana no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-cuatro-manos",
+      "ownerId": "wt100-131",
+      "current": {
+        "nameKo": "",
+        "nameJa": "四本樹 （ クワトロ・マーノス ）",
+        "nameEn": "Cuatro Manos",
+        "reading": "",
+        "sourceTitle": "Hana Hana no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "4그루 나무 (콰트로 마노)",
+          "score": 4,
+          "sourceTitle": "니코 로빈/기술",
+          "sourceUrl": "https://namu.wiki/w/%EB%8B%88%EC%BD%94%20%EB%A1%9C%EB%B9%88/%EA%B8%B0%EC%88%A0",
+          "match": "exact-Japanese-base"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-dai-enkai-entei",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Dai Enkai: Entei",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-dai-enkai-onibi",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Dai Enkai: Onibi",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-dai-funka",
+      "ownerId": "wt100-442",
+      "current": {
+        "nameKo": "",
+        "nameJa": "大噴火 （ だいふんか ）",
+        "nameEn": "Dai Funka",
+        "reading": "",
+        "sourceTitle": "Magu Magu no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Magu_Magu_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-dazzling-inferno",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "火祭 （ ひまつり ）",
+        "nameEn": "Dazzling Inferno",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "reading"
+      ],
+      "reason": "wiki-identity-conflict",
+      "possibleValues": [
+        {
+          "field": "identity",
+          "value": "Dazzling Inferno",
+          "sourceTitle": "Mera Mera no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi",
+          "nameJa": "",
+          "reading": ""
+        },
+        {
+          "field": "identity",
+          "value": "Himatsuri",
+          "sourceTitle": "Mera Mera no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi",
+          "nameJa": "火祭 (ひまつり)",
+          "reading": "Himatsuri"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-deathless-biezom",
+      "ownerId": "wt100-443",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Deathless Biezom",
+        "reading": "",
+        "sourceTitle": "Yomi Yomi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-deathpiea",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "デスピア",
+        "nameEn": "Deathpiea",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-denkou-sekka",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "電光 （ でんこう ） 石火 （ せっか ）",
+        "nameEn": "Denkou Sekka",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-dick-fleur",
+      "ownerId": "wt100-131",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Dick Fleur",
+        "reading": "",
+        "sourceTitle": "Hana Hana no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "fuzzy-source-match",
+      "possibleValues": [
+        {
+          "field": "nameJa",
+          "value": "十二輪 (ドーセ)咲き (フルール)",
+          "score": 0.7777777777777778,
+          "sourceTitle": "Hana Hana no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi",
+          "match": "fuzzy-name-only"
+        },
+        {
+          "field": "reading",
+          "value": "Dōse Furūru",
+          "score": 0.7777777777777778,
+          "sourceTitle": "Hana Hana no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi",
+          "match": "fuzzy-name-only"
+        },
+        {
+          "field": "nameJa",
+          "value": "十輪咲き (ヂィエスフルール)",
+          "score": 0.7777777777777778,
+          "sourceTitle": "Hana Hana no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi",
+          "match": "fuzzy-name-only"
+        },
+        {
+          "field": "reading",
+          "value": "Diesu Furūru",
+          "score": 0.7777777777777778,
+          "sourceTitle": "Hana Hana no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi",
+          "match": "fuzzy-name-only"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-dive-attack",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "ダイブアタック",
+        "nameEn": "Dive Attack",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-doble-clutch",
+      "ownerId": "wt100-131",
+      "current": {
+        "nameKo": "Doble 클러치",
+        "nameJa": "W （ ドーブレ ） ・クラッチ",
+        "nameEn": "Doble Clutch",
+        "reading": "",
+        "sourceTitle": "Hana Hana no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "W 클러치",
+          "score": 3,
+          "sourceTitle": "니코 로빈/기술",
+          "sourceUrl": "https://namu.wiki/w/%EB%8B%88%EC%BD%94%20%EB%A1%9C%EB%B9%88/%EA%B8%B0%EC%88%A0",
+          "match": "exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-doppelman",
+      "ownerId": "wt100-763",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Doppelman",
+        "reading": "",
+        "sourceTitle": "Soru Soru no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Soru_Soru_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-dozo-okamai-knuckle",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "どうぞオカマい 拳 （ ナックル ）",
+        "nameEn": "Dozo Okamai Knuckle",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-e-paule",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "肩肉 （ エポール ）",
+        "nameEn": "Épaule",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "어깨살 (에폴)",
+          "score": 5,
+          "sourceTitle": "상디/기술",
+          "sourceUrl": "https://namu.wiki/w/%EC%83%81%EB%94%94/%EA%B8%B0%EC%88%A0",
+          "match": "exact-Japanese"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-e-paule-shoot",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "肩肉 （ エポール ） シュート",
+        "nameEn": "Épaule Shoot",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ekakiuta-hitoyogiri",
+      "ownerId": "wt100-443",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Ekakiuta: Hitoyogiri",
+        "reading": "",
+        "sourceTitle": "Yomi Yomi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-el-kratia",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "神の怒り （ エル・クラティア ）",
+        "nameEn": "El Kratia",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-el-thor",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "El 토르",
+        "nameJa": "神の裁き （ エル･トール ）",
+        "nameEn": "El Thor",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "신의 심판 (엘 토르)",
+          "score": 8,
+          "sourceTitle": "번개번개 열매",
+          "sourceUrl": "https://namu.wiki/w/%EB%B2%88%EA%B0%9C%EB%B2%88%EA%B0%9C%20%EC%97%B4%EB%A7%A4",
+          "match": "exact-Japanese+exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-el-vajra",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "神の金剛杵 （ エル・ヴァジュラ ）",
+        "nameEn": "El Vajra",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-electrical-full-power",
+      "ownerId": "wt100-896",
+      "current": {
+        "nameKo": "",
+        "nameJa": "エレクトリカルフルパワー",
+        "nameEn": "Electrical Full Power",
+        "reading": "",
+        "sourceTitle": "Electro",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Electro"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-electrical-shower",
+      "ownerId": "wt100-896",
+      "current": {
+        "nameKo": "",
+        "nameJa": "エレクトリカルシャワー",
+        "nameEn": "Electrical Shower",
+        "reading": "",
+        "sourceTitle": "Electro",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Electro"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-electrical-tempesta",
+      "ownerId": "wt100-896",
+      "current": {
+        "nameKo": "",
+        "nameJa": "エレクトリカルテンペスタ",
+        "nameEn": "Electrical Tempesta",
+        "reading": "",
+        "sourceTitle": "Electro",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Electro"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-en-o-santo-ryu-ippyakusanjo-hiryu-jigoku",
+      "ownerId": "wt100-2",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "En-Ō Santōryū: Ippyakusanjo Hiryu Jigoku",
+        "reading": "",
+        "sourceTitle": "Three Sword Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-enbu",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Enbu",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-enryu-hako",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "炎竜爬行 （ ）",
+        "nameEn": "Enryu Hako",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-enten",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "炎天 （ えんてん ）",
+        "nameEn": "Enten",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-face-fleur",
+      "ownerId": "wt100-131",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Face Fleur",
+        "reading": "",
+        "sourceTitle": "Hana Hana no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fish-man-karate-giganteum",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Fish-Man Karate: Giganteum",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fish-man-karate-ogi-buraikan",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Fish-Man Karate Ogi: Buraikan",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fish-man-karate-ogi-dai-kairyu-keri",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Fish-Man Karate Ogi: Dai Kairyu Keri",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fish-man-karate-ogi-onigawara-seiken",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Fish-Man Karate Ogi: Onigawara Seiken",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-flanchet-shoot",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "腹肉 （ フランシェ ） シュート",
+        "nameEn": "Flanchet Shoot",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-frites-assorties",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "揚げ物盛り合わせ （ フリットアソルティ ）",
+        "nameEn": "Frites Assorties",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "튀김 모듬 (프리트 아소르티)",
+          "score": 5,
+          "sourceTitle": "상디/기술",
+          "sourceUrl": "https://namu.wiki/w/%EC%83%81%EB%94%94/%EA%B8%B0%EC%88%A0",
+          "match": "exact-Japanese"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-fushicho-kassho",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "不死鳥滑翔 （ ふしちょうかっしょう ）",
+        "nameEn": "Fushicho Kassho",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fushicho-no-goen",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "不死鳥の豪炎",
+        "nameEn": "Fushicho no Goen",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fushicho-no-kyoshu",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "不死鳥の強襲",
+        "nameEn": "Fushicho no Kyoshu",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fushicho-no-mezame",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "不死鳥の目覚め",
+        "nameEn": "Fushicho no Mezame",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fushicho-no-shugeki",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "不死鳥の蹴撃",
+        "nameEn": "Fushicho no Shugeki",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fushicho-no-shukuen",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "不死鳥の祝炎 （ ふしちょうのしゅくえん ）",
+        "nameEn": "Fushicho no Shukuen",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fushicho-no-shumai",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "不死鳥の襲舞 （ ふしちょうのしゅうまい ）",
+        "nameEn": "Fushicho no Shumai",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fushicho-no-tsume",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "不死鳥の爪 （ ふしちょうのつめ ）",
+        "nameEn": "Fushicho no Tsume",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fushicho-no-yokugeki",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "不死鳥の翼撃",
+        "nameEn": "Fushicho no Yokugeki",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fushicho-ranbu",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "不死鳥乱舞 （ ふしちょうらんぶ ）",
+        "nameEn": "Fushicho Ranbu",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-fuwa-flowers",
+      "ownerId": "wt100-131",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Fuwa Flowers",
+        "reading": "",
+        "sourceTitle": "Hana Hana no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-gedan-geri",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "下段蹴り",
+        "nameEn": "Gedan-geri",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-gekishin",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "激震",
+        "nameEn": "Gekishin",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-genju-rengeki",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "幻獣連撃",
+        "nameEn": "Genju Rengeki",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-genjushu-no-hidariashi",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "幻獣種の左脚 （ げんじゅうしゅのひだりあし ）",
+        "nameEn": "Genjushu no Hidariashi",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-genocide-raid",
+      "ownerId": "wt100-496",
+      "current": {
+        "nameKo": "",
+        "nameJa": "ジェノサイド・レイド",
+        "nameEn": "Genocide Raid",
+        "reading": "",
+        "sourceTitle": "Jiki Jiki no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Jiki_Jiki_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ghost-masquerade",
+      "ownerId": "wt100-458",
+      "current": {
+        "nameKo": "",
+        "nameJa": "幽霊舞会 （ ゴスト・マスクレイド ）",
+        "nameEn": "Ghost Masquerade",
+        "reading": "",
+        "sourceTitle": "Horo Horo no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Horo_Horo_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-gomu-gomu-no-boh",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 멍",
+        "nameJa": "ゴムゴムのボー",
+        "nameEn": "Gomu Gomu no Boh...",
+        "reading": "",
+        "sourceTitle": "Gomu Gomu no Mi/Techniques",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "fuzzy-source-match",
+      "possibleValues": [
+        {
+          "field": "reading",
+          "value": "Gomu Gomu no Yō-Yō",
+          "score": 0.7857142857142857,
+          "sourceTitle": "Gomu Gomu no Mi/Techniques",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques",
+          "match": "fuzzy-name-only"
+        },
+        {
+          "field": "reading",
+          "value": "Gomu Gomu no Koma",
+          "score": 0.7857142857142857,
+          "sourceTitle": "Gomu Gomu no Mi/Techniques",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques",
+          "match": "fuzzy-name-only"
+        },
+        {
+          "field": "reading",
+          "value": "Gomu Gomu no Ono",
+          "score": 0.7692307692307692,
+          "sourceTitle": "Gomu Gomu no Mi/Techniques",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques",
+          "match": "fuzzy-name-only"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-gomu-gomu-no-bullet",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 총탄 (불릿)",
+        "nameJa": "ゴムゴムの 銃弾 (ブレット)",
+        "nameEn": "Gomu Gomu no Bullet",
+        "reading": "",
+        "sourceTitle": "Gomu Gomu no Mi/Techniques",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "fuzzy-source-match",
+      "possibleValues": [
+        {
+          "field": "reading",
+          "value": "Gomu Gomu no Banjī",
+          "score": 0.8125,
+          "sourceTitle": "Gomu Gomu no Mi/Techniques",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques",
+          "match": "fuzzy-name-only"
+        },
+        {
+          "field": "reading",
+          "value": "Gomu Gomu no Roketto",
+          "score": 0.75,
+          "sourceTitle": "Gomu Gomu no Mi/Techniques",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques",
+          "match": "fuzzy-name-only"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-gomu-gomu-no-cannon",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "고무고무 공성포 (캐넌)",
+        "nameJa": "ゴムゴムの 攻城砲 (キャノン)",
+        "nameEn": "Gomu Gomu no Cannon",
+        "reading": "",
+        "sourceTitle": "Gomu Gomu no Mi/Techniques",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "fuzzy-source-match",
+      "possibleValues": [
+        {
+          "field": "reading",
+          "value": "Gomu Gomu no Ono",
+          "score": 0.75,
+          "sourceTitle": "Gomu Gomu no Mi/Techniques",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques",
+          "match": "fuzzy-name-only"
+        },
+        {
+          "field": "reading",
+          "value": "Gomu Gomu no Kane",
+          "score": 0.75,
+          "sourceTitle": "Gomu Gomu no Mi/Techniques",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques",
+          "match": "fuzzy-name-only"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-gosenmaigawara-shuto",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "五千枚瓦手刀",
+        "nameEn": "Gosenmaigawara Shuto",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-gouka-kenran",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "業火拳乱 （ ごうかけんらん ）",
+        "nameEn": "Gouka Kenran",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-grand-fouette-ano-natsu-no-hi-no-memoir",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Grand Fouetté: Ano Natsu no Hi no Memoir",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-gurash",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "震破 （ グラッシュ ）",
+        "nameEn": "Gurash",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hakucho-arabesque",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "白鳥アラベスク",
+        "nameEn": "Hakucho Arabesque",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hanauta-sancho-tyamasi-no-yahazu-giri",
+      "ownerId": "wt100-443",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Hanauta Sancho: Tyamasi no Yahazu Giri",
+        "reading": "",
+        "sourceTitle": "Yomi Yomi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hasshoken-ogi-kiryu-kirikugi",
+      "ownerId": "wt100-798",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Hasshoken Ogi: Kiryu Kirikugi",
+        "reading": "",
+        "sourceTitle": "Hasshoken",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hasshoken"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-heat-breath",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "戦火 （ せんか ）",
+        "nameEn": "Heat Breath",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "reading"
+      ],
+      "reason": "wiki-identity-conflict",
+      "possibleValues": [
+        {
+          "field": "identity",
+          "value": "Heat Breath",
+          "sourceTitle": "Mera Mera no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi",
+          "nameJa": "",
+          "reading": ""
+        },
+        {
+          "field": "identity",
+          "value": "Senka",
+          "sourceTitle": "Mera Mera no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi",
+          "nameJa": "戦火 (せんか)",
+          "reading": "Senka"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-heat-iron",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "炎舞 （ えんぶ ）",
+        "nameEn": "Heat Iron",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "reading"
+      ],
+      "reason": "wiki-identity-conflict",
+      "possibleValues": [
+        {
+          "field": "identity",
+          "value": "Heat Iron",
+          "sourceTitle": "Mera Mera no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi",
+          "nameJa": "",
+          "reading": ""
+        },
+        {
+          "field": "identity",
+          "value": "Enbu",
+          "sourceTitle": "Mera Mera no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi",
+          "nameJa": "炎舞 (えんぶ)",
+          "reading": "Enbu"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-heat-seed",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "火種 （ ひだね ）",
+        "nameEn": "Heat Seed",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hibashira-engoku",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Hibashira: Engoku",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hibuta",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "火蓋 （ ひぶた ）",
+        "nameEn": "Hibuta",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hidaruma",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "火達磨 （ ヒダルマ ）",
+        "nameEn": "Hidaruma",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-higuruma",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "火車 （ ひぐるま ）",
+        "nameEn": "Higuruma",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hiken",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "火拳 （ ひけん ）",
+        "nameEn": "Hiken",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "화권 (불주먹)",
+          "score": 5,
+          "sourceTitle": "이글이글 열매",
+          "sourceUrl": "https://namu.wiki/w/%EC%9D%B4%EA%B8%80%EC%9D%B4%EA%B8%80%20%EC%97%B4%EB%A7%A4",
+          "match": "exact-Japanese"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-hiki-tobashi",
+      "ownerId": "wt100-267",
+      "current": {
+        "nameKo": "",
+        "nameJa": "弾き飛ばし",
+        "nameEn": "Hiki Tobashi",
+        "reading": "",
+        "sourceTitle": "Nikyu Nikyu no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Nikyu_Nikyu_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hikyaku",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "火脚 （ ひきゃく ）",
+        "nameEn": "Hikyaku",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-himatsuri",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Himatsuri",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hino",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Hino",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-homies",
+      "ownerId": "wt100-763",
+      "current": {
+        "nameKo": "",
+        "nameJa": "ホーミーズ",
+        "nameEn": "Homies",
+        "reading": "",
+        "sourceTitle": "Soru Soru no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Soru_Soru_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hono-sanjujo-entei-ryuo-red-hawk",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "Hono Sanjujo: Entei Ryuo 레드 호크",
+        "nameJa": "",
+        "nameEn": "Hono Sanjujo: Entei Ryuo Red Hawk",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hotarubi",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "蛍火 （ ほたるび ）",
+        "nameEn": "Hotarubi",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hotarubi-funadama",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Hotarubi: Funadama",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hotarubi-kasen",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Hotarubi: Kasen",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-human-drill",
+      "ownerId": "wt100-2",
+      "current": {
+        "nameKo": "",
+        "nameJa": "飛勇 （ ヒュー ） 萬螺旋 （ マンドリル ）",
+        "nameEn": "Human Drill",
+        "reading": "",
+        "sourceTitle": "Three Sword Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-hyakumaigawara-seiken",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "百枚瓦正拳",
+        "nameEn": "Hyakumaigawara Seiken",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ice-age",
+      "ownerId": "wt100-346",
+      "current": {
+        "nameKo": "Ice 에이지",
+        "nameJa": "氷河時代 （ アイス・エイジ ）",
+        "nameEn": "Ice Age",
+        "reading": "",
+        "sourceTitle": "Hie Hie no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hie_Hie_no_Mi"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "빙하 시대 (아이스 에이지)",
+          "score": 8,
+          "sourceTitle": "얼음얼음 열매",
+          "sourceUrl": "https://namu.wiki/w/%EC%96%BC%EC%9D%8C%EC%96%BC%EC%9D%8C%20%EC%97%B4%EB%A7%A4",
+          "match": "exact-Japanese+exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-ice-block-avalanche",
+      "ownerId": "wt100-346",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Ice Block: Avalanche",
+        "reading": "",
+        "sourceTitle": "Hie Hie no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hie_Hie_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ice-block-partisan",
+      "ownerId": "wt100-346",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Ice Block: Partisan",
+        "reading": "",
+        "sourceTitle": "Hie Hie no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hie_Hie_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "아이스 괴 (블록) 양극모 (파르티잔)",
+          "score": 3,
+          "sourceTitle": "얼음얼음 열매",
+          "sourceUrl": "https://namu.wiki/w/%EC%96%BC%EC%9D%8C%EC%96%BC%EC%9D%8C%20%EC%97%B4%EB%A7%A4",
+          "match": "exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-ice-block-phalanx",
+      "ownerId": "wt100-346",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Ice Block: Phalanx",
+        "reading": "",
+        "sourceTitle": "Hie Hie no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hie_Hie_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "아이스 괴 (블록) 창진 (팔랑크스)",
+          "score": 3,
+          "sourceTitle": "얼음얼음 열매",
+          "sourceUrl": "https://namu.wiki/w/%EC%96%BC%EC%9D%8C%EC%96%BC%EC%9D%8C%20%EC%97%B4%EB%A7%A4",
+          "match": "exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-ice-block-pheasant-beak",
+      "ownerId": "wt100-346",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Ice Block: Pheasant Beak",
+        "reading": "",
+        "sourceTitle": "Hie Hie no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hie_Hie_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "아이스 괴 (블록) 폭치취 (페전트 벡)",
+          "score": 3,
+          "sourceTitle": "얼음얼음 열매",
+          "sourceUrl": "https://namu.wiki/w/%EC%96%BC%EC%9D%8C%EC%96%BC%EC%9D%8C%20%EC%97%B4%EB%A7%A4",
+          "match": "exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-ice-nail",
+      "ownerId": "wt100-346",
+      "current": {
+        "nameKo": "",
+        "nameJa": "アイスネイル",
+        "nameEn": "Ice Nail",
+        "reading": "",
+        "sourceTitle": "Hie Hie no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hie_Hie_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ice-pick",
+      "ownerId": "wt100-346",
+      "current": {
+        "nameKo": "",
+        "nameJa": "アイスピック",
+        "nameEn": "Ice Pick",
+        "reading": "",
+        "sourceTitle": "Hie Hie no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hie_Hie_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ice-wall",
+      "ownerId": "wt100-443",
+      "current": {
+        "nameKo": "",
+        "nameJa": "飛燕 （ スワロー ） バンドゥロル",
+        "nameEn": "Ice Wall",
+        "reading": "",
+        "sourceTitle": "Yomi Yomi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "reading"
+      ],
+      "reason": "wiki-identity-conflict",
+      "possibleValues": [
+        {
+          "field": "identity",
+          "value": "Ice Wall",
+          "sourceTitle": "Yomi Yomi no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi",
+          "nameJa": "",
+          "reading": ""
+        },
+        {
+          "field": "identity",
+          "value": "Swallow Banderole",
+          "sourceTitle": "Yomi Yomi no Mi",
+          "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi",
+          "nameJa": "飛燕 (スワロー) バンドゥロル",
+          "reading": "Suwarō Banduroru"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-ichi-gorilla",
+      "ownerId": "wt100-2",
+      "current": {
+        "nameKo": "",
+        "nameJa": "一 剛力羅 （ ゴリラ ）",
+        "nameEn": "Ichi Gorilla",
+        "reading": "",
+        "sourceTitle": "Three Sword Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ikkitosen",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "一騎当千",
+        "nameEn": "Ikkitosen",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-injection-shot",
+      "ownerId": "wt100-501",
+      "current": {
+        "nameKo": "Injection 샷",
+        "nameJa": "注射 （ インジェクション ） ショット",
+        "nameEn": "Injection Shot",
+        "reading": "",
+        "sourceTitle": "Ope Ope no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ope_Ope_no_Mi"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "주사 (인젝션) 샷",
+          "score": 3,
+          "sourceTitle": "수술수술 열매",
+          "sourceUrl": "https://namu.wiki/w/%EC%88%98%EC%88%A0%EC%88%98%EC%88%A0%20%EC%97%B4%EB%A7%A4",
+          "match": "exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-inu-odoshi",
+      "ownerId": "wt100-896",
+      "current": {
+        "nameKo": "",
+        "nameJa": "犬大門風",
+        "nameEn": "Inu Odoshi",
+        "reading": "",
+        "sourceTitle": "Electro",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Electro"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-inugami-guren",
+      "ownerId": "wt100-442",
+      "current": {
+        "nameKo": "",
+        "nameJa": "犬噛紅蓮 （ いぬがみぐれん ）",
+        "nameEn": "Inugami Guren",
+        "reading": "",
+        "sourceTitle": "Magu Magu no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Magu_Magu_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-itomaki-kumite",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "イトマキ組手",
+        "nameEn": "Itomaki Kumite",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-itonoko",
+      "ownerId": "wt100-266",
+      "current": {
+        "nameKo": "",
+        "nameJa": "糸ノコ",
+        "nameEn": "Itonoko",
+        "reading": "",
+        "sourceTitle": "Ito Ito no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ito_Ito_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-jabot",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "ヅャボ",
+        "nameEn": "Jabot",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-jamboule",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Jamboule",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-jenga-ho",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "ジェンガ砲",
+        "nameEn": "Jenga Ho",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-jigoku-tabi",
+      "ownerId": "wt100-793",
+      "current": {
+        "nameKo": "",
+        "nameJa": "地獄旅",
+        "nameEn": "Jigoku Tabi",
+        "reading": "",
+        "sourceTitle": "Zushi Zushi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Zushi_Zushi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-jodan-bakusho",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "上段爆掌",
+        "nameEn": "Jodan Bakusho",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-joo-no-fumitsuke",
+      "ownerId": "wt100-543",
+      "current": {
+        "nameKo": "",
+        "nameJa": "女王の踏みつけ",
+        "nameEn": "Joo no Fumitsuke",
+        "reading": "",
+        "sourceTitle": "Mero Mero no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mero_Mero_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ka-ka-kakato-otoshi",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "火華カカト落とし",
+        "nameEn": "Ka Ka Kakato Otoshi",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kabutowari",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "兜割",
+        "nameEn": "Kabutowari",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kachiage-haisoku",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "カチ上げ背足",
+        "nameEn": "Kachiage Haisoku",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kaen",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "火燕 （ かえん ）",
+        "nameEn": "Kaen",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kageki",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "火激 （ かげき ）",
+        "nameEn": "Kageki",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kaimen-wari",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "海面･割り",
+        "nameEn": "Kaimen Wari",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kaishin",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "海震",
+        "nameEn": "Kaishin",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kaisoku-harakudashigeri",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Kaisoku: Harakudashigeri",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kaitengiri",
+      "ownerId": "wt100-501",
+      "current": {
+        "nameKo": "",
+        "nameJa": "回転斬り",
+        "nameEn": "Kaitengiri",
+        "reading": "",
+        "sourceTitle": "Ope Ope no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ope_Ope_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kakumei-gun-gyojin-karate-shihandai",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "革命軍魚人空手師範代",
+        "nameEn": "Kakumei-gun Gyojin Karate Shihandai",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kashiwa-mochi",
+      "ownerId": "wt100-996",
+      "current": {
+        "nameKo": "",
+        "nameJa": "拍手モチ",
+        "nameEn": "Kashiwa Mochi",
+        "reading": "",
+        "sourceTitle": "Mochi Mochi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mochi_Mochi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kasou",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "火葬 （ かそう ）",
+        "nameEn": "Kasou",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kasuriuta-fubuki-giri",
+      "ownerId": "wt100-443",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Kasuriuta: Fubuki Giri",
+        "reading": "",
+        "sourceTitle": "Yomi Yomi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-keiyaku",
+      "ownerId": "wt100-858",
+      "current": {
+        "nameKo": "",
+        "nameJa": "契約",
+        "nameEn": "Keiyaku",
+        "reading": "",
+        "sourceTitle": "Hobi Hobi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hobi_Hobi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-keri",
+      "ownerId": "wt100-520",
+      "current": {
+        "nameKo": "",
+        "nameJa": "蹴り",
+        "nameEn": "Keri",
+        "reading": "",
+        "sourceTitle": "Pika Pika no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Pika_Pika_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kiri-oroshi",
+      "ownerId": "wt100-501",
+      "current": {
+        "nameKo": "",
+        "nameJa": "斬り下ろし",
+        "nameEn": "Kiri Oroshi",
+        "reading": "",
+        "sourceTitle": "Ope Ope no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ope_Ope_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kiriage",
+      "ownerId": "wt100-501",
+      "current": {
+        "nameKo": "",
+        "nameJa": "斬り上げ",
+        "nameEn": "Kiriage",
+        "reading": "",
+        "sourceTitle": "Ope Ope no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ope_Ope_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kokujo-o-tatsumaki",
+      "ownerId": "wt100-2",
+      "current": {
+        "nameKo": "",
+        "nameJa": "黒縄大龍巻",
+        "nameEn": "Kokujo O Tatsumaki",
+        "reading": "",
+        "sourceTitle": "Three Sword Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "흑승 대용오름 (빅 드래곤 회오리치기)",
+          "score": 4,
+          "sourceTitle": "롤로노아 조로/기술",
+          "sourceUrl": "https://namu.wiki/w/%EB%A1%A4%EB%A1%9C%EB%85%B8%EC%95%84%20%EC%A1%B0%EB%A1%9C/%EA%B8%B0%EC%88%A0",
+          "match": "exact-Japanese-base"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-kona-kona-no-mi",
+      "ownerId": "wt100-996",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Kona Kona no Mi",
+        "reading": "",
+        "sourceTitle": "Mochi Mochi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mochi_Mochi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kuma-no-te",
+      "ownerId": "wt100-267",
+      "current": {
+        "nameKo": "",
+        "nameJa": "熊の手",
+        "nameEn": "Kuma no Te",
+        "reading": "",
+        "sourceTitle": "Nikyu Nikyu no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Nikyu_Nikyu_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kuri-mochi",
+      "ownerId": "wt100-996",
+      "current": {
+        "nameKo": "",
+        "nameJa": "栗餅",
+        "nameEn": "Kuri Mochi",
+        "reading": "",
+        "sourceTitle": "Mochi Mochi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mochi_Mochi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kuzu-mochi",
+      "ownerId": "wt100-996",
+      "current": {
+        "nameKo": "",
+        "nameJa": "九頭モチ",
+        "nameEn": "Kuzu Mochi",
+        "reading": "",
+        "sourceTitle": "Mochi Mochi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mochi_Mochi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-kyofu-koso-ga-kami-nanoda",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "恐 （ きょう ） 怖 （ ふ ） こそが 神 （ かみ ） なのだ",
+        "nameEn": "Kyofu Koso ga Kami Nanoda",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-laser",
+      "ownerId": "wt100-520",
+      "current": {
+        "nameKo": "",
+        "nameJa": "レーザー",
+        "nameEn": "Laser",
+        "reading": "",
+        "sourceTitle": "Pika Pika no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Pika_Pika_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-laser-bakuhatsu",
+      "ownerId": "wt100-520",
+      "current": {
+        "nameKo": "",
+        "nameJa": "レーザー爆発",
+        "nameEn": "Laser Bakuhatsu",
+        "reading": "",
+        "sourceTitle": "Pika Pika no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Pika_Pika_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-little-black-bears",
+      "ownerId": "wt100-858",
+      "current": {
+        "nameKo": "Little 블랙 Bears",
+        "nameJa": "小熊玩具 （ リトルブラックベアーズ ）",
+        "nameEn": "Little Black Bears",
+        "reading": "",
+        "sourceTitle": "Hobi Hobi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hobi_Hobi_no_Mi"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "소웅완구 (리틀 블랙 베어스)",
+          "score": 8,
+          "sourceTitle": "하비하비 열매",
+          "sourceUrl": "https://namu.wiki/w/%ED%95%98%EB%B9%84%ED%95%98%EB%B9%84%20%EC%97%B4%EB%A7%A4",
+          "match": "exact-Japanese+exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-marma-raid",
+      "ownerId": "wt100-763",
+      "current": {
+        "nameKo": "",
+        "nameJa": "マーマ 急襲 （ レイド ）",
+        "nameEn": "Marma-Raid",
+        "reading": "",
+        "sourceTitle": "Soru Soru no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Soru_Soru_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-mascara-boomerang",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "マスカラブーメラン",
+        "nameEn": "Mascara Boomerang",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-max-200-000-000-v",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "MAX （ マックス ） 2 億 （ おく ） V （ ボルト ）",
+        "nameEn": "MAX 200,000,000 V",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-meigo",
+      "ownerId": "wt100-442",
+      "current": {
+        "nameKo": "",
+        "nameJa": "冥狗 （ めいごう ）",
+        "nameEn": "Meigo",
+        "reading": "",
+        "sourceTitle": "Magu Magu no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Magu_Magu_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-mero-mero-mellow",
+      "ownerId": "wt100-543",
+      "current": {
+        "nameKo": "",
+        "nameJa": "メロメロ 甘風 （ メロウ ）",
+        "nameEn": "Mero Mero Mellow",
+        "reading": "",
+        "sourceTitle": "Mero Mero no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mero_Mero_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-mezameyo",
+      "ownerId": "wt100-543",
+      "current": {
+        "nameKo": "",
+        "nameJa": "目覚めよ",
+        "nameEn": "Mezameyo",
+        "reading": "",
+        "sourceTitle": "Mero Mero no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mero_Mero_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-mini-hollow",
+      "ownerId": "wt100-458",
+      "current": {
+        "nameKo": "",
+        "nameJa": "ミニホロ",
+        "nameEn": "Mini Hollow",
+        "reading": "",
+        "sourceTitle": "Horo Horo no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Horo_Horo_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-mink-assault",
+      "ownerId": "wt100-896",
+      "current": {
+        "nameKo": "",
+        "nameJa": "ミンクアサルト",
+        "nameEn": "Mink Assault",
+        "reading": "",
+        "sourceTitle": "Electro",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Electro"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-mo-golova",
+      "ownerId": "wt100-896",
+      "current": {
+        "nameKo": "",
+        "nameJa": "モー 頭 （ ガラヴァ ）",
+        "nameEn": "Mo Golova",
+        "reading": "",
+        "sourceTitle": "Electro",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Electro"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-mochi-hadan",
+      "ownerId": "wt100-996",
+      "current": {
+        "nameKo": "",
+        "nameJa": "モチ刃弾",
+        "nameEn": "Mochi Hadan",
+        "reading": "",
+        "sourceTitle": "Mochi Mochi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mochi_Mochi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-moeru-ryusoken-kaen-ryuo",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Moeru Ryusoken: Kaen Ryuo",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-moko",
+      "ownerId": "wt100-793",
+      "current": {
+        "nameKo": "",
+        "nameJa": "猛虎 （ もうこ ）",
+        "nameEn": "Moko",
+        "reading": "",
+        "sourceTitle": "Zushi Zushi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Zushi_Zushi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-moon-rabbit",
+      "ownerId": "wt100-896",
+      "current": {
+        "nameKo": "",
+        "nameJa": "月兎",
+        "nameEn": "Moon Rabbit",
+        "reading": "",
+        "sourceTitle": "Electro",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Electro"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-mouka",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "猛火 （ もうか ）",
+        "nameEn": "Mouka",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-mouton-shot",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "Mouton 샷",
+        "nameJa": "羊肉 （ ムートン ） ショット",
+        "nameEn": "Mouton Shot",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "양고기 (무통) 샷",
+          "score": 3,
+          "sourceTitle": "상디/기술",
+          "sourceUrl": "https://namu.wiki/w/%EC%83%81%EB%94%94/%EA%B8%B0%EC%88%A0",
+          "match": "exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-nagiharai",
+      "ownerId": "wt100-501",
+      "current": {
+        "nameKo": "",
+        "nameJa": "なぎ払い",
+        "nameEn": "Nagiharai",
+        "reading": "",
+        "sourceTitle": "Ope Ope no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ope_Ope_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-naginata-rasetsu",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "薙刀羅刹",
+        "nameEn": "Naginata Rasetsu",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-naguri-mochi",
+      "ownerId": "wt100-996",
+      "current": {
+        "nameKo": "",
+        "nameJa": "ナグリ餅",
+        "nameEn": "Naguri Mochi",
+        "reading": "",
+        "sourceTitle": "Mochi Mochi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mochi_Mochi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ni-gorilla",
+      "ownerId": "wt100-2",
+      "current": {
+        "nameKo": "",
+        "nameJa": "二 剛力羅 （ ゴリラ ）",
+        "nameEn": "Ni Gorilla",
+        "reading": "",
+        "sourceTitle": "Three Sword Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-nichirin",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "日輪 （ にちりん ）",
+        "nameEn": "Nichirin",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ninpo-ectoplasm-thunder",
+      "ownerId": "wt100-896",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Ninpo: Ectoplasm Thunder",
+        "reading": "",
+        "sourceTitle": "Electro",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Electro"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-o-uchimizu",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "大撃水",
+        "nameEn": "O Uchimizu",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-o-yabusame",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "大矢武鮫",
+        "nameEn": "O Yabusame",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ohikae-na-fouette",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "お控え・ナ・ 鞭打 （ フエッテ ）",
+        "nameEn": "Ohikae Na Fouetté",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-okama-chop",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "オカマチョップ",
+        "nameEn": "Okama Chop",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-okama-dash",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "オカマデャーッシュ",
+        "nameEn": "Okama Dash",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-oni-giri",
+      "ownerId": "wt100-2",
+      "current": {
+        "nameKo": "삼도류 귀참",
+        "nameJa": "鬼斬り",
+        "nameEn": "Oni Giri",
+        "reading": "",
+        "sourceTitle": "Three Sword Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "도깨비 참수",
+          "score": 7,
+          "sourceTitle": "롤로노아 조로/기술",
+          "sourceUrl": "https://namu.wiki/w/%EB%A1%A4%EB%A1%9C%EB%85%B8%EC%95%84%20%EC%A1%B0%EB%A1%9C/%EA%B8%B0%EC%88%A0",
+          "match": "exact-Japanese-base+exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-otebisha",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "王手飛車",
+        "nameEn": "Otebisha",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-parage-shot",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "Parage 샷",
+        "nameJa": "整形 （ パラージュ ） ショット",
+        "nameEn": "Parage Shot",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "정형 (파라주) 샷",
+          "score": 3,
+          "sourceTitle": "상디/기술",
+          "sourceUrl": "https://namu.wiki/w/%EC%83%81%EB%94%94/%EA%B8%B0%EC%88%A0",
+          "match": "exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-phrase-d-armes-orchestra",
+      "ownerId": "wt100-443",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Phrase d'armes: Orchestra",
+        "reading": "",
+        "sourceTitle": "Yomi Yomi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-pistol-kiss",
+      "ownerId": "wt100-543",
+      "current": {
+        "nameKo": "총 Kiss",
+        "nameJa": "銃 （ ピストル ） キス",
+        "nameEn": "Pistol Kiss",
+        "reading": "",
+        "sourceTitle": "Mero Mero no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mero_Mero_no_Mi"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "총 (피스톨) 키스",
+          "score": 3,
+          "sourceTitle": "매료매료 열매",
+          "sourceUrl": "https://namu.wiki/w/%EB%A7%A4%EB%A3%8C%EB%A7%A4%EB%A3%8C%20%EC%97%B4%EB%A7%A4",
+          "match": "exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-power-leg-claw",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "パワーレッグクロー",
+        "nameEn": "Power Leg Claw",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-power-leg-shoot",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "パワーレッグシュート",
+        "nameEn": "Power Leg Shoot",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-power-leg-spin",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "パワーレッグスピン",
+        "nameEn": "Power Leg Spin",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-prima",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "主役技 （ プリマ ）",
+        "nameEn": "Prima",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-puni",
+      "ownerId": "wt100-267",
+      "current": {
+        "nameKo": "",
+        "nameJa": "ぷに",
+        "nameEn": "Puni",
+        "reading": "",
+        "sourceTitle": "Nikyu Nikyu no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Nikyu_Nikyu_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-punk-clash",
+      "ownerId": "wt100-496",
+      "current": {
+        "nameKo": "",
+        "nameJa": "磁気 （ パンク ） 激突 （ クラッシュ ）",
+        "nameEn": "Punk Clash",
+        "reading": "",
+        "sourceTitle": "Jiki Jiki no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Jiki_Jiki_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-raichoso",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "雷 （ らい ） 鳥 （ ちょう ） 葬 （ そう ）",
+        "nameEn": "Raichoso",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-raiho",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "雷 （ らい ） 咆 （ ほう ）",
+        "nameEn": "Raiho",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-raijo-rikka",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "雷 （ らい ） 浄 （ じょう ） 陸 （ りっ ） 迦 （ か ）",
+        "nameEn": "Raijo Rikka",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-red-foot-pride",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "레드 Foot Pride",
+        "nameJa": "",
+        "nameEn": "Red Foot Pride",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-red-foot-shock",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "레드 Foot Shock",
+        "nameJa": "",
+        "nameEn": "Red Foot Shock",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-rekka",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "烈火 （ れっか ）",
+        "nameEn": "Rekka",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-rengoku-oni-giri",
+      "ownerId": "wt100-2",
+      "current": {
+        "nameKo": "",
+        "nameJa": "煉獄鬼斬り",
+        "nameEn": "Rengoku Oni Giri",
+        "reading": "",
+        "sourceTitle": "Three Sword Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "연옥 도깨비 참수",
+          "score": 4,
+          "sourceTitle": "롤로노아 조로/기술",
+          "sourceUrl": "https://namu.wiki/w/%EB%A1%A4%EB%A1%9C%EB%85%B8%EC%95%84%20%EC%A1%B0%EB%A1%9C/%EA%B8%B0%EC%88%A0",
+          "match": "exact-Japanese-base"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-robi-cho-daisenpu",
+      "ownerId": "wt100-131",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Robi-Cho Daisenpu",
+        "reading": "",
+        "sourceTitle": "Hana Hana no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-robi-cho-suplex",
+      "ownerId": "wt100-131",
+      "current": {
+        "nameKo": "",
+        "nameJa": "ロビッチョスープレックス",
+        "nameEn": "Robi-Cho Suplex",
+        "reading": "",
+        "sourceTitle": "Hana Hana no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Hana_Hana_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-rubber-rubber-gun-wild-shot",
+      "ownerId": "wt100-1",
+      "current": {
+        "nameKo": "Rubber Rubber 건 Wild 샷",
+        "nameJa": "",
+        "nameEn": "Rubber Rubber Gun Wild Shot",
+        "reading": "",
+        "sourceTitle": "Gomu Gomu no Mi/Techniques",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ryoricho-drop",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "料理長ドロップ",
+        "nameEn": "Ryoricho Drop",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ryoricho-gisoku-kick",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "料理長義足キック",
+        "nameEn": "Ryoricho Gisoku Kick",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-ryusei-kazan",
+      "ownerId": "wt100-442",
+      "current": {
+        "nameKo": "",
+        "nameJa": "流星火山 （ りゅうせいかざん ）",
+        "nameEn": "Ryusei Kazan",
+        "reading": "",
+        "sourceTitle": "Magu Magu no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Magu_Magu_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-sables-pesado",
+      "ownerId": "wt100-179",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Sables: Pesado",
+        "reading": "",
+        "sourceTitle": "Suna Suna no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Suna_Suna_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "korean-name-needs-review",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "모래폭풍 헤비 (사블스 페사도)",
+          "score": 3,
+          "sourceTitle": "모래모래 열매",
+          "sourceUrl": "https://namu.wiki/w/%EB%AA%A8%EB%9E%98%EB%AA%A8%EB%9E%98%20%EC%97%B4%EB%A7%A4",
+          "match": "exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-saikyo-no-ichigeki",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "最強の一撃",
+        "nameEn": "Saikyo no Ichigeki",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-saisei-no-hono",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "再生の炎",
+        "nameEn": "Saisei no Hono",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-sanshu-no-jingi",
+      "ownerId": "wt100-520",
+      "current": {
+        "nameKo": "",
+        "nameJa": "三種の神器",
+        "nameEn": "Sanshu no Jingi",
+        "reading": "",
+        "sourceTitle": "Pika Pika no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Pika_Pika_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-santoryu-ogi-ichidai-sanzen-daisen-sekai",
+      "ownerId": "wt100-2",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Santoryu Ogi: Ichidai Sanzen Daisen Sekai",
+        "reading": "",
+        "sourceTitle": "Three Sword Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-santoryu-ogi-rokudo-no-tsuji",
+      "ownerId": "wt100-2",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Santoryu Ogi: Rokudo no Tsuji",
+        "reading": "",
+        "sourceTitle": "Three Sword Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-santoryu-ogi-sanzen-sekai",
+      "ownerId": "wt100-2",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Santoryu Ogi: Sanzen Sekai",
+        "reading": "",
+        "sourceTitle": "Three Sword Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-senka",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Senka",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-senkaigiri",
+      "ownerId": "wt100-501",
+      "current": {
+        "nameKo": "",
+        "nameJa": "旋回斬り",
+        "nameEn": "Senkaigiri",
+        "reading": "",
+        "sourceTitle": "Ope Ope no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ope_Ope_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-senmaigawara-seiken",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "千枚瓦正拳",
+        "nameEn": "Senmaigawara Seiken",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-shima-yurashi",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "島揺らし",
+        "nameEn": "Shima Yurashi",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-shingen-no-ichigeki",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "震源の一撃",
+        "nameEn": "Shingen no Ichigeki",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-shinka-shiranui",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Shinka: Shiranui",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-shinka-shiranui-itto",
+      "ownerId": "wt100-645",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Shinka: Shiranui Itto",
+        "reading": "",
+        "sourceTitle": "Mera Mera no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mera_Mera_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-shinzo-massage",
+      "ownerId": "wt100-299",
+      "current": {
+        "nameKo": "",
+        "nameJa": "心臓マッサージ",
+        "nameEn": "Shinzo Massage",
+        "reading": "",
+        "sourceTitle": "Goro Goro no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Goro_Goro_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-shizurase",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "閑羅瀬",
+        "nameEn": "Shizurase",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-shock-wille",
+      "ownerId": "wt100-501",
+      "current": {
+        "nameKo": "",
+        "nameJa": "衝撃波動 （ ショックヴィレ ）",
+        "nameEn": "Shock Wille",
+        "reading": "",
+        "sourceTitle": "Ope Ope no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ope_Ope_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-shufuku-sagyo",
+      "ownerId": "wt100-266",
+      "current": {
+        "nameKo": "",
+        "nameJa": "修復作業",
+        "nameEn": "Shufuku Sagyo",
+        "reading": "",
+        "sourceTitle": "Ito Ito no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ito_Ito_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-shunkan-ido",
+      "ownerId": "wt100-520",
+      "current": {
+        "nameKo": "",
+        "nameJa": "瞬間移動",
+        "nameEn": "Shunkan Ido",
+        "reading": "",
+        "sourceTitle": "Pika Pika no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Pika_Pika_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-silent-rage",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Silent Rage",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-slice-shoot",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "切肉 （ スライス ） シュート",
+        "nameEn": "Slice Shoot",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-soen-no-dageki",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "蒼炎の墜撃 （ そうえんのついげき ）",
+        "nameEn": "Soen no Dageki",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-soen-no-kago",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "蒼炎の加護 （ そうえんのかご ）",
+        "nameEn": "Soen no Kago",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-soen-no-kenjo",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "蒼炎の拳浄 （ そうえんのけんじょう ）",
+        "nameEn": "Soen no Kenjo",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-soen-no-tenkei",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "蒼炎の天恵 （ そうえんのてんけい ）",
+        "nameEn": "Soen no Tenkei",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-soen-no-uzu",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "蒼炎の渦 （ そうえんのうず ）",
+        "nameEn": "Soen no Uzu",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-soen-soso",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "蒼炎双爪 （ そうえんそうそう ）",
+        "nameEn": "Soen Soso",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-soul-parade",
+      "ownerId": "wt100-443",
+      "current": {
+        "nameKo": "",
+        "nameJa": "魂の （ ソウル ） パラード",
+        "nameEn": "Soul Parade",
+        "reading": "",
+        "sourceTitle": "Yomi Yomi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-special-homies",
+      "ownerId": "wt100-763",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Special Homies",
+        "reading": "",
+        "sourceTitle": "Soru Soru no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Soru_Soru_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-strongest-rampage",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Strongest Rampage",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-swallow-banderole",
+      "ownerId": "wt100-443",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Swallow Banderole",
+        "reading": "",
+        "sourceTitle": "Yomi Yomi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-tenchi-meido",
+      "ownerId": "wt100-270",
+      "current": {
+        "nameKo": "",
+        "nameJa": "天地鳴動",
+        "nameEn": "Tenchi Meido",
+        "reading": "",
+        "sourceTitle": "Gura Gura no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Gura_Gura_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-tensei-no-hono",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "転生の炎 （ てんせいのほのお ）",
+        "nameEn": "Tensei no Hono",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-tensei-no-soen",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "転生の蒼炎",
+        "nameEn": "Tensei no Soen",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-toku-hollow",
+      "ownerId": "wt100-458",
+      "current": {
+        "nameKo": "",
+        "nameJa": "特ホロ",
+        "nameEn": "Toku Hollow",
+        "reading": "",
+        "sourceTitle": "Horo Horo no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Horo_Horo_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-tori-mochi",
+      "ownerId": "wt100-996",
+      "current": {
+        "nameKo": "",
+        "nameJa": "鳥モチ",
+        "nameEn": "Tori Mochi",
+        "reading": "",
+        "sourceTitle": "Mochi Mochi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mochi_Mochi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-torikago",
+      "ownerId": "wt100-266",
+      "current": {
+        "nameKo": "",
+        "nameJa": "鳥カゴ",
+        "nameEn": "Torikago",
+        "reading": "",
+        "sourceTitle": "Ito Ito no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Ito_Ito_no_Mi"
+      },
+      "unresolvedFields": [
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-toriko-no-ishiyumi",
+      "ownerId": "wt100-543",
+      "current": {
+        "nameKo": "",
+        "nameJa": "虜の弩",
+        "nameEn": "Toriko no Ishiyumi",
+        "reading": "",
+        "sourceTitle": "Mero Mero no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mero_Mero_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-two-fish-engine",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "魚々人泳法 （ ツーフィッシュエンジン ）",
+        "nameEn": "Two Fish Engine",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-umidaiko",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "海太鼓",
+        "nameEn": "Umidaiko",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-urabure-swan-butokai",
+      "ownerId": "wt100-575",
+      "current": {
+        "nameKo": "",
+        "nameJa": "うらぶれ 白鳥 （ スワン ） 舞踏会",
+        "nameEn": "Urabure Swan Butokai",
+        "reading": "",
+        "sourceTitle": "Okama Kenpo",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Okama_Kenpo"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-veau-shot",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "Veau 샷",
+        "nameJa": "仔牛肉 （ ヴォー ） ショット",
+        "nameEn": "Veau Shot",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [],
+      "reason": "existing-korean-name-differs-from-wiki",
+      "possibleValues": [
+        {
+          "field": "nameKo",
+          "value": "송아지고기 (보) 샷",
+          "score": 3,
+          "sourceTitle": "상디/기술",
+          "sourceUrl": "https://namu.wiki/w/%EC%83%81%EB%94%94/%EA%B8%B0%EC%88%A0",
+          "match": "exact-English"
+        }
+      ]
+    },
+    {
+      "id": "wiki-tech-venom-demon-jigoku-no-shinpan",
+      "ownerId": "wt100-561",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Venom Demon: Jigoku no Shinpan",
+        "reading": "",
+        "sourceTitle": "Doku Doku no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Doku_Doku_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-wanto-giri",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "腕刀斬り",
+        "nameEn": "Wanto Giri",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-where-would-you-like-to-travel",
+      "ownerId": "wt100-267",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Where would you like to travel?",
+        "reading": "",
+        "sourceTitle": "Nikyu Nikyu no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Nikyu_Nikyu_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-yabusame",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "矢武鮫",
+        "nameEn": "Yabusame",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-yaki-mochi",
+      "ownerId": "wt100-996",
+      "current": {
+        "nameKo": "",
+        "nameJa": "焼餅 （ ヤキモチ ）",
+        "nameEn": "Yaki Mochi",
+        "reading": "",
+        "sourceTitle": "Mochi Mochi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Mochi_Mochi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-yamiagari",
+      "ownerId": "wt100-274",
+      "current": {
+        "nameKo": "",
+        "nameJa": "闇開",
+        "nameEn": "Yamiagari",
+        "reading": "",
+        "sourceTitle": "Yami Yami no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yami_Yami_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-yomi",
+      "ownerId": "wt100-443",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "yomi",
+        "reading": "",
+        "sourceTitle": "Yomi Yomi no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Yomi_Yomi_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-yonsenmaigawara-seiken",
+      "ownerId": "wt100-553",
+      "current": {
+        "nameKo": "",
+        "nameJa": "四千枚瓦正拳",
+        "nameEn": "Yonsenmaigawara Seiken",
+        "reading": "",
+        "sourceTitle": "Fish-Man Karate",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Fish-Man_Karate"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-you-re-next",
+      "ownerId": "wt100-442",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "You're Next!",
+        "reading": "",
+        "sourceTitle": "Magu Magu no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Magu_Magu_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-yutai-ridatsu",
+      "ownerId": "wt100-458",
+      "current": {
+        "nameKo": "",
+        "nameJa": "幽体離脱",
+        "nameEn": "Yutai Ridatsu",
+        "reading": "",
+        "sourceTitle": "Horo Horo no Mi",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Horo_Horo_no_Mi"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-chicken-flambe",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Chicken Flambe",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-cooking-summer",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Cooking Summer",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-fish-fillet",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Fish Fillet",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-fork-swing",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Fork Swing",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-frog-leg-kick",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Frog Leg Kick",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-gut-stuffer",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Gut Stuffer",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-knife-shot",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "Zeff Knife 샷",
+        "nameJa": "",
+        "nameEn": "Zeff Knife Shot",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-leg-o-wisdom",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Leg O' Wisdom",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-open-face-slam",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Open Face Slam",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-pegleg-shoot",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Pegleg Shoot",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-pulled-pork-pound",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Pulled Pork Pound:",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-rolling-dish",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Rolling Dish",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-shank-crank",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Shank Crank",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-shrimp-summer",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Shrimp Summer",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-table-change",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Table Change",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-tatty-trouncer",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Tatty Trouncer",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zeff-turnover-kick",
+      "ownerId": "wt100-5",
+      "current": {
+        "nameKo": "",
+        "nameJa": "",
+        "nameEn": "Zeff Turnover Kick",
+        "reading": "",
+        "sourceTitle": "Black Leg Style",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Black_Leg_Style"
+      },
+      "unresolvedFields": [
+        "nameKo",
+        "nameJa",
+        "reading"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    },
+    {
+      "id": "wiki-tech-zoan-kei-genjushu",
+      "ownerId": "wt100-435",
+      "current": {
+        "nameKo": "",
+        "nameJa": "「 動物 （ ゾオン ） 系」幻獣種",
+        "nameEn": "Zoan-kei Genjushu",
+        "reading": "",
+        "sourceTitle": "Tori Tori no Mi, Model: Phoenix",
+        "sourceUrl": "https://onepiece.fandom.com/wiki/Tori_Tori_no_Mi%2C_Model%3A_Phoenix"
+      },
+      "unresolvedFields": [
+        "nameKo"
+      ],
+      "reason": "no-reliable-source-match",
+      "possibleValues": []
+    }
+  ]
+}

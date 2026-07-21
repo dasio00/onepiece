@@ -348190,3 +348190,2284 @@ window.onePieceData = {
   });
 })();
 /* CHARACTER_IDENTITY_CORRECTIONS_END */
+
+/* TECHNIQUE_METADATA_CURATED_START */
+(() => {
+  const patches = {
+  "gum-gum-pistol": {
+    "nameEn": "Gomu Gomu no Pistol",
+    "nameJa": "ゴムゴムの銃 (ピストル)",
+    "reading": "Gomu Gomu no Pisutoru",
+    "sourceTitle": "Gomu Gomu no Mi/Techniques",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi%2FTechniques"
+  },
+  "manual-tech-koby-honesty-impact": {
+    "nameJa": "実直拳骨 (オネスティインパクト)",
+    "reading": "Onesuti Inpakuto",
+    "nameKo": "실직(어니스티) 권골(임팩트)"
+  },
+  "manual-tech-koby-soru": {
+    "reading": "Soru"
+  },
+  "oni-giri": {
+    "nameEn": "Oni Giri",
+    "nameJa": "鬼斬り",
+    "reading": "Oni Giri",
+    "sourceTitle": "Three Sword Style",
+    "sourceUrl": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+  },
+  "wiki-tech-1-000-000-v": {
+    "nameJa": "100万 (まん)V (ボルト)",
+    "reading": "Hyakuman Boruto"
+  },
+  "wiki-tech-100-000-000-v": {
+    "nameJa": "1億 (おく)V (ボルト)",
+    "reading": "Ichioku Boruto"
+  },
+  "wiki-tech-20-000-000-v": {
+    "nameJa": "2000万 (まん)V (ボルト)",
+    "reading": "Nisenman Boruto"
+  },
+  "wiki-tech-200-000-000-v-amaru": {
+    "nameJa": "2億 (おく)V (ボルト)雷神 (アマル)",
+    "reading": "Nioku Boruto Amaru"
+  },
+  "wiki-tech-30-000-000-v-hino": {
+    "nameJa": "3000万 (まん)V (ボルト)雷鳥 (ヒノ)",
+    "reading": "Sanzenman Boruto Hino"
+  },
+  "wiki-tech-500-000-000-v-amaru": {
+    "nameJa": "5億 (おく)V (ボルト)雷神 (アマル)",
+    "reading": "Go'oku Boruto Amaru"
+  },
+  "wiki-tech-60-000-000-v-jamboule": {
+    "nameJa": "6000万 (まん)V (ボルト)雷龍 (ジャムブウル)",
+    "reading": "Rokusenman Boruto Jamubūru"
+  },
+  "wiki-tech-600-000-000-belly-jackpot": {
+    "nameJa": "６億 (おく)Ｂ (ベル)・ＪＡＣＫＰＯＴ (ジャックポット)",
+    "reading": "Roku Oku Berī Jakkupotto"
+  },
+  "wiki-tech-abare-himatsuri": {
+    "reading": "Abare Himatsuri"
+  },
+  "wiki-tech-accident": {
+    "nameJa": "不慮の事故 (アクシデント)",
+    "reading": "Akushidento",
+    "nameKo": "불의의 사고 (액시던트)"
+  },
+  "wiki-tech-air-raid-smash": {
+    "reading": "Eā Reido Sumasshu"
+  },
+  "wiki-tech-aka-byobu": {
+    "reading": "Aka Byōbu"
+  },
+  "wiki-tech-aka-oni-okomega": {
+    "nameJa": "赤鬼怒巨 (オコメガ)",
+    "reading": "Aka-Oni Okomega"
+  },
+  "wiki-tech-ama-no-iwato": {
+    "nameJa": "天岩戸 (あまのいわと)",
+    "reading": "Ama no Iwato",
+    "nameKo": "천암호"
+  },
+  "wiki-tech-ama-no-murakumo": {
+    "nameJa": "天叢雲剣 (あまのむらくも)",
+    "reading": "Ama no Murakumo",
+    "nameKo": "천총운검 (쿠사나기의 검)"
+  },
+  "wiki-tech-amadare-mochi": {
+    "reading": "Amadare Mochi",
+    "nameKo": "낙숫물 떡"
+  },
+  "wiki-tech-amaru": {
+    "nameJa": "天衣"
+  },
+  "wiki-tech-amaterasu": {
+    "nameJa": "天照 (あまてらす)",
+    "reading": "Amaterasu",
+    "nameKo": "천조 (아마테라스)"
+  },
+  "wiki-tech-amputate": {
+    "nameJa": "切断 (アンピュテート)",
+    "reading": "Anpyutēto"
+  },
+  "wiki-tech-anesthesia": {
+    "nameJa": "麻酔 (アナススィージャ)",
+    "reading": "Anasusīja",
+    "nameKo": "마취 (애너스시저)"
+  },
+  "wiki-tech-ano-fuyu-no-sora-no-memoir": {
+    "nameJa": "あの冬の空の回想録 (メモワール)",
+    "reading": "Ano Fuyu no Sora no Memowāru"
+  },
+  "wiki-tech-ano-sabaku-no-kuni-no-memoir": {
+    "nameJa": "あの砂漠の国の回想録 (メモワール)",
+    "reading": "Ano Sabaku no Kuni no Memowāru"
+  },
+  "wiki-tech-anti-manner-kick-course": {
+    "nameJa": "反行儀 (アンチマナー)キックコース",
+    "reading": "Anchimanā Kikku Kōsu",
+    "nameKo": "반행의 (안티 매너) 킥 코스"
+  },
+  "wiki-tech-appakushi-chokka-koro": {
+    "reading": "Appakushi Chokka Kōro"
+  },
+  "wiki-tech-assign": {
+    "nameJa": "付与 (アサイン)",
+    "reading": "Asain",
+    "nameKo": "부여 (어사인)"
+  },
+  "wiki-tech-astral-explosion": {
+    "nameJa": "幽体 (アストラル)・エクスポローション",
+    "reading": "Asutoraru Ekusuporōshon"
+  },
+  "wiki-tech-atamawari-ningyo": {
+    "reading": "Atamawari Ningyō"
+  },
+  "wiki-tech-athlete": {
+    "nameJa": "足剃糸 (アスリイト)",
+    "reading": "Asurīto",
+    "nameKo": "족체사 (애슬리트)"
+  },
+  "wiki-tech-bakuretsu-kazan": {
+    "nameJa": "爆裂火山 (ばくれつかざん)",
+    "reading": "Bakuretsu Kazan"
+  },
+  "wiki-tech-bara-bara-car": {
+    "reading": "Bara Bara Kā",
+    "nameKo": "동강동강 카"
+  },
+  "wiki-tech-bara-bara-carnival": {
+    "reading": "Bara Bara Kānibaru",
+    "nameKo": "동강동강 카니발"
+  },
+  "wiki-tech-bara-bara-festival": {
+    "reading": "Bara Bara Fesutibaru",
+    "nameKo": "동강동강 페스티벌"
+  },
+  "wiki-tech-bara-bara-hade-ni-gattai": {
+    "reading": "Bara Bara Hade ni Gattai"
+  },
+  "wiki-tech-bara-bara-ho": {
+    "reading": "Bara Bara Hō",
+    "nameKo": "동강동강 포"
+  },
+  "wiki-tech-bara-bara-ho-kirihanashi": {
+    "reading": "Bara Bara Hō Kirihanashi"
+  },
+  "wiki-tech-bara-bara-kick": {
+    "reading": "Bara Bara Kikku",
+    "nameKo": "동강동강 킥"
+  },
+  "wiki-tech-bara-bara-kinkyu-dasshutsu": {
+    "reading": "Bara Bara Kinkyū Dasshutsu",
+    "nameKo": "동강동강 긴급탈출"
+  },
+  "wiki-tech-bara-bara-punch": {
+    "reading": "Bara Bara Panchi",
+    "nameKo": "동강동강 펀치"
+  },
+  "wiki-tech-bara-bara-senbei": {
+    "reading": "Bara Bara Senbei",
+    "nameKo": "동강동강 풍차"
+  },
+  "wiki-tech-barja-n": {
+    "nameJa": "三日月形砂丘 (バルハン)",
+    "reading": "Baruhan",
+    "nameKo": "초승달 사구 (바르한)"
+  },
+  "wiki-tech-basse-co-te": {
+    "nameJa": "肩ロース (バース・コート)",
+    "reading": "Bāsu Kōto",
+    "nameKo": "어깨 로스 (바스 코트)"
+  },
+  "wiki-tech-big-eater": {
+    "nameJa": "暴贖握磁気 (ビッグイーター)",
+    "reading": "Biggu Ītā",
+    "nameKo": "폭속 악자기 (빅 이터)"
+  },
+  "wiki-tech-big-tree": {
+    "nameJa": "大樹 (ビッグツリー)",
+    "reading": "Biggu Tsurī",
+    "nameKo": "큰 나무 (빅 트리)"
+  },
+  "wiki-tech-billow-white": {
+    "nameJa": "大波白糸 (ビローホワイト)",
+    "reading": "Birō Howaito",
+    "nameKo": "대파백사 (빌로 화이트)"
+  },
+  "wiki-tech-black-hole": {
+    "nameJa": "闇穴道 (ブラック･ホール)",
+    "reading": "Burakku Hōru"
+  },
+  "wiki-tech-black-knight": {
+    "nameJa": "影騎糸 (ブラックナイト)",
+    "reading": "Burakku Naito"
+  },
+  "wiki-tech-black-road": {
+    "reading": "Burakku Rōdo"
+  },
+  "wiki-tech-black-world": {
+    "reading": "Burakku Wārudo"
+  },
+  "wiki-tech-blue-walk": {
+    "nameJa": "海歩行 (ブルーウォーク)",
+    "reading": "Burū Wōku",
+    "nameKo": "바다 보행 (블루 워크)"
+  },
+  "wiki-tech-bluebird": {
+    "nameJa": "青炎雁 (ブルーバード)",
+    "reading": "Burūbādo",
+    "nameKo": "청염안 (블루 버드)"
+  },
+  "wiki-tech-bolo-breath": {
+    "nameJa": "熱息 (ボロブレス)",
+    "reading": "Boro Buresu",
+    "nameKo": "불의 숨결 (보로브레스)"
+  },
+  "wiki-tech-bombardier": {
+    "nameJa": "爆撃白鳥 (ボンバルディエ)",
+    "reading": "Bonbarudie",
+    "nameKo": "폭격백조"
+  },
+  "wiki-tech-bombardier-arabesque": {
+    "nameJa": "爆弾白鳥 (ボンバルディエ)アラベスク",
+    "reading": "Bonbarudie Arabesuku"
+  },
+  "wiki-tech-bouche": {
+    "nameJa": "口 (ブーシュ)",
+    "reading": "Būshu",
+    "nameKo": "입 (부슈)"
+  },
+  "wiki-tech-bouquetie-re-shot": {
+    "nameJa": "木犀型斬 (ブクティエール)ショット",
+    "reading": "Bukuteiēru Shotto"
+  },
+  "wiki-tech-break-white": {
+    "nameJa": "荒浪白糸 (ブレイクホワイト)",
+    "reading": "Bureiku Howaito",
+    "nameKo": "황랑백사 (브레이크 화이트)"
+  },
+  "wiki-tech-brochette": {
+    "nameJa": "串焼き (ブロシェット)",
+    "reading": "Buroshietto",
+    "nameKo": "꼬치구이 (브로셰트)"
+  },
+  "wiki-tech-bujaogen": {
+    "nameJa": "武脚跟 (ブジャオゲン)",
+    "reading": "Bujaogen",
+    "nameKo": "무각근"
+  },
+  "wiki-tech-buto": {
+    "reading": "Butō"
+  },
+  "wiki-tech-buto-kaiten": {
+    "reading": "Butō Kaiten"
+  },
+  "wiki-tech-calendula": {
+    "nameJa": "金盞花 (カンデュラ)",
+    "reading": "Kandyura",
+    "nameKo": "금잔화 (카렌듈라)"
+  },
+  "wiki-tech-campo-de-flores": {
+    "nameJa": "花畑 (カンポ・デ・フローレス)",
+    "reading": "Kanpo de Furōresu",
+    "nameKo": "꽃밭 (캄포 데 플로레스)"
+  },
+  "wiki-tech-catastrophe": {
+    "reading": "Katasutorofi",
+    "nameKo": "카타스트로피"
+  },
+  "wiki-tech-chi-o-hau-bara-bara-ho": {
+    "reading": "Chi o Hau Bara Bara Hō",
+    "nameKo": "땅을 달리는 동강동강 포"
+  },
+  "wiki-tech-chi-to-ase-to-namida-releve": {
+    "reading": "Chi to Ase to Namida no Ruruve"
+  },
+  "wiki-tech-chloro-ball": {
+    "nameJa": "毒ガス弾 (クロロボール)",
+    "reading": "Kurorobōru",
+    "nameKo": "독가스 탄 (클로로 볼)"
+  },
+  "wiki-tech-chugi-no-tate": {
+    "nameJa": "忠義の盾 (ちゅうぎのたて)",
+    "reading": "Chūgi no Tate"
+  },
+  "wiki-tech-cien-fleur": {
+    "nameJa": "百花繚乱 (シエンフルール)",
+    "reading": "Shien Furūru",
+    "nameKo": "백화요란 (시엔 플루르)"
+  },
+  "wiki-tech-cinco-fleur": {
+    "nameJa": "五輪 (シンコ)咲き (フルール)",
+    "reading": "Shinko Furūru",
+    "nameKo": "싱코 플루르"
+  },
+  "wiki-tech-cinco-mano": {
+    "nameJa": "五本樹 (シンコ・マーノ)",
+    "reading": "Shinko Māno",
+    "nameKo": "5그루 나무 (싱코 마노)"
+  },
+  "wiki-tech-clutch": {
+    "reading": "Kuratchi"
+  },
+  "wiki-tech-co-telette": {
+    "nameJa": "背肉 (コートレット)",
+    "reading": "Kōtoretto",
+    "nameKo": "등살 (코틀레트)"
+  },
+  "wiki-tech-cognac": {
+    "nameJa": "皇帝剣 (コニャック)",
+    "reading": "Konyakku",
+    "nameKo": "황제검 (코냑)"
+  },
+  "wiki-tech-cold-soul": {
+    "nameJa": "コールド魂 (ソウル)",
+    "reading": "Kōrudo Souru"
+  },
+  "wiki-tech-collier": {
+    "nameJa": "首肉 (コリエ)",
+    "reading": "Korie",
+    "nameKo": "목살 (콜리에)"
+  },
+  "wiki-tech-collier-frit": {
+    "nameJa": "首肉 (コリエ)フリット",
+    "reading": "Korie Furitto"
+  },
+  "wiki-tech-collier-shoot": {
+    "nameJa": "首肉 (コリエ)シュート",
+    "reading": "Korie Shūto",
+    "nameKo": "목살 (콜리에) 슛"
+  },
+  "wiki-tech-comet-rabbit": {
+    "reading": "pronunciation unknown"
+  },
+  "wiki-tech-concasse": {
+    "nameJa": "粗砕 (コンカッセ)",
+    "reading": "Konkasse",
+    "nameKo": "다지기 (콩카세)"
+  },
+  "wiki-tech-counter-shock": {
+    "reading": "Kauntā Shokku",
+    "nameKo": "카운터 쇼크"
+  },
+  "wiki-tech-craspedia": {
+    "nameJa": "金槌花 (クラスペディア)",
+    "reading": "Kurasupedia"
+  },
+  "wiki-tech-crimson-flower": {
+    "nameJa": "紅蓮 (ぐれん)",
+    "reading": "Guren"
+  },
+  "wiki-tech-cuarenta-fleur": {
+    "nameJa": "四十輪 (クワレンタ)咲き (フルール)",
+    "reading": "Kuwarenta Furūru",
+    "nameKo": "콰렌타 플루르"
+  },
+  "wiki-tech-cuatro-mano": {
+    "nameJa": "四本樹 (クワトロ・マーノ)",
+    "reading": "Kuwatoro Māno"
+  },
+  "wiki-tech-cuatro-manos": {
+    "nameJa": "四本樹 (クワトロ・マーノス)",
+    "reading": "Kuwatoro Mānosu"
+  },
+  "wiki-tech-cuerpo-fleur": {
+    "nameJa": "体 (クエルポ)咲き (フルール)",
+    "reading": "Kuerupo Furūru",
+    "nameKo": "쿠에르포 플루르"
+  },
+  "wiki-tech-cuisseau": {
+    "nameJa": "もも肉 (キュイソー)",
+    "reading": "Kyuisō",
+    "nameKo": "허벅지살 (퀴소)"
+  },
+  "wiki-tech-cuisseau-shoot": {
+    "nameJa": "もも肉 (キュイソー)シュート",
+    "reading": "Kyuisō Shūto",
+    "nameKo": "허벅지살 슛"
+  },
+  "wiki-tech-curtain": {
+    "nameJa": "抗菌武装 (カーテン)",
+    "reading": "Kāten",
+    "nameKo": "항균무장 (커튼)"
+  },
+  "wiki-tech-dai-funka": {
+    "nameJa": "大噴火 (だいふんか)",
+    "reading": "Dai Funka"
+  },
+  "wiki-tech-daibutsu-giri": {
+    "reading": "Daibutsu Giri",
+    "nameKo": "대불참"
+  },
+  "wiki-tech-damned-punk": {
+    "nameJa": "電磁砲 (ダムドパンク)",
+    "reading": "Damudo Panku",
+    "nameKo": "전자포 (댐드 펑크)"
+  },
+  "wiki-tech-dark-matter": {
+    "nameJa": "闇黒星 (ダーク・マター)",
+    "reading": "Dāku Matā",
+    "nameKo": "암흑성 (다크 매터)"
+  },
+  "wiki-tech-deathpiea": {
+    "reading": "Desupia"
+  },
+  "wiki-tech-defense": {
+    "reading": "Difensu",
+    "nameKo": "디펜스"
+  },
+  "wiki-tech-delphinium": {
+    "nameJa": "大飛燕草 (デルフィニウム)",
+    "reading": "Derufiniumu",
+    "nameKo": "대비연초 (델피니움)"
+  },
+  "wiki-tech-demonio-fleur": {
+    "nameJa": "悪魔咲き (デモニオフルール)",
+    "reading": "Demonio Furūru",
+    "nameKo": "데모니오 플루르"
+  },
+  "wiki-tech-denkou-sekka": {
+    "nameJa": "電光 (でんこう)石火 (せっか)",
+    "reading": "Denkō Sekka"
+  },
+  "wiki-tech-dents": {
+    "nameJa": "歯 (ダン)",
+    "reading": "Dan",
+    "nameKo": "이빨 (당)"
+  },
+  "wiki-tech-desert-girasole": {
+    "nameJa": "砂漠の向日葵 (デザート・ジラソーレ)",
+    "reading": "Dezāto Jirasōre",
+    "nameKo": "사막의 해바라기 (데저트 지라솔레)"
+  },
+  "wiki-tech-desert-grande-espada": {
+    "nameJa": "砂漠の大剣 (デザート・グランデ・エスパーダ)",
+    "reading": "Dezāto Gurande Esupāda",
+    "nameKo": "사막의 대검 (데저트 그란데 에스파다)"
+  },
+  "wiki-tech-desert-la-spada": {
+    "nameJa": "砂漠の金剛宝刀 (デザート・ラスパーダ)",
+    "reading": "Dezāto Rasupāda",
+    "nameKo": "사막의 금강보검 (데저트 라스파다)"
+  },
+  "wiki-tech-desert-spada": {
+    "nameJa": "砂漠の宝刀 (デザート・スパーダ)",
+    "reading": "Dezāto Supāda",
+    "nameKo": "사막의 보검 (데저트 스파다)"
+  },
+  "wiki-tech-deuxie-me-hachis": {
+    "nameJa": "二級挽き肉 (ドゥジェムアッシ)",
+    "reading": "Doujiemu Asshi",
+    "nameKo": "이급 분쇄육 (되지엠 아시)"
+  },
+  "wiki-tech-diecise-is-fleur": {
+    "nameJa": "十六輪 (ディエシセイス)咲き (フルール)",
+    "reading": "Dieshiseisu Furūru",
+    "nameKo": "디에시세이스 플루르"
+  },
+  "wiki-tech-diez-fleur": {
+    "nameJa": "十輪咲き (ヂィエスフルール)",
+    "reading": "Diesu Furūru",
+    "nameKo": "디에스 플루르"
+  },
+  "wiki-tech-dive-attack": {
+    "reading": "Daibu Atakku"
+  },
+  "wiki-tech-doble-clutch": {
+    "nameJa": "W (ドーブレ)・クラッチ",
+    "reading": "Dōbure Kuratchi"
+  },
+  "wiki-tech-doce-fleur": {
+    "nameJa": "十二輪 (ドーセ)咲き (フルール)",
+    "reading": "Dōse Furūru",
+    "nameKo": "도세 플루르"
+  },
+  "wiki-tech-doku-fugu": {
+    "reading": "Doku Fugu",
+    "nameKo": "독복어"
+  },
+  "wiki-tech-doku-gumo": {
+    "nameJa": "毒 (ドク)・雲 (グモ)",
+    "reading": "Doku Gumo",
+    "nameKo": "독운 (구름)"
+  },
+  "wiki-tech-dos-fleur": {
+    "nameJa": "二輪 (ドス)咲き (フルール)",
+    "reading": "Dosu Furūru",
+    "nameKo": "도스 플루르"
+  },
+  "wiki-tech-dos-mano": {
+    "nameJa": "二本樹 (ドス・マーノ)",
+    "reading": "Dosu Māno",
+    "nameKo": "2그루 나무 (도스 마노)"
+  },
+  "wiki-tech-dos-manos": {
+    "nameJa": "二本樹 (ドス・マーノス)",
+    "reading": "Dosu Mānosu",
+    "nameKo": "2그루 나무 (도스 마노)"
+  },
+  "wiki-tech-dozo-okamai-knuckle": {
+    "nameJa": "どうぞオカマい拳 (ナックル)",
+    "reading": "Dōzo Okamai Nakkuru"
+  },
+  "wiki-tech-e-paule": {
+    "nameJa": "肩肉 (エポール)",
+    "reading": "Epōru"
+  },
+  "wiki-tech-e-paule-shoot": {
+    "nameJa": "肩肉 (エポール)シュート",
+    "reading": "Epōru Shūto"
+  },
+  "wiki-tech-el-kratia": {
+    "nameJa": "神の怒り (エル・クラティア)",
+    "reading": "Eru Kuratia"
+  },
+  "wiki-tech-el-thor": {
+    "nameJa": "神の裁き (エル･トール)",
+    "reading": "Eru Tōru"
+  },
+  "wiki-tech-el-vajra": {
+    "nameJa": "神の金剛杵 (エル・ヴァジュラ)",
+    "reading": "Eru Vajura"
+  },
+  "wiki-tech-eleclaw": {
+    "nameJa": "エレ爪 (クロ)",
+    "reading": "Erekuro",
+    "nameKo": "일렉손톱 (클로)"
+  },
+  "wiki-tech-electrical-full-power": {
+    "reading": "Erekutorikaru Furu Pawā"
+  },
+  "wiki-tech-electrical-luna": {
+    "reading": "Erekutorikaru Runa",
+    "nameKo": "일렉트리컬 루나"
+  },
+  "wiki-tech-electrical-shower": {
+    "reading": "Erekutorikaru Shawā"
+  },
+  "wiki-tech-electrical-tempesta": {
+    "reading": "Erekutorikaru Tenpesta"
+  },
+  "wiki-tech-emergency": {
+    "nameJa": "救急 (エマージェンシー)",
+    "reading": "Emājenshī",
+    "nameKo": "구급 (이머전시)"
+  },
+  "wiki-tech-enbima-yonezu-oni-giri": {
+    "reading": "Enbima Yonezu Oni Giri",
+    "nameKo": "아리따운 악마 잠 못 드는 밤 도깨비 참수"
+  },
+  "wiki-tech-enbu": {
+    "nameJa": "炎舞 (えんぶ)",
+    "reading": "Enbu"
+  },
+  "wiki-tech-enjomo": {
+    "nameJa": "炎上網 (えんじょうもう)",
+    "reading": "Enjōmō",
+    "nameKo": "염상망 (불꽃벽)"
+  },
+  "wiki-tech-enkai": {
+    "nameJa": "炎戒 (エンカイ)",
+    "reading": "Enkai",
+    "nameKo": "염계"
+  },
+  "wiki-tech-enryu-hako": {
+    "nameJa": "炎竜爬行",
+    "reading": "Enryū Hakō"
+  },
+  "wiki-tech-enten": {
+    "nameJa": "炎天 (えんてん)",
+    "reading": "Enten"
+  },
+  "wiki-tech-escalope": {
+    "nameJa": "薄切り肉のソテー (エスカロップ)",
+    "reading": "Esukaroppu",
+    "nameKo": "얇게 저민 고기 튀김 (에스칼로프)"
+  },
+  "wiki-tech-ever-white": {
+    "nameJa": "海原白波 (エバーホワイト)",
+    "reading": "Ebā Howaito",
+    "nameKo": "해원백사 (에버 화이트)"
+  },
+  "wiki-tech-extra-hachis": {
+    "nameJa": "最上級挽き肉 (エクストラ・アッシ)",
+    "reading": "Ekusutora Asshi",
+    "nameKo": "최상급 분쇄육 (엑스트라 아시)"
+  },
+  "wiki-tech-face-fleur": {
+    "nameJa": "フェイス・フルール",
+    "reading": "Feisu Furūru"
+  },
+  "wiki-tech-flanchet": {
+    "nameJa": "腹肉 (フランシェ)",
+    "reading": "Furanshe",
+    "nameKo": "뱃살 (플랑셰)"
+  },
+  "wiki-tech-flanchet-shoot": {
+    "nameJa": "腹肉 (フランシェ)シュート",
+    "reading": "Furanshe Shūto"
+  },
+  "wiki-tech-flap-thread": {
+    "nameJa": "羽撃糸 (フラップスレッド)",
+    "reading": "Furappu Sureddo",
+    "nameKo": "우격사 (플랩 스레드)"
+  },
+  "wiki-tech-flip": {
+    "reading": "Furippu",
+    "nameKo": "플립"
+  },
+  "wiki-tech-freesia": {
+    "nameJa": "浅葱氷仙 (フリージア)",
+    "reading": "Furījia",
+    "nameKo": "천창빙선 (프리지아)"
+  },
+  "wiki-tech-frites-assorties": {
+    "nameJa": "揚げ物盛り合わせ (フリットアソルティ)",
+    "reading": "Furitto Asoruti"
+  },
+  "wiki-tech-fujiazami": {
+    "nameJa": "不 (ふ)死 (じ)薊 (あざみ)",
+    "reading": "Fujiazami",
+    "nameKo": "불사 엉겅퀴"
+  },
+  "wiki-tech-fulbright": {
+    "nameJa": "降無頼糸 (フルブライト)",
+    "reading": "Furuburaito",
+    "nameKo": "항무뢰사 (풀브라이트)"
+  },
+  "wiki-tech-fulgora": {
+    "nameJa": "震御雷 (フルゴラ)",
+    "reading": "Furugora",
+    "nameKo": "진어뢰 (풀고라)"
+  },
+  "wiki-tech-fushicho-kassho": {
+    "nameJa": "不死鳥滑翔 (ふしちょうかっしょう)",
+    "reading": "Fushichō Kasshō"
+  },
+  "wiki-tech-fushicho-no-goen": {
+    "reading": "Fushichō no Gōen"
+  },
+  "wiki-tech-fushicho-no-kyoshu": {
+    "reading": "Fushichō no Kyōshū"
+  },
+  "wiki-tech-fushicho-no-mezame": {
+    "reading": "Fushichō no Mezame"
+  },
+  "wiki-tech-fushicho-no-shugeki": {
+    "reading": "Fushichō no Shūgeki"
+  },
+  "wiki-tech-fushicho-no-shukuen": {
+    "nameJa": "不死鳥の祝炎 (ふしちょうのしゅくえん)",
+    "reading": "Fushichō no Shukuen"
+  },
+  "wiki-tech-fushicho-no-shumai": {
+    "nameJa": "不死鳥の襲舞 (ふしちょうのしゅうまい)",
+    "reading": "Fushichō no Shūmai"
+  },
+  "wiki-tech-fushicho-no-tsume": {
+    "nameJa": "不死鳥の爪 (ふしちょうのつめ)",
+    "reading": "Fushichō no Tsume"
+  },
+  "wiki-tech-fushicho-no-yokugeki": {
+    "reading": "Fushichō no Mezame"
+  },
+  "wiki-tech-fushicho-ranbu": {
+    "nameJa": "不死鳥乱舞 (ふしちょうらんぶ)",
+    "reading": "Fushichō Ranbu"
+  },
+  "wiki-tech-fuwa-flowers": {
+    "nameJa": "フワッフラワー",
+    "reading": "Fuwaffurawā"
+  },
+  "wiki-tech-gamma-knife": {
+    "reading": "Ganma Naifu",
+    "nameKo": "감마 나이프"
+  },
+  "wiki-tech-gazami-dori": {
+    "nameJa": "蟹 (ガザミ)獲り",
+    "reading": "Gazami Dori",
+    "nameKo": "꽃게 사냥"
+  },
+  "wiki-tech-geburtstag": {
+    "reading": "Gebūatsutāku",
+    "nameKo": "게부어츠타크"
+  },
+  "wiki-tech-gedan-geri": {
+    "reading": "Gedan-geri"
+  },
+  "wiki-tech-gekishin": {
+    "reading": "Gekishin"
+  },
+  "wiki-tech-genju-rengeki": {
+    "reading": "Genjū Rengeki"
+  },
+  "wiki-tech-genjushu-no-hidariashi": {
+    "nameJa": "幻獣種の左脚 (げんじゅうしゅのひだりあし)",
+    "reading": "Genjūshu no Hidariashi"
+  },
+  "wiki-tech-genocide-raid": {
+    "reading": "Jenosaido Reido"
+  },
+  "wiki-tech-ghost-masquerade": {
+    "nameJa": "幽霊舞会 (ゴスト・マスクレイド)",
+    "reading": "Gosuto Masukurēdo"
+  },
+  "wiki-tech-ghost-rap": {
+    "reading": "Gōsuto Rappu",
+    "nameKo": "고스트 랩"
+  },
+  "wiki-tech-gigante-fleur": {
+    "nameJa": "巨人咲き (ヒガンテフルール)",
+    "reading": "Higante Furūru",
+    "nameKo": "히간테 플루르"
+  },
+  "wiki-tech-gigantesco-mano": {
+    "nameJa": "巨大樹 (ヒガンテスコ・マーノ)",
+    "reading": "Higantesuko Māno",
+    "nameKo": "거대 나무 (기간테스코 마노)"
+  },
+  "wiki-tech-gigot": {
+    "nameJa": "もも肉 (ジゴー)",
+    "reading": "Jigō",
+    "nameKo": "허벅지살 (지고)"
+  },
+  "wiki-tech-god-thread": {
+    "nameJa": "神誅殺 (ゴッドスレッド)",
+    "reading": "Goddo Sureddo",
+    "nameKo": "신주살 (갓 스레드)"
+  },
+  "wiki-tech-gomu-gomu-no-ame": {
+    "nameJa": "ゴムゴムの雨",
+    "reading": "Gomu Gomu no Ame"
+  },
+  "wiki-tech-gomu-gomu-no-ami": {
+    "nameJa": "ゴムゴムの網",
+    "reading": "Gomu Gomu no Ami"
+  },
+  "wiki-tech-gomu-gomu-no-amidori": {
+    "reading": "Gomu Gomu no Amidori"
+  },
+  "wiki-tech-gomu-gomu-no-bakazu": {
+    "reading": "Gomu Gomu no Bakazu?!"
+  },
+  "wiki-tech-gomu-gomu-no-baku-baku": {
+    "reading": "Gomu Gomu no Baku Baku"
+  },
+  "wiki-tech-gomu-gomu-no-bazooka": {
+    "reading": "Gomu Gomu no Bazūka"
+  },
+  "wiki-tech-gomu-gomu-no-bow-gun": {
+    "reading": "Gomu Gomu no Bōgan"
+  },
+  "wiki-tech-gomu-gomu-no-bungee": {
+    "reading": "Gomu Gomu no Banjī"
+  },
+  "wiki-tech-gomu-gomu-no-dame-da": {
+    "reading": "Gomu Gomu no Dame Da!"
+  },
+  "wiki-tech-gomu-gomu-no-dance": {
+    "nameJa": "ゴムゴムの舞踏 (ダンス)",
+    "reading": "Gomu Gomu no Dansu"
+  },
+  "wiki-tech-gomu-gomu-no-fusen": {
+    "reading": "Gomu Gomu no Fūsen"
+  },
+  "wiki-tech-gomu-gomu-no-gatling": {
+    "nameJa": "ゴムゴムの銃乱打 (ガトリング)",
+    "reading": "Gomu Gomu no Gatoringu"
+  },
+  "wiki-tech-gomu-gomu-no-gomu-doryoku": {
+    "reading": "Gomu Gomu no Gomu Dōryoku"
+  },
+  "wiki-tech-gomu-gomu-no-hanabi": {
+    "nameJa": "ゴムゴムの花火",
+    "reading": "Gomu Gomu no Hanabi"
+  },
+  "wiki-tech-gomu-gomu-no-haragi": {
+    "reading": "Gomu Gomu no Haragi"
+  },
+  "wiki-tech-gomu-gomu-no-heat-magnum": {
+    "nameJa": "ゴムゴムの炎神銃 (ヒートマグナム)",
+    "reading": "Gomu Gomu no Hīto Magunamu"
+  },
+  "wiki-tech-gomu-gomu-no-home-run": {
+    "reading": "Gomu Gomu no Hōmuran"
+  },
+  "wiki-tech-gomu-gomu-no-hyakuman-do-bazooka": {
+    "reading": "Gomu Gomu no Hyakuman-do Bazūka"
+  },
+  "wiki-tech-gomu-gomu-no-ikebana": {
+    "reading": "Gomu Gomu no Ikebana"
+  },
+  "wiki-tech-gomu-gomu-no-jutte": {
+    "reading": "Gomu Gomu no Jutte"
+  },
+  "wiki-tech-gomu-gomu-no-kama": {
+    "nameJa": "ゴムゴムの鎌",
+    "reading": "Gomu Gomu no Kama"
+  },
+  "wiki-tech-gomu-gomu-no-kane": {
+    "nameJa": "ゴムゴムの鐘",
+    "reading": "Gomu Gomu no Kane"
+  },
+  "wiki-tech-gomu-gomu-no-kazaguruma": {
+    "nameJa": "ゴムゴムの風車",
+    "reading": "Gomu Gomu no Kazaguruma"
+  },
+  "wiki-tech-gomu-gomu-no-kazan": {
+    "reading": "Gomu Gomu no Kazan"
+  },
+  "wiki-tech-gomu-gomu-no-koma": {
+    "reading": "Gomu Gomu no Koma"
+  },
+  "wiki-tech-gomu-gomu-no-marunoko": {
+    "nameJa": "ゴムゴムの丸鋸",
+    "reading": "Gomu Gomu no Marunoko"
+  },
+  "wiki-tech-gomu-gomu-no-masakari": {
+    "reading": "Gomu Gomu no Masakari"
+  },
+  "wiki-tech-gomu-gomu-no-midare-gui": {
+    "reading": "Gomu Gomu no Midare Gui"
+  },
+  "wiki-tech-gomu-gomu-no-migawari": {
+    "nameJa": "ゴムゴムの身代り",
+    "reading": "Gomu Gomu no Migawari"
+  },
+  "wiki-tech-gomu-gomu-no-mikata-robo": {
+    "reading": "Gomu Gomu no Mikata Robo"
+  },
+  "wiki-tech-gomu-gomu-no-mizu-kure": {
+    "reading": "Gomu Gomu no Mizu Kure"
+  },
+  "wiki-tech-gomu-gomu-no-muchi": {
+    "nameJa": "ゴムゴムの鞭",
+    "reading": "Gomu Gomu no Muchi"
+  },
+  "wiki-tech-gomu-gomu-no-mushitoriami": {
+    "reading": "Gomu Gomu no Mushitoriami"
+  },
+  "wiki-tech-gomu-gomu-no-nagenawa": {
+    "reading": "Gomu Gomu no Nagenawa"
+  },
+  "wiki-tech-gomu-gomu-no-neji": {
+    "reading": "Gomu Gomu no Neji"
+  },
+  "wiki-tech-gomu-gomu-no-ogama": {
+    "nameJa": "ゴムゴムの大鎌",
+    "reading": "Gomu Gomu no Ōgama"
+  },
+  "wiki-tech-gomu-gomu-no-ono": {
+    "nameJa": "ゴムゴムの戦斧",
+    "reading": "Gomu Gomu no Ono"
+  },
+  "wiki-tech-gomu-gomu-no-orei-fire": {
+    "nameJa": "ゴムゴムのお礼砲 (ファイア)",
+    "reading": "Gomu Gomu no Orei Faia"
+  },
+  "wiki-tech-gomu-gomu-no-ozuchi": {
+    "nameJa": "ゴムゴムの大槌",
+    "reading": "Gomu Gomu no Ōzuchi"
+  },
+  "wiki-tech-gomu-gomu-no-pachinko": {
+    "reading": "Gomu Gomu no Pachinko"
+  },
+  "wiki-tech-gomu-gomu-no-pistol": {
+    "nameJa": "ゴムゴムの銃 (ピストル)",
+    "reading": "Gomu Gomu no Pisutoru"
+  },
+  "wiki-tech-gomu-gomu-no-pistol-shot": {
+    "nameJa": "ゴムゴムの銃 (ピストル)｢散弾 (ショット)｣ or ｢散弾 (ショットガン)｣",
+    "reading": "Gomu Gomu no Pisutoru Shotto or Shottogan"
+  },
+  "wiki-tech-gomu-gomu-no-propeller": {
+    "reading": "Gomu Gomu no Puropera"
+  },
+  "wiki-tech-gomu-gomu-no-ricochet": {
+    "reading": "Gomu Gomu no Rikochetto"
+  },
+  "wiki-tech-gomu-gomu-no-rifle": {
+    "nameJa": "ゴムゴムの回転弾 (ライフル)",
+    "reading": "Gomu Gomu no Raifuru"
+  },
+  "wiki-tech-gomu-gomu-no-rocket": {
+    "reading": "Gomu Gomu no Roketto"
+  },
+  "wiki-tech-gomu-gomu-no-sadowari": {
+    "reading": "Gomu Gomu no Sadowari"
+  },
+  "wiki-tech-gomu-gomu-no-screw": {
+    "reading": "Gomu Gomu no Sukuryū"
+  },
+  "wiki-tech-gomu-gomu-no-senjukannon": {
+    "reading": "Gomu Gomu no Senjukannon"
+  },
+  "wiki-tech-gomu-gomu-no-shoot": {
+    "reading": "Gomu Gomu no Shūto"
+  },
+  "wiki-tech-gomu-gomu-no-snake-shot": {
+    "nameJa": "ゴムゴムの蛇銃 (スネークショット)",
+    "reading": "Gomu Gomu no Sunēku Shotto"
+  },
+  "wiki-tech-gomu-gomu-no-spread": {
+    "reading": "Gomu Gomu no Supureddo"
+  },
+  "wiki-tech-gomu-gomu-no-spring-bullet": {
+    "nameJa": "ゴムゴムのスプリング銃弾 (ブレット)",
+    "reading": "Gomu Gomu no Supuringu Buretto"
+  },
+  "wiki-tech-gomu-gomu-no-stamp": {
+    "reading": "Gomu Gomu no Sutanpu"
+  },
+  "wiki-tech-gomu-gomu-no-storm": {
+    "nameJa": "ゴムゴムの暴風雨 (ストーム)",
+    "reading": "Gomu Gomu no Sutōmu"
+  },
+  "wiki-tech-gomu-gomu-no-tako": {
+    "reading": "Gomu Gomu no Tako"
+  },
+  "wiki-tech-gomu-gomu-no-tako-stamp": {
+    "reading": "Gomu Gomu no Tako Sutanpu"
+  },
+  "wiki-tech-gomu-gomu-no-tate": {
+    "nameJa": "ゴムゴムの盾",
+    "reading": "Gomu Gomu no Tate"
+  },
+  "wiki-tech-gomu-gomu-no-tomotsuna": {
+    "reading": "Gomu Gomu no Tomotsuna"
+  },
+  "wiki-tech-gomu-gomu-no-tsuchi": {
+    "nameJa": "ゴムゴムの槌",
+    "reading": "Gomu Gomu no Tsuchi"
+  },
+  "wiki-tech-gomu-gomu-no-tsuppari": {
+    "reading": "Gomu Gomu no Tsuppari"
+  },
+  "wiki-tech-gomu-gomu-no-tsuribashi": {
+    "reading": "Gomu Gomu no Tsuribashi"
+  },
+  "wiki-tech-gomu-gomu-no-twin-pistol": {
+    "nameJa": "ゴムゴムのツインピストル",
+    "reading": "Gomu Gomu no Tsuin Pistoru"
+  },
+  "wiki-tech-gomu-gomu-no-ude-fusen": {
+    "reading": "Gomu Gomu no Ude Fūsen"
+  },
+  "wiki-tech-gomu-gomu-no-ufo": {
+    "nameJa": "ゴムゴムのUFO (ユーフォー)",
+    "reading": "Gomu Gomu no Yūfō"
+  },
+  "wiki-tech-gomu-gomu-no-warp": {
+    "reading": "Gomu Gomu no Wāpu"
+  },
+  "wiki-tech-gomu-gomu-no-yari": {
+    "nameJa": "ゴムゴムの槍",
+    "reading": "Gomu Gomu no Yari"
+  },
+  "wiki-tech-gomu-gomu-no-yo-yo": {
+    "reading": "Gomu Gomu no Yō-Yō"
+  },
+  "wiki-tech-gomu-gomu-no-zenmai": {
+    "reading": "Gomu Gomu no Zenmai"
+  },
+  "wiki-tech-gomu-rush": {
+    "reading": "Gomu Rasshu"
+  },
+  "wiki-tech-gosenmaigawara-seiken": {
+    "reading": "Gosenmai-gawara Seiken",
+    "nameKo": "어인공수 오천장 기와 정권"
+  },
+  "wiki-tech-gosenmaigawara-shuto": {
+    "reading": "Gosenmai-gawara Shutō"
+  },
+  "wiki-tech-goshikito": {
+    "nameJa": "五色糸 (ゴシキート)",
+    "reading": "Goshikīto",
+    "nameKo": "오색실"
+  },
+  "wiki-tech-gouka-kenran": {
+    "nameJa": "業火拳乱 (ごうかけんらん)",
+    "reading": "Gōka Kenran"
+  },
+  "wiki-tech-grab": {
+    "reading": "Gurappu"
+  },
+  "wiki-tech-gran-fleur": {
+    "reading": "Guran Furūru",
+    "nameKo": "그랑 플루르"
+  },
+  "wiki-tech-gravito": {
+    "nameJa": "重力刀 (グラビとう)",
+    "reading": "Gurabitō",
+    "nameKo": "중력도"
+  },
+  "wiki-tech-grom-puddling": {
+    "nameJa": "雷冶金 (グローム･パドリング)",
+    "reading": "Gurōmu Padoringu",
+    "nameKo": "뇌야금"
+  },
+  "wiki-tech-ground-death": {
+    "nameJa": "浸食輪廻 (グラウンド・デス)",
+    "reading": "Guraundo Desu",
+    "nameKo": "침식윤회 (그라운드 데스)"
+  },
+  "wiki-tech-ground-secco": {
+    "nameJa": "干割 (グラウンド・セッコ)",
+    "reading": "Guraundo Sekko",
+    "nameKo": "사막 증발 (그라운드 세코)"
+  },
+  "wiki-tech-gurash": {
+    "nameJa": "震破 (グラッシュ)",
+    "reading": "Gurasshu"
+  },
+  "wiki-tech-gyuki-yuzume": {
+    "reading": "Gyūki Yūzume",
+    "nameKo": "귀신소 용조"
+  },
+  "wiki-tech-haha-no-hi": {
+    "reading": "Haha no Hi",
+    "nameKo": "어미의 불꽃칼"
+  },
+  "wiki-tech-hahaba": {
+    "nameJa": "破々刃 (ハハバ)",
+    "reading": "Hahaba",
+    "nameKo": "파파인"
+  },
+  "wiki-tech-hakai": {
+    "reading": "Hakai",
+    "nameKo": "패해"
+  },
+  "wiki-tech-hakua": {
+    "nameJa": "破空阿 (ハクア)",
+    "reading": "Hakua",
+    "nameKo": "파공아"
+  },
+  "wiki-tech-hakucho-arabesque": {
+    "reading": "Hakuchō Arabesuku"
+  },
+  "wiki-tech-hanagasa": {
+    "reading": "Hanagasa",
+    "nameKo": "꽃우산"
+  },
+  "wiki-tech-hang": {
+    "reading": "Hangu",
+    "nameKo": "행"
+  },
+  "wiki-tech-hariko": {
+    "nameJa": "針子",
+    "reading": "Hariko",
+    "nameKo": "침자 (꽃바늘질)"
+  },
+  "wiki-tech-heat-seed": {
+    "nameJa": "火種 (ひだね)",
+    "reading": "Hidane"
+  },
+  "wiki-tech-heavenly-bonbon": {
+    "nameJa": "天上の (ヘブンリー)ボンボン",
+    "reading": "Hebunrī Bonbon",
+    "nameKo": "천상의 (헤븐리) 봉봉"
+  },
+  "wiki-tech-heavenly-feuer": {
+    "nameJa": "天上の火 (ヘブンリーフォイアー)",
+    "reading": "Hebunrī Foiā",
+    "nameKo": "천상의 불꽃 (헤븐리 포이어)"
+  },
+  "wiki-tech-heavenly-feuer-blitz": {
+    "nameJa": "天上の (ヘヴンリー) 火雷 (フォイアブリッツ)",
+    "reading": "Hevunrī Foia Burittsu",
+    "nameKo": "천상의 불벼락 (헤븐리 파이어 블리츠)"
+  },
+  "wiki-tech-hell-memories": {
+    "nameJa": "地獄の思い出 (ヘル・メモリーズ)",
+    "reading": "Heru Memorīzu",
+    "nameKo": "지옥의 추억 (헬 메모리즈)"
+  },
+  "wiki-tech-hibashira": {
+    "nameJa": "火柱 (ひばしら)",
+    "reading": "Hibashira",
+    "nameKo": "화주 (불기둥)"
+  },
+  "wiki-tech-hibuta": {
+    "nameJa": "火蓋 (ひぶた)",
+    "reading": "Hibuta"
+  },
+  "wiki-tech-hidaruma": {
+    "nameJa": "火達磨 (ヒダルマ)",
+    "reading": "Hidaruma"
+  },
+  "wiki-tech-higan": {
+    "nameJa": "火銃 (ヒガン)",
+    "reading": "Higan",
+    "nameKo": "화총 (건)"
+  },
+  "wiki-tech-higuruma": {
+    "nameJa": "火車 (ひぐるま)",
+    "reading": "Higuruma"
+  },
+  "wiki-tech-hiken": {
+    "nameJa": "火拳 (ひけん)",
+    "reading": "Hiken"
+  },
+  "wiki-tech-hiki-tobashi": {
+    "reading": "Hiki Tobashi"
+  },
+  "wiki-tech-hikyaku": {
+    "nameJa": "火脚 (ひきゃく)",
+    "reading": "Hikyaku"
+  },
+  "wiki-tech-himatsuri": {
+    "nameJa": "火祭 (ひまつり)",
+    "reading": "Himatsuri"
+  },
+  "wiki-tech-hold": {
+    "reading": "Hōrudo",
+    "nameKo": "홀드"
+  },
+  "wiki-tech-homies": {
+    "reading": "Hōmīzu"
+  },
+  "wiki-tech-hoo-in": {
+    "nameJa": "鳳 (ほう)凰 (おう)印 (いん)",
+    "reading": "Hōō-in",
+    "nameKo": "봉황인"
+  },
+  "wiki-tech-hotarubi": {
+    "nameJa": "蛍火 (ほたるび)",
+    "reading": "Hotarubi"
+  },
+  "wiki-tech-human-drill": {
+    "nameJa": "飛勇 (ヒュー)萬螺旋 (マンドリル)",
+    "reading": "Hyūmandoriru"
+  },
+  "wiki-tech-hyakuhachi-pound-ho": {
+    "nameJa": "百八煩悩 (ポンド)鳳",
+    "reading": "Hyakuhachi Pondo Hō",
+    "nameKo": "108번뇌봉"
+  },
+  "wiki-tech-hyakumaigawara-seiken": {
+    "reading": "Hyakumaigawara Seiken"
+  },
+  "wiki-tech-hydra": {
+    "nameJa": "毒竜 (ヒドラ)",
+    "reading": "Hidora",
+    "nameKo": "독룡 (히드라)"
+  },
+  "wiki-tech-hyokindama": {
+    "reading": "Hyōkindama",
+    "nameKo": "표금옥"
+  },
+  "wiki-tech-ice-age": {
+    "nameJa": "氷河時代 (アイス・エイジ)",
+    "reading": "Aisu Eiji"
+  },
+  "wiki-tech-ice-ball": {
+    "nameJa": "アイスBALL (ボール)",
+    "reading": "Aisu Bōru",
+    "nameKo": "아이스 볼"
+  },
+  "wiki-tech-ice-body": {
+    "reading": "Aisu Badi",
+    "nameKo": "아이스 버디"
+  },
+  "wiki-tech-ice-circle": {
+    "reading": "Aisu Sākuru",
+    "nameKo": "아이스 서클"
+  },
+  "wiki-tech-ice-glove": {
+    "nameJa": "氷拳 (アイスグローブ)",
+    "reading": "Aisu Gurōbu",
+    "nameKo": "빙권 (아이스 글러브)"
+  },
+  "wiki-tech-ice-nail": {
+    "reading": "Aisu Neiru"
+  },
+  "wiki-tech-ice-pick": {
+    "reading": "Aisu Pikku"
+  },
+  "wiki-tech-ice-saber": {
+    "reading": "Aisu Sāberu",
+    "nameKo": "아이스 사브르"
+  },
+  "wiki-tech-ice-star": {
+    "nameJa": "氷星 (アイス スター)",
+    "reading": "Aisu Sutā",
+    "nameKo": "아티카"
+  },
+  "wiki-tech-ice-time": {
+    "reading": "Aisu Taimu",
+    "nameKo": "아이스 타임"
+  },
+  "wiki-tech-ichi-gorilla": {
+    "nameJa": "一剛力羅 (ゴリラ)",
+    "reading": "Ichi Gorira"
+  },
+  "wiki-tech-ikkitosen": {
+    "reading": "Ikkitōsen"
+  },
+  "wiki-tech-ikoku": {
+    "reading": "Ikoku",
+    "nameKo": "위국"
+  },
+  "wiki-tech-il": {
+    "nameJa": "目 (ウイユ)",
+    "reading": "Uiyu",
+    "nameKo": "눈 (외유)"
+  },
+  "wiki-tech-incarnations": {
+    "reading": "Keshin",
+    "nameKo": "화신"
+  },
+  "wiki-tech-indra": {
+    "nameJa": "威鼓 (インドラ)",
+    "reading": "Indora",
+    "nameKo": "위고 (인드라)"
+  },
+  "wiki-tech-injection-shot": {
+    "nameJa": "注射 (インジェクション)ショット",
+    "reading": "Injekushon Shotto"
+  },
+  "wiki-tech-inu-odoshi": {
+    "reading": "Inu Odoshi"
+  },
+  "wiki-tech-inugami-guren": {
+    "nameJa": "犬噛紅蓮 (いぬがみぐれん)",
+    "reading": "Inugami Guren"
+  },
+  "wiki-tech-itomaki-kumite": {
+    "reading": "Itomaki Kumite"
+  },
+  "wiki-tech-itonoko": {
+    "reading": "Itonoko"
+  },
+  "wiki-tech-jabot": {
+    "reading": "Jyabo"
+  },
+  "wiki-tech-jarret": {
+    "nameJa": "すね肉 (ジャレ)",
+    "reading": "Jare",
+    "nameKo": "정강이살 (자레)"
+  },
+  "wiki-tech-jenga-ho": {
+    "reading": "Jenga Hō"
+  },
+  "wiki-tech-jigoku-tabi": {
+    "reading": "Jigoku Tabi"
+  },
+  "wiki-tech-jinkaku-ishoku-shujutsu": {
+    "reading": "Jinkaku Ishoku Shujutsu",
+    "nameKo": "인격이식수술"
+  },
+  "wiki-tech-jodan-bakusho": {
+    "reading": "Jōdan Bakushō"
+  },
+  "wiki-tech-joo-no-fumitsuke": {
+    "reading": "Joō no Fumitsuke"
+  },
+  "wiki-tech-joue": {
+    "nameJa": "頬 (ジュー)",
+    "reading": "Jū",
+    "nameKo": "뺨 (주)"
+  },
+  "wiki-tech-joue-shoot": {
+    "nameJa": "ほほ肉 (ジュー)シュート",
+    "reading": "Jū Shūto",
+    "nameKo": "볼살 (주) 슛"
+  },
+  "wiki-tech-jujika": {
+    "nameJa": "十字火 (じゅうじか)",
+    "reading": "Jūjika",
+    "nameKo": "십자화"
+  },
+  "wiki-tech-k-room": {
+    "nameJa": "K・ROOM (クローム)",
+    "reading": "Kurōmu",
+    "nameKo": "크롬"
+  },
+  "wiki-tech-ka-ka-kakato-otoshi": {
+    "reading": "Ka Ka Kakato Otoshi"
+  },
+  "wiki-tech-kabutowari": {
+    "reading": "Kabutowari"
+  },
+  "wiki-tech-kachiage-haisoku": {
+    "reading": "Kachiage Haisoku"
+  },
+  "wiki-tech-kaen": {
+    "nameJa": "火燕 (かえん)",
+    "reading": "Kaen"
+  },
+  "wiki-tech-kaen-daiko": {
+    "nameJa": "火龍大炬 (かえんダイコ)",
+    "reading": "Kaen Daiko",
+    "nameKo": "화룡대거"
+  },
+  "wiki-tech-kagami-mochi": {
+    "nameJa": "加々身 (かがみ) モチ",
+    "reading": "Kagami Mochi",
+    "nameKo": "첩첩떡"
+  },
+  "wiki-tech-kageki": {
+    "nameJa": "火激 (かげき)",
+    "reading": "Kageki"
+  },
+  "wiki-tech-kagero": {
+    "nameJa": "陽炎 (かげろう)",
+    "reading": "Kagerō",
+    "nameKo": "양염 (아지랑이)"
+  },
+  "wiki-tech-kaifu": {
+    "reading": "Kaifū",
+    "nameKo": "괴풍"
+  },
+  "wiki-tech-kaimen-wari": {
+    "reading": "Kaimen Wari"
+  },
+  "wiki-tech-kaishin": {
+    "reading": "Kaishin"
+  },
+  "wiki-tech-kaitengiri": {
+    "reading": "Kaitengiri"
+  },
+  "wiki-tech-kaku-mochi": {
+    "nameJa": "角 (かく)モチ",
+    "reading": "Kaku Mochi",
+    "nameKo": "네모 떡"
+  },
+  "wiki-tech-kakumei-gun-gyojin-karate-shihandai": {
+    "reading": "Kakumei-gun Gyojin Karate Shihandai"
+  },
+  "wiki-tech-kamikaze-rap": {
+    "reading": "Kamikaze Rappu",
+    "nameKo": "신풍 랩"
+  },
+  "wiki-tech-karakusagawara-seiken": {
+    "reading": "Karakusa-gawara Seiken",
+    "nameKo": "어인공수 당초 기와 정권"
+  },
+  "wiki-tech-karasuma-gari": {
+    "reading": "Karasuma Gari",
+    "nameKo": "까마귀 마물 사냥"
+  },
+  "wiki-tech-kari": {
+    "nameJa": "電光 (カリ)",
+    "reading": "Kari",
+    "nameKo": "전광 (칼리)"
+  },
+  "wiki-tech-kashiwa-mochi": {
+    "reading": "Kashiwa Mochi"
+  },
+  "wiki-tech-kasou": {
+    "nameJa": "火葬 (かそう)",
+    "reading": "Kasō"
+  },
+  "wiki-tech-keiyaku": {
+    "reading": "Keiyaku"
+  },
+  "wiki-tech-keri": {
+    "reading": "Keri"
+  },
+  "wiki-tech-keri-pointe": {
+    "nameJa": "蹴爪先 (ケリポアント)",
+    "reading": "Keri Poanto",
+    "nameKo": "발끝차기"
+  },
+  "wiki-tech-kiri-oroshi": {
+    "reading": "Kiri Oroshi"
+  },
+  "wiki-tech-kiriage": {
+    "reading": "Kiriage"
+  },
+  "wiki-tech-kiten": {
+    "nameJa": "雷獣 (キテン)",
+    "reading": "Kiten",
+    "nameKo": "뇌수 (키텐)"
+  },
+  "wiki-tech-kochoran": {
+    "reading": "Kochōran",
+    "nameKo": "호접란"
+  },
+  "wiki-tech-kokoba-madara-gari": {
+    "reading": "Kokoba Madara Gari",
+    "nameKo": "호호파 범 사냥"
+  },
+  "wiki-tech-kokujo-o-tatsumaki": {
+    "reading": "Kokujō Ō Tatsu Maki"
+  },
+  "wiki-tech-kuchu-kirimomi-dai-circus": {
+    "reading": "Kūchū Kirimomi Dai Sākasu",
+    "nameKo": "공중 나선 급강하 대 서커스"
+  },
+  "wiki-tech-kuma-no-te": {
+    "reading": "Kuma no Te"
+  },
+  "wiki-tech-kumo-no-sugaki": {
+    "reading": "Kumo no Sugaki",
+    "nameKo": "거미집 그물"
+  },
+  "wiki-tech-kung-fu-kick": {
+    "reading": "Kanfū Kikku"
+  },
+  "wiki-tech-kuri-mochi": {
+    "reading": "Kuri Mochi"
+  },
+  "wiki-tech-kurouzu": {
+    "nameJa": "闇水 (くろうず)",
+    "reading": "Kurouzu",
+    "nameKo": "암수 (검은 소용돌이)"
+  },
+  "wiki-tech-kuzu-mochi": {
+    "reading": "Kuzu Mochi"
+  },
+  "wiki-tech-kyofu-koso-ga-kami-nanoda": {
+    "nameJa": "恐 (きょう)怖 (ふ)こそが神 (かみ)なのだ",
+    "reading": "Kyōfu Koso ga Kami Nanoda"
+  },
+  "wiki-tech-kyokaen": {
+    "nameJa": "鏡火炎 (きょうかえん)",
+    "reading": "Kyōkaen",
+    "nameKo": "경화염"
+  },
+  "wiki-tech-laser": {
+    "reading": "Rēzā"
+  },
+  "wiki-tech-laser-bakuhatsu": {
+    "reading": "Rēzā Bakuhatsu"
+  },
+  "wiki-tech-little-black-bears": {
+    "nameJa": "小熊玩具 (リトルブラックベアーズ)",
+    "reading": "Ritoru Burakku Beāzu"
+  },
+  "wiki-tech-longe": {
+    "nameJa": "腰肉 (ロンジュ)",
+    "reading": "Ronju",
+    "nameKo": "허릿살 (롱주)"
+  },
+  "wiki-tech-luffy-punch": {
+    "reading": "Rufi Panchi"
+  },
+  "wiki-tech-luffy-swing": {
+    "reading": "Rufi Suingu"
+  },
+  "wiki-tech-mamaragan": {
+    "nameJa": "万雷 (ママラガン)",
+    "reading": "Mamaragan",
+    "nameKo": "만뢰 (마마라간)"
+  },
+  "wiki-tech-marma-raid": {
+    "nameJa": "マーマ急襲 (レイド)",
+    "reading": "Māmareido"
+  },
+  "wiki-tech-mascara-boomerang": {
+    "reading": "Masukara Būmeran"
+  },
+  "wiki-tech-maser-ho": {
+    "nameJa": "鳴光砲 (メーザーほう)",
+    "reading": "Mēzā Hō",
+    "nameKo": "명광포 (메이저포)"
+  },
+  "wiki-tech-maser-saber": {
+    "nameJa": "鳴光剣 (メーザーサーベル)",
+    "reading": "Mēzā Sāberu",
+    "nameKo": "명광검 (메이저 사브르)"
+  },
+  "wiki-tech-max-200-000-000-v": {
+    "nameJa": "MAX (マックス)2億 (おく)V (ボルト)",
+    "reading": "Makkusu Nioku Boruto"
+  },
+  "wiki-tech-meigo": {
+    "nameJa": "冥狗 (めいごう)",
+    "reading": "Meigō"
+  },
+  "wiki-tech-menton": {
+    "nameJa": "あご (マントン)",
+    "reading": "Manton",
+    "nameKo": "턱 (망통)"
+  },
+  "wiki-tech-mero-mero-mellow": {
+    "nameJa": "メロメロ甘風 (メロウ)",
+    "reading": "Mero Mero Merō"
+  },
+  "wiki-tech-mes": {
+    "reading": "Mesu",
+    "nameKo": "메스"
+  },
+  "wiki-tech-mikata-robo-kick": {
+    "reading": "Mikata Robo Kikku"
+  },
+  "wiki-tech-mil-fleur": {
+    "nameJa": "千紫万紅 (ミル・フルール)",
+    "reading": "Miru Furūru",
+    "nameKo": "천자만홍 (밀 플루르)"
+  },
+  "wiki-tech-mini-hollow": {
+    "reading": "Mini Horo"
+  },
+  "wiki-tech-mink-assault": {
+    "reading": "Minku Asaruto"
+  },
+  "wiki-tech-mo-golova": {
+    "nameJa": "モー頭 (ガラヴァ)",
+    "reading": "Mō Garava"
+  },
+  "wiki-tech-mochi-ginchaku": {
+    "nameJa": "餅吟着 (モチギンチャク)",
+    "reading": "Mochi Ginchaku",
+    "nameKo": "떡 쌈지"
+  },
+  "wiki-tech-mochi-hadan": {
+    "reading": "Mochi Hadan"
+  },
+  "wiki-tech-mochi-tsuki": {
+    "nameJa": "モチ突 (ツキ)",
+    "reading": "Mochi Tsuki",
+    "nameKo": "떡 찌르기"
+  },
+  "wiki-tech-moko": {
+    "nameJa": "猛虎 (もうこ)",
+    "reading": "Mōko"
+  },
+  "wiki-tech-moon-rabbit": {
+    "reading": "pronunciation unknown"
+  },
+  "wiki-tech-moon-raid": {
+    "nameJa": "月襲 (ムーンレイド)",
+    "reading": "Mūn Reido",
+    "nameKo": "월습 (문 레이드)"
+  },
+  "wiki-tech-mouka": {
+    "nameJa": "猛火 (もうか)",
+    "reading": "Mōka"
+  },
+  "wiki-tech-mouton-shot": {
+    "nameJa": "羊肉 (ムートン)ショット",
+    "reading": "Mūton Shotto"
+  },
+  "wiki-tech-muso-donuts": {
+    "reading": "Musō Dōnatsu",
+    "nameKo": "무쌍 도넛"
+  },
+  "wiki-tech-nagare-mochi": {
+    "reading": "Nagare Mochi",
+    "nameKo": "흐름떡"
+  },
+  "wiki-tech-nagiharai": {
+    "reading": "Nagiharai"
+  },
+  "wiki-tech-naginata-rasetsu": {
+    "reading": "Naginata Rasetsu"
+  },
+  "wiki-tech-naguri-mochi": {
+    "reading": "Naguri Mochi"
+  },
+  "wiki-tech-nanasenmaigawara-mawashigeri": {
+    "reading": "Nanasenmai-gawara Mawashigeri",
+    "nameKo": "어인공수 칠천장 기와 돌려차기"
+  },
+  "wiki-tech-nashi-no-tsubute": {
+    "nameJa": "鳳梨 (なしの)礫 (つぶて)",
+    "reading": "Nashi no Tsubute",
+    "nameKo": "봉리력"
+  },
+  "wiki-tech-negative-hollow": {
+    "reading": "Negatibu Horō",
+    "nameKo": "네거티브 홀로"
+  },
+  "wiki-tech-negative-hollows": {
+    "reading": "Negatibu Horōzu",
+    "nameKo": "네거티브 홀로즈"
+  },
+  "wiki-tech-nez": {
+    "nameJa": "鼻 (ネ)",
+    "reading": "Ne",
+    "nameKo": "코 (네)"
+  },
+  "wiki-tech-ni-gorilla": {
+    "nameJa": "二剛力羅 (ゴリラ)",
+    "reading": "Ni Gorira"
+  },
+  "wiki-tech-nichirin": {
+    "nameJa": "日輪 (にちりん)",
+    "reading": "Nichirin"
+  },
+  "wiki-tech-nigori-zake": {
+    "nameJa": "二剛力斬 (ニゴリザケ)",
+    "reading": "Nigori-Zake",
+    "nameKo": "이강력참"
+  },
+  "wiki-tech-nueve-fleur": {
+    "nameJa": "九輪 (ヌエベ)咲き (フルール)",
+    "reading": "Nuebe Furūru",
+    "nameKo": "누에베 플루르"
+  },
+  "wiki-tech-o-uchimizu": {
+    "reading": "Ō Uchimizu"
+  },
+  "wiki-tech-o-yabusame": {
+    "reading": "Ō Yabusame"
+  },
+  "wiki-tech-ochenta-fleur": {
+    "nameJa": "八十輪 (オチェンタ)咲き (フルール)",
+    "reading": "Ochenta Furūru",
+    "nameKo": "오첸타 플루르"
+  },
+  "wiki-tech-ocho-fleur": {
+    "nameJa": "八輪咲き (オーチョフルール)",
+    "reading": "Ōcho Furūru",
+    "nameKo": "오초 플루르"
+  },
+  "wiki-tech-off-white": {
+    "nameJa": "盾白糸 (オフホワイト)",
+    "reading": "Ofu Howaito",
+    "nameKo": "순백사 (오프 화이트)"
+  },
+  "wiki-tech-ohikae-na-fouette": {
+    "nameJa": "お控え・ナ・鞭打 (フエッテ)",
+    "reading": "Ohikae na Fuette"
+  },
+  "wiki-tech-ojos-fleur": {
+    "nameJa": "目抜咲き (オッホスフルール)",
+    "reading": "Ohhosu Furūru",
+    "nameKo": "옥호스 플루르"
+  },
+  "wiki-tech-okama-chop": {
+    "reading": "Okama Choppu"
+  },
+  "wiki-tech-okama-dash": {
+    "reading": "Ōkama Dasshu"
+  },
+  "wiki-tech-omae-ni-wa-jigoku-o-miseru": {
+    "nameJa": "「お前には地獄を見せる…」",
+    "reading": "\"I Will Show You Hell...\""
+  },
+  "wiki-tech-once-fleur": {
+    "nameJa": "十一輪 (オンセ)咲き (フルール)",
+    "reading": "Onse Furūru",
+    "nameKo": "온세 플루르"
+  },
+  "wiki-tech-ongle": {
+    "nameJa": "鶴爪 (オングル)",
+    "reading": "Onguru",
+    "nameKo": "학의 발톱 (옹글)"
+  },
+  "wiki-tech-oni-giri": {
+    "reading": "Oni Giri"
+  },
+  "wiki-tech-onibi": {
+    "nameJa": "鬼火 (おにび)",
+    "reading": "Onibi",
+    "nameKo": "귀화"
+  },
+  "wiki-tech-oreja-fleur": {
+    "reading": "Orehha Furūru",
+    "nameKo": "오레하 플루르"
+  },
+  "wiki-tech-otebisha": {
+    "reading": "Ōtebisha"
+  },
+  "wiki-tech-overheat": {
+    "nameJa": "超過鞭糸 (オーバーヒート)",
+    "reading": "Ōbāhīto",
+    "nameKo": "초과편사 (오버히트)"
+  },
+  "wiki-tech-pad-ho": {
+    "nameJa": "圧力 (パッド)砲",
+    "reading": "Paddo Hō",
+    "nameKo": "압력 (패드)포"
+  },
+  "wiki-tech-parage-shot": {
+    "nameJa": "整形 (パラージュ)ショット",
+    "reading": "Parāju Shotto"
+  },
+  "wiki-tech-parasite": {
+    "nameJa": "寄生糸 (パラサイト)",
+    "reading": "Parasaito",
+    "nameKo": "기생실 (패러사이트)"
+  },
+  "wiki-tech-party-table-kick-course": {
+    "reading": "Pātī Tēburu Kikku Kōsu",
+    "nameKo": "파티 테이블 킥 코스"
+  },
+  "wiki-tech-perfume-femur": {
+    "nameJa": "芳香脚 (パフューム･フェムル)",
+    "reading": "Pafyūmu Femuru",
+    "nameKo": "방향각 (퍼퓸 피머)"
+  },
+  "wiki-tech-perfume-femur-magna": {
+    "nameJa": "大芳香脚 (パフューム・フェムル・マグナ)",
+    "reading": "Pafyūmu Femuru Maguna",
+    "nameKo": "대방향각 (퍼퓸 피머 마그나)"
+  },
+  "wiki-tech-phoenix-spear": {
+    "reading": "Fenikkusu Supia"
+  },
+  "wiki-tech-pierna-fleur": {
+    "nameJa": "脚場輪 (ピエルナ)咲き (フルール)",
+    "reading": "Pieruna Furūru",
+    "nameKo": "피에르나 플루르"
+  },
+  "wiki-tech-pistol-kiss": {
+    "nameJa": "銃 (ピストル)キス",
+    "reading": "Pisutoru Kisu"
+  },
+  "wiki-tech-poitrine": {
+    "nameJa": "胸肉 (ポワトリーヌ)",
+    "reading": "Powatorīnu",
+    "nameKo": "가슴살 (푸아트린)"
+  },
+  "wiki-tech-poitrine-shoot": {
+    "nameJa": "胸肉 (ポワトリーヌ)シュート",
+    "reading": "Powatorīnu Shūto",
+    "nameKo": "가슴살 (푸아트린) 슛"
+  },
+  "wiki-tech-power-leg-claw": {
+    "reading": "Pawā Reggu Kurō"
+  },
+  "wiki-tech-power-leg-shoot": {
+    "reading": "Pawā Reggu Shūto"
+  },
+  "wiki-tech-power-leg-spin": {
+    "reading": "Pawā Reggu Supin"
+  },
+  "wiki-tech-prima": {
+    "nameJa": "主役技 (プリマ)",
+    "reading": "Purima"
+  },
+  "wiki-tech-puncture-wille": {
+    "nameJa": "穿刺波動 (パンクチャーヴィレ)",
+    "reading": "Pankuchā Vire",
+    "nameKo": "천자 파동 (펑크처 빌레)"
+  },
+  "wiki-tech-puni": {
+    "reading": "Puni"
+  },
+  "wiki-tech-punk-clash": {
+    "nameJa": "磁気 (パンク)激突 (クラッシュ)",
+    "reading": "Panku Kurasshu"
+  },
+  "wiki-tech-punk-corna-dio": {
+    "nameJa": "磁気 (パンク)大魔牛 (コルナ・ディオ)",
+    "reading": "Panku Koruna Dio",
+    "nameKo": "자기대마우 (펑크 코르나 디오)"
+  },
+  "wiki-tech-punk-gibson": {
+    "nameJa": "磁気 (パンク)弦 (ギブソン)",
+    "reading": "Panku Gibuson",
+    "nameKo": "자기현 (펑크 깁슨)"
+  },
+  "wiki-tech-punk-pistols": {
+    "nameJa": "磁気 (パンク)ピストルズ",
+    "reading": "Panku Pisutoruzu",
+    "nameKo": "자기 (펑크) 피스톨스"
+  },
+  "wiki-tech-punk-rotten": {
+    "nameJa": "磁気 (パンク)魔人 (ロットン)",
+    "reading": "Panku Rotton",
+    "nameKo": "자기마인 (펑크 로튼)"
+  },
+  "wiki-tech-quasi": {
+    "nameJa": "上部もも肉 (カジ)",
+    "reading": "Kaji",
+    "nameKo": "허벅지 윗살 (카지)"
+  },
+  "wiki-tech-queue": {
+    "nameJa": "尾肉 (クー)",
+    "reading": "Kū",
+    "nameKo": "꼬릿살 (쿠)"
+  },
+  "wiki-tech-r-room": {
+    "nameJa": "R (リ)・ROOM (ルーム)",
+    "reading": "Ri-Rūmu",
+    "nameKo": "리룸"
+  },
+  "wiki-tech-radio-knife": {
+    "reading": "Rajio Naifu",
+    "nameKo": "라디오 나이프"
+  },
+  "wiki-tech-raichoso": {
+    "nameJa": "雷 (らい)鳥 (ちょう)葬 (そう)",
+    "reading": "Raichōsō"
+  },
+  "wiki-tech-raigo": {
+    "nameJa": "雷 (らい)迎 (ごう)",
+    "reading": "Raigō",
+    "nameKo": "뇌영 (라이고)"
+  },
+  "wiki-tech-raiho": {
+    "nameJa": "雷 (らい)咆 (ほう)",
+    "reading": "Raihō"
+  },
+  "wiki-tech-raijo-rikka": {
+    "nameJa": "雷 (らい)浄 (じょう)陸 (りっ)迦 (か)",
+    "reading": "Raijō Rikka"
+  },
+  "wiki-tech-raitei": {
+    "nameJa": "雷霆 (ライテイ)",
+    "reading": "Raitei",
+    "nameKo": "뇌정"
+  },
+  "wiki-tech-reception": {
+    "nameJa": "受付 (レセプション)",
+    "reading": "Resepushon",
+    "nameKo": "접수 (리셉션)"
+  },
+  "wiki-tech-rekka": {
+    "nameJa": "烈火 (れっか)",
+    "reading": "Rekka"
+  },
+  "wiki-tech-rengoku-oni-giri": {
+    "reading": "Rengoku Oni Giri"
+  },
+  "wiki-tech-repel": {
+    "nameJa": "反発 (リペル)",
+    "reading": "Riperu",
+    "nameKo": "반발 (리펠)"
+  },
+  "wiki-tech-resection": {
+    "nameJa": "切除 (リセクション)",
+    "reading": "Risekushon",
+    "nameKo": "절제 (리섹션)"
+  },
+  "wiki-tech-rindo": {
+    "reading": "Rindō",
+    "nameKo": "용담"
+  },
+  "wiki-tech-robi-cho-daisenpu": {
+    "nameJa": "ロビッチョ大旋風",
+    "reading": "Robi Cho Daisenpū"
+  },
+  "wiki-tech-robi-cho-suplex": {
+    "reading": "Robi Cho Sūpurekkusu"
+  },
+  "wiki-tech-room": {
+    "nameJa": "ROOM (ルーム)",
+    "reading": "Rūmu"
+  },
+  "wiki-tech-rubber-rubber-gun-wild-shot": {
+    "nameJa": "jūransha"
+  },
+  "wiki-tech-ryoricho-drop": {
+    "reading": "Ryōrichō Doroppu"
+  },
+  "wiki-tech-ryoricho-gisoku-kick": {
+    "reading": "Ryōrichō Gisoku Kikku"
+  },
+  "wiki-tech-ryusei-kazan": {
+    "nameJa": "流星火山 (りゅうせいかざん)",
+    "reading": "Ryūsei Kazan"
+  },
+  "wiki-tech-sables": {
+    "nameJa": "砂嵐 (サーブルス)",
+    "reading": "Sāburusu",
+    "nameKo": "모래폭풍 (사블스)"
+  },
+  "wiki-tech-saikyo-no-ichigeki": {
+    "reading": "Saikyō no Ichigeki"
+  },
+  "wiki-tech-saisei-no-hono": {
+    "reading": "Saisei no Honō"
+  },
+  "wiki-tech-samegawara-seiken": {
+    "reading": "Samegawara Seiken",
+    "nameKo": "어인공수 상어 기와 정권"
+  },
+  "wiki-tech-samehada-shotei": {
+    "reading": "Samehada Shōtei",
+    "nameKo": "어인공수 상어가죽 장저"
+  },
+  "wiki-tech-sango": {
+    "nameJa": "稲妻 (サンゴ)",
+    "reading": "Sango",
+    "nameKo": "번개 (산호)"
+  },
+  "wiki-tech-sanshu-no-jingi": {
+    "reading": "Sanshu no Jingi"
+  },
+  "wiki-tech-santen-de-coupage": {
+    "nameJa": "三点切分 (デクパージュ)",
+    "reading": "Santen Dekupāju",
+    "nameKo": "석 점 나눠썰기 (데쿠파주)"
+  },
+  "wiki-tech-scan": {
+    "reading": "Sukyan",
+    "nameKo": "스캔"
+  },
+  "wiki-tech-seis-fleur": {
+    "nameJa": "六輪 (セイス)咲き (フルール)",
+    "reading": "Seisu Furūru",
+    "nameKo": "세이스 플루르"
+  },
+  "wiki-tech-selle": {
+    "nameJa": "鞍下肉 (セル)",
+    "reading": "Seru",
+    "nameKo": "안창살 (셀)"
+  },
+  "wiki-tech-senhachiju-pound-ho": {
+    "nameJa": "千八十煩悩 (ポンド)鳳",
+    "reading": "Senhachijū Pondo Hō",
+    "nameKo": "1080번뇌봉"
+  },
+  "wiki-tech-senka": {
+    "nameJa": "戦火 (せんか)",
+    "reading": "Senka"
+  },
+  "wiki-tech-senkaigiri": {
+    "reading": "Senkaigiri"
+  },
+  "wiki-tech-senmaigawara-seiken": {
+    "reading": "Senmaigawara Seiken"
+  },
+  "wiki-tech-shambles": {
+    "reading": "Shanburuzu",
+    "nameKo": "섐블즈"
+  },
+  "wiki-tech-shima-yurashi": {
+    "reading": "Shima Yurashi"
+  },
+  "wiki-tech-shingen-no-ichigeki": {
+    "reading": "Shingen no Ichigeki"
+  },
+  "wiki-tech-shinzo-massage": {
+    "reading": "Shinzō Massāji"
+  },
+  "wiki-tech-shishinabe-shoot": {
+    "reading": "Shishi Nabe Shūto",
+    "nameKo": "멧돼지 전골 슛"
+  },
+  "wiki-tech-shizurase": {
+    "reading": "Shizurase"
+  },
+  "wiki-tech-shock": {
+    "reading": "Shokku",
+    "nameKo": "쇼크"
+  },
+  "wiki-tech-shock-wille": {
+    "nameJa": "衝撃波動 (ショックヴィレ)",
+    "reading": "Shokku Vire"
+  },
+  "wiki-tech-shufuku-sagyo": {
+    "reading": "Shūfuku Sagyō"
+  },
+  "wiki-tech-shunkan-ido": {
+    "reading": "Shunkan Idō"
+  },
+  "wiki-tech-silent": {
+    "nameJa": "凪 (サイレント)",
+    "reading": "Sairento",
+    "nameKo": "고요 (사일런트)"
+  },
+  "wiki-tech-sky-walk": {
+    "nameJa": "空中歩行 (スカイウォーク)",
+    "reading": "Sukai Wōku",
+    "nameKo": "공중 보행 (스카이 워크)"
+  },
+  "wiki-tech-slalom-vine": {
+    "nameJa": "回転蔓 (スラロームバイン)",
+    "reading": "Surarōmu Bain",
+    "nameKo": "회전 덩굴 (슬랄롬 바인)"
+  },
+  "wiki-tech-slam": {
+    "reading": "Suramu",
+    "nameKo": "슬램"
+  },
+  "wiki-tech-slam-gibson": {
+    "nameJa": "破壊弦 (スラムギブソン)",
+    "reading": "Suramu Gibuson",
+    "nameKo": "파괴현 (슬램 깁슨)"
+  },
+  "wiki-tech-slap": {
+    "reading": "Surappu",
+    "nameKo": "슬랩"
+  },
+  "wiki-tech-slave-arrow": {
+    "nameJa": "虜の矢 (スレイブ･アロー)",
+    "reading": "Sureibu Arō",
+    "nameKo": "노예의 화살 (슬레이브 애로우)"
+  },
+  "wiki-tech-slice-shoot": {
+    "nameJa": "切肉 (スライス)シュート",
+    "reading": "Suraisu Shūto"
+  },
+  "wiki-tech-soen-no-dageki": {
+    "nameJa": "蒼炎の墜撃 (そうえんのついげき)",
+    "reading": "Sōen no Dageki"
+  },
+  "wiki-tech-soen-no-kago": {
+    "nameJa": "蒼炎の加護 (そうえんのかご)",
+    "reading": "Sōen no Kago"
+  },
+  "wiki-tech-soen-no-kenjo": {
+    "nameJa": "蒼炎の拳浄 (そうえんのけんじょう)",
+    "reading": "Sōen no Kenjō"
+  },
+  "wiki-tech-soen-no-tenkei": {
+    "nameJa": "蒼炎の天恵 (そうえんのてんけい)",
+    "reading": "Sōen no Tenkei"
+  },
+  "wiki-tech-soen-no-uzu": {
+    "nameJa": "蒼炎の渦 (そうえんのうず)",
+    "reading": "Sōen no Uzu"
+  },
+  "wiki-tech-soen-soso": {
+    "nameJa": "蒼炎双爪 (そうえんそうそう)",
+    "reading": "Sōen Sōsō"
+  },
+  "wiki-tech-sora-no-michi": {
+    "reading": "Sora no Michi",
+    "nameKo": "하늘의 길"
+  },
+  "wiki-tech-soshark": {
+    "nameJa": "粗鮫 (ソシャーク)",
+    "reading": "Soshāku",
+    "nameKo": "파샤크"
+  },
+  "wiki-tech-soul-parade": {
+    "nameJa": "魂の (ソウル) パラード",
+    "reading": "Souru Parādo"
+  },
+  "wiki-tech-soul-pocus": {
+    "nameJa": "魂への言葉 (ソウル・ポーカス)",
+    "reading": "Souru Pōkasu",
+    "nameKo": "혼에게 하는 말 (소울 포커스)"
+  },
+  "wiki-tech-spank": {
+    "reading": "Supanku",
+    "nameKo": "스팽크"
+  },
+  "wiki-tech-spider-net": {
+    "nameJa": "蜘蛛の華 (スパイダーネット)",
+    "reading": "Supaidā Netto",
+    "nameKo": "거미의 꽃 (스파이더 넷)"
+  },
+  "wiki-tech-sterben": {
+    "nameJa": "死の刀 (ステルベン)",
+    "reading": "Suteruben",
+    "nameKo": "죽음의 검 (스테르벤)"
+  },
+  "wiki-tech-stomp": {
+    "reading": "Sutonpu",
+    "nameKo": "스톰프"
+  },
+  "wiki-tech-strangle": {
+    "reading": "Sutoranguru",
+    "nameKo": "스트랭글"
+  },
+  "wiki-tech-swallow-banderole": {
+    "nameJa": "飛燕 (スワロー) バンドゥロル",
+    "reading": "Suwarō Banduroru"
+  },
+  "wiki-tech-takt": {
+    "reading": "Takuto",
+    "nameKo": "탁트"
+  },
+  "wiki-tech-tamaito": {
+    "nameJa": "弾糸 (タマイト)",
+    "reading": "Tamaito",
+    "nameKo": "총탄실 (터마이트)"
+  },
+  "wiki-tech-tatsu-maki": {
+    "reading": "Tatsu Maki",
+    "nameKo": "용오름 (드래곤 회오리치기)"
+  },
+  "wiki-tech-tenchi-meido": {
+    "reading": "Tenchi Meidō"
+  },
+  "wiki-tech-tendron": {
+    "nameJa": "後バラ肉 (タンドロン)",
+    "reading": "Tandoron",
+    "nameKo": "뒷갈빗살 (탕드롱)"
+  },
+  "wiki-tech-tenman-daijizai-tenjin": {
+    "reading": "Tenman Daijizai Tenjin",
+    "nameKo": "천만대자재천신"
+  },
+  "wiki-tech-tensei-no-hono": {
+    "nameJa": "転生の炎 (てんせいのほのお)",
+    "reading": "Tensei no Honō"
+  },
+  "wiki-tech-tensei-no-soen": {
+    "reading": "Tensei no Sōen"
+  },
+  "wiki-tech-toku-hollow": {
+    "reading": "Toku Horo"
+  },
+  "wiki-tech-tora-gari": {
+    "reading": "Tora Gari",
+    "nameKo": "호랑이 사냥"
+  },
+  "wiki-tech-tori-mochi": {
+    "reading": "Tori Mochi"
+  },
+  "wiki-tech-torikago": {
+    "nameKo": "새장"
+  },
+  "wiki-tech-toriko-no-ishiyumi": {
+    "reading": "Toriko no Ishiyumi"
+  },
+  "wiki-tech-toro-nagashi": {
+    "reading": "Tōrō Nagashi",
+    "nameKo": "늑대 칼부림"
+  },
+  "wiki-tech-transection": {
+    "nameJa": "切断 (トランセクション)",
+    "reading": "Toransekushon",
+    "nameKo": "절단 (트랜섹션)"
+  },
+  "wiki-tech-treinta-fleur": {
+    "nameJa": "三十輪 (トレインタ)咲き (フルール)",
+    "reading": "Toreinta Furūru",
+    "nameKo": "트레인타 플루르"
+  },
+  "wiki-tech-tres-fleur": {
+    "nameJa": "三輪 (トレス)咲き (フルール)",
+    "reading": "Toresu Furūru",
+    "nameKo": "트레스 플루르"
+  },
+  "wiki-tech-tres-mano": {
+    "nameJa": "三本樹 (トレス・マーノ)",
+    "reading": "Toresu Māno",
+    "nameKo": "3그루 나무 (트레스 마노)"
+  },
+  "wiki-tech-troisie-me-hachis": {
+    "nameJa": "三級挽き肉 (トロワジェムアッシ)",
+    "reading": "Torowajiemu Asshi",
+    "nameKo": "삼급 분쇄육 (트루아지엠 아시)"
+  },
+  "wiki-tech-tsuppari-pad-ho": {
+    "nameJa": "つっぱり圧力 (パッド)砲",
+    "reading": "Tsuppari Paddo Hō",
+    "nameKo": "밀쳐내기 압력 (패드)포"
+  },
+  "wiki-tech-twin-guns-cross-fire": {
+    "reading": "Sōjū & Jūjika"
+  },
+  "wiki-tech-twist": {
+    "reading": "Tsuisuto",
+    "nameKo": "트위스트"
+  },
+  "wiki-tech-two-fish-engine": {
+    "nameJa": "魚々人泳法 (ツーフィッシュエンジン)",
+    "reading": "Tsū Fisshu Enjin"
+  },
+  "wiki-tech-uchimizu": {
+    "reading": "Uchimizu",
+    "nameKo": "격수"
+  },
+  "wiki-tech-ul-tora-gari": {
+    "nameJa": "極虎狩り (ウルトラがり)",
+    "reading": "Uru Tora Gari",
+    "nameKo": "극 호랑이 사냥"
+  },
+  "wiki-tech-umidaiko": {
+    "reading": "Umidaiko"
+  },
+  "wiki-tech-un-fleur": {
+    "reading": "Un Furūru",
+    "nameKo": "앙 플루르"
+  },
+  "wiki-tech-urabure-swan-butokai": {
+    "nameJa": "うらぶれ白鳥 (スワン)舞踏会",
+    "reading": "Urabure Suwan Butōkai"
+  },
+  "wiki-tech-ursus-shock": {
+    "nameJa": "熊の衝撃 (ウルスス･ショック)",
+    "reading": "Urususu Shokku",
+    "nameKo": "곰의 (우르수스) 충격 (쇼크)"
+  },
+  "wiki-tech-ushi-bari": {
+    "reading": "Ushi Bari",
+    "nameKo": "투우 바늘"
+  },
+  "wiki-tech-vari": {
+    "nameJa": "放電 (ヴァーリー)",
+    "reading": "Vārī",
+    "nameKo": "방전"
+  },
+  "wiki-tech-veau-shot": {
+    "nameJa": "仔牛肉 (ヴォー)ショット",
+    "reading": "Vō Shotto"
+  },
+  "wiki-tech-veinte-fleur": {
+    "nameJa": "二十輪 (ベインテ)咲き (フルール)",
+    "reading": "Beinte Furūru",
+    "nameKo": "베인테 플루르"
+  },
+  "wiki-tech-venom-road": {
+    "nameJa": "毒の道 (ベノムロード)",
+    "reading": "Benomu Rōdo",
+    "nameKo": "독의 길 (베놈 로드)"
+  },
+  "wiki-tech-wanto-giri": {
+    "reading": "Wantō Giri"
+  },
+  "wiki-tech-wing": {
+    "reading": "Uingu",
+    "nameKo": "윙"
+  },
+  "wiki-tech-yabusame": {
+    "reading": "Yabusame"
+  },
+  "wiki-tech-yaki-mochi": {
+    "nameJa": "焼餅 (ヤキモチ)",
+    "reading": "Yaki Mochi"
+  },
+  "wiki-tech-yaki-oni-giri": {
+    "reading": "Yaki Oni Giri",
+    "nameKo": "불타는 도깨비 참수"
+  },
+  "wiki-tech-yamiagari": {
+    "reading": "Yamiagari"
+  },
+  "wiki-tech-yanagi-mochi": {
+    "reading": "Yanagi Mochi",
+    "nameKo": "버들잎 떡"
+  },
+  "wiki-tech-yarinami": {
+    "reading": "Yarinami",
+    "nameKo": "어인공수 창파"
+  },
+  "wiki-tech-yasakani-no-magatama": {
+    "nameJa": "八尺瓊勾玉 (やさかにのまがたま)",
+    "reading": "Yasakani no Magatama",
+    "nameKo": "팔척경곡옥 (야사카니의 곡옥)"
+  },
+  "wiki-tech-yasha-garasu": {
+    "reading": "Yasha Garasu",
+    "nameKo": "야차 까마귀"
+  },
+  "wiki-tech-yata-no-kagami": {
+    "nameJa": "八咫鏡 (やたのかがみ)",
+    "reading": "Yata no Kagami",
+    "nameKo": "팔지경 (야타의 거울)"
+  },
+  "wiki-tech-yomi": {
+    "nameJa": "蘇る・甦る"
+  },
+  "wiki-tech-yonsenmaigawara-seiken": {
+    "reading": "Yonsenmai-gawara Seiken"
+  },
+  "wiki-tech-yutai-ridatsu": {
+    "reading": "Yūtai Ridatsu"
+  },
+  "wiki-tech-zan-giri-mochi": {
+    "nameJa": "斬 (ザン)・切 (ギリ)・餅 (モチ)",
+    "reading": "Zan Giri Mochi",
+    "nameKo": "참・절・떡"
+  },
+  "wiki-tech-zeff-pulled-pork-pound": {
+    "nameEn": "Zeff Pulled Pork Pound"
+  },
+  "wiki-tech-zoan-kei-genjushu": {
+    "nameJa": "「動物 (ゾオン)系」幻獣種",
+    "reading": "Zōn-kei Genjūshu"
+  }
+};
+  const techniquesById = new Map((window.onePieceData.techniques || []).map((technique) => [technique.id, technique]));
+  Object.entries(patches).forEach(([id, patch]) => {
+    const technique = techniquesById.get(id);
+    if (technique) Object.assign(technique, patch);
+  });
+})();
+/* TECHNIQUE_METADATA_CURATED_END */

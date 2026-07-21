@@ -55,7 +55,8 @@ const SOURCES = [
   { title: "Soru Soru no Mi", ownerId: "wt100-763" },
   { title: "Hobi Hobi no Mi", ownerId: "wt100-858" },
   { title: "Zushi Zushi no Mi", ownerId: "wt100-793" },
-  { title: "Mera Mera no Mi", ownerId: "wt100-645" }
+  { title: "Mera Mera no Mi", ownerId: "wt100-645" },
+  { title: "Koby", ownerId: "wt100-21" }
 ];
 
 await fs.mkdir(CACHE_DIR, { recursive: true });

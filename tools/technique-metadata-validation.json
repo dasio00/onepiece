@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-07-19T22:13:23.498Z",
+  "baseCommit": "2499c1d218e46576b2dc18548956bd3483cd7fba",
+  "status": "pass",
+  "checks": {
+    "dataLoads": true,
+    "uniqueIds": true,
+    "httpsSourceUrls": true,
+    "allPatchValuesApplied": true,
+    "balancedPatchValues": true,
+    "directSourceValuesMatch": true,
+    "noIdentityConflictsApplied": true
+  },
+  "summary": {
+    "baseline": {
+      "total": 724,
+      "complete": 0,
+      "missing": {
+        "nameKo": 526,
+        "nameJa": 82,
+        "nameEn": 34,
+        "reading": 724,
+        "sourceTitle": 2,
+        "sourceUrl": 2
+      }
+    },
+    "final": {
+      "total": 724,
+      "complete": 360,
+      "missing": {
+        "nameKo": 263,
+        "nameJa": 65,
+        "nameEn": 32,
+        "reading": 168,
+        "sourceTitle": 0,
+        "sourceUrl": 0
+      }
+    },
+    "patchedTechniques": 561,
+    "patchedFields": 1147,
+    "directWikiMatches": 596,
+    "identityConflicts": 4,
+    "candidateRecords": 377
+  },
+  "failures": {
+    "invalidUrls": [],
+    "missingPatchedValues": [],
+    "unbalancedPatchedValues": [],
+    "directSourceMismatches": [],
+    "duplicateIds": []
+  }
+}
